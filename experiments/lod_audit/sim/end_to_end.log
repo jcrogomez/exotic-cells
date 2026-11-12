@@ -1,0 +1,14 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * end to end: the two extracted netlists, as magic wrote them and after lod_annotate.py. tt, 27 c, vgs = 0.9 v, vds = 0.05 v.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+E2E extracted vth 0.774446 0.774446 diff_mV 9.99201E-12
+E2E annotated vth 0.797944 0.766855 diff_mV 31.0886
+ngspice-44.2 done

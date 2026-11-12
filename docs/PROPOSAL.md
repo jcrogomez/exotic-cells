@@ -1,4 +1,4 @@
-# Chip proposal
+# MISFIT: chip proposal
 
 A proposal, not a decision. The only result claimed is the extraction audit under "First finding".
 
@@ -103,7 +103,6 @@ One complete channel of each instrument before any array:
 
 ## Open decisions
 
-- Name of the chip.
 - Number of analog pins and whether 3.3 V is used.
 - Number of chips to order. Single-trap and antenna experiments are statistical: one die says nothing about the process.
 - Licence.

@@ -1,0 +1,6 @@
+* NGSPICE file created from lshape.ext - technology: sky130A
+
+.subckt lshape
+X0 a_430_0# a_400_n26# a_0_100# VSUBS sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=1.15 ps=6 w=1 l=0.15 sa=0.5602 sb=0.5
+.ends
+

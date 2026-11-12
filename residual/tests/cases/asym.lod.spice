@@ -1,0 +1,6 @@
+* NGSPICE file created from asym.ext - technology: sky130A
+
+.subckt asym
+X0 a_90_0# a_60_n26# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=0.42 pd=2.84 as=0.126 ps=1.44 w=0.42 l=0.15 sa=0.3 sb=1
+.ends
+

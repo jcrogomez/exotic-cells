@@ -1,0 +1,14 @@
+magic
+tech sky130A
+timestamp 1794448904
+<< nwell >>
+rect -50 -50 155 92
+<< pmos >>
+rect 30 0 45 42
+<< pdiff >>
+rect 0 0 30 42
+rect 45 0 105 42
+<< poly >>
+rect 30 42 45 55
+rect 30 -13 45 0
+<< end >>

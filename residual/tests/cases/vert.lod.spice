@@ -1,0 +1,6 @@
+* NGSPICE file created from vert.ext - technology: sky130A
+
+.subckt vert
+X0 a_0_130# a_n26_100# a_0_0# VSUBS sky130_fd_pr__nfet_01v8 ad=0.84 pd=4.84 as=0.21 ps=1.84 w=0.42 l=0.15 sa=0.5 sb=2
+.ends
+

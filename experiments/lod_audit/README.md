@@ -37,6 +37,9 @@ Magic does not emit `sa`, `sb` or `sd`.
 One pair of wide devices per level separates the effect at 6 sigma; minimum devices would need 16 pairs per level. This assumes the
 PDK mismatch model holds and ignores die gradients.
 
+**End to end (`sim/end_to_end.sp`).** The two extracted netlists simulate 0.0 mV apart as Magic wrote them and 31.09 mV apart
+after [`residual/lod_annotate.py`](../../residual/README.md) adds `sa` and `sb`.
+
 ## Open
 
 - Whether silicon follows the model.
