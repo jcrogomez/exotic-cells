@@ -1,0 +1,3007 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.798259 0.711418
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.781514 0.704963
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.791736 0.708476
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.768092 0.711796
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.777147 0.709828
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.786305 0.705981
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.757578 0.713939
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.763684 0.700528
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.781534 0.705368
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.785913 0.704603
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.786705 0.702389
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.756138 0.704908
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.785267 0.705797
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.81389 0.712134
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.775965 0.705765
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.756611 0.702081
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.785437 0.708077
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.764266 0.711235
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.758476 0.710008
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.766741 0.708719
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.769065 0.713378
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.746243 0.696322
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.789894 0.708903
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.766105 0.707866
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.778336 0.706676
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.790216 0.704937
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.792829 0.715511
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.810132 0.705556
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.778269 0.701516
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.731652 0.711422
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.759216 0.708716
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.790533 0.696131
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.788988 0.71809
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.752963 0.704772
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.789888 0.709817
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.773247 0.706932
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.780138 0.706747
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.760104 0.718192
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.807047 0.703792
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.772869 0.701595
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.810637 0.704247
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.772515 0.705155
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.757056 0.708649
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.753631 0.713067
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.782992 0.714303
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.79264 0.704532
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.745694 0.70344
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.794936 0.715097
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.794994 0.704284
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.78471 0.713812
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.775189 0.702758
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.770674 0.697184
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.767144 0.698527
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.788138 0.698514
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.778153 0.706607
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.808995 0.708334
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.780507 0.711432
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.794882 0.70993
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.772819 0.713931
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.766511 0.708892
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.753122 0.705964
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.768565 0.707331
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.78391 0.698659
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.793214 0.705398
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.766416 0.71195
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.763249 0.704062
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.79943 0.713114
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.768996 0.703919
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.766656 0.711629
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.758472 0.718843
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.771799 0.715165
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.793321 0.703444
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.748508 0.703872
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.785362 0.713216
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.800284 0.7097
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.735617 0.702196
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.774811 0.711847
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.759663 0.694313
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.792527 0.704317
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.791039 0.701782
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.771598 0.70066
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.761275 0.709528
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.773638 0.7028
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.81127 0.711572
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.763356 0.70969
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.758704 0.714953
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.756596 0.702627
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.752407 0.709004
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.767068 0.716748
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.8018 0.703932
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.791465 0.709937
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.766679 0.699802
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.780537 0.705572
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.797139 0.702848
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.780533 0.717029
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.771686 0.70723
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.767411 0.702514
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.777926 0.715386
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.778418 0.719163
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.791336 0.701601
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.761079 0.7016
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.780546 0.703546
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.771962 0.70416
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.766751 0.708338
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.779971 0.709324
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.800223 0.709341
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.776223 0.699785
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.771472 0.714412
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.770937 0.705362
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.752443 0.711535
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.786966 0.702109
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.766019 0.713192
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.776782 0.702334
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.787413 0.695124
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.750339 0.705861
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.806863 0.704998
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.760822 0.711798
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.785495 0.705123
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.766277 0.709888
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.782078 0.699875
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.747149 0.704402
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.76838 0.704595
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.777423 0.705725
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.77991 0.702973
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.755423 0.704459
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.77815 0.714115
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.767463 0.701944
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.784465 0.712475
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.80381 0.707037
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.786742 0.705598
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.770082 0.712032
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.804961 0.707903
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.765438 0.711293
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.793907 0.705192
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.773518 0.708262
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.759459 0.705629
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.754358 0.712493
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.783334 0.706742
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.764684 0.712332
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.754008 0.71099
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.775323 0.704454
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.764994 0.705033
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.771945 0.71218
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.795581 0.708168
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.761283 0.71294
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.767889 0.715289
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.747204 0.705459
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.741096 0.709692
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.789559 0.7179
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.802455 0.71059
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.793882 0.70377
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.787878 0.703698
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.774334 0.707472
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.751498 0.714084
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.794938 0.707259
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.787068 0.713097
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.769601 0.704352
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.77825 0.71375
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.778974 0.70823
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.769663 0.710266
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.760406 0.709921
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.774721 0.715403
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.811003 0.710612
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.750307 0.704483
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.780234 0.705743
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.741851 0.704737
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.763243 0.704253
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.802057 0.708428
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.790604 0.717603
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.76855 0.706251
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.769542 0.706672
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.794002 0.701993
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.785443 0.705657
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.804424 0.713311
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.77297 0.699975
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.732168 0.70582
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.763814 0.711554
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.777028 0.704419
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.780721 0.705955
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.776596 0.709535
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.783783 0.706129
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.763849 0.718226
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.833003 0.710739
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.786842 0.701133
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.771098 0.711337
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.757735 0.703743
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.712078 0.711942
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.781076 0.704799
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.765359 0.702887
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.783633 0.709519
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.764414 0.703428
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.78493 0.699932
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.795344 0.705766
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.752232 0.716279
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.750416 0.714282
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.763589 0.709984
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.764848 0.711875
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.785453 0.707028
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.754041 0.714398
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.775778 0.710126
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.785607 0.705744
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.764666 0.713659
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.779696 0.703666
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.778227 0.71267
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.761251 0.714611
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.753926 0.702904
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.775802 0.71936
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.794622 0.70033
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.76828 0.710405
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.798516 0.709573
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.744979 0.703625
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.798577 0.705614
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.782369 0.705186
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.773883 0.704626
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.76435 0.703092
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.786748 0.714543
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.757186 0.711267
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.767405 0.709647
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.774496 0.710265
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.767107 0.716252
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.763503 0.705019
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.793453 0.707301
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.773605 0.702094
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.777911 0.707511
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.783243 0.705567
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.757455 0.717994
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.755477 0.707037
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.77165 0.704206
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.805214 0.705186
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.748899 0.702069
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.805662 0.695792
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.761766 0.709375
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.761757 0.701318
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.772356 0.711543
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.77074 0.714983
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.77389 0.709812
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.77591 0.703053
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.794643 0.702848
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.747665 0.710882
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.778688 0.708875
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.772394 0.711317
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.787039 0.699707
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.745795 0.707681
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.778116 0.706365
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.76573 0.702671
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.773094 0.716807
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.758583 0.710649
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.775764 0.71968
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.745306 0.707382
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.78357 0.712157
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.786989 0.706155
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.771983 0.719982
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.785816 0.707727
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.769843 0.705314
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.737337 0.708269
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.811324 0.711989
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.77477 0.704868
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.774993 0.710889
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.83594 0.707473
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.788663 0.709136
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.791021 0.703951
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.774555 0.704157
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.755553 0.712543
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.782311 0.70748
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.773665 0.7106
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.783463 0.708449
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.780279 0.714044
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.788694 0.708307
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.773491 0.697111
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.77083 0.70583
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.773777 0.710215
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.78083 0.696857
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.780774 0.716256
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.783105 0.705678
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.757219 0.705275
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.770654 0.706395
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.746416 0.707652
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.786224 0.711739
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.814351 0.711687
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.786895 0.708412
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.75016 0.71179
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.807226 0.701436
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.747268 0.704342
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.767175 0.711383
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.776531 0.700349
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.780118 0.708973
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.782113 0.701615
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.775477 0.702409
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.775908 0.710727
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.806275 0.702086
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.764141 0.713552
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.775054 0.70395
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.775772 0.70568
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.758174 0.697993
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.782734 0.706621
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.79355 0.704126
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.779279 0.705987
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.796406 0.719001
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.766729 0.717261
+Reset re-loads circuit * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Circuit: * auditoria lod paso 4: desajuste (tt_mm) de nfet_01v8 0,42/0,15 y 5/0,15, 300 sorteos. vth en vgs=0,9 vds=0,05, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.761547 0.716981
+ngspice-44.2 done

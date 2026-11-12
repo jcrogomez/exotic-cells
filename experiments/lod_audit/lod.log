@@ -1,0 +1,136 @@
+
+Magic 8.3 revision 530 - Compiled on Tue Jul 29 09:47:45 AM CEST 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "lod.tcl" from command line.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.750 x 0.420   ( 0.000,  0.000), ( 0.750,  0.420)  0.315     
+lambda:    75.00 x 42.00   (  0.00,  0.00 ), ( 75.00,  42.00)  3150.00   
+internal:    150 x 84      (     0,  0    ), (   150,  84   )  12600     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.150 x 0.680   ( 0.300, -0.130), ( 0.450,  0.550)  0.102     
+lambda:    15.00 x 68.00   ( 30.00, -13.00), ( 45.00,  55.00)  1020.00   
+internal:     30 x 136     (    60, -26   ), (    90,  110  )  4080      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.300   ( 0.040,  0.060), ( 0.210,  0.360)  0.051     
+lambda:    17.00 x 30.00   (  4.00,  6.00 ), ( 21.00,  36.00)  510.00    
+internal:     34 x 60      (     8,  12   ), (    42,  72   )  2040      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.300   ( 0.540,  0.060), ( 0.710,  0.360)  0.051     
+lambda:    17.00 x 30.00   ( 54.00,  6.00 ), ( 71.00,  36.00)  510.00    
+internal:     34 x 60      (   108,  12   ), (   142,  72   )  2040      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.460   ( 0.040, -0.020), ( 0.210,  0.440)  0.078     
+lambda:    17.00 x 46.00   (  4.00, -2.00 ), ( 21.00,  44.00)  782.00    
+internal:     34 x 92      (     8, -4    ), (    42,  88   )  3128      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.460   ( 0.540, -0.020), ( 0.710,  0.440)  0.078     
+lambda:    17.00 x 46.00   ( 54.00, -2.00 ), ( 71.00,  44.00)  782.00    
+internal:     34 x 92      (   108, -4    ), (   142,  88   )  3128      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.300   ( 0.040,  0.060), ( 0.210,  0.360)  0.051     
+lambda:    17.00 x 30.00   (  4.00,  6.00 ), ( 21.00,  36.00)  510.00    
+internal:     34 x 60      (     8,  12   ), (    42,  72   )  2040      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.300   ( 0.540,  0.060), ( 0.710,  0.360)  0.051     
+lambda:    17.00 x 30.00   ( 54.00,  6.00 ), ( 71.00,  36.00)  510.00    
+internal:     34 x 60      (   108,  12   ), (   142,  72   )  2040      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.150 x 0.080   ( 0.300,  0.470), ( 0.450,  0.550)  0.012     
+lambda:    15.00 x 8.00    ( 30.00,  47.00), ( 45.00,  55.00)  120.00    
+internal:     30 x 16      (    60,  94   ), (    90,  110  )  480       
+Loading DRC CIF style.
+Total DRC errors found: 0
+== lod_sa030 sa=sb=0.30 um : DRC 
+No errors found.
+   Generating output for cell lod_sa030
+Extracting lod_sa030 into lod_sa030.ext:
+exttospice finished.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   6.150 x 0.420   ( 0.000,  0.000), ( 6.150,  0.420)  2.583     
+lambda:   615.00 x 42.00   (  0.00,  0.00 ), ( 615.00,  42.00)  25830.00  
+internal:   1230 x 84      (     0,  0    ), (  1230,  84   )  103320    
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.150 x 0.680   ( 3.000, -0.130), ( 3.150,  0.550)  0.102     
+lambda:    15.00 x 68.00   ( 300.00, -13.00), ( 315.00,  55.00)  1020.00   
+internal:     30 x 136     (   600, -26   ), (   630,  110  )  4080      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.300   ( 2.740,  0.060), ( 2.910,  0.360)  0.051     
+lambda:    17.00 x 30.00   ( 274.00,  6.00 ), ( 291.00,  36.00)  510.00    
+internal:     34 x 60      (   548,  12   ), (   582,  72   )  2040      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.300   ( 3.240,  0.060), ( 3.410,  0.360)  0.051     
+lambda:    17.00 x 30.00   ( 324.00,  6.00 ), ( 341.00,  36.00)  510.00    
+internal:     34 x 60      (   648,  12   ), (   682,  72   )  2040      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.460   ( 2.740, -0.020), ( 2.910,  0.440)  0.078     
+lambda:    17.00 x 46.00   ( 274.00, -2.00 ), ( 291.00,  44.00)  782.00    
+internal:     34 x 92      (   548, -4    ), (   582,  88   )  3128      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.460   ( 3.240, -0.020), ( 3.410,  0.440)  0.078     
+lambda:    17.00 x 46.00   ( 324.00, -2.00 ), ( 341.00,  44.00)  782.00    
+internal:     34 x 92      (   648, -4    ), (   682,  88   )  3128      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.300   ( 2.740,  0.060), ( 2.910,  0.360)  0.051     
+lambda:    17.00 x 30.00   ( 274.00,  6.00 ), ( 291.00,  36.00)  510.00    
+internal:     34 x 60      (   548,  12   ), (   582,  72   )  2040      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.300   ( 3.240,  0.060), ( 3.410,  0.360)  0.051     
+lambda:    17.00 x 30.00   ( 324.00,  6.00 ), ( 341.00,  36.00)  510.00    
+internal:     34 x 60      (   648,  12   ), (   682,  72   )  2040      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.150 x 0.080   ( 3.000,  0.470), ( 3.150,  0.550)  0.012     
+lambda:    15.00 x 8.00    ( 300.00,  47.00), ( 315.00,  55.00)  120.00    
+internal:     30 x 16      (   600,  94   ), (   630,  110  )  480       
+Total DRC errors found: 0
+== lod_sa300 sa=sb=3.0 um : DRC 
+No errors found.
+   Generating output for cell lod_sa300
+Extracting lod_sa300 into lod_sa300.ext:
+exttospice finished.
