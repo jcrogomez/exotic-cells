@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 Made in TaiJuan and the Exotic Cells contributors
 """Residual, module 1: put the STI stress geometry (sa, sb) back into a netlist extracted by Magic.
 
 Magic's sky130A extraction emits l, w, as, ad, ps, pd for MOSFETs and drops sa/sb, so every extracted
@@ -9,6 +11,11 @@ from, measures the diffusion on each side of every gate, and writes the values o
 
 Scope (v0): flat cells, rectangular gates, Manhattan diffusion. Not handled: sd, bent gates, hierarchy
 (flatten in Magic first). Standard library only; no layout package needed.
+
+Each netlist instance is tied to one layout device through everything the netlist shows: model, terminals,
+width, length and the source/drain area and perimeter Magic recorded for that device. If no layout device
+fits, the tool stops. Instances that are identical in every netlist parameter are interchangeable, so their
+order does not change the circuit.
 """
 import argparse, re, sys
 from collections import defaultdict
@@ -77,7 +84,7 @@ def reach(active, edge, direction, lo, hi):
 
 
 def effective(strips, half_l):
-    """BSIM4 effective distance for irregular diffusion: 1/(S+L/2) = sum_i (w_i/W) / (s_i+L/2)."""
+    """Effective distance for irregular diffusion, BSIM4.8.0 manual eq. 14.10: 1/(S+L/2) = sum_i (w_i/W) / (s_i+L/2)."""
     w = sum(s[0] for s in strips)
     return 1.0 / sum(sw / w / (d + half_l) for sw, d in strips) - half_l
 
@@ -118,17 +125,30 @@ def measure(rects, unit):
 
 
 def read_ext_devices(path):
-    """Devices in the .ext file: position of the gate's lower-left corner and terminal nodes."""
+    """Devices in the .ext file: gate position, terminal nodes and the area/perimeter recorded per terminal."""
     unit, devs = None, []
     for line in open(path):
         t = line.split()
         if t[:1] == ["scale"]:
             unit = int(t[3]) * 1e-8  # third field: centimicrons x 1e-6 per internal unit
         elif t[:2] == ["device", "msubckt"]:
-            q = re.findall(r'"([^"]*)"', line)
-            devs.append(dict(model=t[2], x=int(t[3]) * unit, y=int(t[4]) * unit, bulk=q[0], gate=q[1],
-                             sd=frozenset(q[2:4])))
+            q = re.findall(r'"([^"]*)" (\d+) (\S+)', line)
+            term = []
+            for node, _, attr in q[1:3]:
+                area, perim = (int(v) for v in attr.split(","))
+                term.append((node, area * unit * unit, perim * unit))
+            devs.append(dict(model=t[2], x=int(t[3]) * unit, y=int(t[4]) * unit, gate=q[0][0], term=sorted(term)))
     return devs
+
+
+def close(a, b):
+    return abs(a - b) <= 0.01 * abs(b) + 1e-4
+
+
+def fits(dev, model, gate, term, w, l):
+    return (dev["model"] == model and dev["gate"] == gate and close(dev["w"], w) and close(dev["l"], l)
+            and all(n1 == n2 and close(a1, a2) and close(p1, p2)
+                    for (n1, a1, p1), (n2, a2, p2) in zip(dev["term"], term)))
 
 
 def annotate(mag, ext, spice):
@@ -144,19 +164,23 @@ def annotate(mag, ext, spice):
     for line in open(spice):
         t = line.split()
         if t and t[0][0] in "Xx" and len(t) > 5 and "sky130_fd_pr__" in t[5] and "fet" in t[5]:
-            par = dict(p.split("=") for p in t[6:] if "=" in p)
-            cands = [i for i, d in enumerate(devs) if i not in used and d["model"] == t[5] and d["gate"] == t[2]
-                     and d["sd"] == frozenset((t[1], t[3]))
-                     and abs(d["w"] - float(par["w"])) < 1e-3 and abs(d["l"] - float(par["l"])) < 1e-3]
+            par = {k: float(v) for k, v in (p.split("=") for p in t[6:] if "=" in p)}
+            try:
+                term = sorted([(t[1], par["ad"], par["pd"]), (t[3], par["as"], par["ps"])])
+            except KeyError:
+                sys.exit(f"{t[0]}: the netlist has no ad/pd/as/ps; extract with 'ext2spice lvs'")
+            cands = [i for i, d in enumerate(devs) if i not in used
+                     and fits(d, t[5], t[2], term, par["w"], par["l"])]
             if not cands:
                 sys.exit(f"no layout device matches: {line.strip()}")
-            if len({(round(devs[i]['sa'], 4), round(devs[i]['sb'], 4)) for i in cands}) > 1:
-                print(f"warning: {t[0]} has parallel twins with different sa/sb; assigned in file order", file=sys.stderr)
+            # Any remaining candidates equal this instance in every netlist parameter: they are interchangeable.
             d = devs[cands[0]]
             used.add(cands[0])
             line = line.rstrip("\n") + f" sa={d['sa']:.4g} sb={d['sb']:.4g}\n"
             report.append((t[0], d["type"], d["w"], d["l"], d["sa"], d["sb"]))
         out.append(line)
+    if len(used) != len(devs):
+        sys.exit(f"{len(devs) - len(used)} layout device(s) have no instance in {spice}")
     return "".join(out), report
 
 

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: Apache-2.0
 # Test layouts for lod_annotate.py. Geometry only: no contacts, not meant to be DRC clean or fabricated.
 # Each cell has diffusion lengths known by construction (see expected values in run.py).
 drc off
@@ -36,5 +37,17 @@ set name pfet ; cellname create $name ; load $name
 box -0.5um -0.5um 1.55um 0.92um ; paint nwell
 box 0um 0um 1.05um 0.42um ; paint pdiff
 box 0.30um -0.13um 0.45um 0.55um ; paint poly
+fin
+# twins: one gate line over two diffusion islands wired in parallel, 0.30 and 1.00 long on both sides.
+# Same gate, same source and drain nodes, same W/L: only the recorded areas tell them apart.
+set name twins ; cellname create $name ; load $name
+box 0um 0um 0.75um 0.42um ; paint ndiff
+box -0.70um 1.0um 1.45um 1.42um ; paint ndiff
+box 0.30um -0.13um 0.45um 1.55um ; paint poly
+foreach x {0.04 0.54} {
+  box ${x}um 0.06um [expr {$x+0.17}]um 0.36um ; paint ndiffc
+  box ${x}um 1.06um [expr {$x+0.17}]um 1.36um ; paint ndiffc
+  box ${x}um 0.06um [expr {$x+0.17}]um 1.36um ; paint li1
+}
 fin
 quit -noprompt

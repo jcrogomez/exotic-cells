@@ -4,11 +4,19 @@ A proposal, not a decision. The only result claimed is the extraction audit unde
 
 ## Vehicle
 
-| Item | Proposal |
+MISFIT is an experimental vehicle. **Digital first, not digital only.** The first integration route is the Tiny Tapeout digital
+flow with custom physical macros, because that is the route we have already exercised in our working lab (a passive macro
+integrated and compared device by device in LVS; those runs are not published here yet, so take this as a statement, not a result). Tile size, pins and supplies are not fixed here. They follow from the families
+selected, their controls, isolation, formation paths and the instrumentation each one needs. A family that needs analog access,
+higher voltage or die access is kept for a vehicle that can give it; it is not dropped because it does not fit the first one.
+
+**Alternative under evaluation: hybrid 2x2.** Kept as an option, not a decision.
+
+| Item | Hybrid option |
 |---|---|
 | Shuttle | Tiny Tapeout TTSKY27a (SKY130) |
 | Tile | Analog/mixed-signal 2x2, about 334 x 225 um |
-| Analog pins | 4 (force and sense pairs), to be compared against 2 and 6 before paying |
+| Analog pins | 4 (force and sense pairs), to be compared against 2 and 6 |
 | Supplies | 1.8 V digital; 3.3 V analog under evaluation, only with compatible devices and biases |
 | Layout | Parametric macros scripted in Magic, with manual review of physical sections, contacts and extraction |
 | Fee as read on the Tiny Tapeout site (2026-11) | 280 EUR for the 2x2 area plus 280 EUR for four analog pins |
@@ -89,8 +97,13 @@ Confirmed by extraction and simulation on 2026-11-11 (model only, no silicon). F
 - With the parameters written by hand, the same model predicts a threshold difference of 31.1 mV between 0.30 um and 3.0 um of
   diffusion at W = 0.42 um, and 44.1 mV at W = 5 um.
 
-The first module of Residual is therefore defined: read the layout, compute those parameters per instance, annotate the netlist.
-Whether silicon follows the model is the experiment.
+The first module of Residual does that: it reads the layout, computes those parameters per instance and annotates the netlist
+([`residual/`](../residual/README.md)). After annotation the two layouts simulate 31.09 mV apart instead of 0.
+
+What this is and is not: the simulator stops treating as equivalent two layouts that the existing model considers different. It
+is a prediction of the model recovered by annotation, not evidence that silicon follows that model. Two things remain to be
+established: whether the corrected prediction matches silicon better, and how the standard cells were characterised, so that
+the effect is not counted twice when circuits are composed.
 
 ## First silicon priorities
 
@@ -103,9 +116,8 @@ One complete channel of each instrument before any array:
 
 ## Open decisions
 
-- Number of analog pins and whether 3.3 V is used.
+- Vehicle: digital only, hybrid, or more than one die. Number of analog pins and whether 3.3 V is used.
 - Number of chips to order. Single-trap and antenna experiments are statistical: one die says nothing about the process.
-- Licence.
 
 ## Risks
 

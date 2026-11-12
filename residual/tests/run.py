@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
 """Checks lod_annotate.py against layouts whose diffusion lengths are known by construction (cases.tcl)."""
 import os, sys
 here = os.path.dirname(os.path.abspath(__file__))
@@ -25,5 +26,31 @@ for cell, want in EXPECTED.items():
         bad += not ok
         print(f"{'ok  ' if ok else 'FAIL'} {cell:10s} {inst} expected sa={sa:.4f} sb={sb:.4f} got {got.get(inst)}")
     open(p + ".lod.spice", "w").write(text)
+
+# twins: two parallel devices that differ only in recorded area. The small-area one must get 0.30, the other 1.00.
+p = os.path.join(here, "cases", "twins")
+text, report = annotate(p + ".mag", p + ".ext", p + ".spice")
+for line in text.splitlines():
+    if line.startswith("X"):
+        par = dict(k.split("=") for k in line.split()[6:])
+        want = 0.30 if float(par["ad"]) < 0.2 else 1.00
+        ok = abs(float(par["sa"]) - want) < 1e-3 and abs(float(par["sb"]) - want) < 1e-3
+        bad += not ok
+        print(f"{'ok  ' if ok else 'FAIL'} twins      {line.split()[0]} ad={par['ad']} expected sa=sb={want} got sa={par['sa']} sb={par['sb']}")
+
+# a netlist instance that no layout device fits must stop the tool
+import tempfile
+broken = open(os.path.join(here, "cases", "asym.spice")).read().replace("ad=0.42", "ad=0.99")
+with tempfile.NamedTemporaryFile("w", suffix=".spice", delete=False) as f:
+    f.write(broken)
+p = os.path.join(here, "cases", "asym")
+try:
+    annotate(p + ".mag", p + ".ext", f.name)
+    ok = False
+except SystemExit as e:
+    ok = "no layout device matches" in str(e)
+os.unlink(f.name)
+bad += not ok
+print(f"{'ok  ' if ok else 'FAIL'} mismatch   stops when the netlist and the layout disagree")
 print("failures:", bad)
 sys.exit(bool(bad))

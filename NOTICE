@@ -1,0 +1,10 @@
+Exotic Cells
+Copyright 2026 Made in TaiJuan and the Exotic Cells contributors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party material
+- Layouts, extracted netlists and simulation logs under experiments/ and residual/tests/cases/ were produced with Magic and
+  ngspice using the SkyWater SKY130 open PDK (Apache-2.0, https://github.com/google/skywater-pdk) as packaged by open_pdks.
+  The PDK itself is not redistributed here. Device and model names appearing in those files belong to the PDK.
+- No third-party source code is included.
