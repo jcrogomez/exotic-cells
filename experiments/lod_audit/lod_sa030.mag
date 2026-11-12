@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1794447957
+timestamp 1794453397
 << nmos >>
 rect 30 0 45 42
 << ndiff >>
@@ -15,6 +15,13 @@ rect 45 0 75 6
 << ndiffc >>
 rect 4 6 21 36
 rect 54 6 71 36
+<< psubdiff >>
+rect 0 -85 70 -70
+rect 0 -105 15 -85
+rect 55 -105 70 -85
+rect 0 -120 70 -105
+<< psubdiffcont >>
+rect 15 -105 55 -85
 << poly >>
 rect 30 42 45 55
 rect 30 -13 45 0
@@ -23,6 +30,8 @@ rect 4 36 21 44
 rect 4 -2 21 6
 rect 54 36 71 44
 rect 54 -2 71 6
+rect 7 -105 15 -85
+rect 55 -105 63 -85
 << labels >>
 flabel locali 4 6 21 36 0 FreeSans 160 0 0 0 S
 port 1 nsew
@@ -30,4 +39,6 @@ flabel locali 54 6 71 36 0 FreeSans 160 0 0 0 D
 port 2 nsew
 flabel poly 30 47 45 55 0 FreeSans 160 0 0 0 G
 port 3 nsew
+flabel locali 7 -105 63 -85 0 FreeSans 160 0 0 0 B
+port 4 nsew
 << end >>

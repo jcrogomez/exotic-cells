@@ -11,13 +11,13 @@ Xc1 c1 c1 c2 0 sky130_fd_pr__nfet_01v8 w=1 l=1
 Xc2 c2 c2 vb 0 sky130_fd_pr__nfet_01v8 w=1 l=1
 Xc3 vb vb 0 0 sky130_fd_pr__nfet_01v8 w=0.42 l=0.15 m=16
 Cf vb 0 1p
-Xpa xa pre vdd vdd sky130_fd_pr__pfet_01v8 w=0.42 l=0.15
+Xpa xa pre vdd vdd sky130_fd_pr__pfet_01v8_hvt w=0.42 l=0.5
 Xda xa vb 0 0 sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
 Xia xa 0 0 vdd vdd ya sky130_fd_sc_hd__inv_1
-Xpe xe pre vdd vdd sky130_fd_pr__pfet_01v8 w=0.42 l=0.15
+Xpe xe pre vdd vdd sky130_fd_pr__pfet_01v8_hvt w=0.42 l=0.5
 Xde xe vbm 0 0 sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
 Xie xe 0 0 vdd vdd ye sky130_fd_sc_hd__inv_1
-Xpm xm pre vdd vdd sky130_fd_pr__pfet_01v8 w=0.42 l=0.15
+Xpm xm pre vdd vdd sky130_fd_pr__pfet_01v8_hvt w=0.42 l=0.5
 Xdm xm vb 0 0 sky130_fd_pr__nfet_01v8 w=0.42 l=0.15 m=16
 Xim xm 0 0 vdd vdd ym sky130_fd_sc_hd__inv_1
 .control

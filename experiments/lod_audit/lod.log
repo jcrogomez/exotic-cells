@@ -67,10 +67,40 @@ Root cell box:
 microns:   0.150 x 0.080   ( 0.300,  0.470), ( 0.450,  0.550)  0.012     
 lambda:    15.00 x 8.00    ( 30.00,  47.00), ( 45.00,  55.00)  120.00    
 internal:     30 x 16      (    60,  94   ), (    90,  110  )  480       
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.700 x 0.500   ( 0.000, -1.200), ( 0.700, -0.700)  0.350     
+lambda:    70.00 x 50.00   (  0.00, -120.00), ( 70.00, -70.00)  3500.00   
+internal:    140 x 100     (     0, -240  ), (   140, -140  )  14000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.400 x 0.200   ( 0.150, -1.050), ( 0.550, -0.850)  0.080     
+lambda:    40.00 x 20.00   ( 15.00, -105.00), ( 55.00, -85.00)  800.00    
+internal:     80 x 40      (    30, -210  ), (   110, -170  )  3200      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.560 x 0.200   ( 0.070, -1.050), ( 0.630, -0.850)  0.112     
+lambda:    56.00 x 20.00   (  7.00, -105.00), ( 63.00, -85.00)  1120.00   
+internal:    112 x 40      (    14, -210  ), (   126, -170  )  4480      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.560 x 0.200   ( 0.070, -1.050), ( 0.630, -0.850)  0.112     
+lambda:    56.00 x 20.00   (  7.00, -105.00), ( 63.00, -85.00)  1120.00   
+internal:    112 x 40      (    14, -210  ), (   126, -170  )  4480      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  200.000 x 200.000  (-100.000, -100.000), ( 100.000,  100.000)  40000.000 
+lambda:   20000.00 x 20000.00  (-10000.00, -10000.00), ( 10000.00,  10000.00)  400000000.00
+internal:  40000 x 40000   (-20000, -20000), ( 20000,  20000)  1600000000
+DRC style is now "drc(full)"
 Loading DRC CIF style.
-Total DRC errors found: 0
-== lod_sa030 sa=sb=0.30 um : DRC 
 No errors found.
+== lod_sa030 sa=sb=0.30 um : DRC completo, violaciones 0 
    Generating output for cell lod_sa030
 Extracting lod_sa030 into lod_sa030.ext:
 exttospice finished.
@@ -128,9 +158,39 @@ Root cell box:
 microns:   0.150 x 0.080   ( 3.000,  0.470), ( 3.150,  0.550)  0.012     
 lambda:    15.00 x 8.00    ( 300.00,  47.00), ( 315.00,  55.00)  120.00    
 internal:     30 x 16      (   600,  94   ), (   630,  110  )  480       
-Total DRC errors found: 0
-== lod_sa300 sa=sb=3.0 um : DRC 
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.700 x 0.500   ( 0.000, -1.200), ( 0.700, -0.700)  0.350     
+lambda:    70.00 x 50.00   (  0.00, -120.00), ( 70.00, -70.00)  3500.00   
+internal:    140 x 100     (     0, -240  ), (   140, -140  )  14000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.400 x 0.200   ( 0.150, -1.050), ( 0.550, -0.850)  0.080     
+lambda:    40.00 x 20.00   ( 15.00, -105.00), ( 55.00, -85.00)  800.00    
+internal:     80 x 40      (    30, -210  ), (   110, -170  )  3200      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.560 x 0.200   ( 0.070, -1.050), ( 0.630, -0.850)  0.112     
+lambda:    56.00 x 20.00   (  7.00, -105.00), ( 63.00, -85.00)  1120.00   
+internal:    112 x 40      (    14, -210  ), (   126, -170  )  4480      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.560 x 0.200   ( 0.070, -1.050), ( 0.630, -0.850)  0.112     
+lambda:    56.00 x 20.00   (  7.00, -105.00), ( 63.00, -85.00)  1120.00   
+internal:    112 x 40      (    14, -210  ), (   126, -170  )  4480      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  200.000 x 200.000  (-100.000, -100.000), ( 100.000,  100.000)  40000.000 
+lambda:   20000.00 x 20000.00  (-10000.00, -10000.00), ( 10000.00,  10000.00)  400000000.00
+internal:  40000 x 40000   (-20000, -20000), ( 20000,  20000)  1600000000
+DRC style is now "drc(full)"
 No errors found.
+== lod_sa300 sa=sb=3.0 um : DRC completo, violaciones 0 
    Generating output for cell lod_sa300
 Extracting lod_sa300 into lod_sa300.ext:
 exttospice finished.

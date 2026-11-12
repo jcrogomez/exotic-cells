@@ -1,6 +1,6 @@
 * NGSPICE file created from lod_sa030.ext - technology: sky130A
 
-.subckt lod_sa030 S D G
-X0 D G S VSUBS sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.15
+.subckt lod_sa030 S D G B
+X0 D G S B sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.15
 .ends
 

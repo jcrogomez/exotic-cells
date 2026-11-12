@@ -1,0 +1,14 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * the two transistors of inv_1 at the geometry measured in its layout (sa = sb = 0.26 um) against the default. tt, 27 c.
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+DEV nfet vth 0.757798 0.789097 idsat 0.000334642 0.000317458
+DEV pfet vth 0.77562 0.68708 idsat 0.00014868 0.000171808
+ngspice-44.2 done

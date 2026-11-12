@@ -1,0 +1,15 @@
+cells: 437  annotated: 415  failed: {'no transistors': 10, 'ValueError': 11, 'other': 1}
+scnmos       n= 4167  shorter side: min 0.254 p10 0.260 median 0.680 p90 1.940 max 7.740  | longer side median 1.940 max 15.300  | both sides < 1.04: 19 %
+scpmoshvt    n= 4152  shorter side: min 0.253 p10 0.260 median 0.680 p90 1.970 max 6.580  | longer side median 2.015 max 13.300  | both sides < 1.04: 19 %
+FAIL sky130_fd_sc_hd__decap_12 ValueError('not enough values to unpack (expected 2, got 1)')
+FAIL sky130_fd_sc_hd__decap_3 ValueError('not enough values to unpack (expected 2, got 1)')
+FAIL sky130_fd_sc_hd__decap_4 ValueError('not enough values to unpack (expected 2, got 1)')
+FAIL sky130_fd_sc_hd__decap_6 ValueError('not enough values to unpack (expected 2, got 1)')
+FAIL sky130_fd_sc_hd__decap_8 ValueError('not enough values to unpack (expected 2, got 1)')
+FAIL sky130_fd_sc_hd__diode_2 ValueError('not enough values to unpack (expected 2, got 1)')
+FAIL sky130_fd_sc_hd__lpflow_decapkapwr_12 ValueError('not enough values to unpack (expected 2, got 1)')
+FAIL sky130_fd_sc_hd__lpflow_decapkapwr_3 ValueError('not enough values to unpack (expected 2, got 1)')
+FAIL sky130_fd_sc_hd__lpflow_decapkapwr_4 ValueError('not enough values to unpack (expected 2, got 1)')
+FAIL sky130_fd_sc_hd__lpflow_decapkapwr_6 ValueError('not enough values to unpack (expected 2, got 1)')
+FAIL sky130_fd_sc_hd__lpflow_decapkapwr_8 ValueError('not enough values to unpack (expected 2, got 1)')
+FAIL sky130_fd_sc_hd__macro_sparecell /private/tmp/claude-501/-Users-juancarlosromero-made-in-TaiJuan-projects-ZTASIC/80736208-507a-40b0-ba8d-aaa18a

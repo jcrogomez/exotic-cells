@@ -38,19 +38,34 @@ for line in text.splitlines():
         bad += not ok
         print(f"{'ok  ' if ok else 'FAIL'} twins      {line.split()[0]} ad={par['ad']} expected sa=sb={want} got sa={par['sa']} sb={par['sb']}")
 
-# a netlist instance that no layout device fits must stop the tool
+# Negative tests: a netlist that disagrees with its layout, or that the tool does not support, must stop it.
 import tempfile
-broken = open(os.path.join(here, "cases", "asym.spice")).read().replace("ad=0.42", "ad=0.99")
-with tempfile.NamedTemporaryFile("w", suffix=".spice", delete=False) as f:
-    f.write(broken)
 p = os.path.join(here, "cases", "asym")
-try:
-    annotate(p + ".mag", p + ".ext", f.name)
-    ok = False
-except SystemExit as e:
-    ok = "no layout device matches" in str(e)
-os.unlink(f.name)
-bad += not ok
-print(f"{'ok  ' if ok else 'FAIL'} mismatch   stops when the netlist and the layout disagree")
+original = open(p + ".spice").read()
+NEGATIVE = [
+    ("wrong area", original.replace("ad=0.42", "ad=0.99"), "no layout device matches"),
+    ("wrong body", original.replace(" VSUBS ", " WRONG_BODY "), "no layout device matches"),
+    ("wrong gate", original.replace(" a_60_n26# ", " other_gate "), "no layout device matches"),
+    ("wrong width", original.replace("w=0.42", "w=0.84"), "no layout device matches"),
+    ("wrong model", original.replace("nfet_01v8", "nfet_01v8_lvt"), "no layout device matches"),
+    ("multiplier m", original.replace("l=0.15", "l=0.15 m=2"), "merged or multi-finger"),
+    ("multiplier mult", original.replace("l=0.15", "l=0.15 mult=2"), "merged or multi-finger"),
+    ("fingers nf", original.replace("l=0.15", "l=0.15 nf=2"), "merged or multi-finger"),
+    ("no areas", original.replace("ad=0.42 pd=2.84 as=0.126 ps=1.44 ", ""), "no ad/pd/as/ps"),
+    ("extra device", original.replace(".ends", "X9 a b c VSUBS sky130_fd_pr__nfet_01v8 ad=1 pd=1 as=1 ps=1 w=1 l=1\n.ends"),
+     "no layout device matches"),
+]
+for name, text, expect in NEGATIVE:
+    assert text != original, name
+    with tempfile.NamedTemporaryFile("w", suffix=".spice", delete=False) as f:
+        f.write(text)
+    try:
+        annotate(p + ".mag", p + ".ext", f.name)
+        ok = False
+    except SystemExit as e:
+        ok = expect in str(e)
+    os.unlink(f.name)
+    bad += not ok
+    print(f"{'ok  ' if ok else 'FAIL'} rejects    {name}")
 print("failures:", bad)
 sys.exit(bool(bad))

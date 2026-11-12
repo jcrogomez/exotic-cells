@@ -1,0 +1,10 @@
+RING inv_1 extracted period_ps 397.681
+RING inv_1 annotated period_ps 377.464
+RING inv_2 extracted period_ps 366.283
+RING inv_2 annotated period_ps 354.468
+RING nand2_1 extracted period_ps 502.444
+RING nand2_1 annotated period_ps 489.827
+RING nor2_1 extracted period_ps 814.638
+RING nor2_1 annotated period_ps 781.383
+DEV nfet vth 0.757798 0.789097 idsat 0.000334642 0.000317458
+DEV pfet vth 0.77562 0.68708 idsat 0.00014868 0.000171808

@@ -12,7 +12,9 @@ from gen_stage import HEAD, chain, stage, N, Pm
 for vdd in (1.80, 1.81):
     L = [f"* exploratory twins, K = 4, VDD = {vdd}"] + HEAD + [".temp 27", f"Vdd vdd 0 {vdd}",
          f"Vpre pre 0 pulse(0 {vdd} 100n 1n 1n 1 2)", "Vmis vbm vb -17m"]
-    L += chain(4) + stage("a", "vb", "w=0.42 l=0.15") + stage("e", "vbm", "w=0.42 l=0.15") + stage("m", "vb", "w=0.42 l=0.15 m=16")
+    hv = Pm + "_hvt w=0.42 l=0.5"
+    L += chain(4) + stage("a", "vb", "w=0.42 l=0.15", hv) + stage("e", "vbm", "w=0.42 l=0.15", hv) + stage("m", "vb", "w=0.42 l=0.15 m=16", hv)
+    assert all("_hvt" in x for x in L if x.startswith("Xp")), "precharge must be the long high-threshold pfet"
     L += [".control", "tran 10n 200u"] + [f"meas tran t{t} when v(y{t})={vdd/2} rise=1" for t in "aem"]
     L += ["meas tran vbmin min v(vb)", "meas tran vbmax max v(vb)", "let vb0 = v(vb)[0]",
           f"echo EXPLORE {vdd} $&ta $&te $&tm $&vb0 $&vbmin $&vbmax", "quit", ".endc", ".end"]

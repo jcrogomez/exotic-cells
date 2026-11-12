@@ -1,0 +1,22 @@
+v_um;violations;rules
+0.120;2;Local interconnect width < 0.17um (li.1) | Core local interconnect width < 0.14um (li.c1)
+0.125;2;Local interconnect width < 0.17um (li.1) | Core local interconnect width < 0.14um (li.c1)
+0.130;2;Local interconnect width < 0.17um (li.1) | Core local interconnect width < 0.14um (li.c1)
+0.135;2;Local interconnect width < 0.17um (li.1) | Core local interconnect width < 0.14um (li.c1)
+0.140;1;Local interconnect width < 0.17um (li.1)
+0.145;1;Local interconnect width < 0.17um (li.1)
+0.150;1;Local interconnect width < 0.17um (li.1)
+0.155;1;Local interconnect width < 0.17um (li.1)
+0.160;1;Local interconnect width < 0.17um (li.1)
+0.165;1;Local interconnect width < 0.17um (li.1)
+0.170;0;
+0.175;0;
+0.180;0;
+0.185;0;
+0.190;0;
+0.195;0;
+0.200;0;
+0.205;0;
+0.210;0;
+0.215;0;
+0.220;0;

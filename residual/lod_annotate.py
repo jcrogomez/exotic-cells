@@ -12,8 +12,8 @@ from, measures the diffusion on each side of every gate, and writes the values o
 Scope (v0): flat cells, rectangular gates, Manhattan diffusion. Not handled: sd, bent gates, hierarchy
 (flatten in Magic first). Standard library only; no layout package needed.
 
-Each netlist instance is tied to one layout device through everything the netlist shows: model, terminals,
-width, length and the source/drain area and perimeter Magic recorded for that device. If no layout device
+Each netlist instance is tied to one layout device through everything the netlist shows: model, gate, source,
+drain and body nodes, width, length and the source/drain area and perimeter Magic recorded for that device. If no layout device
 fits, the tool stops. Instances that are identical in every netlist parameter are interchangeable, so their
 order does not change the circuit.
 """
@@ -39,7 +39,7 @@ def read_mag(path):
         elif t[0] == "rect" and layer not in (None, "labels", "end"):
             rects[layer].append(tuple(int(v) for v in t[1:5]))
         elif t[0] == "use":
-            sys.exit(f"{path}: hierarchical cell; flatten it in Magic first")
+            raise SystemExit(f"{path}: hierarchical cell; flatten it in Magic first")
     return rects, unit
 
 
@@ -109,7 +109,7 @@ def measure(rects, unit):
                 return False
             along_x, along_y = touches("x"), touches("y")
             if along_x == along_y:
-                sys.exit(f"gate at {x0},{y0}: cannot tell the channel direction")
+                raise SystemExit(f"gate at {x0},{y0}: cannot tell the channel direction")
             if along_x:
                 act = [(r[0], r[2], r[1], r[3]) for r in diff + gates]
                 e0, e1, lo, hi = x0, x1, y0, y1
@@ -120,7 +120,8 @@ def measure(rects, unit):
             sa = effective(reach(act, e0, -1, lo, hi), half_l) * unit
             sb = effective(reach(act, e1, +1, lo, hi), half_l) * unit
             found[(round(x0 * unit, 4), round(y0 * unit, 4))] = dict(
-                sa=sa, sb=sb, l=(e1 - e0) * unit, w=(hi - lo) * unit, type=layer)
+                sa=sa, sb=sb, l=(e1 - e0) * unit, w=(hi - lo) * unit, type=layer,
+                x0=x0 * unit, y0=y0 * unit, x1=x1 * unit, y1=y1 * unit)
     return found
 
 
@@ -137,7 +138,9 @@ def read_ext_devices(path):
             for node, _, attr in q[1:3]:
                 area, perim = (int(v) for v in attr.split(","))
                 term.append((node, area * unit * unit, perim * unit))
-            devs.append(dict(model=t[2], x=int(t[3]) * unit, y=int(t[4]) * unit, gate=q[0][0], term=sorted(term)))
+            bulk = re.search(r'"([^"]*)"', line).group(1)  # first quoted name on the line is the body
+            devs.append(dict(model=t[2], x=int(t[3]) * unit, y=int(t[4]) * unit, bulk=bulk, gate=q[0][0],
+                             term=sorted(term)))
     return devs
 
 
@@ -145,8 +148,9 @@ def close(a, b):
     return abs(a - b) <= 0.01 * abs(b) + 1e-4
 
 
-def fits(dev, model, gate, term, w, l):
-    return (dev["model"] == model and dev["gate"] == gate and close(dev["w"], w) and close(dev["l"], l)
+def fits(dev, model, gate, bulk, term, w, l):
+    return (dev["model"] == model and dev["gate"] == gate and dev["bulk"] == bulk
+            and close(dev["w"], w) and close(dev["l"], l)
             and all(n1 == n2 and close(a1, a2) and close(p1, p2)
                     for (n1, a1, p1), (n2, a2, p2) in zip(dev["term"], term)))
 
@@ -156,10 +160,10 @@ def annotate(mag, ext, spice):
     geo = measure(rects, unit)
     devs = read_ext_devices(ext)
     for d in devs:
-        key = (round(d["x"], 4), round(d["y"], 4))
-        if key not in geo:
-            sys.exit(f"device at {key} um in {ext} has no gate in {mag}")
-        d.update(geo[key])
+        hit = [g for g in geo.values() if g["x0"] - 1e-4 <= d["x"] <= g["x1"] + 1e-4 and g["y0"] - 1e-4 <= d["y"] <= g["y1"] + 1e-4]
+        if len(hit) != 1:
+            raise SystemExit(f"device at ({d['x']:.3f}, {d['y']:.3f}) um in {ext}: {len(hit)} gates found in {mag}")
+        d.update(hit[0])
     out, used, report = [], set(), []
     for line in open(spice):
         t = line.split()
@@ -168,11 +172,13 @@ def annotate(mag, ext, spice):
             try:
                 term = sorted([(t[1], par["ad"], par["pd"]), (t[3], par["as"], par["ps"])])
             except KeyError:
-                sys.exit(f"{t[0]}: the netlist has no ad/pd/as/ps; extract with 'ext2spice lvs'")
+                raise SystemExit(f"{t[0]}: the netlist has no ad/pd/as/ps; extract with 'ext2spice lvs'")
+            if par.get("m", 1) != 1 or par.get("mult", 1) != 1 or par.get("nf", 1) != 1:
+                raise SystemExit(f"{t[0]}: merged or multi-finger instance (m, mult or nf); extract one instance per finger")
             cands = [i for i, d in enumerate(devs) if i not in used
-                     and fits(d, t[5], t[2], term, par["w"], par["l"])]
+                     and fits(d, t[5], t[2], t[4], term, par["w"], par["l"])]
             if not cands:
-                sys.exit(f"no layout device matches: {line.strip()}")
+                raise SystemExit(f"no layout device matches: {line.strip()}")
             # Any remaining candidates equal this instance in every netlist parameter: they are interchangeable.
             d = devs[cands[0]]
             used.add(cands[0])
@@ -180,7 +186,7 @@ def annotate(mag, ext, spice):
             report.append((t[0], d["type"], d["w"], d["l"], d["sa"], d["sb"]))
         out.append(line)
     if len(used) != len(devs):
-        sys.exit(f"{len(devs) - len(used)} layout device(s) have no instance in {spice}")
+        raise SystemExit(f"{len(devs) - len(used)} layout device(s) have no instance in {spice}")
     return "".join(out), report
 
 
