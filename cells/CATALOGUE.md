@@ -32,7 +32,7 @@ No family has graduated to a cell. Graduation requires the functional contract d
 | XC-16 | Placement environment | Neighbours, orientation, density | P | D | L | M | Needs no macro |
 | XC-17 | Electrode by design | Parasitic capacitance | P | D | L | M | Low priority |
 | XC-18 | Field-oxide transistor | Parasitic channel under isolation | F | H | M | M | Threshold unknown |
-| XC-19 | Single trap (RTN) | Capture and emission at one defect | F+P | D/H | H | H | Readout budget simulated against a pre-registration; needs a gate bias; no silicon |
+| XC-19 | Single trap (RTN) | Capture and emission at one defect | F+P | D/H | H | H | Readout stage and bias simulated against two pre-registrations; twin and precharge redesigned; no layout, no silicon |
 | XC-20 | Abutted p+/n+ junction | Band-to-band tunnelling | P | D/H | M | H | Legal geometries drawn; no readout |
 | XC-21 | Avalanche junction as emitter | Reverse breakdown | F | H/S | M | M | Waits for high voltage |
 | XC-22 | SPAD | Geiger-mode avalanche | F | H/S | M | M | Waits for high voltage |

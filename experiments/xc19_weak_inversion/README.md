@@ -79,3 +79,102 @@ runs, not a simulation of the combined circuit.
 - Simulate the complete stage: precharge, threshold inverter, counter resolution against the clock.
 - Decide where the 0.25 to 0.45 V bias comes from in a digital flow, and its noise.
 - Shot noise in a transient simulation, to close P7.
+
+---
+
+# Part 2: the complete stage and its bias
+
+Run on 2026-11-11, after the pre-registration
+[`XC-19_2026-11-11_etapa_completa_y_polarizacion.md`](../../cells/preregistros/XC-19_2026-11-11_etapa_completa_y_polarizacion.md)
+was committed. Model only. Still not a demonstration of a trap.
+
+**An error of ours, caught and corrected.** The first run wrote the 16 parallel devices of the bias chain as `mult=16`, which
+ngspice ignores for these subcircuits (the multiplier is `m=`). The run was therefore a chain ending in a single device. It
+showed up as a "16-device" twin timing exactly like a single one. That run is kept in `run1_mult_ignored/`; every number below
+comes from the rerun with `m=16`.
+
+## Bias: a chain of diode-connected transistors
+
+K `nfet_01v8` in series from VDD to ground; the bottom gate-drain node is the bias. V1: all 1/1 um. V2: the bottom one is 16
+devices equal to the DUT, so the DUT carries 1/16 of the chain current. Files: `gen_bias.py`, `bias.txt`, `bias_table.txt`.
+
+| | V1 (tt, 27 C) | V2 (tt, 27 C) |
+|---|---|---|
+| K = 3 | 0.499 V, 11 nA | 0.472 V, 5.5 nA |
+| K = 4 | 0.335 V, 134 pA | 0.317 V, 81 pA |
+| K = 5 | 0.237 V, 9.2 pA | 0.220 V, 5.7 pA |
+| K = 6 | 0.174 V, 1.6 pA | 0.157 V, 1.0 pA |
+
+Over five corners and 27/85 C, taking 3.2 pA to 40 nA as the usable range of DUT current:
+
+- **V2 with K = 4 is usable in all ten conditions** (7.5 pA to 4.1 nA). K = 3 covers eight of ten.
+- V1 has no single K that works everywhere: its bias voltage hardly moves between corners (0.329 to 0.340 V at K = 4) while the
+  DUT threshold does, so the DUT current spreads by a factor of 2300 at 27 C.
+
+Bias-node noise with 1 pF, integrated from 1 Hz to 1 MHz: 90 uV rms (K = 3), 116 uV (K = 4). Sensitivity to the supply:
+dVb/dVDD = 0.25 (K = 3), 0.20 (K = 4), 0.15 (K = 5).
+
+## Complete stage
+
+Precharge pfet, DUT, library `inv_1`; time from release to the inverter switching. V2 bias. Files: `gen_stage.py`, `stage.txt`.
+
+| | K = 3 | K = 4 |
+|---|---|---|
+| Discharge time | 0.36 us | 24.5 us |
+| Change for a 0.305 mV step | 0.80 % | 0.86 % |
+| Effective node capacitance | 1.9 fF | 2.0 fF |
+| Change per mV of supply, stage alone | 0.52 % | 0.53 % |
+| Ticks of an assumed 50 MHz clock `[?]` | 18 | 1225 |
+
+K = 4 is the working point: one clock tick is 0.08 % of the time. K = 3 is too fast to count directly.
+
+## Against the predictions
+
+| # | Predicted | Obtained | |
+|---|---|---|---|
+| B1 | V1 bias 0.25 to 0.36 V at K = 5; 0.21 to 0.30 V at K = 6 | 0.237 V; 0.174 V | **failed**: the body effect of the upper devices is stronger than assumed |
+| B2 | dVb/dVDD 0.10 to 0.25 at K = 5 | 0.148 | held |
+| B3 | bias noise 50 to 150 uV rms | 90 to 116 uV | held |
+| B4 | V1: DUT current spreads more than 30 times | 2300 times at 27 C alone | held, and far worse |
+| S1 | node capacitance 1 to 5 fF | 1.9 to 2.0 fF | held |
+| S2 | 0.75 to 0.90 % per step | 0.80 to 0.86 % | held |
+| S3 | precharge leakage under 10 % of DUT current across the window | 5.3 pA: 7 % at K = 4, but 41 % at the low end of the window | **failed** at the low end |
+| S4 | 0.4 to 0.8 % per mV of supply, stage alone | 0.53 % | held |
+| S5 | DUT/twin ratio under 0.03 % per mV of supply | 0.075 % with the 4.2/1.5 um twin | **failed** |
+
+## Abandonment criteria
+
+| Criterion | Verdict |
+|---|---|
+| 1. Some K keeps the bias in 0.25 to 0.45 V in five corners | Passes as written (K = 4, both variants). But it was written on the wrong variable: at a fixed voltage the current still spreads 2300 times. On current, V2 passes and V1 does not |
+| 2. Bias noise above 6 mV rms | Not reached: 0.12 mV |
+| 3. At 85 C precharge leakage above the DUT current across the window | Not reached: 232 pA against 573 pA (K = 4) |
+| 4. DUT/twin ratio moves more than 0.4 % for 10 mV of supply | **Reached with the pre-registered twin: 0.75 %.** The 4.2/1.5 um twin does not rescue the stage |
+| 5. Inverter switches more than once | Not testable here: a noiseless simulation switches once by construction. Open |
+
+## What changed in the design
+
+Exploratory runs made after seeing the results (`gen_explore.py`, `explore.txt`). They were not pre-registered and count as
+leads, not as tests.
+
+1. **The twin must have the DUT's own geometry.** The long twin fails because the short DUT has drain-induced barrier lowering
+   and the long one does not. With an identical device whose gate is 17 mV off (one sigma of mismatch) the ratio moves 0.19 %
+   for 10 mV of supply; with 16 identical devices in parallel, 0.15 %. Both are under the 0.4 % limit. The price: an identical
+   twin has its own traps, so a step identifies the pair, not the device. Three devices compared pairwise would tell which
+   one moved. The large device stays useful as a separate control channel, not as the timing reference.
+2. **The precharge device should be a long high-threshold pfet.** Minimum `pfet_01v8` leaks 5.3 pA at 27 C and 232 pA at 85 C;
+   `pfet_01v8_hvt` at L = 0.5 um leaks 0.010 pA and 0.015 pA.
+3. **Kickback on the bias node, not anticipated.** Each discharge pulls the bias down by 2.1 to 2.5 mV through the gate-drain
+   capacitance, seven to eight steps' worth, and the node takes tens of microseconds to recover. It is deterministic and
+   repeats every cycle, but any stage that fires disturbs the others. A filter capacitor of 1 pF is not enough; the size
+   needed, or an isolation stage, is the next thing to simulate.
+4. **Supply noise is the dominant external sensitivity.** One millivolt of supply moves a single stage by 0.6 of a step. With an
+   identical twin about 20 mV are tolerable for half a step.
+
+## Open
+
+- Kickback: capacitor size or isolation, and its effect on bias noise bandwidth.
+- Shot noise and inverter chatter in a transient-noise simulation (P7 of part 1 and criterion 5).
+- Mismatch between DUT and twin as a Monte Carlo, not a single 17 mV case.
+- Layout: none of this includes wiring or extracted parasitics. A 2 fF node will not stay 2 fF.
+- The clock actually available on the board.

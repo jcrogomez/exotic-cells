@@ -1,0 +1,22 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * xc-19 bias noise, k = 3
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Drain conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Drain conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Drain conductance reset to 1.0e3 mho.
+ Reference value :  1.00000e+00
+No. of Data Rows : 121
+
+No. of Data Rows : 1
+NOISE 3 total_Vrms 8.95464E-05
+NOISE 3 spectrum_V_per_rtHz_at_1Hz_1kHz_100kHz 9.36157E-06 5.23814E-07 1.19171E-07
+ngspice-44.2 done
