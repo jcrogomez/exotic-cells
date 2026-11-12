@@ -1,0 +1,6 @@
+draws: 39
+discharge time of one stage: min 0.7 us, median 26.0 us, max 147.6 us
+DUT/twin time ratio: min 0.02, max 15.45
+one stage, change for +10 mV of supply: median -5.10 %
+DUT/twin ratio, change for +10 mV: median |.| 0.047 %, max |.| 0.329 %
+pairs above the 0.4 % limit: 0 of 39 (0 %)

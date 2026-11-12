@@ -1,0 +1,4 @@
+conversions: 48
+mean 29.029 us, standard deviation 159.2 ns, relative 0.548 %
+uncertainty of that spread from the sample size: about 10 % of its value
+first conversion 29.150 us, last 28.840 us

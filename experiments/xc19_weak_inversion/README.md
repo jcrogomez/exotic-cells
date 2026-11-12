@@ -158,8 +158,10 @@ Exploratory runs made after seeing the results (`gen_explore.py`, `explore.txt`)
 leads, not as tests.
 
 1. **The twin must have the DUT's own geometry.** The long twin fails because the short DUT has drain-induced barrier lowering
-   and the long one does not. With an identical device whose gate is 17 mV off (one sigma of mismatch) the ratio moves 0.19 %
-   for 10 mV of supply; with 16 identical devices in parallel, 0.15 %. Both are under the 0.4 % limit. The price: an identical
+   and the long one does not. With an identical device whose gate is 17 mV off (one sigma of mismatch) the ratio moves 0.02 %
+   for 10 mV of supply; with 16 identical devices in parallel, 0.09 %. Both are under the 0.4 % limit. *(Corrected on
+   2026-11-11: the first version of this run said 0.19 % and 0.15 %. Its generator announced the long high-threshold precharge
+   but still instantiated the minimum pfet; an external review found it. The old decks are in `run2_explore_min_pfet/`.)* The price: an identical
    twin has its own traps, so a step identifies the pair, not the device. Three devices compared pairwise would tell which
    one moved. The large device stays useful as a separate control channel, not as the timing reference.
 2. **The precharge device should be a long high-threshold pfet.** Minimum `pfet_01v8` leaks 5.3 pA at 27 C and 232 pA at 85 C;
@@ -169,7 +171,8 @@ leads, not as tests.
    repeats every cycle, but any stage that fires disturbs the others. A filter capacitor of 1 pF is not enough; the size
    needed, or an isolation stage, is the next thing to simulate.
 4. **Supply noise is the dominant external sensitivity.** One millivolt of supply moves a single stage by 0.6 of a step. With an
-   identical twin about 20 mV are tolerable for half a step.
+   identical twin and the long high-threshold precharge the ratio moves 0.02 % for 10 mV in this single case; the Monte Carlo
+   of part 3 gives the spread.
 
 ## Open
 
@@ -178,3 +181,83 @@ leads, not as tests.
 - Mismatch between DUT and twin as a Monte Carlo, not a single 17 mV case.
 - Layout: none of this includes wiring or extracted parasitics. A 2 fF node will not stay 2 fF.
 - The clock actually available on the board.
+
+---
+
+# Part 3: night plan, blocks N3, N4 and N5
+
+Run on 2026-11-11 and 12 against [`PLAN_2026-11-11_noche.md`](../../cells/preregistros/PLAN_2026-11-11_noche.md). Model only.
+Decks from `gen_night.py`; raw lines in `night.txt`. All stages here use the long high-threshold precharge.
+
+## N3: kickback on the bias node
+
+| Filter capacitor | Dip of the bias when one stage fires |
+|---|---|
+| 1 pF | 0.076 mV |
+| 10 pF | 0.016 mV |
+| 30 pF | 0.006 mV |
+
+**Prediction: 0.15 to 0.33 mV at 10 pF and 0.05 to 0.11 mV at 30 pF. Failed, in the favourable direction.** The 2.1 to 2.5 mV of
+part 2 did not come from the device under test. It came from the large twins sharing the node (the 4.2/1.5 um device and the
+16-device array), whose gate-drain capacitance is many times larger. One small stage disturbs the bias by a quarter of a step
+with 1 pF. 10 pF is enough; 30 pF is not needed.
+
+Cascode over the device under test and over the long twin, gate on the next tap of the chain:
+
+| | Predicted | Obtained | |
+|---|---|---|---|
+| Step for 0.305 mV | 0.75 to 0.90 % | 0.80 % | held |
+| Kickback with 1 pF, three stages including the long twin | under 0.5 mV | 0.62 mV | failed narrowly |
+| Ratio to the long twin for 10 mV of supply | under 0.4 % | 0.57 % | **failed** |
+
+The cascode holds the drain near 0.38 V and the stage becomes 2.9 times slower (68.7 us). It does not rescue the long twin.
+The long twin is out for good; the cascode stays as a candidate only for what it does to the trap itself (constant drain
+voltage during the measurement), which no circuit simulation can tell.
+
+## N4: the LOD pair read by the stage
+
+The two audit transistors (0.30 and 3.0 um of diffusion), annotated, each as the discharging device of a stage.
+
+| | Discharge time |
+|---|---|
+| 0.30 um, annotated | 48.2 us |
+| 3.0 um, annotated | 29.4 us |
+| 0.30 um, as extracted | 25.2 us |
+| 3.0 um, as extracted | 36.3 us |
+
+**Prediction: time ratio 2.4 to 2.9. Obtained 1.64. Failed, and outside the 2.0 to 3.3 band that triggers a correction.**
+
+What was wrong was not the threshold arithmetic. Without annotation the two already differ, by 0.69, because the long diffusion
+is also a larger drain junction and so a larger capacitance on the node. Dividing that out, the current ratio is 2.36, against
+2.34 predicted from threshold alone; the extra factor of 1.15 we had added for mobility does not appear in weak inversion.
+
+Consequences for using XC-12 on this reader:
+
+- Draw the long diffusion on the source side, or equalise the node capacitance explicitly. With the long side on the source
+  only, the model gives half the threshold difference, 15.5 mV, and a current ratio of 1.53 with the same drain junction
+  (`explore_lod_source_side.sp`; the two numbers were written in the deck before running it).
+- The pair checks that reader and extractor agree with each other. It is not an independent calibration of the reader: that
+  needs known perturbations that do not depend on the phenomenon (a gate step, a switched reference capacitor, a test current).
+
+## N5: mismatch as a Monte Carlo
+
+Device against an identical twin, every transistor of bias, stages and inverters drawn from the PDK mismatch model, the same
+draw simulated at VDD and at VDD + 10 mV (`n5_mc.sp`, read by `n5_read.py`, output in `n5.txt`). Four in series, long
+high-threshold precharge. **39 draws, not the 100 planned**: each takes about a minute and the run was stopped to close the
+night. The log carries an error in its summary line (it referenced measurements of the previous plot); the measurements
+themselves are intact and are what the reader uses.
+
+| | Result over 39 draws |
+|---|---|
+| Ratio device/twin for 10 mV of supply | median 0.047 %, largest 0.329 % |
+| Pairs above the 0.4 % limit | 0 of 39 (0 %) |
+| One stage alone for 10 mV of supply | median -5.10 % |
+| Discharge time of one stage | 0.7 to 147.6 us, median 26.0 us |
+| Time ratio device/twin | 0.02 to 15.45 |
+
+Prediction: 5 to 25 % of the pairs above the limit. **failed, in the favourable direction**.
+
+**The finding that matters is the last two rows.** Nominally identical stages differ in discharge time by two orders of
+magnitude, and a device and its twin by an order of magnitude either way. The reader therefore cannot assume a ratio near one:
+every device needs its own baseline, the counter must span that range, and the bias should be adjustable per channel.
+

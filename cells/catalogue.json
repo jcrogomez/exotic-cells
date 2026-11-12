@@ -1,0 +1,362 @@
+[
+ {
+  "id": "XC-01",
+  "family": "Metal-1 constriction",
+  "mechanism": "Electromigration",
+  "engine": "F",
+  "vehicle": "D",
+  "usefulness": "H",
+  "information": "H",
+  "state": "Formation path verified in the flow; transformation not demonstrated"
+ },
+ {
+  "id": "XC-02",
+  "family": "Local-interconnect constriction",
+  "mechanism": "Joule heating",
+  "engine": "F+P",
+  "vehicle": "D",
+  "usefulness": "H",
+  "information": "H",
+  "state": "Geometry drawn, not integrated"
+ },
+ {
+  "id": "XC-03",
+  "family": "Contact or via as the transformation site",
+  "mechanism": "Interface failure",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "H",
+  "state": "Observation only"
+ },
+ {
+  "id": "XC-04",
+  "family": "Tunnelling nanogap",
+  "mechanism": "Direct tunnelling across about 1 nm",
+  "engine": "P",
+  "vehicle": "H/S",
+  "usefulness": "M",
+  "information": "H",
+  "state": "Outside the range of a digital readout"
+ },
+ {
+  "id": "XC-05",
+  "family": "Atomic contact",
+  "mechanism": "Transport through a few channels",
+  "engine": "P",
+  "vehicle": "S",
+  "usefulness": "L",
+  "information": "M",
+  "state": "On file: needs a precursor that can cycle"
+ },
+ {
+  "id": "XC-06",
+  "family": "Coulomb island",
+  "mechanism": "Coulomb blockade",
+  "engine": "P",
+  "vehicle": "S",
+  "usefulness": "L",
+  "information": "M",
+  "state": "On file: island cannot be drawn at this node"
+ },
+ {
+  "id": "XC-07",
+  "family": "Oxide breakdown: antifuse, filament",
+  "mechanism": "Dielectric breakdown",
+  "engine": "F+P",
+  "vehicle": "H",
+  "usefulness": "H",
+  "information": "H",
+  "state": "Waits for more than 1.8 V"
+ },
+ {
+  "id": "XC-08",
+  "family": "Silicon filament emitter",
+  "mechanism": "Emission from the XC-07 filament",
+  "engine": "F",
+  "vehicle": "H/S",
+  "usefulness": "M",
+  "information": "H",
+  "state": "Depends on XC-07"
+ },
+ {
+  "id": "XC-09",
+  "family": "Charge-trap transistor",
+  "mechanism": "Hot-carrier trapping",
+  "engine": "F",
+  "vehicle": "H",
+  "usefulness": "H",
+  "information": "M",
+  "state": "No SKY130 data"
+ },
+ {
+  "id": "XC-10",
+  "family": "Ageing at 1.8 V",
+  "mechanism": "BTI and HCI",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "M",
+  "state": "No design"
+ },
+ {
+  "id": "XC-11",
+  "family": "Single-poly floating gate",
+  "mechanism": "Injection and tunnelling",
+  "engine": "F",
+  "vehicle": "H",
+  "usefulness": "H",
+  "information": "L",
+  "state": "Waits for a charge pump"
+ },
+ {
+  "id": "XC-12",
+  "family": "Diffusion-length stress (LOD)",
+  "mechanism": "STI mechanical stress",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "H",
+  "state": "Extraction gap confirmed; annotator applied to the whole standard-cell library; model prediction only"
+ },
+ {
+  "id": "XC-13",
+  "family": "Well proximity (WPE)",
+  "mechanism": "Extra doping near the well edge",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "H",
+  "state": "Not in the model card"
+ },
+ {
+  "id": "XC-14",
+  "family": "Antenna as a fab-time write",
+  "mechanism": "Plasma charge on a floating gate",
+  "engine": "F+P",
+  "vehicle": "D",
+  "usefulness": "H",
+  "information": "H",
+  "state": "Foundry rules to be read"
+ },
+ {
+  "id": "XC-15",
+  "family": "Antenna factorial",
+  "mechanism": "Plasma damage to gate oxide",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "H",
+  "state": "Experiment defined"
+ },
+ {
+  "id": "XC-16",
+  "family": "Placement environment",
+  "mechanism": "Neighbours, orientation, density",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "L",
+  "information": "M",
+  "state": "Real diffusion lengths of every library cell now known (`experiments/stdcell_lod`)"
+ },
+ {
+  "id": "XC-17",
+  "family": "Electrode by design",
+  "mechanism": "Parasitic capacitance",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "L",
+  "information": "M",
+  "state": "Low priority"
+ },
+ {
+  "id": "XC-18",
+  "family": "Field-oxide transistor",
+  "mechanism": "Parasitic channel under isolation",
+  "engine": "F",
+  "vehicle": "H",
+  "usefulness": "M",
+  "information": "M",
+  "state": "Threshold unknown"
+ },
+ {
+  "id": "XC-19",
+  "family": "Single trap (RTN)",
+  "mechanism": "Capture and emission at one defect",
+  "engine": "F+P",
+  "vehicle": "D/H",
+  "usefulness": "H",
+  "information": "H",
+  "state": "Reader simulated against four pre-registrations and drawn as a rule-clean channel; working point revised for shot noise; no trap demonstrated, no silicon"
+ },
+ {
+  "id": "XC-20",
+  "family": "Abutted p+/n+ junction",
+  "mechanism": "Band-to-band tunnelling",
+  "engine": "P",
+  "vehicle": "D/H",
+  "usefulness": "M",
+  "information": "H",
+  "state": "Legal geometries drawn; no readout"
+ },
+ {
+  "id": "XC-21",
+  "family": "Avalanche junction as emitter",
+  "mechanism": "Reverse breakdown",
+  "engine": "F",
+  "vehicle": "H/S",
+  "usefulness": "M",
+  "information": "M",
+  "state": "Waits for high voltage"
+ },
+ {
+  "id": "XC-22",
+  "family": "SPAD",
+  "mechanism": "Geiger-mode avalanche",
+  "engine": "F",
+  "vehicle": "H/S",
+  "usefulness": "M",
+  "information": "M",
+  "state": "Waits for high voltage"
+ },
+ {
+  "id": "XC-23",
+  "family": "Lateral multi-terminal junction",
+  "mechanism": "Minority-carrier diffusion",
+  "engine": "P",
+  "vehicle": "H",
+  "usefulness": "M",
+  "information": "H",
+  "state": "Stated only; also the control for XC-26"
+ },
+ {
+  "id": "XC-24",
+  "family": "Parasitic bipolar and PNPN",
+  "mechanism": "Thyristor feedback",
+  "engine": "F",
+  "vehicle": "H",
+  "usefulness": "M",
+  "information": "M",
+  "state": "Latch-up risk"
+ },
+ {
+  "id": "XC-25",
+  "family": "Well Hall plate",
+  "mechanism": "Hall effect",
+  "engine": "F",
+  "vehicle": "H",
+  "usefulness": "M",
+  "information": "L",
+  "state": "An instrument, not a cell"
+ },
+ {
+  "id": "XC-26",
+  "family": "On-chip optical link",
+  "mechanism": "Radiative recombination in a forward junction",
+  "engine": "P",
+  "vehicle": "D/H",
+  "usefulness": "M",
+  "information": "H",
+  "state": "Legal detector, modelled floor"
+ },
+ {
+  "id": "XC-27",
+  "family": "Metal hole arrays",
+  "mechanism": "Sub-wavelength apertures",
+  "engine": "P",
+  "vehicle": "S",
+  "usefulness": "M",
+  "information": "H",
+  "state": "Needs light on the die"
+ },
+ {
+  "id": "XC-28",
+  "family": "Waveguides in the dielectric",
+  "mechanism": "Guiding in the metal stack oxide",
+  "engine": "F",
+  "vehicle": "S",
+  "usefulness": "M",
+  "information": "M",
+  "state": "Needs die access"
+ },
+ {
+  "id": "XC-29",
+  "family": "Physical nanopores",
+  "mechanism": "to be written",
+  "engine": "P",
+  "vehicle": "S",
+  "usefulness": null,
+  "information": null,
+  "state": "Named only"
+ },
+ {
+  "id": "XC-30",
+  "family": "Mesoscopic coherence",
+  "mechanism": "to be written",
+  "engine": "P",
+  "vehicle": "S",
+  "usefulness": null,
+  "information": null,
+  "state": "Named only"
+ },
+ {
+  "id": "XC-31",
+  "family": "Heat as a channel",
+  "mechanism": "Self-heating and thermal diffusion",
+  "engine": "F+P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "M",
+  "state": "Unverified estimate"
+ },
+ {
+  "id": "XC-32",
+  "family": "Supply-network coupling",
+  "mechanism": "Supply droop",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "L",
+  "information": "M",
+  "state": "The boring explanation every coupling experiment must rule out"
+ },
+ {
+  "id": "XC-33",
+  "family": "Metastability and entropy",
+  "mechanism": "Bistable resolution",
+  "engine": "F",
+  "vehicle": "D",
+  "usefulness": "H",
+  "information": "L",
+  "state": "The conventional baseline XC-19 must beat"
+ },
+ {
+  "id": "XC-34",
+  "family": "Cells outside their intended use",
+  "mechanism": "Delay cells as vernier, contention",
+  "engine": "F",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "L",
+  "state": "Tooling"
+ },
+ {
+  "id": "XC-35",
+  "family": "Die identity",
+  "mechanism": "Mismatch",
+  "engine": "F",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "L",
+  "state": "Idea"
+ },
+ {
+  "id": "XC-36",
+  "family": "Consumer architectures",
+  "mechanism": "Coupled oscillators, race logic and others",
+  "engine": "F",
+  "vehicle": "D",
+  "usefulness": null,
+  "information": null,
+  "state": "Not cells: they use cells"
+ }
+]

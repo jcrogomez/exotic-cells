@@ -1,0 +1,12 @@
+1
+FEOLON sa_bare_0p245 items=1       1 <category>'poly.7' 
+FEOLON sa_bare_0p250 items=0 
+FEOLON sa_contacted_0p270 items=1       1 <category>'licon.11' 
+FEOLON sa_contacted_0p275 items=0 
+FEOLON pn_space_0p125 items=4       1 <category>'difftap.3'       2 <category>'difftap.7'       1 <category>'n/psdm.7' 
+FEOLON pn_space_0p000 items=0 
+FEOLON xc19_read items=0 
+FEOLON xc19_bias items=0 
+FEOLON xc19_channel items=0 
+FEOLON lod_sa030 items=0 
+FEOLON lod_sa300 items=0 

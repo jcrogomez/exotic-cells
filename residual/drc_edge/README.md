@@ -19,18 +19,22 @@ A probe is a few lines of Tcl: a range and a `draw {v}` procedure. See `probes/`
 
 Run on 2026-11-11 against [`PLAN_2026-11-11_noche.md`](../../cells/preregistros/PLAN_2026-11-11_noche.md).
 
-| Probe | Legal region (Magic, full rules) | Rule at the edge | KLayout deck |
+| Probe | Legal region (Magic, full rules) | Rule at the edge | KLayout manufacturing deck |
 |---|---|---|---|
 | Metal-1 width (control) | from 0.140 um | m1.1 | agrees |
 | Local-interconnect width (control) | from 0.170 um | li.1 | agrees |
 | p+ to n+ inside an n-well | exactly 0, then from 0.270 um | nsd.5a/b and difftap.3 in between | agrees |
-| Diffusion beside a gate, no contact | from 0.250 um | poly.7 | **reports nothing, down to 0.050 um** |
-| Diffusion beside a gate, centred contact | from 0.275 um | licon.11, then licon.5a and poly.7 | **reports nothing, down to 0.150 um** |
+| Diffusion beside a gate, no contact | from 0.250 um | poly.7 | **manufacturing deck reports nothing, down to 0.050 um** |
+| Diffusion beside a gate, centred contact | from 0.275 um | licon.11, then licon.5a and poly.7 | **manufacturing deck reports nothing, down to 0.150 um** |
 
 - Both controls recover the known rule values. All four numeric predictions held.
-- **The prediction that the two tools agree failed.** The KLayout deck shipped with the PDK (`sky130A_mr.drc`) contains no check
-  named poly.7 or licon.11 and passes transistors whose diffusion extends 0.05 um beyond the gate. Magic catches them. We have
-  not checked which decks the Tiny Tapeout precheck runs.
+- **The prediction that the two tools agree failed, and the reason is in how the decks ship.** The PDK carries two KLayout
+  decks. The manufacturing-rules deck (`sky130A_mr.drc`), the one in the table, has no rule named poly.7 or licon.11 and passes
+  transistors whose diffusion extends 0.05 um beyond the gate. The full deck (`sky130A.lydrc`) has both rules, but it ships
+  with its front-end section switched off (`FEOL = false` in the file), so run as shipped it also reports nothing, not even
+  the diffusion spacing violation. With that switch on it agrees with Magic at both edges (`klayout_full_deck.txt`).
+  Our first reading, "the KLayout deck lacks the rules", was half right; a control with a known answer on the second deck
+  showed the rest. We have not checked which decks and switches the Tiny Tapeout precheck uses.
 
 ## What the control caught in our own work
 
@@ -41,4 +45,6 @@ earlier "DRC clean" cells the same way showed that the two transistors of the LO
 
 ## Limits
 
-One free dimension at a time. A probe that is clean says nothing about rules that neither deck implements.
+One free dimension at a time. A probe that is clean says nothing about rules that neither deck implements. The tool does not
+yet produce the edge report of a finished cell (which rules it sits one grid step from); that gate in
+[`docs/PIPELINE.md`](../../docs/PIPELINE.md) is not automated.

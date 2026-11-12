@@ -25,14 +25,14 @@ No family has graduated to a cell. Graduation requires the functional contract d
 | XC-09 | Charge-trap transistor | Hot-carrier trapping | F | H | H | M | No SKY130 data |
 | XC-10 | Ageing at 1.8 V | BTI and HCI | P | D | M | M | No design |
 | XC-11 | Single-poly floating gate | Injection and tunnelling | F | H | H | L | Waits for a charge pump |
-| XC-12 | Diffusion-length stress (LOD) | STI mechanical stress | P | D | M | H | Extraction gap confirmed; annotator written; model prediction only |
+| XC-12 | Diffusion-length stress (LOD) | STI mechanical stress | P | D | M | H | Extraction gap confirmed; annotator applied to the whole standard-cell library; model prediction only |
 | XC-13 | Well proximity (WPE) | Extra doping near the well edge | P | D | M | H | Not in the model card |
 | XC-14 | Antenna as a fab-time write | Plasma charge on a floating gate | F+P | D | H | H | Foundry rules to be read |
 | XC-15 | Antenna factorial | Plasma damage to gate oxide | P | D | M | H | Experiment defined |
-| XC-16 | Placement environment | Neighbours, orientation, density | P | D | L | M | Needs no macro |
+| XC-16 | Placement environment | Neighbours, orientation, density | P | D | L | M | Real diffusion lengths of every library cell now known (`experiments/stdcell_lod`) |
 | XC-17 | Electrode by design | Parasitic capacitance | P | D | L | M | Low priority |
 | XC-18 | Field-oxide transistor | Parasitic channel under isolation | F | H | M | M | Threshold unknown |
-| XC-19 | Single trap (RTN) | Capture and emission at one defect | F+P | D/H | H | H | Readout stage and bias simulated against two pre-registrations; twin and precharge redesigned; no layout, no silicon |
+| XC-19 | Single trap (RTN) | Capture and emission at one defect | F+P | D/H | H | H | Reader simulated against four pre-registrations and drawn as a rule-clean channel; working point revised for shot noise; no trap demonstrated, no silicon |
 | XC-20 | Abutted p+/n+ junction | Band-to-band tunnelling | P | D/H | M | H | Legal geometries drawn; no readout |
 | XC-21 | Avalanche junction as emitter | Reverse breakdown | F | H/S | M | M | Waits for high voltage |
 | XC-22 | SPAD | Geiger-mode avalanche | F | H/S | M | M | Waits for high voltage |
