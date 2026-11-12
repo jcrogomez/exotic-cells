@@ -8,7 +8,7 @@ Un preregistro no se edita después de correr. Las correcciones van en un archiv
 
 | Archivo | Familia | Estado |
 |---|---|---|
-| (ninguno todavía) | | |
+| [`XC-19_2026-11-11_etapa_inversion_debil.md`](XC-19_2026-11-11_etapa_inversion_debil.md) | XC-19 | Escrito; sin correr |
 
 La auditoría de `experiments/lod_audit/` tenía su predicción escrita antes de correr, pero en notas de trabajo sin commit público
 previo: no cuenta como preregistro bajo esta regla.
