@@ -35,7 +35,7 @@ whether the tapeout uses a hybrid template, analog pins, another supply, or more
 | [`cells/notas/FICHAS.md`](cells/notas/FICHAS.md) | Exploratory working notes for each family, in Spanish |
 | [`cells/preregistros/`](cells/preregistros/README.md) | Pre-registrations, dated before their experiments run |
 | [`residual/`](residual/README.md) | Residual: the software. Module 1 annotates extracted netlists with stress geometry |
-| [`experiments/`](experiments/lod_audit/README.md) | Reproducible runs. Each one states what was predicted before running |
+| [`experiments/`](experiments/) | Reproducible runs. Each one states what was predicted before running: [LOD audit](experiments/lod_audit/README.md), [XC-19 readout budget](experiments/xc19_weak_inversion/README.md) |
 
 ## Conventions
 
