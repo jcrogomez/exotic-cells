@@ -258,6 +258,6 @@ themselves are intact and are what the reader uses.
 Prediction: 5 to 25 % of the pairs above the limit. **failed, in the favourable direction**.
 
 **The finding that matters is the last two rows.** Nominally identical stages differ in discharge time by two orders of
-magnitude, and a device and its twin by an order of magnitude either way. The reader therefore cannot assume a ratio near one:
+magnitude, and a device and its twin by a factor of up to fifty. The reader therefore cannot assume a ratio near one:
 every device needs its own baseline, the counter must span that range, and the bias should be adjustable per channel.
 
