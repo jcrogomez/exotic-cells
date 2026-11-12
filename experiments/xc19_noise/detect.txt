@@ -1,0 +1,40 @@
+
+N8b  current working point (4 in series, 2.3 fF): step 0.83 %, sigma per conversion 0.82 %, 30 us per conversion
+  against reference: sigma 0.820 %, M = 25, single-conversion separation 1.0 sigma, false events with no signal: 66 in 1500000 conversions = 1.47 per second
+     dwell [conversions]  dwell [ms]  transitions  detected [%]  false per second
+            3                0.09      425474       4.0         105.89
+           10                0.30      142886      14.4          92.16
+           30                0.90       49034      39.1          48.20
+          100                3.00       14872      71.3          10.93
+          300                9.00        5022      88.4           2.96
+         1000               30.00        1429      97.2           1.69
+         3000               90.00         477      98.3           1.78
+  against twin: sigma 1.160 %, M = 49, single-conversion separation 0.7 sigma, false events with no signal: 60 in 1500000 conversions = 1.33 per second
+     dwell [conversions]  dwell [ms]  transitions  detected [%]  false per second
+            3                0.09      425474       1.8          67.53
+           10                0.30      142886       6.8          58.62
+           30                0.90       49034      22.0          45.44
+          100                3.00       14872      54.4          16.27
+          300                9.00        5022      79.9           2.98
+         1000               30.00        1429      94.7           1.07
+         3000               90.00         477      97.1           1.20
+
+N8c  more current and capacitance (3 in series, 135 fF): step 0.8 %, sigma per conversion 0.108 %, 25 us per conversion
+  against reference: sigma 0.108 %, M = 1, single-conversion separation 7.4 sigma, false events with no signal: 0 in 1500000 conversions = 0.00 per second
+     dwell [conversions]  dwell [ms]  transitions  detected [%]  false per second
+            3                0.07      425474      98.2           0.00
+           10                0.25      142886      99.4           0.00
+           30                0.75       49034      99.8           0.00
+          100                2.50       14872      99.9           0.00
+          300                7.50        5022     100.0           0.00
+         1000               25.00        1429     100.0           0.00
+         3000               75.00         477     100.0           0.00
+  against twin: sigma 0.153 %, M = 1, single-conversion separation 5.2 sigma, false events with no signal: 140 in 1500000 conversions = 3.73 per second
+     dwell [conversions]  dwell [ms]  transitions  detected [%]  false per second
+            3                0.07      425474      94.4           1.89
+           10                0.25      142886      98.1           2.61
+           30                0.75       49034      99.3           3.55
+          100                2.50       14872      99.8           3.15
+          300                7.50        5022     100.0           3.52
+         1000               25.00        1429      99.9           3.01
+         3000               75.00         477     100.0           3.52

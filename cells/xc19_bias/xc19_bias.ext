@@ -1,0 +1,41 @@
+timestamp 1794454490
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "VB" 1 1600 -132 1800 -74 m1
+port "VDD" 3 1130 480 1164 600 li
+port "C1" 4 650 480 684 600 li
+port "C2" 5 170 480 204 600 li
+port "GND" 2 1600 132 1800 190 m1
+node "VB" 17555 5828.2 1600 -132 m1 0 0 0 0 0 0 0 0 92640 5128 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 152448 9664 0 0 173120 10436 208336 7300 0 0 0 0 0 0 0 0 0 0
+node "VDD" 702 521.522 1130 480 li 0 0 0 0 0 0 0 0 12000 520 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61288 1100 0 0 16252 1024 0 0 0 0 0 0 0 0 0 0 0 0
+node "C1" 1565 595.267 650 480 li 0 0 0 0 0 0 0 0 24000 1040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61288 1100 0 0 31008 1892 0 0 0 0 0 0 0 0 0 0 0 0
+node "C2" 1565 596.853 170 480 li 0 0 0 0 0 0 0 0 24000 1040 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 61288 1100 0 0 31008 1892 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 1600 132 m1 0 0 0 0 0 0 0 0 80640 4608 14112 672 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 118728 8208 222720 7796 0 0 0 0 0 0 0 0 0 0
+cap "C2" "VB" 62.158
+cap "VDD" "VB" 5.65077
+cap "C1" "VB" 9.0237
+cap "C2" "C1" 51.429
+cap "C1" "VDD" 51.429
+device msubckt sky130_fd_pr__nfet_01v8 3360 0 3361 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 3140 0 3141 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 2920 0 2921 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 2700 0 2701 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 2480 0 2481 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 2260 0 2261 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 2040 0 2041 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 1820 0 1821 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 1600 0 1601 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 1380 0 1381 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 1160 0 1161 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 940 0 941 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 720 0 721 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 500 0 501 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 280 0 281 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 60 0 61 1 l=30 w=84 "GND" "VB" 60 0 "GND" 84 5040,288 "VB" 84 5040,288
+device msubckt sky130_fd_pr__nfet_01v8 912 440 913 441 l=200 w=200 "GND" "VDD" 400 0 "C1" 200 12000,520 "VDD" 200 12000,520
+device msubckt sky130_fd_pr__nfet_01v8 432 440 433 441 l=200 w=200 "GND" "C1" 400 0 "C2" 200 12000,520 "C1" 200 12000,520
+device msubckt sky130_fd_pr__nfet_01v8 -48 440 -47 441 l=200 w=200 "GND" "C2" 400 0 "VB" 200 12000,520 "C2" 200 12000,520

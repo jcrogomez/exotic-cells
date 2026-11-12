@@ -1,0 +1,19 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  residual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Residual geometry tests and rejections
+        run: python3 residual/tests/run.py
+      - name: Committed runs show no known failure mode
+        run: python3 tools/check_runs.py
+      - name: Event-detection study is reproducible
+        run: |
+          cd experiments/xc19_noise
+          python3 detect.py > /tmp/detect.txt
+          diff /tmp/detect.txt detect.txt

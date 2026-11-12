@@ -79,7 +79,13 @@ borrar. **Mantener en H:** necesita bomba de carga. Función conocida: valor por
 corriente → umbral por layout sin máscara, y validación del extractor → pares con desplazamiento deliberado, referencia → matriz de
 transistores anchos, 0,30 frente a 3,0 µm. **Mantener, prioridad 1.** Corrida del 2026-11-11 (`experiments/lod_audit/`): el modelo del
 PDK predice 31,1 mV (W = 0,42) y 44,1 mV (W = 5); Magic no emite `sa/sb` y el flujo simula ambos iguales; una pareja ancha por nivel
-da 6 σ según el modelo de desajuste. El primer módulo de Residual ya recupera esa diferencia desde el layout (`residual/`). Límite honesto: es programación por layout, no después de
+da 6 σ según el modelo de desajuste. El primer módulo de Residual ya recupera esa diferencia desde el layout (`residual/`). *Estado al 2026-11-12:* anotada la biblioteca
+estándar entera (`experiments/stdcell_lod`): los anillos de celdas extraídas cambian entre 2,5 % y 5 % al anotar, y en sentido
+contrario al que predije, porque el pfet gana más de lo que el nfet pierde. Leída por la etapa de XC-19, la pareja da un cociente
+de corriente de 2,36, pero el cociente de tiempos queda en 1,64 porque la difusión larga también es más capacidad en el drenaje:
+como calibración hay que dibujarla con la difusión larga del lado de la fuente o igualar la capacidad. Sirve como prueba interna
+del lector y del extractor, no como calibración física independiente; esa pide perturbaciones conocidas ajenas al fenómeno
+(un escalón de puerta, un condensador de referencia, una corriente de prueba). Límite honesto: es programación por layout, no después de
 fabricar; su valor es metrológico antes que funcional.
 
 **XC-13 · WPE.** Dopado extra junto al borde del pozo → transistor a distancia variable del pozo → ninguna → Vth → umbral por
@@ -116,7 +122,15 @@ publicado en 0,6 µm; umbral en sky130 `[?]`, quizá sobre 3,3 V.
 niveles con residencias exponenciales → bit probabilístico, sensor de una carga → etapa cuya corriente fija un solo MOS en inversión
 débil, leída en diferencial → histograma bimodal > 5 σ, residencias que cambian con polarización y temperatura. **Mantener,
 prioridad 1.** ΔVth = 0,305 mV; un anillo estándar cambia 6·10⁻⁶ y es ciego; la etapa en inversión débil daría ~0,8 % por salto
-(`EFLG00_TRAMPA.md`). Falta simular esa etapa y decidir su polarización. Estadístico: N dispositivos `[?]`.
+(`EFLG00_TRAMPA.md`). Estadístico: N dispositivos `[?]`.
+
+*Estado al 2026-11-12 (corridas en `experiments/xc19_weak_inversion` y `experiments/xc19_noise`, todas modelo):* la etapa está
+simulada y dibujada (`cells/xc19_read`). Polarización: cadena de diodos terminada en 16 transistores iguales al DUT. Gemelo de la
+misma geometría, no uno largo. Precarga de umbral alto y canal largo. El punto de trabajo de 81 pA y 2 fF se abandona: su ruido
+de disparo por conversión iguala al salto. El punto revisado usa 5,5 nA y unos 135 fF. Ninguna trampa demostrada: el salto se
+inyecta. *Configuraciones propuestas por la revisión externa del 11-nov, sin evaluar:* lectura con drenaje constante y su efecto
+sobre la dinámica de la trampa (el cascodo ya se simuló como circuito, no como física de la trampa); modo de espectroscopia
+temporal con secuencias de polarización; matriz LOD × RTN a igual punto eléctrico; intercambio de DUT y referencia entre lectores.
 
 ### Uniones y transporte
 

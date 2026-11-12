@@ -34,8 +34,10 @@ whether the tapeout uses a hybrid template, analog pins, another supply, or more
 | [`cells/CATALOGUE.md`](cells/CATALOGUE.md) | The candidate families, with stable identifiers |
 | [`cells/notas/FICHAS.md`](cells/notas/FICHAS.md) | Exploratory working notes for each family, in Spanish |
 | [`cells/preregistros/`](cells/preregistros/README.md) | Pre-registrations, dated before their experiments run |
-| [`residual/`](residual/README.md) | Residual: the software. Module 1 annotates extracted netlists with stress geometry |
-| [`experiments/`](experiments/) | Reproducible runs. Each one states what was predicted before running: [LOD audit](experiments/lod_audit/README.md), [XC-19 readout budget](experiments/xc19_weak_inversion/README.md) |
+| [`residual/`](residual/README.md) | Residual: the software. Module 1 annotates extracted netlists with stress geometry; module 2 maps the legal edge of a geometry |
+| [`cells/xc19_read/`](cells/xc19_read/README.md) | First layout: the readout cell of XC-19, rule-clean and extracted |
+| [`tools/`](tools/) | `check_runs.py` judges the committed runs; `manifest.sh` records the environment of a run |
+| [`experiments/`](experiments/) | Reproducible runs, each against a prediction written first: [LOD audit](experiments/lod_audit/README.md), [standard cells](experiments/stdcell_lod/README.md), [XC-19 readout](experiments/xc19_weak_inversion/README.md), [XC-19 noise and detection](experiments/xc19_noise/README.md) |
 
 ## Conventions
 

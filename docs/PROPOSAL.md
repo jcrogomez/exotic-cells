@@ -105,17 +105,33 @@ is a prediction of the model recovered by annotation, not evidence that silicon 
 established: whether the corrected prediction matches silicon better, and how the standard cells were characterised, so that
 the effect is not counted twice when circuits are composed.
 
-## First silicon priorities
+## First silicon
 
-One complete channel of each instrument before any array:
+**Recommendation, not a decision: one physical question and one characterised instrument.**
+
+The breadth below is the programme. For the first die the evidence so far points to something narrower:
+
+- **Question:** does annotating layout context predict silicon better than the open flow does? Families XC-12, XC-13 and XC-16:
+  a matrix of diffusion length, well distance and placement environment, with wide devices and independent references.
+- **Instrument:** the weak-inversion reader developed for XC-19, which turns a threshold difference into a time. The search
+  for single traps rides on the same instrument and the same devices.
+- **Controls with their own channels:** temperature (XC-31) and supply (XC-32), because both contaminate everything else.
+- **Calibration that does not depend on the phenomenon:** a known gate step, a switched reference capacitor on the discharge
+  node, a test current. The LOD pair is an internal consistency check of reader and extractor, not an independent calibration.
+
+Why narrow: five islands read by four instruments become five ambiguous mechanisms if the instrument still injects effects the
+size of the signal. Tonight's runs found three such effects in the reader alone (twin geometry, bias kickback, shot noise).
+
+**The wider programme, one complete channel of each instrument before any array:**
 
 1. Forge channel with separate formation and readout paths.
-2. Charge channel: a weak-inversion stage that can see a single trap, with a large-area twin.
+2. Charge channel: a weak-inversion stage that can see a single trap, with a twin of the same geometry.
 3. Opto channel: emitter, detector and dummy at several distances.
 4. Process matrix: diffusion length crossed with well distance, mirrored replicas; antenna structures with their own references.
 
 ## Open decisions
 
+- Scope of the first die: the narrow recommendation above, or the wider programme.
 - Vehicle: digital only, hybrid, or more than one die. Number of analog pins and whether 3.3 V is used.
 - Number of chips to order. Single-trap and antenna experiments are statistical: one die says nothing about the process.
 

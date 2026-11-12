@@ -66,7 +66,7 @@ open("n4_cross.sp", "w").write("\n".join(L) + "\n")
 L = ["* N5: mismatch Monte Carlo, DUT against an identical twin, VDD and VDD + 10 mV on the same draw"] + head("tt_mm")
 L += ["Vdd vdd 0 1.8"] + PRE + chain("30p") + stage("a", "vb", DUT) + stage("e", "vb", DUT)
 L += [".control", "set rndseed=20261111", "let i = 0", "while i < 100", "  reset", "  alter Vdd dc = 1.8", "  tran 20n 400u",
-      "  meas tran ta when v(ya)=0.9 rise=1", "  meas tran te when v(ye)=0.9 rise=1",
+      "  meas tran ta when v(ya)=0.9 rise=1", "  meas tran te when v(ye)=0.9 rise=1", "  echo N5A $&ta $&te",
       "  alter Vdd dc = 1.81", "  tran 20n 400u", "  meas tran ua when v(ya)=0.905 rise=1", "  meas tran ue when v(ye)=0.905 rise=1",
-      "  echo N5 $&i $&ta $&te $&ua $&ue", "  let i = i + 1", "end", "quit", ".endc", ".end"]
+      "  echo N5B $&ua $&ue", "  let i = i + 1", "end", "quit", ".endc", ".end"]
 open("n5_mc.sp", "w").write("\n".join(L) + "\n")

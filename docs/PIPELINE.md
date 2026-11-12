@@ -34,11 +34,28 @@ geometry -> physical model -> prediction -> silicon -> measured residual
 
 A residual has two legitimate destinations: an improvement to the model, or a functional property that deserves an Exotic Cell.
 
+## Design rules: obeyed, and used as an instrument
+
+The premise of this project is that unwanted behaviour can be drawn on purpose. That does not mean drawing rule violations.
+On a shared shuttle a geometric violation can reject the submission or damage other people's projects, and that decision is not
+ours. The exotic space lies elsewhere:
+
+1. **Legal geometry the model does not describe.** Diffusion length, well distance, abutted junctions, minimum constrictions.
+   They pass every check and are still simulated wrongly ([LOD audit](../experiments/lod_audit/README.md)).
+2. **Rules that no deck checks.** They are listed, not exploited blindly: an omitted check is not an authorisation.
+3. **The margin.** The distance from each shape to its limit is an experimental variable. Knowing exactly where the legal
+   edge is, and which rule sits there, is measured with [`residual/drc_edge`](../residual/drc_edge/README.md).
+4. **Reliability rules, which are not geometry.** Current density, voltage, ageing. Those are exceeded on purpose, on the bench,
+   after fabrication, with permission and with interlocks.
+
 ## Gates before tapeout
 
-1. Readout instrument meets its pre-registered resolution in simulation.
+1. Readout instrument meets its pre-registered resolution in simulation, with noise simulated explicitly.
 2. Written permission from Tiny Tapeout for any cell that is stressed on the bench, and confirmation of foundry rules for any
    deliberate antenna structure.
 3. One pre-registration per cell that occupies silicon.
-4. Real area of one complete channel per instrument on the analog template, from placement, not from sums.
-5. DRC clean, own LVS clean (extracted from GDS, comparing the real devices), precheck passed.
+4. Real area of one complete channel per instrument on the template actually chosen, from placement, not from sums.
+5. DRC clean on every mandatory deck, run on the whole design with the full rule set; own LVS clean (extracted from GDS,
+   comparing the real devices); precheck passed.
+6. **Edge report**: every rule a custom cell sits within one grid step of, every rule that only one deck checks, and every
+   disagreement between decks, listed with the cell that causes it.

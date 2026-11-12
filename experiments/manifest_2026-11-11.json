@@ -1,0 +1,15 @@
+{
+  "written": "2026-11-11 22:31 EST",
+  "repository_commit": "2836b6a2777842e9e59fc8ad47cc38781b3bac91",
+  "tools_image": "hpretl/iic-osic-tools:2025.07",
+  "tools_image_id": "sha256:b5e2fe819c9c5da932206967c037eba7942b622b171a28cddc8add3ac1ef0651",
+  "tools_image_digest": "hpretl/iic-osic-tools@sha256:6ea779414ca6e1b066f620d47bf12406663da08f136fa90d5be4442de479a7a1",
+  "pdk": "sky130A",
+  "pdk_commit": "8afc8346a57fe1ab7934ba5a6056ea8b43078e71",
+  "ngspice": "ngspice-44.2",
+  "magic": "8.3.530",
+  "klayout": "KLayout 0.30.2",
+  "host": "Darwin arm64",
+  "seeds": "ngspice rndseed=20261111 where a deck sets it; Python random.Random(20261111 + offset) in detect.py",
+  "temperature_and_tolerances": "stated in each deck (.temp, .options)"
+}
