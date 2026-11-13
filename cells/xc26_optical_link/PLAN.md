@@ -20,6 +20,8 @@ Con supuestos gruesos (1 mA, eficiencia 10⁻⁵, 5 µm, absorción del 1 %) la 
 
 **[corregido 2026-11-13 08:17] Ronda de ataque 4 (optica)** Verificado al orden por dos agentes: fraccion recogida F 2,3-2,45e-3 a 5 um; eta de emision ~1e-7 a 2e-5. Vive con condicion: pozo del emisor a ~+1 V y rho del sustrato <= 10 Ohm cm (no publica): 0,21-0,42 pA a 5 um frente a piso 0,15 pA; con catodo a masa 0,04-0,06 pA, bajo el piso; rho >= 20 muere. Frontera superior: saturacion del PNP vertical (0,09-1,1 mA segun rho). El control a 44 um ve 3-25 % de la luz: no es nulo optico; el control sin luz debe ser emisor apagado o tapado. Ver `experiments/RONDA_4_OPTICA_2026-11-13.md`.
 
+**[corregido 2026-11-13 11:23] Revisión externa (auditoría del commit 3967d9c)** Dominio del modelo del PNP. La revisión dice que el presupuesto usa parámetros de transporte inverso del PNP; comprobado en el código: `d26_budget.py` usa la beta directa (Gummel-Poon, bf e ikf del PDK) y `d26_scen.py` fija la frontera de saturación con el potencial del sustrato (V_sub − V_nw ≤ 0,30 V), no con parámetros inversos. Lo que sí se sostiene: la saturación del PNP vertical (colector = sustrato en directa) está fuera del dominio en que el PDK modela y permite el dispositivo. Por eso la frontera superior de corriente y la condición "pozo a +1 V" son **predicción condicionada a un modelo de transporte no calibrado**, no predicción del PDK. Ver `experiments/REVISION_EXTERNA_2026-11-13.md`.
+
 ## 2. Lectura y piso
 
 Lector de precarga y descarga: un excitador de tres estados precarga el cátodo del fotodiodo a 1,8 V y lo suelta; la corriente

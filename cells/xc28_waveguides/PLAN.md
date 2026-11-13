@@ -1,6 +1,6 @@
 # XC-28 · Guías en el dieléctrico
 
-**Fuera del catálogo de celdas (2026-11-12, rol).** Ver su fila en el catálogo. La carpeta se conserva.
+**Reabierta el 2026-11-13**, vehículo especializado. Salió el 2026-11-12 solo por necesitar posproceso y acceso al dado; el vehículo clasifica, no rechaza.
 
 Nota de trabajo, exploratoria. Clasificación y estado: fila XC-28 de [catálogo](../../README.md#catalogue) (Waveguides in the dielectric).
 Cómo se rellena este archivo: [`../PLANTILLA.md`](../PLANTILLA.md). Un plan no es un prerregistro: los prerregistros viven en

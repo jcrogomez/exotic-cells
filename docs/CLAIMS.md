@@ -11,7 +11,7 @@ Environment of the runs: `experiments/manifest_2026-11-11.json`.
 | The model then separates them by 31.09 mV (W = 0.42 um); 44.1 mV at W = 5 um | run | `experiments/lod_audit/sim/lod_paso1.sp`, `end_to_end.sp` | `lod_paso1.log`, `end_to_end.log` |
 | Mismatch sigma of threshold: 17.3 mV (0.42/0.15), 5.13 mV (5/0.15) | run | `experiments/lod_audit/sim/lod_paso4_mm.sp` | `lod_paso4_mm.log` |
 | Irregular-diffusion formula is BSIM4 eq. 14.10; `SA`/`SB` not positive turns the stress effect off | source read (BSIM4.8.0 manual, section 14.2 and parameter table) | | `residual/README.md` |
-| Annotator: 8 geometries and 10 rejections pass | run | `residual/tests/run.py` | CI workflow `tests` |
+| Annotator: 8 geometries and 12 rejections pass (an already-annotated netlist and a truncated `.ext` terminal added 2026-11-13) | run | `residual/tests/run.py` | CI workflow `tests` |
 | 415 of 437 standard cells annotated; shorter diffusion side median 0.68 um | run | `experiments/stdcell_lod/extract_all.tcl`, `annotate_all.py` | `summary.txt`, `devices.csv` |
 | `inv_1`: nfet +31.3 mV, pfet 88.5 mV lower in magnitude; rings 2.5 to 5.1 % faster when annotated | run | `experiments/stdcell_lod/devices_inv1.sp`, `rings.sp` | `rings.txt` |
 | Legal edges: m1 0.140, li 0.170, p+/n+ at 0 and from 0.270, diffusion beside a gate 0.250 bare and 0.275 with a centred contact | run | `residual/drc_edge/scan.tcl`, `probes/` | `out/*.magic.csv` |
@@ -34,3 +34,25 @@ Environment of the runs: `experiments/manifest_2026-11-11.json`.
 
 Not in this table because they are not established: that silicon follows any of these models; how the standard-cell library was
 characterised; that SKY130 devices show resolvable single traps.
+
+## Attack rounds 1–4 (2026-11-12/13)
+
+Grades here are those of the rounds: **verified** = reproduced by an independent verifier with their own code;
+**verified to order** = same order of magnitude, differences explained; **one agent** = not reproduced; **not verifiable** =
+models disagree by more than the claim. Everything is calculation or simulation; nothing is silicon. Models without calibration
+give intervals and scenarios. Process data used by all rounds: `cells/notas/DATOS_PROCESO.md`.
+
+| Claim | Grade | Main assumptions and limits | Source |
+|---|---|---|---|
+| XC-20: reverse tunnelling at zero separation, tens of nA to tens of uA per 1.4 um at 1.8 V | verified to order | doping profile not public; silicide over the junction unknown (first gate, see the plan) | `experiments/RONDA_1_2026-11-12.md`, `experiments/RONDA_2_2026-11-12.md` |
+| XC-05: met1 bridged by its barrier, 20–240 ohm/um; li neck 500–1800 K at 4–8 mA; reader <= 48 mV | verified | thin-film resistivities partly from literature read by agents | `experiments/RONDA_2_2026-11-12.md` |
+| XC-52: four-state demodulation does not remove classical even-in-field terms; coil 0.373 mT/mA | verified | needs traps; coil current path not audited | `experiments/RONDA_2_2026-11-12.md`, `experiments/xc52_demod_test/` |
+| XC-57/59/60/61/62/63 (see each row of the catalogue) | verified or to order, per row | per round report | `experiments/RONDA_3_2026-11-12.md` |
+| XC-58: Monte Carlo 0.90 of kT/C in variance at the minimum node; ngspice noise ~0.50 after removing a spurious source | verified (Monte Carlo); **open disagreement** with ngspice, unexplained | the two models are not reconciled | `experiments/RONDA_3_2026-11-12.md`, `cells/xc58_ktc_cell/PLAN.md` |
+| XC-26: collected fraction 2.3–2.45e-3 at 5 um; 0.21–0.42 pA at 5 um with the emitter well at +1 V and substrate <= 10 ohm cm | verified to order | substrate resistivity not public; emission efficiency x100 interval; saturation of the vertical PNP is outside the PDK model domain | `experiments/RONDA_4_OPTICA_2026-11-13.md` |
+| XC-27: a metal cap changes only the escape cone, +1–4 % | verified to order (gratings: one agent) | no RCWA by the verifier | `experiments/RONDA_4_OPTICA_2026-11-13.md` |
+| XC-21: drawn corner breakdown 6.6–9.7 V; drawn gap is not a useful knob | verified to order | abrupt-junction model | `experiments/RONDA_4_OPTICA_2026-11-13.md` |
+| XC-14: plasma charge tunnels out of 4.15 nm oxide; residual drifts 0–1.2 mV/day | verified (discharge), to order (residual) | physics below 0.5 V least reliable; `toxe_slope` as thickness unconfirmed | `experiments/RONDA_4_NODO_2026-11-13.md` |
+| XC-07: breakdown time at 5.7–7.4 V in 1 h | not verifiable | TDDB models span 7–14 decades | `experiments/RONDA_4_NODO_2026-11-13.md` |
+| XC-53: Dickson pump 8.0–8.4 V (N=6), 10.1–10.6 V (N=8) from 1.8 V; no device above 2.8 V | verified | vertical PNP of each stage not modelled | `experiments/RONDA_4_NODO_2026-11-13.md` |
+

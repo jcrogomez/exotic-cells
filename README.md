@@ -11,7 +11,9 @@ measured, and turned into a component?**
 
 **Nothing here has been fabricated.** Every result is a calculation, a simulation with the open PDK, or a design-rule run. A
 family turns green when it survives an attack that tries to kill it *and* an independent verifier who reproduces the numbers with
-their own code. Green means "worth putting on silicon", not "works".
+their own code. Green means "worth designing for silicon", not "works" and not "ready for tapeout": the colour is a level of
+scientific evidence on paper; readiness for tapeout (layout, readout, controls, power, placement) is tracked separately in each
+family's plan.
 
 ## The idea in one picture
 
@@ -31,10 +33,10 @@ The catalogue hunts the third region. Each family's job is to find its two borde
 | | Meaning | Count |
 |---|---|---|
 | 🟢 | **Survived**: attacked from first principles and checked by an independent verifier; it survives, sometimes transformed. Ready to be designed for silicon | 15 |
-| 🟡 | **Open**: an active family not yet attacked, or whose key number could not be verified | 8 |
+| 🟡 | **Open**: an active family not yet attacked, or whose key number could not be verified | 11 |
 | 🔵 | **Instrument**: built on the chip because other cells need it (forge, heater, pump, coil, metrology) | 14 |
-| ⚪ | **Merged** into another family; kept so its identifier is never reused | 18 |
-| 🔴 | **Cancelled**: out of the catalogue, with the reason in its row | 8 |
+| ⚪ | **Merged** into another family; kept so its identifier is never reused | 17 |
+| 🔴 | **Cancelled**: out of the catalogue, with the reason in its row | 6 |
 
 Columns: **Engine** F = a wanted function looking for a mechanism, P = poorly characterised physics looking for what emerges.
 **Vehicle** D = digital flow plus custom macros at 1.8 V, H = hybrid (analog pins, 3.3 V), S = specialised (bare die, light,
@@ -46,16 +48,16 @@ filtering happens at the end.
 
 | Physics | Active families | Enabled by |
 |---|---|---|
-| Quantum, and the classical-quantum bridge | XC-20 silicon tunnel junction; XC-05 few-channel metal contact; XC-06 self-formed Coulomb island; XC-54 superconducting local interconnect | XC-01 forge; cryostat for XC-54 |
+| Quantum, and the classical-quantum bridge | XC-20 silicon tunnel junction; XC-05 few-channel metal contact; XC-06 self-formed Coulomb island; XC-30 mesoscopic coherence; XC-54 superconducting local interconnect | XC-01 forge; cryostat for XC-54 |
 | Single charges | XC-19 single defect (oxide, junction, interface); XC-14 floating node | XC-10 ageing; XC-53 pump |
 | Spin and magnetism | XC-52 spin-pair magnetoresistance; XC-25 Hall plate as a magnetic link | XC-56 microcoil |
-| Optics | XC-26 internal optical link; XC-27 hole arrays in reflection; XC-21 avalanche and Geiger emitters | XC-23 control; XC-53 pump |
+| Optics | XC-26 internal optical link; XC-27 hole arrays in reflection; XC-21 avalanche and Geiger emitters; XC-28 dielectric waveguides; XC-29 nanopores (unscoped) | XC-23 control; XC-53 pump |
 | Frequencies | XC-24 parasitic bipolar oscillator; XC-39 heat as signal; XC-55 phonons in the metal stack; the tunnel oscillator of XC-20 | XC-31 heater |
 | High field | XC-07 oxide breakdown and filament; XC-18 field-oxide transistor | XC-53 pump |
 | Heat | XC-57 Peltier junction; XC-59 electrical write, thermal erase | XC-31 heater |
 | Noise as a resource | XC-58 kT/C cell | the XC-19 reader |
 | Interfaces and printing | XC-60 magnetodiode; XC-62 proximity-printed transistor; XC-63 unimplanted contact | XC-56 microcoil |
-| Cold | XC-54 superconducting interconnect; XC-61 freeze-out oscillator | cryostat |
+| Cold | XC-54 superconducting interconnect; XC-30 mesoscopic coherence; XC-61 freeze-out oscillator | cryostat |
 
 ### All identifiers
 
@@ -92,9 +94,9 @@ still open.
 | 🟢 | XC-25 | [Well Hall plate](cells/xc25_hall_plate/PLAN.md) | Hall effect | F | H | M | L | CELL. Attack round 1: with the microcoil it is the most solid result of the round; Hall voltage 0.017 to 0.66 mV per mA depending on unknown well doping |
 | 🟢 | XC-26 | [On-chip optical link](cells/xc26_optical_link/PLAN.md) | Radiative recombination in a forward junction | P | D/H | M | H | CELL. Round 4, verified to order: lives only with the emitter well at ~+1 V and substrate ≤10 Ω·cm (0.21–0.42 pA at 5 µm vs 0.15 pA floor); dies at ≥20 Ω·cm or cathode grounded |
 | 🟢 | XC-27 | [Metal hole arrays](cells/xc27_hole_arrays/PLAN.md) | Sub-wavelength apertures; diffraction at pitch near the wavelength | P | D/S | M | H | CELL. Round 4, verified to order: a cap changes only the escape cone, +1–4 %; needs ≥5 pA and <1 % matching. Reflection variant with the internal emitter of XC-26 entered 2026-11-12; depends on XC-26 emitting and on fill blocking; transmission still needs light on the die |
-| 🔴 | XC-28 | [Waveguides in the dielectric](cells/xc28_waveguides/PLAN.md) | Guiding in the metal stack oxide | F | S | M | M | OUT (needs post-processing). Needs die access |
-| 🔴 | XC-29 | [Physical nanopores](cells/xc29_nanopores/PLAN.md) | to be written | P | S |  |  | OUT (never defined). Named only |
-| ⚪ | XC-30 | [Mesoscopic coherence](cells/xc30_mesoscopic/PLAN.md) | to be written | P | S |  |  | MERGED into XC-54. Named only |
+| 🟡 | XC-28 | [Waveguides in the dielectric](cells/xc28_waveguides/PLAN.md) | Guiding in the metal stack oxide | F | S | M | M | CELL, specialised vehicle. Reopened 2026-11-13: it was OUT only for needing post-processing and die access, and the vehicle classifies, it does not reject |
+| 🟡 | XC-29 | [Physical nanopores](cells/xc29_nanopores/PLAN.md) | to be written | P | S |  |  | CELL, unscoped, specialised vehicle. Reopened 2026-11-13: it was OUT for never being defined, which is an incomplete hypothesis, not a refuted one. Distinct from the metal hole arrays of XC-27 |
+| 🟡 | XC-30 | [Mesoscopic coherence](cells/xc30_mesoscopic/PLAN.md) | Phase-coherent transport: weak localisation, universal conductance fluctuations, electron interference | P | S |  | H | CELL. Reopened 2026-11-13: merged into XC-54 on 2026-11-12, but coherence without Cooper pairs is a different mechanism from superconductivity; they share only the cryostat. Chain to be written |
 | 🔵 | XC-31 | [Heat as a channel](cells/xc31_heat_channel/PLAN.md) | Self-heating and thermal diffusion | F+P | D | M | M | INSTRUMENT (temperature knob and control). Unverified estimate |
 | 🔵 | XC-32 | [Supply-network coupling](cells/xc32_supply_coupling/PLAN.md) | Supply droop | P | D | L | M | INSTRUMENT (supply control). The boring explanation every coupling experiment must rule out |
 | 🔴 | XC-33 | [Metastability and entropy](cells/xc33_metastability/PLAN.md) | Bistable resolution | F | D | H | L | OUT (done with standard cells). The conventional baseline XC-19 must beat |
@@ -118,7 +120,7 @@ still open.
 | ⚪ | XC-51 | [Polysilicon constriction](cells/xc51_poly_constriction/PLAN.md) | Thermal rupture or migration in a polysilicon link | F | D | M | M | MERGED into XC-01. Entered 2026-11-12; published fuse used 10 mA at 3.3 V; whether SKY130 polysilicon is silicided `[?]` |
 | 🟢 | XC-52 | [Spin-pair magnetoresistance](cells/xc52_spin_pair/PLAN.md) | Recombination at interface traps changes with a millitesla field | P | D | M | H | CELL. Round 2: the four-state sequence does not remove classical even-in-field terms; discrimination rests on the shape against field. Coil verified at 0.373 mT per mA. No area assigned yet |
 | 🔵 | XC-53 | [High-voltage charge pump](cells/xc53_hv_pump/PLAN.md) | Dickson pump with the high-voltage devices of the PDK | F | D/H | H | L | INSTRUMENT (unlocks XC-07, 14, 18, 21). Round 4, verified: 8–10 V from 1.8 V with N=6–8, no device above 2.8 V, 15–18 % of a 1×2 tile; do not pump from 3.3 V (well exceeds 16.85 V breakdown); vertical PNP not yet modelled |
-| 🟡 | XC-54 | [Superconducting local interconnect](cells/xc54_tin_superconductor/PLAN.md) | Titanium nitride may superconduct at a few kelvin | P | S | L | H | CELL. Entered 2026-11-12; costs no area (the lines exist); needs a cryostat; absorbs XC-30 |
+| 🟡 | XC-54 | [Superconducting local interconnect](cells/xc54_tin_superconductor/PLAN.md) | Titanium nitride may superconduct at a few kelvin | P | S | L | H | CELL. Entered 2026-11-12; costs no area (the lines exist); needs a cryostat. XC-30 was merged here on 2026-11-12 and reopened on 2026-11-13 |
 | 🟡 | XC-55 | [Phonons in the metal stack](cells/xc55_beol_phonons/PLAN.md) | Metal gratings as acoustic mirrors around an unreleased resonator | P | D | M | H | CELL. Entered 2026-11-12; the most speculative entry; no calculation yet |
 | 🔵 | XC-56 | [On-chip microcoil](cells/xc56_microcoil/PLAN.md) | Millitesla field under a metal spiral | F | D | M | L | INSTRUMENT (field source for XC-25 and XC-52). Attack round 1, verified: 0.19 to 0.26 mT per mA; about 2 mT at the DC current limit of metal 3 |
 | 🟢 | XC-57 | [Peltier junction](cells/xc57_peltier_junction/PLAN.md) | Heat pumped at a junction of two materials, reversing with the current | P | D | M | M | CELL. Round 3: the odd-in-current heat survives in the model (0.2 to 7 K at the junction at 100 uA); a reader in the silicon sees about 1 % of it, so readout takes seconds |
@@ -130,7 +132,9 @@ still open.
 | 🟢 | XC-63 | [Unimplanted contact](cells/xc63_schottky_contact/PLAN.md) | Metal on lightly doped silicon forms a rectifying barrier instead of an ohmic contact | F+P | D/S | M | M | CELL. Round 3: the PDK itself ships seven cells with a contact on an unimplanted tap, all on p substrate (verified); on an n-well it passes only next to a normal tap; real interface unknown |
 
 The table is the single source of the catalogue. [`cells/catalogue.json`](cells/catalogue.json) is generated from it by
-`tools/catalogue_json.py`; CI fails if the two disagree.
+`tools/catalogue_json.py`; CI fails if the two disagree. CI checks the Python tools (Residual tests, simulation-log checks,
+catalogue sync, the XC-19 event detector); it does **not** rerun Magic, KLayout, ngspice or the physical models of the attack
+rounds. Those are reproduced by the independent verifiers, not by CI.
 
 ## How a family is worked
 

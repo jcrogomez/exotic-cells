@@ -29,4 +29,6 @@ before anything is consolidated. Rules: [`PROTOCOLO_ATAQUES.md`](PROTOCOLO_ATAQU
 | [`xc52_demod_test/`](xc52_demod_test/) | Which terms survive the four-state field demodulation of XC-52 |
 | [`xc58_ktc_budget/`](xc58_ktc_budget/) | Noise budget of the kT/C cell XC-58 |
 
+External reviews and what was done with each point: [`REVISION_EXTERNA_2026-11-13.md`](REVISION_EXTERNA_2026-11-13.md).
+
 `manifest_2026-11-11.json` records the tool versions of the first runs (`tools/manifest.sh`).

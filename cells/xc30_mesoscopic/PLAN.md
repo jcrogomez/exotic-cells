@@ -1,6 +1,6 @@
 # XC-30 · Coherencia mesoscópica
 
-**Fusionada en XC-54 el 2026-11-12.** Esta carpeta conserva su ficha y su plan como variante de esa familia.
+**Reabierta el 2026-11-13** como familia propia. Se había fusionado en XC-54 el 2026-11-12, pero la coherencia de fase (localización débil, fluctuaciones universales de conductancia, interferencia) no necesita pares de Cooper: es otro mecanismo. Comparte con XC-54 solo el criostato.
 
 Nota de trabajo, exploratoria. Clasificación y estado: fila XC-30 de [catálogo](../../README.md#catalogue) (Mesoscopic coherence).
 Cómo se rellena este archivo: [`../PLANTILLA.md`](../PLANTILLA.md). Un plan no es un prerregistro: los prerregistros viven en

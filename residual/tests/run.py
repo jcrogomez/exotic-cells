@@ -52,6 +52,7 @@ NEGATIVE = [
     ("multiplier mult", original.replace("l=0.15", "l=0.15 mult=2"), "merged or multi-finger"),
     ("fingers nf", original.replace("l=0.15", "l=0.15 nf=2"), "merged or multi-finger"),
     ("no areas", original.replace("ad=0.42 pd=2.84 as=0.126 ps=1.44 ", ""), "no ad/pd/as/ps"),
+    ("already annotated", original.replace("l=0.15", "l=0.15 sa=0.3 sb=1"), "already carries sa/sb"),
     ("extra device", original.replace(".ends", "X9 a b c VSUBS sky130_fd_pr__nfet_01v8 ad=1 pd=1 as=1 ps=1 w=1 l=1\n.ends"),
      "no layout device matches"),
 ]
@@ -67,5 +68,20 @@ for name, text, expect in NEGATIVE:
     os.unlink(f.name)
     bad += not ok
     print(f"{'ok  ' if ok else 'FAIL'} rejects    {name}")
+
+# Negative test on the layout side: an .ext whose device lost one source/drain terminal must not match by zip() truncation.
+ext = open(p + ".ext").read()
+cut = ext.replace(' "a_90_0#" 84 16800,568', "")
+assert cut != ext
+with tempfile.NamedTemporaryFile("w", suffix=".ext", delete=False) as f:
+    f.write(cut)
+try:
+    annotate(p + ".mag", f.name, p + ".spice")
+    ok = False
+except SystemExit as e:
+    ok = "no layout device matches" in str(e)
+os.unlink(f.name)
+bad += not ok
+print(f"{'ok  ' if ok else 'FAIL'} rejects    truncated ext terminal")
 print("failures:", bad)
 sys.exit(bool(bad))

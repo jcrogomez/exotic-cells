@@ -149,6 +149,9 @@ def close(a, b):
 
 
 def fits(dev, model, gate, bulk, term, w, l):
+    # Both sides must carry exactly source and drain: zip() alone would accept a partial match from a truncated .ext.
+    if len(dev["term"]) != 2 or len(term) != 2:
+        return False
     return (dev["model"] == model and dev["gate"] == gate and dev["bulk"] == bulk
             and close(dev["w"], w) and close(dev["l"], l)
             and all(n1 == n2 and close(a1, a2) and close(p1, p2)
@@ -173,6 +176,8 @@ def annotate(mag, ext, spice):
                 term = sorted([(t[1], par["ad"], par["pd"]), (t[3], par["as"], par["ps"])])
             except KeyError:
                 raise SystemExit(f"{t[0]}: the netlist has no ad/pd/as/ps; extract with 'ext2spice lvs'")
+            if "sa" in par or "sb" in par:
+                raise SystemExit(f"{t[0]}: already carries sa/sb; annotate the netlist straight from extraction, once")
             if par.get("m", 1) != 1 or par.get("mult", 1) != 1 or par.get("nf", 1) != 1:
                 raise SystemExit(f"{t[0]}: merged or multi-finger instance (m, mult or nf); extract one instance per finger")
             cands = [i for i, d in enumerate(devs) if i not in used

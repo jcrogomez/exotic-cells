@@ -14,7 +14,10 @@ already paid for in every chip; it is simply not in the catalogue.
 A cell is exotic if it uses, as its working principle, something the library does not offer as a primitive. To enter the catalogue
 a candidate must be:
 
-1. **Based on a normally unwanted behaviour** of fabrication or operation.
+1. **A usable, unconventional physical behaviour**: the third region of the SKY130 configuration space, neither what standard
+   cells do nor what fails. Its origin may be an unwanted effect of fabrication or operation, a legal geometry, an interface, or
+   an unusual operating regime (corrected 2026-11-13: it used to require an unwanted behaviour, which excluded magnetic,
+   optical, quantum or transport phenomena that were never defects).
 2. **Repeatable**: it can be drawn again and behaves the same within stated limits.
 3. **Predictable**: it can be simulated, with the PDK models or with a model we add and state.
 4. (Withdrawn on 2026-11-12.)

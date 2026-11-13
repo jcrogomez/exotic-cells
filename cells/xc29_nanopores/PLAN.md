@@ -1,6 +1,6 @@
 # XC-29 · Nanoporos reales
 
-**Fuera del catálogo de celdas (2026-11-12, rol).** Ver su fila en el catálogo. La carpeta se conserva.
+**Reabierta el 2026-11-13** como hipótesis sin definir, vehículo especializado. Salió el 2026-11-12 por no estar definida: eso es una hipótesis incompleta, no refutada. Distinta de las redes de hoyos metálicos de XC-27.
 
 Nota de trabajo, exploratoria. Clasificación y estado: fila XC-29 de [catálogo](../../README.md#catalogue) (Physical nanopores).
 Cómo se rellena este archivo: [`../PLANTILLA.md`](../PLANTILLA.md). Un plan no es un prerregistro: los prerregistros viven en

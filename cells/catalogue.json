@@ -325,7 +325,7 @@
  },
  {
   "id": "XC-28",
-  "status": "cancelled",
+  "status": "open",
   "family": "Waveguides in the dielectric",
   "plan": "cells/xc28_waveguides/PLAN.md",
   "mechanism": "Guiding in the metal stack oxide",
@@ -333,11 +333,11 @@
   "vehicle": "S",
   "usefulness": "M",
   "information": "M",
-  "state": "OUT (needs post-processing). Needs die access"
+  "state": "CELL, specialised vehicle. Reopened 2026-11-13: it was OUT only for needing post-processing and die access, and the vehicle classifies, it does not reject"
  },
  {
   "id": "XC-29",
-  "status": "cancelled",
+  "status": "open",
   "family": "Physical nanopores",
   "plan": "cells/xc29_nanopores/PLAN.md",
   "mechanism": "to be written",
@@ -345,19 +345,19 @@
   "vehicle": "S",
   "usefulness": null,
   "information": null,
-  "state": "OUT (never defined). Named only"
+  "state": "CELL, unscoped, specialised vehicle. Reopened 2026-11-13: it was OUT for never being defined, which is an incomplete hypothesis, not a refuted one. Distinct from the metal hole arrays of XC-27"
  },
  {
   "id": "XC-30",
-  "status": "merged",
+  "status": "open",
   "family": "Mesoscopic coherence",
   "plan": "cells/xc30_mesoscopic/PLAN.md",
-  "mechanism": "to be written",
+  "mechanism": "Phase-coherent transport: weak localisation, universal conductance fluctuations, electron interference",
   "engine": "P",
   "vehicle": "S",
   "usefulness": null,
-  "information": null,
-  "state": "MERGED into XC-54. Named only"
+  "information": "H",
+  "state": "CELL. Reopened 2026-11-13: merged into XC-54 on 2026-11-12, but coherence without Cooper pairs is a different mechanism from superconductivity; they share only the cryostat. Chain to be written"
  },
  {
   "id": "XC-31",
@@ -645,7 +645,7 @@
   "vehicle": "S",
   "usefulness": "L",
   "information": "H",
-  "state": "CELL. Entered 2026-11-12; costs no area (the lines exist); needs a cryostat; absorbs XC-30"
+  "state": "CELL. Entered 2026-11-12; costs no area (the lines exist); needs a cryostat. XC-30 was merged here on 2026-11-12 and reopened on 2026-11-13"
  },
  {
   "id": "XC-55",
