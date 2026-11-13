@@ -1,0 +1,64 @@
+
+nfet_01v8 W=0.42, |Vds|=0.9, tt 27C
+ |Vg|=0.20: I(L=0.15)=3.294e-12 A  dlnI/dVg=27.45/V  n=1.41
+   L=0.150  I/I0=1.0000  dVeq=   +0.00 mV   dVeq/dL=+nan mV/nm   dlnI/dL=+nan %/nm
+   L=0.152  I/I0=0.9267  dVeq=   -2.77 mV   dVeq/dL=-1.387 mV/nm   dlnI/dL=-3.81 %/nm
+   L=0.155  I/I0=0.8262  dVeq=   -6.96 mV   dVeq/dL=-1.391 mV/nm   dlnI/dL=-3.82 %/nm
+   L=0.160  I/I0=0.6815  dVeq=  -13.97 mV   dVeq/dL=-1.397 mV/nm   dlnI/dL=-3.83 %/nm
+   L=0.165  I/I0=0.5617  dVeq=  -21.01 mV   dVeq/dL=-1.401 mV/nm   dlnI/dL=-3.85 %/nm
+   L=0.170  I/I0=0.4629  dVeq=  -28.06 mV   dVeq/dL=-1.403 mV/nm   dlnI/dL=-3.85 %/nm
+   L=0.180  I/I0=0.3149  dVeq=  -42.11 mV   dVeq/dL=-1.404 mV/nm   dlnI/dL=-3.85 %/nm
+   L=0.200  I/I0=0.4920  dVeq=  -25.84 mV   dVeq/dL=-0.517 mV/nm   dlnI/dL=-1.42 %/nm
+   L=0.250  I/I0=0.7872  dVeq=   -8.72 mV   dVeq/dL=-0.087 mV/nm   dlnI/dL=-0.24 %/nm
+ |Vg|=0.30: I(L=0.15)=5.139e-11 A  dlnI/dVg=27.45/V  n=1.41
+   L=0.150  I/I0=1.0000  dVeq=   +0.00 mV   dVeq/dL=+nan mV/nm   dlnI/dL=+nan %/nm
+   L=0.152  I/I0=0.9596  dVeq=   -1.50 mV   dVeq/dL=-0.752 mV/nm   dlnI/dL=-2.06 %/nm
+   L=0.155  I/I0=0.9009  dVeq=   -3.80 mV   dVeq/dL=-0.761 mV/nm   dlnI/dL=-2.09 %/nm
+   L=0.160  I/I0=0.8088  dVeq=   -7.73 mV   dVeq/dL=-0.773 mV/nm   dlnI/dL=-2.12 %/nm
+   L=0.165  I/I0=0.7242  dVeq=  -11.75 mV   dVeq/dL=-0.784 mV/nm   dlnI/dL=-2.15 %/nm
+   L=0.170  I/I0=0.6472  dVeq=  -15.85 mV   dVeq/dL=-0.793 mV/nm   dlnI/dL=-2.18 %/nm
+   L=0.180  I/I0=0.5148  dVeq=  -24.19 mV   dVeq/dL=-0.806 mV/nm   dlnI/dL=-2.21 %/nm
+   L=0.200  I/I0=0.6791  dVeq=  -14.10 mV   dVeq/dL=-0.282 mV/nm   dlnI/dL=-0.77 %/nm
+   L=0.250  I/I0=0.8367  dVeq=   -6.50 mV   dVeq/dL=-0.065 mV/nm   dlnI/dL=-0.18 %/nm
+ |Vg|=0.40: I(L=0.15)=7.905e-10 A  dlnI/dVg=27.15/V  n=1.42
+   L=0.150  I/I0=1.0000  dVeq=   +0.00 mV   dVeq/dL=+nan mV/nm   dlnI/dL=+nan %/nm
+   L=0.152  I/I0=0.9925  dVeq=   -0.28 mV   dVeq/dL=-0.139 mV/nm   dlnI/dL=-0.38 %/nm
+   L=0.155  I/I0=0.9795  dVeq=   -0.76 mV   dVeq/dL=-0.152 mV/nm   dlnI/dL=-0.41 %/nm
+   L=0.160  I/I0=0.9540  dVeq=   -1.73 mV   dVeq/dL=-0.173 mV/nm   dlnI/dL=-0.47 %/nm
+   L=0.165  I/I0=0.9246  dVeq=   -2.89 mV   dVeq/dL=-0.192 mV/nm   dlnI/dL=-0.52 %/nm
+   L=0.170  I/I0=0.8923  dVeq=   -4.20 mV   dVeq/dL=-0.210 mV/nm   dlnI/dL=-0.57 %/nm
+   L=0.180  I/I0=0.8218  dVeq=   -7.23 mV   dVeq/dL=-0.241 mV/nm   dlnI/dL=-0.65 %/nm
+   L=0.200  I/I0=0.9179  dVeq=   -3.15 mV   dVeq/dL=-0.063 mV/nm   dlnI/dL=-0.17 %/nm
+   L=0.250  I/I0=0.8773  dVeq=   -4.82 mV   dVeq/dL=-0.048 mV/nm   dlnI/dL=-0.13 %/nm
+
+pfet_01v8 W=0.42, |Vds|=0.9, tt 27C
+ |Vg|=0.20: I(L=0.15)=3.784e-10 A  dlnI/dVg=17.48/V  n=2.21
+   L=0.150  I/I0=1.0000  dVeq=   +0.00 mV   dVeq/dL=+nan mV/nm   dlnI/dL=+nan %/nm
+   L=0.152  I/I0=0.8986  dVeq=   -6.12 mV   dVeq/dL=-3.058 mV/nm   dlnI/dL=-5.34 %/nm
+   L=0.155  I/I0=0.7677  dVeq=  -15.12 mV   dVeq/dL=-3.025 mV/nm   dlnI/dL=-5.29 %/nm
+   L=0.160  I/I0=0.5948  dVeq=  -29.73 mV   dVeq/dL=-2.973 mV/nm   dlnI/dL=-5.20 %/nm
+   L=0.165  I/I0=0.4645  dVeq=  -43.87 mV   dVeq/dL=-2.925 mV/nm   dlnI/dL=-5.11 %/nm
+   L=0.170  I/I0=0.3656  dVeq=  -57.58 mV   dVeq/dL=-2.879 mV/nm   dlnI/dL=-5.03 %/nm
+   L=0.180  I/I0=0.2311  dVeq=  -83.83 mV   dVeq/dL=-2.794 mV/nm   dlnI/dL=-4.88 %/nm
+   L=0.200  I/I0=0.0733  dVeq= -149.55 mV   dVeq/dL=-2.991 mV/nm   dlnI/dL=-5.23 %/nm
+   L=0.250  I/I0=0.0067  dVeq= -286.45 mV   dVeq/dL=-2.864 mV/nm   dlnI/dL=-5.01 %/nm
+ |Vg|=0.30: I(L=0.15)=1.855e-09 A  dlnI/dVg=14.67/V  n=2.64
+   L=0.150  I/I0=1.0000  dVeq=   +0.00 mV   dVeq/dL=+nan mV/nm   dlnI/dL=+nan %/nm
+   L=0.152  I/I0=0.9107  dVeq=   -6.37 mV   dVeq/dL=-3.187 mV/nm   dlnI/dL=-4.67 %/nm
+   L=0.155  I/I0=0.7939  dVeq=  -15.73 mV   dVeq/dL=-3.147 mV/nm   dlnI/dL=-4.62 %/nm
+   L=0.160  I/I0=0.6361  dVeq=  -30.85 mV   dVeq/dL=-3.085 mV/nm   dlnI/dL=-4.52 %/nm
+   L=0.165  I/I0=0.5138  dVeq=  -45.40 mV   dVeq/dL=-3.026 mV/nm   dlnI/dL=-4.44 %/nm
+   L=0.170  I/I0=0.4182  dVeq=  -59.44 mV   dVeq/dL=-2.972 mV/nm   dlnI/dL=-4.36 %/nm
+   L=0.180  I/I0=0.2826  dVeq=  -86.15 mV   dVeq/dL=-2.872 mV/nm   dlnI/dL=-4.21 %/nm
+   L=0.200  I/I0=0.1342  dVeq= -136.93 mV   dVeq/dL=-2.739 mV/nm   dlnI/dL=-4.02 %/nm
+   L=0.250  I/I0=0.0225  dVeq= -258.62 mV   dVeq/dL=-2.586 mV/nm   dlnI/dL=-3.79 %/nm
+ |Vg|=0.40: I(L=0.15)=7.557e-09 A  dlnI/dVg=13.66/V  n=2.83
+   L=0.150  I/I0=1.0000  dVeq=   +0.00 mV   dVeq/dL=+nan mV/nm   dlnI/dL=+nan %/nm
+   L=0.152  I/I0=0.9182  dVeq=   -6.25 mV   dVeq/dL=-3.125 mV/nm   dlnI/dL=-4.27 %/nm
+   L=0.155  I/I0=0.8101  dVeq=  -15.42 mV   dVeq/dL=-3.084 mV/nm   dlnI/dL=-4.21 %/nm
+   L=0.160  I/I0=0.6622  dVeq=  -30.18 mV   dVeq/dL=-3.018 mV/nm   dlnI/dL=-4.12 %/nm
+   L=0.165  I/I0=0.5456  dVeq=  -44.36 mV   dVeq/dL=-2.957 mV/nm   dlnI/dL=-4.04 %/nm
+   L=0.170  I/I0=0.4529  dVeq=  -58.00 mV   dVeq/dL=-2.900 mV/nm   dlnI/dL=-3.96 %/nm
+   L=0.180  I/I0=0.3182  dVeq=  -83.85 mV   dVeq/dL=-2.795 mV/nm   dlnI/dL=-3.82 %/nm
+   L=0.200  I/I0=0.1907  dVeq= -121.33 mV   dVeq/dL=-2.427 mV/nm   dlnI/dL=-3.31 %/nm
+   L=0.250  I/I0=0.0650  dVeq= -200.13 mV   dVeq/dL=-2.001 mV/nm   dlnI/dL=-2.73 %/nm

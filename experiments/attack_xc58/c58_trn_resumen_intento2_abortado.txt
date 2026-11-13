@@ -1,0 +1,1 @@
+cx0_tf500p_nt1_T27: N=0  antes de abrir: media nan mV sigma nan mV | despues: media nan mV sigma nan mV (±nan %) asimetria +nan curtosis-3 +nan corr(antes,despues) +nan

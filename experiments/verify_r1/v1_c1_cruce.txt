@@ -1,0 +1,9 @@
+w=0.3 medio=10, z=2.88: 0.2569 mT/mA; semilados 8.80..11.20; campo al limite CC (2.04 mA) = 0.52 mT
+w=0.3 borde interior=10, z=3.21: 0.2270 mT/mA; semilados 10.15..12.55; campo al limite CC (2.04 mA) = 0.46 mT
+w=0.3 borde interior=10, z=2.88: 0.2313 mT/mA; semilados 10.15..12.55; campo al limite CC (2.04 mA) = 0.47 mT
+w=1.5 medio=10, z=2.88: 0.2648 mT/mA; semilados 6.40..13.60; campo al limite CC (10.20 mA) = 2.70 mT
+w=1.5 borde interior=10, z=3.21: 0.1896 mT/mA; semilados 10.75..17.95; campo al limite CC (10.20 mA) = 1.93 mT
+w=1.5 borde interior=10, z=2.88: 0.1922 mT/mA; semilados 10.75..17.95; campo al limite CC (10.20 mA) = 1.96 mT
+w=2.1 medio=10, z=2.88: 0.2708 mT/mA; semilados 5.20..14.80; campo al limite CC (14.28 mA) = 3.87 mT
+w=2.1 borde interior=10, z=3.21: 0.1758 mT/mA; semilados 11.05..20.65; campo al limite CC (14.28 mA) = 2.51 mT
+w=2.1 borde interior=10, z=2.88: 0.1780 mT/mA; semilados 11.05..20.65; campo al limite CC (14.28 mA) = 2.54 mT

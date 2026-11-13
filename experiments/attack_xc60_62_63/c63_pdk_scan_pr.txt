@@ -1,0 +1,7 @@
+# $SKY130A/libs.ref/sky130_fd_pr/gds/sky130_fd_pr.gds
+# celdas examinadas 290; con licon sobre activo sin nsdm ni psdm: 5
+sky130_fd_pr__cap_vpp_02p7x06p1_m1m2m3m4_shieldl1_fingercap: licon sobre activo sin implante 0.8092 um2 (28 trozos); en nwell 0.0000; sobre tap 0.8092; total licon-activo 0.809
+sky130_fd_pr__cap_vpp_02p7x11p1_m1m2m3m4_shieldl1_fingercap: licon sobre activo sin implante 1.5028 um2 (52 trozos); en nwell 0.0000; sobre tap 1.5028; total licon-activo 1.503
+sky130_fd_pr__cap_vpp_02p7x21p1_m1m2m3m4_shieldl1_fingercap: licon sobre activo sin implante 2.9478 um2 (102 trozos); en nwell 0.0000; sobre tap 2.9478; total licon-activo 2.948
+sky130_fd_pr__cap_vpp_02p7x41p1_m1m2m3m4_shieldl1_fingercap: licon sobre activo sin implante 5.8378 um2 (202 trozos); en nwell 0.0000; sobre tap 5.8378; total licon-activo 5.838
+sky130_fd_pr__cap_vpp_02p9x06p1_m1m2m3m4_shieldl1_fingercap2: licon sobre activo sin implante 0.8670 um2 (30 trozos); en nwell 0.0000; sobre tap 0.8670; total licon-activo 0.867

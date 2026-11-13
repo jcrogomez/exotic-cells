@@ -1,0 +1,12 @@
+# c63_lit_barreras.txt — informe del subagente de búsqueda (recibido Thu Nov 12 19:08:54 EST 2026). Grado global: LEÍDO POR SUBAGENTE (resúmenes vía extracto automático; yo no abrí las páginas). "NL" = solo fragmento de buscador.
+TiSi2 / n-Si(111): 0,57 eV — Huang, Aliotta, Ho, APL 1982, DOI 10.1063/1.93326 (resumen leído)
+TiSi2 C54 / n y p: ~0,6 ambos — J. Appl. Phys. 1991 (NL)
+Ti->TiSi2 / n y p (100): cambio < 0,1 eV al formar el siliciuro — Aboelfotoh, JAP 1988, DOI 10.1063/1.341338 (resumen leído, sin valor absoluto)
+Ti / p-Si: 0,556–0,617 — Semicond. Sci. Technol. 19 (2004) (NL)
+TiN / n-Si: 0,49 — Wittmer & Melchior, MRS Proc. 10, 409 (1981), DOI 10.1557/PROC-10-409 (resumen leído)
+TiN / p-Si: 0,67 — Gosciniak et al., arXiv:1905.00927 (resumen leído); TiN/n 0,35 mismo texto (NL)
+TiN / n y p: 0,60–0,64 — Pelleg & Goldman, Appl. Surf. Sci. 255, 6183 (2009) (NL); 0,55/0,57 (atribución dudosa, NL); 0,471–0,658 según recocido, Woodard RIT 1998 (NL)
+W / n-Si: 0,65 — Crowell, Sarace, Sze 1965 (resumen leído); W n/p ~0,7/~0,5 Dellasega 2018 (NL); WSi2/n 0,68–0,86 (NL)
+C49 frente a C54: no encontrado. Tabla de Sze, Murarka, Tung 2014: no alcanzadas.
+Richardson: n-Si 112, p-Si 32 A/cm2K2 (NL; primaria probable Andrews & Lepselter SSE 13, 1011 (1970), no abierta). Crowell 1965: ~246–258 antes de correcciones (NL).
+Schottky en SKY130/S8: no encontrado en 6 búsquedas web + 4 en GitHub. Device Details del PDK: solo diodos pn (leído). Reglas de periferia leídas: licon.4 "Licon1 must overlap li1 and (poly or diff or tap)"; n/psd.5b y n/psd.9: el tap encerrado por su implante. GF180MCU sí tiene Schottky (contraste).

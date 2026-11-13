@@ -1,0 +1,8 @@
+I_sw=0.66 fA, A=1 um^2: V_ox de cruce TE (3.0/.40, 3.1/.45, 3.2/.50) = 2.44, 2.92, 3.30 ; BSIM4 por defecto = 2.82
+I_sw=0.66 fA, A=10 um^2: V_ox de cruce TE (3.0/.40, 3.1/.45, 3.2/.50) = 2.02, 2.60, 3.04 ; BSIM4 por defecto = 1.50
+I_sw=0.66 fA, A=100 um^2: V_ox de cruce TE (3.0/.40, 3.1/.45, 3.2/.50) = 1.56, 2.20, 2.74 ; BSIM4 por defecto = 0.76
+I_sw=0.66 fA, A=1000 um^2: V_ox de cruce TE (3.0/.40, 3.1/.45, 3.2/.50) = 1.04, 1.78, 2.38 ; BSIM4 por defecto = 0.52
+I_sw=25.00 fA, A=1 um^2: V_ox de cruce TE (3.0/.40, 3.1/.45, 3.2/.50) = 2.98, 3.32, 3.68 ; BSIM4 por defecto = nan
+I_sw=25.00 fA, A=10 um^2: V_ox de cruce TE (3.0/.40, 3.1/.45, 3.2/.50) = 2.66, 3.10, 3.44 ; BSIM4 por defecto = 3.10
+I_sw=25.00 fA, A=100 um^2: V_ox de cruce TE (3.0/.40, 3.1/.45, 3.2/.50) = 2.26, 2.80, 3.20 ; BSIM4 por defecto = 2.44
+I_sw=25.00 fA, A=1000 um^2: V_ox de cruce TE (3.0/.40, 3.1/.45, 3.2/.50) = 1.82, 2.44, 2.92 ; BSIM4 por defecto = 1.12

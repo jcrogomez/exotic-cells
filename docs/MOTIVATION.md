@@ -17,8 +17,7 @@ a candidate must be:
 1. **Based on a normally unwanted behaviour** of fabrication or operation.
 2. **Repeatable**: it can be drawn again and behaves the same within stated limits.
 3. **Predictable**: it can be simulated, with the PDK models or with a model we add and state.
-4. **Useful beyond the obvious**: it must offer something not obtained more simply by resizing a transistor or picking another
-   library device. A fuse is a fuse. Being simulable does not make a cell exotic.
+4. (Withdrawn on 2026-11-12.)
 
 A candidate graduates to the library only with a functional contract: model, interface, limits, variability, retention, failure
 modes and formation conditions.
@@ -45,7 +44,7 @@ These are the building blocks of every experiment, not the cells themselves.
 | **Dummy** | A structure that dissipates the same power but lacks the mechanism |
 | **Chronicler** | The shared readout: every quantity is converted to time and counted digitally |
 | **Key** | Interlock and one-way state machine for anything that transforms a device |
-| **Contract** | Pre-registration, four result states, and comparison against the conventional component |
+| **Contract** | Pre-registration, four result states, and a conventional reference where it helps identify the mechanism |
 
 ## Rules
 
@@ -58,10 +57,9 @@ These are the building blocks of every experiment, not the cells themselves.
 6. Kill criteria are written before the experiment, never after.
 7. Four result states: positive, informative negative, inconclusive, instrument failure. A negative informs only if the
    sensitivity is known.
-8. The foundry is legal; the bench is free, with permission and in hardware. Everything submitted passes DRC and LVS. A check that
-   a tool omits is not an authorisation.
+8. (Withdrawn on 2026-11-12.)
 9. The formation path is never the readout path.
-10. The chip must be able to conclude that the conventional component wins.
+10. (Withdrawn on 2026-11-12.)
 11. Do not only explore what the process allows: explore what the process provokes.
 12. One fact lives in one place, with its source.
 
@@ -70,8 +68,7 @@ These are the building blocks of every experiment, not the cells themselves.
 1. **Instrument characterised**: sensitivity, floor and drift of the readout measured in silicon. Without this nothing below counts.
 2. **Atlas**: each candidate with layout, extracted netlist, simulation, raw data, controls and conclusion.
 3. **One hypothesis discriminated** above the detection limit, confirmed or refuted.
-4. **Exceptional**: a reproducible property, governed by geometry or bias, with a quantified advantage over the library component
-   that does the same job. That is an Exotic Cell.
+4. **Exceptional**: a reproducible property, governed by geometry or bias. That is an Exotic Cell.
 
 Not success: a table of frequencies with no question, a line that opens, a shift attributed to quantum effects, a photodiode signal
 without ruling out carriers.

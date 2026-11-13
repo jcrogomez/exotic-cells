@@ -1,0 +1,9 @@
+Thu Nov 12 18:58:08 EST 2026
+b20_analiza.py  TAG = base_lejos  meta = {'T': 300.0, 'F0': 19000000.0, 'A': 400000000000000.0, 'bgn': 0.0, 'kind': 'log', 'gratio': 1.0, 'date': 'Thu Nov 12 18:57:59 EST 2026'}
+Area de frontera 1.40e-09 cm2 (1.4 um x xj 0.1 um); piso 150 fA = 1.07e-04 A/cm2; difusion PDK: Js = 2.15e-09 A/cm2 (T = 300 K), n = 1.363
+Prefactor de este barrido: A = 4e+14 (cA_tag = 1). Escenarios: cF (factor extra sobre el tunel DIRECTO): {'F1': 1.0, 'F10': 10.0, 'F100': 100.0} ; tau (TAT): {'1ns': 1e-09, '0.1ns': 1e-10, '10ps': 1e-11}
+Clases: N2 pico con PVR > 2 | N PVR > 1.3 | n pico con PVR entre 1 y 1.3 | B backward (inversa a 0.1 V > 3 x directa a 0.1 V y sobre el piso) | Z tunel inverso: I(-1.8 V) > 10 x piso | O ordinario
+252 celdas validas de 252
+
+== 1. FRACCIONES del espacio barrido (por escenario)
+escenario(cA,tau)        subconjunto            n     PVR>2   PVR>1.3  pico(>1)  sin pico |  B      Z      O

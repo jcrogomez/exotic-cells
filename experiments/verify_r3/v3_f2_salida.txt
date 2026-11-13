@@ -1,0 +1,257 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+ROW L=0.150 vth=0.774446 id=1.03825E-11 cgg=1.52106E-16 cgs=-1.2376E-17 cgd=-1.67425E-18 cgb=-1.38056E-16 capbd=2.7545E-16
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 351
+vgcc                =  5.929892e-01
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+ROW L=0.151 vth=0.772632 id=1.0323E-11 cgg=1.53178E-16 cgs=-1.24685E-17 cgd=-1.67982E-18 cgb=-1.3903E-16 capbd=2.7545E-16
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 351
+vgcc                =  5.917930e-01
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+ROW L=0.152 vth=0.770858 id=1.02605E-11 cgg=1.54249E-16 cgs=-1.25598E-17 cgd=-1.68519E-18 cgb=-1.40004E-16 capbd=2.7545E-16
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  3.46000e-01
+No. of Data Rows : 351
+vgcc                =  5.906273e-01
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+ROW L=0.155 vth=0.765767 id=1.00557E-11 cgg=1.57461E-16 cgs=-1.28262E-17 cgd=-1.70018E-18 cgb=-1.42935E-16 capbd=2.7545E-16
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  2.82000e-01 Reference value :  4.40000e-01
+No. of Data Rows : 351
+vgcc                =  5.873949e-01
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+ROW L=0.160 vth=0.757988 id=9.66649E-12 cgg=1.62807E-16 cgs=-1.32459E-17 cgd=-1.7216E-18 cgb=-1.4784E-16 capbd=2.7545E-16
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  7.86000e-01
+No. of Data Rows : 351
+vgcc                =  5.827775e-01
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+ROW L=0.162 vth=0.755101 id=9.49727E-12 cgg=1.64943E-16 cgs=-1.34056E-17 cgd=-1.72899E-18 cgb=-1.49809E-16 capbd=2.7545E-16
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 351
+vgcc                =  5.811818e-01
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+ROW L=0.165 vth=0.750989 id=9.2321E-12 cgg=1.68144E-16 cgs=-1.36366E-17 cgd=-1.7389E-18 cgb=-1.52769E-16 capbd=2.7545E-16
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  6.96000e-01
+No. of Data Rows : 351
+vgcc                =  5.790390e-01
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+ROW L=0.170 vth=0.74467 id=8.76744E-12 cgg=1.73471E-16 cgs=-1.39994E-17 cgd=-1.75249E-18 cgb=-1.57719E-16 capbd=2.7545E-16
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 351
+vgcc                =  5.761032e-01
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+ROW L=0.175 vth=0.738946 id=8.28515E-12 cgg=1.78786E-16 cgs=-1.43357E-17 cgd=-1.76271E-18 cgb=-1.62688E-16 capbd=2.7545E-16
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 351
+vgcc                =  5.738797e-01
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+ROW L=0.179 vth=0.734748 id=7.89374E-12 cgg=1.83031E-16 cgs=-1.45867E-17 cgd=-1.7687E-18 cgb=-1.66676E-16 capbd=2.7545E-16
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 351
+vgcc                =  5.725714e-01
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+CAP vg=0 cgg=1.61368E-16 cgs=-1.45441E-18 cgd=-1.47428E-19 cgb=-1.59766E-16 capbd=2.7545E-16 cgdo=1.03452E-16 gm=6.2448E-14 id=2.21455E-15
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+CAP vg=0.2 cgg=1.51563E-16 cgs=-5.62198E-18 cgd=-7.27122E-19 cgb=-1.45214E-16 capbd=2.7545E-16 cgdo=1.03452E-16 gm=1.75332E-11 id=6.22299E-13
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+CAP vg=0.3 cgg=1.52106E-16 cgs=-1.2376E-17 cgd=-1.67425E-18 cgb=-1.38056E-16 capbd=2.7545E-16 cgdo=1.03452E-16 gm=2.91714E-10 id=1.03825E-11
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+CAP vg=0.4 cgg=1.61081E-16 cgs=-2.73707E-17 cgd=-4.06115E-18 cgb=-1.29649E-16 capbd=2.7545E-16 cgdo=1.03452E-16 gm=4.73279E-09 id=1.70324E-10
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+CAP vg=0.6 cgg=2.29057E-16 cgs=-9.73203E-17 cgd=-2.78879E-17 cgb=-1.03849E-16 capbd=2.7545E-16 cgdo=1.03452E-16 gm=7.82961E-07 id=3.30779E-08
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+CAP vg=0.9 cgg=3.75425E-16 cgs=-1.65598E-16 cgd=-1.42356E-16 cgb=-6.74711E-17 capbd=2.7545E-16 cgdo=1.03452E-16 gm=2.94171E-05 id=3.92949E-06
+Reset re-loads circuit * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+Circuit: * v3 f2: vth vs l, nfet_01v8 w=0.42 ; y capacidades (a1)
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+CAP vg=1.8 cgg=4.28614E-16 cgs=-1.68881E-16 cgd=-2.03901E-16 cgb=-5.58317E-17 capbd=2.7545E-16 cgdo=1.03452E-16 gm=1.47309E-05 id=2.55126E-05
+ngspice-44.2 done

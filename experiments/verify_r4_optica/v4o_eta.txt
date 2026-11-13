@@ -1,0 +1,10 @@
+(i) huecos almacenados en la base (pozo n): eta_b = TF*B*N_D (baja inyeccion; TF es cota superior del tiempo en base)
+   N_D=5e+16: 1.4e-07 .. 2.9e-07
+   N_D=1e+17: 2.9e-07 .. 5.8e-07
+   N_D=3e+17: 8.7e-07 .. 1.8e-06
+   IKF escalado al p+ 1.0x1.4: 47..100 uA -> factor de alta inyeccion a 0.17 mA: 2.7..4.6; a 1 mA: 11..22
+(ii) electrones inyectados en el p+ (fraccion 1/(BF+1) de la corriente), recombinan en <= tau_eff ~ 1e-10..1e-9 s
+   N_A=1e+19, tau=1e-10: eta_e = 1.9e-07 .. 3.8e-07  (fotones desplazados al rojo por BGN: alfa medio x0.1..0.3, ver v4o_alpha)
+   N_A=1e+19, tau=1e-09: eta_e = 1.9e-06 .. 3.8e-06  (fotones desplazados al rojo por BGN: alfa medio x0.1..0.3, ver v4o_alpha)
+   N_A=1e+20, tau=1e-10: eta_e = 8.0e-07 .. 1.6e-06  (fotones desplazados al rojo por BGN: alfa medio x0.1..0.3, ver v4o_alpha)
+   N_A=1e+20, tau=1e-09: eta_e = 8.0e-06 .. 1.6e-05  (fotones desplazados al rojo por BGN: alfa medio x0.1..0.3, ver v4o_alpha)

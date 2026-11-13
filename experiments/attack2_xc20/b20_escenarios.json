@@ -1,0 +1,7 @@
+{
+ "_nota": "cA_tag: escala del prefactor de tunel respecto a A = 4e14 para cada barrido (base = Hurkx F0 1.9e7, confirmado en fuentes leidas; sol = F0 2.947e7 con A = 1.53e17 calibrado a la ley de Solomon en b20_ancla.txt). cA (clave historica) = cF: factor extra SOLO sobre el tunel directo (pico de Esaki): Solomon dice que el Esaki medido de Rivas/Dashiell queda ~10x sobre su ley; x100 es una cota generosa. tau: tiempo de vida del modelo TAT de Hurkx (corriente de exceso): 1 ns = limite Auger/SRH de material limpio a 1e20; 0.1 ns y 10 ps cubren el exceso de del Alamo-Swanson 1986 (10-100x el TAT de 1 ns en W = 12-17 nm).",
+ "cA_tag": {"base": 1.0, "sol": 384.0, "prueba": 1.0},
+ "cA": {"F1": 1.0, "F10": 10.0, "F100": 100.0},
+ "tau": {"1ns": 1e-9, "0.1ns": 1e-10, "10ps": 1e-11},
+ "central": ["F10", "0.1ns"]
+}

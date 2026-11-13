@@ -1,0 +1,30 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO efld_consR_M1
+  CLASS BLOCK ;
+  FOREIGN efld_consR_M1 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 12.400 BY 1.200 ;
+  PIN A
+    PORT
+      LAYER met1 ;
+        RECT 0.000 0.000 1.200 1.200 ;
+    END
+  END A
+  PIN B
+    PORT
+      LAYER met1 ;
+        RECT 11.200 0.000 12.400 1.200 ;
+    END
+  END B
+  OBS
+      LAYER li1 ;
+        RECT 0.000 0.000 12.400 1.200 ;
+      LAYER met1 ;
+        RECT 1.480 0.530 10.920 0.670 ;
+  END
+END efld_consR_M1
+END LIBRARY
+

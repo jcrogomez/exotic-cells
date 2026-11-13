@@ -1,0 +1,156 @@
+== A1: I inversa BTBT a -1,8 V, frontera 1,4 um x 0,1 um (A)
+N0/Npk=1.0 Npk=5e+19 L=10nm/dec: W=15.3nm Emax=3.15MV/cm Nborde=4.1e+19 | I = 1.38e-06 ; 2.17e-03 ; 3.41e-04
+N0/Npk=1.0 Npk=5e+19 L=20nm/dec: W=17.9nm Emax=2.61MV/cm Nborde=3.2e+19 | I = 2.88e-07 ; 3.92e-04 ; 8.00e-05
+N0/Npk=1.0 Npk=5e+19 L=35nm/dec: W=20.7nm Emax=2.21MV/cm Nborde=2.5e+19 | I = 5.72e-08 ; 6.60e-05 ; 1.72e-05
+N0/Npk=1.0 Npk=1e+20 L=10nm/dec: W=11.8nm Emax=4.13MV/cm Nborde=7.4e+19 | I = 9.94e-06 ; 1.79e-02 ; 1.98e-03
+N0/Npk=1.0 Npk=1e+20 L=20nm/dec: W=14.0nm Emax=3.38MV/cm Nborde=5.5e+19 | I = 2.52e-06 ; 4.13e-03 ; 5.90e-04
+N0/Npk=1.0 Npk=1e+20 L=35nm/dec: W=16.3nm Emax=2.84MV/cm Nborde=4.1e+19 | I = 6.37e-07 ; 9.30e-04 ; 1.68e-04
+N0/Npk=1.0 Npk=2e+20 L=10nm/dec: W=9.2nm Emax=5.41MV/cm Nborde=1.3e+20 | I = 4.99e-05 ; 9.68e-02 ; 7.70e-03
+N0/Npk=1.0 Npk=2e+20 L=20nm/dec: W=10.9nm Emax=4.37MV/cm Nborde=9.4e+19 | I = 1.50e-05 ; 2.75e-02 ; 2.82e-03
+N0/Npk=1.0 Npk=2e+20 L=35nm/dec: W=12.8nm Emax=3.65MV/cm Nborde=6.9e+19 | I = 4.59e-06 ; 7.84e-03 ; 1.01e-03
+N0/Npk=0.3 Npk=5e+19 L=10nm/dec: W=14.6nm Emax=3.12MV/cm Nborde=4.7e+19 | I = 1.51e-06 ; 2.36e-03 ; 3.72e-04
+N0/Npk=0.3 Npk=5e+19 L=20nm/dec: W=18.2nm Emax=2.43MV/cm Nborde=3.8e+19 | I = 1.64e-07 ; 2.09e-04 ; 4.71e-05
+N0/Npk=0.3 Npk=5e+19 L=35nm/dec: W=22.3nm Emax=1.98MV/cm Nborde=2.4e+19 | I = 1.85e-08 ; 1.87e-05 ; 5.77e-06
+N0/Npk=0.3 Npk=1e+20 L=10nm/dec: W=11.4nm Emax=3.99MV/cm Nborde=9.2e+19 | I = 8.92e-06 ; 1.59e-02 ; 1.82e-03
+N0/Npk=0.3 Npk=1e+20 L=20nm/dec: W=14.7nm Emax=3.07MV/cm Nborde=5.7e+19 | I = 1.29e-06 ; 2.00e-03 ; 3.23e-04
+N0/Npk=0.3 Npk=1e+20 L=35nm/dec: W=17.9nm Emax=2.51MV/cm Nborde=3.7e+19 | I = 2.18e-07 ; 2.86e-04 ; 6.16e-05
+N0/Npk=0.3 Npk=2e+20 L=10nm/dec: W=9.3nm Emax=5.07MV/cm Nborde=1.5e+20 | I = 3.84e-05 ; 7.37e-02 ; 6.29e-03
+N0/Npk=0.3 Npk=2e+20 L=20nm/dec: W=11.8nm Emax=3.90MV/cm Nborde=8.8e+19 | I = 7.50e-06 ; 1.32e-02 ; 1.56e-03
+N0/Npk=0.3 Npk=2e+20 L=35nm/dec: W=14.3nm Emax=3.19MV/cm Nborde=5.9e+19 | I = 1.71e-06 ; 2.71e-03 ; 4.17e-04
+N0/Npk=0.1 Npk=5e+19 L=10nm/dec: W=18.7nm Emax=2.27MV/cm Nborde=4.3e+19 | I = 8.84e-08 ; 1.05e-04 ; 2.62e-05
+N0/Npk=0.1 Npk=5e+19 L=20nm/dec: W=25.3nm Emax=1.70MV/cm Nborde=2.0e+19 | I = 2.84e-09 ; 2.30e-06 ; 9.14e-07
+N0/Npk=0.1 Npk=5e+19 L=35nm/dec: W=31.4nm Emax=1.37MV/cm Nborde=1.2e+19 | I = 1.29e-10 ; 7.08e-08 ; 4.09e-08
+N0/Npk=0.1 Npk=1e+20 L=10nm/dec: W=15.6nm Emax=2.80MV/cm Nborde=5.8e+19 | I = 6.38e-07 ; 9.24e-04 ; 1.69e-04
+N0/Npk=0.1 Npk=1e+20 L=20nm/dec: W=20.6nm Emax=2.12MV/cm Nborde=3.0e+19 | I = 4.14e-08 ; 4.57e-05 ; 1.26e-05
+N0/Npk=0.1 Npk=1e+20 L=35nm/dec: W=25.3nm Emax=1.73MV/cm Nborde=1.9e+19 | I = 3.49e-09 ; 2.91e-06 ; 1.12e-06
+N0/Npk=0.1 Npk=2e+20 L=10nm/dec: W=12.8nm Emax=3.50MV/cm Nborde=8.3e+19 | I = 3.66e-06 ; 6.13e-03 ; 8.31e-04
+N0/Npk=0.1 Npk=2e+20 L=20nm/dec: W=16.7nm Emax=2.68MV/cm Nborde=4.5e+19 | I = 4.02e-07 ; 5.60e-04 ; 1.10e-04
+N0/Npk=0.1 Npk=2e+20 L=35nm/dec: W=20.3nm Emax=2.18MV/cm Nborde=2.9e+19 | I = 5.43e-08 ; 6.20e-05 ; 1.64e-05
+N0/Npk=1.0: intervalo I = 5.7e-08 .. 9.7e-02 A
+N0/Npk=0.3: intervalo I = 1.8e-08 .. 7.4e-02 A
+N0/Npk=0.1: intervalo I = 1.3e-10 .. 6.1e-03 A
+todo: 1.3e-10 .. 9.7e-02 A
+== A3: equilibrio (V=0). Umbral degeneracion n: Nc*F(0)=2.14e+19 ; p: Nv*F(0)=7.96e+18 (Nv=1.04e19) / 2.37e+19 (Nv=3.1e19)
+N0/Npk=1.0 Npk=1e+20 L=2nm/dec: W=6.27nm Nborde=9.73e+19 xi_n=+63meV xi_p=+135meV (Nv alto: +57) Emax=3.54MV/cm w_tunel=Eg/qEmax=3.2nm B/Emax=5.4 J_escala(q*int G, sin factor de ocupacion)=9.70e+02 A/cm2
+N0/Npk=1.0 Npk=1e+20 L=3nm/dec: W=6.61nm Nborde=9.21e+19 xi_n=+60meV xi_p=+129meV (Nv alto: +54) Emax=3.25MV/cm w_tunel=Eg/qEmax=3.4nm B/Emax=5.8 J_escala(q*int G, sin factor de ocupacion)=5.33e+02 A/cm2
+N0/Npk=1.0 Npk=1e+20 L=5nm/dec: W=7.21nm Nborde=8.10e+19 xi_n=+53meV xi_p=+118meV (Nv alto: +47) Emax=2.86MV/cm w_tunel=Eg/qEmax=3.9nm B/Emax=6.6 J_escala(q*int G, sin factor de ocupacion)=1.93e+02 A/cm2
+N0/Npk=1.0 Npk=1e+20 L=7nm/dec: W=7.74nm Nborde=7.20e+19 xi_n=+47meV xi_p=+108meV (Nv alto: +42) Emax=2.60MV/cm w_tunel=Eg/qEmax=4.3nm B/Emax=7.3 J_escala(q*int G, sin factor de ocupacion)=8.39e+01 A/cm2
+N0/Npk=1.0 Npk=1e+20 L=10nm/dec: W=8.40nm Nborde=6.20e+19 xi_n=+40meV xi_p=+97meV (Nv alto: +35) Emax=2.33MV/cm w_tunel=Eg/qEmax=4.8nm B/Emax=8.1 J_escala(q*int G, sin factor de ocupacion)=3.00e+01 A/cm2
+N0/Npk=1.0 Npk=1e+20 L=15nm/dec: W=9.30nm Nborde=5.10e+19 xi_n=+32meV xi_p=+83meV (Nv alto: +27) Emax=2.05MV/cm w_tunel=Eg/qEmax=5.5nm B/Emax=9.3 J_escala(q*int G, sin factor de ocupacion)=7.68e+00 A/cm2
+N0/Npk=1.0 Npk=1e+20 L=20nm/dec: W=10.04nm Nborde=4.39e+19 xi_n=+26meV xi_p=+74meV (Nv alto: +21) Emax=1.87MV/cm w_tunel=Eg/qEmax=6.0nm B/Emax=10.2 J_escala(q*int G, sin factor de ocupacion)=2.56e+00 A/cm2
+N0/Npk=1.0 Npk=2e+20 L=2nm/dec: W=4.82nm Nborde=1.88e+20 xi_n=+106meV xi_p=+212meV (Nv alto: +97) Emax=4.93MV/cm w_tunel=Eg/qEmax=2.3nm B/Emax=3.9 J_escala(q*int G, sin factor de ocupacion)=9.06e+03 A/cm2
+N0/Npk=1.0 Npk=2e+20 L=3nm/dec: W=5.13nm Nborde=1.72e+20 xi_n=+99meV xi_p=+200meV (Nv alto: +91) Emax=4.46MV/cm w_tunel=Eg/qEmax=2.5nm B/Emax=4.3 J_escala(q*int G, sin factor de ocupacion)=5.17e+03 A/cm2
+N0/Npk=1.0 Npk=2e+20 L=5nm/dec: W=5.66nm Nborde=1.46e+20 xi_n=+87meV xi_p=+178meV (Nv alto: +80) Emax=3.86MV/cm w_tunel=Eg/qEmax=2.9nm B/Emax=4.9 J_escala(q*int G, sin factor de ocupacion)=2.07e+03 A/cm2
+N0/Npk=1.0 Npk=2e+20 L=7nm/dec: W=6.10nm Nborde=1.27e+20 xi_n=+78meV xi_p=+162meV (Nv alto: +71) Emax=3.48MV/cm w_tunel=Eg/qEmax=3.2nm B/Emax=5.5 J_escala(q*int G, sin factor de ocupacion)=9.92e+02 A/cm2
+N0/Npk=1.0 Npk=2e+20 L=10nm/dec: W=6.65nm Nborde=1.07e+20 xi_n=+68meV xi_p=+144meV (Nv alto: +61) Emax=3.10MV/cm w_tunel=Eg/qEmax=3.6nm B/Emax=6.1 J_escala(q*int G, sin factor de ocupacion)=4.07e+02 A/cm2
+N0/Npk=1.0 Npk=2e+20 L=15nm/dec: W=7.38nm Nborde=8.65e+19 xi_n=+56meV xi_p=+124meV (Nv alto: +50) Emax=2.70MV/cm w_tunel=Eg/qEmax=4.1nm B/Emax=7.0 J_escala(q*int G, sin factor de ocupacion)=1.27e+02 A/cm2
+N0/Npk=1.0 Npk=2e+20 L=20nm/dec: W=7.98nm Nborde=7.37e+19 xi_n=+48meV xi_p=+110meV (Nv alto: +43) Emax=2.45MV/cm w_tunel=Eg/qEmax=4.6nm B/Emax=7.8 J_escala(q*int G, sin factor de ocupacion)=5.06e+01 A/cm2
+N0/Npk=1.0 Npk=3e+20 L=2nm/dec: W=4.17nm Nborde=2.73e+20 xi_n=+138meV xi_p=+274meV (Nv alto: +128) Emax=6.01MV/cm w_tunel=Eg/qEmax=1.9nm B/Emax=3.2 J_escala(q*int G, sin factor de ocupacion)=2.78e+04 A/cm2
+N0/Npk=1.0 Npk=3e+20 L=3nm/dec: W=4.46nm Nborde=2.46e+20 xi_n=+129meV xi_p=+255meV (Nv alto: +118) Emax=5.39MV/cm w_tunel=Eg/qEmax=2.1nm B/Emax=3.5 J_escala(q*int G, sin factor de ocupacion)=1.62e+04 A/cm2
+N0/Npk=1.0 Npk=3e+20 L=5nm/dec: W=4.94nm Nborde=2.04e+20 xi_n=+112meV xi_p=+225meV (Nv alto: +103) Emax=4.62MV/cm w_tunel=Eg/qEmax=2.4nm B/Emax=4.1 J_escala(q*int G, sin factor de ocupacion)=6.80e+03 A/cm2
+N0/Npk=1.0 Npk=3e+20 L=7nm/dec: W=5.34nm Nborde=1.75e+20 xi_n=+100meV xi_p=+203meV (Nv alto: +92) Emax=4.14MV/cm w_tunel=Eg/qEmax=2.7nm B/Emax=4.6 J_escala(q*int G, sin factor de ocupacion)=3.43e+03 A/cm2
+N0/Npk=1.0 Npk=3e+20 L=10nm/dec: W=5.83nm Nborde=1.47e+20 xi_n=+88meV xi_p=+179meV (Nv alto: +80) Emax=3.67MV/cm w_tunel=Eg/qEmax=3.1nm B/Emax=5.2 J_escala(q*int G, sin factor de ocupacion)=1.51e+03 A/cm2
+N0/Npk=1.0 Npk=3e+20 L=15nm/dec: W=6.48nm Nborde=1.17e+20 xi_n=+73meV xi_p=+154meV (Nv alto: +66) Emax=3.18MV/cm w_tunel=Eg/qEmax=3.5nm B/Emax=6.0 J_escala(q*int G, sin factor de ocupacion)=5.20e+02 A/cm2
+N0/Npk=1.0 Npk=3e+20 L=20nm/dec: W=7.00nm Nborde=9.95e+19 xi_n=+64meV xi_p=+137meV (Nv alto: +57) Emax=2.88MV/cm w_tunel=Eg/qEmax=3.9nm B/Emax=6.6 J_escala(q*int G, sin factor de ocupacion)=2.24e+02 A/cm2
+N0/Npk=0.3 Npk=1e+20 L=2nm/dec: W=6.09nm Nborde=9.91e+19 xi_n=+64meV xi_p=+136meV (Nv alto: +58) Emax=3.64MV/cm w_tunel=Eg/qEmax=3.1nm B/Emax=5.2 J_escala(q*int G, sin factor de ocupacion)=1.30e+03 A/cm2
+N0/Npk=0.3 Npk=1e+20 L=3nm/dec: W=6.32nm Nborde=9.73e+19 xi_n=+63meV xi_p=+135meV (Nv alto: +57) Emax=3.32MV/cm w_tunel=Eg/qEmax=3.4nm B/Emax=5.7 J_escala(q*int G, sin factor de ocupacion)=7.17e+02 A/cm2
+N0/Npk=0.3 Npk=1e+20 L=5nm/dec: W=6.90nm Nborde=9.39e+19 xi_n=+61meV xi_p=+131meV (Nv alto: +55) Emax=2.84MV/cm w_tunel=Eg/qEmax=3.9nm B/Emax=6.7 J_escala(q*int G, sin factor de ocupacion)=2.14e+02 A/cm2
+N0/Npk=0.3 Npk=1e+20 L=7nm/dec: W=7.62nm Nborde=9.14e+19 xi_n=+59meV xi_p=+129meV (Nv alto: +54) Emax=2.52MV/cm w_tunel=Eg/qEmax=4.5nm B/Emax=7.6 J_escala(q*int G, sin factor de ocupacion)=7.14e+01 A/cm2
+N0/Npk=0.3 Npk=1e+20 L=10nm/dec: W=8.65nm Nborde=7.02e+19 xi_n=+46meV xi_p=+106meV (Nv alto: +40) Emax=2.17MV/cm w_tunel=Eg/qEmax=5.2nm B/Emax=8.8 J_escala(q*int G, sin factor de ocupacion)=1.58e+01 A/cm2
+N0/Npk=0.3 Npk=1e+20 L=15nm/dec: W=9.94nm Nborde=5.03e+19 xi_n=+31meV xi_p=+82meV (Nv alto: +26) Emax=1.84MV/cm w_tunel=Eg/qEmax=6.1nm B/Emax=10.3 J_escala(q*int G, sin factor de ocupacion)=2.39e+00 A/cm2
+N0/Npk=0.3 Npk=1e+20 L=20nm/dec: W=10.94nm Nborde=4.03e+19 xi_n=+22meV xi_p=+69meV (Nv alto: +18) Emax=1.65MV/cm w_tunel=Eg/qEmax=6.8nm B/Emax=11.5 J_escala(q*int G, sin factor de ocupacion)=5.64e-01 A/cm2
+N0/Npk=0.3 Npk=2e+20 L=2nm/dec: W=4.63nm Nborde=1.96e+20 xi_n=+109meV xi_p=+219meV (Nv alto: +101) Emax=5.05MV/cm w_tunel=Eg/qEmax=2.2nm B/Emax=3.8 J_escala(q*int G, sin factor de ocupacion)=1.16e+04 A/cm2
+N0/Npk=0.3 Npk=2e+20 L=3nm/dec: W=4.89nm Nborde=1.91e+20 xi_n=+107meV xi_p=+215meV (Nv alto: +99) Emax=4.51MV/cm w_tunel=Eg/qEmax=2.5nm B/Emax=4.2 J_escala(q*int G, sin factor de ocupacion)=6.35e+03 A/cm2
+N0/Npk=0.3 Npk=2e+20 L=5nm/dec: W=5.57nm Nborde=1.83e+20 xi_n=+104meV xi_p=+209meV (Nv alto: +96) Emax=3.77MV/cm w_tunel=Eg/qEmax=3.0nm B/Emax=5.0 J_escala(q*int G, sin factor de ocupacion)=2.02e+03 A/cm2
+N0/Npk=0.3 Npk=2e+20 L=7nm/dec: W=6.26nm Nborde=1.47e+20 xi_n=+88meV xi_p=+179meV (Nv alto: +79) Emax=3.27MV/cm w_tunel=Eg/qEmax=3.4nm B/Emax=5.8 J_escala(q*int G, sin factor de ocupacion)=6.86e+02 A/cm2
+N0/Npk=0.3 Npk=2e+20 L=10nm/dec: W=7.05nm Nborde=1.09e+20 xi_n=+69meV xi_p=+145meV (Nv alto: +62) Emax=2.81MV/cm w_tunel=Eg/qEmax=4.0nm B/Emax=6.8 J_escala(q*int G, sin factor de ocupacion)=1.92e+02 A/cm2
+N0/Npk=0.3 Npk=2e+20 L=15nm/dec: W=8.05nm Nborde=7.90e+19 xi_n=+52meV xi_p=+116meV (Nv alto: +46) Emax=2.38MV/cm w_tunel=Eg/qEmax=4.7nm B/Emax=8.0 J_escala(q*int G, sin factor de ocupacion)=4.09e+01 A/cm2
+N0/Npk=0.3 Npk=2e+20 L=20nm/dec: W=8.84nm Nborde=6.37e+19 xi_n=+41meV xi_p=+99meV (Nv alto: +36) Emax=2.13MV/cm w_tunel=Eg/qEmax=5.3nm B/Emax=8.9 J_escala(q*int G, sin factor de ocupacion)=1.26e+01 A/cm2
+N0/Npk=0.3 Npk=3e+20 L=2nm/dec: W=3.99nm Nborde=2.91e+20 xi_n=+145meV xi_p=+286meV (Nv alto: +135) Emax=6.14MV/cm w_tunel=Eg/qEmax=1.8nm B/Emax=3.1 J_escala(q*int G, sin factor de ocupacion)=3.49e+04 A/cm2
+N0/Npk=0.3 Npk=3e+20 L=3nm/dec: W=4.28nm Nborde=2.83e+20 xi_n=+142meV xi_p=+280meV (Nv alto: +132) Emax=5.41MV/cm w_tunel=Eg/qEmax=2.1nm B/Emax=3.5 J_escala(q*int G, sin factor de ocupacion)=1.90e+04 A/cm2
+N0/Npk=0.3 Npk=3e+20 L=5nm/dec: W=4.99nm Nborde=2.56e+20 xi_n=+132meV xi_p=+262meV (Nv alto: +119) Emax=4.46MV/cm w_tunel=Eg/qEmax=2.5nm B/Emax=4.3 J_escala(q*int G, sin factor de ocupacion)=6.20e+03 A/cm2
+N0/Npk=0.3 Npk=3e+20 L=7nm/dec: W=5.58nm Nborde=1.89e+20 xi_n=+106meV xi_p=+214meV (Nv alto: +96) Emax=3.82MV/cm w_tunel=Eg/qEmax=2.9nm B/Emax=5.0 J_escala(q*int G, sin factor de ocupacion)=2.18e+03 A/cm2
+N0/Npk=0.3 Npk=3e+20 L=10nm/dec: W=6.26nm Nborde=1.41e+20 xi_n=+85meV xi_p=+175meV (Nv alto: +77) Emax=3.28MV/cm w_tunel=Eg/qEmax=3.4nm B/Emax=5.8 J_escala(q*int G, sin factor de ocupacion)=6.95e+02 A/cm2
+N0/Npk=0.3 Npk=3e+20 L=15nm/dec: W=7.12nm Nborde=1.03e+20 xi_n=+66meV xi_p=+140meV (Nv alto: +59) Emax=2.78MV/cm w_tunel=Eg/qEmax=4.0nm B/Emax=6.8 J_escala(q*int G, sin factor de ocupacion)=1.74e+02 A/cm2
+N0/Npk=0.3 Npk=3e+20 L=20nm/dec: W=7.80nm Nborde=8.36e+19 xi_n=+55meV xi_p=+121meV (Nv alto: +48) Emax=2.48MV/cm w_tunel=Eg/qEmax=4.5nm B/Emax=7.7 J_escala(q*int G, sin factor de ocupacion)=6.05e+01 A/cm2
+N0/Npk=0.1 Npk=1e+20 L=2nm/dec: W=6.50nm Nborde=9.98e+19 xi_n=+64meV xi_p=+137meV (Nv alto: +58) Emax=3.01MV/cm w_tunel=Eg/qEmax=3.7nm B/Emax=6.3 J_escala(q*int G, sin factor de ocupacion)=3.83e+02 A/cm2
+N0/Npk=0.1 Npk=1e+20 L=3nm/dec: W=7.22nm Nborde=9.94e+19 xi_n=+64meV xi_p=+137meV (Nv alto: +58) Emax=2.57MV/cm w_tunel=Eg/qEmax=4.4nm B/Emax=7.4 J_escala(q*int G, sin factor de ocupacion)=9.72e+01 A/cm2
+N0/Npk=0.1 Npk=1e+20 L=5nm/dec: W=8.98nm Nborde=7.77e+19 xi_n=+51meV xi_p=+114meV (Nv alto: +44) Emax=2.02MV/cm w_tunel=Eg/qEmax=5.5nm B/Emax=9.4 J_escala(q*int G, sin factor de ocupacion)=7.91e+00 A/cm2
+N0/Npk=0.1 Npk=1e+20 L=7nm/dec: W=10.34nm Nborde=5.30e+19 xi_n=+33meV xi_p=+86meV (Nv alto: +28) Emax=1.72MV/cm w_tunel=Eg/qEmax=6.5nm B/Emax=11.0 J_escala(q*int G, sin factor de ocupacion)=1.06e+00 A/cm2
+N0/Npk=0.1 Npk=1e+20 L=10nm/dec: W=11.90nm Nborde=3.68e+19 xi_n=+19meV xi_p=+64meV (Nv alto: +14) Emax=1.47MV/cm w_tunel=Eg/qEmax=7.6nm B/Emax=12.9 J_escala(q*int G, sin factor de ocupacion)=1.15e-01 A/cm2
+N0/Npk=0.1 Npk=1e+20 L=15nm/dec: W=13.83nm Nborde=2.55e+19 xi_n=+6meV xi_p=+45meV (Nv alto: +2) Emax=1.25MV/cm w_tunel=Eg/qEmax=9.0nm B/Emax=15.2 J_escala(q*int G, sin factor de ocupacion)=7.83e-03 A/cm2
+N0/Npk=0.1 Npk=1e+20 L=20nm/dec: W=15.32nm Nborde=2.00e+19 xi_n=-2meV xi_p=+34meV (Nv alto: -6) Emax=1.11MV/cm w_tunel=Eg/qEmax=10.1nm B/Emax=17.1 J_escala(q*int G, sin factor de ocupacion)=1.00e-03 A/cm2
+N0/Npk=0.1 Npk=2e+20 L=2nm/dec: W=5.18nm Nborde=1.99e+20 xi_n=+110meV xi_p=+221meV (Nv alto: +102) Emax=3.98MV/cm w_tunel=Eg/qEmax=2.8nm B/Emax=4.8 J_escala(q*int G, sin factor de ocupacion)=3.24e+03 A/cm2
+N0/Npk=0.1 Npk=2e+20 L=3nm/dec: W=6.05nm Nborde=1.98e+20 xi_n=+110meV xi_p=+220meV (Nv alto: +99) Emax=3.34MV/cm w_tunel=Eg/qEmax=3.3nm B/Emax=5.7 J_escala(q*int G, sin factor de ocupacion)=9.27e+02 A/cm2
+N0/Npk=0.1 Npk=2e+20 L=5nm/dec: W=7.50nm Nborde=1.09e+20 xi_n=+69meV xi_p=+146meV (Nv alto: +61) Emax=2.55MV/cm w_tunel=Eg/qEmax=4.4nm B/Emax=7.4 J_escala(q*int G, sin factor de ocupacion)=8.66e+01 A/cm2
+N0/Npk=0.1 Npk=2e+20 L=7nm/dec: W=8.55nm Nborde=7.67e+19 xi_n=+50meV xi_p=+113meV (Nv alto: +44) Emax=2.19MV/cm w_tunel=Eg/qEmax=5.1nm B/Emax=8.7 J_escala(q*int G, sin factor de ocupacion)=1.74e+01 A/cm2
+N0/Npk=0.1 Npk=2e+20 L=10nm/dec: W=9.74nm Nborde=5.49e+19 xi_n=+35meV xi_p=+88meV (Nv alto: +30) Emax=1.88MV/cm w_tunel=Eg/qEmax=6.0nm B/Emax=10.1 J_escala(q*int G, sin factor de ocupacion)=2.99e+00 A/cm2
+N0/Npk=0.1 Npk=2e+20 L=15nm/dec: W=11.23nm Nborde=3.89e+19 xi_n=+21meV xi_p=+67meV (Nv alto: +17) Emax=1.59MV/cm w_tunel=Eg/qEmax=7.0nm B/Emax=11.9 J_escala(q*int G, sin factor de ocupacion)=3.51e-01 A/cm2
+N0/Npk=0.1 Npk=2e+20 L=20nm/dec: W=12.39nm Nborde=3.10e+19 xi_n=+13meV xi_p=+54meV (Nv alto: +9) Emax=1.43MV/cm w_tunel=Eg/qEmax=7.9nm B/Emax=13.3 J_escala(q*int G, sin factor de ocupacion)=6.83e-02 A/cm2
+N0/Npk=0.1 Npk=3e+20 L=2nm/dec: W=4.63nm Nborde=2.98e+20 xi_n=+147meV xi_p=+291meV (Nv alto: +137) Emax=4.71MV/cm w_tunel=Eg/qEmax=2.4nm B/Emax=4.0 J_escala(q*int G, sin factor de ocupacion)=9.67e+03 A/cm2
+N0/Npk=0.1 Npk=3e+20 L=3nm/dec: W=5.50nm Nborde=2.44e+20 xi_n=+128meV xi_p=+254meV (Nv alto: +114) Emax=3.85MV/cm w_tunel=Eg/qEmax=2.9nm B/Emax=4.9 J_escala(q*int G, sin factor de ocupacion)=2.57e+03 A/cm2
+N0/Npk=0.1 Npk=3e+20 L=5nm/dec: W=6.73nm Nborde=1.35e+20 xi_n=+82meV xi_p=+169meV (Nv alto: +73) Emax=2.95MV/cm w_tunel=Eg/qEmax=3.8nm B/Emax=6.4 J_escala(q*int G, sin factor de ocupacion)=3.07e+02 A/cm2
+N0/Npk=0.1 Npk=3e+20 L=7nm/dec: W=7.63nm Nborde=9.66e+19 xi_n=+62meV xi_p=+134meV (Nv alto: +55) Emax=2.53MV/cm w_tunel=Eg/qEmax=4.4nm B/Emax=7.5 J_escala(q*int G, sin factor de ocupacion)=7.48e+01 A/cm2
+N0/Npk=0.1 Npk=3e+20 L=10nm/dec: W=8.65nm Nborde=7.02e+19 xi_n=+46meV xi_p=+106meV (Nv alto: +40) Emax=2.17MV/cm w_tunel=Eg/qEmax=5.2nm B/Emax=8.8 J_escala(q*int G, sin factor de ocupacion)=1.58e+01 A/cm2
+N0/Npk=0.1 Npk=3e+20 L=15nm/dec: W=9.94nm Nborde=5.03e+19 xi_n=+31meV xi_p=+82meV (Nv alto: +26) Emax=1.84MV/cm w_tunel=Eg/qEmax=6.1nm B/Emax=10.3 J_escala(q*int G, sin factor de ocupacion)=2.39e+00 A/cm2
+N0/Npk=0.1 Npk=3e+20 L=20nm/dec: W=10.94nm Nborde=4.03e+19 xi_n=+22meV xi_p=+69meV (Nv alto: +18) Emax=1.65MV/cm w_tunel=Eg/qEmax=6.8nm B/Emax=11.5 J_escala(q*int G, sin factor de ocupacion)=5.64e-01 A/cm2
+== B1: barreras solas, w=0,14 um (ohm/um)
+bajo: pila Ti/Al/TiW 107 ohm/um ; pila Ti/TiN/Al/Ti/TiN 38 ohm/um | vacio 24..39 nm: 2.6..4.2 y 0.9..1.5 ohm | vacio 100..500 nm: 11..54 y 4..19 ohm (Al intacto: 0.89 ohm/um)
+central: pila Ti/Al/TiW 150 ohm/um ; pila Ti/TiN/Al/Ti/TiN 97 ohm/um | vacio 24..39 nm: 3.6..5.9 y 2.3..3.8 ohm | vacio 100..500 nm: 15..75 y 10..48 ohm (Al intacto: 0.89 ohm/um)
+alto: pila Ti/Al/TiW 238 ohm/um ; pila Ti/TiN/Al/Ti/TiN 232 ohm/um | vacio 24..39 nm: 5.7..9.3 y 5.6..9.1 ohm | vacio 100..500 nm: 24..119 y 23..116 ohm (Al intacto: 0.89 ohm/um)
+Ti consumido (TiAl3), central: pila Ti/Al/TiW 190 ohm/um ; pila Ti/TiN/Al/Ti/TiN 143 ohm/um | vacio 24..39 nm: 4.6..7.4 y 3.4..5.6 ohm | vacio 100..500 nm: 19..95 y 14..71 ohm (Al intacto: 0.89 ohm/um)
+== B2: cuello de li
+R_th' 2D (K m/W): k=0.8 h=0.61: 0.565 ; k=0.8 h=0.73: 0.598 ; k=0.8 h=0.94: 0.646 ; k=1.1 h=0.61: 0.411 ; k=1.1 h=0.73: 0.436 ; k=1.1 h=0.94: 0.471 ; k=1.4 h=0.61: 0.324 ; k=1.4 h=0.73: 0.343 ; k=1.4 h=0.94: 0.371
+L=1.0um R=75.3ohm I=4.2mA: V=IR=0.32 V (queda 1.48 V para los drivers) P=1.33mW ; dT(K) bajo/central/alto: [2D sin extremos 430 | aleta, extremos a Tamb: media 136 max 199 | 3D Green media 398] [2D sin extremos 579 | aleta, extremos a Tamb: media 195 max 285 | 3D Green media 519] [2D sin extremos 859 | aleta, extremos a Tamb: media 342 max 496 | 3D Green media 728]
+L=1.0um R=75.3ohm I=7.8mA: V=IR=0.59 V (queda 1.21 V para los drivers) P=4.58mW ; dT(K) bajo/central/alto: [2D sin extremos 1484 | aleta, extremos a Tamb: media 467 max 685 | 3D Green media 1368] [2D sin extremos 1997 | aleta, extremos a Tamb: media 672 max 983 | 3D Green media 1765] [2D sin extremos 2961 | aleta, extremos a Tamb: media 1181 max 1712 | 3D Green media 2510]
+   L=1.0um: corriente maxima absoluta con 1,8 V sobre el tramo solo: 23.9 mA
+L=2.0um R=150.6ohm I=4.2mA: V=IR=0.63 V (queda 1.17 V para los drivers) P=2.66mW ; dT(K) bajo/central/alto: [2D sin extremos 430 | aleta, extremos a Tamb: media 258 max 357 | 3D Green media 451] [2D sin extremos 579 | aleta, extremos a Tamb: media 359 max 493 | 3D Green media 591] [2D sin extremos 859 | aleta, extremos a Tamb: media 575 max 775 | 3D Green media 843]
+L=2.0um R=150.6ohm I=7.8mA: V=IR=1.17 V (queda 0.63 V para los drivers) P=9.16mW ; dT(K) bajo/central/alto: [2D sin extremos 1484 | aleta, extremos a Tamb: media 889 max 1232 | 3D Green media 1553] [2D sin extremos 1997 | aleta, extremos a Tamb: media 1237 max 1701 | 3D Green media 2027] [2D sin extremos 2961 | aleta, extremos a Tamb: media 1984 max 2672 | 3D Green media 2886]
+   L=2.0um: corriente maxima absoluta con 1,8 V sobre el tramo solo: 12.0 mA
+linea L=5.0um R=376ohm I(1,8V)=4.78mA P=8.61mW: T(K)=300+dT bajo/central/alto: 857 (max con extremos frios 855) / 1050 (max con extremos frios 1048) / 1413 (max con extremos frios 1412)
+linea L=10.0um R=753ohm I(1,8V)=2.39mA P=4.30mW: T(K)=300+dT bajo/central/alto: 439 (max con extremos frios 439) / 488 (max con extremos frios 488) / 578 (max con extremos frios 578)
+== B3
+Rref=100: V sobre 100 ohm = 24.0 mV ; abierto = 48 mV ; tau=Rref*50fF = 5 ps (1er orden, sin sobreimpulso)
+Rref=1000: V sobre 100 ohm = 4.4 mV ; abierto = 48 mV ; tau=Rref*50fF = 50 ps (1er orden, sin sobreimpulso)
+Rref=10000: V sobre 100 ohm = 0.5 mV ; abierto = 48 mV ; tau=Rref*50fF = 500 ps (1er orden, sin sobreimpulso)
+C nodo=1 fF: divisor capacitivo 1,8*0,2/(0,2+C) = 300.0 mV -> pico 348 mV
+C nodo=2 fF: divisor capacitivo 1,8*0,2/(0,2+C) = 163.6 mV -> pico 212 mV
+C nodo=5 fF: divisor capacitivo 1,8*0,2/(0,2+C) = 69.2 mV -> pico 117 mV
+C nodo=15 fF: divisor capacitivo 1,8*0,2/(0,2+C) = 23.7 mV -> pico 72 mV
+C nodo=50 fF: divisor capacitivo 1,8*0,2/(0,2+C) = 7.2 mV -> pico 55 mV
+C nodo=100 fF: divisor capacitivo 1,8*0,2/(0,2+C) = 3.6 mV -> pico 52 mV
+flanco lento: Rref=100 tr=20ps: R*Cov*dV/dt = 1.80 mV (vale si tr >> Rref*Cnodo)
+flanco lento: Rref=100 tr=100ps: R*Cov*dV/dt = 0.36 mV (vale si tr >> Rref*Cnodo)
+flanco lento: Rref=1000 tr=20ps: R*Cov*dV/dt = 18.00 mV (vale si tr >> Rref*Cnodo)
+flanco lento: Rref=1000 tr=100ps: R*Cov*dV/dt = 3.60 mV (vale si tr >> Rref*Cnodo)
+flanco lento: Rref=10000 tr=20ps: R*Cov*dV/dt = 180.00 mV (vale si tr >> Rref*Cnodo)
+flanco lento: Rref=10000 tr=100ps: R*Cov*dV/dt = 36.00 mV (vale si tr >> Rref*Cnodo)
+== C1
+G3 N=4 w=1,5 a_in=7 z=0 Magic Rs=0.047: 0.3734 T/A = mT/mA ; I(2 mT)=5.36 mA ; R=20.96 ohm ; P=0.601 mW
+G3 N=4 w=1,5 a_in=7 z=0 Magic Rs=0.038: 0.3734 T/A = mT/mA ; I(2 mT)=5.36 mA ; R=16.94 ohm ; P=0.486 mW
+G3 N=4 w=1,5 a_in=7 z=0 Magic Rs=0.056: 0.3734 T/A = mT/mA ; I(2 mT)=5.36 mA ; R=24.97 ohm ; P=0.716 mW
+G3 N=4 w=1,5 a_in=7 z=0,3262 (superficie Si) Rs=0.047: 0.3839 T/A = mT/mA ; I(2 mT)=5.21 mA ; R=20.96 ohm ; P=0.569 mW
+N=4 w=1,5 a_in=10 z=0 Magic Rs=0.047: 0.3086 T/A = mT/mA ; I(2 mT)=6.48 mA ; R=26.97 ohm ; P=1.133 mW
+N=4 w=1,5 a_in=10 z=0,3262 (superficie Si) Rs=0.047: 0.3139 T/A = mT/mA ; I(2 mT)=6.37 mA ; R=26.97 ohm ; P=1.095 mW
+N=6 w=1,5 a_in=7 z=0 Magic Rs=0.047: 0.5065 T/A = mT/mA ; I(2 mT)=3.95 mA ; R=36.85 ohm ; P=0.575 mW
+N=6 w=1,5 a_in=7 z=0,3262 (superficie Si) Rs=0.047: 0.5186 T/A = mT/mA ; I(2 mT)=3.86 mA ; R=36.85 ohm ; P=0.548 mW
+N=4 w=2,1 a_in=7 z=0 Magic Rs=0.047: 0.3487 T/A = mT/mA ; I(2 mT)=5.74 mA ; R=16.69 ohm ; P=0.549 mW
+N=4 w=2,1 a_in=7 z=0,3262 (superficie Si) Rs=0.047: 0.3575 T/A = mT/mA ; I(2 mT)=5.59 mA ; R=16.69 ohm ; P=0.522 mW
+== C2
+mu=0.01: (mu B)^2 = 4.00e-10 ; x coef 0,03..1 -> 1.2e-11..4.0e-10
+mu=0.045: (mu B)^2 = 8.10e-09 ; x coef 0,03..1 -> 2.4e-10..8.1e-09
+mu=0.14: (mu B)^2 = 7.84e-08 ; x coef 0,03..1 -> 2.4e-09..7.8e-08
+== C3
+sqrt(2qI)=69.33 fA/rtHz ; T=0.1049 s ; sigma=S*sqrt(1/(2T))=151.4 fA ; con ENBW=1/T: 214.1 fA ; densidad equivalente a 150 fA: 68.7 (ENBW 1/2T) o 48.6 (1/T) fA/rtHz
+demod 4 estados, cada uno T/4: var(D)=4*S^2/(2*T/4)/16 -> sigma_D=151.4 fA
+== C4 (sympy)
+y=a B^2 : 2*B1*B2*a
+y=c+b B : 0
+y=c+bB+aB^2+dB^3: 2*B1*B2*a
+calor con retorno compartido R1 I1^2+R2 I2^2+Rr (s1 I1+s2 I2)^2 : 2*I1*I2*Rr
+calor sin retorno compartido: 0
+== D1
+C=1 fF: sqrt(kT/C)=2.035 mV
+C=10 fF: sqrt(kT/C)=0.644 mV
+C=100 fF: sqrt(kT/C)=0.204 mV
+piso 0,57 % <-> 0.2095 mV ; C=kT/v^2=94.4 fF

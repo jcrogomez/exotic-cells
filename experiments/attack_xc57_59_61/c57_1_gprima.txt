@@ -1,0 +1,26 @@
+# c57_1_gprima.py — sección 2D, h=20 nm; k_si=150; potencia 1 W/m en la pista; dT en K por W/m
+w_um k_ox  G'(W/mK)  R'th(K.m/W)
+0.15 1.0    2.91    0.343
+0.35 1.0    3.67    0.273
+0.50 1.0    4.09    0.245
+1.00 1.0    5.79    0.173
+2.00 1.0    8.84    0.113
+0.15 1.4    4.05    0.247
+0.35 1.4    5.08    0.197
+0.50 1.4    5.66    0.177
+1.00 1.4    7.98    0.125
+2.00 1.4   12.13    0.082
+
+# Acoplo a vecinos: pista calefactora w=0.5; vecino a distancia d (borde a borde)
+k_ox d_um  f_polyvecino  f_activa_Si(superficie, mesa 1um)  f_Si_bajo_calefactor
+1.0 0.21     0.3465         0.02484                  0.02634
+1.0 0.50     0.1968         0.01878                  0.02487
+1.0 1.00     0.1030         0.01433                  0.02462
+1.0 3.00     0.0259         0.00683                  0.02465
+1.4 0.21     0.3486         0.03417                  0.03632
+1.4 0.50     0.2013         0.02592                  0.03435
+1.4 1.00     0.1076         0.01980                  0.03402
+1.4 3.00     0.0287         0.00945                  0.03405
+
+# Nota: el silicio 2D está anclado a 6 um de profundidad y a +-8 um; la subida absoluta del silicio depende de ese
+# anclaje (logarítmica). f_Si es por tanto un ORDEN DE MAGNITUD (factor ~2), no un número.

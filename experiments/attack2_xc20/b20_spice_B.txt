@@ -1,0 +1,142 @@
+B1. nfet en inversión débil, fuente común, Vds = 0,9 V. Fuente: b20_spice_raw/B1_<esq>_<T>.dat
+Id en A. S = 100 mV / log10(I(0,20)/I(0,10)). R31 = I(0,30)/I(0,10). R2510 = I(0,25)/I(0,10) (peor caso de los dos estados).
+
+Dispositivo std_5_1  (nfet_01v8, W/L = 5/1)
+  esq  T      I(0.05)    I(0.10)    I(0.20)    I(0.25)    I(0.30)    I(0.40)    S(mV/dec)   R31      R2510
+  tt  m40   5.058e-15  2.957e-14  1.010e-12  5.897e-12  3.432e-11  1.129e-09      65.2     1160.6    199.4
+  tt   27   1.273e-12  5.000e-12  7.715e-11  3.015e-10  1.169e-09  1.657e-08      84.2      233.7     60.3
+  tt   85   3.124e-11  9.349e-11  8.955e-10  2.767e-09  8.440e-09  7.312e-08     101.9       90.3     29.6
+  ss  m40   3.495e-15  1.982e-14  6.377e-13  3.613e-12  2.042e-11  6.382e-10      66.3     1030.2    182.2
+  ss   27   9.172e-13  3.515e-12  5.177e-11  1.980e-10  7.518e-10  1.034e-08      85.6      213.9     56.3
+  ss   85   2.358e-11  6.809e-11  6.236e-10  1.893e-09  5.691e-09  4.836e-08     104.0       83.6     27.8
+  ff  m40   7.485e-15  4.513e-14  1.639e-12  9.860e-12  5.909e-11  2.040e-09      64.1     1309.3    218.5
+  ff   27   1.795e-12  7.224e-12  1.168e-10  4.665e-10  1.845e-09  2.684e-08      82.7      255.3     64.6
+  ff   85   4.208e-11  1.300e-10  1.300e-09  4.085e-09  1.264e-08  1.113e-07     100.0       97.2     31.4
+  sf  m40   9.406e-15  5.709e-14  2.100e-12  1.271e-11  7.662e-11  2.661e-09      63.9     1342.2    222.7
+  sf   27   2.153e-12  8.709e-12  1.421e-10  5.700e-10  2.261e-09  3.288e-08      82.5      259.6     65.5
+  sf   85   4.880e-11  1.522e-10  1.535e-09  4.836e-09  1.498e-08  1.316e-07      99.6       98.4     31.8
+  fs  m40   2.809e-15  1.585e-14  5.040e-13  2.840e-12  1.597e-11  4.951e-10      66.6     1007.8    179.2
+  fs   27   7.708e-13  2.939e-12  4.292e-11  1.635e-10  6.189e-10  8.494e-09      85.9      210.6     55.6
+  fs   85   2.060e-11  5.870e-11  5.317e-10  1.610e-09  4.829e-09  4.105e-08     104.5       82.3     27.4
+  max I(0,10) = 1.522e-10 A (sf/85);  min I(0,25) = 2.840e-12 A (fs/m40);  min I(0,30) = 1.597e-11 A (fs/m40)
+  Ventana para referencia fija única: min I(0,25)/max I(0,10) = 0.0187; min I(0,30)/max I(0,10) = 0.105  -> NO EXISTE (0,10|0,25); NO EXISTE (0,10|0,30)
+  Cociente mínimo dentro de un mismo punto: R31 = 82.3 (fs/85); R2510 = 27.4 (fs/85)
+    solo temperatura, esquina tt: min I(0,25)/max I(0,10) = 0.0631
+    solo temperatura, esquina ss: min I(0,25)/max I(0,10) = 0.0531
+    solo temperatura, esquina ff: min I(0,25)/max I(0,10) = 0.0758
+    solo temperatura, esquina sf: min I(0,25)/max I(0,10) = 0.0835
+    solo temperatura, esquina fs: min I(0,25)/max I(0,10) = 0.0484
+    solo esquinas, T = m40: min I(0,25)/max I(0,10) = 49.7
+    solo esquinas, T = 27: min I(0,25)/max I(0,10) = 18.8
+    solo esquinas, T = 85: min I(0,25)/max I(0,10) = 10.6
+
+Dispositivo lvt_5_1  (nfet_01v8_lvt, W/L = 5/1)
+  esq  T      I(0.05)    I(0.10)    I(0.20)    I(0.25)    I(0.30)    I(0.40)    S(mV/dec)   R31      R2510
+  tt  m40   6.553e-14  4.647e-13  2.325e-11  1.629e-10  1.118e-09  4.298e-08      58.9     2406.9    350.5
+  tt   27   1.028e-11  4.689e-11  9.587e-10  4.233e-09  1.802e-08  2.632e-07      76.3      384.3     90.3
+  tt   85   1.794e-10  6.298e-10  7.600e-09  2.550e-08  8.205e-08  7.125e-07      92.5      130.3     40.5
+  ss  m40   4.242e-14  2.922e-13  1.381e-11  9.430e-11  6.340e-10  2.447e-08      59.7     2169.6    322.7
+  ss   27   7.074e-12  3.157e-11  6.198e-10  2.695e-09  1.137e-08  1.683e-07      77.3      360.2     85.4
+  ss   85   1.285e-10  4.418e-10  5.172e-09  1.720e-08  5.515e-08  4.836e-07      93.6      124.8     38.9
+  ff  m40   1.031e-13  7.528e-13  3.989e-11  2.868e-10  2.007e-09  7.550e-08      58.0     2665.4    381.0
+  ff   27   1.512e-11  7.055e-11  1.501e-09  6.725e-09  2.880e-08  4.112e-07      75.3      408.2     95.3
+  ff   85   2.531e-10  9.064e-10  1.126e-08  3.806e-08  1.226e-07  1.048e-06      91.4      135.3     42.0
+  sf  m40   1.305e-13  9.598e-13  5.153e-11  3.722e-10  2.607e-09  9.562e-08      57.8     2715.6    387.8
+  sf   27   1.825e-11  8.555e-11  1.835e-09  8.224e-09  3.511e-08  4.920e-07      75.1      410.4     96.1
+  sf   85   2.967e-10  1.067e-09  1.331e-08  4.493e-08  1.442e-07  1.216e-06      91.3      135.2     42.1
+  fs  m40   3.362e-14  2.305e-13  1.080e-11  7.342e-11  4.926e-10  1.924e-08      59.9     2137.0    318.5
+  fs   27   5.883e-12  2.616e-11  5.107e-10  2.217e-09  9.367e-09  1.405e-07      77.5      358.1     84.8
+  fs   85   1.102e-10  3.770e-10  4.396e-09  1.463e-08  4.701e-08  4.164e-07      93.7      124.7     38.8
+  max I(0,10) = 1.067e-09 A (sf/85);  min I(0,25) = 7.342e-11 A (fs/m40);  min I(0,30) = 4.926e-10 A (fs/m40)
+  Ventana para referencia fija única: min I(0,25)/max I(0,10) = 0.0688; min I(0,30)/max I(0,10) = 0.462  -> NO EXISTE (0,10|0,25); NO EXISTE (0,10|0,30)
+  Cociente mínimo dentro de un mismo punto: R31 = 124.7 (fs/85); R2510 = 38.8 (fs/85)
+    solo temperatura, esquina tt: min I(0,25)/max I(0,10) = 0.259
+    solo temperatura, esquina ss: min I(0,25)/max I(0,10) = 0.213
+    solo temperatura, esquina ff: min I(0,25)/max I(0,10) = 0.316
+    solo temperatura, esquina sf: min I(0,25)/max I(0,10) = 0.349
+    solo temperatura, esquina fs: min I(0,25)/max I(0,10) = 0.195
+    solo esquinas, T = m40: min I(0,25)/max I(0,10) = 76.5
+    solo esquinas, T = 27: min I(0,25)/max I(0,10) = 25.9
+    solo esquinas, T = 85: min I(0,25)/max I(0,10) = 13.7
+
+Dispositivo std_5_05  (nfet_01v8, W/L = 5/0.5)
+  esq  T      I(0.05)    I(0.10)    I(0.20)    I(0.25)    I(0.30)    I(0.40)    S(mV/dec)   R31      R2510
+  tt  m40   5.052e-15  2.876e-14  9.311e-13  5.293e-12  3.003e-11  9.475e-10      66.2     1044.4    184.1
+  tt   27   1.459e-12  5.613e-12  8.320e-11  3.192e-10  1.217e-09  1.694e-08      85.4      216.8     56.9
+  tt   85   3.744e-11  1.111e-10  1.036e-09  3.160e-09  9.547e-09  8.225e-08     103.2       85.9     28.4
+  ss  m40   3.137e-15  1.735e-14  5.310e-13  2.935e-12  1.620e-11  4.863e-10      67.3      933.5    169.1
+  ss   27   9.675e-13  3.637e-12  5.161e-11  1.939e-10  7.251e-10  9.798e-09      86.8      199.3     53.3
+  ss   85   2.642e-11  7.569e-11  6.756e-10  2.027e-09  6.037e-09  5.106e-08     105.2       79.8     26.8
+  ff  m40   8.456e-15  4.946e-14  1.691e-12  9.874e-12  5.750e-11  1.897e-09      65.2     1162.6    199.6
+  ff   27   2.259e-12  8.887e-12  1.373e-10  5.370e-10  2.084e-09  2.972e-08      84.1      234.6     60.4
+  ff   85   5.449e-11  1.667e-10  1.615e-09  5.001e-09  1.529e-08  1.335e-07     101.4       91.7     30.0
+  sf  m40   1.113e-14  6.545e-14  2.261e-12  1.326e-11  7.759e-11  2.571e-09      65.0     1185.5    202.7
+  sf   27   2.807e-12  1.109e-11  1.725e-10  6.769e-10  2.633e-09  3.748e-08      83.9      237.5     61.1
+  sf   85   6.508e-11  2.006e-10  1.958e-09  6.072e-09  1.858e-08  1.616e-07     101.1       92.6     30.3
+  fs  m40   2.367e-15  1.305e-14  3.969e-13  2.187e-12  1.204e-11  3.600e-10      67.4      922.3    167.6
+  fs   27   7.755e-13  2.906e-12  4.103e-11  1.539e-10  5.745e-10  7.767e-09      87.0      197.7     53.0
+  fs   85   2.226e-11  6.293e-11  5.569e-10  1.668e-09  4.967e-09  4.212e-08     105.6       78.9     26.5
+  max I(0,10) = 2.006e-10 A (sf/85);  min I(0,25) = 2.187e-12 A (fs/m40);  min I(0,30) = 1.204e-11 A (fs/m40)
+  Ventana para referencia fija única: min I(0,25)/max I(0,10) = 0.0109; min I(0,30)/max I(0,10) = 0.06  -> NO EXISTE (0,10|0,25); NO EXISTE (0,10|0,30)
+  Cociente mínimo dentro de un mismo punto: R31 = 78.9 (fs/85); R2510 = 26.5 (fs/85)
+    solo temperatura, esquina tt: min I(0,25)/max I(0,10) = 0.0476
+    solo temperatura, esquina ss: min I(0,25)/max I(0,10) = 0.0388
+    solo temperatura, esquina ff: min I(0,25)/max I(0,10) = 0.0592
+    solo temperatura, esquina sf: min I(0,25)/max I(0,10) = 0.0661
+    solo temperatura, esquina fs: min I(0,25)/max I(0,10) = 0.0348
+    solo esquinas, T = m40: min I(0,25)/max I(0,10) = 33.4
+    solo esquinas, T = 27: min I(0,25)/max I(0,10) = 13.9
+    solo esquinas, T = 85: min I(0,25)/max I(0,10) = 8.32
+
+Dispositivo lvt_5_05  (nfet_01v8_lvt, W/L = 5/0.5)
+  esq  T      I(0.05)    I(0.10)    I(0.20)    I(0.25)    I(0.30)    I(0.40)    S(mV/dec)   R31      R2510
+  tt  m40   9.366e-14  5.855e-13  2.282e-11  1.418e-10  8.726e-10  3.001e-08      62.9     1490.3    242.2
+  tt   27   1.448e-11  5.998e-11  1.018e-09  4.140e-09  1.649e-08  2.302e-07      81.3      274.9     69.0
+  tt   85   2.508e-10  8.159e-10  8.527e-09  2.699e-08  8.317e-08  7.010e-07      98.1      101.9     33.1
+  ss  m40   4.881e-14  3.068e-13  1.210e-11  7.570e-11  4.701e-10  1.676e-08      62.7     1532.1    246.7
+  ss   27   8.681e-12  3.612e-11  6.201e-10  2.541e-09  1.023e-08  1.480e-07      81.0      283.3     70.3
+  ss   85   1.635e-10  5.327e-10  5.629e-09  1.797e-08  5.601e-08  4.856e-07      97.7      105.2     33.7
+  ff  m40   1.788e-13  1.113e-12  4.293e-11  2.651e-10  1.617e-09  5.341e-08      63.0     1453.0    238.2
+  ff   27   2.403e-11  9.912e-11  1.665e-09  6.717e-09  2.646e-08  3.559e-07      81.6      267.0     67.8
+  ff   85   3.830e-10  1.243e-09  1.285e-08  4.031e-08  1.228e-07  1.007e-06      98.6       98.8     32.4
+  sf  m40   2.449e-13  1.513e-12  5.752e-11  3.523e-10  2.128e-09  6.824e-08      63.3     1406.8    232.8
+  sf   27   3.038e-11  1.246e-10  2.067e-09  8.273e-09  3.228e-08  4.239e-07      82.0      259.1     66.4
+  sf   85   4.623e-10  1.494e-09  1.525e-08  4.749e-08  1.434e-07  1.155e-06      99.1       96.0     31.8
+  fs  m40   3.504e-14  2.222e-13  8.922e-12  5.634e-11  3.534e-10  1.295e-08      62.4     1590.4    253.5
+  fs   27   6.777e-12  2.839e-11  4.947e-10  2.044e-09  8.308e-09  1.231e-07      80.6      292.6     72.0
+  fs   85   1.343e-10  4.390e-10  4.699e-09  1.512e-08  4.756e-08  4.205e-07      97.1      108.3     34.4
+  max I(0,10) = 1.494e-09 A (sf/85);  min I(0,25) = 5.634e-11 A (fs/m40);  min I(0,30) = 3.534e-10 A (fs/m40)
+  Ventana para referencia fija única: min I(0,25)/max I(0,10) = 0.0377; min I(0,30)/max I(0,10) = 0.237  -> NO EXISTE (0,10|0,25); NO EXISTE (0,10|0,30)
+  Cociente mínimo dentro de un mismo punto: R31 = 96.0 (sf/85); R2510 = 31.8 (sf/85)
+    solo temperatura, esquina tt: min I(0,25)/max I(0,10) = 0.174
+    solo temperatura, esquina ss: min I(0,25)/max I(0,10) = 0.142
+    solo temperatura, esquina ff: min I(0,25)/max I(0,10) = 0.213
+    solo temperatura, esquina sf: min I(0,25)/max I(0,10) = 0.236
+    solo temperatura, esquina fs: min I(0,25)/max I(0,10) = 0.128
+    solo esquinas, T = m40: min I(0,25)/max I(0,10) = 37.2
+    solo esquinas, T = 27: min I(0,25)/max I(0,10) = 16.4
+    solo esquinas, T = 85: min I(0,25)/max I(0,10) = 10.1
+
+Corriente de puerta máxima |i(Vg)| (los 4 nfet en paralelo, todo el barrido, todos los puntos): 0.000e+00 A
+  (el modelo tiene igcmod=0 e igbmod=0: la corriente de puerta DC es cero por construcción, no un resultado)
+
+B2. Lector completo: nfet 5/1 (puerta = nodo) + espejo pfet 2/2 + inversor 1,8 V. Fuente: b20_spice_raw/B2_<esq>_<T>.dat
+  r = referencia por réplica (nfet idéntico con puerta a 0,17 V);  f = referencia fija = Id(0,17 V) de tt/27.
+  Vtrip = Vin a la que la salida del inversor cruza 0,9 V. Sal(x) = salida del inversor (V) con Vin = x. Lógica: nodo alto -> drenador bajo -> salida ALTA.
+  esq  T     | rstd  Vtrip  Sal(0,10) Sal(0,25) | rlvt  Vtrip  Sal(0,10) Sal(0,25) | fstd  Vtrip  Sal(0,10) Sal(0,25) | flvt  Vtrip  Sal(0,10) Sal(0,25) 
+  tt  m40  FALTA
+  tt   27  FALTA
+  tt   85  FALTA
+  ss  m40  FALTA
+  ss   27  FALTA
+  ss   85  FALTA
+  ff  m40  FALTA
+  ff   27  FALTA
+  ff   85  FALTA
+  sf  m40  FALTA
+  sf   27  FALTA
+  sf   85  FALTA
+  fs  m40  FALTA
+  fs   27  FALTA
+  fs   85  FALTA
+  |i(Vin)| máx (carga DC sobre el nodo, 4 puertas): 0.000e+00 A

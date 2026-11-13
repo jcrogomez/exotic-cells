@@ -1,0 +1,20 @@
+Thu Nov 12 12:54:27 EST 2026
+Celda Np=1e+20 G=5 nm/dec d=0 nm r=2: J_pico(tunel) = 2.843e-01 A/cm2 a 0.04 V -> I_pico = 4.776e-10 A en 1.68e-09 cm2
+I_pico / piso del lector (150 fA) = 3.2e+03
+
+ k(exceso)   PVR    V_pico  V_valle | par identico: ventana de alimentacion [V], excursion del nodo medio [V] | con desajuste de pico 10 %, 30 %, 50 %
+  0.0000  1072048.93   0.040   0.170  | 0.095-0.715, excursion 0.631 a Vsup=0.670 | si(0.63 V) | si(0.63 V) | si(0.64 V)
+  0.0010   320.20   0.040   0.170  | 0.095-0.705, excursion 0.621 a Vsup=0.660 | si(0.62 V) | si(0.62 V) | si(0.63 V)
+  0.0100    35.45   0.040   0.160  | 0.095-0.590, excursion 0.514 a Vsup=0.575 | si(0.52 V) | si(0.52 V) | si(0.53 V)
+  0.0300    12.85   0.040   0.150  | 0.095-0.470, excursion 0.389 a Vsup=0.450 | si(0.39 V) | si(0.40 V) | si(0.41 V)
+  0.0800     5.34   0.040   0.140  | 0.105-0.360, excursion 0.279 a Vsup=0.340 | si(0.28 V) | si(0.29 V) | si(0.29 V)
+  0.1200     3.75   0.040   0.130  | 0.085-0.320, excursion 0.237 a Vsup=0.295 | si(0.24 V) | si(0.25 V) | si(0.25 V)
+  0.2000     2.48   0.040   0.130  | 0.105-0.270, excursion 0.185 a Vsup=0.245 | si(0.19 V) | si(0.20 V) | si(0.20 V)
+  0.3000     1.83   0.040   0.120  | 0.110-0.240, excursion 0.149 a Vsup=0.210 | si(0.15 V) | si(0.16 V) | si(0.16 V)
+  0.5000     1.32   0.050   0.110  | 0.095-0.200, excursion 0.108 a Vsup=0.170 | si(0.11 V) | si(0.12 V) | si(0.12 V)
+  0.8000     1.05   0.050   0.090  | 0.115-0.170, excursion 0.060 a Vsup=0.140 | si(0.07 V) | no | no
+  1.2000     1.00   nan   nan  | NO biestable | no | no | no
+  2.0000     1.00   nan   nan  | NO biestable | no | no | no
+
+Lectura con inversor: el nodo medio se mueve entre ~V_pico y ~Vsup - V_pico; un inversor de 1,8 V conmuta cerca de VDD/2 (no calculado aqui): hace falta un comparador o referir el par a VDD y leer con un pfet.
+Tiempo de conmutacion del nodo de 12.4 fF: C dV / I_pico = 1.04e-05 s

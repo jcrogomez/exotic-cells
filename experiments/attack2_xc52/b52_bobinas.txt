@@ -1,0 +1,84 @@
+b52_bobinas.py — corrida: Thu Nov 12 13:35:11 EST 2026
+
+== 0. Validación ==
+lazo cuadrado semilado 10 um, centro, mismo plano: 0.056569 T/A; analítico 2*sqrt2*mu0/(pi*2a) = 0.056569
+5 vueltas met3, w=1,5, borde interior a 10 um, z=3,21: 0.190 mT/mA (verificador v1: 0,190)
+L de un lazo cuadrado de lado 20 um (GMD 0.26 um): Neumann 58.5 pH; fórmula de lazo cuadrado 57.4 pH
+
+== 1. Campo en el plano del silicio, modos suma (A+B) y cancelado (A-B), por mA en CADA devanado ==
+Bz0 = centro; <|B|> = media del módulo (3 componentes) sobre el dispositivo de 10x10 um; unif = min/max de Bz en 10x10
+geom  N  w    a_in | R_A   R_B  ohm | suma: Bz0 mT/mA  <|B|>   unif | cancel: Bz0   <|B|>  max|B| (mT/mA) | resid <|B|>c/<|B|>s | huella um | I_EM mA | B_max suma mT | P bobinas mW @I_EM
+G1  3  1.5   7.0 |   8.5   9.9 |  0.2651  0.2807  0.91 |   0.0167  0.0202  0.0235 |  0.072 |  35.0 |  10.2 |  2.86 |  1.92
+G1  3  1.5  10.0 |  10.8  12.1 |  0.2175  0.2281  0.89 |   0.0119  0.0139  0.0171 |  0.061 |  41.0 |  10.2 |  2.33 |  2.39
+G1  5  1.5   7.0 |  18.7  21.0 |  0.3694  0.3870  0.92 |   0.0210  0.0242  0.0270 |  0.063 |  49.4 |  10.2 |  3.95 |  4.13
+G1  3  2.1   7.0 |   6.9   8.2 |  0.2411  0.2537  0.92 |   0.0192  0.0226  0.0261 |  0.089 |  42.2 |  14.3 |  3.62 |  3.08
+G1  4  1.5   7.0 |  13.2  15.0 |  0.3214  0.3383  0.92 |   0.0192  0.0226  0.0255 |  0.067 |  42.2 |  10.2 |  3.45 |  2.93
+G2  3  1.5   7.0 |   7.2   7.2 |  0.2957  0.3110  0.97 |   0.0182  0.0265  0.0398 |  0.085 |  24.2 |  10.2 |  3.17 |  1.49
+G2  3  1.5  10.0 |   9.4   9.4 |  0.2433  0.2558  0.90 |   0.0089  0.0124  0.0187 |  0.049 |  30.2 |  10.2 |  2.61 |  1.96
+G2  5  1.5   7.0 |  14.2  14.2 |  0.4432  0.4639  0.95 |   0.0224  0.0319  0.0473 |  0.069 |  31.4 |  10.2 |  4.73 |  2.96
+G2  3  2.1   7.0 |   5.6   5.6 |  0.2800  0.2939  0.96 |   0.0155  0.0223  0.0333 |  0.076 |  27.8 |  14.3 |  4.20 |  2.29
+G2  4  1.5   7.0 |  10.5  10.5 |  0.3733  0.3918  0.96 |   0.0206  0.0297  0.0444 |  0.076 |  27.8 |  10.2 |  4.00 |  2.18
+G3  4  1.5   7.0 |  10.5  10.5 |  0.3733  0.3918  0.96 |   0.0046  0.0073  0.0108 |  0.019 |  27.8 |  10.2 |  4.00 |  2.18
+G3  4  1.5  10.0 |  13.5  13.5 |  0.3086  0.3234  0.91 |   0.0019  0.0029  0.0049 |  0.009 |  33.8 |  10.2 |  3.30 |  2.81
+G3  6  1.5   7.0 |  18.4  18.4 |  0.5065  0.5289  0.95 |   0.0050  0.0078  0.0115 |  0.015 |  35.0 |  10.2 |  5.40 |  3.83
+G3  4  2.1   7.0 |   8.3   8.3 |  0.3487  0.3648  0.95 |   0.0048  0.0076  0.0116 |  0.021 |  32.6 |  14.3 |  5.21 |  3.40
+G3  4  1.5   7.0 |  10.5  10.5 |  0.3733  0.3918  0.96 |   0.0046  0.0073  0.0108 |  0.019 |  27.8 |  10.2 |  4.00 |  2.18
+
+Nota: con z de a52 (2,88/4,12 en vez de 3,21/4,44) el campo sube ~3-6 %; no cambia nada de lo que sigue.
+
+== 2. Residuo de cancelación frente a desalineación met3–met4 (dx de met4; NO pública: barrido) ==
+geom N w a_in | dx um : resid <|B|>cancel/<|B|>suma sobre 10x10, y Bz0 cancel (mT/mA)
+G2 3 1.5 7.0 | dx=0.00 : resid 0.0851 ; Bz0 cancel +0.01816 ; max|B|c 0.03985
+G2 3 1.5 7.0 | dx=0.05 : resid 0.0852 ; Bz0 cancel +0.01816 ; max|B|c 0.04003
+G2 3 1.5 7.0 | dx=0.10 : resid 0.0852 ; Bz0 cancel +0.01816 ; max|B|c 0.04024
+G2 3 1.5 7.0 | dx=0.20 : resid 0.0855 ; Bz0 cancel +0.01816 ; max|B|c 0.04072
+G2 3 1.5 7.0 | dx=0.50 : resid 0.0872 ; Bz0 cancel +0.01814 ; max|B|c 0.04271
+G3 4 1.5 7.0 | dx=0.00 : resid 0.0186 ; Bz0 cancel +0.00455 ; max|B|c 0.01082
+G3 4 1.5 7.0 | dx=0.05 : resid 0.0186 ; Bz0 cancel +0.00455 ; max|B|c 0.01094
+G3 4 1.5 7.0 | dx=0.10 : resid 0.0186 ; Bz0 cancel +0.00455 ; max|B|c 0.01106
+G3 4 1.5 7.0 | dx=0.20 : resid 0.0186 ; Bz0 cancel +0.00456 ; max|B|c 0.01134
+G3 4 1.5 7.0 | dx=0.50 : resid 0.0191 ; Bz0 cancel +0.00458 ; max|B|c 0.01232
+G1 es de una sola capa: la desalineación entre capas no le afecta (sí el sesgo de ancho de pista, común a A y B).
+
+== 3. Inductancia (Neumann, GMD; +-30 %) y fem en el lazo de lectura ==
+G1 N=3: L_A 0.271 nH, L_B 0.339 nH, M 0.247 nH (k=0.81); L_suma 1.104 nH, L_cancel 0.117 nH; R serie 18.4 ohm; L_suma/R = 59.9 ps
+    lazo de lectura 10x10 um: flujo 281.60 fWb a 10,2 mA (suma) -> fem al conmutar suma<->cancel en 1 ns / 100 ns / 10 us: 281.6 uV / 2.816 uV / 28.16 nV
+    lazo de lectura 30x30 um: flujo 1489.50 fWb a 10,2 mA (suma) -> fem al conmutar suma<->cancel en 1 ns / 100 ns / 10 us: 1489.5 uV / 14.895 uV / 148.95 nV
+    lazo de lectura 100x100 um: flujo 421.56 fWb a 10,2 mA (suma) -> fem al conmutar suma<->cancel en 1 ns / 100 ns / 10 us: 421.6 uV / 4.216 uV / 42.16 nV
+G2 N=3: L_A 0.260 nH, L_B 0.260 nH, M 0.213 nH (k=0.82); L_suma 0.947 nH, L_cancel 0.093 nH; R serie 14.4 ohm; L_suma/R = 65.9 ps
+    lazo de lectura 10x10 um: flujo 307.14 fWb a 10,2 mA (suma) -> fem al conmutar suma<->cancel en 1 ns / 100 ns / 10 us: 307.1 uV / 3.071 uV / 30.71 nV
+    lazo de lectura 30x30 um: flujo 841.47 fWb a 10,2 mA (suma) -> fem al conmutar suma<->cancel en 1 ns / 100 ns / 10 us: 841.5 uV / 8.415 uV / 84.15 nV
+    lazo de lectura 100x100 um: flujo 242.57 fWb a 10,2 mA (suma) -> fem al conmutar suma<->cancel en 1 ns / 100 ns / 10 us: 242.6 uV / 2.426 uV / 24.26 nV
+G3 N=4: L_A 0.449 nH, L_B 0.449 nH, M 0.411 nH (k=0.92); L_suma 1.720 nH, L_cancel 0.075 nH; R serie 21.0 ohm; L_suma/R = 82.1 ps
+    lazo de lectura 10x10 um: flujo 389.41 fWb a 10,2 mA (suma) -> fem al conmutar suma<->cancel en 1 ns / 100 ns / 10 us: 389.4 uV / 3.894 uV / 38.94 nV
+    lazo de lectura 30x30 um: flujo 1386.66 fWb a 10,2 mA (suma) -> fem al conmutar suma<->cancel en 1 ns / 100 ns / 10 us: 1386.7 uV / 13.867 uV / 138.67 nV
+    lazo de lectura 100x100 um: flujo 394.19 fWb a 10,2 mA (suma) -> fem al conmutar suma<->cancel en 1 ns / 100 ns / 10 us: 394.2 uV / 3.942 uV / 39.42 nV
+
+== 4. Acoplo eléctrico: diferencia entre modos (sin blindaje; núcleo de plano conductor, sin solver, x3) ==
+Al invertir B su perfil de tensión se refleja: dV_i = V_B (1 - 2 s_i). Carga inducida en un nodo 10x10 a tierra virtual.
+G1 N=3: C(B->nodo) 117.5 aF; caída en B 101 mV; dQ(modo) = +28.6 e = dV_equiv +39.0 mV sobre C
+      con blindaje (factor 0.01, barrido de a52): +0.286 e por transición
+      con blindaje (factor 0.001, barrido de a52): +0.029 e por transición
+G2 N=3: C(B->nodo) 176.1 aF; caída en B 73 mV; dQ(modo) = +19.0 e = dV_equiv +17.2 mV sobre C
+      con blindaje (factor 0.01, barrido de a52): +0.190 e por transición
+      con blindaje (factor 0.001, barrido de a52): +0.019 e por transición
+G3 N=4: C(B->nodo) 218.8 aF; caída en B 107 mV; dQ(modo) = +44.1 e = dV_equiv +32.3 mV sobre C
+      con blindaje (factor 0.01, barrido de a52): +0.441 e por transición
+      con blindaje (factor 0.001, barrido de a52): +0.044 e por transición
+Señal de referencia por semiperiodo: I*T/2*delta/q. 10 pA, 1 kHz, 1e-4 -> 3.12 e; 10 pA, 50 Hz, 1e-4 -> 62.4 e; 1 nA, 1 kHz, 3e-5 -> 93.6 e
+
+== 5. Lo que queda tras el esquema: potencia y térmica residual ==
+Esquema de 2 estados (a52: se invierte solo B). Camino serie: R_A + R_B + 4 R_on (dos interruptores por puente) + R_alim.
+G3 N=4: R bobinas 21.0 ohm, P bobinas 2.18 mW a 10,2 mA -> dT silicio ~ 122 mK (escala lineal de los 70 mK/1,25 mW de a52)
+R_on  desajuste | dI/I (fuente de tensión 1,8 V con lastre) | dP/P | residuo térmico par 2 estados (dc-IV 5,8 %/K) | 4 estados (término cruzado)
+   5   0.5 %   | 2.00e-04 | 4.01e-04 | 2.84e-06 | 5.68e-10
+   5   2.0 %   | 8.01e-04 | 1.60e-03 | 1.13e-05 | 9.10e-09
+   5   5.0 %   | 2.00e-03 | 4.01e-03 | 2.84e-05 | 5.68e-08
+  10   0.5 %   | 4.01e-04 | 8.01e-04 | 5.67e-06 | 2.27e-09
+  10   2.0 %   | 1.60e-03 | 3.21e-03 | 2.27e-05 | 3.64e-08
+  10   5.0 %   | 4.01e-03 | 8.01e-03 | 5.67e-05 | 2.27e-07
+  20   0.5 %   | 8.01e-04 | 1.60e-03 | 1.13e-05 | 9.10e-09
+  20   2.0 %   | 3.21e-03 | 6.41e-03 | 4.54e-05 | 1.46e-07
+  20   5.0 %   | 8.01e-03 | 1.60e-02 | 1.13e-04 | 9.10e-07
+Con fuente de corriente (lazo que regula I): dI/I = error del lazo (1e-4..1e-3) -> residuo 2 estados 1.4e-06..1.4e-05
+

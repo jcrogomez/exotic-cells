@@ -1,0 +1,455 @@
+b20_lit_esaki.txt — Literatura con números para anclar un modelo de túnel banda a banda en Si
+Fecha de la búsqueda: 2026-11-12 13:46 EST (salida de `date`)
+Alcance: diodos Esaki de Si, túnel en uniones implantadas tipo CMOS, parámetros de Hurkx.
+
+GRADOS
+  LEÍDA      = abrí el texto completo o la página/tabla/figura donde está el número.
+  LEÍDA-2ª   = leído en una fuente secundaria abierta (tesis/informe que cita el original);
+               el original NO se abrió. El número es tan bueno como la cita.
+  RESUMEN    = solo abstract (abierto).
+  FRAGMENTO  = snippet de buscador, página no abierta.
+  MEMORIA    = no verificado en esta sesión.
+  CÁLCULO    = aritmética mía sobre una fórmula LEÍDA (no es dato de la fuente).
+  [?]        = no encontrado.
+
+Conversión usada: 1 µA/µm² = 100 A/cm²; 1 mA/µm² = 1e5 A/cm².
+
+======================================================================
+0. LO QUE MÁS PESA PARA LA PREGUNTA (unión lateral p+/n+ de implantes S/D)
+======================================================================
+(a) Solomon et al. (IBM, implantes tipo CMOS, 8 dosis, 3 tipos de unión) NO ven
+    resistencia negativa en directa, "salvo un indicio" en la muestra PN-BF2 a baja
+    temperatura. Lo atribuyen a la dificultad de lograr por implantación uniones
+    fuertemente degeneradas en ambos lados, por la interacción B–As. [LEÍDA]
+(b) El único Esaki de Si por implantación con pico a temperatura ambiente que encontré
+    sigue siendo Koga & Toriumi 2001 (Toshiba, proceso ULSI propio, no fundición):
+    Jp ≈ 10 A/cm², PVR ≈ 2, implantes 25–30 keV, recocido 1000 °C 30 s. [LEÍDA-2ª]
+(c) Unión lateral difundida (no implantada) p+/n+ de Zhao 2007: Jp ≈ 3 A/cm² con
+    ~1–2e20 cm⁻³ a cada lado. [LEÍDA]
+(d) Ningún diodo Esaki/backward medido en CMOS de fundición estándar con implantes S/D:
+    sigue sin aparecer (sección 5).
+
+======================================================================
+1. PUNTOS DE CALIBRACIÓN — DIODOS ESAKI DE SILICIO
+======================================================================
+Tabla 1. (T = ambiente salvo que se diga otra cosa)
+
+#  Fuente / proceso                 Dopado n        Dopado p        Unión / abruptidad            Jp (A/cm²)     PVR     Vp        Grado
+-- -------------------------------- --------------- --------------- ----------------------------- -------------- ------- --------- ---------
+1  Koga & Toriumi 2001, implante,   [?]             [?]             lateral plana; implantes      ~10            ~2      [?]       LEÍDA-2ª
+   planar lateral, proceso ULSI                                      25–30 keV, 1000 °C 30 s       (0,1 µA/µm²)                     (Zhao 2007)
+2  Zhao 2007, lateral, SOD+RTP      P ~1–2e20       B ~1–4e20       lateral bajo W; B ~5 nm de    ~3             [?]     [?]       LEÍDA
+   (difusión, no implante)          (de Rs)         (de Rs)         profundidad; área 0,6 µm²     (30 nA/µm²)
+3  Zhao 2007, vertical, SOD+RTP     sustrato n+     B difundido     Neff estimado 2,5e19          26             1,25    [?]       LEÍDA
+   (Fig. 3.5)                                                        (de su Fig. 2.9)
+4  Zhao 2007, vertical, mejor       sustrato n+     B, rampa        ~5 nm/dec (SIMS); Neff        155            [?]     [?]       LEÍDA
+   (Fig. 3.8)                                       60 °C/s         estimado 4e19 a 4 nm/dec      (1,55 µA/µm²)
+5  Wang et al. EDL 2003, RTP        sustrato P      B 900 °C 1 s    B esperado 4 nm/dec a ~5 nm;  112 (máx)      2,11    [?]       LEÍDA
+   de proximidad                    1,5 mΩ·cm                       W vaciamiento ~3,5 nm         ~100           2       (osc. a   (texto en
+                                    + P 900 °C 1 s                  esperado si >1e20                                     0,275 V)  tesis Yan)
+6  Yan 2008, SOD / Al:B:Si          [?]             [?]             vertical                      183            2,25    [?]       LEÍDA
+                                                                                                  266–270 (máx)  [?]
+7  Franks et al. 1965, aleación     [?]             [?]             aleada                        ~1e3           3,8     [?]       LEÍDA-2ª
+                                                                                                  (0,01 mA/µm²)                     (Zhao T2.4)
+8  Dashiell et al. 2000, MBE        P in situ       B in situ       MBE 275 °C, dopado uniforme   47e3           1,3     [?]       FRAGMENTO
+   baja T                           [?]             [?]             (PVCR 1,47 tras 680 °C 1 min)                                   + LEÍDA-2ª
+9  Dashiell et al. 2002, MBE        [?]             [?]             MBE                           16e3           [?]     [?]       LEÍDA-2ª
+10 Schmid et al. 2012, nanohilo     NW n in situ    sustrato p+     VLS, Ø 60 nm, <111>           3,6e3          4,3     [?]       RESUMEN
+   VLS sobre sustrato p+            [?]             [?]                                           (3,57e3; 4,2 en tesis Bessire)    + LEÍDA
+                                                                                                  inversa: ~300e3 a −0,5 V          (abstract tesis)
+11 Oehme et al. 2009, MBE p-i-n     Sb ~1e20        B ~1e20         abrupta, sin recocido;        varía 3        hasta   [?]       FRAGMENTO
+                                    (rango)         (rango)         barrera i variable            órdenes        3,94
+12 Oehme/Stuttgart 2010 (TSF)       [?]             [?]             MBE                           hasta 5,2e3    >3      [?]       FRAGMENTO
+13 Wernersson 2004/05 (SiGe,        P difundido     p+ Si (B)       Si0.74Ge0.26, vaciamiento     180            2,6     [?]       FRAGMENTO
+   no Si puro)                                                      ~6 nm
+14 Chung 2006 (Si/SiGe RITD)        δ               δ               MBE                           218e3–220e3    1,5     [?]       LEÍDA-2ª
+15 Eberl 2001 (Si/SiGe)             [?]             [?]             MBE                           33e3           6       [?]       LEÍDA-2ª
+16 Jin 2003 (Si/SiGe RITD)          [?]             [?]             MBE                           151e3          [?]     [?]       solo título
+
+Detalle y procedencia de cada fila
+----------------------------------
+[1] Koga & Toriumi, "Silicon planar Esaki diode operating at room temperature",
+    IEICE Trans. Electron. E84-C(8), 1051–1055 (2001). ORIGINAL NO ABIERTO.
+    Números tomados de J. Zhao, tesis doctoral Notre Dame 2007, "Engineering of Silicon and
+    Germanium Tunnel Diodes for Integrated Circuit Application":
+      - p. 3–4: "Current densities of approximately 0.1 µA/µm2 (10 A/cm2) and PVR of
+        approximately 2 have been achieved by this method [...] Koga [18] et al. used
+        25-30 keV and relatively long annealing times (30 s at 1000 ºC) to activate the
+        implants. Higher current density can be expected with lower implantation energies,
+        below 500 eV, and shorter activation anneals."
+      - Tabla 2.4: Koga 2001, Implantation, Si, JP = 0.0001 mA/µm², PVR 2.
+      URL tesis: https://curate.nd.edu/articles/thesis/Engineering_of_Silicon_and_Germanium_Tunnel_Diodes_for_Integrated_Circuit_Application/24837957
+      (PDF: https://ndownloader.figshare.com/files/43686405)
+    Ojo: la tesis dice que su mejor resultado es "20x", "15x" y "10x" el de Koga en tres
+    sitios distintos (2 µA/µm², 1,55 µA/µm²); el 0,1 µA/µm² es "aproximadamente".
+    Especies, dosis, dopados, Vp, perfiles: [?]. No sé si 25–30 keV es As, BF2 o ambos.
+    Abstract del original [FRAGMENTO]: unión p+-n+ degenerada plana, túnel interbanda
+    lateral, proceso ULSI de Si "actual", cuidado con el daño de proceso para reducir la
+    corriente de exceso por estados intermedios; a baja T ven túnel asistido por fonones;
+    biestable conectándolo a MOSFET convencionales.
+    Trabajos previos del mismo grupo:
+      - IEEE EDL 20(10), 529–531 (1999), DOI 10.1109/55.791932 [RESUMEN]: tres terminales,
+        oblea SIMOX (fuga de volumen baja y perfil de drenaje abrupto), puerta en anillo
+        para eliminar la esquina del óxido de campo, PVR > 2 a temperatura ambiente,
+        latch controlado por puerta. https://search.isc.ac/Inventory/49/1555625.htm
+      - APL 70(16), 2138–2140 (1997) [FRAGMENTO]: conductancia diferencial negativa a
+        temperatura ambiente; la puerta modula la distancia de túnel; sobre SiO2; unión
+        activa lejos del aislamiento de campo. PVR [?].
+      - APL 69, 1435–1437 (1996) [FRAGMENTO]: túnel banda a banda lateral, proceso ULSI
+        estándar, aislamiento de campo para reducir el exceso. Números [?].
+    Jp, dosis y energías de 1996/1997/1999: [?].
+
+[2][3][4] J. Zhao, tesis Notre Dame 2007 (misma URL). [LEÍDA]
+    - Lateral (sec. 3.3.2, Fig. 3.20): P y B por spin-on + RTP; unión perpendicular a la
+      oblea bajo W; área 0,6 µm² (perímetro 120 µm × 5 nm); Jp ≈ 30 nA/µm² (≈ 3 A/cm²);
+      Rs = 200 Ω/□ (n+) y 530 Ω/□ (p+) → "about 1e20 for P and 4e20 for B"; por
+      solubilidad "se piensa" 2e20 (P) y 1e20 (B). Corriente crece monótonamente de −40 a
+      80 °C, cambio pequeño: consistente con túnel. Curvatura a polarización cero 22 V⁻¹
+      (funciona como diodo backward). PVR no dado en el texto.
+    - Vertical Fig. 3.5: 0,26 µA/µm² (26 A/cm²), PVR 1,25; P 900 °C 1 s 30 °C/s + drive
+      900 °C 90 s; B 900 °C 1 s. Dispersión local ±6 % en Ip.
+    - Vertical Fig. 3.8: 1,55 µA/µm² máximo. Resumen de la tesis: "up to 2 µA/µm²".
+    - SIMS (Fig. 2.6): B por SOD+RTP 900 °C 1 s ≈ 5 nm/década a 7e20 cm⁻³. Tabla 2.3:
+      MBE 2 nm/dec, láser 2,5 nm/dec, RTP 3,5–5 nm/dec; B por implante + RTP ≈ 13 nm/dec.
+    - Modelo que usa (Ec. 2.3–2.5), masa de túnel ajustada 0,33 m0 (teórica 0,17 m0):
+      Jt = [sqrt(2m*) q³ ξ |Va| / (4π² ħ² Eg^½)] · exp(−4 sqrt(2m*) Eg^{3/2} / (3 q ξ ħ)),
+      ξ = sqrt(2q(Vbi+Va)Neff/εs), Neff = NaNd/(Na+Nd), Vp = (Vdn+Vdp)/3.
+      Dice que ajusta los datos de Stork & Isaac y de Fair & Wivell en inversa (Va = −1 V)
+      sobre ocho órdenes de magnitud (Fig. 2.3; ejes: campo 0–3 MV/cm, J de ~1e-7 a
+      ~1e3 A/cm²). Los puntos individuales no son legibles en el texto extraído.
+    - Afirmaciones del modelo (no medidas): 1 mA/µm² (1e5 A/cm²) requiere ≈ 5 MV/cm y
+      Neff ≈ 7e19 en Si abrupto; pasar de Neff 2,5e19 a 5e19 sube Jp ~100× (≈5 → 560 A/cm²);
+      Neff 3e19 con 4 nm/dec da ~1e-4 mA/µm² (10 A/cm²); mejorar la abruptidad 4→2, 2→1,
+      1→0 nm/dec multiplica Jp por ≈ 4, 2,5 y 2,5.
+      [CÁLCULO, no validado] Mi evaluación de la Ec. 2.5 para unión abrupta simétrica da
+      1,8 A/cm² (2,5e19), 431 A/cm² (5e19) — coincide con el "5 → 560" — pero 3,5e3 A/cm²
+      a 7e19, no 1e5. No reproduzco su Fig. 2.5 en el extremo alto; no usar mi curva como
+      ancla sin revisar la figura.
+
+[5] Wang, Wheeler, Yan, Zhao, Howard, Seabaugh, IEEE EDL 24, 93–95 (2003),
+    DOI 10.1109/LED.2002.807706. Texto reproducido como apéndice en la tesis de Yan Yan
+    (Notre Dame 2008, "Silicon-Based Tunnel Diode Technology"). [LEÍDA en la tesis]
+    https://curate.nd.edu/articles/thesis/Silicon-Based_Tunnel_Diode_Technology/24735927
+    (PDF: https://ndownloader.figshare.com/files/43565400)
+    - Sustrato (100) dopado con P, 1,5 mΩ·cm. P: 900 °C 1 s, 30 °C/s, luego 900 °C 90 s
+      sin fuente. B: 900 °C 1 s, 30 °C/s. Mesa de ~700 nm.
+    - Jp máximo 112 A/cm² (Fig. 3a); PVR máximo 2,11 (Fig. 3b, otro dispositivo).
+    - Simulación: B con 4 nm/década a ~5 nm de profundidad; vaciamiento a 0 V ≈ 3,5 nm
+      para >1e20 cm⁻³ (esperado, no medido).
+    - Ip escala con el área; uniformidad local ±2 % Ip, ±3 % Vp; oscila polarizado a
+      0,275 V. Vp no dado como número.
+
+[6] Yan Yan, tesis 2008 (URL anterior). [LEÍDA] Resumen: 2,7 µA/µm² y PVR 2,25 ("lo mejor
+    con spin-on"); figuras: "J = 183 A/cm², PVR = 2.25" y "JP = 266 A/cm²". También
+    2,7 µA/µm² con fuente Al:B:Si.
+
+[7][9][14][15] Tabla 2.4 de Zhao 2007 (originales no abiertos). [LEÍDA-2ª]
+    Franks 1965 (LPE/aleación) Si 0,01 mA/µm², PVR 3,8 · Chung 2006 (MBE) Si/SiGe 2,2, PVR
+    1,5 · Eberl 2001 (MBE) Si/SiGe 0,33, PVR 6 · Dashiell 2000 (MBE) Si 0,47, PVR 1,3 ·
+    Dashiell 2002 (MBE) Si 0,16 · Yan 2004 (RTP) Si 0,002, PVR 2,1 · Wernersson 2005
+    (RTP/CVD) Si/SiGe 0,002, PVR 2,6 · Koga 2001 (implante) Si 0,0001, PVR 2.
+    La tabla selecciona por mayor Jp O mayor PVR: Jp y PVR de una fila pueden no ser del
+    mismo dispositivo.
+
+[8] Dashiell et al., IEEE TED 47(9), 1707–1714 (2000), DOI 10.1109/16.861581. [FRAGMENTO]
+    47 kA/cm², PVCR 1,3; MBE a 275 °C con B y P in situ, dopado uniforme; PVCR máximo 1,47
+    tras 680 °C 1 min; el recocido baja Jp por ensanchamiento de la barrera. Dopados [?].
+
+[10] Schmid, Bessire, Björk, Schenk, Riel, Nano Lett. 12, 699–703 (2012),
+    DOI 10.1021/nl2035964. [RESUMEN] 3,6 kA/cm², PVCR hasta 4,3, inversa hasta 300 kA/cm²
+    a −0,5 V; nanohilos VLS con Au, dopado n in situ, sobre sustrato p. Texto completo en
+    ACS: 403. La figura de Jp frente a dopado NO se pudo ver.
+    Tesis de Bessire (ETH 2013, Diss. 21283), resumen [LEÍDA]: PVCR 4,2 y 3,57 kA/cm²,
+    Ø 60 nm, sustrato Si <111> muy p; 296 kA/cm² a −0,5 V; sin indicios de niveles
+    profundos (Au). https://doi.org/10.3929/ethz-a-009988390 . El PDF completo (75 MB,
+    https://www.research-collection.ethz.ch/server/api/core/bitstreams/19a9d49e-14f7-4e29-8b20-4c9117e57d8d/content)
+    devolvió 429 tres veces: reintentar; ahí deben estar dopados y comparación.
+
+[11][12] Oehme et al., APL 95, 242109 (2009), DOI 10.1063/1.3274136 [FRAGMENTO]: p+-i-n+
+    por MBE a baja T, transiciones abruptas B/Sb en el rango de 1e20 cm⁻³ sin recocido,
+    PVCR hasta 3,94; variar el espesor de la barrera cambia Jp tres órdenes. Thin Solid
+    Films 2010 [FRAGMENTO]: PVCR > 3 y Jp hasta 5,2 kA/cm². IEEE TED 2010: PVCR > 5.
+
+[13] Wernersson et al., Electron. Lett. 40(1), 83–85 (2004) e IEEE Trans. Nanotechnol.
+    4(5), 594 (2005) [FRAGMENTO]: Si0.74Ge0.26, vaciamiento ~6 nm, 0,18 kA/cm², PVR 2,6.
+
+Diodo δ-dopado Sb/B por MBE (Rivas, Lake et al., JAP 94, 5005 (2003)) [LEÍDA]
+    https://intra.ece.ucr.edu/~rlake/Lake/Excess_I_JAP03.pdf
+    - Serie experimental (su Ref. 6) con espaciador nominal 4, 6, 8, 10 nm, recocida
+      650 °C 1 min: Jp ∝ exp(−2,0·d), d en nm.
+    - Con perfiles SIMS: desplazar el B 4 nm solo aumenta la distancia de túnel 0,6 nm
+      y el pico calculado baja de 1300 a 310 A/cm².
+    - El pico experimental es 5,4× el calculado. Masas usadas en la comparación: 0,19 m0
+      (transversal BC) y 0,16 m0 (hueco ligero).
+    - Solomon (abajo) aplica su ley a este diodo: distancia mínima de túnel 4,3 nm en el
+      pico, factor de curvatura ~0,9 → 1500 A/cm²; el experimento de Dashiell es
+      "aproximadamente un orden de magnitud mayor".
+
+No abiertos / sin números: Logan & Chynoweth, Phys. Rev. 131, 89 (1963) [RESUMEN: comparan
+con las teorías de Kane; mejor acuerdo con colas de banda]; Franks, Hulme, Morgan, SSE 8,
+343 (1965) [solo vía Zhao]; Jin et al. APL 83, 3308 (2003) [título]; Pawlik et al. IEDM
+2012 [FRAGMENTO: el abstract solo lista GaAs, InGaAs, InAs, InAsSb/AlGaSb, InAs/GaSb;
+2,2 MA/cm² de pico y 11 MA/cm² a −0,3 V; que incluya Si/Ge NO confirmado].
+
+======================================================================
+2. SOLOMON et al., J. Appl. Phys. 95, 5800 (2004)
+======================================================================
+Leído en la versión de informe: IBM Research Report RC22916 (W0309-157), 24-sep-2003,
+"Universal Tunneling Behavior in Technologically Relevant PN Junction Diodes", Solomon,
+Jopling, Frank, D'Emic, Dokumaci, Ronsheim, Haensch. [LEÍDA, texto completo del preprint;
+la versión publicada en JAP no se abrió y puede diferir]
+URL: https://web.archive.org/web/20221002210012/https://dominoweb.draco.res.ibm.com/reports/rc22916.pdf
+DOI del artículo: 10.1063/1.1699487
+
+Qué miden
+  - Diodos planos aislados por LOCOS sobre Si (100), sustratos de baja resistividad
+    (0,017–0,018 Ω·cm n; 0,04–0,05 Ω·cm p), cuadrados de 10 y 50 µm. Implantes a través
+    de 3,5 nm de óxido pantalla. Tres tipos de unión, 8 dosis ("cuadrantes" Q1–Q8) cada uno:
+      NP      superficial As 3 keV, 2,5e15 cm⁻²
+      PN-B    superficial B 2 keV, 1,0e15 cm⁻²
+      PN-BF2  superficial BF2 5 keV, 1,0e15 cm⁻² (energía del B: 1,1 keV)
+    con implante profundo de B o As del tipo contrario (energías de 20 a 100 keV, dosis del
+    orden de 0,2–7,5e14 cm⁻²; la Tabla 1 sale desordenada en la extracción: no cito
+    valores por cuadrante). Preamorfización con Ge 3e14 cm⁻² a 15 keV "en algunos casos".
+    RTA 5 s a 1050 °C (N sobre P) y 1000 °C (P sobre N). Ti/Al.
+  - Dopado en la unión de ~2e18 a ~7e19 cm⁻³ en ocho pasos. Tensiones de 1 V directa a
+    1,5 V inversa. T de 100 a 350 K. Perfiles por C-V (18 MHz) y SIMS.
+  - Gradiente de dopado en la unión (SIMS, Tabla 6, Q5–Q8), en 1e26 cm⁻⁴: N/P 0,74–1,34;
+    P/N-B 0,28–0,50; P/N-BF2 0,43–0,82. Longitud de caída exponencial λ del dopante
+    superior (N/P): ~2,2–3,4 nm (Q1–Q7).
+  - Compensación en el cuadrante más dopado: ~30 % (NP), ~65 % (PN-B), ~45 % (PN-BF2);
+    la corriente de túnel no parece afectada.
+
+Relación "universal" (inversa)
+  J = A(T) · exp(−wTE / λT)        (Ec. 11; el informe imprime el signo sin el menos)
+  λT = 0,38 nm;  A = 5,3e7 A/cm² a 300 K;  A = 2,0e7 A/cm² a 150 K.
+  wTE = distancia de túnel efectiva = wT · (φ/φF): distancia entre bandas a igual energía
+  corregida por la curvatura de bandas (corrección 0,9–1,0 en casi todo el rango).
+  Masa efectiva de túnel 0,29 m0 (con gap ~1 eV), suponiendo me = mh.
+  Se ajusta en el extremo de corriente alta; a corrientes bajas hay desviaciones muestra a
+  muestra (otros mecanismos, posible túnel por trampas).
+  No hay una ley universal frente a campo: J frente a 1/Fmax se dispersa mucho entre
+  obleas y no sigue la curva de Taur.
+  Dependencia con la tensión a wTE constante: sublineal, casi constante a 300 K; no la
+  superlineal de Keldysh. Prefactor de Keldysh (Ec. 12) con Fmax = 2,5 MV/cm y VR = 1 V:
+  J0 = 1,1e8 A/cm² (factor 2 del medido).
+  Gap extraído por C-V: ~0,96–0,97 eV (150–300 K) en el ejemplo NP Q6.
+
+Números concretos dados en el texto
+  - FET de 25 nm de Taur: wT = 5,4 nm, curvatura ~0,97 → wTE = 5,25 nm → ~40 A/cm²
+    (~4 nA/µm). Encogido 2×: 2,5 µA/µm.
+  - Diodo MBE de Dashiell/Rivas: wT,min 4,3 nm × 0,9 → 1500 A/cm².
+  [CÁLCULO con la Ec. 11 a 300 K] wTE = 3 nm → 2,0e4; 3,5 → 5,3e3; 4 → 1,4e3; 4,5 → 380;
+  5 → 100; 6 → 7,4; 7 → 0,53; 8 → 0,038 A/cm². (5,25 nm da 53, el texto dice ~40.)
+  No dan una tabla "J a tal tensión para tal N*": las curvas están en las Figs. 4, 10, 11
+  y 13, no legibles en el texto.
+
+¿Pico de Esaki?  NO. Cita casi literal (sec. C-b):
+  "The forward characteristics are very variable, and gross departures from area scaling
+  occur in some instances. [...] band-to-band tunneling, which dominates the reverse
+  characteristics, is suppressed in the forward direction, and trap dominated leakage
+  mechanisms take over. The lack of the negative resistance region in the forward
+  characteristics (except for a hint of one for the PN-BF2 sample at low temperatures),
+  attests to the difficulty of achieving PN junctions in silicon which are strongly
+  degenerate on both sides, by ion implantation, due to the strong interaction between
+  the B and As dopants [23]. This contrast with epitaxial studies [8,9], at considerably
+  higher doping levels, where a well-developed negative resistance region is obtained."
+  ([23] = Kim et al., IEDM 2000, p. 523.)
+  Es decir: hasta ~7e19 cm⁻³ en la unión, con implantes de 2–5 keV y RTA de 5 s, solo
+  exceso en directa. El indicio aparece en la unión más abrupta (BF2) y solo en frío.
+
+Seguimiento [FRAGMENTO]: Majumdar, APL 2010 — la corrección de curvatura no es universal
+por sí sola, pero (1 − CC)/N² sí lo es frente a la anchura de túnel.
+
+======================================================================
+3. TÚNEL / EXCESO EN DIRECTA EN UNIONES MUY DOPADAS NO-ESAKI
+======================================================================
+del Alamo & Swanson, IEEE EDL 7(11), 629–631 (1986), DOI 10.1109/EDL.1986.26499.
+[LEÍDA, 3 páginas, incluidas figuras]
+URL: https://web.archive.org/web/20250412042246/https://mtlsites.mit.edu/users/alamo/pdf/1986/RJ-17.pdf
+  - Uniones p++-n+ : base epitaxial uniforme dopada con P, de 8,8e17 a 4,0e19 cm⁻³;
+    emisor por implante de B, dosis total 9e15 cm⁻² (4e15 a 100 keV, 3e15 a 60 keV,
+    2e15 a 35 keV), 1050 °C 30 min. Área 100×100 µm². T = 297 K.
+  - A baja tensión aparece una corriente de exceso exponencial cuando el dopado de base
+    supera ~5e18 cm⁻³ (Fig. 1: curvas para 1,5e18, 4,8e18, 1,1e19, 2,4e19, 4,0e19).
+  - Modelo:  IT = A · J0T · exp(V / VT)
+             J0T ≈ k1 · exp(−k2 · WSCR(0))          k1 = 6,02e7 A/cm²,  k2 = 1,15e7 cm⁻¹
+             VT  ≈ k3 · sqrt(NaNd/(Na+Nd))          k3 = 4,28e-11 V·cm^{3/2}
+    WSCR(0) y N* = NaNd/(Na+Nd) en los bordes de la zona de carga, ambos del C-V.
+  - Fig. 2: J0T de ~1e-6 a ~1e-12 A/cm² para WSCR(0) de ~290 a ~600 Å; el exponencial
+    vale para WSCR(0) < ~400 Å. "A 400-Å SCR yields negligible tunneling."
+  - Fig. 3: VT² lineal en N*, hasta N* ≈ 1,5e18 cm⁻³ (VT² ≈ 2–2,5e-3 V²).
+  - J0T no está activada térmicamente y depende exponencialmente del gap; VT cambia
+    < 10 % en 160 K. Las constantes "se espera que dependan algo del proceso".
+  [CÁLCULO] J0T(300 Å) = 6,3e-8 A/cm²; J0T(200 Å) = 6e-3 A/cm² (extrapolación fuera del
+  rango medido). VT(N* = 1e18) = 43 mV.
+  Nota: k1 = 6,0e7 A/cm² es del mismo orden que el prefactor de Solomon (5,3e7), pero la
+  longitud de caída es otra: 1/k2 = 0,87 nm por nm de WSCR frente a 0,38 nm por nm de
+  distancia de túnel. No son la misma variable.
+  Versión de congreso: SSDM 1986, pp. 283–286 (no abierta).
+
+Stork & Isaac, IEEE TED 30(11), 1527–1534 (1983), DOI 10.1109/T-ED.1983.21333. [RESUMEN]
+  Uniones n+-p poco profundas con varios perfiles; componente Zener significativa en
+  INVERSA; sensibilidad al perfil explicada por el campo máximo, extraído por C-V y
+  SIMS. Números (J frente a campo): [?]. Ojo: el trabajo es de túnel en inversa, no en
+  directa. Solomon dice de él: los dopados solo solapan con los suyos en el extremo, y
+  "es difícil extraer sin ambigüedad" una relación J–campo de esos datos.
+  Zhao (Fig. 2.3) afirma que su Ec. 2.5 con m* = 0,33 m0 ajusta estos datos a −1 V.
+
+Fair & Wivell, IEEE TED 23(5), 512–518 (1976), DOI 10.1109/T-ED.1976.18438. [RESUMEN]
+  Capas de As implantado sobre fondo uniforme de B (ρ ≈ 0,006 Ω·cm), uniones linealmente
+  graduadas; transición túnel→avalancha con cambio de signo del coeficiente térmico.
+  Números: [?]. Solomon lo descarta para su comparación por ser Si <111>.
+
+======================================================================
+4. PARÁMETROS DE HURKX Y OTROS MODELOS BBT PARA SILICIO
+======================================================================
+Veredicto: A = 4e14 cm^-1/2 V^-5/2 s^-1, B = 1,9e7 V/cm, P = 2,5 quedan CONFIRMADOS por
+tres fuentes leídas independientes del original. El artículo de Hurkx 1992 en sí no se
+abrió. Los juegos E1/E1_5/E2, Hurkx local y Schenk de Sentaurus NO se confirmaron.
+
+Tabla 2
+Fuente                              Forma                                   A / prefactor                B (V/cm)   Exp.   Grado
+----------------------------------- --------------------------------------- ---------------------------- ---------- ------ ---------
+Silvaco ATLAS User's Manual         G = BB.A · E^BB.GAMMA · exp(−BB.B/E)    BBT.KL: 4,00e14              1,9e7      2,5    LEÍDA
+(oct. 2004), Ec. 3-305, Tabla 3-53                                          (cm^-1/2 V^-5/2 s^-1)
+  mismo manual, BBT.STD (directo)   ídem                                    9,6615e18                    3,0e7      2,0    LEÍDA
+Patente Synopsys US10769339B1       R_BBT = −B·|F|^σ·D·exp(−F0/|F|)         B = 4e14 cm^-1/2·V^-5/2      F0 = 1,9e7 (no    LEÍDA
+(Wong, Mickevicius)                 (forma descrita, ecuación ilegible)                                  a T amb.   dicho) (vía Google
+                                                                                                         ∝ Eg^3/2          Patents)
+Tesis Coppolelli, Politecnico di    Rnet = A·(F/F0)^P·exp(−B/F), F0=1 V/cm  Apath = 4e14 cm^-3 s^-1      Bpath =    2,5    LEÍDA
+Torino 2022, Tabla 2.1 (por         P = 2 directo, 2,5 asistido por fonón   (defecto Sentaurus,          1,9e7      (fon.)
+defecto del modelo no local de                                              modelo "nonlocal path")
+Sentaurus)                                                                  Ppath = 0,037 eV
+Ejemplo Ansys Lumerical "Silicon    Hurkx                                   4e14 cm^-3 s^-1              1,9e7      2,5    FRAGMENTO
+diode"
+Tidy3D HurkxDirectBandToBand        R = A·D·(|E|/E0)^σ·exp(−B/|E|·          4e14 1/(cm³ s)               1,9e6 (!)  2,5    LEÍDA
+(cita Palankovski & Quay 2004)      (Eg/Eg300)^{3/2}), E0 = 1 V/cm                                                         (vía WebFetch)
+
+Notas
+  - "cm^-3 s^-1 con F0 = 1 V/cm" y "cm^-1/2 V^-5/2 s^-1" son el mismo número: A·F^2,5 con
+    F en V/cm da cm^-3 s^-1.
+  - Discrepancias reales encontradas:
+      · Tidy3D da B = 1,9e6 V/cm. Va contra las otras cuatro fuentes; probable errata de
+        su documentación. No usar.
+      · El propio manual de ATLAS da BB.B = 1,9e7 en el capítulo de física y 1,97e7 en las
+        tablas de las sentencias MATERIAL/MODELS (dos sitios). Diferencia del 3,7 % en el
+        exponente: a 3 MV/cm cambia G un ~21 % [CÁLCULO]. Anotar cuál se usa.
+      · El manual de ATLAS rotula las unidades de BB.A de tres maneras distintas (una de
+        ellas "V/cm", claramente errata).
+  - Factor D de Hurkx (ATLAS, Ec. 3-306, opción BBT.HURKX):
+      D = [exp((φp − qψ)/kT) + 1]^-1 − [exp((φn − qψ)/kT) + 1]^-1
+    Es el que hace que la tasa se anule en equilibrio y cambie de signo en directa: es lo
+    que hay que conservar si el modelo debe dar corriente Esaki en directa y no solo Zener.
+    Tidy3D escribe D = (np − ni²)/((n+ni)(p+ni)).
+  - ATLAS AUTOBBT (Ec. 3-307..309): calcula BB.A y BB.B de primeros principios con
+    MASS.TUNNEL y EG300, con GAMMA = 2 (forma de gap directo; las fracciones salen rotas
+    en la extracción, no las transcribo).
+  - Dominio de validez según la patente (citando a Hurkx): BBT domina la inversa para
+    dopados > 5e17 cm⁻³ o ruptura < ~5 V. [LEÍDA vía Google Patents]
+    Campo > 7e5 V/cm a temperatura ambiente. [FRAGMENTO]
+  - Masa de Hurkx para el túnel asistido por trampas: m* = 0,25 m0. [FRAGMENTO]
+  - Aviso [FRAGMENTO, Wong et al. 2020, "Modified Hurkx BTBT model..."]: los modelos
+    locales tipo Hurkx subestiman la fuga a polarización alta.
+  [CÁLCULO] G = 4e14·F^2,5·exp(−1,9e7/F): 2,2e21 (1 MV/cm), 1,7e26 (2), 1,1e28 (3),
+  1,1e29 (4), 5,0e29 cm⁻³ s⁻¹ (5 MV/cm). Como q·G por nm de zona activa: 3,6e-5; 2,7;
+  177; 1,8e3; 8,0e3 A/cm² por nm. (Solo orden de magnitud: campo uniforme, D = 1.)
+
+Masas de túnel usadas en las fuentes leídas
+  0,33 m0   Zhao 2007, ajuste a Stork–Isaac y Fair–Wivell con la Ec. 2.5 (teórica 0,17 m0
+            con mt = 0,19 y mlh = 0,16).                                          [LEÍDA]
+  0,29 m0   Solomon 2003/04, de λT = 0,38 nm, me = mh, gap ~1 eV.                  [LEÍDA]
+  0,19/0,16 Rivas/Lake 2003, masas de banda simple comparadas con full-band.       [LEÍDA]
+  0,25 m0   Hurkx 1992 (TAT).                                                      [FRAGMENTO]
+
+Kane (uniforme, asistido por fonón) tal como lo da Sentaurus, según la tesis de Torino
+[LEÍDA, Ec. 2.26–2.27]:
+  A = g (mv mc)^{3/2} (1+2Nop) Dop² (qF0)^{5/2} / (2^{21/4} h^{5/2} mr^{5/4} ρ εop Eg^{7/4})
+  B = 2^{7/2} π mr^{1/2} Eg^{3/2} / (3 q h)
+  con Nop = [exp(εop/kT) − 1]^-1. Fonón TO: 57,6 meV (valor "real" según la tesis; el
+  defecto de Sentaurus es 37 meV). Calibraciones de TFET de Si citadas ahí: Apath = 8e16,
+  Bpath = 8,2e6, Ppath = 0,057 (de Nabil et al. 2020); otro juego 1e19 / 1,46e7.
+  Vandenberghe et al. (arXiv 1104.3713) [LEÍDA parcial]: Dk0 = 6e8 eV/cm, ħω = 57,6 meV.
+  Kao et al., IEEE TED 59, 292 (2012): A y B de Kane calculados para Si/Ge por dirección
+  — no abierto. [?]
+
+Sentaurus, modelos locales — SOLO MEMORIA, sin confirmar en esta sesión
+  Schenk:  A = 8,977e20 cm⁻¹ s⁻¹ V⁻², B = 2,14667e7 eV^-3/2 V/cm, ħω = 18,6 meV
+  E1:      A = 1,1e27 cm⁻² s⁻¹ V⁻¹,       B = 2,13e7 V/cm
+  E1_5:    A = 1,9e24 cm^-1,5 s⁻¹ V^-1,5, B = 2,19e7 V/cm
+  E2:      A = 3,5e21 cm⁻¹ s⁻¹ V⁻²,       B = 2,25e7 V/cm
+  Hurkx:   Agen = Arec = 3,4e21 cm⁻³ s⁻¹, Bgen = Brec = 2,26e7 V/cm, Pgen = Prec = 2
+  Si son correctos, el Hurkx LOCAL por defecto de Sentaurus NO es el 4e14/1,9e7/2,5 del
+  artículo: ese juego es el del modelo no local (Apath/Bpath). Verificar con
+  el volcado de parámetros por defecto de sdevice (`sdevice -L:<material>` según el
+  material de formación de Synopsys [FRAGMENTO]) o el manual antes de citarlo.
+  Schenk 1993 (SSE 36, 19): no abierto (typeset.io 403). Corrección conocida: Heigl,
+  Schenk, Wachutka 2009 — el modelo estándar aproxima mal la integral de Airy y
+  sobreestima corrientes. [FRAGMENTO]
+
+======================================================================
+5. ESAKI / BACKWARD EN CMOS DE FUNDICIÓN ESTÁNDAR CON IMPLANTES S/D
+======================================================================
+Resultado: NINGUNO encontrado, tampoco en esta ronda. Lo más cercano:
+
+  - Solomon et al. (sec. 2): implantes de tipo CMOS avanzado en laboratorio de IBM, no
+    fundición comercial ni unión lateral S/D; sin NDR salvo indicio en frío.      [LEÍDA]
+  - Koga & Toriumi 2001: proceso ULSI de Toshiba, unión lateral plana, NDR a temperatura
+    ambiente, ~10 A/cm², PVR ~2, biestable con MOSFET. Proceso propio.          [LEÍDA-2ª]
+  - Wang, Huang et al., arXiv 2410.12390 (Peking U. + STIC Beijing): TFET en plataforma
+    de fundición de 300 mm, CMOS 55 nm de baja fuga. Dicen de su trabajo anterior en
+    0,13 µm (IEDM 2015) que quedó limitado "due to the ion implantation limitation in
+    improving junction abruptness"; en 55 nm recurren a segregación de dopante en la
+    unión NiSi/Si (pico de As tras siliciuración) para lograr la abruptez. Confirman BTBT
+    por la dependencia positiva de ION con T. No hay diodo Esaki ni NDR.            [LEÍDA]
+    https://arxiv.org/abs/2410.12390
+  - Huang et al., IEDM 2015, DOI 10.1109/IEDM.2015.7409756: C-TFET en fundición CMOS de
+    12 pulgadas (PKU + SMIC); +93 % velocidad, −66 % energía a 0,4 V. Sin NDR. [FRAGMENTO]
+  - "A novel observation of NDR in a standard CMOS transistor..." (PMC13187011): FDSOI de
+    proceso industrial; el NDR es por inyección de portadores calientes (drenaje) y por
+    GIDL + ionización por impacto (cuerpo, PVR 2,37e4 a 1,0 V). NO es Esaki.     [RESUMEN]
+    https://pmc.ncbi.nlm.nih.gov/articles/PMC13187011/
+  - Solicitud US 2001/0019137 (Koga, Ohba, Toriumi, Uchida; Toshiba): el diodo Esaki es
+    polisilicio p+ / óxido túnel ~2 nm / fuente n+ en el borde de la puerta, no una unión
+    lateral implantada; sin dosis, energías, Jp ni PVR.        [LEÍDA vía Google Patents]
+  - US6690030B2: diodo túnel en la unión pn de alta concentración entre fuente y
+    polisilicio.                                                                [FRAGMENTO]
+  - Rommel/Berger: RITD Si/SiGe integrado monolíticamente con CMOS "relajado" (2004),
+    con epitaxia MBE añadida; no es CMOS estándar.                              [FRAGMENTO]
+  - Patentes de Progressant (US6512274, US6596617...): NDR en transistor por atrapamiento
+    de carga, no por túnel banda a banda.                                       [FRAGMENTO]
+
+No cubierto: las búsquedas "zener zap / antifuse p+/n+" y "butted junction leakage" no
+devolvieron nada con I-V en directa; no las agoté. Sigue abierto.
+
+Lectura conjunta (conjetura, no demostrado): los tres indicios independientes — Solomon
+(sin NDR con implantes y RTA), Zhao (el implante + RTP da ~13 nm/dec para B frente a
+~4–5 nm/dec por difusión rápida), y PKU (la implantación limita la abruptez en fundición)
+— apuntan a que en una unión S/D implantada estándar lo esperable es exceso/backward, y
+que un pico, si existe, sería del orden de ≤ 10 A/cm² (Koga) y más visible en frío.
+Ninguna de las tres fuentes midió una unión lateral p+/n+ de S/D de fundición.
+
+======================================================================
+6. LO QUE NO SE PUDO ABRIR
+======================================================================
+  Koga & Toriumi: IEICE 2001, APL 1996, APL 1997, EDL 1999 (texto completo): muro de pago
+      / DNS de global.ieice.org no resuelve / 403. Faltan dosis, especies, Jp por
+      dispositivo, Vp, perfiles.
+  Schmid et al. Nano Lett. 2012 (ACS, 403) y PDF completo de la tesis de Bessire (ETH,
+      429 por límite de peticiones; URL en [10]).
+  Oehme APL 2009; Dashiell TED 2000 (IEEE devuelve vacío); Jin APL 2003; Pawlik IEDM 2012.
+  Logan & Chynoweth 1963; Franks/Hulme/Morgan 1965; Fair & Wivell 1976; Stork & Isaac 1983.
+  Hurkx, Klaassen, Knuvers 1992 (original); Schenk 1993 (typeset.io 403); manual de
+      Sentaurus Device; página de Ansys Lumerical (403).
+  Tesis del RIT (repository.rit.edu, 403 al PDF); tesis MS de Kabeer (seabaugh.nd.edu,
+      403); core.ac.uk (403).
+  Patente US10769339 en PDF de USPTO: solo imagen; leída por Google Patents (primeros
+      100 000 caracteres).
+
+Advertencias de método
+  - Las lecturas "vía WebFetch / Google Patents" pasan por un modelo auxiliar que resume
+    la página; las cifras citadas coinciden entre fuentes, pero no vi el HTML crudo.
+  - PDFs leídos directamente con pdftotext: Solomon RC22916, del Alamo (además visto
+    página a página), tesis Zhao J., tesis Yan, tesis Torino, manual ATLAS, Rivas/Lake,
+    arXiv 2410.12390, arXiv 1407.6096.
+  - Copias locales (temporales) en el scratchpad de la sesión, carpeta b20/.

@@ -1,0 +1,48 @@
+b20_spice · PRERREGISTRO de la lectura del par de Goto con transistores SKY130
+Hora (date): Thu Nov 12 13:32:53 EST 2026
+Escrito antes de correr ninguna simulación. Solo se ha comprobado: imagen docker hpretl/iic-osic-tools:2025.07 trae ngspice-44.2
+y PDK sky130A en /foss/pdks; la sección tt_mm existe (mc_mm_switch=1); igcmod=0 e igbmod=0 en los .pm3 de nfet_01v8 (tt).
+Todas las cifras de abajo son predicciones de memoria/cuenta a mano, no datos.
+
+Entrada supuesta: estado bajo 0,05–0,10 V; estado alto 0,25–0,40 V. Peor caso a separar: 0,10 frente a 0,25 V.
+Esquinas tt/ss/ff/sf/fs × T = −40, 27, 85 °C (15 puntos).
+
+Tautologías (sin correr):
+ T1. Corriente de puerta del lector = 0 en el modelo (igcmod=0): cualquier lector con puerta en el nodo "no carga" en DC
+     en simulación; eso no es un resultado, es el modelo.
+ T2. En inversión débil I ∝ exp(Vg/(n·kT/q)); el cociente I(0,3)/I(0,1) = 10^(0,2/S) solo depende de S.
+ T3. Un circuito diferencial con referencia cancela el corrimiento de Vth de esquina/temperatura a primer orden; uno
+     de un solo transistor contra referencia fija no.
+
+Predicciones:
+ A. Inversor a VDD reducida. Vm ≈ VDD/2 + desplazamiento por desequilibrio n/p. Ganancia máx: ~3 a 0,2 V; 5–8 a 0,3 V;
+    10–20 a 0,4 V (tt, 27). A 85 °C y esquinas cruzadas la ganancia a 0,3 V cae < 5.
+    Dispersión de Vm entre sf y fs: ≥ 100 mV (a VDD_inv = 0,4 V), y además ~±20 mV con temperatura.
+    PREDICCIÓN A: NO existe (variante, relación de tamaños, VDD_inv) con Vm ∈ [0,15; 0,20] V y ganancia > 5 en los 15 puntos.
+    Sí existirá en tt/27 (p. ej. nfet lvt + pfet hvt o relación Wn/Wp grande, VDD_inv 0,3–0,4 V).
+ B. nfet en inversión débil (5/1, Vds = 0,9 V).
+    nfet_01v8 tt 27: I(0,1) ~ 10 pA (década: 1–100 pA); I(0,3) ~ 2 nA (0,2–20 nA); S ≈ 80–90 mV/déc a 27 °C, ~65 a −40, ~105 a 85.
+    nfet_01v8_lvt: corrientes ×20–100 mayores, S parecido o algo peor (90–100 a 27 °C).
+    Cociente I(0,3)/I(0,1): ~200 (27 °C), ≥ 500 (−40), 50–100 (85). Mínimo en los 15 puntos: ≥ 40.
+    PREDICCIÓN B1: NO hay corriente de referencia fija única: max_{esq,T} I(0,10) > min_{esq,T} I(0,25) (ff/85 frente a ss/−40),
+    por ≥ ×10. Hace falta réplica.
+    PREDICCIÓN B2: con réplica (nfet idéntico con puerta a 0,17 V + espejo pfet) el umbral de entrada queda en 0,17 ± 0,02 V en
+    los 15 puntos y la salida del inversor de 1,8 V es correcta para 0,10 y 0,25 V en todos.
+    Carga DC sobre el nodo en el modelo: |Ig| < 1e-15 A (solo gmin).
+ C. Comparador con par diferencial pfet (cola 200 nA, ref 0,17 V, espejo nfet, 2.ª etapa + inversor).
+    Funciona con modo común 0,05–0,40 V en los 15 puntos. Offset sistemático |Vos| < 3 mV. Ganancia DC (2 etapas) > 60 dB
+    (1.ª etapa 35–45 dB). Offset aleatorio (Monte Carlo tt_mm, par 4/1 + espejo 2/2): σ ≈ 3–6 mV (A_VT ~5 mV·µm, memoria [?]);
+    3σ < 20 mV frente a un margen de 70–80 mV.
+    PREDICCIÓN C: separa 0,10 / 0,25 V en los 15 puntos con margen ≥ 50 mV tras restar 3σ de offset.
+ D. Seguidor pfet (100 nA, cuerpo a fuente) + inversor a 1,8 V.
+    Vsal ≈ Vin + |Vgs|, |Vgs| ≈ 0,7–0,9 V (tt 27), ganancia ≈ 0,95–1. Vm del inversor ≈ 0,80–0,90 V (tt).
+    |Vgs| varía ~±0,10 V por esquina y ~−1,5 mV/K (≈ 0,19 V entre −40 y 85); Vm del inversor ±0,08 V por esquina (sf/fs).
+    PREDICCIÓN D: el umbral referido a la entrada (Vin a la que el inversor conmuta) se mueve > 0,15 V entre los 15 puntos y
+    se sale de la ventana (0,10; 0,25) en al menos un punto: NO separa en todas las esquinas con dimensionado fijo.
+ E. Fuga de un nfet_01v8 0,42/0,15 apagado (Vgs = 0, Vds = 0,3 V): tt 27 ~1–10 pA; ff 85 °C ~0,3–5 nA; unión (drenador-cuerpo)
+    ≤ 10 fA a 85 °C. L = 1 µm lo baja ≥ ×100.
+    PREDICCIÓN E: un interruptor nfet de L mínima fuga más que el 1 % de un pico de 10 nA en ff/85 y más que el pico entero de
+    10 pA; con L larga (≥ 0,5–1 µm) o pfet la fuga cae por debajo de 1 pA a 85 °C pero no por debajo de 0,1 pA (1 % de 10 pA) en ff.
+
+Criterio de fallo de cada predicción: el número medido fuera del intervalo dicho, o el SÍ/NO contrario.
+Veredicto esperado: lector recomendado = C (comparador pfet) o B con réplica; A y D descartados como lectores sin calibrar.

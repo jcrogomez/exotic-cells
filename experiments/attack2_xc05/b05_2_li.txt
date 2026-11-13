@@ -1,0 +1,62 @@
+b05_2_li: TiN de interconexión local
+  seccion 2D li w=0.17: k_ox=1.4: G'=2.66 W/mK  t50=90 ns t63=211 ns t90=1819 ns
+  seccion 2D li w=0.17: k_ox=1.0: G'=1.91 W/mK  t50=127 ns t63=297 ns t90=2553 ns
+  seccion 2D li w=0.51: k_ox=1.4: G'=3.46 W/mK  t50=181 ns t63=367 ns t90=2604 ns
+  seccion 2D li w=0.51: k_ox=1.0: G'=2.48 W/mK  t50=256 ns t63=516 ns t90=3662 ns
+
+(2a) Corriente fija: dT máx [K] (extremos a 300 K). j(2,06 mA) = 1.21e+07 A/cm2 en 0,17x0,10
+geometria                              k_ox k_TiN  TCR     R0    0.26mA    1.03mA    2.06mA    4.10mA    8.20mA
+linea 0,17 x 10 um                      1.4  15.0  pdk    753         2        31       129       583      1756
+linea 0,17 x 10 um                      1.0   5.7  pdk    753         3        43       184       828      1983
+linea 0,17 x 10 um                      1.4  30.0  pdk    753         2        31       129       583      1756
+linea 0,17 x 10 um                      1.4  15.0  cre    753         2        31       144      1421       inf
+linea 0,17 x 5 um                       1.4  15.0  pdk    376         2        31       129       583      1756
+linea 0,17 x 5 um                       1.0   5.7  pdk    376         3        43       184       828      1983
+linea 0,17 x 5 um                       1.4  30.0  pdk    376         2        30       128       578      1755
+linea 0,17 x 5 um                       1.4  15.0  cre    376         2        31       144      1395       inf
+linea 0,17 x 2 um                       1.4  15.0  pdk    151         2        28       117       528      1724
+linea 0,17 x 2 um                       1.0   5.7  pdk    151         3        42       179       807      1981
+linea 0,17 x 2 um                       1.4  30.0  pdk    151         2        24       101       448      1620
+linea 0,17 x 2 um                       1.4  15.0  cre    151         2        29       129       993       inf
+cuello 0,17x1,0 entre 0,51 (2x2um)      1.4  15.0  pdk    176         2        24       102       452      1629
+cuello 0,17x1,0 entre 0,51 (2x2um)      1.0   5.7  pdk    176         2        38       162       732      1959
+cuello 0,17x1,0 entre 0,51 (2x2um)      1.4  30.0  pdk    176         1        21        86       376      1482
+cuello 0,17x1,0 entre 0,51 (2x2um)      1.4  15.0  cre    176         2        25       110       716       inf
+cuello 0,17x0,34 entre 0,51 (2x2um)     1.4  15.0  pdk    126         1        15        59       255      1124
+cuello 0,17x0,34 entre 0,51 (2x2um)     1.0   5.7  pdk    126         2        24        99       441      1636
+cuello 0,17x0,34 entre 0,51 (2x2um)     1.4  30.0  pdk    126         1        12        49       207       937
+cuello 0,17x0,34 entre 0,51 (2x2um)     1.4  15.0  cre    126         1        15        62       313       inf
+  ('TCR cre' = 1,4e-3 /K lineal, TiN denso de Creemer 2008, LEIDO por agente; 'pdk' = tc1/tc2 del PDK)
+
+(2b) Con el driver real (N ebufn_4 por lado, 1,8 V): corriente, tensión sobre la línea, dT máx, T máx. k_ox 1,4, k_TiN 15, TCR pdk
+geometria                                                    N=8                      N=16                      N=32                      N=64
+linea 0,17 x 10 um                           1.61mA 1.26V   376K       1.87mA 1.48V   405K       2.03mA 1.63V   425K       2.12mA 1.71V   437K
+linea 0,17 x 5 um                            2.06mA 0.82V   428K       3.03mA 1.29V   597K       3.45mA 1.51V   697K       3.70mA 1.64V   765K
+linea 0,17 x 2 um                            2.06mA 0.32V   417K       4.11mA 0.73V   832K       6.92mA 1.22V  1720K      10.46mA 1.36V  2360K
+cuello 0,17x1,0 entre 0,51 (2x2um)           2.06mA 0.37V   401K       4.11mA 0.81V   755K       6.15mA 1.28V  1359K       7.22mA 1.50V  1681K
+cuello 0,17x0,34 entre 0,51 (2x2um)          2.06mA 0.26V   359K       4.11mA 0.56V   556K       7.65mA 1.15V  1286K       9.30mA 1.41V  1689K
+  Igual con el peor caso térmico (k_ox 1,0, k_TiN 5,7):
+linea 0,17 x 10 um                           1.59mA 1.26V   406K       1.84mA 1.49V   444K       1.99mA 1.63V   471K       2.08mA 1.71V   487K
+linea 0,17 x 5 um                            2.06mA 0.84V   483K       2.95mA 1.30V   708K       3.35mA 1.52V   840K       3.59mA 1.65V   929K
+linea 0,17 x 2 um                            2.06mA 0.33V   478K       4.11mA 0.75V  1112K       8.22mA 1.09V  2285K      16.45mA 1.15V  3627K
+cuello 0,17x1,0 entre 0,51 (2x2um)           2.06mA 0.38V   461K       4.11mA 0.84V  1037K       6.23mA 1.27V  1813K       7.65mA 1.48V  2162K
+cuello 0,17x0,34 entre 0,51 (2x2um)          2.06mA 0.27V   399K       4.11mA 0.58V   743K       7.65mA 1.15V  1795K       9.85mA 1.38V  2260K
+
+(2c) Corriente para alcanzar T máx = 673 K (oxidación de TiN expuesto, NO LEIDO: 400-450 C), 993 K (720 C: fallo del calefactor de
+     Creemer, LEIDO), 1073 K (800 C: 'TiN should work up to', LEIDO), 1900 K (funde el SiO2 vecino: Yin 2006, LEIDO), y N de ebufn_4 y tensión.
+linea 0,17 x 10 um                     k_ox 1.4 k_TiN   15:  673K:  3.4mA/2.94V/N>=14(!V) ; 993K:  4.4mA/4.12V/N>=18(!V) ; 1073K:  4.7mA/4.36V/N>=19(!V) ; 1900K:  7.4mA/5.84V/N>=29(!V) ;
+linea 0,17 x 10 um                     k_ox 1.0 k_TiN  5.7:  673K:  2.8mA/2.49V/N>=12(!V) ; 993K:  3.8mA/3.49V/N>=15(!V) ; 1073K:  4.0mA/3.70V/N>=16(!V) ; 1900K:  6.3mA/4.92V/N>=25(!V) ;
+linea 0,17 x 10 um                     k_ox 1.4 k_TiN   30:  673K:  3.4mA/2.93V/N>=14(!V) ; 993K:  4.4mA/4.11V/N>=18(!V) ; 1073K:  4.7mA/4.35V/N>=19(!V) ; 1900K:  7.4mA/5.89V/N>=29(!V) ;
+linea 0,17 x 5 um                      k_ox 1.4 k_TiN   15:  673K:  3.4mA/1.46V/N>=14 ; 993K:  4.4mA/2.04V/N>=18(!V) ; 1073K:  4.7mA/2.17V/N>=19(!V) ; 1900K:  7.4mA/2.98V/N>=29(!V) ;
+linea 0,17 x 5 um                      k_ox 1.0 k_TiN  5.7:  673K:  2.8mA/1.24V/N>=12 ; 993K:  3.8mA/1.74V/N>=15(!V) ; 1073K:  4.0mA/1.84V/N>=16(!V) ; 1900K:  6.3mA/2.50V/N>=25(!V) ;
+linea 0,17 x 5 um                      k_ox 1.4 k_TiN   30:  673K:  3.4mA/1.45V/N>=14 ; 993K:  4.5mA/2.04V/N>=18(!V) ; 1073K:  4.7mA/2.16V/N>=19(!V) ; 1900K:  7.4mA/3.03V/N>=29(!V) ;
+linea 0,17 x 2 um                      k_ox 1.4 k_TiN   15:  673K:  3.5mA/0.60V/N>=14 ; 993K:  4.6mA/0.84V/N>=19 ; 1073K:  4.9mA/0.89V/N>=20 ; 1900K:  7.6mA/1.28V/N>=30 ;
+linea 0,17 x 2 um                      k_ox 1.0 k_TiN  5.7:  673K:  2.9mA/0.49V/N>=12 ; 993K:  3.8mA/0.69V/N>=15 ; 1073K:  4.0mA/0.74V/N>=16 ; 1900K:  6.3mA/1.04V/N>=25 ;
+linea 0,17 x 2 um                      k_ox 1.4 k_TiN   30:  673K:  3.8mA/0.64V/N>=15 ; 993K:  5.0mA/0.90V/N>=20 ; 1073K:  5.3mA/0.95V/N>=21 ; 1900K:  8.1mA/1.38V/N>=32 ;
+cuello 0,17x1,0 entre 0,51 (2x2um)     k_ox 1.4 k_TiN   15:  673K:  3.8mA/0.73V/N>=15 ; 993K:  5.0mA/1.01V/N>=20 ; 1073K:  5.2mA/1.07V/N>=21 ; 1900K:  8.1mA/1.64V/N>=32(!V) ;
+cuello 0,17x1,0 entre 0,51 (2x2um)     k_ox 1.0 k_TiN  5.7:  673K:  3.0mA/0.58V/N>=12 ; 993K:  4.0mA/0.81V/N>=16 ; 1073K:  4.2mA/0.86V/N>=17 ; 1900K:  6.5mA/1.32V/N>=26 ;
+cuello 0,17x1,0 entre 0,51 (2x2um)     k_ox 1.4 k_TiN   30:  673K:  4.1mA/0.79V/N>=16 ; 993K:  5.4mA/1.11V/N>=22 ; 1073K:  5.7mA/1.17V/N>=23 ; 1900K:  8.7mA/1.76V/N>=34(!V) ;
+cuello 0,17x0,34 entre 0,51 (2x2um)    k_ox 1.4 k_TiN   15:  673K:  4.9mA/0.68V/N>=19 ; 993K:  6.5mA/0.95V/N>=26 ; 1073K:  6.8mA/1.01V/N>=27 ; 1900K: 10.3mA/1.53V/N>=41 ;
+cuello 0,17x0,34 entre 0,51 (2x2um)    k_ox 1.0 k_TiN  5.7:  673K:  3.8mA/0.53V/N>=15 ; 993K:  5.0mA/0.73V/N>=20 ; 1073K:  5.3mA/0.78V/N>=21 ; 1900K:  8.1mA/1.21V/N>=32 ;
+cuello 0,17x0,34 entre 0,51 (2x2um)    k_ox 1.4 k_TiN   30:  673K:  5.4mA/0.75V/N>=21 ; 993K:  7.1mA/1.05V/N>=28 ; 1073K:  7.5mA/1.11V/N>=30 ; 1900K: 11.3mA/1.66V/N>=45(!V) ;
+  '(!V)': la tensión sobre la línea supera ~1,6 V: no alcanzable con drivers de 1,8 V por muchos que se pongan.

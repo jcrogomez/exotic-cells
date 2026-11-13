@@ -1,0 +1,192 @@
+== T0: continua. V(A) [mV] y V(H) [mV] frente a R del dispositivo, por rango
+  rango bajo: 30:0.79/4.1  100:2.55/5.8  300:6.92/9.8  1000:17.31/19.5  3000:30.25/31.5  10000:40.89/41.4  12906:42.32/42.7  30000:45.44/45.6  100000:47.27/47.3  300000:47.82/47.8  1e+06:48.02/48.0  3e+06:48.08/48.1  1e+12:48.11/48.1
+     máximo V(A) en continua = 48.11 mV (dispositivo abierto)
+  rango medio: 30:0.12/41.8  100:0.38/41.9  300:1.13/42.0  1000:3.57/42.3  3000:9.33/43.0  10000:21.41/44.6  12906:24.46/45.0  30000:33.98/46.3  100000:42.79/47.4  300000:46.21/47.9  1e+06:47.54/48.0  3e+06:47.93/48.1  1e+12:48.13/48.1
+     máximo V(A) en continua = 48.13 mV (dispositivo abierto)
+  rango alto: 30:0.01/47.8  100:0.02/47.8  300:0.05/47.8  1000:0.17/47.8  3000:0.51/47.8  10000:1.65/47.8  12906:2.11/47.9  30000:4.63/47.9  100000:12.58/47.9  300000:24.79/48.0  1e+06:37.73/48.0  3e+06:44.41/48.1  1e+12:48.74/48.1
+     máximo V(A) en continua = 48.74 mV (dispositivo abierto)
+
+== T0B: tiempo de conversión frente a V(A) (fuente del nfet lector)
+  0mV:1.34us  0.3mV:1.35us  5mV:1.41us  10mV:1.48us  20mV:1.67us  30mV:1.95us  40mV:2.33us  50mV:2.88us  50.3mV:2.90us  60mV:3.66us
+  d ln(t)/dV = 8.6 .. 23.9 /V  -> un e-pliegue cada 63.8 mV; 0,3 mV = 0.47 % de tiempo
+  con 0,55 % de ruido por conversión: dV = 0.351 mV por conversión; 0.0439 mV promediando 64
+
+== Resolución en R (dR/R por conversión única; mejor rango), y corriente por el dispositivo
+  R =        30 Ohm: dR/R =  24.07 %  (rango bajo, V(A) =   0.79 mV, I =   26.450 uA, P =   20.988 nW)
+  R =       100 Ohm: dR/R =  12.64 %  (rango bajo, V(A) =   2.55 mV, I =   25.484 uA, P =   64.943 nW)
+  R =       300 Ohm: dR/R =   5.66 %  (rango bajo, V(A) =   6.92 mV, I =   23.071 uA, P =  159.683 nW)
+  R =      1000 Ohm: dR/R =   3.42 %  (rango bajo, V(A) =  17.31 mV, I =   17.310 uA, P =  299.650 nW)
+  R =      3000 Ohm: dR/R =   3.38 %  (rango bajo, V(A) =  30.25 mV, I =   10.082 uA, P =  304.930 nW)
+  R =     10000 Ohm: dR/R =   3.01 %  (rango medio, V(A) =  21.41 mV, I =    2.141 uA, P =   45.825 nW)
+  R =     12906 Ohm: dR/R =   2.97 %  (rango medio, V(A) =  24.46 mV, I =    1.896 uA, P =   46.374 nW)
+  R =     30000 Ohm: dR/R =   3.64 %  (rango medio, V(A) =  33.98 mV, I =    1.133 uA, P =   38.497 nW)
+  R =    100000 Ohm: dR/R =   3.92 %  (rango alto, V(A) =  12.58 mV, I =    0.126 uA, P =    1.582 nW)
+  R =    300000 Ohm: dR/R =   3.21 %  (rango alto, V(A) =  24.79 mV, I =    0.083 uA, P =    2.048 nW)
+  R =     1e+06 Ohm: dR/R =   4.22 %  (rango alto, V(A) =  37.73 mV, I =    0.038 uA, P =    1.424 nW)
+  R =     3e+06 Ohm: dR/R =   5.77 %  (rango alto, V(A) =  44.41 mV, I =    0.015 uA, P =    0.657 nW)
+  paso 1 G0 -> 2 G0: dR/R = 50.0 %  frente a 2.97 % de resolución -> 17 sigma por conversión
+  paso 1 G0 -> 0,8 G0: dR/R = 25.0 %  frente a 2.97 % de resolución -> 8 sigma por conversión
+  paso 3 -> 4 G0: dR/R = 25.0 %  frente a 3.38 % de resolución -> 7 sigma por conversión
+  paso 10 -> 11 G0: dR/R = 9.1 %  frente a 3.42 % de resolución -> 3 sigma por conversión
+
+== T1: arranque y apagado (rampas de VDD)  (64 casos)
+  rampa=10n R=100 sel=v cab=0 max=2.71mV min=-0.03mV
+  rampa=10n R=100 sel=v cab=50f max=2.70mV min=-0.03mV
+  rampa=10n R=100 sel=z cab=0 max=0.02mV min=-0.00mV
+  rampa=10n R=100 sel=z cab=50f max=0.02mV min=-0.00mV
+  rampa=10n R=12k9 sel=v cab=0 max=44.57mV min=-5.13mV
+  rampa=10n R=12k9 sel=v cab=50f max=44.22mV min=-3.34mV
+  rampa=10n R=12k9 sel=z cab=0 max=2.11mV min=-0.00mV
+  rampa=10n R=12k9 sel=z cab=50f max=2.11mV min=-0.00mV
+  rampa=10n R=1M sel=v cab=0 max=50.37mV min=-41.99mV
+  rampa=10n R=1M sel=v cab=50f max=50.10mV min=-4.77mV
+  rampa=10n R=1M sel=z cab=0 max=37.73mV min=-0.00mV
+  rampa=10n R=1M sel=z cab=50f max=37.73mV min=-0.00mV
+  rampa=10n R=ab sel=v cab=0 max=52.06mV min=-46.43mV
+  rampa=10n R=ab sel=v cab=50f max=50.19mV min=-4.54mV
+  rampa=10n R=ab sel=z cab=0 max=48.74mV min=-0.00mV
+  rampa=10n R=ab sel=z cab=50f max=48.74mV min=-0.00mV
+  rampa=100n R=100 sel=v cab=0 max=2.56mV min=-0.00mV
+  rampa=100n R=100 sel=v cab=50f max=2.56mV min=-0.00mV
+  rampa=100n R=100 sel=z cab=0 max=0.02mV min=-0.00mV
+  rampa=100n R=100 sel=z cab=50f max=0.02mV min=-0.00mV
+  rampa=100n R=12k9 sel=v cab=0 max=42.54mV min=-0.31mV
+  rampa=100n R=12k9 sel=v cab=50f max=42.51mV min=-0.30mV
+  rampa=100n R=12k9 sel=z cab=0 max=2.11mV min=-0.00mV
+  rampa=100n R=12k9 sel=z cab=50f max=2.11mV min=-0.00mV
+  rampa=100n R=1M sel=v cab=0 max=48.27mV min=-4.83mV
+  rampa=100n R=1M sel=v cab=50f max=48.23mV min=-0.76mV
+  rampa=100n R=1M sel=z cab=0 max=37.73mV min=-0.00mV
+  rampa=100n R=1M sel=z cab=50f max=37.73mV min=-0.00mV
+  rampa=100n R=ab sel=v cab=0 max=48.35mV min=-5.88mV
+  rampa=100n R=ab sel=v cab=50f max=48.31mV min=-0.00mV
+  rampa=100n R=ab sel=z cab=0 max=48.74mV min=-0.00mV
+  rampa=100n R=ab sel=z cab=50f max=48.74mV min=-0.00mV
+  rampa=1u R=100 sel=v cab=0 max=2.55mV min=-0.00mV
+  rampa=1u R=100 sel=v cab=50f max=2.55mV min=-0.00mV
+  rampa=1u R=100 sel=z cab=0 max=0.02mV min=-0.00mV
+  rampa=1u R=100 sel=z cab=50f max=0.02mV min=-0.00mV
+  rampa=1u R=12k9 sel=v cab=0 max=42.34mV min=-0.03mV
+  rampa=1u R=12k9 sel=v cab=50f max=42.34mV min=-0.03mV
+  rampa=1u R=12k9 sel=z cab=0 max=2.11mV min=-0.00mV
+  rampa=1u R=12k9 sel=z cab=50f max=2.11mV min=-0.00mV
+  rampa=1u R=1M sel=v cab=0 max=48.04mV min=-0.39mV
+  rampa=1u R=1M sel=v cab=50f max=48.04mV min=-0.00mV
+  rampa=1u R=1M sel=z cab=0 max=37.73mV min=-0.00mV
+  rampa=1u R=1M sel=z cab=50f max=37.73mV min=-0.00mV
+  rampa=1u R=ab sel=v cab=0 max=48.13mV min=-0.46mV
+  rampa=1u R=ab sel=v cab=50f max=48.12mV min=-0.00mV
+  rampa=1u R=ab sel=z cab=0 max=48.74mV min=-0.00mV
+  rampa=1u R=ab sel=z cab=50f max=48.74mV min=-0.00mV
+  rampa=10u R=100 sel=v cab=0 max=2.55mV min=-0.00mV
+  rampa=10u R=100 sel=v cab=50f max=2.55mV min=-0.00mV
+  rampa=10u R=100 sel=z cab=0 max=0.02mV min=-0.00mV
+  rampa=10u R=100 sel=z cab=50f max=0.02mV min=-0.00mV
+  rampa=10u R=12k9 sel=v cab=0 max=42.32mV min=-0.00mV
+  rampa=10u R=12k9 sel=v cab=50f max=42.32mV min=-0.00mV
+  rampa=10u R=12k9 sel=z cab=0 max=2.11mV min=0.00mV
+  rampa=10u R=12k9 sel=z cab=50f max=2.11mV min=0.00mV
+  rampa=10u R=1M sel=v cab=0 max=48.02mV min=-0.04mV
+  rampa=10u R=1M sel=v cab=50f max=48.02mV min=0.00mV
+  rampa=10u R=1M sel=z cab=0 max=37.73mV min=0.00mV
+  rampa=10u R=1M sel=z cab=50f max=37.73mV min=0.00mV
+  rampa=10u R=ab sel=v cab=0 max=48.11mV min=-0.05mV
+  rampa=10u R=ab sel=v cab=50f max=48.11mV min=0.00mV
+  rampa=10u R=ab sel=z cab=0 max=48.74mV min=0.00mV
+  rampa=10u R=ab sel=z cab=50f max=48.74mV min=-0.00mV
+  PEOR: |V(A)| = 52.06 mV en: T1 rampa=10n R=ab sel=v cab=0 max=0.0520622 min=-0.0464322
+
+== T2: saltos del dispositivo en 1 ns  (24 casos)
+  rango=bajo R=100 cab=0 antes=nanmV despues=48.11mV max=48.11mV min=2.55mV maxH=48.11mV
+  rango=bajo R=100 cab=50f antes=nanmV despues=48.11mV max=48.11mV min=2.55mV maxH=48.10mV
+  rango=bajo R=100 cab=0 antes=nanmV despues=2.55mV max=48.11mV min=2.54mV maxH=48.10mV
+  rango=bajo R=100 cab=50f antes=nanmV despues=2.55mV max=48.11mV min=2.54mV maxH=48.10mV
+  rango=bajo R=12k9 cab=0 antes=nanmV despues=48.11mV max=48.11mV min=42.32mV maxH=48.10mV
+  rango=bajo R=12k9 cab=50f antes=nanmV despues=48.11mV max=48.11mV min=42.32mV maxH=48.10mV
+  rango=bajo R=12k9 cab=0 antes=nanmV despues=42.32mV max=48.11mV min=42.32mV maxH=48.10mV
+  rango=bajo R=12k9 cab=50f antes=nanmV despues=42.32mV max=48.11mV min=42.32mV maxH=48.10mV
+  rango=medio R=100 cab=0 antes=nanmV despues=48.13mV max=48.13mV min=0.38mV maxH=48.10mV
+  rango=medio R=100 cab=50f antes=nanmV despues=48.13mV max=48.13mV min=0.38mV maxH=48.10mV
+  rango=medio R=100 cab=0 antes=nanmV despues=0.38mV max=48.13mV min=0.38mV maxH=48.10mV
+  rango=medio R=100 cab=50f antes=nanmV despues=0.38mV max=48.13mV min=0.38mV maxH=48.10mV
+  rango=medio R=12k9 cab=0 antes=nanmV despues=48.13mV max=48.13mV min=24.46mV maxH=48.10mV
+  rango=medio R=12k9 cab=50f antes=nanmV despues=48.13mV max=48.13mV min=24.46mV maxH=48.10mV
+  rango=medio R=12k9 cab=0 antes=nanmV despues=24.46mV max=48.13mV min=24.46mV maxH=48.10mV
+  rango=medio R=12k9 cab=50f antes=nanmV despues=24.46mV max=48.13mV min=24.46mV maxH=48.10mV
+  rango=alto R=100 cab=0 antes=nanmV despues=48.74mV max=48.74mV min=0.02mV maxH=48.10mV
+  rango=alto R=100 cab=50f antes=nanmV despues=48.74mV max=48.74mV min=0.02mV maxH=48.10mV
+  rango=alto R=100 cab=0 antes=nanmV despues=0.02mV max=48.74mV min=0.00mV maxH=48.10mV
+  rango=alto R=100 cab=50f antes=nanmV despues=0.02mV max=48.74mV min=-0.02mV maxH=48.10mV
+  rango=alto R=12k9 cab=0 antes=nanmV despues=48.74mV max=48.74mV min=2.11mV maxH=48.10mV
+  rango=alto R=12k9 cab=50f antes=nanmV despues=48.74mV max=48.74mV min=2.11mV maxH=48.10mV
+  rango=alto R=12k9 cab=0 antes=nanmV despues=2.11mV max=48.74mV min=2.11mV maxH=48.10mV
+  rango=alto R=12k9 cab=50f antes=nanmV despues=2.11mV max=48.74mV min=2.11mV maxH=48.10mV
+  PEOR: |V(A)| = 48.74 mV en: T2 rango=alto R=100 abre cab=0 antes= despues=0.0487429 max=0.048743 min=1.71313E-05 maxH=0.0481048
+
+== T4: cambio de rango  (24 casos)
+  R=12k9 conmuta=lo flanco=crudo cab=0 max=62.54mV min=-26.49mV
+  R=12k9 conmuta=lo flanco=crudo cab=50f max=62.14mV min=-1.56mV
+  R=12k9 conmuta=lo flanco=frenado cab=0 max=42.32mV min=2.09mV
+  R=12k9 conmuta=lo flanco=frenado cab=50f max=42.32mV min=2.09mV
+  R=12k9 conmuta=mid flanco=crudo cab=0 max=27.13mV min=-2.45mV
+  R=12k9 conmuta=mid flanco=crudo cab=50f max=24.46mV min=2.11mV
+  R=12k9 conmuta=mid flanco=frenado cab=0 max=24.46mV min=2.11mV
+  R=12k9 conmuta=mid flanco=frenado cab=50f max=24.46mV min=2.11mV
+  R=1M conmuta=lo flanco=crudo cab=0 max=107.01mV min=-55.96mV
+  R=1M conmuta=lo flanco=crudo cab=50f max=70.78mV min=4.91mV
+  R=1M conmuta=lo flanco=frenado cab=0 max=48.05mV min=37.25mV
+  R=1M conmuta=lo flanco=frenado cab=50f max=48.05mV min=37.27mV
+  R=1M conmuta=mid flanco=crudo cab=0 max=56.11mV min=22.50mV
+  R=1M conmuta=mid flanco=crudo cab=50f max=47.67mV min=37.73mV
+  R=1M conmuta=mid flanco=frenado cab=0 max=47.54mV min=37.63mV
+  R=1M conmuta=mid flanco=frenado cab=50f max=47.54mV min=37.64mV
+  R=ab conmuta=lo flanco=crudo cab=0 max=118.18mV min=-56.60mV
+  R=ab conmuta=lo flanco=crudo cab=50f max=71.56mV min=5.04mV
+  R=ab conmuta=lo flanco=frenado cab=0 max=51.53mV min=47.59mV
+  R=ab conmuta=lo flanco=frenado cab=50f max=51.44mV min=47.61mV
+  R=ab conmuta=mid flanco=crudo cab=0 max=63.98mV min=23.92mV
+  R=ab conmuta=mid flanco=crudo cab=50f max=53.55mV min=40.93mV
+  R=ab conmuta=mid flanco=frenado cab=0 max=49.28mV min=48.11mV
+  R=ab conmuta=mid flanco=frenado cab=50f max=49.26mV min=48.11mV
+  PEOR: |V(A)| = 118.18 mV en: T4 R=ab conmuta=lo flanco=crudo cab=0 max=0.11818 min=-0.0565989
+
+== T5: conversión del lector  (8 casos)
+  R=100 cab=0 reposo=0.02mV max=0.02mV min=0.02mV tconv=1.3444us
+  R=100 cab=50f reposo=0.02mV max=0.02mV min=0.02mV tconv=1.3444us
+  R=12k9 cab=0 reposo=2.11mV max=2.11mV min=1.95mV tconv=1.3689us
+  R=12k9 cab=50f reposo=2.11mV max=2.11mV min=1.98mV tconv=1.3689us
+  R=1M cab=0 reposo=37.73mV max=37.75mV min=36.97mV tconv=2.2234us
+  R=1M cab=50f reposo=37.73mV max=37.74mV min=37.01mV tconv=2.2236us
+  R=ab cab=0 reposo=48.74mV max=48.76mV min=48.06mV tconv=2.7866us
+  R=ab cab=50f reposo=48.74mV max=48.75mV min=48.10mV tconv=2.7868us
+  PEOR: |V(A)| = 48.76 mV en: T5 R=ab cab=0 reposo=0.0487429 max=0.04876 min=0.0480627 tconv=2.78664E-06
+
+== T6: escalón de +-0,2 V en VDD en 1 ns  (8 casos)
+  R=100 cab=0 max=0.02mV min=0.01mV
+  R=100 cab=50f max=0.02mV min=0.01mV
+  R=12k9 cab=0 max=2.68mV min=1.80mV
+  R=12k9 cab=50f max=2.68mV min=1.80mV
+  R=1M cab=0 max=43.48mV min=33.15mV
+  R=1M cab=50f max=43.48mV min=33.15mV
+  R=ab cab=0 max=55.48mV min=43.01mV
+  R=ab cab=50f max=55.48mV min=43.01mV
+  PEOR: |V(A)| = 55.48 mV en: T6 R=ab cab=0 max=0.0554799 min=0.0430103
+
+== T7: anillo con resistencia serie: V sobre el dispositivo  (12 casos)
+  Rser=0 R=100 max=8.46mV min=-19.85mV
+  Rser=0 R=12k9 max=797.64mV min=-858.45mV
+  Rser=0 R=1M max=1784.12mV min=-1079.57mV
+  Rser=30k R=100 max=4.42mV min=-2.88mV
+  Rser=30k R=12k9 max=440.01mV min=-274.23mV
+  Rser=30k R=1M max=1732.61mV min=-1053.34mV
+  Rser=100k R=100 max=1.65mV min=-1.01mV
+  Rser=100k R=12k9 max=190.59mV min=-116.40mV
+  Rser=100k R=1M max=1623.24mV min=-982.49mV
+  Rser=1meg R=100 max=0.18mV min=-0.11mV
+  Rser=1meg R=12k9 max=22.74mV min=-13.63mV
+  Rser=1meg R=1M max=896.03mV min=-543.14mV
+  PEOR: |V(A)| = 1784.12 mV en: T7 Rser=0 R=1M max=1.78412 min=-1.07957
+
+== T8: fuente de corriente de 50 nA sin limitar  (1 casos)
+  antes=0.01mV t_50mV=1.0053us t_100mV=1.0105us max=1800.00mV
+  PEOR: |V(A)| = 1800.00 mV en: T8 antes=5.08117E-06 t_50mV=1.00535E-06 t_100mV=1.0105E-06 max=1.8

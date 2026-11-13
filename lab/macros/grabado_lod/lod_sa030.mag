@@ -1,0 +1,33 @@
+magic
+tech sky130A
+timestamp 1794447957
+<< nmos >>
+rect 30 0 45 42
+<< ndiff >>
+rect 0 36 30 42
+rect 0 6 4 36
+rect 21 6 30 36
+rect 0 0 30 6
+rect 45 36 75 42
+rect 45 6 54 36
+rect 71 6 75 36
+rect 45 0 75 6
+<< ndiffc >>
+rect 4 6 21 36
+rect 54 6 71 36
+<< poly >>
+rect 30 42 45 55
+rect 30 -13 45 0
+<< locali >>
+rect 4 36 21 44
+rect 4 -2 21 6
+rect 54 36 71 44
+rect 54 -2 71 6
+<< labels >>
+flabel locali 4 6 21 36 0 FreeSans 160 0 0 0 S
+port 1 nsew
+flabel locali 54 6 71 36 0 FreeSans 160 0 0 0 D
+port 2 nsew
+flabel poly 30 47 45 55 0 FreeSans 160 0 0 0 G
+port 3 nsew
+<< end >>

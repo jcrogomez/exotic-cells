@@ -1,0 +1,8 @@
+* NGSPICE file created from photon_e20.ext - technology: sky130A
+
+.subckt photon_e20 DNW K A EA EK CA CK
+X0 EA EK sky130_fd_pr__diode_pd2nw_05v5 perim=4.8e+06 area=1.4e+12
+X1 CA CK sky130_fd_pr__diode_pd2nw_05v5 perim=4.8e+06 area=1.4e+12
+D0 A K sky130_fd_pr__model__parasitic__diode_ps2dn area=9
+.ends
+

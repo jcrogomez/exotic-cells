@@ -1,362 +1,758 @@
 [
  {
   "id": "XC-01",
+  "status": "instrument",
   "family": "Metal-1 constriction",
+  "plan": "cells/xc01_m1_constriction/PLAN.md",
   "mechanism": "Electromigration",
   "engine": "F",
   "vehicle": "D",
   "usefulness": "H",
   "information": "H",
-  "state": "Formation path verified in the flow; transformation not demonstrated"
+  "state": "INSTRUMENT (the forge: formation path for XC-05). Formation path verified in the flow; transformation not demonstrated"
  },
  {
   "id": "XC-02",
+  "status": "merged",
   "family": "Local-interconnect constriction",
+  "plan": "cells/xc02_li_constriction/PLAN.md",
   "mechanism": "Joule heating",
   "engine": "F+P",
   "vehicle": "D",
   "usefulness": "H",
   "information": "H",
-  "state": "Geometry drawn, not integrated"
+  "state": "MERGED into XC-01. Geometry drawn, not integrated"
  },
  {
   "id": "XC-03",
+  "status": "merged",
   "family": "Contact or via as the transformation site",
+  "plan": "cells/xc03_contact_site/PLAN.md",
   "mechanism": "Interface failure",
   "engine": "P",
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
-  "state": "Observation only"
+  "state": "MERGED into XC-01. Observation only"
  },
  {
   "id": "XC-04",
+  "status": "merged",
   "family": "Tunnelling nanogap",
+  "plan": "cells/xc04_tunnel_nanogap/PLAN.md",
   "mechanism": "Direct tunnelling across about 1 nm",
   "engine": "P",
   "vehicle": "H/S",
   "usefulness": "M",
   "information": "H",
-  "state": "Outside the range of a digital readout"
+  "state": "MERGED into XC-05. Outside the range of a digital readout"
  },
  {
   "id": "XC-05",
+  "status": "survived",
   "family": "Atomic contact",
+  "plan": "cells/xc05_atomic_contact/PLAN.md",
   "mechanism": "Transport through a few channels",
   "engine": "P",
   "vehicle": "S",
   "usefulness": "L",
   "information": "M",
-  "state": "On file: needs a precursor that can cycle"
+  "state": "CELL. Round 2: a map by material instead of a verdict. Metal 1 is bridged by its barrier (20 to 240 ohm per um, verified); a local-interconnect neck heats to roughly 500 to 1800 K with 4 to 8 mA (verified); low-bias reader holds 48 mV or less (verified)"
  },
  {
   "id": "XC-06",
+  "status": "open",
   "family": "Coulomb island",
+  "plan": "cells/xc06_coulomb_island/PLAN.md",
   "mechanism": "Coulomb blockade",
   "engine": "P",
   "vehicle": "S",
   "usefulness": "L",
   "information": "M",
-  "state": "On file: island cannot be drawn at this node"
+  "state": "CELL. Attack round 1: the arithmetic holds; it rides on XC-05, which is still open"
  },
  {
   "id": "XC-07",
+  "status": "open",
   "family": "Oxide breakdown: antifuse, filament",
+  "plan": "cells/xc07_oxide_breakdown/PLAN.md",
   "mechanism": "Dielectric breakdown",
   "engine": "F+P",
   "vehicle": "H",
   "usefulness": "H",
   "information": "H",
-  "state": "Waits for more than 1.8 V"
+  "state": "CELL. Round 4: out of reach at 3.3 V; plausible with the XC-53 pump; breakdown time unverifiable (7–14 decades), so the cell must sweep area and voltage. Waits for more than 1.8 V"
  },
  {
   "id": "XC-08",
+  "status": "merged",
   "family": "Silicon filament emitter",
+  "plan": "cells/xc08_filament_emitter/PLAN.md",
   "mechanism": "Emission from the XC-07 filament",
   "engine": "F",
   "vehicle": "H/S",
   "usefulness": "M",
   "information": "H",
-  "state": "Depends on XC-07"
+  "state": "MERGED into XC-07. Depends on XC-07"
  },
  {
   "id": "XC-09",
+  "status": "merged",
   "family": "Charge-trap transistor",
+  "plan": "cells/xc09_charge_trap/PLAN.md",
   "mechanism": "Hot-carrier trapping",
   "engine": "F",
   "vehicle": "H",
   "usefulness": "H",
   "information": "M",
-  "state": "No SKY130 data"
+  "state": "MERGED into XC-14. No SKY130 data"
  },
  {
   "id": "XC-10",
+  "status": "instrument",
   "family": "Ageing at 1.8 V",
+  "plan": "cells/xc10_ageing/PLAN.md",
   "mechanism": "BTI and HCI",
   "engine": "P",
   "vehicle": "D",
   "usefulness": "M",
   "information": "M",
-  "state": "No design"
+  "state": "INSTRUMENT (creates traps for XC-19 and, after attack round 1, for XC-52). No design"
  },
  {
   "id": "XC-11",
+  "status": "merged",
   "family": "Single-poly floating gate",
+  "plan": "cells/xc11_floating_gate/PLAN.md",
   "mechanism": "Injection and tunnelling",
   "engine": "F",
   "vehicle": "H",
   "usefulness": "H",
   "information": "L",
-  "state": "Waits for a charge pump"
+  "state": "MERGED into XC-14. Waits for a charge pump"
  },
  {
   "id": "XC-12",
+  "status": "instrument",
   "family": "Diffusion-length stress (LOD)",
+  "plan": "cells/xc12_lod_stress/PLAN.md",
   "mechanism": "STI mechanical stress",
   "engine": "P",
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
-  "state": "Extraction gap confirmed; annotator applied to the whole standard-cell library; model prediction only"
+  "state": "INSTRUMENT (process metrology; Residual). Extraction gap confirmed; annotator applied to the whole standard-cell library; model prediction only"
  },
  {
   "id": "XC-13",
+  "status": "instrument",
   "family": "Well proximity (WPE)",
+  "plan": "cells/xc13_well_proximity/PLAN.md",
   "mechanism": "Extra doping near the well edge",
   "engine": "P",
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
-  "state": "Not in the model card"
+  "state": "INSTRUMENT (process metrology). Not in the model card"
  },
  {
   "id": "XC-14",
+  "status": "survived",
   "family": "Antenna as a fab-time write",
+  "plan": "cells/xc14_antenna_write/PLAN.md",
   "mechanism": "Plasma charge on a floating gate",
   "engine": "F+P",
   "vehicle": "D",
   "usefulness": "H",
   "information": "H",
-  "state": "Foundry rules to be read"
+  "state": "CELL. Round 4, verified to order: on 4.15 nm oxide the plasma charge tunnels away (no fab-time memory); the residual drifts ~mV/day and tracks oxide thickness (clock / thickness gauge, conjecture). On 11.6 nm oxide it does not tunnel; survival through anneal unknown"
  },
  {
   "id": "XC-15",
+  "status": "merged",
   "family": "Antenna factorial",
+  "plan": "cells/xc15_antenna_factorial/PLAN.md",
   "mechanism": "Plasma damage to gate oxide",
   "engine": "P",
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
-  "state": "Experiment defined"
+  "state": "MERGED into XC-14. Experiment defined"
  },
  {
   "id": "XC-16",
+  "status": "instrument",
   "family": "Placement environment",
+  "plan": "cells/xc16_placement/PLAN.md",
   "mechanism": "Neighbours, orientation, density",
   "engine": "P",
   "vehicle": "D",
   "usefulness": "L",
   "information": "M",
-  "state": "Real diffusion lengths of every library cell now known (`experiments/stdcell_lod`)"
+  "state": "INSTRUMENT (process metrology). Real diffusion lengths of every library cell now known (`experiments/stdcell_lod`)"
  },
  {
   "id": "XC-17",
+  "status": "cancelled",
   "family": "Electrode by design",
+  "plan": "cells/xc17_electrode/PLAN.md",
   "mechanism": "Parasitic capacitance",
   "engine": "P",
   "vehicle": "D",
   "usefulness": "L",
   "information": "M",
-  "state": "Low priority"
+  "state": "OUT (a parasitic capacitor: standard-cell territory). Low priority"
  },
  {
   "id": "XC-18",
+  "status": "open",
   "family": "Field-oxide transistor",
+  "plan": "cells/xc18_field_oxide_fet/PLAN.md",
   "mechanism": "Parasitic channel under isolation",
   "engine": "F",
   "vehicle": "H",
   "usefulness": "M",
   "information": "M",
-  "state": "Threshold unknown"
+  "state": "CELL. Threshold unknown"
  },
  {
   "id": "XC-19",
+  "status": "open",
   "family": "Single trap (RTN)",
+  "plan": "cells/xc19_single_trap/PLAN.md",
   "mechanism": "Capture and emission at one defect",
   "engine": "F+P",
   "vehicle": "D/H",
   "usefulness": "H",
   "information": "H",
-  "state": "Reader simulated against four pre-registrations and drawn as a rule-clean channel; working point revised for shot noise; no trap demonstrated, no silicon"
+  "state": "CELL. Reader simulated against four pre-registrations and drawn as a rule-clean channel; working point revised for shot noise; no trap demonstrated, no silicon"
  },
  {
   "id": "XC-20",
+  "status": "survived",
   "family": "Abutted p+/n+ junction",
+  "plan": "cells/xc20_abutted_junction/PLAN.md",
   "mechanism": "Band-to-band tunnelling",
   "engine": "P",
   "vehicle": "D/H",
   "usefulness": "M",
   "information": "H",
-  "state": "Legal geometries drawn; no readout"
+  "state": "CELL. Round 2: reverse tunnelling at zero separation is the firm observable (tens of nA to tens of uA at 1.8 V per 1.4 um, verified to the order of magnitude); negative resistance left open, it depends on a doping profile that is not public"
  },
  {
   "id": "XC-21",
+  "status": "survived",
   "family": "Avalanche junction as emitter",
+  "plan": "cells/xc21_avalanche_emitter/PLAN.md",
   "mechanism": "Reverse breakdown",
   "engine": "F",
   "vehicle": "H/S",
   "usefulness": "M",
   "information": "M",
-  "state": "Waits for high voltage"
+  "state": "CELL. Round 4: drawn-gap knob dead; drawn corner 6.6–9.7 V verified to order; with a pump 3–37 pA (one agent). Waits for high voltage"
  },
  {
   "id": "XC-22",
+  "status": "merged",
   "family": "SPAD",
+  "plan": "cells/xc22_spad/PLAN.md",
   "mechanism": "Geiger-mode avalanche",
   "engine": "F",
   "vehicle": "H/S",
   "usefulness": "M",
   "information": "M",
-  "state": "Waits for high voltage"
+  "state": "MERGED into XC-21. Waits for high voltage"
  },
  {
   "id": "XC-23",
+  "status": "instrument",
   "family": "Lateral multi-terminal junction",
+  "plan": "cells/xc23_lateral_junction/PLAN.md",
   "mechanism": "Minority-carrier diffusion",
   "engine": "P",
   "vehicle": "H",
   "usefulness": "M",
   "information": "H",
-  "state": "Stated only; also the control for XC-26"
+  "state": "INSTRUMENT (control of XC-26 (carriers before photons)). Stated only; also the control for XC-26"
  },
  {
   "id": "XC-24",
+  "status": "open",
   "family": "Parasitic bipolar and PNPN",
+  "plan": "cells/xc24_parasitic_bipolar/PLAN.md",
   "mechanism": "Thyristor feedback",
   "engine": "F",
   "vehicle": "H",
   "usefulness": "M",
   "information": "M",
-  "state": "Latch-up risk"
+  "state": "CELL. Latch-up risk"
  },
  {
   "id": "XC-25",
+  "status": "survived",
   "family": "Well Hall plate",
+  "plan": "cells/xc25_hall_plate/PLAN.md",
   "mechanism": "Hall effect",
   "engine": "F",
   "vehicle": "H",
   "usefulness": "M",
   "information": "L",
-  "state": "An instrument, not a cell"
+  "state": "CELL. Attack round 1: with the microcoil it is the most solid result of the round; Hall voltage 0.017 to 0.66 mV per mA depending on unknown well doping"
  },
  {
   "id": "XC-26",
+  "status": "survived",
   "family": "On-chip optical link",
+  "plan": "cells/xc26_optical_link/PLAN.md",
   "mechanism": "Radiative recombination in a forward junction",
   "engine": "P",
   "vehicle": "D/H",
   "usefulness": "M",
   "information": "H",
-  "state": "Legal detector, modelled floor"
+  "state": "CELL. Round 4, verified to order: lives only with the emitter well at ~+1 V and substrate ≤10 Ω·cm (0.21–0.42 pA at 5 µm vs 0.15 pA floor); dies at ≥20 Ω·cm or cathode grounded"
  },
  {
   "id": "XC-27",
+  "status": "survived",
   "family": "Metal hole arrays",
-  "mechanism": "Sub-wavelength apertures",
+  "plan": "cells/xc27_hole_arrays/PLAN.md",
+  "mechanism": "Sub-wavelength apertures; diffraction at pitch near the wavelength",
   "engine": "P",
-  "vehicle": "S",
+  "vehicle": "D/S",
   "usefulness": "M",
   "information": "H",
-  "state": "Needs light on the die"
+  "state": "CELL. Round 4, verified to order: a cap changes only the escape cone, +1–4 %; needs ≥5 pA and <1 % matching. Reflection variant with the internal emitter of XC-26 entered 2026-11-12; depends on XC-26 emitting and on fill blocking; transmission still needs light on the die"
  },
  {
   "id": "XC-28",
+  "status": "cancelled",
   "family": "Waveguides in the dielectric",
+  "plan": "cells/xc28_waveguides/PLAN.md",
   "mechanism": "Guiding in the metal stack oxide",
   "engine": "F",
   "vehicle": "S",
   "usefulness": "M",
   "information": "M",
-  "state": "Needs die access"
+  "state": "OUT (needs post-processing). Needs die access"
  },
  {
   "id": "XC-29",
+  "status": "cancelled",
   "family": "Physical nanopores",
+  "plan": "cells/xc29_nanopores/PLAN.md",
   "mechanism": "to be written",
   "engine": "P",
   "vehicle": "S",
   "usefulness": null,
   "information": null,
-  "state": "Named only"
+  "state": "OUT (never defined). Named only"
  },
  {
   "id": "XC-30",
+  "status": "merged",
   "family": "Mesoscopic coherence",
+  "plan": "cells/xc30_mesoscopic/PLAN.md",
   "mechanism": "to be written",
   "engine": "P",
   "vehicle": "S",
   "usefulness": null,
   "information": null,
-  "state": "Named only"
+  "state": "MERGED into XC-54. Named only"
  },
  {
   "id": "XC-31",
+  "status": "instrument",
   "family": "Heat as a channel",
+  "plan": "cells/xc31_heat_channel/PLAN.md",
   "mechanism": "Self-heating and thermal diffusion",
   "engine": "F+P",
   "vehicle": "D",
   "usefulness": "M",
   "information": "M",
-  "state": "Unverified estimate"
+  "state": "INSTRUMENT (temperature knob and control). Unverified estimate"
  },
  {
   "id": "XC-32",
+  "status": "instrument",
   "family": "Supply-network coupling",
+  "plan": "cells/xc32_supply_coupling/PLAN.md",
   "mechanism": "Supply droop",
   "engine": "P",
   "vehicle": "D",
   "usefulness": "L",
   "information": "M",
-  "state": "The boring explanation every coupling experiment must rule out"
+  "state": "INSTRUMENT (supply control). The boring explanation every coupling experiment must rule out"
  },
  {
   "id": "XC-33",
+  "status": "cancelled",
   "family": "Metastability and entropy",
+  "plan": "cells/xc33_metastability/PLAN.md",
   "mechanism": "Bistable resolution",
   "engine": "F",
   "vehicle": "D",
   "usefulness": "H",
   "information": "L",
-  "state": "The conventional baseline XC-19 must beat"
+  "state": "OUT (done with standard cells). The conventional baseline XC-19 must beat"
  },
  {
   "id": "XC-34",
+  "status": "instrument",
   "family": "Cells outside their intended use",
+  "plan": "cells/xc34_offlabel_cells/PLAN.md",
   "mechanism": "Delay cells as vernier, contention",
   "engine": "F",
   "vehicle": "D",
   "usefulness": "M",
   "information": "L",
-  "state": "Tooling"
+  "state": "INSTRUMENT (readout tooling). Tooling"
  },
  {
   "id": "XC-35",
+  "status": "cancelled",
   "family": "Die identity",
+  "plan": "cells/xc35_die_identity/PLAN.md",
   "mechanism": "Mismatch",
   "engine": "F",
   "vehicle": "D",
   "usefulness": "M",
   "information": "L",
-  "state": "Idea"
+  "state": "OUT (done with standard cells). Idea"
  },
  {
   "id": "XC-36",
+  "status": "cancelled",
   "family": "Consumer architectures",
+  "plan": "cells/xc36_consumers/PLAN.md",
   "mechanism": "Coupled oscillators, race logic and others",
   "engine": "F",
   "vehicle": "D",
   "usefulness": null,
   "information": null,
-  "state": "Not cells: they use cells"
+  "state": "OUT (not cells). Not cells: they use cells"
+ },
+ {
+  "id": "XC-37",
+  "status": "merged",
+  "family": "Variable retention time",
+  "plan": "cells/xc37_retention_time/PLAN.md",
+  "mechanism": "Single defect in a junction switching its leakage",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "H",
+  "state": "MERGED into XC-19. Entered 2026-11-12; reuses the XC-19 reader; step size `[?]`; needs an array and temperature"
+ },
+ {
+  "id": "XC-38",
+  "status": "merged",
+  "family": "Gate-induced drain leakage",
+  "plan": "cells/xc38_gidl/PLAN.md",
+  "mechanism": "Band-to-band tunnelling under the gate edge",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "L",
+  "information": "M",
+  "state": "MERGED into XC-20. Entered 2026-11-12; expected weak at 1.8 V (unread source)"
+ },
+ {
+  "id": "XC-39",
+  "status": "open",
+  "family": "Electrothermal polysilicon resistor",
+  "plan": "cells/xc39_poly_electrothermal/PLAN.md",
+  "mechanism": "Self-heating of a resistor with negative temperature coefficient",
+  "engine": "F+P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "M",
+  "state": "CELL. Entered 2026-11-12; coefficient read in the model card; oscillation judged unlikely, drift readable"
+ },
+ {
+  "id": "XC-40",
+  "status": "merged",
+  "family": "Thermopile",
+  "plan": "cells/xc40_thermopile/PLAN.md",
+  "mechanism": "Seebeck effect between polysilicon and diffusion next to a heater",
+  "engine": "F",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "M",
+  "state": "MERGED into XC-39. Entered 2026-11-12; the reader's own thermal drift exceeds one pair: needs a differential reference"
+ },
+ {
+  "id": "XC-41",
+  "status": "merged",
+  "family": "Dielectric relaxation",
+  "plan": "cells/xc41_dielectric_relaxation/PLAN.md",
+  "mechanism": "Charge that an oxide or MiM capacitor gives back after discharge",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "L",
+  "information": "M",
+  "state": "MERGED into XC-14. Entered 2026-11-12; signal expected near the reader step; MiM variant depends on the template"
+ },
+ {
+  "id": "XC-42",
+  "status": "merged",
+  "family": "Floating-well transistor",
+  "plan": "cells/xc42_floating_well/PLAN.md",
+  "mechanism": "Well potential set by leakage, threshold through body effect",
+  "engine": "F+P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "M",
+  "state": "MERGED into XC-14. Entered 2026-11-12; latch-up and precheck risk to be checked"
+ },
+ {
+  "id": "XC-43",
+  "status": "merged",
+  "family": "Charge pumping",
+  "plan": "cells/xc43_charge_pumping/PLAN.md",
+  "mechanism": "Interface traps filled and emptied by gate pulses",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "H",
+  "state": "MERGED into XC-19. Entered 2026-11-12; f·q per trap is above the modelled floor at 1 MHz; needs body bias at mid-supply"
+ },
+ {
+  "id": "XC-44",
+  "status": "instrument",
+  "family": "Package stress",
+  "plan": "cells/xc44_package_stress/PLAN.md",
+  "mechanism": "Piezoresistance of silicon under the mechanical stress of the package",
+  "engine": "F",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "M",
+  "state": "INSTRUMENT (stress monitor). Entered 2026-11-12; only interpretable with an external bending control"
+ },
+ {
+  "id": "XC-45",
+  "status": "merged",
+  "family": "Gate-tunnelling timer",
+  "plan": "cells/xc45_tunnel_timer/PLAN.md",
+  "mechanism": "Direct tunnelling through the 1.8 V gate oxide discharging a floating gate",
+  "engine": "F+P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "H",
+  "state": "MERGED into XC-14. Entered 2026-11-12; time constant `[?]`; area sweep separates it from switch leakage"
+ },
+ {
+  "id": "XC-46",
+  "status": "instrument",
+  "family": "Isolation-corner transistor",
+  "plan": "cells/xc46_corner_fet/PLAN.md",
+  "mechanism": "Parasitic edge device and narrow-width threshold shift",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "L",
+  "information": "M",
+  "state": "INSTRUMENT (control of XC-12/13). Entered 2026-11-12; partly in the model card already: a control more than a cell"
+ },
+ {
+  "id": "XC-47",
+  "status": "instrument",
+  "family": "Model discontinuities",
+  "plan": "cells/xc47_model_gaps/PLAN.md",
+  "mechanism": "Places where the open model is known to be wrong: bin edges, subthreshold hump",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "L",
+  "information": "H",
+  "state": "INSTRUMENT (model metrology; Residual). Entered 2026-11-12; upstream issue read; a job for Residual"
+ },
+ {
+  "id": "XC-48",
+  "status": "cancelled",
+  "family": "Junction-pinched well resistor",
+  "plan": "cells/xc48_pinched_well/PLAN.md",
+  "mechanism": "Depletion narrowing a well resistor",
+  "engine": "F+P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "M",
+  "state": "OUT (a junction transistor: conventional physics). Entered 2026-11-12; sheet resistance spread read in the PDK; bias dependence `[?]`"
+ },
+ {
+  "id": "XC-49",
+  "status": "cancelled",
+  "family": "Particle strikes on dynamic nodes",
+  "plan": "cells/xc49_particle_strikes/PLAN.md",
+  "mechanism": "Charge deposited by alpha or cosmic particles",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "L",
+  "information": "L",
+  "state": "OUT (event rate too low for one chip). Entered 2026-11-12; event rate estimated far too low for one chip (unread source)"
+ },
+ {
+  "id": "XC-50",
+  "status": "merged",
+  "family": "Hot-carrier transistor emitter",
+  "plan": "cells/xc50_hot_carrier_emitter/PLAN.md",
+  "mechanism": "Light from hot carriers in a saturated transistor",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "L",
+  "information": "M",
+  "state": "MERGED into XC-26. Entered 2026-11-12; estimated below the reader floor (from memory, no source)"
+ },
+ {
+  "id": "XC-51",
+  "status": "merged",
+  "family": "Polysilicon constriction",
+  "plan": "cells/xc51_poly_constriction/PLAN.md",
+  "mechanism": "Thermal rupture or migration in a polysilicon link",
+  "engine": "F",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "M",
+  "state": "MERGED into XC-01. Entered 2026-11-12; published fuse used 10 mA at 3.3 V; whether SKY130 polysilicon is silicided `[?]`"
+ },
+ {
+  "id": "XC-52",
+  "status": "survived",
+  "family": "Spin-pair magnetoresistance",
+  "plan": "cells/xc52_spin_pair/PLAN.md",
+  "mechanism": "Recombination at interface traps changes with a millitesla field",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "H",
+  "state": "CELL. Round 2: the four-state sequence does not remove classical even-in-field terms; discrimination rests on the shape against field. Coil verified at 0.373 mT per mA. No area assigned yet"
+ },
+ {
+  "id": "XC-53",
+  "status": "instrument",
+  "family": "High-voltage charge pump",
+  "plan": "cells/xc53_hv_pump/PLAN.md",
+  "mechanism": "Dickson pump with the high-voltage devices of the PDK",
+  "engine": "F",
+  "vehicle": "D/H",
+  "usefulness": "H",
+  "information": "L",
+  "state": "INSTRUMENT (unlocks XC-07, 14, 18, 21). Round 4, verified: 8–10 V from 1.8 V with N=6–8, no device above 2.8 V, 15–18 % of a 1×2 tile; do not pump from 3.3 V (well exceeds 16.85 V breakdown); vertical PNP not yet modelled"
+ },
+ {
+  "id": "XC-54",
+  "status": "open",
+  "family": "Superconducting local interconnect",
+  "plan": "cells/xc54_tin_superconductor/PLAN.md",
+  "mechanism": "Titanium nitride may superconduct at a few kelvin",
+  "engine": "P",
+  "vehicle": "S",
+  "usefulness": "L",
+  "information": "H",
+  "state": "CELL. Entered 2026-11-12; costs no area (the lines exist); needs a cryostat; absorbs XC-30"
+ },
+ {
+  "id": "XC-55",
+  "status": "open",
+  "family": "Phonons in the metal stack",
+  "plan": "cells/xc55_beol_phonons/PLAN.md",
+  "mechanism": "Metal gratings as acoustic mirrors around an unreleased resonator",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "H",
+  "state": "CELL. Entered 2026-11-12; the most speculative entry; no calculation yet"
+ },
+ {
+  "id": "XC-56",
+  "status": "instrument",
+  "family": "On-chip microcoil",
+  "plan": "cells/xc56_microcoil/PLAN.md",
+  "mechanism": "Millitesla field under a metal spiral",
+  "engine": "F",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "L",
+  "state": "INSTRUMENT (field source for XC-25 and XC-52). Attack round 1, verified: 0.19 to 0.26 mT per mA; about 2 mT at the DC current limit of metal 3"
+ },
+ {
+  "id": "XC-57",
+  "status": "survived",
+  "family": "Peltier junction",
+  "plan": "cells/xc57_peltier_junction/PLAN.md",
+  "mechanism": "Heat pumped at a junction of two materials, reversing with the current",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "M",
+  "state": "CELL. Round 3: the odd-in-current heat survives in the model (0.2 to 7 K at the junction at 100 uA); a reader in the silicon sees about 1 % of it, so readout takes seconds"
+ },
+ {
+  "id": "XC-58",
+  "status": "survived",
+  "family": "kT/C cell",
+  "plan": "cells/xc58_ktc_cell/PLAN.md",
+  "mechanism": "Thermal noise frozen on a small sampled capacitor",
+  "engine": "F",
+  "vehicle": "D",
+  "usefulness": "H",
+  "information": "M",
+  "state": "CELL. Round 3: survives as a randomness source and as a meter of 1 to 30 fF capacitances; primary thermometry not demonstrated (the observable goes as T^-1/2, verified), calibrated secondary sensitivity still to be assessed; doubles as the continuous-noise control for XC-19"
+ },
+ {
+  "id": "XC-59",
+  "status": "survived",
+  "family": "Electrical write, thermal erase",
+  "plan": "cells/xc59_thermal_erase/PLAN.md",
+  "mechanism": "Defects made by stress and annealed by an on-chip heater",
+  "engine": "F+P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "H",
+  "state": "CELL. Round 3: dead for a transistor with an on-chip heater (the channel gets 1 to 16 % of the heater's rise, verified); alive for a polysilicon element on oxide, or with oven erase"
+ },
+ {
+  "id": "XC-60",
+  "status": "survived",
+  "family": "Magnetodiode",
+  "plan": "cells/xc60_magnetodiode/PLAN.md",
+  "mechanism": "Carriers deflected by a field towards a surface where they recombine faster",
+  "engine": "F+P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "M",
+  "state": "CELL. Round 3: survives with another geometry (short diode, well-substrate junction as the active face); about 1 mT from a metal 1 strip (verified); cannot be claimed to beat a Hall plate"
+ },
+ {
+  "id": "XC-61",
+  "status": "survived",
+  "family": "Freeze-out breakdown oscillator",
+  "plan": "cells/xc61_freezeout_oscillator/PLAN.md",
+  "mechanism": "Impact ionisation of frozen-out dopants in lightly doped silicon at low temperature",
+  "engine": "P",
+  "vehicle": "S",
+  "usefulness": "L",
+  "information": "H",
+  "state": "CELL. Round 3: transformed into a forward diode that fires pulses at 4.2 K; nothing at 77 K (well still 6 to 37 % ionised); needs a cryostat"
+ },
+ {
+  "id": "XC-62",
+  "status": "survived",
+  "family": "Proximity-printed transistor",
+  "plan": "cells/xc62_proximity_fet/PLAN.md",
+  "mechanism": "Lithographic rounding and pull-back changing the real gate where the drawing is legal",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "M",
+  "information": "H",
+  "state": "CELL. Round 3: legal and submittable; threshold moves 1.2 to 1.8 mV per nm of gate length (verified); would measure the residue of the fab's proximity correction"
+ },
+ {
+  "id": "XC-63",
+  "status": "survived",
+  "family": "Unimplanted contact",
+  "plan": "cells/xc63_schottky_contact/PLAN.md",
+  "mechanism": "Metal on lightly doped silicon forms a rectifying barrier instead of an ohmic contact",
+  "engine": "F+P",
+  "vehicle": "D/S",
+  "usefulness": "M",
+  "information": "M",
+  "state": "CELL. Round 3: the PDK itself ships seven cells with a contact on an unimplanted tap, all on p substrate (verified); on an n-well it passes only next to a normal tap; real interface unknown"
  }
 ]

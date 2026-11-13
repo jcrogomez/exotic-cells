@@ -1,0 +1,10 @@
+# c60_lit_magnetodiodos.txt — informe del subagente de búsqueda (recibido Thu Nov 12 19:08:54 EST 2026). Grado: LEÍDO POR SUBAGENTE; "NL" = fragmento.
+SOS p+-n-n+: límite 0,024–4,9 V/T; base 6–31 µm — Lutes, Nussbaum, Aadland, IEEE TED 27 (1980) 2156, DOI 10.1109/T-ED.1980.20165 (NL)
+SOS Schottky: 30 V/T sin amplificar; longitudes < 20 µm, dopado < 1e16 cm-3; exige inyección alta — Mohaghegh, Cristoloveanu, De Pontcharra, IEEE TED 28 (1981) 237, DOI 10.1109/T-ED.1981.20320 (resumen leído)
+SOS: ~150 mA/T, "10x el efecto Hall" — Kamarinos et al., IEDM 1977, DOI 10.1109/IEDM.1977.189178 (resumen leído)
+CMOS bulk: hasta 25 V/T a 10 mA; la unión de colector en inversa hace de superficie de alta recombinación; I-V con saturación tipo JFET y resistencia negativa tipo UJT — Popović, Baltes, Rudolf, IEEE TED 31 (1984) 286, DOI 10.1109/T-ED.1984.21516 (resumen leído)
+Libro Popović, Hall Effect Devices 2ª ed. §7.2.2 (leído): unión p-well/sustrato n en inversa, "la recombinación se sustituye por colección"; pozo p = región cuasi-intrínseca; ~5 V/(mA·T) a 1–10 mA (unidades dudosas); ruido similar a Hall. §3.5.2/§7.2.1: región i mucho más corta que la longitud de difusión; ideal s1≈0, s2→inf; inyección alta imprescindible (n≈p). B perpendicular a J y paralelo a las dos superficies.
+SOI doble inyección: dI/I ≈ 10 % a 1 kOe (≈1 %/mT... = 0,1 %/mT: 10 % por 100 mT) — Takeyama et al., IEEJ Trans. SM 122 (2002) 280 (resumen leído)
+Sutthinet 2020 (PDF leído): deflexión en volumen, L=50 µm, 1 mA: 0,0025–0,12 mV/T (minúsculo).
+s de Si/SiO2: pared STI grabada, velocidad de GENERACIÓN ~2570 cm/s, 1040 tras H2 (Riley 2000, NL); térmico 3e3–>1e4 (Rosier 1966, NL); bien pasivado <10 (NL). s medido en STI/LOCOS de SKY130: no encontrado.
+Abandono: ningún magnetodiodo compitió con Hall; no admite corriente rotatoria para cancelar offset y 1/f (Popović §1.2.2, cap. 8, leído).

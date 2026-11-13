@@ -1,0 +1,65 @@
+== 1. Presupuesto rehecho (27 C = 300,15 K) ==
+C_puerta  sigma kT/C  f(MC)  sigma congelada  G      disp. tiempo  piso   parte kT/C   t_conv   vs presupuesto previo
+  0.963 fF  2.074 mV  0.890   1.957 mV      2.73    5.35 %       0.57    98.9 %       330 us    5.65 %
+  2.000 fF  1.439 mV  0.947   1.401 mV      2.73    3.82 %       0.57    97.8 %       102 us    3.92 %
+  2.959 fF  1.183 mV  0.964   1.162 mV      2.73    3.17 %       0.57    96.9 %        54 us    3.22 %
+  5.000 fF  0.910 mV  0.979   0.901 mV      2.73    2.46 %       0.57    94.9 %        44 us    2.48 %
+ 10.000 fF  0.644 mV  0.989   0.640 mV      2.73    1.75 %       0.57    90.4 %        34 us    1.75 %
+ 30.000 fF  0.372 mV  0.996   0.371 mV      2.73    1.01 %       0.57    75.9 %        34 us    1.01 %
+100.000 fF  0.204 mV  0.999   0.203 mV      2.73    0.56 %       0.57    48.7 %        34 us    0.55 %
+300.000 fF  0.118 mV  1.000   0.118 mV      2.73    0.32 %       0.57    24.1 %        34 us    0.32 %
+El presupuesto previo daba 5,54 % a 1 fF y 1,75 % a 10 fF: con el nodo mínimo real (0,96 fF) sale 5,35 %; a 10 fF, 1,75 %. La aritmética previa se sostiene.
+
+== 2. Términos deterministas (corrida) ==
+pedestal del interruptor nfet mínimo, flanco 50p/500p/5n: C0: -223/-154/-113 mV; +2 fF: -94/-59/-47 mV; +9 fF: -33/-23/-16 mV (c58_det2_pass1.txt)
+salto al soltar la precarga: +28,0 / +9,2 / +2,7 mV (0,96 / 2,96 / 10 fF); caída de la puerta durante la descarga (Miller): -132 / -34 / -10 mV
+
+== 3. Fuga del nodo aislado ==
+T=27 C  I_fuga=    0.07 fA (modelo x0.1 ):  [0.96 fF,  25 us: deriva   0.002 mV, disparo  0.017 mV =   0.01 % de kT/C]  [0.96 fF, 330 us: deriva   0.023 mV, disparo  0.061 mV =   0.09 % de kT/C]  [0.96 fF,1000 us: deriva   0.069 mV, disparo  0.107 mV =   0.26 % de kT/C]  [10.00 fF,  34 us: deriva   0.000 mV, disparo  0.002 mV =   0.00 % de kT/C]  [10.00 fF,1000 us: deriva   0.007 mV, disparo  0.010 mV =   0.03 % de kT/C]
+T=27 C  I_fuga=    0.66 fA (modelo x1   ):  [0.96 fF,  25 us: deriva   0.017 mV, disparo  0.053 mV =   0.07 % de kT/C]  [0.96 fF, 330 us: deriva   0.226 mV, disparo  0.194 mV =   0.87 % de kT/C]  [0.96 fF,1000 us: deriva   0.685 mV, disparo  0.338 mV =   2.65 % de kT/C]  [10.00 fF,  34 us: deriva   0.002 mV, disparo  0.006 mV =   0.01 % de kT/C]  [10.00 fF,1000 us: deriva   0.066 mV, disparo  0.033 mV =   0.26 % de kT/C]
+T=27 C  I_fuga=    6.60 fA (modelo x10  ):  [0.96 fF,  25 us: deriva   0.171 mV, disparo  0.169 mV =   0.66 % de kT/C]  [0.96 fF, 330 us: deriva   2.262 mV, disparo  0.613 mV =   8.74 % de kT/C]  [0.96 fF,1000 us: deriva   6.854 mV, disparo  1.068 mV =  26.50 % de kT/C]  [10.00 fF,  34 us: deriva   0.022 mV, disparo  0.019 mV =   0.09 % de kT/C]  [10.00 fF,1000 us: deriva   0.660 mV, disparo  0.103 mV =   2.55 % de kT/C]
+T=85 C  I_fuga=   29.00 fA (modelo x0.1 ):  [0.96 fF,  25 us: deriva   0.753 mV, disparo  0.354 mV =   2.44 % de kT/C]  [0.96 fF, 330 us: deriva   9.938 mV, disparo  1.286 mV =  32.20 % de kT/C]  [0.96 fF,1000 us: deriva  30.114 mV, disparo  2.238 mV =  97.57 % de kT/C]  [10.00 fF,  34 us: deriva   0.099 mV, disparo  0.040 mV =   0.32 % de kT/C]  [10.00 fF,1000 us: deriva   2.900 mV, disparo  0.216 mV =   9.40 % de kT/C]
+T=85 C  I_fuga=  290.00 fA (modelo x1   ):  [0.96 fF,  25 us: deriva   7.529 mV, disparo  1.119 mV =  24.39 % de kT/C]  [0.96 fF, 330 us: deriva  99.377 mV, disparo  4.066 mV = 321.99 % de kT/C]  [0.96 fF,1000 us: deriva 301.142 mV, disparo  7.078 mV = 975.74 % de kT/C]  [10.00 fF,  34 us: deriva   0.986 mV, disparo  0.126 mV =   3.19 % de kT/C]  [10.00 fF,1000 us: deriva  29.000 mV, disparo  0.682 mV =  93.96 % de kT/C]
+T=85 C  I_fuga= 2900.00 fA (modelo x10  ):  [0.96 fF,  25 us: deriva  75.286 mV, disparo  3.539 mV = 243.93 % de kT/C]  [0.96 fF, 330 us: deriva 993.769 mV, disparo 12.858 mV = 3219.94 % de kT/C]  [0.96 fF,1000 us: deriva 3011.423 mV, disparo 22.383 mV = 9757.39 % de kT/C]  [10.00 fF,  34 us: deriva   9.860 mV, disparo  0.397 mV =  31.95 % de kT/C]  [10.00 fF,1000 us: deriva 290.000 mV, disparo  2.156 mV = 939.64 % de kT/C]
+
+== 4. Fronteras ==
+kT/C = piso del lector (0,57 %) en C = 95 fF; kT/C = 3x piso en C = 10.5 fF
+T=27 C, C= 0.96 fF: el ruido de disparo de la fuga llega al 10 % de kT/C con retención de     3.774 ms; la deriva iguala a sigma en     3.027 ms (fuga del modelo; x0,1..x10 escala inverso)
+T=27 C, C=10.00 fF: el ruido de disparo de la fuga llega al 10 % de kT/C con retención de    39.189 ms; la deriva iguala a sigma en     9.754 ms (fuga del modelo; x0,1..x10 escala inverso)
+T=85 C, C= 0.96 fF: el ruido de disparo de la fuga llega al 10 % de kT/C con retención de     0.010 ms; la deriva iguala a sigma en     0.008 ms (fuga del modelo; x0,1..x10 escala inverso)
+T=85 C, C=10.00 fF: el ruido de disparo de la fuga llega al 10 % de kT/C con retención de     0.106 ms; la deriva iguala a sigma en     0.024 ms (fuga del modelo; x0,1..x10 escala inverso)
+trampas del interruptor, sigma = 0.9 e (SUPUESTO, Dit 1e10..1e11/cm2/eV):  0.52 % de kT/C a 0.963 fF;  0.05 % a 10 fF (va como 1/C respecto de kT/C)
+trampas del interruptor, sigma = 1.5 e (SUPUESTO, Dit 1e10..1e11/cm2/eV):  1.45 % de kT/C a 0.963 fF;  0.14 % a 10 fF (va como 1/C respecto de kT/C)
+trampas del interruptor, sigma = 2.7 e (SUPUESTO, Dit 1e10..1e11/cm2/eV):  4.69 % de kT/C a 0.963 fF;  0.45 % a 10 fF (va como 1/C respecto de kT/C)
+granularidad: sqrt(kTC)/q = 12.5 e a 0.963 fF; 40.2 e a 10 fF; un electrón = 0.166 mV a 0.963 fF
+
+== 5. Correlación entre muestras sucesivas (estimación) ==
+C=  0.96 fF: var kT/C 3.8285 mV2, piso 0.0435 mV2; rho1<= 7.5e-05 [polarizacion 17 uV (n·kT/2Cf, Cf=10 pF)]; rho1<= 3.5e-04 [polarizacion 37 uV (README XC-19 escalado a 10 pF)]; rho1~ 0.002 [lector lento 0,0012 mV2/decada x6 decadas]; rho1~ 0.018 [lector lento 0,012 mV2/decada x6 decadas]; alimentacion 0.1 mV ef.: 0.01 % de la varianza; alimentacion 1.0 mV ef.: 0.86 % de la varianza;
+C= 10.00 fF: var kT/C 0.4100 mV2, piso 0.0436 mV2; rho1<= 6.4e-04 [polarizacion 17 uV (n·kT/2Cf, Cf=10 pF)]; rho1<= 3.0e-03 [polarizacion 37 uV (README XC-19 escalado a 10 pF)]; rho1~ 0.016 [lector lento 0,0012 mV2/decada x6 decadas]; rho1~ 0.137 [lector lento 0,012 mV2/decada x6 decadas]; alimentacion 0.1 mV ef.: 0.07 % de la varianza; alimentacion 1.0 mV ef.: 6.89 % de la varianza;
+C=100.00 fF: var kT/C 0.0414 mV2, piso 0.0436 mV2; rho1<= 3.4e-03 [polarizacion 17 uV (n·kT/2Cf, Cf=10 pF)]; rho1<= 1.6e-02 [polarizacion 37 uV (README XC-19 escalado a 10 pF)]; rho1~ 0.078 [lector lento 0,0012 mV2/decada x6 decadas]; rho1~ 0.459 [lector lento 0,012 mV2/decada x6 decadas]; alimentacion 0.1 mV ef.: 0.39 % de la varianza; alimentacion 1.0 mV ef.: 28.30 % de la varianza;
+memoria del nodo: con el interruptor cerrado tau = C/g_on = 0,963 fF / 3,8e-4 S = 2,5 ps; cerrado 1 ns -> exp(-400): nula. Reparto de carga con Cf: C/Cf = 1e-4 (0,96 fF) .. 1e-2 (100 fF) de la muestra anterior
+
+== 6. Entropía mínima por muestra (gaussiana cuantizada por un contador; reloj supuesto 50 MHz [?]) ==
+C=  0.96 fF: sigma_t =  17740.3 ns =  887.0 ticks -> H_min ideal 11.12 bit/muestra (SP 800-90B reduce el alfabeto a <=256: tope 8); a 3.0 kmuestras/s
+C=  2.96 fF: sigma_t =   1739.2 ns =   87.0 ticks -> H_min ideal 7.77 bit/muestra (SP 800-90B reduce el alfabeto a <=256: tope 8); a 18.5 kmuestras/s
+C= 10.00 fF: sigma_t =    625.1 ns =   31.3 ticks -> H_min ideal 6.29 bit/muestra (SP 800-90B reduce el alfabeto a <=256: tope 8); a 29.4 kmuestras/s
+C= 30.00 fF: sigma_t =    395.2 ns =   19.8 ticks -> H_min ideal 5.63 bit/muestra (SP 800-90B reduce el alfabeto a <=256: tope 8); a 29.4 kmuestras/s
+C=100.00 fF: sigma_t =    270.6 ns =   13.5 ticks -> H_min ideal 5.08 bit/muestra (SP 800-90B reduce el alfabeto a <=256: tope 8); a 29.4 kmuestras/s
+NIST SP 800-90B (leído): 1 000 000 muestras crudas consecutivas + 1000 reinicios x 1000 muestras = 2e6 conversiones:
+   C=0.963 fF: 660 s de datos
+   C=10.0 fF: 68 s de datos
+
+== 7. Termómetro ==
+ganancia del lector: 2.728 %/mV a 27 C, 2.28 %/mV a 85 C -> dlnG/dT = -0.309 %/K (1/T puro daría -0.304 %/K)
+con los dos pares medidos: dlnG/dT = -0.191 %/K (0,963 fF, contaminado por fuga) .. -0.309 %/K (2,96 fF) -> sensibilidad de la varianza relativa del tiempo entre -0.08 y -0.31 %/K
+varianza de la TENSION: +0.30 %/K. Varianza RELATIVA DEL TIEMPO (lo que se mide): -0.31 %/K  -> signo contrario al del plan
+  resolver 3.0 K (1 sigma): N = 22,446 conversiones = 7.4 s a 0.963 fF (330 us) o 1.0 s a 10 fF (x1,27 por restar el piso)
+  resolver 1.0 K (1 sigma): N = 202,016 conversiones = 66.7 s a 0.963 fF (330 us) o 8.7 s a 10 fF (x1,27 por restar el piso)
+  resolver 0.1 K (1 sigma): N = 20,201,564 conversiones = 6666.5 s a 0.963 fF (330 us) o 872.3 s a 10 fF (x1,27 por restar el piso)
+  control (no filtro): el tiempo medio de descarga cambia ~5 %/K (README XC-19) con 0,57 % de ruido: 0,1 K en una conversión, pero no es primario
+  error absoluto sin calibrar: C ±10 % (SUPUESTO: óxido ±5 %, solape ±20 %, unión ±15 %, hilo ±25 %, sumados sobre 0,96 fF) -> ±32 K; f(C) ±3 % -> ±10 K; G (n) ±2 % -> ±13 K
+  a 85 C, fuga x0.1: el disparo de la fuga durante la conversión (25 us, peso 1/3) añade 0.9 % de varianza = lectura -3 K (la varianza extra se lee como temperatura más baja) (a 10 fF, diez veces menos)
+  a 85 C, fuga x1: el disparo de la fuga durante la conversión (25 us, peso 1/3) añade 9.1 % de varianza = lectura -29 K (la varianza extra se lee como temperatura más baja) (a 10 fF, diez veces menos)
+  a 85 C, fuga x10: el disparo de la fuga durante la conversión (25 us, peso 1/3) añade 91.4 % de varianza = lectura -290 K (la varianza extra se lee como temperatura más baja) (a 10 fF, diez veces menos)
+  cociente entre dos capacidades: var1/var2 = (C2/C1)(f1/f2)(G1/G2)^2: no contiene T. Mide C2/C1, no la temperatura.
+  lo que sí cancela la ganancia: un escalón de tensión conocido en la puerta (da G = 1/(n·kT/q) en el mismo canal).

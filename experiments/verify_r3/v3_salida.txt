@@ -1,0 +1,182 @@
+inicio: Thu Nov 12 19:48:33 EST 2026
+
+== A1: capacidad del nodo de puerta (fF). Fuentes: modelo nfet_01v8 tt (bin W 0,42-0,52 L 0,15-0,18) y v3_f2_salida.txt (ngspice)
+Cox*W*L (dibujado) = 0.524 fF (cota; no se usa en inversión débil)
+puerta del lector: intrínseca en inversión débil 0.152-0.161; solapes 2*cgdo*W = 0.206; franja cf 0.0012; cgbo*L 0.00001
+interruptor mínimo 0,42/0,15: unión 0.220-0.275; solape de su puerta 0.103
+hilo: cabeza de poly 0.082; li de 0,5-1,5 um 0.058-0.145
+TOTAL inversión débil: 0.821 - 0.974 fF ; con lector en inversión fuerte hasta 1.243 fF
+Cov/C (interruptor) = 0.106 - 0.125
+
+== A2: varianza congelada / (kT/C) con rampa de puerta e inyección por Cov
+Modelo: interruptor en inversión débil, I_f = Is e^{u}, I_r = Is (u = -(Vnodo-Vref)/UT), Is = Is0 exp(-s), s = a t/(n UT);
+  du/ds = n*rho - B(e^u - 1);  dy/ds = -2 B e^u y + B(e^u + 1);  y = sigma^2 C/kT; B = B0 e^{-s}; rho = Cov/C. Ruido de disparo 2q(I_f+I_r).
+  n*Cov/C = 0.00: y = 1.0000   (1-y)/(n*rho) = nan   [B0=50: 1.0000]
+  n*Cov/C = 0.01: y = 0.9931   (1-y)/(n*rho) = 0.692   [B0=50: 0.9931]
+  n*Cov/C = 0.02: y = 0.9862   (1-y)/(n*rho) = 0.691   [B0=50: 0.9862]
+  n*Cov/C = 0.05: y = 0.9656   (1-y)/(n*rho) = 0.689   [B0=50: 0.9656]
+  n*Cov/C = 0.10: y = 0.9316   (1-y)/(n*rho) = 0.684   [B0=50: 0.9316]
+  n*Cov/C = 0.15: y = 0.8981   (1-y)/(n*rho) = 0.680   [B0=50: 0.8981]
+  n*Cov/C = 0.20: y = 0.8651   (1-y)/(n*rho) = 0.675   [B0=50: 0.8651]
+  n*Cov/C = 0.30: y = 0.8009   (1-y)/(n*rho) = 0.664   [B0=50: 0.8009]
+  n*Cov/C = 0.40: y = 0.7396   (1-y)/(n*rho) = 0.651   [B0=50: 0.7396]
+  n*Cov/C = 0.50: y = 0.6817   (1-y)/(n*rho) = 0.637   [B0=50: 0.6817]
+  n*Cov/C = 0.70: y = 0.5804   (1-y)/(n*rho) = 0.599   [B0=50: 0.5804]
+  n*Cov/C = 0.90: y = 0.5121   (1-y)/(n*rho) = 0.542   [B0=50: 0.5121]
+  n*Cov/C = 1.00: y = 0.5009   (1-y)/(n*rho) = 0.499   [B0=50: 0.5009]
+  n*Cov/C = 1.50: y = 0.5000   (1-y)/(n*rho) = 0.333   [B0=50: 0.5000]
+pendiente en el origen respecto de n*rho: c = 0.692  -> coeficiente respecto de Cov/C = c*n: n=1,2: 0.83; n=1,4: 0.97; n=1,6: 1.11
+  n=1.3 Cov/C=0.05: y=0.9553 ; coef. efectivo (1-y)/rho = 0.894 ; fórmula 1-0,85 rho = 0.9575
+  n=1.3 Cov/C=0.1: y=0.9114 ; coef. efectivo (1-y)/rho = 0.886 ; fórmula 1-0,85 rho = 0.9150
+  n=1.3 Cov/C=0.2: y=0.8263 ; coef. efectivo (1-y)/rho = 0.869 ; fórmula 1-0,85 rho = 0.8300
+  n=1.5 Cov/C=0.05: y=0.9485 ; coef. efectivo (1-y)/rho = 1.030 ; fórmula 1-0,85 rho = 0.9575
+  n=1.5 Cov/C=0.1: y=0.8981 ; coef. efectivo (1-y)/rho = 1.019 ; fórmula 1-0,85 rho = 0.9150
+  n=1.5 Cov/C=0.2: y=0.8009 ; coef. efectivo (1-y)/rho = 0.995 ; fórmula 1-0,85 rho = 0.8300
+  MC (40000 caminos, C=1 fF, eps=0.0062) n*rho=0.0: y = 0.9908 (ODE 1.0000; error estadístico ~0,7 %)
+  MC (40000 caminos, C=1 fF, eps=0.0062) n*rho=0.3: y = 0.7949 (ODE 0.8009; error estadístico ~0,7 %)
+  MC (40000 caminos, C=1 fF, eps=0.0062) n*rho=0.6: y = 0.6260 (ODE 0.6282; error estadístico ~0,7 %)
+  [MC 80 s]
+
+== A3/A4
+  C=0.500 fF n=1.3: sigma_V = 2.878 mV ; sigma_t/t = sigma_V/(n UT) = 8.56 %
+  C=0.500 fF n=1.5: sigma_V = 2.878 mV ; sigma_t/t = sigma_V/(n UT) = 7.42 %
+  C=0.963 fF n=1.3: sigma_V = 2.074 mV ; sigma_t/t = sigma_V/(n UT) = 6.17 %
+  C=0.963 fF n=1.5: sigma_V = 2.074 mV ; sigma_t/t = sigma_V/(n UT) = 5.35 %
+  C=2.000 fF n=1.3: sigma_V = 1.439 mV ; sigma_t/t = sigma_V/(n UT) = 4.28 %
+  C=2.000 fF n=1.5: sigma_V = 1.439 mV ; sigma_t/t = sigma_V/(n UT) = 3.71 %
+  sigma_t/t = q/(n sqrt(k T C)) -> d ln/dT = -1/(2T) = -0.1667 %/K a 300 K (n y C constantes)
+  con n(T): d ln n/dT entre -3e-4 y +3e-4 /K (supuesto) cambia a -0.197 .. -0.137 %/K
+  la VARIANZA del observable (sigma_t/t)^2 = q^2/(n^2 k T C): proporcional a 1/T, no a T: -0.333 %/K
+  A4: T = q^2/(n^2 k C s^2) -> dT/T = -dC/C: C +-10 % => T: -27.3 / +33.3 K (lineal: +-30 K); cociente s1^2/s2^2 = C2/C1 (T y n se cancelan)
+       si además se aplica A2 (factor 1 - c n Cov/C) no cambia el orden.
+
+== G' (W/mK): conductancia por unidad de longitud de una línea sobre óxido de campo hacia el silicio (2D, fuente 1 W/m en toda la línea; mitad simétrica => 0,5 W/m)
+  poly w=0.15 um kox=1.0 t_campo=0.2500: T_línea=0.3239 K por W/m ; T_Si debajo=0.0153 (4.7 %) ; G' = 3.24 W/mK (placa sola: 0.60)
+  poly w=0.15 um kox=1.0 t_campo=0.3262: T_línea=0.3571 K por W/m ; T_Si debajo=0.0149 (4.2 %) ; G' = 2.92 W/mK (placa sola: 0.46)
+  poly w=0.15 um kox=1.0 t_campo=0.4000: T_línea=0.3836 K por W/m ; T_Si debajo=0.0146 (3.8 %) ; G' = 2.71 W/mK (placa sola: 0.38)
+  poly w=0.15 um kox=1.4 t_campo=0.2500: T_línea=0.2362 K por W/m ; T_Si debajo=0.0153 (6.5 %) ; G' = 4.53 W/mK (placa sola: 0.84)
+  poly w=0.15 um kox=1.4 t_campo=0.3262: T_línea=0.2598 K por W/m ; T_Si debajo=0.0149 (5.7 %) ; G' = 4.08 W/mK (placa sola: 0.64)
+  poly w=0.15 um kox=1.4 t_campo=0.4000: T_línea=0.2786 K por W/m ; T_Si debajo=0.0145 (5.2 %) ; G' = 3.79 W/mK (placa sola: 0.53)
+  poly w=0.3 um kox=1.0 t_campo=0.2500: T_línea=0.2669 K por W/m ; T_Si debajo=0.0152 (5.7 %) ; G' = 3.97 W/mK (placa sola: 1.20)
+  poly w=0.3 um kox=1.0 t_campo=0.3262: T_línea=0.2994 K por W/m ; T_Si debajo=0.0149 (5.0 %) ; G' = 3.51 W/mK (placa sola: 0.92)
+  poly w=0.3 um kox=1.0 t_campo=0.4000: T_línea=0.3256 K por W/m ; T_Si debajo=0.0145 (4.5 %) ; G' = 3.22 W/mK (placa sola: 0.75)
+  poly w=0.3 um kox=1.4 t_campo=0.2500: T_línea=0.1955 K por W/m ; T_Si debajo=0.0152 (7.8 %) ; G' = 5.55 W/mK (placa sola: 1.68)
+  poly w=0.3 um kox=1.4 t_campo=0.3262: T_línea=0.2186 K por W/m ; T_Si debajo=0.0148 (6.8 %) ; G' = 4.91 W/mK (placa sola: 1.29)
+  poly w=0.3 um kox=1.4 t_campo=0.4000: T_línea=0.2372 K por W/m ; T_Si debajo=0.0145 (6.1 %) ; G' = 4.49 W/mK (placa sola: 1.05)
+  poly w=0.5 um kox=1.0 t_campo=0.2500: T_línea=0.2196 K por W/m ; T_Si debajo=0.0151 (6.9 %) ; G' = 4.89 W/mK (placa sola: 2.00)
+  poly w=0.5 um kox=1.0 t_campo=0.3262: T_línea=0.2505 K por W/m ; T_Si debajo=0.0148 (5.9 %) ; G' = 4.24 W/mK (placa sola: 1.53)
+  poly w=0.5 um kox=1.0 t_campo=0.4000: T_línea=0.2757 K por W/m ; T_Si debajo=0.0145 (5.2 %) ; G' = 3.83 W/mK (placa sola: 1.25)
+  poly w=0.5 um kox=1.4 t_campo=0.2500: T_línea=0.1617 K por W/m ; T_Si debajo=0.0151 (9.3 %) ; G' = 6.82 W/mK (placa sola: 2.80)
+  poly w=0.5 um kox=1.4 t_campo=0.3262: T_línea=0.1836 K por W/m ; T_Si debajo=0.0147 (8.0 %) ; G' = 5.92 W/mK (placa sola: 2.15)
+  poly w=0.5 um kox=1.4 t_campo=0.4000: T_línea=0.2016 K por W/m ; T_Si debajo=0.0144 (7.2 %) ; G' = 5.34 W/mK (placa sola: 1.75)
+  poly w=1.0 um kox=1.0 t_campo=0.2500: T_línea=0.1562 K por W/m ; T_Si debajo=0.0147 (9.4 %) ; G' = 7.07 W/mK (placa sola: 4.00)
+  poly w=1.0 um kox=1.0 t_campo=0.3262: T_línea=0.1825 K por W/m ; T_Si debajo=0.0145 (7.9 %) ; G' = 5.95 W/mK (placa sola: 3.07)
+  poly w=1.0 um kox=1.0 t_campo=0.4000: T_línea=0.2046 K por W/m ; T_Si debajo=0.0142 (6.9 %) ; G' = 5.25 W/mK (placa sola: 2.50)
+  poly w=1.0 um kox=1.4 t_campo=0.2500: T_línea=0.1163 K por W/m ; T_Si debajo=0.0147 (12.7 %) ; G' = 9.85 W/mK (placa sola: 5.60)
+  poly w=1.0 um kox=1.4 t_campo=0.3262: T_línea=0.1349 K por W/m ; T_Si debajo=0.0145 (10.7 %) ; G' = 8.30 W/mK (placa sola: 4.29)
+  poly w=1.0 um kox=1.4 t_campo=0.4000: T_línea=0.1507 K por W/m ; T_Si debajo=0.0142 (9.4 %) ; G' = 7.33 W/mK (placa sola: 3.50)
+  li w=0.17 um kox=1.0 t_campo=0.3262: T_línea=0.5311 K por W/m ; T_Si debajo=0.0132 (2.5 %) ; G' = 1.93 W/mK (placa sola: 0.18)
+  li w=0.17 um kox=1.4 t_campo=0.3262: T_línea=0.3836 K por W/m ; T_Si debajo=0.0132 (3.4 %) ; G' = 2.70 W/mK (placa sola: 0.25)
+  li w=0.5 um kox=1.0 t_campo=0.3262: T_línea=0.4124 K por W/m ; T_Si debajo=0.0132 (3.2 %) ; G' = 2.50 W/mK (placa sola: 0.53)
+  li w=0.5 um kox=1.4 t_campo=0.3262: T_línea=0.2989 K por W/m ; T_Si debajo=0.0132 (4.4 %) ; G' = 3.50 W/mK (placa sola: 0.75)
+  li w=1.0 um kox=1.0 t_campo=0.3262: T_línea=0.3254 K por W/m ; T_Si debajo=0.0131 (4.0 %) ; G' = 3.20 W/mK (placa sola: 1.07)
+  li w=1.0 um kox=1.4 t_campo=0.3262: T_línea=0.2368 K por W/m ; T_Si debajo=0.0131 (5.5 %) ; G' = 4.47 W/mK (placa sola: 1.50)
+
+== B1/B2: aleta 1D. Rth unión = 1/(2 sqrt(k_p w t G')); Joule de línea dT = I^2 Rs/(w G'); contacto opcional Rc = 152 ohm en la unión
+  w=0.15 kp=15 kox=1.0: Rth=4.596e+05 K/W, L_h=0.37 um | B1 (100 uA; S=100/300/500): 1.38/4.14/6.89 K | B2 sin Rc: I*=188 uA, enfriamiento neto 3.89 K, cruce 376 uA | B2 con Rc: I*=115 uA, enfriamiento neto 2.38 K, cruce 230 uA
+  w=0.15 kp=15 kox=1.4: Rth=3.888e+05 K/W, L_h=0.31 um | B1 (100 uA; S=100/300/500): 1.17/3.50/5.83 K | B2 sin Rc: I*=222 uA, enfriamiento neto 3.89 K, cruce 445 uA | B2 con Rc: I*=127 uA, enfriamiento neto 2.22 K, cruce 254 uA
+  w=0.15 kp=30 kox=1.0: Rth=3.250e+05 K/W, L_h=0.53 um | B1 (100 uA; S=100/300/500): 0.97/2.92/4.87 K | B2 sin Rc: I*=133 uA, enfriamiento neto 1.95 K, cruce 266 uA | B2 con Rc: I*=92 uA, enfriamiento neto 1.34 K, cruce 184 uA
+  w=0.15 kp=30 kox=1.4: Rth=2.749e+05 K/W, L_h=0.45 um | B1 (100 uA; S=100/300/500): 0.82/2.47/4.12 K | B2 sin Rc: I*=157 uA, enfriamiento neto 1.95 K, cruce 314 uA | B2 con Rc: I*=103 uA, enfriamiento neto 1.27 K, cruce 205 uA
+  w=0.3 kp=15 kox=1.0: Rth=2.963e+05 K/W, L_h=0.48 um | B1 (100 uA; S=100/300/500): 0.89/2.67/4.45 K | B2 sin Rc: I*=292 uA, enfriamiento neto 3.89 K, cruce 583 uA | B2 con Rc: I*=147 uA, enfriamiento neto 1.96 K, cruce 294 uA
+  w=0.3 kp=15 kox=1.4: Rth=2.508e+05 K/W, L_h=0.41 um | B1 (100 uA; S=100/300/500): 0.75/2.26/3.76 K | B2 sin Rc: I*=345 uA, enfriamiento neto 3.89 K, cruce 689 uA | B2 con Rc: I*=159 uA, enfriamiento neto 1.80 K, cruce 319 uA
+  w=0.3 kp=30 kox=1.0: Rth=2.095e+05 K/W, L_h=0.68 um | B1 (100 uA; S=100/300/500): 0.63/1.89/3.14 K | B2 sin Rc: I*=206 uA, enfriamiento neto 1.95 K, cruce 413 uA | B2 con Rc: I*=122 uA, enfriamiento neto 1.15 K, cruce 243 uA
+  w=0.3 kp=30 kox=1.4: Rth=1.773e+05 K/W, L_h=0.57 um | B1 (100 uA; S=100/300/500): 0.53/1.60/2.66 K | B2 sin Rc: I*=244 uA, enfriamiento neto 1.95 K, cruce 488 uA | B2 con Rc: I*=134 uA, enfriamiento neto 1.07 K, cruce 267 uA
+  w=0.5 kp=15 kox=1.0: Rth=2.089e+05 K/W, L_h=0.56 um | B1 (100 uA; S=100/300/500): 0.63/1.88/3.13 K | B2 sin Rc: I*=414 uA, enfriamiento neto 3.89 K, cruce 828 uA | B2 con Rc: I*=173 uA, enfriamiento neto 1.62 K, cruce 345 uA
+  w=0.5 kp=15 kox=1.4: Rth=1.768e+05 K/W, L_h=0.48 um | B1 (100 uA; S=100/300/500): 0.53/1.59/2.65 K | B2 sin Rc: I*=489 uA, enfriamiento neto 3.89 K, cruce 978 uA | B2 con Rc: I*=184 uA, enfriamiento neto 1.47 K, cruce 369 uA
+  w=0.5 kp=30 kox=1.0: Rth=1.477e+05 K/W, L_h=0.80 um | B1 (100 uA; S=100/300/500): 0.44/1.33/2.22 K | B2 sin Rc: I*=293 uA, enfriamiento neto 1.95 K, cruce 585 uA | B2 con Rc: I*=147 uA, enfriamiento neto 0.98 K, cruce 294 uA
+  w=0.5 kp=30 kox=1.4: Rth=1.250e+05 K/W, L_h=0.68 um | B1 (100 uA; S=100/300/500): 0.38/1.13/1.88 K | B2 sin Rc: I*=346 uA, enfriamiento neto 1.95 K, cruce 691 uA | B2 con Rc: I*=159 uA, enfriamiento neto 0.90 K, cruce 319 uA
+  w=1.0 kp=15 kox=1.0: Rth=1.247e+05 K/W, L_h=0.67 um | B1 (100 uA; S=100/300/500): 0.37/1.12/1.87 K | B2 sin Rc: I*=693 uA, enfriamiento neto 3.89 K, cruce 1386 uA | B2 con Rc: I*=207 uA, enfriamiento neto 1.16 K, cruce 415 uA
+  w=1.0 kp=15 kox=1.4: Rth=1.056e+05 K/W, L_h=0.57 um | B1 (100 uA; S=100/300/500): 0.32/0.95/1.58 K | B2 sin Rc: I*=818 uA, enfriamiento neto 3.89 K, cruce 1637 uA | B2 con Rc: I*=217 uA, enfriamiento neto 1.03 K, cruce 435 uA
+  w=1.0 kp=30 kox=1.0: Rth=8.820e+04 K/W, L_h=0.95 um | B1 (100 uA; S=100/300/500): 0.26/0.79/1.32 K | B2 sin Rc: I*=490 uA, enfriamiento neto 1.95 K, cruce 980 uA | B2 con Rc: I*=185 uA, enfriamiento neto 0.73 K, cruce 369 uA
+  w=1.0 kp=30 kox=1.4: Rth=7.469e+04 K/W, L_h=0.81 um | B1 (100 uA; S=100/300/500): 0.22/0.67/1.12 K | B2 sin Rc: I*=579 uA, enfriamiento neto 1.95 K, cruce 1157 uA | B2 con Rc: I*=196 uA, enfriamiento neto 0.66 K, cruce 392 uA
+B1 intervalo (S 100-500 uV/K, 100 uA, w 0,15-1,0): 0.22 - 6.89 K
+B2 sin Rc (S=300): I* 133-818 uA ; enfriamiento 1.95-3.89 K ; cruce 266-1637 uA
+   solo w=0,15: I* 133-222 uA ; enfriamiento 1.95-3.89 K
+B2 con Rc (S=300): I* 92-217 uA ; enfriamiento 0.66-2.38 K ; cruce 184-435 uA
+   solo w=0,15: I* 92-127 uA ; enfriamiento 1.27-2.38 K
+
+== C1 / B3 (2D): fracción T_canal / T_calefactor. Canal: silicio activo (hasta z=0) a distancia d del borde del calefactor; fondo T=0 a D
+  poly w=0.15 kox=1.0: D=30um d=0.2: 6.40% D=30um d=0.5: 3.58% D=30um d=1.0: 2.40% D=30um d=3.0: 1.57% D=300um d=0.2: 8.83% D=300um d=0.5: 5.34% D=300um d=1.0: 3.89% D=300um d=3.0: 3.03%
+  poly w=0.15 kox=1.4: D=30um d=0.2: 8.64% D=30um d=0.5: 4.91% D=30um d=1.0: 3.31% D=30um d=3.0: 2.17% D=300um d=0.2: 11.84% D=300um d=0.5: 7.28% D=300um d=1.0: 5.33% D=300um d=3.0: 4.16%
+  poly w=0.5 kox=1.0: D=30um d=0.2: 7.42% D=30um d=0.5: 4.57% D=30um d=1.0: 3.26% D=30um d=3.0: 2.20% D=300um d=0.2: 10.44% D=300um d=0.5: 6.94% D=300um d=1.0: 5.35% D=300um d=3.0: 4.27%
+  poly w=0.5 kox=1.4: D=30um d=0.2: 9.95% D=30um d=0.5: 6.23% D=30um d=1.0: 4.47% D=30um d=3.0: 3.02% D=300um d=0.2: 13.87% D=300um d=0.5: 9.38% D=300um d=1.0: 7.29% D=300um d=3.0: 5.82%
+  poly w=1.0 kox=1.0: D=30um d=0.2: 8.24% D=30um d=0.5: 5.57% D=30um d=1.0: 4.24% D=30um d=3.0: 2.95% D=300um d=0.2: 11.89% D=300um d=0.5: 8.66% D=300um d=1.0: 7.07% D=300um d=3.0: 5.77%
+  poly w=1.0 kox=1.4: D=30um d=0.2: 10.96% D=30um d=0.5: 7.55% D=30um d=1.0: 5.78% D=30um d=3.0: 4.03% D=300um d=0.2: 15.64% D=300um d=0.5: 11.60% D=300um d=1.0: 9.54% D=300um d=3.0: 7.79%
+  li w=0.17 kox=1.0: D=30um d=0.2: 2.12% D=30um d=0.5: 1.93% D=30um d=1.0: 1.62% D=30um d=3.0: 1.08% D=300um d=0.2: 3.19% D=300um d=0.5: 3.00% D=300um d=1.0: 2.64% D=300um d=3.0: 2.07%
+  li w=0.17 kox=1.4: D=30um d=0.2: 2.93% D=30um d=0.5: 2.68% D=30um d=1.0: 2.25% D=30um d=3.0: 1.50% D=300um d=0.2: 4.40% D=300um d=0.5: 4.14% D=300um d=1.0: 3.64% D=300um d=3.0: 2.87%
+  li w=1.0 kox=1.0: D=30um d=0.2: 3.21% D=30um d=0.5: 2.86% D=30um d=1.0: 2.42% D=30um d=3.0: 1.69% D=300um d=0.2: 4.95% D=300um d=0.5: 4.57% D=300um d=1.0: 4.06% D=300um d=3.0: 3.29%
+  li w=1.0 kox=1.4: D=30um d=0.2: 4.42% D=30um d=0.5: 3.94% D=30um d=1.0: 3.34% D=30um d=3.0: 2.33% D=300um d=0.2: 6.76% D=300um d=0.5: 6.25% D=300um d=1.0: 5.56% D=300um d=3.0: 4.52%
+C1 2D intervalo completo: 1.08 - 15.64 %  -> calefactor para +200 K en el canal: +1278 .. +18456 K
+B3 2D (d = 0,5-1 um, línea infinita = cota superior para una unión puntual): 1.62 - 11.60 %
+
+== C1 / B3 (corrección 3D): silicio como semiespacio, T_Si(r) = integral q'(x) dx /(2 pi k_si r); calefactor finito L; unión: q'(x) ~ exp(-|x|/L_h)
+  calefactor poly w=0.15 L=2.0 um: d=0.2: 1.47% d=1.0: 0.61% d=3.0: 0.23%
+  calefactor poly w=0.15 L=10.0 um: d=0.2: 2.60% d=1.0: 1.62% d=3.0: 0.91%
+  calefactor poly w=0.15 L=50.0 um: d=0.2: 3.73% d=1.0: 2.75% d=3.0: 2.00%
+  calefactor poly w=1.0 L=2.0 um: d=0.2: 1.70% d=1.0: 0.92% d=3.0: 0.41%
+  calefactor poly w=1.0 L=10.0 um: d=0.2: 3.83% d=1.0: 2.76% d=3.0: 1.66%
+  calefactor poly w=1.0 L=50.0 um: d=0.2: 5.99% d=1.0: 4.92% d=3.0: 3.74%
+  calefactor li w=0.17 L=2.0 um: d=0.2: 0.96% d=1.0: 0.40% d=3.0: 0.16%
+  calefactor li w=0.17 L=10.0 um: d=0.2: 1.72% d=1.0: 1.08% d=3.0: 0.61%
+  calefactor li w=0.17 L=50.0 um: d=0.2: 2.48% d=1.0: 1.84% d=3.0: 1.34%
+  unión en poly w=0.15 kp=15 (L_h=0.34 um, Rth=4.20e+05): d=0.5 um: 0.34% d=1.0 um: 0.21%
+  unión en poly w=0.15 kp=30 (L_h=0.48 um, Rth=2.97e+05): d=0.5 um: 0.44% d=1.0 um: 0.29%
+  unión en poly w=0.5 kp=15 (L_h=0.52 um, Rth=1.91e+05): d=0.5 um: 0.57% d=1.0 um: 0.39%
+  unión en poly w=0.5 kp=30 (L_h=0.73 um, Rth=1.35e+05): d=0.5 um: 0.75% d=1.0 um: 0.52%
+  unión en poly w=1.0 kp=15 (L_h=0.62 um, Rth=1.14e+05): d=0.5 um: 0.76% d=1.0 um: 0.55%
+  unión en poly w=1.0 kp=30 (L_h=0.87 um, Rth=8.06e+04): d=0.5 um: 0.99% d=1.0 um: 0.74%
+
+== C2: elemento de poly (w_c) sobre campo entre dos calefactores de poly a 0,21 um; fracción T_centro/T_calefactor (2D)
+  w_c=0.15 w_h=0.15 kox=1.0: D=30um: 70.1% D=300um: 70.8%
+  w_c=0.15 w_h=0.15 kox=1.4: D=30um: 70.4% D=300um: 71.4%
+  w_c=0.15 w_h=0.5 kox=1.0: D=30um: 73.6% D=300um: 74.5%
+  w_c=0.15 w_h=0.5 kox=1.4: D=30um: 74.0% D=300um: 75.3%
+  w_c=0.15 w_h=1.0 kox=1.0: D=30um: 75.4% D=300um: 76.6%
+  w_c=0.15 w_h=1.0 kox=1.4: D=30um: 75.9% D=300um: 77.4%
+  w_c=0.5 w_h=0.15 kox=1.0: D=30um: 56.9% D=300um: 58.0%
+  w_c=0.5 w_h=0.15 kox=1.4: D=30um: 57.4% D=300um: 58.9%
+  w_c=0.5 w_h=0.5 kox=1.0: D=30um: 60.6% D=300um: 62.1%
+  w_c=0.5 w_h=0.5 kox=1.4: D=30um: 61.2% D=300um: 63.2%
+  w_c=0.5 w_h=1.0 kox=1.0: D=30um: 62.7% D=300um: 64.6%
+  w_c=0.5 w_h=1.0 kox=1.4: D=30um: 63.4% D=300um: 65.9%
+
+== D1: n/N_D con n^2/(N_D - n) = (N_C/g) exp(-E_D/kT), g=2, N_C = 2,8e19 (T/300)^1,5 cm^-3 (no degenerado, sin compensación)
+ E_D = 45.0 meV
+  N_D=4e+17: n/N_D=1e-3 a T = 36.7 K ; a 77 K ionizado 6.9 % ; a 300 K 88 % ; a 30 K 1.7e-04 ; a 4,2 K 2.4e-28
+  N_D=5e+17: n/N_D=1e-3 a T = 37.3 K ; a 77 K ionizado 6.2 % ; a 300 K 85 % ; a 30 K 1.6e-04 ; a 4,2 K 2.2e-28
+  N_D=6e+17: n/N_D=1e-3 a T = 37.7 K ; a 77 K ionizado 5.7 % ; a 300 K 83 % ; a 30 K 1.4e-04 ; a 4,2 K 2.0e-28
+ E_D = 20.4 meV (rebajada por dopado, Pearson-Bardeen: E_D0 - 3,1e-8 N^(1/3) eV; supuesto)
+  N_D=4e+17: n/N_D=1e-3 a T = 18.0 K ; a 77 K ionizado 36.5 % ; a 300 K 94 % ; a 30 K 2.0e-02 ; a 4,2 K 1.4e-13
+  N_D=5e+17: n/N_D=1e-3 a T = 18.3 K ; a 77 K ionizado 33.5 % ; a 300 K 93 % ; a 30 K 1.8e-02 ; a 4,2 K 1.2e-13
+  N_D=6e+17: n/N_D=1e-3 a T = 18.5 K ; a 77 K ionizado 31.1 % ; a 300 K 92 % ; a 30 K 1.6e-02 ; a 4,2 K 1.1e-13
+ Mott: N_c ~ (0,26/a_B*)^3 con a_B* = 2.38 nm (m*=0,26) -> 1.3e+18 cm^-3 (experimental Si:P 3,7e18). N_D^(1/3) a_B* a 5e17 = 0.189; distancia media 12.6 nm
+
+== E1: Biot-Savart, cinta de met1 w=5 um, espesor 0,36 um, base a 1,3761 um sobre z=0 (referencia del tech: base del pozo/sustrato; superficie activa en z=0,3262), I=14 mA
+ lámina infinita mu0 I/(2w) = 1.759 mT
+  superficie del silicio activo (z=+0,3262): B_plano(centro) = 1.248 mT ; en x=2 um: 0.948 mT ; en el borde x=2,5: plano 0.745, vertical 0.804 mT
+  techo del pozo según tech (z=+0,2062): B_plano(centro) = 1.205 mT ; en x=2 um: 0.916 mT ; en el borde x=2,5: plano 0.732, vertical 0.755 mT
+  z=0: B_plano(centro) = 1.136 mT ; en x=2 um: 0.868 mT ; en el borde x=2,5: plano 0.711, vertical 0.681 mT
+  0,5 um bajo z=0: B_plano(centro) = 0.989 mT ; en x=2 um: 0.774 mT ; en el borde x=2,5: plano 0.661, vertical 0.542 mT
+  1 um bajo z=0: B_plano(centro) = 0.868 mT ; en x=2 um: 0.699 mT ; en el borde x=2,5: plano 0.615, vertical 0.441 mT
+  2 um bajo z=0: B_plano(centro) = 0.687 mT ; en x=2 um: 0.584 mT ; en el borde x=2,5: plano 0.534, vertical 0.306 mT
+
+== G2: emisión termoiónica inversa, contacto 0,17 x 0,17 um, T=300 K
+ A* = 112.0 A/cm2K2 (112: valor efectivo usual n-Si; 252: teórico <100>)
+  phi_B=0.57: sin rebaje I = 0.774 pA | N=4e+17 VR=0.0: E=2.3e5 V/cm, dphi=53 meV, I=6.1 pA | N=4e+17 VR=0.5: E=3.4e5 V/cm, dphi=65 meV, I=9.5 pA | N=4e+17 VR=1.8: E=5.3e5 V/cm, dphi=80 meV, I=17.4 pA | N=6e+17 VR=0.0: E=2.9e5 V/cm, dphi=59 meV, I=7.7 pA | N=6e+17 VR=0.5: E=4.2e5 V/cm, dphi=72 meV, I=12.4 pA | N=6e+17 VR=1.8: E=6.5e5 V/cm, dphi=89 meV, I=24.3 pA
+  phi_B=0.6: sin rebaje I = 0.243 pA | N=4e+17 VR=0.0: E=2.4e5 V/cm, dphi=54 meV, I=2.0 pA | N=4e+17 VR=0.5: E=3.5e5 V/cm, dphi=65 meV, I=3.0 pA | N=4e+17 VR=1.8: E=5.3e5 V/cm, dphi=81 meV, I=5.5 pA | N=6e+17 VR=0.0: E=3.0e5 V/cm, dphi=60 meV, I=2.5 pA | N=6e+17 VR=0.5: E=4.3e5 V/cm, dphi=72 meV, I=4.0 pA | N=6e+17 VR=1.8: E=6.5e5 V/cm, dphi=89 meV, I=7.7 pA
+ A* = 252.0 A/cm2K2 (112: valor efectivo usual n-Si; 252: teórico <100>)
+  phi_B=0.57: sin rebaje I = 1.742 pA | N=4e+17 VR=0.0: E=2.3e5 V/cm, dphi=53 meV, I=13.7 pA | N=4e+17 VR=0.5: E=3.4e5 V/cm, dphi=65 meV, I=21.3 pA | N=4e+17 VR=1.8: E=5.3e5 V/cm, dphi=80 meV, I=39.1 pA | N=6e+17 VR=0.0: E=2.9e5 V/cm, dphi=59 meV, I=17.4 pA | N=6e+17 VR=0.5: E=4.2e5 V/cm, dphi=72 meV, I=28.0 pA | N=6e+17 VR=1.8: E=6.5e5 V/cm, dphi=89 meV, I=54.7 pA
+  phi_B=0.6: sin rebaje I = 0.546 pA | N=4e+17 VR=0.0: E=2.4e5 V/cm, dphi=54 meV, I=4.5 pA | N=4e+17 VR=0.5: E=3.5e5 V/cm, dphi=65 meV, I=6.8 pA | N=4e+17 VR=1.8: E=5.3e5 V/cm, dphi=81 meV, I=12.4 pA | N=6e+17 VR=0.0: E=3.0e5 V/cm, dphi=60 meV, I=5.7 pA | N=6e+17 VR=0.5: E=4.3e5 V/cm, dphi=72 meV, I=9.0 pA | N=6e+17 VR=1.8: E=6.5e5 V/cm, dphi=89 meV, I=17.3 pA
+ E00 (5e17, m*=0,3) = 7.0 meV ; kT/E00 = 3.7 -> emisión termoiónica asistida por campo no despreciable en inversa (sube la corriente)
+
+fin: Thu Nov 12 19:50:30 EST 2026

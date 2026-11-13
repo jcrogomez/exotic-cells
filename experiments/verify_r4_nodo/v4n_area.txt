@@ -1,0 +1,4 @@
+N=6 C_out en MIM=False: 4016 um^2 = 11.2 % de 1x2
+N=6 C_out en MIM=True: 5116 um^2 = 14.2 % de 1x2
+N=8 C_out en MIM=False: 5328 um^2 = 14.8 % de 1x2
+N=8 C_out en MIM=True: 6428 um^2 = 17.9 % de 1x2

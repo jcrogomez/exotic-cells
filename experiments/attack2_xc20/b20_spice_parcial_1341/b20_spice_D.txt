@@ -1,0 +1,58 @@
+D. Seguidor pfet 2/0,5 (cuerpo a fuente, 100 nA) + inversor 1,8 V (nfet 0,65/0,15, pfet 1/0,15).
+   Fuente: b20_spice_raw/D_<esq>_<T>.dat y D_<esq>_<T>_inv.dat
+   Vsf(x) = salida del seguidor con Vin = x. Vm_inv = umbral del inversor suelto. Vtrip = Vin a la que la salida del inversor cruza 0,9 V ('----' = no cruza en 0–0,6 V).
+
+Seguidor pfet_01v8
+  esq  T    Vsf(0,10) Vsf(0,25) Vsf(0,30)  gan_seg  Vm_inv   Vtrip    Vsf(0,10)-Vm  Vsf(0,25)-Vm  ¿separa 0,10|0,25?
+  tt  m40  FALTA
+  tt   27     0.956     1.105     1.154    0.992    0.853   ----       +0.103        +0.252      NO
+  tt   85  FALTA
+  ss  m40  FALTA
+  ss   27  FALTA
+  ss   85  FALTA
+  ff  m40  FALTA
+  ff   27  FALTA
+  ff   85  FALTA
+  sf  m40  FALTA
+  sf   27  FALTA
+  sf   85  FALTA
+  fs  m40  FALTA
+  fs   27  FALTA
+  fs   85  FALTA
+
+Seguidor pfet_01v8_lvt
+  esq  T    Vsf(0,10) Vsf(0,25) Vsf(0,30)  gan_seg  Vm_inv   Vtrip    Vsf(0,10)-Vm  Vsf(0,25)-Vm  ¿separa 0,10|0,25?
+  tt  m40  FALTA
+  tt   27     0.390     0.533     0.580    0.950    0.853  0.5806      -0.463        -0.320      NO
+  tt   85  FALTA
+  ss  m40  FALTA
+  ss   27  FALTA
+  ss   85  FALTA
+  ff  m40  FALTA
+  ff   27  FALTA
+  ff   85  FALTA
+  sf  m40  FALTA
+  sf   27  FALTA
+  sf   85  FALTA
+  fs  m40  FALTA
+  fs   27  FALTA
+  fs   85  FALTA
+
+Seguidor pfet_01v8_hvt
+  esq  T    Vsf(0,10) Vsf(0,25) Vsf(0,30)  gan_seg  Vm_inv   Vtrip    Vsf(0,10)-Vm  Vsf(0,25)-Vm  ¿separa 0,10|0,25?
+  tt  m40  FALTA
+  tt   27     1.025     1.174     1.224    0.995    0.853   ----       +0.172        +0.321      NO
+  tt   85  FALTA
+  ss  m40  FALTA
+  ss   27  FALTA
+  ss   85  FALTA
+  ff  m40  FALTA
+  ff   27  FALTA
+  ff   85  FALTA
+  sf  m40  FALTA
+  sf   27  FALTA
+  sf   85  FALTA
+  fs  m40  FALTA
+  fs   27  FALTA
+  fs   85  FALTA
+

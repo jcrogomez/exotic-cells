@@ -1,0 +1,5 @@
+alfa(1100 nm) = 3.5 cm^-1
+dE=0.00 eV: pico 1130 nm, <alfa>=16.20 cm^-1, mediana 3.11, frac alfa<1: 0.26
+dE=0.03 eV: pico 1162 nm, <alfa>=9.10 cm^-1, mediana 1.24, frac alfa<1: 0.47
+dE=0.06 eV: pico 1195 nm, <alfa>=4.86 cm^-1, mediana 0.28, frac alfa<1: 0.63
+dE=0.10 eV: pico 1243 nm, <alfa>=1.97 cm^-1, mediana 0.01, frac alfa<1: 0.79

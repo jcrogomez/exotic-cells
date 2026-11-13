@@ -1,0 +1,248 @@
+## t0_dc
+T0 bajo 30 0.000793504 0.00413141
+T0 bajo 100 0.00254839 0.00576797
+T0 bajo 300 0.00692133 0.00984429
+T0 bajo 1000 0.0173104 0.0195183
+T0 bajo 3000 0.0302455 0.0315424
+T0 bajo 10000 0.0408871 0.0414166
+T0 bajo 12906 0.0423191 0.0427442
+T0 bajo 30000 0.0454354 0.045632
+T0 bajo 100000 0.0472724 0.0473336
+T0 bajo 300000 0.0478244 0.0478449
+T0 bajo 1e+06 0.0480206 0.0480266
+T0 bajo 3e+06 0.048077 0.0480788
+T0 bajo 1e+12 0.0481052 0.0481049
+T0 medio 30 0.000115473 0.0418226
+T0 medio 100 0.000382762 0.0418577
+T0 medio 300 0.00113027 0.0419558
+T0 medio 1000 0.00357152 0.042276
+T0 medio 3000 0.00932824 0.0430307
+T0 medio 10000 0.0214067 0.0446127
+T0 medio 12906 0.0244644 0.0450128
+T0 medio 30000 0.0339839 0.0462577
+T0 medio 100000 0.0427854 0.0474074
+T0 medio 300000 0.0462051 0.0478539
+T0 medio 1e+06 0.047535 0.0480274
+T0 medio 3e+06 0.0479291 0.0480789
+T0 medio 1e+12 0.0481287 0.0481049
+T0 alto 30 5.14072E-06 0.0478392
+T0 alto 100 1.71313E-05 0.0478393
+T0 alto 300 5.1356E-05 0.0478395
+T0 alto 1000 0.000170746 0.0478401
+T0 alto 3000 0.000508503 0.0478419
+T0 alto 10000 0.00165292 0.0478482
+T0 alto 12906 0.00211154 0.0478507
+T0 alto 30000 0.00463205 0.0478644
+T0 alto 100000 0.0125761 0.0479077
+T0 alto 300000 0.0247872 0.0479743
+T0 alto 1e+06 0.0377313 0.0480448
+T0 alto 3e+06 0.0444108 0.0480812
+T0 alto 1e+12 0.0487429 0.0481048
+i(vdd) = -1.10178e-03
+## t0b_cal
+T0B 0 1.34405E-06
+T0B 0.0003 1.34752E-06
+T0B 0.005 1.40686E-06
+T0B 0.01 1.48132E-06
+T0B 0.02 1.67472E-06
+T0B 0.03 1.94779E-06
+T0B 0.04 2.33397E-06
+T0B 0.05 2.88099E-06
+T0B 0.0503 2.90054E-06
+T0B 0.06 3.65726E-06
+## t1_arranque
+T1 rampa=10n R=100 sel=v cab=0 max=0.00270607 min=-2.95554E-05
+T1 rampa=10n R=100 sel=v cab=50f max=0.00270303 min=-3.21977E-05
+T1 rampa=10n R=100 sel=z cab=0 max=1.71313E-05 min=-2.98921E-10
+T1 rampa=10n R=100 sel=z cab=50f max=1.71313E-05 min=-2.98861E-10
+T1 rampa=10n R=12k9 sel=v cab=0 max=0.0445705 min=-0.00512928
+T1 rampa=10n R=12k9 sel=v cab=50f max=0.0442247 min=-0.00333788
+T1 rampa=10n R=12k9 sel=z cab=0 max=0.00211154 min=-3.7006E-08
+T1 rampa=10n R=12k9 sel=z cab=50f max=0.00211154 min=-3.7011E-08
+T1 rampa=10n R=1M sel=v cab=0 max=0.0503742 min=-0.0419878
+T1 rampa=10n R=1M sel=v cab=50f max=0.0501039 min=-0.00477064
+T1 rampa=10n R=1M sel=z cab=0 max=0.0377313 min=-7.018E-07
+T1 rampa=10n R=1M sel=z cab=50f max=0.0377313 min=-7.37872E-07
+T1 rampa=10n R=ab sel=v cab=0 max=0.0520622 min=-0.0464322
+T1 rampa=10n R=ab sel=v cab=50f max=0.0501911 min=-0.00454156
+T1 rampa=10n R=ab sel=z cab=0 max=0.0487429 min=-9.20222E-07
+T1 rampa=10n R=ab sel=z cab=50f max=0.0487429 min=-9.8428E-07
+T1 rampa=100n R=100 sel=v cab=0 max=0.00256417 min=-2.55487E-06
+T1 rampa=100n R=100 sel=v cab=50f max=0.00256404 min=-2.55113E-06
+T1 rampa=100n R=100 sel=z cab=0 max=1.71313E-05 min=-5.64611E-11
+T1 rampa=100n R=100 sel=z cab=50f max=1.71313E-05 min=-5.64513E-11
+T1 rampa=100n R=12k9 sel=v cab=0 max=0.0425436 min=-0.000314824
+T1 rampa=100n R=12k9 sel=v cab=50f max=0.0425109 min=-0.000302743
+T1 rampa=100n R=12k9 sel=z cab=0 max=0.00211154 min=-7.04744E-09
+T1 rampa=100n R=12k9 sel=z cab=50f max=0.00211154 min=-7.04984E-09
+T1 rampa=100n R=1M sel=v cab=0 max=0.0482677 min=-0.00482661
+T1 rampa=100n R=1M sel=v cab=50f max=0.0482263 min=-0.000756966
+T1 rampa=100n R=1M sel=z cab=0 max=0.0377313 min=-1.56166E-07
+T1 rampa=100n R=1M sel=z cab=50f max=0.0377313 min=-1.82154E-07
+T1 rampa=100n R=ab sel=v cab=0 max=0.0483526 min=-0.00587655
+T1 rampa=100n R=ab sel=v cab=50f max=0.048311 min=-1.98533E-07
+T1 rampa=100n R=ab sel=z cab=0 max=0.0487429 min=-2.15821E-07
+T1 rampa=100n R=ab sel=z cab=50f max=0.0487429 min=-2.76729E-07
+T1 rampa=1u R=100 sel=v cab=0 max=0.00255082 min=-2.22202E-07
+T1 rampa=1u R=100 sel=v cab=50f max=0.0025508 min=-2.22141E-07
+T1 rampa=1u R=100 sel=z cab=0 max=1.71313E-05 min=-7.35559E-12
+T1 rampa=1u R=100 sel=z cab=50f max=1.71313E-05 min=-7.35555E-12
+T1 rampa=1u R=12k9 sel=v cab=0 max=0.0423418 min=-2.71176E-05
+T1 rampa=1u R=12k9 sel=v cab=50f max=0.0423386 min=-2.58369E-05
+T1 rampa=1u R=12k9 sel=z cab=0 max=0.00211154 min=-9.12241E-10
+T1 rampa=1u R=12k9 sel=z cab=50f max=0.00211154 min=-9.12251E-10
+T1 rampa=1u R=1M sel=v cab=0 max=0.048042 min=-0.000391088
+T1 rampa=1u R=1M sel=v cab=50f max=0.0480379 min=-1.75837E-08
+T1 rampa=1u R=1M sel=z cab=0 max=0.0377313 min=-1.76265E-08
+T1 rampa=1u R=1M sel=z cab=50f max=0.0377313 min=-1.77049E-08
+T1 rampa=1u R=ab sel=v cab=0 max=0.0481266 min=-0.000462458
+T1 rampa=1u R=ab sel=v cab=50f max=0.0481224 min=-2.31408E-08
+T1 rampa=1u R=ab sel=z cab=0 max=0.0487429 min=-2.31778E-08
+T1 rampa=1u R=ab sel=z cab=50f max=0.0487429 min=-2.33565E-08
+T1 rampa=10u R=100 sel=v cab=0 max=0.00255025 min=-2.39901E-08
+T1 rampa=10u R=100 sel=v cab=50f max=0.00255025 min=-2.39814E-08
+T1 rampa=10u R=100 sel=z cab=0 max=1.71313E-05 min=-6.5806E-19
+T1 rampa=10u R=100 sel=z cab=50f max=1.71313E-05 min=-8.17782E-19
+T1 rampa=10u R=12k9 sel=v cab=0 max=0.0423234 min=-2.92606E-06
+T1 rampa=10u R=12k9 sel=v cab=50f max=0.0423234 min=-2.79953E-06
+T1 rampa=10u R=12k9 sel=z cab=0 max=0.00211154 min=1.78071E-29
+T1 rampa=10u R=12k9 sel=z cab=50f max=0.00211154 min=1.78408E-29
+T1 rampa=10u R=1M sel=v cab=0 max=0.0480207 min=-4.16512E-05
+T1 rampa=10u R=1M sel=v cab=50f max=0.0480207 min=3.31366E-28
+T1 rampa=10u R=1M sel=z cab=0 max=0.0377313 min=8.53873E-31
+T1 rampa=10u R=1M sel=z cab=50f max=0.0377313 min=3.32774E-28
+T1 rampa=10u R=ab sel=v cab=0 max=0.0481052 min=-4.89637E-05
+T1 rampa=10u R=ab sel=v cab=50f max=0.0481052 min=7.06498E-32
+T1 rampa=10u R=ab sel=z cab=0 max=0.0487429 min=7.06569E-32
+T1 rampa=10u R=ab sel=z cab=50f max=0.0487429 min=-1.70972E-30
+## t2_saltos
+Error: measure  v0_bajo_100_abre_0  find(AT) : out of interval
+Error: &v0_bajo_100_abre_0: no such variable.
+Error: measure  v0_bajo_100_abre_50f  find(AT) : out of interval
+Error: &v0_bajo_100_abre_50f: no such variable.
+Error: measure  v0_bajo_100_cierra_0  find(AT) : out of interval
+Error: &v0_bajo_100_cierra_0: no such variable.
+Error: measure  v0_bajo_100_cierra_50f  find(AT) : out of interval
+Error: &v0_bajo_100_cierra_50f: no such variable.
+Error: measure  v0_bajo_12k9_abre_0  find(AT) : out of interval
+Error: &v0_bajo_12k9_abre_0: no such variable.
+Error: measure  v0_bajo_12k9_abre_50f  find(AT) : out of interval
+Error: &v0_bajo_12k9_abre_50f: no such variable.
+Error: measure  v0_bajo_12k9_cierra_0  find(AT) : out of interval
+Error: &v0_bajo_12k9_cierra_0: no such variable.
+Error: measure  v0_bajo_12k9_cierra_50f  find(AT) : out of interval
+Error: &v0_bajo_12k9_cierra_50f: no such variable.
+Error: measure  v0_medio_100_abre_0  find(AT) : out of interval
+Error: &v0_medio_100_abre_0: no such variable.
+Error: measure  v0_medio_100_abre_50f  find(AT) : out of interval
+Error: &v0_medio_100_abre_50f: no such variable.
+Error: measure  v0_medio_100_cierra_0  find(AT) : out of interval
+T2 rango=bajo R=100 abre cab=0 antes= despues=0.0481052 max=0.0481053 min=0.00254839 maxH=0.048105
+T2 rango=bajo R=100 abre cab=50f antes= despues=0.0481052 max=0.0481052 min=0.00254839 maxH=0.0481049
+T2 rango=bajo R=100 cierra cab=0 antes= despues=0.00254839 max=0.0481052 min=0.00254225 maxH=0.0481049
+T2 rango=bajo R=100 cierra cab=50f antes= despues=0.00254839 max=0.0481052 min=0.00254125 maxH=0.0481049
+T2 rango=bajo R=12k9 abre cab=0 antes= despues=0.0481052 max=0.0481052 min=0.0423191 maxH=0.0481049
+T2 rango=bajo R=12k9 abre cab=50f antes= despues=0.0481052 max=0.0481052 min=0.0423191 maxH=0.0481049
+T2 rango=bajo R=12k9 cierra cab=0 antes= despues=0.0423191 max=0.0481052 min=0.0423191 maxH=0.0481049
+T2 rango=bajo R=12k9 cierra cab=50f antes= despues=0.0423191 max=0.0481052 min=0.0423191 maxH=0.0481049
+T2 rango=medio R=100 abre cab=0 antes= despues=0.0481287 max=0.0481287 min=0.000382762 maxH=0.0481049
+T2 rango=medio R=100 abre cab=50f antes= despues=0.0481287 max=0.0481287 min=0.000382762 maxH=0.0481049
+hx_medio_100_cierra_0=  4.81049Error: &v0_medio_100_cierra_0: no such variable.
+Error: measure  v0_medio_100_cierra_50f  find(AT) : out of interval
+Error: &v0_medio_100_cierra_50f: no such variable.
+Error: measure  v0_medio_12k9_abre_0  find(AT) : out of interval
+Error: &v0_medio_12k9_abre_0: no such variable.
+Error: measure  v0_medio_12k9_abre_50f  find(AT) : out of interval
+Error: &v0_medio_12k9_abre_50f: no such variable.
+Error: measure  v0_medio_12k9_cierra_0  find(AT) : out of interval
+Error: &v0_medio_12k9_cierra_0: no such variable.
+Error: measure  v0_medio_12k9_cierra_50f  find(AT) : out of interval
+Error: &v0_medio_12k9_cierra_50f: no such variable.
+Error: measure  v0_alto_100_abre_0  find(AT) : out of interval
+Error: &v0_alto_100_abre_0: no such variable.
+Error: measure  v0_alto_100_abre_50f  find(AT) : out of interval
+Error: &v0_alto_100_abre_50f: no such variable.
+Error: measure  v0_alto_100_cierra_0  find(AT) : out of interval
+Error: &v0_alto_100_cierra_0: no such variable.
+Error: measure  v0_alto_100_cierra_50f  find(AT) : out of interval
+Error: &v0_alto_100_cierra_50f: no such variable.
+Error: measure  v0_alto_12k9_abre_0  find(AT) : out of interval
+Error: &v0_alto_12k9_abre_0: no such variable.
+T2 rango=medio R=100 cierra cab=0 antes= despues=0.000382762 max=0.0481287 min=0.000381365 maxH=0.0481049
+T2 rango=medio R=100 cierra cab=50f antes= despues=0.000382762 max=0.0481287 min=0.00038263 maxH=0.0481049
+T2 rango=medio R=12k9 abre cab=0 antes= despues=0.0481287 max=0.0481287 min=0.0244644 maxH=0.0481049
+T2 rango=medio R=12k9 abre cab=50f antes= despues=0.0481287 max=0.0481287 min=0.0244644 maxH=0.0481049
+T2 rango=medio R=12k9 cierra cab=0 antes= despues=0.0244644 max=0.0481287 min=0.0244644 maxH=0.0481049
+T2 rango=medio R=12k9 cierra cab=50f antes= despues=0.0244644 max=0.0481287 min=0.0244644 maxH=0.0481049
+T2 rango=alto R=100 abre cab=0 antes= despues=0.0487429 max=0.048743 min=1.71313E-05 maxH=0.0481048
+T2 rango=alto R=100 abre cab=50f antes= despues=0.0487429 max=0.048743 min=1.71313E-05 maxH=0.0481048
+T2 rango=alto R=100 cierra cab=0 antes= despues=1.71313E-05 max=0.0487429 min=3.83912E-06 maxH=0.0481048
+T2 rango=alto R=100 cierra cab=50f antes= despues=1.71313E-05 max=0.0487429 min=-2.34881E-05 maxH=0.0481048
+T2 rango=alto R=12k9 abre cab=0 antes= despues=0.0487429 max=0.048743 min=0.00211154 maxH=0.0481048
+Error: measure  v0_alto_12k9_abre_50f  find(AT) : out of interval
+Error: &v0_alto_12k9_abre_50f: no such variable.
+Error: measure  v0_alto_12k9_cierra_0  find(AT) : out of interval
+Error: &v0_alto_12k9_cierra_0: no such variable.
+Error: measure  v0_alto_12k9_cierra_50f  find(AT) : out of interval
+Error: &v0_alto_12k9_cierra_50f: no such variable.
+T2 rango=alto R=12k9 abre cab=50f antes= despues=0.0487429 max=0.048743 min=0.00211154 maxH=0.0481048
+T2 rango=alto R=12k9 cierra cab=0 antes= despues=0.00211154 max=0.0487429 min=0.00211152 maxH=0.0481048
+T2 rango=alto R=12k9 cierra cab=50f antes= despues=0.00211154 max=0.0487429 min=0.00211152 maxH=0.0481048
+## t4_rango
+T4 R=12k9 conmuta=lo flanco=crudo cab=0 max=0.0625381 min=-0.0264926
+T4 R=12k9 conmuta=lo flanco=crudo cab=50f max=0.0621415 min=-0.00156032
+T4 R=12k9 conmuta=lo flanco=frenado cab=0 max=0.0423191 min=0.00209335
+T4 R=12k9 conmuta=lo flanco=frenado cab=50f max=0.0423191 min=0.00209335
+T4 R=12k9 conmuta=mid flanco=crudo cab=0 max=0.0271321 min=-0.00245242
+T4 R=12k9 conmuta=mid flanco=crudo cab=50f max=0.0244644 min=0.00211153
+T4 R=12k9 conmuta=mid flanco=frenado cab=0 max=0.0244644 min=0.00210762
+T4 R=12k9 conmuta=mid flanco=frenado cab=50f max=0.0244644 min=0.00210762
+T4 R=1M conmuta=lo flanco=crudo cab=0 max=0.107011 min=-0.0559553
+T4 R=1M conmuta=lo flanco=crudo cab=50f max=0.0707819 min=0.00491137
+T4 R=1M conmuta=lo flanco=frenado cab=0 max=0.0480473 min=0.0372457
+T4 R=1M conmuta=lo flanco=frenado cab=50f max=0.0480473 min=0.0372672
+T4 R=1M conmuta=mid flanco=crudo cab=0 max=0.0561119 min=0.0224964
+T4 R=1M conmuta=mid flanco=crudo cab=50f max=0.0476738 min=0.0377313
+T4 R=1M conmuta=mid flanco=frenado cab=0 max=0.047535 min=0.0376323
+T4 R=1M conmuta=mid flanco=frenado cab=50f max=0.047535 min=0.037638
+T4 R=ab conmuta=lo flanco=crudo cab=0 max=0.11818 min=-0.0565989
+T4 R=ab conmuta=lo flanco=crudo cab=50f max=0.0715553 min=0.00504027
+T4 R=ab conmuta=lo flanco=frenado cab=0 max=0.0515293 min=0.0475907
+T4 R=ab conmuta=lo flanco=frenado cab=50f max=0.051438 min=0.0476099
+T4 R=ab conmuta=mid flanco=crudo cab=0 max=0.0639829 min=0.0239223
+T4 R=ab conmuta=mid flanco=crudo cab=50f max=0.0535536 min=0.0409311
+T4 R=ab conmuta=mid flanco=frenado cab=0 max=0.0492817 min=0.0481078
+T4 R=ab conmuta=mid flanco=frenado cab=50f max=0.0492576 min=0.048108
+## t5_lector
+T5 R=100 cab=0 reposo=1.71313E-05 max=1.77485E-05 min=1.53691E-05 tconv=1.34438E-06
+T6 R=100 cab=0 max=2.20128E-05 min=1.45467E-05
+T5 R=100 cab=50f reposo=1.71313E-05 max=1.74835E-05 min=1.541E-05 tconv=1.34438E-06
+T6 R=100 cab=50f max=2.20128E-05 min=1.45467E-05
+T5 R=12k9 cab=0 reposo=0.00211154 max=0.00211498 min=0.00195181 tconv=1.36891E-06
+T6 R=12k9 cab=0 max=0.00268293 min=0.00179867
+T5 R=12k9 cab=50f reposo=0.00211154 max=0.00211449 min=0.00197577 tconv=1.36891E-06
+T6 R=12k9 cab=50f max=0.00268293 min=0.00179867
+T5 R=1M cab=0 reposo=0.0377313 max=0.037749 min=0.0369742 tconv=2.22344E-06
+T6 R=1M cab=0 max=0.0434829 min=0.0331524
+T5 R=1M cab=50f reposo=0.0377313 max=0.0377423 min=0.0370123 tconv=2.22359E-06
+T6 R=1M cab=50f max=0.0434829 min=0.0331524
+T5 R=ab cab=0 reposo=0.0487429 max=0.04876 min=0.0480627 tconv=2.78664E-06
+T6 R=ab cab=0 max=0.0554799 min=0.0430103
+T5 R=ab cab=50f reposo=0.0487429 max=0.0487535 min=0.0480965 tconv=2.78683E-06
+T6 R=ab cab=50f max=0.0554799 min=0.0430103
+## t7_anillo
+T7 Rser=0 R=100 max=0.00846073 min=-0.0198489
+T7 Rser=0 R=12k9 max=0.797643 min=-0.858447
+T7 Rser=0 R=1M max=1.78412 min=-1.07957
+T7 Rser=30k R=100 max=0.00441501 min=-0.00288428
+T7 Rser=30k R=12k9 max=0.440007 min=-0.274228
+T7 Rser=30k R=1M max=1.73261 min=-1.05334
+T7 Rser=100k R=100 max=0.00164923 min=-0.00100841
+T7 Rser=100k R=12k9 max=0.190585 min=-0.1164
+T7 Rser=100k R=1M max=1.62324 min=-0.982485
+T7 Rser=1meg R=100 max=0.000178395 min=-0.000107367
+T7 Rser=1meg R=12k9 max=0.0227351 min=-0.0136348
+T7 Rser=1meg R=1M max=0.896027 min=-0.543142
+## t8_fuente
+T8 antes=5.08117E-06 t_50mV=1.00535E-06 t_100mV=1.0105E-06 max=1.8
+Thu Nov 12 15:17:49 EST 2026

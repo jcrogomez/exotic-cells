@@ -1,0 +1,28 @@
+experiments/verify_r4_optica/v4o_presupuesto_v2.py:21: RuntimeWarning: overflow encountered in expm1
+  inj = IS_A * np.expm1(V / Vt) if which == "A" else IS_B * np.expm1(V / (nB * Vt))  # v2: exp-1
+F base (L=100, Zb=250, anillo): {5: 0.0024450798737382425, 10: 0.0016971339837213053, 20: 0.0009704628553621865}; P_e (electron inyectado bajo el pozo, d=5) = 0.1299
+
+caso | R_sub (equipot..media) kOhm | I_umbral mA (V_K=0; A..B) | I_ph pA eta=1e-6 (min..max) | idem V_K=1.0
+rho=10 d=5 | 12.57..15.57 | 0.015..0.026 | 0.036..0.063 | 0.21..0.28
+rho=10 d=10 | 14.33..17.30 | 0.012..0.022 | 0.021..0.037 | 0.13..0.17
+rho=10 d=20 | 15.67..18.64 | 0.010..0.019 | 0.010..0.018 | 0.07..0.09
+rho=10 d=5 guarda | 3.05..8.04 | 0.031..0.121 | 0.076..0.295 | 0.41..1.17
+rho=10 d=5 taps lejanos a masa | 6.35..9.37 | 0.026..0.055 | 0.064..0.133 | 0.35..0.56
+rho=10 d=20 taps lejanos a masa | 6.96..9.95 | 0.021..0.045 | 0.021..0.044 | 0.13..0.20
+rho=1 d=5 pwell[0.2, 1.0] | 0.50..0.91 | 0.354..0.840 | 0.866..2.054 | 3.82..7.38
+rho=10 d=5 pwell[0.2, 1.0] | 0.80..5.74 | 0.046..0.510 | 0.112..1.246 | 0.58..4.59
+rho=20 d=5 pwell[0.2, 1.0] | 0.85..10.85 | 0.022..0.479 | 0.054..1.171 | 0.30..4.33
+rho=1 d=5 (escalado) | 1.26..1.56 | 0.196..0.313 | 0.479..0.766 | 2.21..2.89
+rho=20 d=5 (escalado) | 25.15..31.13 | 0.007..0.012 | 0.016..0.030 | 0.10..0.14
+rho=1 d=10 (escalado) | 1.43..1.73 | 0.167..0.265 | 0.284..0.449 | 1.37..1.75
+rho=20 d=10 (escalado) | 28.65..34.61 | 0.005..0.010 | 0.009..0.017 | 0.06..0.08
+rho=1 d=20 (escalado) | 1.57..1.86 | 0.144..0.230 | 0.140..0.223 | 0.72..0.90
+rho=20 d=20 (escalado) | 31.35..37.27 | 0.004..0.009 | 0.004..0.008 | 0.03..0.04
+rho=1 d=5 guarda (escalado) | 0.30..0.80 | 0.406..1.430 | 0.992..3.496 | 4.34..12.26
+rho=20 d=5 guarda (escalado) | 6.09..16.08 | 0.014..0.057 | 0.035..0.139 | 0.20..0.58
+rho=1 d=5 taps lejanos a masa (escalado) | 0.63..0.94 | 0.343..0.652 | 0.838..1.594 | 3.71..5.80
+rho=20 d=5 taps lejanos a masa (escalado) | 12.70..18.74 | 0.012..0.026 | 0.029..0.063 | 0.17..0.27
+rho=1 d=20 taps lejanos a masa (escalado) | 0.70..0.99 | 0.291..0.552 | 0.282..0.535 | 1.36..2.06
+rho=20 d=20 taps lejanos a masa (escalado) | 13.93..19.89 | 0.009..0.021 | 0.009..0.021 | 0.06..0.10
+
+Nota: I_ph escala ~linealmente con eta (intervalo 1e-7..1e-5, v4o_eta.txt); el umbral depende de eta solo logaritmicamente.

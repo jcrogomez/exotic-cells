@@ -1,0 +1,16 @@
+# salidas de flujo y simulación
+runs/
+sim_build/
+results.xml
+*.vcd
+*.fst
+__pycache__/
+.venv/
+*.log
+*.tgz
+*.gds
+# locales
+.DS_Store
+*.lyrdb
+*.ext
+sim/*.raw

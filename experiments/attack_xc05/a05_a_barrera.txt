@@ -1,0 +1,39 @@
+1/G0 = 12906.4 Ohm
+rho efectiva met1 = Rsh*t = 4.50 uOhm.cm (Al macizo 2.7; de memoria) ; rho li1 (TiN del proceso) = 128 uOhm.cm
+
+Shunt por barrera R_b = rho*L/(w*t_b), w=0.14 um. Barrido: rho 50..400 uOhm.cm (TiN PVD de memoria 50-400; 128 = li1 del PDK; Ti ~ 50-100), t_b total (abajo+arriba) 20..150 nm
+ rho uOcm  t_b nm  Rsh O/sq      L=10nm      L=30nm     L=100nm    L=1000nm
+       50      20      25.0        1.79        5.36       17.86      178.57
+       50      50      10.0        0.71        2.14        7.14       71.43
+       50     100       5.0        0.36        1.07        3.57       35.71
+       50     150       3.3        0.24        0.71        2.38       23.81
+      128      20      64.0        4.57       13.71       45.71      457.14
+      128      50      25.6        1.83        5.49       18.29      182.86
+      128     100      12.8        0.91        2.74        9.14       91.43
+      128     150       8.5        0.61        1.83        6.10       60.95
+      200      20     100.0        7.14       21.43       71.43      714.29
+      200      50      40.0        2.86        8.57       28.57      285.71
+      200     100      20.0        1.43        4.29       14.29      142.86
+      200     150      13.3        0.95        2.86        9.52       95.24
+      400      20     200.0       14.29       42.86      142.86     1428.57
+      400      50      80.0        5.71       17.14       57.14      571.43
+      400     100      40.0        2.86        8.57       28.57      285.71
+      400     150      26.7        1.90        5.71       19.05      190.48
+
+Rango R_b para L=10..100 nm en todo el barrido: 0.24 .. 142.9 Ohm
+
+Qué ve el exterior: R_tot = R_b || (R0/N). Cambio relativo de R_tot al pasar de N a N-1 canales, y respecto a abierto (N=0):
+  R_b=   1 Ohm: R_tot(N=3,2,1,0) = 0.9998, 0.9998, 0.9999, 1.0000 ; escalón N=1->0: 0.008 % ; fracción de corriente por el contacto de 1 canal: 0.008 %
+  R_b=  10 Ohm: R_tot(N=3,2,1,0) = 9.9768, 9.9845, 9.9923, 10.0000 ; escalón N=1->0: 0.077 % ; fracción de corriente por el contacto de 1 canal: 0.077 %
+  R_b=  50 Ohm: R_tot(N=3,2,1,0) = 49.4256, 49.6156, 49.8070, 50.0000 ; escalón N=1->0: 0.386 % ; fracción de corriente por el contacto de 1 canal: 0.386 %
+  R_b= 150 Ohm: R_tot(N=3,2,1,0) = 144.9462, 146.5926, 148.2767, 150.0000 ; escalón N=1->0: 1.149 % ; fracción de corriente por el contacto de 1 canal: 1.149 %
+
+Barrera necesaria para que R_b >= 12.9 kOhm con L=100 nm, w=0.14um: Rsh_b >= 18069 Ohm/sq ; con rho=128 uOhm.cm -> t_b <= 0.071 nm (menos de una monocapa: imposible)
+Largo de vacío para que el shunt sea 1 kOhm (piso del lector) con Rsh_b=25.6 (128 uOcm, 50 nm): L = 5.47 um ; para 12.9 kOhm: 70.6 um
+
+Tensión máxima sobre el vacío con fuente de corriente (tautología): V = I*R_b
+  I= 0.26 mA: R_b=1 Ohm -> 0.3 mV, R_b=10 Ohm -> 2.6 mV, R_b=50 Ohm -> 13.0 mV, R_b=150 Ohm -> 39.0 mV
+  I= 2.06 mA: R_b=1 Ohm -> 2.1 mV, R_b=10 Ohm -> 20.6 mV, R_b=50 Ohm -> 103.0 mV, R_b=150 Ohm -> 309.0 mV
+  I= 4.10 mA: R_b=1 Ohm -> 4.1 mV, R_b=10 Ohm -> 41.0 mV, R_b=50 Ohm -> 205.0 mV, R_b=150 Ohm -> 615.0 mV
+  I=18.50 mA: R_b=1 Ohm -> 18.5 mV, R_b=10 Ohm -> 185.0 mV, R_b=50 Ohm -> 925.0 mV, R_b=150 Ohm -> 2775.0 mV
+Potencia en la barrera sobre el vacío P=I^2 R_b (2.06 mA, 50 Ohm) = 0.21 mW ; (18.5 mA, 50 Ohm) = 17.1 mW

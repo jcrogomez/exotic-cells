@@ -1,0 +1,15 @@
+kT/C already present on node X (2.3 fF) at each precharge: 1.34 mV = 0.15 % of a 0.9 V swing (assumed swing)
+reader floor per conversion: shot 0.55 %  (+) reset 0.15 %  = 0.57 %
+
+gate-node C   sigma_V     as time spread   total spread   kT/C share of variance
+     0.5 fF    2.88 mV     7.83 %           7.85 %         99.5 %
+     1.0 fF    2.04 mV     5.54 %           5.57 %         99.0 %
+     2.3 fF    1.34 mV     3.65 %           3.70 %         97.6 %
+     5.0 fF    0.91 mV     2.48 %           2.54 %         95.0 %
+    10.0 fF    0.64 mV     1.75 %           1.84 %         90.4 %
+    30.0 fF    0.37 mV     1.01 %           1.16 %         75.9 %
+   100.0 fF    0.20 mV     0.55 %           0.79 %         48.6 %
+   300.0 fF    0.12 mV     0.32 %           0.65 %         23.9 %
+
+conversions to know the variance to 1 % (Gaussian): N = 2/0.01^2 = 20000 -> about 0.6 s at 30 us each
+temperature step that changes the variance by 1 %: 3 K at 300 K (variance is proportional to T)

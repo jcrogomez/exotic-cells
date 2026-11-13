@@ -1,0 +1,8 @@
+C=0.963 fF Cov=0.125 fF tf=500p ruido=completo : var/(kT/C)=0.881 pedestal -150.0 mV
+C=0.963 fF Cov=0.125 fF tf=500p ruido=replica  : var/(kT/C)=0.761 pedestal -150.0 mV
+C=0.963 fF Cov=0.103 fF tf=500p ruido=completo : var/(kT/C)=0.902 pedestal -123.8 mV
+C=0.963 fF Cov=0.103 fF tf=500p ruido=replica  : var/(kT/C)=0.803 pedestal -123.8 mV
+C=2.963 fF Cov=0.125 fF tf=500p ruido=completo : var/(kT/C)=0.958 pedestal -52.9 mV
+C=2.963 fF Cov=0.125 fF tf=500p ruido=replica  : var/(kT/C)=0.919 pedestal -52.9 mV
+C=9.963 fF Cov=0.125 fF tf=500p ruido=completo : var/(kT/C)=0.991 pedestal -17.7 mV
+C=9.963 fF Cov=0.125 fF tf=500p ruido=replica  : var/(kT/C)=0.979 pedestal -17.7 mV

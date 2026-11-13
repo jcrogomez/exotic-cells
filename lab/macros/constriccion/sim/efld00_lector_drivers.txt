@@ -1,0 +1,49 @@
+# EFLD-00: lector y drivers en ngspice (tt, 1,8 V, 27 C). Mazos: anillo_efld00.sp, anillo_efld00_altaR.sp, drivers_efld00.sp.
+# Esquemático (modelos de celda del PDK), sin parásitos de layout. 2026-11-04 noche.
+
+## Anillo de lectura (13 inversiones, ebufn_1 ataca A, R entre A y B, 32 inv_1 de carga en B, 16 ebufn_8 en Z)
+R        periodo   f        Iavg
+10 Ω     2,99 ns   334 MHz  0,19 mA
+100 Ω    2,99 ns   334 MHz  0,19 mA
+1 kΩ     3,04 ns   329 MHz  0,19 mA   (+1,7 % de período)
+10 kΩ    3,95 ns   253 MHz  0,22 mA   (+32 %)
+30 kΩ    5,25 ns   190 MHz  0,27 mA
+100 kΩ   6,60 ns   152 MHz  0,30 mA
+300 kΩ   7,80 ns   128 MHz  0,30 mA
+1 MΩ     9,20 ns   109 MHz  0,30 mA   (satura: el RC aporta ~90 grados de fase y el anillo sigue con señal pequeña en B)
+10 MΩ    sin 5 flancos en 3 µs        0,30 mA   (muerto o > 600 ns de período)
+abierto  no oscila                    0,066 mA  (B flotante; corriente estática de las 33 entradas)
+
+## Drivers de formación: N ebufn_8 por lado (lado A entrada 1, lado B entrada 0), línea R entre A y B. DC.
+N   R=3,6 Ω   10,4 Ω   100 Ω    1 kΩ     10 kΩ     (I_VDD, mA)
+1   0,515     0,515    0,512    0,488    0,159
+2   1,030     1,029    1,020    0,901    0,169
+4   2,059     2,056    2,019    1,306    0,175
+8   4,115     4,103    3,949    1,542    0,177
+# V(A) ≈ 0,15 V y V(B) ≈ 0,146 V con R pequeña: el pfet del ebufn_8 limita (~0,5 mA por pareja); casi toda la tensión cae en él.
+
+## Sprint 4→5 nov: complementos (anillo_12k9.sp, anillo_sindrivers.sp, drivers_pequenos.sp, rtn_presupuesto.sp)
+# Alrededor de 12,9 kΩ (mismo anillo con 16 ebufn_8 en Z):
+R        periodo
+5 kΩ     3,42 ns
+10 kΩ    3,945 ns
+12,9 kΩ  4,195 ns
+15 kΩ    4,36 ns
+20 kΩ    4,67 ns      pendiente local: ~83 ps/kΩ (≈2 %/kΩ). Un cambio 12,9 → 6,45 kΩ es ~0,6 ns: resoluble. No es cuantización.
+# Sin los 16 drivers de formación (su capacidad de drenador):
+R        periodo
+10 Ω     2,21 ns      (2,99 con drivers: los drivers añaden ~26 % al período; su envejecimiento sí afecta a la lectura)
+1 kΩ     2,18 ns
+10 kΩ    2,28 ns
+# Drivers triestado pequeños, una pareja alto/bajo, línea de 10,4 Ω / 1 kΩ (DC):
+ebufn_2  0,129 / 0,127 mA      ebufn_4  0,257 / 0,251 mA      (ebufn_8: 0,515 / 0,488; escala lineal)
+# Parásitos extraídos (SPEF nom, corrida 3 de EFLD-00, con NDR): nA 24,1 fF, nB 22,0 fF, rA 0,37 fF, rB 8,0 fF.
+#   El DUT y la referencia no ven la misma capacidad: la referencia no tiene drivers ni redes largas. Asimetría a corregir en EFLD-01b.
+# Presupuesto RTN (anillo de 7 inv_1, fuente dVth en serie con la entrada de una etapa, tran 1 ps):
+dVth     periodo
+0        344,133 ps
+0,3 mV   344,131 ps   (−6·10⁻⁶)
+3 mV     344,098 ps   (−1·10⁻⁴)
+30 mV    343,837 ps   (−8,6·10⁻⁴)
+#   Un anillo de celdas estándar en inversión fuerte es ciego a 0,3 mV. Para RTN hace falta una etapa dominada por un solo MOS en
+#   inversión débil (ahí ΔI/I ≈ ΔVth/(n·kT/q) ≈ 0,8 %), que no existe en la biblioteca: macro propio o rama analógica.

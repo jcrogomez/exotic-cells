@@ -1,0 +1,44 @@
+# 1. Escritura por NBTI en pfet 4.15 nm (extrapolación: dVt(2.2nm,12.3MV/cm) x (E/12.3)^3.3 x (4.15/2.2)); intervalo x/÷3
+# Vg V | Eox MV/cm | dVt 1 s mV | dVt 1e3 s mV | pasos de 0.305 mV a 1e3 s (central) | intervalo x/÷3 mV a 1e3 s
+1.8 | 4.3 | 0.61 | 1.51 | 5 | 0.50-4.5
+3.3 | 8.0 | 4.47 | 11.18 | 37 | 3.73-33.5
+5.0 | 12.0 | 17.62 | 44.05 | 144 | 14.68-132.1
+
+# 2. Retención de lo escrito por NBTI (emisión mu=0.71, sigma=0.29, 1/tau0=1e15): fracción que queda
+# T C | 1 s | 1e3 s | 1e5 s (~1 dia) | 3e7 s (1 año)
+25 | 0.255 | 0.103 | 0.047 | 0.015
+85 | 0.101 | 0.022 | 0.006 | 0.001
+125 | 0.046 | 0.006 | 0.001 | 0.000
+200 | 0.007 | 0.000 | 0.000 | 0.000
+300 | 0.000 | 0.000 | 0.000 | 0.000
+
+# 3. Recocido del daño por portadores calientes (Ef=1.39, sigma=0.369; nu efectiva calibrada = 1.63e+11 /s): fracción que queda
+# comprobación contra lo leído: 7200 s a 190 C -> 0.48 (leído ~0.5); a 375 C -> 0.061 (leído ~0)
+# T C | 1e-06 s | 0.001 s | 1 s | 60 s | 3600 s
+25 | 0.998 | 0.992 | 0.973 | 0.949 | 0.912
+125 | 0.995 | 0.974 | 0.904 | 0.823 | 0.708
+200 | 0.991 | 0.945 | 0.800 | 0.653 | 0.479
+300 | 0.980 | 0.873 | 0.592 | 0.379 | 0.198
+400 | 0.960 | 0.755 | 0.354 | 0.157 | 0.051
+500 | 0.927 | 0.596 | 0.165 | 0.045 | 0.008
+600 | 0.877 | 0.422 | 0.059 | 0.009 | 0.001
+800 | 0.722 | 0.143 | 0.003 | 0.000 | 0.000
+# retención HCI a 25 C: 1 año 0.767 ; 10 años 0.716 ; a 85 C 10 años 0.472
+# tiempo para dejar 10 % (borrado 90 %):
+  200 C: 2.68e+08 s
+  300 C: 9.47e+04 s
+  400 C: 357 s
+  500 C: 5.72 s
+  600 C: 0.238 s
+  800 C: 0.00245 s
+
+# 4. Ruptura del óxido de 4.15 nm [DE MEMORIA, sin fuente leída: BARRIDO]. t_BD(V)=1 s*10^(-(V-V1)*g): V1 = 4.5..6.5 V, g = 1.0..2.5 dec/V... 
+# V | t_BD mín..máx s
+1.8 | 5e+02 .. 5.6e+11
+3.3 | 16 .. 1e+08
+4.0 | 3.2 .. 1.8e+06
+5.0 | 0.056 .. 5.6e+03
+5.5 | 0.0032 .. 3.2e+02
+
+# 5. Niveles: ventana reversible / 0.305 mV. NBTI 3.3 V 1e3 s: 37 pasos (pero 1-2 dias después queda ~8 %: 2.9 pasos).
+# HCI 250-450 mV (leído, 4.5 nm, Vds 4.5 V): 820-1475 pasos; resolución limitada por la deriva de recocido a 25 C: 0.1304 de pérdida relativa en 1e5 s -> 39.1 mV sobre 300 mV.

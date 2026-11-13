@@ -1,0 +1,38 @@
+# 1. F(alpha): fracción de fotones -> electrones en el fotodiodo (fuente z=0,5 um, sin tapa R_cone=0,175)
+# alpha[cm-1] | d=5 central | d=10 | d=20 | control 44 um (d=5) | d=5 alto | d=5 somero
+    0.3 | 5.89e-05 | 3.99e-05 | 2.02e-05 | 6.71e-06 | 6.64e-05 | 5.16e-05
+      1 | 1.96e-04 | 1.33e-04 | 6.73e-05 | 2.23e-05 | 2.21e-04 | 1.72e-04
+      2 | 3.92e-04 | 2.65e-04 | 1.34e-04 | 4.44e-05 | 4.42e-04 | 3.43e-04
+    3.5 | 6.85e-04 | 4.63e-04 | 2.34e-04 | 7.73e-05 | 7.71e-04 | 6.00e-04
+     10 | 1.94e-03 | 1.31e-03 | 6.59e-04 | 2.15e-04 | 2.19e-03 | 1.70e-03
+     30 | 5.70e-03 | 3.82e-03 | 1.89e-03 | 5.98e-04 | 6.38e-03 | 5.00e-03
+    100 | 1.77e-02 | 1.15e-02 | 5.44e-03 | 1.54e-03 | 1.95e-02 | 1.55e-02
+    300 | 4.32e-02 | 2.64e-02 | 1.08e-02 | 2.30e-03 | 4.64e-02 | 3.83e-02
+   1000 | 8.05e-02 | 4.05e-02 | 1.15e-02 | 1.37e-03 | 8.31e-02 | 7.37e-02
+   3000 | 6.49e-02 | 2.36e-02 | 4.34e-03 | 3.85e-04 | 6.58e-02 | 6.85e-02
+# 2. FM: espectro de van Roosbroeck-Shockley con alpha de Green-Keevers: pico 1120 nm, FWHM 1035-1168 nm
+#    alpha medio ponderado por el espectro (lo que pesa para un absorbente delgado) = 12.44 cm^-1
+#    F_FM: d=5 2.31e-03, d=10 1.54e-03, d=20 7.51e-04, control 44 um 2.31e-04 ; con Al liso encima: d=5 2.40e-03 (x1.039)
+# 2b. AM (400-900 nm, pico 620, fuente z=0,15): F_AM d=5/10/20: cola 0 %: 6.18e-02 2.40e-02 5.08e-03 | cola 3 %: 6.03e-02 2.35e-02 5.03e-03 | cola 10 %: 5.68e-02 2.24e-02 4.91e-03
+# 3. eta_FM (fotones por hueco que cruza la base), cálculo con parámetros barridos
+# N_D[cm-3] W[um] Dp[cm2/s] | tau_t[ns] | eta baja inyección (Brel 1) | p a 1 mA en 1,4 um2 [cm-3] | eta a 1 mA (Brel 0,3-1)
+1e+17 0.5  5.0 | 0.25 | 1.2e-07 | 2.2e+18 | 7.8e-07-2.6e-06
+1e+17 0.5 10.0 | 0.12 | 5.9e-08 | 1.1e+18 | 2.0e-07-6.5e-07
+1e+17 1.0  5.0 | 1.00 | 4.7e-07 | 4.5e+18 | 6.3e-06-2.1e-05
+1e+17 1.0 10.0 | 0.50 | 2.3e-07 | 2.2e+18 | 1.6e-06-5.2e-06
+1e+17 1.5  5.0 | 2.25 | 1.1e-06 | 6.7e+18 | 2.1e-05-7.0e-05
+1e+17 1.5 10.0 | 1.13 | 5.3e-07 | 3.3e+18 | 5.3e-06-1.8e-05
+5e+17 0.5  5.0 | 0.25 | 5.9e-07 | 2.2e+18 | 7.8e-07-2.6e-06
+5e+17 0.5 10.0 | 0.12 | 2.9e-07 | 1.1e+18 | 2.0e-07-6.5e-07
+5e+17 1.0  5.0 | 1.00 | 2.3e-06 | 4.5e+18 | 6.3e-06-2.1e-05
+5e+17 1.0 10.0 | 0.50 | 1.2e-06 | 2.2e+18 | 1.6e-06-5.2e-06
+5e+17 1.5  5.0 | 2.25 | 5.3e-06 | 6.7e+18 | 2.1e-05-7.0e-05
+5e+17 1.5 10.0 | 1.13 | 2.6e-06 | 3.3e+18 | 5.3e-06-1.8e-05
+#    rango eta en esta celda: 5.9e-08 - 7.0e-05 (mediana 2.5e-06)
+# 4. beta del PNP vertical del PDK (Gummel-Poon, tt: bf*dkbfpp; sky130_fd_pr__pnp_05v5_*.model.spice l. 45-46 y 50-51; corners/tt/nonfet.spice l. 38-39)
+   W0p68L0p68 (0,46 um2)  Ic:beta  1e-06:17.4  1e-05:14.7  1e-04:7.9  3e-04:5.2  1e-03:3.1  3e-03:1.8
+   W3p40L3p40 (11,6 um2)  Ic:beta  1e-06:17.2  1e-05:17.6  1e-04:15.2  3e-04:12.3  1e-03:8.5  3e-03:5.6
+# 5. Luz atrapada (cota): fracción absorbida en el dado <= 1; repartida en 2.7e+09 um^3 -> F_fondo <= 8.9e-07 (Veff 2404 um^3) frente a F_FM(5 um) 2.3e-03
+# 6. deltaT en el fotodiodo con 1.8 mW a 7.6 um: 0.25 K (k = 148 W/m K, DE MEMORIA)
+# 6. deltaT en el fotodiodo con 1.8 mW a 12.6 um: 0.15 K (k = 148 W/m K, DE MEMORIA)
+# 6. deltaT en el fotodiodo con 1.8 mW a 22.6 um: 0.09 K (k = 148 W/m K, DE MEMORIA)

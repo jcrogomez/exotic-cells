@@ -1,0 +1,49 @@
+PARTE 1: sección 2D. G' = W/(m.K) de la línea al sustrato; tiempos de subida de la temperatura media de la línea (escalón de potencia)
+  w um  k_ox  k_Al   G_W/mK    t50 ns    t63 ns    t90 ns  C_Al/G ns
+  0.05   1.4   166    2.560     185.2     468.8    4652.4       16.5
+  0.15   1.4   166    2.794     253.2     587.9    5269.5       45.5
+   curva T(t)/T_inf para w=0.15,k_ox=1.4: 1ns:0.02, 3ns:0.04, 10ns:0.10, 30ns:0.20, 100ns:0.36, 300ns:0.53, 1e+03ns:0.71, 3e+03ns:0.85, 1e+04ns:0.94, 1e+05ns:1.00
+  0.15   1.0   166    1.996     354.8     823.5    7385.2       63.6
+  0.15   1.4   100    2.792     252.8     587.1    5266.1       45.5
+  0.15   1.4   237    2.795     253.4     588.2    5271.1       45.5
+  0.50   1.4   166    3.387     437.2     894.4    6883.8      125.1
+  0.50   1.0   166    2.420     612.8    1253.0    9642.5      175.0
+  0.05   1.0   166    1.830     259.5     656.8    6517.8       23.1
+  (PLAN: 'L^2/alfa sobre 100 nm de óxido ~10 ns'. alfa_ox=k/c=8.48e-07 m2/s; (0.1um)^2/alfa=11.8 ns; (1.376um)^2/alfa=2231 ns)
+
+PARTE 2: aleta 1D. dT_max (K) en estado estacionario frente a corriente; 'inf' = embalamiento térmico (I^2 R' alfa > pérdidas)
+geometria                                k_ox k_Al  R0 Ohm     0.26mA     2.06mA     4.10mA     9.40mA    18.50mA    30.00mA  j(2.06mA) A/cm2
+A: linea 0.14 x 10 um (EFLD-01 A)         1.4  166    8.93       0.02       1.22       4.89      27.37     137.26     956.65         4.20e+06
+A: linea 0.14 x 10 um (EFLD-01 A)         1.0  100    8.93       0.03       1.76       7.08      40.84     239.96        inf         4.20e+06
+A: linea 0.14 x 10 um (EFLD-01 A)         1.4  237    8.93       0.02       1.13       4.53      25.20     122.87     718.80         4.20e+06
+B: 0.50 con cuello 0.14 x 1 um            1.4  166    3.14       0.01       0.36       1.42       7.60      31.25      94.85         4.20e+06
+B: 0.50 con cuello 0.14 x 1 um            1.0  100    3.14       0.01       0.55       2.18      11.72      49.84     166.25         4.20e+06
+B: 0.50 con cuello 0.14 x 1 um            1.4  237    3.14       0.00       0.29       1.17       6.21      25.23      74.39         4.20e+06
+cuello corto 0.14 x 0.30 en 0.50          1.4  166    2.69       0.00       0.25       0.98       5.19      20.95      60.66         4.20e+06
+cuello corto 0.14 x 0.30 en 0.50          1.0  100    2.69       0.01       0.37       1.48       7.90      32.61      99.99         4.20e+06
+cuello corto 0.14 x 0.30 en 0.50          1.4  237    2.69       0.00       0.21       0.81       4.32      17.29      49.19         4.20e+06
+cuello sublito 0.10 x 0.30 en 0.50        1.4  166    2.80       0.00       0.27       1.08       5.73      23.22      67.88         5.89e+06
+cuello sublito 0.10 x 0.30 en 0.50        1.0  100    2.80       0.01       0.41       1.64       8.76      36.37     113.41         5.89e+06
+cuello sublito 0.10 x 0.30 en 0.50        1.4  237    2.80       0.00       0.22       0.89       4.74      19.04      54.56         5.89e+06
+puente 0.05 x 0.05 entre lineas 0.14      1.4  166    9.01       0.02       1.26       5.04      28.25     142.60    1038.01         1.18e+07
+puente 0.05 x 0.05 entre lineas 0.14      1.0  100    9.01       0.03       1.82       7.31      42.28     251.31        inf         1.18e+07
+puente 0.05 x 0.05 entre lineas 0.14      1.4  237    9.01       0.02       1.16       4.65      25.92     127.09     766.77         1.18e+07
+puente 0.05 x 0.05 entre lineas 0.50      1.4  166    2.61       0.00       0.23       0.90       4.79      19.28      55.41         1.18e+07
+puente 0.05 x 0.05 entre lineas 0.50      1.0  100    2.61       0.01       0.34       1.36       7.27      29.85      90.43         1.18e+07
+puente 0.05 x 0.05 entre lineas 0.50      1.4  237    2.61       0.00       0.19       0.75       4.00      16.00      45.26         1.18e+07
+
+Constante de tiempo (t63 del punto más caliente, escalón de 2.06 mA), k_ox=1.4, k_Al=166: cota baja (solo capacidad del Al) y cota alta (C' efectiva de la sección 2D)
+  A: linea 0.14 x 10 um (EFLD-01 A)        t63 =    36.38 ns ..    495.2 ns   (dT=1.22 K)
+  B: 0.50 con cuello 0.14 x 1 um           t63 =    46.11 ns ..    373.1 ns   (dT=0.36 K)
+  cuello corto 0.14 x 0.30 en 0.50         t63 =    63.83 ns ..    468.5 ns   (dT=0.25 K)
+  cuello sublito 0.10 x 0.30 en 0.50       t63 =    60.71 ns ..    448.2 ns   (dT=0.27 K)
+  puente 0.05 x 0.05 entre lineas 0.14     t63 =    35.48 ns ..    486.5 ns   (dT=1.26 K)
+  puente 0.05 x 0.05 entre lineas 0.50     t63 =    68.91 ns ..    495.2 ns   (dT=0.23 K)
+
+Corriente para dT_max = 100 K y para llegar a fusión del Al (dT=633 K), k_ox=1.4,k_Al=166 (bisección):
+  A: linea 0.14 x 10 um (EFLD-01 A)        I(100K)=  16.4 mA  I(fusión)=  28.1 mA  j(fusión)=5.73e+07 A/cm2 ; ebufn_4 x8 = 2.06 mA ; buf_16 x8 = 18.5 mA (LEEME constricción)
+  B: 0.50 con cuello 0.14 x 1 um           I(100K)=  30.6 mA  I(fusión)=  53.4 mA  j(fusión)=1.09e+08 A/cm2 ; ebufn_4 x8 = 2.06 mA ; buf_16 x8 = 18.5 mA (LEEME constricción)
+  cuello corto 0.14 x 0.30 en 0.50         I(100K)=  36.9 mA  I(fusión)=  64.0 mA  j(fusión)=1.31e+08 A/cm2 ; ebufn_4 x8 = 2.06 mA ; buf_16 x8 = 18.5 mA (LEEME constricción)
+  cuello sublito 0.10 x 0.30 en 0.50       I(100K)=  35.2 mA  I(fusión)=  61.2 mA  j(fusión)=1.75e+08 A/cm2 ; ebufn_4 x8 = 2.06 mA ; buf_16 x8 = 18.5 mA (LEEME constricción)
+  puente 0.05 x 0.05 entre lineas 0.14     I(100K)=  16.2 mA  I(fusión)=  27.7 mA  j(fusión)=1.59e+08 A/cm2 ; ebufn_4 x8 = 2.06 mA ; buf_16 x8 = 18.5 mA (LEEME constricción)
+  puente 0.05 x 0.05 entre lineas 0.50     I(100K)=  38.3 mA  I(fusión)=  66.4 mA  j(fusión)=3.79e+08 A/cm2 ; ebufn_4 x8 = 2.06 mA ; buf_16 x8 = 18.5 mA (LEEME constricción)

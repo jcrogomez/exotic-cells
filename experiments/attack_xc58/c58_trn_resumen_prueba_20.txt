@@ -1,0 +1,1 @@
+cx0_tf500p_nt1_T27: N=20  antes de abrir: media 316.349 mV sigma 1.6828 mV | despues: media 154.739 mV sigma 1.2780 mV (±16.2 %) asimetria -0.11 curtosis-3 -0.48 corr(antes,despues) -0.374

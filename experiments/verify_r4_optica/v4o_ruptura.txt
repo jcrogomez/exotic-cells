@@ -1,0 +1,19 @@
+Control: plana sin hueco frente a Sze (Si, abrupta unilateral): 1e15 ~300 V, 1e16 ~60 V, 1e17 ~11-12 V
+  N=1e+15: BV plana = 264.8 V
+  N=1e+16: BV plana = 55.2 V
+  N=1e+17: BV plana = 14.8 V
+
+N (cm-3) | plana sin hueco | plana hueco 0.27 um (cambio) | cil rj=0.1/0.2 | esf rj=0.1/0.2 | esf rj=0.1 + hueco 0.27
+1e+16 |  55.20 (Emax 4.17e+05) |  12.41 (-78 %) | 18.93/23.16 | 11.21/14.37 | 10.12
+3e+16 |  28.18 (Emax 5.20e+05) |  12.44 (-56 %) | 14.44/16.82 | 10.00/12.19 |  9.73
+5e+16 |  21.15 (Emax 5.85e+05) |  12.44 (-41 %) | 12.60/14.34 |  9.36/11.11 |  9.33
+1e+17 |  14.77 (Emax 6.97e+05) |  12.26 (-17 %) | 10.43/11.48 |  8.46/ 9.64 |  8.46
+2e+17 |  10.75 (Emax 8.51e+05) |  10.74 (-0 %) |  8.66/ 9.24 |  7.59/ 8.28 |  7.59
+3e+17 |   9.12 (Emax 9.67e+05) |   9.12 (+0 %) |  7.81/ 8.20 |  7.12/ 7.59 |  7.12
+5e+17 |   7.62 (Emax 1.15e+06) |   7.62 (+0 %) |  6.95/ 7.16 |  6.60/ 6.84 |  6.60
+1e+18 |   6.34 (Emax 1.50e+06) |   6.34 (-0 %) |  6.15/ 6.21 |  6.11/ 6.12 |  6.11
+
+N que da BV plana = 12.69 V (bv del PDK pd2nw_05v5): 1.38e+17 cm-3
+  con ese N: cil rj=0.10 um 9.56 V; esf 8.05 V; plana+hueco 0.27 11.87 V
+  con ese N: cil rj=0.15 um 10.04 V; esf 8.58 V; plana+hueco 0.27 11.87 V
+  con ese N: cil rj=0.20 um 10.38 V; esf 8.99 V; plana+hueco 0.27 11.87 V

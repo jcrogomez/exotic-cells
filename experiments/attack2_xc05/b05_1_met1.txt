@@ -1,0 +1,102 @@
+b05_1_met1: barreras en paralelo en línea de met1 de 0,14 um
+  seccion 2D met1 0,14: k_ox=1.4: G'=2.75 W/mK  t63=641 ns  (ronda 1: 1,8-3,4 W/mK; 0,47-1,25 us)
+  seccion 2D met1 0,14: k_ox=1.0: G'=1.97 W/mK  t63=899 ns  (ronda 1: 1,8-3,4 W/mK; 0,47-1,25 us)
+
+(1a) R' de las barreras en paralelo [Ohm/um] y dR de un vacío de largo Lv [Ohm]
+apilamiento                     esc       Ti?   Ohm/um      10nm      30nm     100nm     300nm    1000nm  Lv para 1k    12,9k
+A Ti10/AlCu/TiW30              bajo  presente     84.0       0.8       2.5       8.4      25.2      84.0      11.9um    154um
+A Ti10/AlCu/TiW30              bajo consumido    119.0       1.2       3.6      11.9      35.7     119.0       8.4um    108um
+A Ti10/AlCu/TiW30               nom  presente    129.0       1.3       3.9      12.9      38.7     129.0       7.8um    100um
+A Ti10/AlCu/TiW30               nom consumido    166.7       1.7       5.0      16.7      50.0     166.7       6.0um     77um
+A Ti10/AlCu/TiW30              alto  presente    285.7       2.9       8.6      28.6      85.7     285.7       3.5um     45um
+A Ti10/AlCu/TiW30              alto consumido    357.1       3.6      10.7      35.7     107.1     357.1       2.8um     36um
+B Ti15/TiN25/AlCu/Ti9/TiN50    bajo  presente     34.0       0.3       1.0       3.4      10.2      34.0      29.4um    379um
+B Ti15/TiN25/AlCu/Ti9/TiN50    bajo consumido     47.6       0.5       1.4       4.8      14.3      47.6      21.0um    271um
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom  presente     80.6       0.8       2.4       8.1      24.2      80.6      12.4um    160um
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom consumido    121.9       1.2       3.7      12.2      36.6     121.9       8.2um    106um
+B Ti15/TiN25/AlCu/Ti9/TiN50    alto  presente    232.3       2.3       7.0      23.2      69.7     232.3       4.3um     56um
+B Ti15/TiN25/AlCu/Ti9/TiN50    alto consumido    381.0       3.8      11.4      38.1     114.3     381.0       2.6um     34um
+  Comparar: Al 0,125 Ohm/sq / 0,14 um = 0,89 Ohm/um. La línea virgen de 10 um vale 8,9 Ohm.
+
+(1b) Puente de barrera con vacío en el centro de una línea de 10 um: V sobre el vacío, P en el puente, T máx (T0=300 K).
+     Aleta 1D: Al a ambos lados (k=166), vacío = solo barrera (k Wiedemann-Franz x fk), G' 2D al óxido (x fG en el vacío).
+     Referencias de temperatura (DE MEMORIA): 933 K funde Al; ~700-750 K reacción Ti/Al y límite de proceso; 1941 K funde Ti; ~3200 K TiN.
+     Tao-Cheung-Hu 1996 (resumen LEIDO por agente): vida de 10 años del TiN si su punto caliente < ~408 C (681 K).
+apilamiento                     esc    Ti  Lv nm     dR0    T@0.26mA   V mV    T@2.06mA   V mV    T@4.10mA   V mV   T@18.50mA   V mV
+A Ti10/AlCu/TiW30              bajo    si     10     0.8        300K      0        302K      2        307K      3        489K     16
+A Ti10/AlCu/TiW30              bajo    si     30     2.5        300K      1        303K      5        311K     10        620K     47
+A Ti10/AlCu/TiW30              bajo    si    100     8.4        300K      2        310K     17        339K     34       1772K    155
+A Ti10/AlCu/TiW30              bajo    si    300    25.2        301K      7        344K     52        486K    103       >1e4K    466
+A Ti10/AlCu/TiW30              bajo    si   1000    84.0        302K     22        424K    173        913K    345       >1e4K   1555
+A Ti10/AlCu/TiW30               nom    si     10     1.3        300K      0        302K      3        308K      5        520K     24
+A Ti10/AlCu/TiW30               nom    si     30     3.9        300K      1        304K      8        316K     16        773K     72
+A Ti10/AlCu/TiW30               nom    si    100    12.9        300K      3        318K     27        374K     53       6502K    239
+A Ti10/AlCu/TiW30               nom    si    300    38.7        301K     10        387K     80        696K    159       >1e4K    716
+A Ti10/AlCu/TiW30               nom    si   1000   129.0        303K     34        510K    266       1579K    529       >1e4K   2387
+A Ti10/AlCu/TiW30               nom    no     10     1.7        300K      0        302K      3        309K      7        548K     31
+A Ti10/AlCu/TiW30               nom    no     30     5.0        300K      1        305K     10        321K     20        944K     92
+A Ti10/AlCu/TiW30               nom    no    100    16.7        300K      4        327K     34        412K     68       >1e4K    308
+A Ti10/AlCu/TiW30               nom    no    300    50.0        302K     13        431K    103        948K    205       >1e4K    925
+A Ti10/AlCu/TiW30               nom    no   1000   166.7        304K     43        589K    343       2514K    683       >1e4K   3083
+A Ti10/AlCu/TiW30              alto    no     10     3.6        300K      1        304K      7        315K     15        740K     66
+A Ti10/AlCu/TiW30              alto    no     30    10.7        300K      3        314K     22        358K     44       3481K    198
+A Ti10/AlCu/TiW30              alto    no    100    35.7        302K      9        399K     74        762K    146       >1e4K    661
+A Ti10/AlCu/TiW30              alto    no    300   107.1        306K     28        763K    221       6341K    439       >1e4K   1982
+A Ti10/AlCu/TiW30              alto    no   1000   357.1        309K     93       1111K    736       >1e4K   1464       >1e4K   6607
+B Ti15/TiN25/AlCu/Ti9/TiN50    bajo    si     10     0.3        300K      0        301K      1        306K      1        459K      6
+B Ti15/TiN25/AlCu/Ti9/TiN50    bajo    si     30     1.0        300K      0        302K      2        307K      4        499K     19
+B Ti15/TiN25/AlCu/Ti9/TiN50    bajo    si    100     3.4        300K      1        304K      7        314K     14        697K     63
+B Ti15/TiN25/AlCu/Ti9/TiN50    bajo    si    300    10.2        300K      3        311K     21        346K     42       2165K    189
+B Ti15/TiN25/AlCu/Ti9/TiN50    bajo    si   1000    34.0        301K      9        339K     70        464K    139       >1e4K    629
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom    si     10     0.8        300K      0        302K      2        307K      3        487K     15
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom    si     30     2.4        300K      1        303K      5        311K     10        610K     45
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom    si    100     8.1        300K      2        309K     17        337K     33       1647K    149
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom    si    300    24.2        301K      6        341K     50        473K     99       >1e4K    447
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom    si   1000    80.6        302K     21        417K    166        875K    331       >1e4K   1492
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom    no     10     1.2        300K      0        302K      3        308K      5        515K     23
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom    no     30     3.7        300K      1        304K      8        316K     15        745K     68
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom    no    100    12.2        300K      3        317K     25        368K     50       4922K    226
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom    no    300    36.6        301K     10        379K     75        656K    150       >1e4K    677
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom    no   1000   121.9        303K     32        496K    251       1449K    500       >1e4K   2255
+B Ti15/TiN25/AlCu/Ti9/TiN50    alto    no     10     3.8        300K      1        304K      8        316K     16        770K     70
+B Ti15/TiN25/AlCu/Ti9/TiN50    alto    no     30    11.4        300K      3        316K     24        364K     47       4397K    211
+B Ti15/TiN25/AlCu/Ti9/TiN50    alto    no    100    38.1        302K     10        412K     78        830K    156       >1e4K    705
+B Ti15/TiN25/AlCu/Ti9/TiN50    alto    no    300   114.3        306K     30        817K    235       9488K    469       >1e4K   2114
+B Ti15/TiN25/AlCu/Ti9/TiN50    alto    no   1000   381.0        309K     99       1196K    785       >1e4K   1562       >1e4K   7048
+  (línea virgen sin vacío a 18,5 mA: T máx = 442 K)
+
+(1c) Sensibilidad térmica, apilamiento A nominal con Ti, Lv = 100 nm, 18,5 mA y 2,06 mA: k de barrera x2, G' en el vacío x0,5, k_ox 1,0
+  base             T(18,5 mA) = 6502 K   T(2,06 mA) = 318.1 K
+  k barrera x2     T(18,5 mA) = 2855 K   T(2,06 mA) = 312.7 K
+  G' vacío x0,5    T(18,5 mA) = 7570 K   T(2,06 mA) = 318.8 K
+  k_ox 1,0         T(18,5 mA) = 12239 K   T(2,06 mA) = 319.8 K
+
+(1d) Largo máximo de vacío que el puente aguanta bajo T_lim (bisección), por corriente. '>3000' = no llega a T_lim con 3 um de vacío.
+apilamiento                     esc  Ti  T_lim     0.26mA     2.06mA     4.10mA    18.50mA
+A Ti10/AlCu/TiW30              bajo  si   681K    >3000nm    >3000nm      537nm       37nm
+A Ti10/AlCu/TiW30              bajo  si   933K    >3000nm    >3000nm     1072nm       57nm
+A Ti10/AlCu/TiW30              bajo  si  1941K    >3000nm    >3000nm    >3000nm      107nm
+A Ti10/AlCu/TiW30               nom  si   681K    >3000nm    >3000nm      292nm       24nm
+A Ti10/AlCu/TiW30               nom  si   933K    >3000nm    >3000nm      427nm       38nm
+A Ti10/AlCu/TiW30               nom  si  1941K    >3000nm    >3000nm    >3000nm       67nm
+A Ti10/AlCu/TiW30              alto  no   681K    >3000nm      252nm       92nm        8nm
+A Ti10/AlCu/TiW30              alto  no   933K    >3000nm      442nm      117nm       14nm
+A Ti10/AlCu/TiW30              alto  no  1941K    >3000nm    >3000nm      182nm       24nm
+B Ti15/TiN25/AlCu/Ti9/TiN50    bajo  si   681K    >3000nm    >3000nm    >3000nm       97nm
+B Ti15/TiN25/AlCu/Ti9/TiN50    bajo  si   933K    >3000nm    >3000nm    >3000nm      152nm
+B Ti15/TiN25/AlCu/Ti9/TiN50    bajo  si  1941K    >3000nm    >3000nm    >3000nm      282nm
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom  si   681K    >3000nm    >3000nm      572nm       39nm
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom  si   933K    >3000nm    >3000nm     1272nm       62nm
+B Ti15/TiN25/AlCu/Ti9/TiN50     nom  si  1941K    >3000nm    >3000nm    >3000nm      107nm
+B Ti15/TiN25/AlCu/Ti9/TiN50    alto  no   681K    >3000nm      227nm       82nm        8nm
+B Ti15/TiN25/AlCu/Ti9/TiN50    alto  no   933K    >3000nm      377nm      107nm       13nm
+B Ti15/TiN25/AlCu/Ti9/TiN50    alto  no  1941K    >3000nm    >3000nm      167nm       22nm
+
+(1e) Firma frente a una resistencia normal: coeficiente térmico efectivo de la línea de 10 um con un vacío puenteado (cálculo)
+     TCR_ef = (R_Al*3,179e-3 + dR*a_b)/(R_Al+dR), a_b = 6,0e-4 (SUPUESTO: li del PDK). Línea virgen: 3,18e-3 /K
+   dR =    1 Ohm -> R =    9.9 Ohm, TCR_ef = 2.92e-3 /K
+   dR =    3 Ohm -> R =   11.9 Ohm, TCR_ef = 2.53e-3 /K
+   dR =   10 Ohm -> R =   18.9 Ohm, TCR_ef = 1.82e-3 /K
+   dR =   30 Ohm -> R =   38.9 Ohm, TCR_ef = 1.20e-3 /K
+   dR =  100 Ohm -> R =  108.9 Ohm, TCR_ef = 0.82e-3 /K
+   dR =  300 Ohm -> R =  308.9 Ohm, TCR_ef = 0.68e-3 /K

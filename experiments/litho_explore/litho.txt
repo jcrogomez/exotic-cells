@@ -1,0 +1,40 @@
+
+NA 0.60  sigma 0.5  threshold 0.263  (0.25*lambda/NA = 0.103 um)
+neck: drawn width x length -> printed width at the centre (0 = open)
+  w=0.14   L=0.07: 0.423   L=0.14: 0.321   L=0.30: 0.127   L=1.00: 0.139
+  w=0.10   L=0.07: 0.418   L=0.14: 0.294   L=0.30: 0.000   L=1.00: 0.000
+  w=0.07   L=0.07: 0.415   L=0.14: 0.264   L=0.30: 0.000   L=1.00: 0.000
+  w=0.05   L=0.07: 0.413   L=0.14: 0.234   L=0.30: 0.000   L=1.00: 0.000
+facing ends: gap -> printed bridge width at the centre (0 = stays open); line width 0.14 and 0.50
+  w=0.14   g=0.14: 0.000   g=0.10: 0.000   g=0.07: 0.000   g=0.05: 0.029   g=0.03: 0.093
+  w=0.50   g=0.14: 0.000   g=0.10: 0.331   g=0.07: 0.407   g=0.05: 0.441   g=0.03: 0.469
+
+NA 0.60  sigma 0.8  threshold 0.337  (0.25*lambda/NA = 0.103 um)
+neck: drawn width x length -> printed width at the centre (0 = open)
+  w=0.14   L=0.07: 0.455   L=0.14: 0.351   L=0.30: 0.175   L=1.00: 0.135
+  w=0.10   L=0.07: 0.452   L=0.14: 0.333   L=0.30: 0.090   L=1.00: 0.000
+  w=0.07   L=0.07: 0.451   L=0.14: 0.317   L=0.30: 0.000   L=1.00: 0.000
+  w=0.05   L=0.07: 0.451   L=0.14: 0.304   L=0.30: 0.000   L=1.00: 0.000
+facing ends: gap -> printed bridge width at the centre (0 = stays open); line width 0.14 and 0.50
+  w=0.14   g=0.14: 0.000   g=0.10: 0.000   g=0.07: 0.000   g=0.05: 0.059   g=0.03: 0.102
+  w=0.50   g=0.14: 0.220   g=0.10: 0.395   g=0.07: 0.450   g=0.05: 0.476   g=0.03: 0.498
+
+NA 0.70  sigma 0.5  threshold 0.240  (0.25*lambda/NA = 0.089 um)
+neck: drawn width x length -> printed width at the centre (0 = open)
+  w=0.14   L=0.07: 0.400   L=0.14: 0.271   L=0.30: 0.115   L=1.00: 0.145
+  w=0.10   L=0.07: 0.395   L=0.14: 0.230   L=0.30: 0.000   L=1.00: 0.050
+  w=0.07   L=0.07: 0.392   L=0.14: 0.169   L=0.30: 0.000   L=1.00: 0.000
+  w=0.05   L=0.07: 0.391   L=0.14: 0.000   L=0.30: 0.000   L=1.00: 0.000
+facing ends: gap -> printed bridge width at the centre (0 = stays open); line width 0.14 and 0.50
+  w=0.14   g=0.14: 0.000   g=0.10: 0.000   g=0.07: 0.000   g=0.05: 0.056   g=0.03: 0.101
+  w=0.50   g=0.14: 0.000   g=0.10: 0.255   g=0.07: 0.387   g=0.05: 0.428   g=0.03: 0.458
+
+NA 0.70  sigma 0.8  threshold 0.324  (0.25*lambda/NA = 0.089 um)
+neck: drawn width x length -> printed width at the centre (0 = open)
+  w=0.14   L=0.07: 0.436   L=0.14: 0.300   L=0.30: 0.156   L=1.00: 0.141
+  w=0.10   L=0.07: 0.434   L=0.14: 0.273   L=0.30: 0.093   L=1.00: 0.074
+  w=0.07   L=0.07: 0.433   L=0.14: 0.245   L=0.30: 0.000   L=1.00: 0.000
+  w=0.05   L=0.07: 0.433   L=0.14: 0.217   L=0.30: 0.000   L=1.00: 0.000
+facing ends: gap -> printed bridge width at the centre (0 = stays open); line width 0.14 and 0.50
+  w=0.14   g=0.14: 0.000   g=0.10: 0.000   g=0.07: 0.000   g=0.05: 0.075   g=0.03: 0.109
+  w=0.50   g=0.14: 0.000   g=0.10: 0.360   g=0.07: 0.433   g=0.05: 0.463   g=0.03: 0.488

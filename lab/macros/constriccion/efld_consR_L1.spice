@@ -1,0 +1,6 @@
+* NGSPICE file created from efld_consR_L1.ext - technology: sky130A
+
+.subckt efld_consR_L1 A B
+R0 A B sky130_fd_pr__res_generic_l1 w=0.17 l=10
+.ends
+

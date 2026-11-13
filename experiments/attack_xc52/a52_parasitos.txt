@@ -1,0 +1,82 @@
+Thu Nov 12 12:43:35 EST 2026
+Vt = 25.86 mV
+
+## (c1) fem inducida = 2*pi*f*B*A  (seno; para flanco cuadrado de subida tr: B*A/tr)
+lazo            B[mT]  f=100kHz    1MHz      10MHz   | dI/I a f en dc-IV (fem/2Vt) a 10 MHz | rectificado par (x^2/4)
+10x10 um         1      0.063 uV    0.628 uV     6.28 uV |   1.21e-04  |  3.69e-09
+10x10 um         3      0.188 uV    1.885 uV    18.85 uV |   3.64e-04  |  3.32e-08
+20x20 um         1      0.251 uV    2.513 uV    25.13 uV |   4.86e-04  |  5.90e-08
+20x20 um         3      0.754 uV    7.540 uV    75.40 uV |   1.46e-03  |  5.31e-07
+100x100 um       1      6.283 uV   62.832 uV   628.32 uV |   1.21e-02  |  3.69e-05
+100x100 um       3     18.850 uV  188.496 uV  1884.96 uV |   3.64e-02  |  3.32e-04
+
+## (c2) acoplo capacitivo bobina -> nodo de lectura (placa paralela, eps_r=3,9, sin blindaje)
+   C_c = eps*A_nodo*relleno/h ; i_c(f) = 2*pi*f*C_c*V_media ; V_media = I*R/2 (bobina referida a un extremo)
+ bobina met3 w=0,3 (62,7 ohm): V_media a 10 mA = 314 mV
+   nodo  1x1  um: C_c=   12.0 aF | i_c =     2.36 pA (100k)     23.6 pA (1M)     236.2 pA (10M) | excursion en nodo flotante de 12,4 fF:  0.303 mV -> rectificacion par en dc-IV  8.6e-06
+   nodo  3x3  um: C_c=  107.9 aF | i_c =    21.26 pA (100k)    212.6 pA (1M)    2125.6 pA (10M) | excursion en nodo flotante de 12,4 fF:  2.705 mV -> rectificacion par en dc-IV  6.8e-04
+   nodo 10x10 um: C_c= 1438.8 aF | i_c =   283.41 pA (100k)   2834.1 pA (1M)   28340.7 pA (10M) | excursion en nodo flotante de 12,4 fF: 32.594 mV -> rectificacion par en dc-IV  9.9e-02
+ bobina met3 w=1,5 (12,5 ohm): V_media a 10 mA = 62 mV
+   nodo  1x1  um: C_c=   12.0 aF | i_c =     0.47 pA (100k)      4.7 pA (1M)      47.1 pA (10M) | excursion en nodo flotante de 12,4 fF:  0.060 mV -> rectificacion par en dc-IV  3.4e-07
+   nodo  3x3  um: C_c=  107.9 aF | i_c =     4.24 pA (100k)     42.4 pA (1M)     423.8 pA (10M) | excursion en nodo flotante de 12,4 fF:  0.539 mV -> rectificacion par en dc-IV  2.7e-05
+   nodo 10x10 um: C_c= 1438.8 aF | i_c =    56.50 pA (100k)    565.0 pA (1M)    5650.1 pA (10M) | excursion en nodo flotante de 12,4 fF:  6.498 mV -> rectificacion par en dc-IV  3.9e-03
+   Blindaje a tierra (met1/met2): divide C_c por 1e2..1e3 (BARRIDO, no calculado con solver de campo): rectificacion cae 1e4..1e6.
+   Corriente de bombeo de referencia: 10x10 um, 10 MHz, Dit 1e10: ver (d). Senal 1e-4 de 13 nA = 1,3 pA.
+   blindaje met1 macizo de 20 um: wL/R_hoja a 1 MHz = 1.3e-03 (<<1: transparente al campo)
+   blindaje met1 macizo de 20 um: wL/R_hoja a 10 MHz = 1.3e-02 (<<1: transparente al campo)
+
+## (c3) térmico. Coeficientes de temperatura (cálculo):
+   dc-IV a VF=0.3: dlnI/dT = dln(ni)/dT - VF/(2*k*T^2/q) = 5.78 %/K
+   dc-IV a VF=0.4: dlnI/dT = dln(ni)/dT - VF/(2*k*T^2/q) = 5.14 %/K
+   generacion/fuga (ni): 7.72 %/K ; bombeo de carga: -(2k/q)*ln(arg)/dE ~ -0,3 %/K (ver d)
+   Onda térmica 1D calentador(metal)->óxido(2,88 um)->Si, acotada por el valor estacionario 3D (0,4732*P/(k*lado)).
+   Corriente senoidal bipolar a f: potencia alterna P0/2 a 2f (misma armónica que una señal par en B).
+  met3 w=0,3 N=5 (6,27 mW, lado 22,6 um): dT_Si estacionario (potencia media) = 887 mK
+     f_bobina=    1000 Hz (calor a      2000 Hz): dT_Si alterna =   443.5189 mK -> dc-IV  2.56e-02 ; bombeo  1.33e-03 (relativo)
+     f_bobina=   10000 Hz (calor a     20000 Hz): dT_Si alterna =   443.5189 mK -> dc-IV  2.56e-02 ; bombeo  1.33e-03 (relativo)
+     f_bobina=  100000 Hz (calor a    200000 Hz): dT_Si alterna =    46.2700 mK -> dc-IV  2.67e-03 ; bombeo  1.39e-04 (relativo)
+     f_bobina= 1000000 Hz (calor a   2000000 Hz): dT_Si alterna =     0.0491 mK -> dc-IV  2.83e-06 ; bombeo  1.47e-07 (relativo)
+     f_bobina=10000000 Hz (calor a  20000000 Hz): dT_Si alterna =     0.0000 mK -> dc-IV  1.33e-14 ; bombeo  6.92e-16 (relativo)
+  met3 w=1,5 N=5 (1,25 mW, lado 28,7 um): dT_Si estacionario (potencia media) = 139 mK
+     f_bobina=    1000 Hz (calor a      2000 Hz): dT_Si alterna =    69.6276 mK -> dc-IV  4.02e-03 ; bombeo  2.09e-04 (relativo)
+     f_bobina=   10000 Hz (calor a     20000 Hz): dT_Si alterna =    69.6276 mK -> dc-IV  4.02e-03 ; bombeo  2.09e-04 (relativo)
+     f_bobina=  100000 Hz (calor a    200000 Hz): dT_Si alterna =     5.7200 mK -> dc-IV  3.30e-04 ; bombeo  1.72e-05 (relativo)
+     f_bobina= 1000000 Hz (calor a   2000000 Hz): dT_Si alterna =     0.0061 mK -> dc-IV  3.50e-07 ; bombeo  1.82e-08 (relativo)
+     f_bobina=10000000 Hz (calor a  20000000 Hz): dT_Si alterna =     0.0000 mK -> dc-IV  1.65e-15 ; bombeo  8.55e-17 (relativo)
+   Señal 1e-4 equivale a 1,7 mK (dc-IV) o 33 mK (bombeo).
+
+## (d) Bombeo de carga
+  Vfb implícito de BSIM4 (vfb = vth0 - phi_s - k1*sqrt(phi_s), phi_s = 2Vt ln(ndep/ni) [+0,4 de BSIM4.5+ no incluido]):
+   nfet_01v8        |vth0|=0.519 V phi_s=0.842 Vfb_eq=-0.819 V  ventana |Vth-Vfb|=1.34 V ; margen total con pulso de 1,8 V = 0.46 V (0.23 V por lado si el cuerpo se centra)
+   pfet_01v8        |vth0|=1.060 V phi_s=0.842 Vfb_eq=-0.181 V  ventana |Vth-Vfb|=1.24 V ; margen total con pulso de 1,8 V = 0.56 V (0.28 V por lado si el cuerpo se centra)
+   nfet_g5v0d10v5   |vth0|=0.789 V phi_s=0.842 Vfb_eq=-0.864 V  ventana |Vth-Vfb|=1.65 V ; margen total con pulso de 1,8 V = 0.15 V (0.07 V por lado si el cuerpo se centra)
+   pfet_g5v0d10v5   |vth0|=1.011 V phi_s=0.842 Vfb_eq=-0.377 V  ventana |Vth-Vfb|=1.39 V ; margen total con pulso de 1,8 V = 0.41 V (0.21 V por lado si el cuerpo se centra)
+   nfet sobre sustrato a 0 V con puerta 0..1,8 V: Vgb_min = 0 > Vfb = -0,81 V -> nunca acumula (queda en agotamiento).
+   Densidad mayoritaria necesaria para llenar en media fase de 10 MHz (50 ns): n > 1/(sigma*vth*t) = 2.0e+15 cm-3 (sigma 1e-15) .. 2.0e+16 (sigma 1e-16); pozo: 1,7e17
+  Icp = q*f*A*Dit*dE ; dE = -2kT ln( vth*ni*sigma*sqrt(tr*tf)*|Vfb-Vt|/dVg )  (Groeseneken 1984, fórmula DE MEMORIA)
+   tr=tf=1 ns sigma=1e-15: dE = 0.85 eV ; d(dE)/dT/dE = -0.33 %/K (solo el término explícito)
+   tr=tf=1 ns sigma=1e-16: dE = 0.97 eV ; d(dE)/dT/dE = -0.33 %/K (solo el término explícito)
+   tr=tf=10 ns sigma=1e-15: dE = 0.73 eV ; d(dE)/dT/dE = -0.33 %/K (solo el término explícito)
+   tr=tf=10 ns sigma=1e-16: dE = 0.85 eV ; d(dE)/dT/dE = -0.33 %/K (solo el término explícito)
+  Tabla con dE = 0.75 eV (tr 1..10 ns, sigma 1e-15..1e-16 -> 0,73..0,97 eV):
+   Dit[cm-2eV-1]   area    trampas   Icp(1 MHz)   Icp(10 MHz)  | señal 1e-4 a 10 MHz | cargas/ciclo de señal
+   1.00e+09   1x1  um       7.5       1.201 pA      12.02 pA |      1.202 fA     |   0.0008   [Hori fresco ~1e9 cm-2]
+   1.00e+09   3x3  um      67.5      10.814 pA     108.14 pA |     10.814 fA     |   0.0068   [Hori fresco ~1e9 cm-2]
+   1.00e+09  10x10 um     750.0     120.150 pA    1201.50 pA |    120.150 fA     |   0.0750   [Hori fresco ~1e9 cm-2]
+   1.17e+10   1x1  um      87.8      14.058 pA     140.58 pA |     14.058 fA     |   0.0088   [Sharov sin estrés]
+   1.17e+10   3x3  um     789.8     126.518 pA    1265.18 pA |    126.518 fA     |   0.0790   [Sharov sin estrés]
+   1.17e+10  10x10 um    8775.0    1405.755 pA   14057.55 pA |   1405.755 fA     |   0.8775   [Sharov sin estrés]
+   1.00e+11   1x1  um     750.0     120.150 pA    1201.50 pA |    120.150 fA     |   0.0750   [tras estrés FN (Hori)]
+   1.00e+11   3x3  um    6750.0    1081.350 pA   10813.50 pA |   1081.350 fA     |   0.6750   [tras estrés FN (Hori)]
+   1.00e+11  10x10 um   75000.0   12015.000 pA  120150.00 pA |  12015.000 fA     |   7.5000   [tras estrés FN (Hori)]
+   1.00e+12   1x1  um    7500.0    1201.500 pA   12015.00 pA |   1201.500 fA     |   0.7500   [Moxim/Sharov estresado]
+   1.00e+12   3x3  um   67500.0   10813.500 pA  108135.00 pA |  10813.500 fA     |   6.7500   [Moxim/Sharov estresado]
+   1.00e+12  10x10 um  750000.0  120150.000 pA 1201500.00 pA |  120150.000 fA     |  75.0000   [Moxim/Sharov estresado]
+  Diodo con puerta (dc-IV): Imax = (q/2)*ni*sigma*vth*Dit*A*(q|VF|)*exp(q|VF|/2kT)   (Harmon 2020 ec. 1)
+   Dit=1.00e+09 sigma=1e-16 | VF=0.3 1x1:    0.0008 pA | VF=0.3 10x10:    0.0794 pA | VF=0.4 1x1:    0.0073 pA | VF=0.4 10x10:    0.7317 pA
+   Dit=1.00e+09 sigma=1e-15 | VF=0.3 1x1:    0.0079 pA | VF=0.3 10x10:    0.7938 pA | VF=0.4 1x1:    0.0732 pA | VF=0.4 10x10:    7.3168 pA
+   Dit=1.17e+10 sigma=1e-16 | VF=0.3 1x1:    0.0093 pA | VF=0.3 10x10:    0.9288 pA | VF=0.4 1x1:    0.0856 pA | VF=0.4 10x10:    8.5606 pA
+   Dit=1.17e+10 sigma=1e-15 | VF=0.3 1x1:    0.0929 pA | VF=0.3 10x10:    9.2878 pA | VF=0.4 1x1:    0.8561 pA | VF=0.4 10x10:   85.6064 pA
+   Dit=1.00e+12 sigma=1e-16 | VF=0.3 1x1:    0.7938 pA | VF=0.3 10x10:   79.3825 pA | VF=0.4 1x1:    7.3168 pA | VF=0.4 10x10:  731.6786 pA
+   Dit=1.00e+12 sigma=1e-15 | VF=0.3 1x1:    7.9382 pA | VF=0.3 10x10:  793.8248 pA | VF=0.4 1x1:   73.1679 pA | VF=0.4 10x10: 7316.7861 pA
+  Comprobación contra Harmon 2020 fig. 7a (leída): A=4,1e-4 cm2, 1 Mrad, VF=0,3 -> ~5e-9 A  => Dit*sigma = 1.54e-05 (p.ej. Dit 1e11 con sigma 1,5e-16)

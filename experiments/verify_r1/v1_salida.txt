@@ -1,0 +1,72 @@
+kT 0.025851999786435535
+F12(0) 0.7651470246254094
+== A1
+N=1e+19 bgn=0: Boltz Vbi=1.071 W=16.65nm E=1.29MV/cm | FD Vbi=1.104 W=16.90 E=1.31 xi_n=-23meV xi_p=8meV
+N=1e+19 bgn=0.1: Boltz Vbi=1.071 W=16.65nm E=1.29MV/cm | FD Vbi=1.004 W=16.12 E=1.25 xi_n=-23meV xi_p=8meV
+N=1e+20 bgn=0: Boltz Vbi=1.191 W=5.55nm E=4.29MV/cm | FD Vbi=1.321 W=5.85 E=4.52 xi_n=64meV xi_p=137meV
+N=1e+20 bgn=0.1: Boltz Vbi=1.191 W=5.55nm E=4.29MV/cm | FD Vbi=1.221 W=5.62 E=4.35 xi_n=64meV xi_p=137meV
+== A2
+Nc=2.80e+19: n umbral EF=Ec 2.14e+19; xi=2kT 7.91e+19
+Nc=3.20e+19: n umbral EF=Ec 2.45e+19; xi=2kT 9.04e+19
+Nv=1.04e+19: p umbral EF=Ev 7.96e+18; xi=2kT 2.94e+19
+Nv=1.80e+19: p umbral EF=Ev 1.38e+19; xi=2kT 5.08e+19
+Nv=3.10e+19: p umbral EF=Ev 2.37e+19; xi=2kT 8.75e+19
+== A3
+Boltz bgn=0 B=2e+07: Emax -> 4.72 decadas; Emedio(Emax/2) -> 9.45
+Boltz bgn=0 B=4e+07: Emax -> 9.45 decadas; Emedio(Emax/2) -> 18.89
+Boltz bgn=0.1 B=2e+07: Emax -> 4.72 decadas; Emedio(Emax/2) -> 9.45
+Boltz bgn=0.1 B=4e+07: Emax -> 9.45 decadas; Emedio(Emax/2) -> 18.89
+FD bgn=0 B=2e+07: Emax -> 4.72 decadas; Emedio(Emax/2) -> 9.45
+FD bgn=0 B=4e+07: Emax -> 9.45 decadas; Emedio(Emax/2) -> 18.90
+FD bgn=0.1 B=2e+07: Emax -> 4.97 decadas; Emedio(Emax/2) -> 9.94
+FD bgn=0.1 B=4e+07: Emax -> 9.94 decadas; Emedio(Emax/2) -> 19.88
+== B2/B3 FD 2D
+R linea=8.929 ohm P=37.89 uW  P/L=3.789 W/m  J=4.09 MA/cm2 ; I/w=14.7 mA/um
+kox=0.8: Rth'=0.615 K/(W/m) tau63=0.917 us t90=6.99 us | dT(2D,sin extremos)=2.33 K; con extremos: media 1.21 max 1.72 (L_h=2.49 um) | 1D slab tau=4h2/pi2a=1.53 us | cilindro acosh Rth=0.639
+kox=1.0: Rth'=0.492 K/(W/m) tau63=0.734 us t90=5.59 us | dT(2D,sin extremos)=1.87 K; con extremos: media 1.05 max 1.47 (L_h=2.23 um) | 1D slab tau=4h2/pi2a=1.23 us | cilindro acosh Rth=0.511
+kox=1.1: Rth'=0.448 K/(W/m) tau63=0.667 us t90=5.08 us | dT(2D,sin extremos)=1.70 K; con extremos: media 0.99 max 1.38 (L_h=2.12 um) | 1D slab tau=4h2/pi2a=1.12 us | cilindro acosh Rth=0.465
+kox=1.4: Rth'=0.352 K/(W/m) tau63=0.524 us t90=3.99 us | dT(2D,sin extremos)=1.33 K; con extremos: media 0.84 max 1.15 (L_h=1.88 um) | 1D slab tau=4h2/pi2a=0.88 us | cilindro acosh Rth=0.365
+ztop 5e-06 (np.float64(0.4572413220771634), np.float64(7.262841521141424e-07), np.float64(6.34542766467509e-06))
+ztop 1.1e-05 (np.float64(0.44757077230411385), np.float64(6.67081199523812e-07), np.float64(5.084916808439943e-06))
+ztop 3e-05 (np.float64(0.44584153551162164), np.float64(6.570256550592835e-07), np.float64(4.874147525798911e-06))
+1D sin dispersion lateral: dT= 33.8567831632653 K
+== B5
+4.3 {'linR': 1.128, 'logR': 1.209, 'pot': 1.109}
+6.5 {'linR': 1.202, 'logR': 1.263, 'pot': 1.185}
+12.9 {'linR': 1.348, 'logR': 1.417, 'pot': 1.37}
+tabla sim: 4.3 lin 1.122 pchip logR 1.125
+tabla sim: 6.5 lin 1.196 pchip logR 1.195
+tabla sim: 12.9 lin 1.403 pchip logR 1.403
+== C1
+w=0.3 s=0.3 sq z=3.21um: 226.9952 mT/mA  (radios 10.15..12.55); 2.65 mT requiere 0.0 mA
+w=0.3 s=0.3 sq z=2.50um: 235.7617 mT/mA  (radios 10.15..12.55); 2.65 mT requiere 0.0 mA
+w=0.3 s=0.3 sq z=0.00um: 250.6070 mT/mA  (radios 10.15..12.55); 2.65 mT requiere 0.0 mA
+w=0.3 s=0.3 circ z=3.21um: 247.3105 mT/mA  (radios 10.15..12.55); 2.65 mT requiere 0.0 mA
+w=0.3 s=0.3 circ z=2.50um: 258.7360 mT/mA  (radios 10.15..12.55); 2.65 mT requiere 0.0 mA
+w=0.3 s=0.3 circ z=0.00um: 278.3542 mT/mA  (radios 10.15..12.55); 2.65 mT requiere 0.0 mA
+w=1.5 s=0.3 sq z=3.21um: 189.6601 mT/mA  (radios 10.75..17.95); 2.65 mT requiere 0.0 mA
+w=1.5 s=0.3 sq z=2.50um: 194.9173 mT/mA  (radios 10.75..17.95); 2.65 mT requiere 0.0 mA
+w=1.5 s=0.3 sq z=0.00um: 203.6587 mT/mA  (radios 10.75..17.95); 2.65 mT requiere 0.0 mA
+w=1.5 s=0.3 circ z=3.21um: 207.7511 mT/mA  (radios 10.75..17.95); 2.65 mT requiere 0.0 mA
+w=1.5 s=0.3 circ z=2.50um: 214.6353 mT/mA  (radios 10.75..17.95); 2.65 mT requiere 0.0 mA
+w=1.5 s=0.3 circ z=0.00um: 226.2077 mT/mA  (radios 10.75..17.95); 2.65 mT requiere 0.0 mA
+w=1.47 s=0.3 sq z=3.21um: 190.4194 mT/mA  (radios 10.74..17.82); 2.65 mT requiere 0.0 mA
+w=1.47 s=0.3 sq z=2.50um: 195.7326 mT/mA  (radios 10.74..17.82); 2.65 mT requiere 0.0 mA
+w=1.47 s=0.3 sq z=0.00um: 204.5695 mT/mA  (radios 10.74..17.82); 2.65 mT requiere 0.0 mA
+w=1.47 s=0.3 circ z=3.21um: 208.5637 mT/mA  (radios 10.74..17.82); 2.65 mT requiere 0.0 mA
+w=1.47 s=0.3 circ z=2.50um: 215.5208 mT/mA  (radios 10.74..17.82); 2.65 mT requiere 0.0 mA
+w=1.47 s=0.3 circ z=0.00um: 227.2194 mT/mA  (radios 10.74..17.82); 2.65 mT requiere 0.0 mA
+== C2 1.4705882352941178
+== C3
+n=5e+16 t=0.5um: VH=0.6616 mV/mA  Rs(mu=800..400)~
+n=5e+16 t=2.0um: VH=0.1654 mV/mA  Rs(mu=800..400)~
+n=5e+17 t=0.5um: VH=0.0662 mV/mA  Rs(mu=800..400)~
+n=5e+17 t=2.0um: VH=0.0165 mV/mA  Rs(mu=800..400)~
+via Rs=950 mu=700: VH=0.176 mV/mA
+via Rs=1700 mu=700: VH=0.315 mV/mA
+via Rs=950 mu=1000: VH=0.252 mV/mA
+via Rs=1700 mu=1000: VH=0.451 mV/mA
+via Rs=950 mu=400: VH=0.101 mV/mA
+via Rs=1700 mu=400: VH=0.180 mV/mA
+== C5
+T =100 q/(d^2 I) = 0.11444118814285713 s ; sin demod seno: x pi^2/8 = 0.14118615677007976  ; ref continua conocida (sin restar): 25q/(d^2 I)*2= 0.057220594071428564

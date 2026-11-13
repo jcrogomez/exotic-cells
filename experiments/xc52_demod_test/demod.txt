@@ -1,0 +1,17 @@
+response                                                                         D (product)    odd part
+linear in B (Hall, induction)                 y = h*B                              0.000e+00   2.000e-03
+quadratic in B (ordinary magnetoresistance)   y = a*B^2                            2.000e-06   0.000e+00
+spin-pair, saturating                         y = B^2/(B^2+B0^2), B0 = 0.5 mT      4.706e-01   0.000e+00
+heat, separate windings                       y = c*(I1^2+I2^2)                    0.000e+00   0.000e+00
+heat, shared return resistance                y = c*(I1+I2)^2                      1.458e-05   0.000e+00
+electrical coupling, linear                   y = e1*V1 + e2*V2                    0.000e+00   1.000e+00
+electrical coupling, rectified product        y = g*V1*V2                          1.000e+00   0.000e+00
+bridge mismatch, static offset                y = y0                               0.000e+00   0.000e+00
+
+analytic check: for y = a*B^2, D = 2*a*B1*B2 = 2e-06
+
+field sweep, both windings equal (B1 = B2 = b): D of quadratic vs D of saturating, normalised at b = 0.25 mT
+  b = 0.25 mT   quadratic x   1.0   saturating x 1.00
+  b = 0.50 mT   quadratic x   4.0   saturating x 1.60
+  b = 1.00 mT   quadratic x  16.0   saturating x 1.88
+  b = 2.00 mT   quadratic x  64.0   saturating x 1.97

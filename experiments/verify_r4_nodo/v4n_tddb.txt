@@ -1,0 +1,15 @@
+ANCLA Q (cota inferior) V_ox=3.3: t63(1 um^2, 27 C) >= 1.2e+03 .. 9.1e+16 s (rango de la cota según modelo)
+ANCLA Q (cota inferior) V_ox=5.0: t63(1 um^2, 27 C) >= 8.1e-09 .. 7.3e+12 s (rango de la cota según modelo)
+ANCLA Q (cota inferior) V_ox=6.0: t63(1 um^2, 27 C) >= 4.8e-16 .. 2.8e+10 s (rango de la cota según modelo)
+ANCLA Q (cota inferior) V_ox=7.0: t63(1 um^2, 27 C) >= 2.8e-23 .. 1.1e+08 s (rango de la cota según modelo)
+# ANCLA QBD: t63(1 um^2) frente a V_ox; rango sobre QBD 1–1000 C/cm^2, beta 1.2–2.5, (phi,mox) (3.0,0.40)..(3.2,0.50)
+  V_ox=3.3: 7.4e+05 .. 2.9e+13 s
+  V_ox=5.0: 3.6e+01 .. 1.6e+08 s
+  V_ox=5.7: 3.2e+00 .. 8.8e+06 s
+  V_ox=6.5: 3.9e-01 .. 6.6e+05 s
+  V_ox=7.0: 1.3e-01 .. 1.7e+05 s
+  V_ox=7.4: 6.1e-02 .. 6.9e+04 s
+  V_ox=8.0: 2.2e-02 .. 2.0e+04 s
+  V_ox para t63 = 1 h (1 um^2): 4.04 .. 9.00 V
+  V_ox para t63 = 1 min: 4.87 .. 9.00 V
+  V_ox para t63 = 1 s: 6.12 .. 9.00 V

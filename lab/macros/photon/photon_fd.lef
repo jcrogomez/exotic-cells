@@ -1,0 +1,46 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO photon_fd
+  CLASS BLOCK ;
+  FOREIGN photon_fd ;
+  ORIGIN 9.700 9.700 ;
+  SIZE 22.400 BY 22.400 ;
+  PIN DNW
+    ANTENNADIFFAREA 44.639999 ;
+    PORT
+      LAYER nwell ;
+        RECT -9.700 8.900 12.700 12.700 ;
+        RECT -9.700 -5.900 -5.900 8.900 ;
+        RECT 8.900 -5.900 12.700 8.900 ;
+        RECT -9.700 -9.700 12.700 -5.900 ;
+      LAYER li1 ;
+        RECT -7.965 10.635 10.965 10.965 ;
+        RECT -7.965 -7.635 -7.635 10.635 ;
+        RECT 10.635 -7.635 10.965 10.635 ;
+        RECT -7.965 -7.965 10.965 -7.635 ;
+    END
+  END DNW
+  PIN K
+    ANTENNADIFFAREA 0.168100 ;
+    PORT
+      LAYER nwell ;
+        RECT 1.080 1.080 1.920 1.920 ;
+      LAYER li1 ;
+        RECT 1.335 1.335 1.665 1.665 ;
+    END
+  END K
+  PIN A
+    ANTENNADIFFAREA 11.040000 ;
+    PORT
+      LAYER li1 ;
+        RECT -0.965 3.635 3.965 3.965 ;
+        RECT -0.965 -0.635 -0.635 3.635 ;
+        RECT 3.635 -0.635 3.965 3.635 ;
+        RECT -0.965 -0.965 3.965 -0.635 ;
+    END
+  END A
+END photon_fd
+END LIBRARY
+

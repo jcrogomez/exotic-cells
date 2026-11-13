@@ -1,0 +1,24 @@
+b05_3_contactos. Área 0.0289 um2, radio equivalente 0.096 um
+
+(3a) Densidad de corriente [A/cm2] frente a las líneas
+  I =  0.26 mA: contacto 9.00e+05 ; met1 0,14x0,36 5.16e+05 ; li 0,17x0,10 1.53e+06  (0.7x el límite LEF del mcon)
+  I =  0.36 mA: contacto 1.25e+06 ; met1 0,14x0,36 7.14e+05 ; li 0,17x0,10 2.12e+06  (1.0x el límite LEF del mcon)
+  I =  2.06 mA: contacto 7.13e+06 ; met1 0,14x0,36 4.09e+06 ; li 0,17x0,10 1.21e+07  (5.7x el límite LEF del mcon)
+  I =  4.10 mA: contacto 1.42e+07 ; met1 0,14x0,36 8.13e+06 ; li 0,17x0,10 2.41e+07  (11.4x el límite LEF del mcon)
+  I = 18.50 mA: contacto 6.40e+07 ; met1 0,14x0,36 3.67e+07 ; li 0,17x0,10 1.09e+08  (51.4x el límite LEF del mcon)
+
+(3b) Potencia y dT por contacto (rango = extremos de los supuestos térmicos)
+contacto              R Ohm               Rth K/W           N=1: I mA / P mW / dT K           N=8: I mA / P mW / dT K          N=32: I mA / P mW / dT K          N=72: I mA / P mW / dT K
+mcon (li-W-met1)        9.3   8.20e+04-1.10e+05        0.26 /  0.00 /     0-0           2.06 /  0.04 /     3-4           8.22 /  0.63 /    52-69         18.50 /  3.18 /   261-351   
+licon sobre poly      152.0   1.28e+05-3.85e+05        0.26 /  0.01 /     1-4           2.06 /  0.64 /    82-247         7.62 /  8.81 /  1131-3390        9.50 / 13.71 /  1759-5275  
+licon sobre n+        185.0   1.74e+04-2.61e+04        0.26 /  0.01 /     0-0           2.06 /  0.78 /    14-20          6.68 /  8.26 /   144-215         8.09 / 12.11 /   210-316   
+licon sobre p+        585.0   1.74e+04-2.61e+04        0.26 /  0.04 /     1-1           1.95 /  2.23 /    39-58          2.69 /  4.23 /    74-110         2.89 /  4.89 /    85-127   
+  Línea de met1 0,14x10 um para comparar (b05_1, ronda 1): 1-2 K a 2,06 mA; 142 K a 18,5 mA. Línea de li: ver b05_2.
+  Nota: la R del PDK es la del contacto virgen a campo bajo; con unión p+/n o n+/p en serie el camino real es difusión-contacto-difusión
+  (dos contactos en serie más la hoja de difusión: 120/197 Ohm/sq). N=72 es 18,5 mA: 9 veces EFLD-01.
+
+(3c) Calor por unidad de volumen en el sitio (P / volumen caliente supuesto), a 2,06 mA
+  mcon: tapón entero 0,17x0,17x0,34              P =    39.5 uW   4.02e+15 W/m3
+  licon-poly: disco de interfaz 0,17x0,17x0,02   P =   645.0 uW   1.12e+18 W/m3
+  li 0,17x0,10 por um                            P =   319.5 uW   1.88e+16 W/m3
+  met1 0,14x0,36 por um                          P =     3.8 uW   7.49e+13 W/m3

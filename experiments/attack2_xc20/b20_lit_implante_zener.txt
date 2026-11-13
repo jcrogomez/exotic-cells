@@ -1,0 +1,386 @@
+b20 · LITERATURA: ABRUPTIDAD LATERAL DE IMPLANTES S/D (~130 nm) Y RUPTURA ZENER DE UNIONES p+/n+ EN CMOS
+====================================================================================================
+Hora (`date`): Thu Nov 12 13:44:15 EST 2026. Búsqueda web + lectura de PDF/CSV descargados. Nada editado fuera de este archivo.
+
+GRADOS (uno por número):
+  LEÍDA      = abrí el texto/tabla/figura; doy URL y lugar.
+  LEÍDA-FIG  = leída de una figura (digitalizada a ojo o por píxel); error típico ±0,1 V o ×1,5 en corriente.
+  RESUMEN    = solo abstract.   FRAGMENTO = snippet de buscador o resumen automático de la página, no abrí el original.
+  MEMORIA    = de memoria, sin fuente abierta en esta ronda.
+  CÁLCULO    = aritmética mía sobre números con grado propio (se dice cuáles).   [?] = no encontrado.
+
+RESUMEN EN CINCO LÍNEAS
+  1. Dispersión lateral (SRIM, tabla leída) a 20–50 keV: As 5,3–9,6 nm; P 9,8–19,8 nm; B 29,5–55,7 nm. No hay tabla leída para
+     5 y 30 keV ni para B < 10 keV (BF2): esos valores van como interpolación/extrapolación, no como dato.
+  2. En el borde de una máscara, el perfil lateral es erfc con σ = ΔR⊥ (+difusión): la pendiente local en el punto de media
+     concentración es 2,9·σ por década, no 1,44·σ. Con xj = 0,1 µm y LD = 0,06 µm (SkyWater, leídas), el S/D profundo de SKY130
+     cae lateralmente a ~20–35 nm/déc (n+) y ~25–50 nm/déc (p+). Los 7,2 nm/déc del ITRS 2001 son el REQUISITO de la extensión
+     bajo la puerta, no el S/D enmascarado con resina.
+  3. SkyWater: n+ de 1,8 V recibe solo NSDM (más la punta n, que NO tiene máscara dibujada propia: NTM es capa calculada);
+     p+ recibe PSDM + NTM (bloqueo de punta n, inferencia); alta tensión añade HVNTM + NTM + LVOM. Regla n/psd.6: en el borde
+     pegado NSDM y PSDM cierran con 0,000 µm; hvntm.6b: HVNTM también llega a 0 en el borde pegado. Implante de alta corriente
+     a 0°, punta a 7° con resina de 1,14 µm (sombra NTM 0,16 µm). No hay dosis/energías públicas. Rs: 120 Ω/sq (n+), 197 (p+).
+  4. Dutta (tesis U. Twente, TSMC 65 nm, p+/n+ lateral en n-well, sin siliciuro sobre la unión, W = 47,6 µm): VBR(1 mA) = 1,8 V a
+     d = 0; 2,5 V a 20 nm; 4,25 V a 60 nm; 5,95 V a 100 nm; 9,0–9,3 V a ≥ 240 nm. A d = 0 la inversa es túnel blando: ~1e-4 A a 1 V
+     (≈ 2 µA/µm), ~1 mA a 1,8 V (≈ 20 µA/µm). Para d ≤ 60 nm: sin dependencia de T, es BTBT.
+  5. Patentes/ESD: n+/p+ en 0,18 µm ≈ 4 V (National, US7056761); n+/p+ pegados con bloqueo de siliciuro 3–6 V (Sofics,
+     US7589944); US6268639 NO es un p+/n+ lateral pegado: es p−(2e18)/n+(2e19) vertical, 5,5–7 V.
+
+
+====================================================================================================
+(A) ABRUPTIDAD LATERAL
+====================================================================================================
+
+A1. Rp, ΔRp y ΔR⊥ en silicio (SRIM, blanco amorfo, sin canalización)
+---------------------------------------------------------------------
+Fuente: Ben Saleh, Albangahzi, Alarabi, "Monte Carlo Simulations of the Electronic and Nuclear Stopping Powers of Light and
+Heavy Ions in Silicon Material", Academy J. Basic Appl. Sci. (AJBAS) 7(2), dic. 2025, DOI 10.5281/zenodo.17075923.
+PDF: https://ojs.academy.edu.ly/index.php/AJBAS/article/download/428/268/650  — Tablas 2 (B), 3 (As), 5 (P); columnas
+Rp, "Rp=" (dispersión longitudinal), "Rp⊥" (dispersión lateral), en µm. Las tablas saltan de 10 a 20 a 50 keV: NO traen 5 ni
+30 keV. Advertencia: revista regional, pero son salidas de tabla de SRIM (verificables corriendo SRIM); no las crucé con Gibbons.
+
+  Todos en nm. Grado LEÍDA salvo donde se indica.
+  E (keV) |  As: Rp   ΔRp   ΔR⊥  |  P: Rp    ΔRp   ΔR⊥  |  B: Rp    ΔRp   ΔR⊥
+  --------+-----------------------+----------------------+----------------------
+     5    |   [?]   [?]  ~2,3 (*) |   [?]   [?]  ~3,7 (*)|   [?]   [?]  ~10 (*)
+    10    |  12,4   4,7   3,5     |  16,9   8,3   6,0    |  40,0  23,1  17,3
+    20    |  19,6   6,9   5,3     |  30,0  13,6   9,8    |  77,1  37,9  29,5
+    30    |   [?]   [?]  ~6,9 (+) |   [?]   [?] ~13,4 (+)|   [?]   [?] ~39 (+)
+    50    |  38,8  12,4   9,6     |  69,0  27,7  19,8    | 174,6  64,2  55,7
+    60    |  44,9  14,1  10,9     |  82,2  32,0  23,0    | 204,2  70,1  62,2
+    80    |  57,1  17,4  13,4     | 108,4  39,9  29,2    | 261,8  80,2  73,6
+   100    |  69,2  20,6  15,8     | 134,2  47,0  35,1    | 318,0  88,6  83,7
+  (+) CÁLCULO: interpolación log-log entre 20 y 50 keV de la misma tabla. No es dato leído.
+  (*) CÁLCULO: extrapolación log-log por debajo de 10 keV con la pendiente 10→20 keV. Poco fiable (SRIM mismo es dudoso a
+      pocos keV; ver nota de Wittmaack en FRAGMENTO de https://www.osti.gov/servlets/purl/1408290).
+
+  BF2+: energía equivalente del boro = E·11/49. No hay tabla leída de B por debajo de 10 keV, así que TODO lo de BF2 a
+  E ≤ 40 keV es extrapolación (CÁLCULO, misma ley de potencias, exponente 0,77):
+  E(BF2) keV |  5     10     20     30     50      80
+  E(B) keV   |  1,12  2,24   4,49   6,73   11,2    18,0
+  ΔR⊥(B) nm  | ~3    ~5,5   ~9    ~13    ~19 (≈) ~27 (≈)      (≈) = junto a puntos leídos de 10 y 20 keV; el resto, [?] real.
+  Apoyo independiente (LEÍDA): Solomon et al. (IBM RC22916, abajo) dicen que BF2 a 5 keV deja al B con "only 1.1 keV" y da
+  uniones "shallower and considerably sharper" que B a 2 keV.
+
+  Regla de bolsillo (FRAGMENTO, patente de implantadores, sin abrir): ΔR⊥ ≈ 0,7·ΔRp. En la tabla leída: As 0,74–0,77;
+  P 0,71–0,73; B 0,75–0,92 (CÁLCULO sobre la tabla).
+
+  Otras fuentes buscadas y no útiles para ΔR⊥: Coherent "Projected range statistics" (SRIM 2013, solo gráficas de Rp y ΔRp,
+  sin lateral; LEÍDA: https://www.coherent.com/content/dam/coherent/site/en/resources/datasheet/materials/ion-implantation-projected-range-statistics-ds.pdf);
+  Hössinger (TU Wien), nodo 2.2: solo figura (https://www.iue.tuwien.ac.at/phd/hoessinger/node22.html); Stanford EE212
+  Handout 14 (Plummer/Deal/Griffin 1999, copia en https://dunham.ece.uw.edu/ee528/notes/Chapter8.pdf): LEÍDA la fórmula
+  C(x,y) = Cvert(x)·exp(−y²/2ΔR⊥²) y la frase "the lateral profile under the mask is determined by the lateral straggle"
+  (ejemplo de As a 35 y 120 keV en borde de poly, Alvis et al.), sin tabla numérica de ΔR⊥. Berkeley EE143 L07: pide login.
+  Gibbons/Ziegler/Sze VLSI: no abiertos.
+
+A1b. De ΔR⊥ a nm/década en un borde de máscara (CÁLCULO propio)
+----------------------------------------------------------------
+  Perfil lateral bajo un borde de máscara ideal: C(y) = (C0/2)·erfc(y/(√2·σ)), σ² = ΔR⊥² + 2Dt.
+  Pendiente local G(y) = ln10·C/|dC/dy|:
+     en el borde (y = 0, C = C0/2):        G = 2,89·σ por década
+     a 1σ bajo la máscara (C = 0,16·C0):   G = 1,51·σ
+     a 2σ bajo la máscara (C = 0,023·C0):  G = 0,97·σ
+  → El "G = 1,44·σ" de la predicción P4 del prerregistro vale ~1σ dentro de la máscara. En d = 0 con los dos bordes
+    coincidentes (T2: cada implante a media altura) corresponde G ≈ 2,9·σ, el doble. Si un lado domina y la unión cae en la
+    cola del otro, baja hacia 1–1,5·σ.
+  Solo por dispersión (sin difusión ni pendiente de resina), en el punto de media altura:
+     As 30–50 keV: σ = 6,9(+)–9,6 nm → G ≈ 20–28 nm/déc.      As 20 keV: 15 nm/déc.
+     P 20–30 keV:  σ = 9,8–13,4(+) nm → G ≈ 28–39 nm/déc.
+     BF2 20–30 keV (B 4,5–6,7 keV): σ ≈ 9–13 nm (extrapolado) → G ≈ 27–37 nm/déc.   B 10 keV: 50 nm/déc.
+
+A2. Recetas típicas de S/D, extensiones y halos; activación
+------------------------------------------------------------
+  No encontré una receta completa publicada de un proceso de 130 nm de fundición (las de SKY130 no son públicas). Lo leído:
+
+  Fuente (grado)                                   | Qué                 | Especie, energía, dosis, tilt, recocido
+  -------------------------------------------------+---------------------+---------------------------------------------------
+  US6743686 / US6518136, IBM, prioridad 2000-12-14 | Extensión n         | As 2–10 keV, 1–4e15 cm-2
+  (FRAGMENTO: resumen automático de Google Patents,| Halo p              | B 3–10 keV, tilt 10–30°, 4 rotaciones, 5e13–5e14
+   https://patents.google.com/patent/US6743686;    | S/D profundo n      | As ~50 keV, 5–10e15
+   dispositivo sub-50 nm, no 130 nm)               | Recocidos           | 1000–1050 °C 2–5 s; spike 800–1050 °C, subida >100 °C/s
+                                                   | Objetivo abruptidad | extensión < 4 nm/déc; halo < 20 nm/déc
+  US7557022, Texas Instruments, 2006 (FRAGMENTO,   | LDD n               | As 1–4 keV o P 1–8 keV, 5e13–1,5e15; prof. 10–45 nm
+   https://patents.google.com/patent/US7557022)    | Halo p              | B 5–20 keV, In 20–100, BF2 20–100 keV; 5e12–5e14
+                                                   | S/D profundo n      | As 15–40 keV (o P 1–10 keV), 5e14–1e16; prof. 10–120 nm
+  US6507066 (memoria flash; FRAGMENTO de buscador) | S/D n               | As 25–40 keV, 5e14–5e15;  halo BF2 10–30 keV
+  Papel NYCU (no 130 nm; FRAGMENTO de buscador,    | PMOS                | LDD BF2 25 keV 1e13; S/D p+ BF2 30 keV 2e15; RTA
+   https://ir.lib.nycu.edu.tw/bitstream/11536/32433/1/000077017500019.pdf)                 1000 °C 30 s; halo As 130 keV
+  Solomon et al., IBM RC22916 (2003) (LEÍDA,       | Uniones de prueba   | PAI Ge 15 keV 3e14; As 3 keV 2,5e15; B 2 keV 1e15;
+   Tabla I y sec. "Sample preparation")            | tipo CMOS           | BF2 5 keV 1e15; RTA 5 s a 1050 °C (n/p) y 1000 °C (p/n)
+  ITRS 2001 FEP, tabla de "Thermal/Thin film/      | Nodo 130 nm (2001)  | Xj extensión 27–45 nm; Xj de contacto 48–95 nm;
+   Doping" (LEÍDA, PDF JEITA abajo)                |                     | espaciador 48–95 nm; Rs máx. extensión PMOS 400 Ω/sq
+
+  Lectura para xj ≈ 0,1 µm (SKY130): con Rp(As, 50 keV) = 38,8 nm y ΔRp = 12,4 nm (LEÍDAS), un As de 40–60 keV y un
+  BF2 de 20–30 keV / B de 5–8 keV son lo coherente con 0,1 µm tras recocido — INFERENCIA mía (MEMORIA de recetas de
+  0,18–0,25 µm: As 40–60 keV 3–5e15, BF2 20–30 keV 2–3e15, RTA 1000–1050 °C 5–10 s o spike). Energía/dosis de SKY130: [?].
+
+  Concentración activa:
+   · Boro: "at an annealing temperature of 1000 °C, the maximum solid solubility of boron is about 2E20 atoms/cm3"
+     (FRAGMENTO de buscador, patente US6815770; no abierta).
+   · As ~2e20 cm-3 activo a ~1000–1050 °C (límite por aglomerados, Solmi/Nobili): MEMORIA; el buscador solo devolvió las
+     referencias (Solmi & Nobili 1998; revisión CNR https://iris.cnr.it/handle/20.500.14243/1401), sin números.
+   · P ~3–4e20: MEMORIA / "shoulder at 4e20" en P+C con spike (FRAGMENTO, resumen MRS 2006).
+   · Activación medida en uniones implantadas con RTA de 5 s (LEÍDA, Solomon Tabla 5, CV frente a SIMS): 0,83–1,07 en casi
+     todos los cuadrantes; 0,53–0,65 en los de dosis más alta de las obleas p/n.
+   · Cota de SKY130 (CÁLCULO sobre números LEÍDOS de SkyWater): Rs = 120 Ω/sq (n+) y 197 Ω/sq (p+) con xj = 0,1 µm →
+     resistividad media ≈ 1,2e-3 y 2,0e-3 Ω·cm → dopado activo MEDIO ≈ 5–7e19 cm-3 en ambos (curvas de Irvin de MEMORIA);
+     pico plausible 1–2e20. Apoya barrer Np, Nn en 5e19–2e20, no 3e20.
+
+A3. Abruptidad medida / requerida; difusión
+--------------------------------------------
+  Fuente (grado)                               | Dato
+  ---------------------------------------------+-----------------------------------------------------------------------------
+  ITRS 2001, Front End Processes (LEÍDA;       | "Extension lateral abruptness (nm/decade) [I]": 7,2 (2001, 130 nm) · 5,8 (2002)
+   https://semicon.jeita.or.jp/STRJ/ITRS/2001/ |  · 5,0 (2003) · 4,1 (2004) · 3,5 (2005) · 3,1 (2006) · 2,8 (2007).
+   6_A20212_FEP.pdf, tabla de dopado; notas    | Nota [I]: "Channel abruptness ... = 0.11 * Isolated Line (nm) - based on Short
+   [G][I][J][K])                               |  Channel effect". [G] Xj ext = 0,55·Lg (±25 %). [J] Xj contacto = 1,1·Lg (±33 %).
+                                               | Es un REQUISITO para la extensión bajo la puerta (borde de poly). El ITRS NO da
+                                               |  abruptidad lateral del S/D profundo: [?].
+  Solomon et al., IBM RC22916, "Universal      | Perfil exponencial ajustado por CV (N = Nb0·exp(x/λ)) tras RTA de 5 s, VERTICAL:
+   Tunneling Behavior in Technologically       |  n/p (As 3 keV, 1050 °C): λ = 2,2–3,3 nm (Q1–Q7) → 5,0–7,5 nm/déc (CÁLCULO ×ln10)
+   Relevant PN Junction Diodes", 24-09-2003    |  p/n-B (B 2 keV, 1000 °C): λ = 2,9–5,0 nm (Q1–Q5) → 6,7–11,5 nm/déc
+   (LEÍDA, Tablas 2–4 y 6; luego J. Appl.      |  p/n-BF2 (5 keV, 1000 °C): λ = 3,8–5,6 nm (Q1–Q5) → 8,7–12,8 nm/déc
+   Phys. 2004). Copia: web.archive.org/web/    |  (cuadrantes de dosis alta: λ = 12–36 nm, "approaches linear grading").
+   2id_/https://dominoweb.draco.res.ibm.com/   | Gradiente en la unión (SIMS, Tabla 6): 0,74–1,34e26 cm-4 (n/p); 0,28–0,50e26
+   reports/rc22916.pdf                         |  (p/n-B); 0,43–0,82e26 (p/n-BF2). Dopado en la unión: 2e18 a ~7e19 cm-3.
+                                               | Es el MEJOR caso: implantes de ≤ 5 keV con preamorfización, perfil vertical.
+  US6743686 (IBM) (FRAGMENTO)                  | Objetivo: extensión < 4 nm/déc, halo < 20 nm/déc (sub-50 nm).
+  Varios SSRM (FRAGMENTO de buscador, sin      | 2,5 y 4,5 nm/déc en extensiones de boro avanzadas (Eyben et al., IMEC, MRS 2006);
+   nodo identificado)                          |  nodo posterior a 130 nm. No usar como dato de 130 nm.
+  Ghani et al. (Intel), "Scaling challenges    | Nodo 130 nm: extensión ~35 nm de profundidad, ~16 nm de subdifusión lateral
+   ..." VLSI 2000 (FRAGMENTO; PDF vacío)       |  (sin cifra de abruptidad).
+  SkyWater (LEÍDA, Tabla 3b)                   | S/D: XJ = 0,1 µm, LD (difusión lateral, "vertical space") = 0,06 µm; punta n
+                                               |  (As) 0,01 µm; difusión lateral máx. junto a aislamiento 0,007 µm.
+
+  Longitudes de difusión en spike/RTA (B con TED 10–30 nm; As 3–10 nm): MEMORIA; no abrí fuente con números. Los λ de
+  Solomon (leídos) ya incluyen la difusión de 5 s a 1000–1050 °C para implantes someros: equivalen a σ_total de ~2–5 nm,
+  es decir, la difusión en esas condiciones NO añade decenas de nm a As; para B de dosis alta sí (λ → 12–36 nm).
+  SIMS/SSRM lateral de un S/D profundo de 130 nm: [?] (no encontrado).
+
+  INTERVALO PLAUSIBLE DE G LATERAL PARA SKY130 (razonamiento, no medida):
+   a) Cota por dispersión pura en el borde de resina (A1b): n+ (As 30–50 keV) 20–28 nm/déc; p+ (BF2 20–30 keV) 27–37 nm/déc
+      (este último sobre ΔR⊥ extrapolado).
+   b) Cota por geometría de SkyWater: el n+/p+ cae de ~1e20 a nivel de pozo (4–6e17, LEÍDO Tabla 3a) = 2,2–2,4 décadas en
+      LD = 0,06 µm → 25–27 nm/déc de media lateral; en vertical, de Rp ≈ 30–40 nm a xj = 100 nm: 60–70 nm / 2,3 déc ≈ 26–30.
+   c) Suelo absoluto (uniones someras optimizadas, vertical): 5–8 nm/déc (As), 7–13 nm/déc (B/BF2) — Solomon.
+   → n+: 15–30 nm/déc (centro ~22);  p+: 20–50 nm/déc (centro ~30). G ≤ 7 nm/déc en un borde de RESINA de S/D profundo no
+     tiene apoyo en nada de lo leído; G ≤ 10 solo sería defendible para la punta n (As de pocos keV) y su borde no está
+     garantizado en la frontera (ver A5).
+
+A4. Borde de máscara de resina en implantes S/D
+------------------------------------------------
+  SkyWater (LEÍDA, https://skywater-pdk.readthedocs.io/en/main/rules/assumptions.html, Tablas 3f y 4):
+   · Photoresist thickness 1,14 µm (PRTHICKN); para implantes de punta de alta tensión 0,3 µm (PrThickImplant).
+   · Implant angles: "High current" 0° (HCIMPA); "Angle for tip implant" 7° (TipAng); HV tip 40°, twist 23°.
+   · NTM shadowing 0,16 µm; HVNTM shadowing 0,232 µm; HVPTM shadowing 0,089 µm; pseudo-shadowing 0,045 µm.
+     CÁLCULO: 1,14·tan 7° = 0,140 µm; 0,3·tan 40° = 0,252 µm — coherentes con las cifras de sombra.
+   · Min process bias 3σ tolerance 0,032 µm (PHTOL); 0,02 µm para poly. Min width of tip implant opening 0,1 µm.
+   · Ancho/espacio mínimo de NSDM/PSDM 0,38 µm; encierro de diff 0,125 µm.
+  Consecuencias (INFERENCIA): el S/D ("high current") va a 0° → sin sombra por tilt en la frontera pegada; la punta a 7°
+  sí queda sombreada hasta ~0,14–0,16 µm en el lado de la resina. Posición del borde: ±32 nm (3σ de sesgo de proceso) más
+  alineación NSDM↔PSDM (dos máscaras independientes): [?] — en 130 nm las máscaras de implante no críticas suelen alinear a
+  ±40–70 nm (MEMORIA). Es decir, d = 0 dibujado es d real ∈ ~[−70, +70] nm, con hueco o solape.
+  Pendiente de pared de la resina y dispersión desde la resina: Hook et al., "Lateral ion implant straggle and mask
+  proximity effect", IEEE TED 50, 1946 (2003) — NO se pudo abrir (certificado TLS de ewh.ieee.org); MEMORIA: trata de
+  implantes de pozo de alta energía (efecto a ~1 µm), no de S/D.
+
+A5. SkyWater SKY130: capas de implante
+---------------------------------------
+  Fuentes (todas LEÍDAS del repo google/skywater-pdk, docs/rules/, que es lo que publica readthedocs):
+   masks.csv (página "Masks"); gds_layers.csv; periphery.csv (página "Periphery rules"); assumptions.rst + assumptions/*.csv;
+   layers/table-f2b-mask.tsv (tabla F2b "qué máscaras se CREAN por dispositivo"); rcx/resistance-values.tsv;
+   device-details/diodes/diodes-table0.rst.
+   https://skywater-pdk.readthedocs.io/en/main/rules/masks.html · /periphery.html · /assumptions.html · /layers.html
+
+  Máscaras de implante usadas en SKY130 (masks.csv): NWM, HVTPM, LVTNM, HVTRM, TUNM, NTM ("N-tip Implant"), HVNTM ("High
+  Volt. N-tip"), LDNTM ("Lightly Doped N-tip"; gds: "N-tip implant on SONOS devices"), NSDM ("N+ Implant"), PSDM ("P+
+  Implant"), RPM, NPCM. NCM figura como NO usada en la tabla de máscaras, pero aparece "C" en F2b. NO existe máscara de punta
+  p (PTM) en la lista, aunque assumptions cita "HVPTM shadowing": la punta p o es general o usa otra máscara → [?].
+  En gds_layers hay capas de MÁSCARA calculadas (cnsdm 30:0, cpsdm 32:0, cntm 27:0, chvntm 39:0, cldntm 11:0) con
+  "mask add/drop": NTM no es capa de dibujo; la genera SkyWater (algoritmo CL no publicado).
+
+  Qué se crea por dispositivo (tabla F2b; C = creada):
+   n+ de 1,8 V (nmos 1.8V, nDiode)        : FOM, NSDM (+P1M en el FET). Nada más. Sin NTM, HVNTM ni LDNTM.
+   p+ en n-well (pmos 1.8V, pDiode)       : FOM, NWM, HVTPM, NCM, NTM, PSDM.
+   n+ alta tensión (HV nmos, HV nDiode)   : FOM, LVOM, HVNTM, NTM, NSDM.
+   p+ alta tensión (HV pmos, HV pDiode)   : FOM, NWM, LVOM, NTM, PSDM.
+   n diff resistor / HV n diff resistor   : FOM, NSDM / FOM, LVOM, HVNTM, NTM, NSDM.
+   Parasitic PNP                          : FOM, NWM, HVTPM, NCM, NTM, NSDM, PSDM.
+   Tomas (ptap, ntap)                     : NO hay fila en F2b → [?]. Por las reglas: una toma lleva el implante de su tipo
+                                            (n/psd.5b, .9); ntap = NSDM en n-well; ptap = PSDM en sustrato/p-well.
+  INFERENCIA sobre NTM (no lo dice ningún texto): NTM aparece "C" justo donde NO debe ir la punta n de baja tensión (todo p+,
+  y todo lo de alta tensión, que usa HVNTM), y falta en el nmos de 1,8 V → NTM actúa como bloqueo de la punta n. Entonces:
+   · n+ normal: implante N+ (NSDM) + punta n de As (LDNTIP = 0,01 µm, Tabla 3b) + lo que haya sin máscara (halo: [?], la
+     documentación no menciona halo/pocket en ningún sitio).
+   · p+ normal: implante P+ (PSDM), punta n bloqueada (NTM); punta p: [?].
+   · dentro de HVI: N+ + punta HV (HVNTM, 40°/23°, resina de 0,3 µm) con la punta LV bloqueada; óxido grueso (LVOM).
+  ¿Los bordes de las puntas coinciden con la frontera pegada?
+   · HV: SÍ por regla — hvntm.6b "Space, no overlap, between p+_tap and hvntm along the diff-butting edge": 0,000 µm
+     (fuera del borde pegado, 0,185 µm: hvntm.6a, .5). hvntm.X.1: "Hvntm can be drawn inside HVI. Drawn layer will be OR-ed
+     with the CL". hvntm.3: encierra al n+ dentro de HVI por 0,185 µm.
+   · LV (NTM): generación no publicada → [?]; por analogía con 6b lo esperable es que NTM corte en la misma frontera, pero
+     con sombra de hasta 0,16 µm por el tilt de 7° y resina de 1,14 µm: la punta n puede NO llegar al borde pegado.
+  "Butting"/"abutting" en las reglas (LEÍDAS, periphery.csv):
+   · difftap.3: espacio diff–diff, tap–tap o "non-abutting diff to tap" 0,270 µm.
+   · difftap.6: "Diff and tap are not allowed to extend beyond their abutting edge". difftap.7: borde pegado a borde no
+     coincidente 0,130 µm. difftap.4/.5: toma mínima acotada por una/dos difusiones 0,290/0,400 µm.
+   · difftap.12: "ESD_nwell_tap is considered shorted to the abutting diff".
+   · n/psd.5a/5b: encierro de diff/tap por nsdm(psdm) 0,125 µm "except for butting edge"; n/psd.6: "Enclosure of diff/tap
+     butting edge by nsdm (psdm)" = 0,000 µm; n/psd.7: NSDM/PSDM a diff/tap de implante opuesto 0,130 µm (bordes no pegados);
+     n/psd.8: "Nsdm and psdm cannot overlap diff/tap regions of opposite doping"; n/psd.9: diff y tap encerrados por su
+     implante, EXENTO para ":drc_tag:`areaid.zer`" (y gated_npn, anillos de sello).
+   · areaid.zr (81:18) "Area zener diode — Used to identify Zener diodes" (LVS): el proceso CONTEMPLA un Zener con implantes
+     que violan n/psd.9. No hay modelo, celda ni BV públicos de ese Zener: [?].
+   · poly.6: poly sobre diff a "abutting tap" 0,300 µm. hvdifftap.16: toma pegada a diff dentro de HVI, ancho mín. 0,700 µm;
+     hvdifftap.15b: n+ a p+tap no pegado dentro de HVI 0,370 µm.
+  Siliciuro: la documentación de reglas NO contiene "silicide"/"salicide" (grep vacío en periphery.csv, assumptions,
+  layers, hv). Dato indirecto LEÍDO: Rs N-diffusion 120 Ω/sq, P-diffusion 197 Ω/sq, HV N 114, HV P 191 (rcx/resistance-
+  values.tsv) → son valores de difusión SIN siliciuro en superficie (con siliciuro serían ~5–15 Ω/sq, MEMORIA). INFERENCIA:
+  en SKY130 la frontera pegada no queda puenteada por siliciuro salvo bajo un licon/LI que la cruce. Verificar con el
+  equipo de SkyWater o con una medida; es justo lo que Dutta y las patentes de ESD tuvieron que bloquear a propósito.
+  Rupturas de los diodos de SKY130 (LEÍDA, diodes-table0): BVN 11,7 V (10,7–14,0); BVNE (periférica) 11 (9,5–14,5);
+  BVP 12,2 (10,2–14,5); BVPE 10,5 (9–14,5); BVNH 12,7; BVNEH 12,2; BVPH 12 V. Es el techo de avalancha contra pozo.
+  Criterios de punch-through 3,3 V (LEÍDA, Tabla 3d): n+–n+ o p+–p+ 0,23 µm; p+ en n-well a p-well 0,05 µm.
+  Pozos (LEÍDA, Tabla 3a): n-well pico 6,0e17 cm-3, fondo 8e14; p-well pico 4e17 a 0,42 µm.
+
+
+====================================================================================================
+(B) RUPTURA ZENER / TÚNEL INVERSO EN p+/n+ DE CMOS
+====================================================================================================
+
+B6. Dutta — LED en avalancha, p+/n+ laterales en 65 nm
+-------------------------------------------------------
+  Fuente LEÍDA: S. Dutta, tesis doctoral "Avalanche-mode silicon LEDs for monolithic optical coupling in CMOS technology",
+  U. Twente, 2017, DOI 10.3990/1.9789036544139, cap. 3 (pp. 49–52), Fig. 3.3, 3.4, 3.5.
+  PDF: https://ris.utwente.nl/ws/files/17337861/Thesis_Satadal.pdf  (research.utwente.nl bloquea descargas automáticas).
+  El capítulo 3 es el artículo Dutta, Wienk, Hueting, Schmitz, Annema, "Optical Power Efficiency Versus Breakdown Voltage of
+  Avalanche-Mode Silicon LEDs in CMOS", IEEE EDL 38 (2017) (RESUMEN: "VBR varied between 2 and 9 V", 65 nm bulk). El EDL 38,
+  898 de "Opto-electronic modeling ... p+n junctions" es otro (cap. 2); no lo abrí aparte.
+
+  Dispositivo (LEÍDA, texto): diodos p+-n-n+ laterales en TSMC 65 nm bulk, dentro de N-well; L ≈ 6,5 µm, W = 47,6 µm;
+  separación dibujada d entre n+ y p+ de 0 (D1) a 280 nm (D15) en pasos de 20 nm. "D1 is a special case of a p+-n+ junction."
+  "Since there is no shallow trench isolation between the p+ and n+ layers, a silicide break between them prevents shorting of
+  the junction." Profundidad de unión ~100–200 nm. N efectivo del n ~1e17 cm-3 (ajuste TCAD a D15).
+  VBR definida "(arbitrarily) at a fixed current ILED = 1 mA" (= 21 µA/µm de ancho, CÁLCULO).
+
+  VBR frente a d (LEÍDA-FIG, Fig. 3.4(b), ±0,1 V):
+   d (nm)   |  0    20    40    60    80    100   120   140   160   180   200   220   240   260   280
+   VBR (V)  | 1,8  2,5   3,35  4,25  5,15  5,95  6,8   7,3   7,75  8,15  8,5   8,9   9,05  9,3   9,0
+  Pendiente inicial ≈ 0,04 V/nm (CÁLCULO: 4,25−1,8 en 60 nm). Satura en ~9 V (avalancha p+/n-well).
+
+  Inversa por debajo de la ruptura (LEÍDA, texto p. 51): "For d ⩽ 60 nm (D1 to D4), the reverse current ILED has a
+  negligible T-dependence, and a sub-unity ideality factor (as low as ∼0.38 for D1 at 0.2 V corresponding to a slope of
+  23 mV/decade) indicating the presence of band-to-band tunneling (BTBT). This leads to a 'soft' transition into breakdown.
+  For d > 80 nm (D6 onwards) ... progressively sharper transition into breakdown, and a more pronounced T-dependence,
+  indicating impact ionization and avalanche breakdown."
+  Corriente inversa de D1 (d = 0), LEÍDA-FIG por píxel de la Fig. 3.4(a) (eje log 1e-10…1e-2 A; error ×1,5; W = 47,6 µm):
+   V inversa (V)        | 0,2      0,3      0,5      0,75     1,0      1,5      1,8      2,0
+   I a 75 °C (A)        | 1,8e-6   4,2e-6   1,6e-5   5e-5     1,4e-4   6,5e-4   1,3e-3   1,9e-3
+   I a 25 °C (A)        | ~1e-6    ~3e-6    1,4e-5    —       ~1,1e-4  ~5e-4    1,1e-3   1,6e-3
+   I(25 °C)/W (µA/µm)   | ~0,02    ~0,06    0,3       —       ~2,3     ~11      23       34
+   (a 25 °C los rótulos de la figura tapan parte de la curva: los "~" son menos seguros; 75 °C es lectura limpia.)
+  Otras curvas a 1,0 V (LEÍDA-FIG, 75 °C): D2 (20 nm) 4,2e-5 A; D4 (60 nm) 5,5e-6 A. A 1,5 V: D2 2,0e-4; D4 2,7e-5 A.
+  Diodos con d ≥ 100 nm: 1e-8–1e-6 A hasta la rodilla (D12, 220 nm: ~1e-7–5e-7 A entre 2 y 8 V).
+  Campo de pico TCAD en ruptura (LEÍDA-FIG, Fig. 3.5(a), corte a z = −0,1 µm): ~1,0e6 V/cm (d = 20 nm), bajando a
+  ~6,7e5 V/cm para d ≥ 140 nm. No hay curva TCAD para d = 0.
+  Para el prerregistro: (i) P6 predecía 2–7 V para pegados "o casi": a d = 0 son 1,8 V a 21 µA/µm y NO hay rodilla (túnel
+  blando) → cae en el caso "sin rodilla"; (ii) la corriente a 1,8 V es 8 órdenes sobre el piso de 150 fA; (iii) no hay
+  medida en directa publicada de D1 (la tesis solo muestra inversa): si tiene pico Esaki o es backward, [?].
+  Ojo de extrapolación: 65 nm tiene S/D más someros y abruptos (y halos) que SKY130; a igualdad de d, SKY130 debería dar
+  MÁS tensión y MENOS corriente. Cuánto: [?].
+
+B7. Zener p+/n+ en CMOS: patentes, ESD, fuga BTBT
+--------------------------------------------------
+  Fuente (grado)                                       | Dato
+  -----------------------------------------------------+---------------------------------------------------------------------
+  US7056761, National Semiconductor, prioridad         | En 0,18 µm: n+/p-well, p+/n-well, p-well/n-well y n+/p+ dan
+   2003-03-14, "Avalanche diode with breakdown voltage |  "approximately 12V, 12V, 17V, and 4V, respectively". El n+/p+ se usa
+   controlled by gate length" (FRAGMENTO: cita textual |  "by spacing the n+ and p+ regions far apart to avoid tunneling" (sin
+   devuelta por resumen automático de Google Patents;  |  cifra de separación). Propone separar con puerta de poly: ruptura
+   https://patents.google.com/patent/US7056761)        |  ajustable hasta ~5 V acortando la puerta; anchura de unión ~0,1 µm con
+                                                       |  puerta de 0,18 µm. Sin datos de fuga.
+  US7589944, Sarnoff/Sofics, prioridad 2001-03-16      | "a P+ doped region formed adjacent to an N+ doped region ... the N+ to P+
+   (FRAGMENTO, ídem; https://patents.google.com/       |  junction establishes a breakdown voltage of typically 3-6V"; la zona
+   patent/US7589944; solo leídos los primeros 100 k    |  sobre la unión "is silicide blocked to prevent a surface short circuit".
+   caracteres)                                         |  Zener con LDD: "typically 6-12V". Sin nodo ni fuga numérica del Zener.
+  US6268639 (FRAGMENTO, ídem; https://patents.google.  | NO es p+/n+ lateral pegado. Es ánodo p− (B 120 keV 7e13, pico ~2e18 a
+   com/patent/US6268639), "Electrostatic-discharge     |  ~0,4 µm) bajo cátodo n+ (P 180 keV 5e14, pico ~2e19 a ~0,25 µm):
+   protection circuit", 2,5 V CMOS de 0,18 µm          |  ruptura "approximately 5.5 to 7 volts". Separación al aislamiento
+                                                       |  0,2–0,3 µm. No da separación/solape p+/n+ ni fuga. Bloqueo de siliciuro
+                                                       |  para que la unión no se cortocircuite.
+  Patente de diodo de disparo (FRAGMENTO de buscador,  | "an n+/p+ Zener diode is frequently utilized as the trigger diode. Very low
+   sin identificar el número)                          |  breakdown voltages can be achieved ... however, a very large leakage
+                                                       |  current is disadvantageously generated."
+  Patente P+/LDR/N+ años 90 (FRAGMENTO de buscador)    | ~6,6 V con región ligeramente dopada entre p+ y n+ (frente a ~15 V).
+  SkyWater SKY130 (LEÍDA)                              | areaid.zer existe (Zener con exención de n/psd.9); sin BV público.
+  Solomon et al., IBM RC22916 (LEÍDA)                  | Ley empírica del túnel banda a banda en uniones implantadas tipo CMOS,
+   — ANCLA CUANTITATIVA                                |  ⟨100⟩, 300 K: J = A·exp(−w_TE/λ_T), λ_T = 0,38 nm, A = 5,3e7 A/cm2
+                                                       |  (2,0e7 a 150 K); m* = 0,29 m0. w_TE = distancia de túnel efectiva
+                                                       |  (corregida por curvatura, factor 0,9–1,0). Rango medido: 1 V directa a
+                                                       |  1,5 V inversa; dopado en la unión 2e18–7e19.
+                                                       | Ejemplos del propio texto: w = 4,3 nm (condición de pico Esaki del diodo
+                                                       |  de Rivas/Dashiell) → ~1500 A/cm2 estimados, "experimental value ... about
+                                                       |  an order of magnitude higher"; FET de 25 nm de Taur a 1,2 V: w_TE =
+                                                       |  5,25 nm → ~40 A/cm2 ≈ 4 nA/µm; encogido ×2 → 2,5 µA/µm.
+                                                       | Keldysh con Fmax = 2,5 MV/cm y VR = 1 V: J0 = 1,1e8 A/cm2.
+  Hurkx, Klaassen, Knuvers, IEEE TED 39, 331 (1992)    | "for dopant concentrations above 5e17 cm-3 or, equivalently, for breakdown
+   (RESUMEN vía buscador)                              |  voltages below approximately 5 V, the reverse characteristics are
+                                                       |  dominated by band-to-band tunneling"; m* = 0,25 m0. BTBT relevante a
+                                                       |  300 K para campos > 7e5 V/cm (FRAGMENTO, artículo relacionado).
+  Duffy et al., Solid-State Electron. 2010 (UCC)       | Predicción de fuga de unión (BBT + TAT) en CMOS bulk; solo RESUMEN, sin
+                                                       |  A/µm.
+  Fuga BTBT de S/D con halo en 130 nm a 1,2–1,8 V      | [?] — no encontré cifra medida en A/µm. MEMORIA: 1e-12–1e-10 A/µm.
+  Coeficiente de temperatura de un p+/n+ pegado CMOS   | Dutta (LEÍDA): d ≤ 60 nm, dependencia de T "negligible" (túnel); d > 80 nm
+                                                       |  dependencia marcada (avalancha). Sin mV/K.
+  Antifusibles "zener zap" en CMOS submicrónico        | [?] — no busqué a fondo; sin números.
+  Diodo Esaki / NDR con S/D estándar de CMOS           | [?] — la búsqueda no devolvió ninguna medida de resistencia negativa en
+                                                       |  n+/p+ pegados de CMOS estándar de 65–180 nm (solo MBE/epitaxia).
+
+  Uso del ancla de Solomon con el modelo (CÁLCULO): para J = 1 A/cm2 hace falta w_TE = 0,38·ln(5,3e7) = 6,8 nm; para
+  1e3 A/cm2, 4,1 nm; para 21 µA/µm con xj = 0,1 µm (2,1e4 A/cm2, el criterio de Dutta), 3,0 nm. Cada 0,875 nm de distancia
+  de túnel es una década de corriente.
+
+B8. Curva clásica y Zener comerciales
+--------------------------------------
+  · Sze (Physics of Semiconductor Devices): ruptura < 4Eg/q (~4,5 V) = túnel; > 6Eg/q (~6,7 V) = avalancha; entre ambos,
+    mezcla. MEMORIA (libro no abierto). Coherente con Hurkx (RESUMEN: < ~5 V domina BTBT) y con Dutta (LEÍDA: ≤ 4,25 V sin
+    dependencia de T; ≥ 5,95 V avalancha).
+  · Fair & Wivell, IEEE TED 23(5), 512–518 (1976), DOI 10.1109/T-ED.1976.18438 (RESUMEN): capas de As implantado/difundido
+    forman uniones de gradiente lineal sobre fondo de B uniforme de ρ ≈ 0,006 Ω·cm; curvas de BV, impedancia y coeficiente
+    de temperatura frente a dosis; el coeficiente pasa de negativo a positivo en la transición túnel→avalancha. Valores
+    numéricos de BV: [?] (muro de pago). Nota: 0,006 Ω·cm tipo p ≈ 1,5–2e19 cm-3 (MEMORIA de Irvin).
+  · Zener comerciales, onsemi BZX84CxxxLT1G, hoja "BZX84C2V4LT1/D" Rev. 23, ago. 2021, tabla de características eléctricas
+    (LEÍDA; copia en https://doc.7-el.ru/b/bzx84b_bzx84c.pdf; la de Nexperia devolvió 403):
+     Tipo   | VZ nom (V) @ 5 mA | ZZT (Ω) @ 5 mA | IR máx (µA) @ VR (V) | coef. T (mV/K) mín / máx @ 5 mA
+     2V4    | 2,4 (2,2–2,6)     | 100            | 50 @ 1               | −3,5 / 0
+     2V7    | 2,7 (2,5–2,9)     | 100            | 20 @ 1               | −3,5 / 0
+     3V0    | 3,0 (2,8–3,2)     | 95             | 10 @ 1               | −3,5 / 0
+     3V3    | 3,3 (3,1–3,5)     | 95             |  5 @ 1               | −3,5 / 0
+     3V6    | 3,6 (3,4–3,8)     | 90             |  5 @ 1               | −3,5 / 0
+     3V9    | 3,9 (3,7–4,1)     | 90             |  3 @ 1               | −3,5 / −2,5
+     4V3    | 4,3 (4,0–4,6)     | 90             |  3 @ 1               | −3,5 / 0
+     4V7    | 4,7 (4,4–5,0)     | 80             |  3 @ 2               | −3,5 / 0,2
+     5V1    | 5,1 (4,8–5,4)     | 60             |  2 @ 2               | −2,7 / 1,2
+     5V6    | 5,6 (5,2–6,0)     | 40             |  1 @ 2               | −2,0 / 2,5
+     6V2    | 6,2 (5,8–6,6)     | 10             |  3 @ 4               |  0,4 / 3,7
+    Son máximos garantizados, no típicos; área de unión y dopados no publicados ([?]). Capacidad a 0 V: 450 pF (2V4–4V3).
+    Lectura: un Zener de 2,4 V "de catálogo" ya deja pasar hasta 50 µA a 1 V; el p+/n+ de Dutta a d = 0 (1,8 V a 1 mA) deja
+    ~100 µA a 1 V con 47,6 µm × ~0,1–0,2 µm de unión. El cruce de coeficiente de temperatura está en 5,1–5,6 V.
+  · Hurkx 1992, datos de Vz frente a dopado; curvas de Sze de BV frente a NB en la zona de túnel: no abiertos → [?].
+
+
+====================================================================================================
+QUÉ NO SE PUDO ABRIR
+====================================================================================================
+  · IEEE (EDL de Dutta, Hurkx 1992, Fair & Wivell 1976, Hook 2003, Duffy 2010): muro de pago; Dutta se cubrió con la tesis.
+  · ewh.ieee.org (Hook 2003, Cleavelin 2002): error de certificado TLS; no forcé la conexión.
+  · Berkeley EE143 Lecture 07: redirige a login CAS. Nexperia BZX84_SER.pdf: 403 (usé la hoja de onsemi).
+  · typeset.io (Ghani/Intel VLSI 2000): PDF vacío. TUM mediatum 603107: devolvió XML.
+  · research.utwente.nl: Cloudflare; el mismo PDF bajó de ris.utwente.nl.
+  · Patentes: leídas a través del resumen automático de la herramienta de lectura web (las citas entre comillas son las
+    que devolvió; grado FRAGMENTO). Si un número de patente decide algo, releer el texto original.
+  · Sin fuente abierta: Gibbons, Ziegler, Plummer (libro), Sze VLSI, solubilidades de Solmi/Nobili, SIMS/SSRM lateral de un
+    S/D de 130 nm, fuga BTBT en A/µm de 130 nm, receta real de SKY130, BV del Zener (areaid.zer) de SKY130.
+
+ARCHIVOS DE TRABAJO (descargas, fuera del repo): /private/tmp/claude-501/-Users-juancarlosromero-made-in-TaiJuan-projects-ZTASIC/51916679-5f4a-40b5-b300-0eeb8995ce74/scratchpad/dl/
+  (dutta_thesis.pdf, dutta_fig34-063.png, ibm.pdf, itrs01_fep.pdf, ajbas.pdf, bzx84.pdf, dunham8.pdf) y .../scratchpad/sky/ (CSV de SkyWater).

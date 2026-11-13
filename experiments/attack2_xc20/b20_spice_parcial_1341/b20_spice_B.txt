@@ -1,0 +1,98 @@
+B1. nfet en inversión débil, fuente común, Vds = 0,9 V. Fuente: b20_spice_raw/B1_<esq>_<T>.dat
+Id en A. S = 100 mV / log10(I(0,20)/I(0,10)). R31 = I(0,30)/I(0,10). R2510 = I(0,25)/I(0,10) (peor caso de los dos estados).
+
+Dispositivo std_5_1  (nfet_01v8, W/L = 5/1)
+  esq  T      I(0.05)    I(0.10)    I(0.20)    I(0.25)    I(0.30)    I(0.40)    S(mV/dec)   R31      R2510
+  tt  m40  FALTA
+  tt   27   1.273e-12  5.000e-12  7.715e-11  3.015e-10  1.169e-09  1.657e-08      84.2      233.7     60.3
+  tt   85  FALTA
+  ss  m40  FALTA
+  ss   27  FALTA
+  ss   85  FALTA
+  ff  m40  FALTA
+  ff   27  FALTA
+  ff   85  FALTA
+  sf  m40  FALTA
+  sf   27  FALTA
+  sf   85  FALTA
+  fs  m40  FALTA
+  fs   27  FALTA
+  fs   85  FALTA
+
+Dispositivo lvt_5_1  (nfet_01v8_lvt, W/L = 5/1)
+  esq  T      I(0.05)    I(0.10)    I(0.20)    I(0.25)    I(0.30)    I(0.40)    S(mV/dec)   R31      R2510
+  tt  m40  FALTA
+  tt   27   1.028e-11  4.689e-11  9.587e-10  4.233e-09  1.802e-08  2.632e-07      76.3      384.3     90.3
+  tt   85  FALTA
+  ss  m40  FALTA
+  ss   27  FALTA
+  ss   85  FALTA
+  ff  m40  FALTA
+  ff   27  FALTA
+  ff   85  FALTA
+  sf  m40  FALTA
+  sf   27  FALTA
+  sf   85  FALTA
+  fs  m40  FALTA
+  fs   27  FALTA
+  fs   85  FALTA
+
+Dispositivo std_5_05  (nfet_01v8, W/L = 5/0.5)
+  esq  T      I(0.05)    I(0.10)    I(0.20)    I(0.25)    I(0.30)    I(0.40)    S(mV/dec)   R31      R2510
+  tt  m40  FALTA
+  tt   27   1.459e-12  5.613e-12  8.320e-11  3.192e-10  1.217e-09  1.694e-08      85.4      216.8     56.9
+  tt   85  FALTA
+  ss  m40  FALTA
+  ss   27  FALTA
+  ss   85  FALTA
+  ff  m40  FALTA
+  ff   27  FALTA
+  ff   85  FALTA
+  sf  m40  FALTA
+  sf   27  FALTA
+  sf   85  FALTA
+  fs  m40  FALTA
+  fs   27  FALTA
+  fs   85  FALTA
+
+Dispositivo lvt_5_05  (nfet_01v8_lvt, W/L = 5/0.5)
+  esq  T      I(0.05)    I(0.10)    I(0.20)    I(0.25)    I(0.30)    I(0.40)    S(mV/dec)   R31      R2510
+  tt  m40  FALTA
+  tt   27   1.448e-11  5.998e-11  1.018e-09  4.140e-09  1.649e-08  2.302e-07      81.3      274.9     69.0
+  tt   85  FALTA
+  ss  m40  FALTA
+  ss   27  FALTA
+  ss   85  FALTA
+  ff  m40  FALTA
+  ff   27  FALTA
+  ff   85  FALTA
+  sf  m40  FALTA
+  sf   27  FALTA
+  sf   85  FALTA
+  fs  m40  FALTA
+  fs   27  FALTA
+  fs   85  FALTA
+
+Corriente de puerta máxima |i(Vg)| (los 4 nfet en paralelo, todo el barrido, todos los puntos): 0.000e+00 A
+  (el modelo tiene igcmod=0 e igbmod=0: la corriente de puerta DC es cero por construcción, no un resultado)
+
+B2. Lector completo: nfet 5/1 (puerta = nodo) + espejo pfet 2/2 + inversor 1,8 V. Fuente: b20_spice_raw/B2_<esq>_<T>.dat
+  r = referencia por réplica (nfet idéntico con puerta a 0,17 V);  f = referencia fija = Id(0,17 V) de tt/27.
+  Vtrip = Vin a la que la salida del inversor cruza 0,9 V. Sal(x) = salida del inversor (V) con Vin = x. Lógica: nodo alto -> drenador bajo -> salida ALTA.
+  esq  T     | rstd  Vtrip  Sal(0,10) Sal(0,25) | rlvt  Vtrip  Sal(0,10) Sal(0,25) | fstd  Vtrip  Sal(0,10) Sal(0,25) | flvt  Vtrip  Sal(0,10) Sal(0,25) 
+  tt  m40  FALTA
+  tt   27  FALTA
+  tt   85  FALTA
+  ss  m40  FALTA
+  ss   27  FALTA
+  ss   85  FALTA
+  ff  m40  FALTA
+  ff   27  FALTA
+  ff   85  FALTA
+  sf  m40  FALTA
+  sf   27  FALTA
+  sf   85  FALTA
+  fs  m40  FALTA
+  fs   27  FALTA
+  fs   85  FALTA
+  |i(Vin)| máx (carga DC sobre el nodo, 4 puertas): 0.000e+00 A

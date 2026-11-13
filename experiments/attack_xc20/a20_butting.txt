@@ -1,0 +1,31 @@
+Thu Nov 12 12:42:36 EST 2026
+sky130_fd_io           celdas .mag:  2544 ; con toma pegada a difusion contraria:   21
+     sky130_fd_io__NFET_con_diff_wo_abt_270_analog_pad.mag  (1793 contactos de borde)
+     sky130_fd_io__PFET_con_diff_wo_abt_270_analog_pad.mag  (1800 contactos de borde)
+     sky130_fd_io__hvc_clampv2.mag  (16846 contactos de borde)
+     sky130_fd_io__nfet_con_diff_wo_abt_270_xres4v2.mag  (1793 contactos de borde)
+     sky130_fd_io__nfet_con_diff_wo_abt_270v2.mag  (1793 contactos de borde)
+     sky130_fd_io__pfet_con_diff_wo_abt_270_xres4v2.mag  (1800 contactos de borde)
+     sky130_fd_io__pfet_con_diff_wo_abt_270v2.mag  (1800 contactos de borde)
+     sky130_fd_io__refgen_vddio_vswitch_ls.mag  (156 contactos de borde)
+     sky130_fd_io__refgen_vddio_vswitch_ls_1.mag  (123 contactos de borde)
+     sky130_fd_io__sio_biasgen.mag  (34 contactos de borde)
+     sky130_fd_io__sio_odrvr_sub.mag  (1287 contactos de borde)
+     sky130_fd_io__sio_opamp_stage_c_c.mag  (24 contactos de borde)
+sky130_fd_pr           celdas .mag:   290 ; con toma pegada a difusion contraria:   81
+     sky130_fd_pr__cap_vpp_11p3x11p8_l1m1m2m3m4_shieldm5_nhv.mag  (234 contactos de borde)
+     sky130_fd_pr__rf_nfet_01v8_bM02W1p65L0p15.mag  (22 contactos de borde)
+     sky130_fd_pr__rf_nfet_01v8_bM02W1p65L0p18.mag  (22 contactos de borde)
+     sky130_fd_pr__rf_nfet_01v8_bM02W1p65L0p25.mag  (22 contactos de borde)
+     sky130_fd_pr__rf_nfet_01v8_bM02W3p00L0p15.mag  (38 contactos de borde)
+     sky130_fd_pr__rf_nfet_01v8_bM02W3p00L0p18.mag  (38 contactos de borde)
+     sky130_fd_pr__rf_nfet_01v8_bM02W3p00L0p25.mag  (38 contactos de borde)
+     sky130_fd_pr__rf_nfet_01v8_bM02W5p00L0p15.mag  (62 contactos de borde)
+     sky130_fd_pr__rf_nfet_01v8_bM02W5p00L0p18.mag  (62 contactos de borde)
+     sky130_fd_pr__rf_nfet_01v8_bM02W5p00L0p25.mag  (62 contactos de borde)
+     sky130_fd_pr__rf_nfet_01v8_bM04W1p65L0p15.mag  (22 contactos de borde)
+     sky130_fd_pr__rf_nfet_01v8_bM04W1p65L0p18.mag  (22 contactos de borde)
+sky130_fd_sc_hd        celdas .mag:   446 ; con toma pegada a difusion contraria:    0
+sky130_fd_sc_hvl       celdas .mag:    71 ; con toma pegada a difusion contraria:    0
+sky130_ml_xx_hd        celdas .mag:    98 ; con toma pegada a difusion contraria:    0
+sky130_sram_macros     celdas .mag:   608 ; con toma pegada a difusion contraria:    0

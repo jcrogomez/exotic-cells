@@ -1,0 +1,69 @@
+Tabla Kohlrausch: V_c -> T_c (K): 0.02 V:307, 0.05 V:340, 0.1 V:439, 0.2 V:707, 0.276 V:933, 0.3 V:1006, 0.5 V:1628, 1.8 V:5769
+Con fuente de corriente de 2.06 mA la tensión de fusión (0.276 V) se alcanza en R_c = 134 Ohm (~96 canales); con 0.26 mA en 1062 Ohm
+
+Ea = 0.7 eV ; umbral del lazo R_tot >= 30 Ohm ; R_c final (Ohm) por retardo; 'ABIERTO' = >= 1e6 ; '--' = nunca cruza el umbral en 10 s (R_c a los 10 s)
+configuración                                    1e-09s       1e-07s       1e-05s       1e-03s      t* (s)
+driver 2.06 mA / 1.8 V, sin barrera                30.2         30.3         30.7      ABIERTO       0.042
+driver 2.06 mA / 1.8 V, barrera 20 Ohm          ABIERTO      ABIERTO      ABIERTO      ABIERTO       nunca
+driver 2.06 mA / 1.8 V, barrera 150 Ohm            37.7         37.7         38.3     1.05e+03      0.0464
+1.8 V + R serie 1 kOhm                             30.2         30.2         30.4      ABIERTO      0.0528
+1.8 V + R serie 10 kOhm                            30.2         30.2         30.3         30.8       0.102
+1.8 V + R serie 100 kOhm                           30.2         30.2         30.3         30.8       0.103
+fuente rígida 0.05 V                               30.2         30.2         30.4         43.6     0.00674
+fuente rígida 0.10 V                               30.3         30.4         62.2     1.03e+03    5.06e-05
+fuente rígida 0.20 V                               32.6        1e+03        1e+03     1.04e+03    4.54e-08
+fuente rígida 0.50 V                            ABIERTO      ABIERTO      ABIERTO      ABIERTO       nunca
+
+Ea = 0.7 eV ; umbral del lazo R_tot >= 2000 Ohm ; R_c final (Ohm) por retardo; 'ABIERTO' = >= 1e6 ; '--' = nunca cruza el umbral en 10 s (R_c a los 10 s)
+configuración                                    1e-09s       1e-07s       1e-05s       1e-03s      t* (s)
+driver 2.06 mA / 1.8 V, sin barrera             ABIERTO      ABIERTO      ABIERTO      ABIERTO       nunca
+driver 2.06 mA / 1.8 V, barrera 20 Ohm          ABIERTO      ABIERTO      ABIERTO      ABIERTO       nunca
+driver 2.06 mA / 1.8 V, barrera 150 Ohm         ABIERTO      ABIERTO      ABIERTO      ABIERTO       nunca
+1.8 V + R serie 1 kOhm                          ABIERTO      ABIERTO      ABIERTO      ABIERTO       nunca
+1.8 V + R serie 10 kOhm                        2.02e+03     2.02e+03     2.02e+03     2.15e+03       0.194
+1.8 V + R serie 100 kOhm                       2.02e+03     2.02e+03     2.02e+03     2.06e+03       0.328
+fuente rígida 0.05 V                           2.02e+03     2.02e+03     2.02e+03     2.06e+03      0.0476
+fuente rígida 0.10 V                           2.02e+03     2.02e+03     2.02e+03     2.07e+03      0.0259
+fuente rígida 0.20 V                           2.02e+03     2.02e+03     2.02e+03      2.1e+03      0.0168
+fuente rígida 0.50 V                            ABIERTO      ABIERTO      ABIERTO      ABIERTO       nunca
+
+Ea = 1.0 eV ; umbral del lazo R_tot >= 30 Ohm ; R_c final (Ohm) por retardo; 'ABIERTO' = >= 1e6 ; '--' = nunca cruza el umbral en 10 s (R_c a los 10 s)
+configuración                                    1e-09s       1e-07s       1e-05s       1e-03s      t* (s)
+driver 2.06 mA / 1.8 V, sin barrera              --5.01       --5.01       --5.01       --5.01       nunca
+driver 2.06 mA / 1.8 V, barrera 20 Ohm           --5.01       --5.01       --5.01       --5.01       nunca
+driver 2.06 mA / 1.8 V, barrera 150 Ohm          --5.01       --5.01       --5.01       --5.01       nunca
+1.8 V + R serie 1 kOhm                           --5.01       --5.01       --5.01       --5.01       nunca
+1.8 V + R serie 10 kOhm                          --5.01       --5.01       --5.01       --5.01       nunca
+1.8 V + R serie 100 kOhm                         --5.01       --5.01       --5.01       --5.01       nunca
+fuente rígida 0.05 V                             --5.23       --5.23       --5.23       --5.23       nunca
+fuente rígida 0.10 V                               30.2         30.2         30.3         30.9       0.223
+fuente rígida 0.20 V                               30.3         31.7        1e+03        1e+03    9.97e-06
+fuente rígida 0.50 V                            ABIERTO      ABIERTO      ABIERTO      ABIERTO       nunca
+
+Ea = 1.0 eV ; umbral del lazo R_tot >= 2000 Ohm ; R_c final (Ohm) por retardo; 'ABIERTO' = >= 1e6 ; '--' = nunca cruza el umbral en 10 s (R_c a los 10 s)
+configuración                                    1e-09s       1e-07s       1e-05s       1e-03s      t* (s)
+driver 2.06 mA / 1.8 V, sin barrera              --5.01       --5.01       --5.01       --5.01       nunca
+driver 2.06 mA / 1.8 V, barrera 20 Ohm           --5.01       --5.01       --5.01       --5.01       nunca
+driver 2.06 mA / 1.8 V, barrera 150 Ohm          --5.01       --5.01       --5.01       --5.01       nunca
+1.8 V + R serie 1 kOhm                           --5.01       --5.01       --5.01       --5.01       nunca
+1.8 V + R serie 10 kOhm                          --5.01       --5.01       --5.01       --5.01       nunca
+1.8 V + R serie 100 kOhm                         --5.01       --5.01       --5.01       --5.01       nunca
+fuente rígida 0.05 V                             --5.23       --5.23       --5.23       --5.23       nunca
+fuente rígida 0.10 V                            --1e+03      --1e+03      --1e+03      --1e+03       nunca
+fuente rígida 0.20 V                         --1.01e+03   --1.01e+03   --1.01e+03   --1.01e+03       nunca
+fuente rígida 0.50 V                            ABIERTO      ABIERTO      ABIERTO      ABIERTO       nunca
+
+Tensión sobre un contacto de 12.9 kOhm (1 canal) y de 4.3 kOhm (3 canales) en cada configuración, y corriente por él:
+  driver 2.06 mA / 1.8 V, sin barrera        V(12.9k)= 1.790 V  I=  138.7 uA   V(4.3k)= 1.770 V
+  driver 2.06 mA / 1.8 V, barrera 20 Ohm     V(12.9k)= 0.041 V  I=    3.2 uA   V(4.3k)= 0.041 V   (casi toda la corriente va por la barrera)
+  driver 2.06 mA / 1.8 V, barrera 150 Ohm    V(12.9k)= 0.305 V  I=   23.7 uA   V(4.3k)= 0.299 V   (casi toda la corriente va por la barrera)
+  1.8 V + R serie 1 kOhm                     V(12.9k)= 1.662 V  I=  128.8 uA   V(4.3k)= 1.441 V
+  1.8 V + R serie 10 kOhm                    V(12.9k)= 1.011 V  I=   78.3 uA   V(4.3k)= 0.539 V
+  1.8 V + R serie 100 kOhm                   V(12.9k)= 0.206 V  I=   15.9 uA   V(4.3k)= 0.074 V
+  fuente rígida 0.05 V                       V(12.9k)= 0.050 V  I=    3.9 uA   V(4.3k)= 0.050 V
+  fuente rígida 0.10 V                       V(12.9k)= 0.100 V  I=    7.7 uA   V(4.3k)= 0.100 V
+  fuente rígida 0.20 V                       V(12.9k)= 0.200 V  I=   15.5 uA   V(4.3k)= 0.200 V
+  fuente rígida 0.50 V                       V(12.9k)= 0.500 V  I=   38.7 uA   V(4.3k)= 0.500 V
+
+Lectura con el anillo: en cada flanco el nodo excitador salta 1.8 V y la carga (32 puertas) está aún en el valor anterior ->
+  la tensión inicial sobre el contacto en serie es ~1.8 V (decae con R*C). V_rot de un contacto de 1 átomo de Al ~0.8-1 V. La lectura del anillo es destructiva [cálculo; sin SPICE].

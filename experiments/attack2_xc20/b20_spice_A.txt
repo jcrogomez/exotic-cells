@@ -1,0 +1,130 @@
+A. Inversor a alimentación reducida. Fuente: b20_spice_raw/A_<esq>_<T>_v<VDD>.dat (netlists b20_spice_net/b20_spice_A_*.spice)
+W=1 um, L=0,5 um; n8p1 = nfet m=8, pfet m=1; etc. Vm = entrada con Vout=Vin. Ganancia = max|dVout/dVin| (dif. central 2 mV).
+
+Resumen por configuración sobre los 15 puntos (5 esquinas × 3 T):
+variante    rel   VDD   Vm_min  Vm_max  disp(mV)  [esq/T min ; max]        gan_min  gan_max  ¿Vm∈[0,15;0,20] y gan>5 en los 15?
+nstd_pstd   n8p1  0.2   0.000   0.028     27.5   [sf/ 27 ; fs/ 85]      0.00    27.04   NO (0/15)
+nstd_pstd   n8p1  0.3   0.000   0.074     73.6   [sf/m40 ; fs/ 85]      0.00    54.18   NO (0/15)
+nstd_pstd   n8p1  0.4   0.000   0.125    124.9   [sf/m40 ; fs/ 85]      0.02    79.44   NO (0/15)
+nstd_pstd   n8p1  0.5   0.009   0.176    167.1   [sf/m40 ; fs/ 85]      1.87   101.59   NO (2/15)
+nstd_pstd   n8p1  0.6   0.048   0.224    176.8   [sf/m40 ; fs/ 85]     81.10   114.52   NO (4/15)
+nstd_pstd   n1p1  0.2   0.000   0.069     68.7   [sf/ 27 ; fs/ 85]      0.01    27.18   NO (0/15)
+nstd_pstd   n1p1  0.3   0.001   0.120    119.5   [sf/m40 ; fs/ 85]      0.03    53.66   NO (0/15)
+nstd_pstd   n1p1  0.4   0.003   0.172    169.0   [sf/m40 ; fs/ 85]      0.22    81.26   NO (1/15)
+nstd_pstd   n1p1  0.5   0.027   0.223    196.3   [sf/m40 ; fs/ 85]     75.23   102.07   NO (3/15)
+nstd_pstd   n1p1  0.6   0.076   0.274    197.9   [sf/m40 ; fs/ 85]     83.15   116.58   NO (6/15)
+nstd_pstd   n1p8  0.2   0.001   0.118    116.2   [sf/ 27 ; fs/ 85]      0.05    26.76   NO (0/15)
+nstd_pstd   n1p8  0.3   0.006   0.167    161.4   [sf/m40 ; fs/ 85]      0.28    54.43   NO (1/15)
+nstd_pstd   n1p8  0.4   0.015   0.218    203.3   [sf/m40 ; fs/ 85]     25.74    78.41   NO (2/15)
+nstd_pstd   n1p8  0.5   0.054   0.270    216.4   [sf/m40 ; fs/ 85]     72.86   101.68   NO (5/15)
+nstd_pstd   n1p8  0.6   0.105   0.322    217.0   [sf/m40 ; fs/ 85]     84.80   115.27   NO (5/15)
+nlvt_plvt   n8p1  0.2   0.020   0.199    179.1   [sf/m40 ; fs/m40]      0.03    13.11   NO (2/15)
+nlvt_plvt   n8p1  0.3   0.065   0.288    223.2   [sf/m40 ; fs/m40]      0.99    21.65   NO (4/15)
+nlvt_plvt   n8p1  0.4   0.114   0.350    236.4   [sf/m40 ; fs/ 27]     19.82    28.10   NO (1/15)
+nlvt_plvt   n8p1  0.5   0.163   0.397    233.6   [sf/m40 ; fs/ 27]     23.78    32.91   NO (3/15)
+nlvt_plvt   n8p1  0.6   0.212   0.436    224.2   [sf/m40 ; fs/ 27]     27.23    36.41   NO (0/15)
+nlvt_plvt   n1p1  0.2   0.044   0.200    156.2   [sf/m40 ; fs/m40]      0.00    13.12   NO (3/15)
+nlvt_plvt   n1p1  0.3   0.093   0.298    205.2   [sf/m40 ; fs/ 27]      0.10    21.68   NO (2/15)
+nlvt_plvt   n1p1  0.4   0.142   0.383    240.8   [sf/m40 ; fs/ 85]      1.20    28.14   NO (2/15)
+nlvt_plvt   n1p1  0.5   0.192   0.447    255.0   [sf/m40 ; fs/ 85]     23.68    33.07   NO (1/15)
+nlvt_plvt   n1p1  0.6   0.241   0.495    254.0   [sf/m40 ; fs/ 85]     26.44    36.82   NO (0/15)
+nlvt_plvt   n1p8  0.2   0.070   0.200    129.6   [sf/m40 ; fs/m40]      0.00    13.11   NO (2/15)
+nlvt_plvt   n1p8  0.3   0.121   0.300    179.1   [sf/m40 ; fs/ 27]      0.01    21.68   NO (3/15)
+nlvt_plvt   n1p8  0.4   0.171   0.397    226.2   [sf/m40 ; fs/ 85]      0.11    28.17   NO (1/15)
+nlvt_plvt   n1p8  0.5   0.221   0.483    262.4   [sf/m40 ; fs/ 85]      1.08    33.17   NO (0/15)
+nlvt_plvt   n1p8  0.6   0.270   0.551    280.5   [sf/m40 ; fs/ 85]     25.43    37.00   NO (0/15)
+nstd_phvt   n8p1  0.2   0.000   0.011     10.7   [sf/ 27 ; fs/ 85]      0.00     0.67   NO (0/15)
+nstd_phvt   n8p1  0.3   0.000   0.040     39.7   [sf/ 27 ; fs/ 85]      0.00    52.72   NO (0/15)
+nstd_phvt   n8p1  0.4   0.000   0.087     86.6   [sf/ 27 ; fs/ 85]      0.00    74.19   NO (0/15)
+nstd_phvt   n8p1  0.5   0.000   0.136    136.0   [sf/m40 ; fs/ 85]      0.01    91.37   NO (0/15)
+nstd_phvt   n8p1  0.6   0.001   0.185    184.5   [sf/m40 ; fs/ 85]      0.03   115.09   NO (2/15)
+nstd_phvt   n1p1  0.2   0.000   0.042     42.3   [sf/ 27 ; fs/ 85]      0.00    25.37   NO (0/15)
+nstd_phvt   n1p1  0.3   0.000   0.087     86.8   [sf/ 27 ; fs/ 85]      0.00    52.81   NO (0/15)
+nstd_phvt   n1p1  0.4   0.000   0.136    135.6   [sf/ 27 ; fs/ 85]      0.01    76.16   NO (0/15)
+nstd_phvt   n1p1  0.5   0.001   0.185    183.7   [sf/m40 ; fs/ 85]      0.04   101.40   NO (2/15)
+nstd_phvt   n1p1  0.6   0.004   0.234    230.3   [sf/m40 ; fs/ 85]      0.31   115.29   NO (3/15)
+nstd_phvt   n1p8  0.2   0.001   0.097     96.2   [sf/ 27 ; fs/ 85]      0.02    25.09   NO (0/15)
+nstd_phvt   n1p8  0.3   0.001   0.139    137.7   [sf/ 27 ; fs/ 85]      0.02    52.15   NO (0/15)
+nstd_phvt   n1p8  0.4   0.001   0.185    184.0   [sf/ 27 ; fs/ 85]      0.04    74.99   NO (2/15)
+nstd_phvt   n1p8  0.5   0.008   0.234    225.3   [sf/ 27 ; fs/ 85]      0.53   100.18   NO (2/15)
+nstd_phvt   n1p8  0.6   0.017   0.283    265.5   [sf/m40 ; fs/ 85]     35.36   114.48   NO (4/15)
+nlvt_phvt   n8p1  0.2   0.000   0.004      4.2   [sf/ 27 ; fs/ 85]      0.00     0.21   NO (0/15)
+nlvt_phvt   n8p1  0.3   0.000   0.020     19.7   [sf/ 27 ; fs/ 85]      0.00    42.26   NO (0/15)
+nlvt_phvt   n8p1  0.4   0.000   0.054     54.1   [sf/ 27 ; fs/ 85]      0.00    72.20   NO (0/15)
+nlvt_phvt   n8p1  0.5   0.000   0.098     98.1   [sf/m40 ; fs/ 85]      0.00    89.37   NO (0/15)
+nlvt_phvt   n8p1  0.6   0.000   0.143    143.2   [sf/m40 ; fs/ 85]      0.01   107.27   NO (0/15)
+nlvt_phvt   n1p1  0.2   0.000   0.021     20.6   [sf/ 27 ; fs/ 85]      0.00    16.76   NO (0/15)
+nlvt_phvt   n1p1  0.3   0.000   0.054     53.9   [sf/ 27 ; fs/ 85]      0.00    52.37   NO (0/15)
+nlvt_phvt   n1p1  0.4   0.000   0.098     97.9   [sf/ 27 ; fs/ 85]      0.00    73.49   NO (0/15)
+nlvt_phvt   n1p1  0.5   0.000   0.144    143.6   [sf/m40 ; fs/ 85]      0.01    90.06   NO (0/15)
+nlvt_phvt   n1p1  0.6   0.001   0.190    189.0   [sf/m40 ; fs/ 85]      0.04   107.49   NO (2/15)
+nlvt_phvt   n1p8  0.2   0.000   0.058     57.7   [sf/ 27 ; fs/ 85]      0.00    25.97   NO (0/15)
+nlvt_phvt   n1p8  0.3   0.000   0.099     98.3   [sf/ 27 ; fs/ 85]      0.01    52.59   NO (0/15)
+nlvt_phvt   n1p8  0.4   0.000   0.143    143.2   [sf/ 27 ; fs/ 85]      0.01    75.39   NO (0/15)
+nlvt_phvt   n1p8  0.5   0.002   0.190    188.0   [sf/m40 ; fs/ 85]      0.06    96.19   NO (2/15)
+nlvt_phvt   n1p8  0.6   0.004   0.236    231.5   [sf/m40 ; fs/ 85]      0.41   107.34   NO (3/15)
+nlvt_pstd   n8p1  0.2   0.000   0.013     12.9   [sf/ 27 ; fs/ 85]      0.00     1.63   NO (0/15)
+nlvt_pstd   n8p1  0.3   0.000   0.045     44.7   [sf/m40 ; fs/ 85]      0.00    54.93   NO (0/15)
+nlvt_pstd   n8p1  0.4   0.000   0.089     89.2   [sf/m40 ; fs/ 85]      0.00    81.60   NO (0/15)
+nlvt_pstd   n8p1  0.5   0.002   0.135    133.1   [sf/m40 ; fs/ 85]      0.15    97.99   NO (0/15)
+nlvt_pstd   n8p1  0.6   0.024   0.179    155.2   [sf/m40 ; fs/ 85]     78.70   110.27   NO (3/15)
+nlvt_pstd   n1p1  0.2   0.000   0.041     40.6   [sf/ 27 ; fs/ 85]      0.00    27.64   NO (0/15)
+nlvt_pstd   n1p1  0.3   0.000   0.085     85.3   [sf/m40 ; fs/ 85]      0.00    57.85   NO (0/15)
+nlvt_pstd   n1p1  0.4   0.001   0.133    132.9   [sf/m40 ; fs/ 85]      0.03    81.85   NO (0/15)
+nlvt_pstd   n1p1  0.5   0.010   0.181    171.1   [sf/m40 ; fs/ 85]      2.95    98.96   NO (2/15)
+nlvt_pstd   n1p1  0.6   0.048   0.227    179.0   [sf/m40 ; fs/ 85]     80.69   110.38   NO (4/15)
+nlvt_pstd   n1p8  0.2   0.000   0.081     81.0   [sf/ 27 ; fs/ 85]      0.01    27.23   NO (0/15)
+nlvt_pstd   n1p8  0.3   0.001   0.129    127.6   [sf/m40 ; fs/ 85]      0.04    57.16   NO (0/15)
+nlvt_pstd   n1p8  0.4   0.004   0.177    173.6   [sf/m40 ; fs/ 85]      0.29    81.74   NO (1/15)
+nlvt_pstd   n1p8  0.5   0.028   0.226    197.7   [sf/m40 ; fs/ 85]     75.45    97.97   NO (4/15)
+nlvt_pstd   n1p8  0.6   0.075   0.274    198.7   [sf/m40 ; fs/ 85]     82.24   110.26   NO (5/15)
+
+Configuraciones que cumplen en los 15 puntos: NINGUNA
+
+Detalle (Vm en V / ganancia) de tres configuraciones:
+  nlvt_phvt n1p1 VDD_inv=0.4
+    esq                 m40              27              85
+    tt        0.001 /   0.1   0.007 /   0.7   0.020 /  66.3
+    ss        0.002 /   0.1   0.000 /   0.0   0.005 /   0.2
+    ff        0.009 /   1.8   0.026 /  71.4   0.045 /  64.2
+    sf        0.000 /   0.0   0.000 /   0.0   0.001 /   0.0
+    fs        0.055 /  73.5   0.078 /  71.3   0.098 /  65.2
+  nlvt_pstd n8p1 VDD_inv=0.4
+    esq                 m40              27              85
+    tt        0.005 /   0.5   0.014 /  11.5   0.025 /  65.3
+    ss        0.002 /   0.1   0.007 /   0.6   0.015 /   2.7
+    ff        0.017 /  81.6   0.031 /  71.7   0.043 /  62.1
+    sf        0.000 /   0.0   0.001 /   0.0   0.002 /   0.1
+    fs        0.060 /  80.5   0.076 /  72.3   0.089 /  62.8
+  nstd_pstd n1p1 VDD_inv=0.4
+    esq                 m40              27              85
+    tt        0.040 /  69.2   0.068 /  75.8   0.094 /  65.6
+    ss        0.024 /  37.4   0.047 /  78.2   0.073 /  65.4
+    ff        0.065 /  80.1   0.094 /  71.5   0.119 /  62.0
+    sf        0.003 /   0.2   0.013 /   5.1   0.031 /  63.4
+    fs        0.116 /  81.3   0.146 /  75.5   0.172 /  65.3
+  nlvt_plvt n1p1 VDD_inv=0.3
+    esq                 m40              27              85
+    tt        0.209 /  21.4   0.234 /  17.3   0.251 /  14.3
+    ss        0.158 /  21.7   0.187 /  18.0   0.209 /  15.1
+    ff        0.262 /  20.7   0.275 /  15.9   0.281 /   2.2
+    sf        0.093 /  21.0   0.122 /  17.4   0.147 /  14.6
+    fs        0.297 /   0.2   0.298 /   0.1   0.297 /   0.1
+
+Dispersión mínima de Vm entre los 15 puntos, sobre todas las configuraciones: 4.2 mV (nlvt_phvt n8p1 VDD=0.2)
+Dispersión de Vm solo entre esquinas a 27 °C (VDD_inv=0,4):
+  nstd_pstd   n8p1   0.003–0.108 V  (105.5 mV)
+  nstd_pstd   n1p1   0.013–0.146 V  (132.6 mV)
+  nstd_pstd   n1p8   0.039–0.184 V  (144.9 mV)
+  nlvt_plvt   n8p1   0.135–0.350 V  (215.5 mV)
+  nlvt_plvt   n1p1   0.172–0.381 V  (208.7 mV)
+  nlvt_plvt   n1p8   0.209–0.396 V  (186.8 mV)
+  nstd_phvt   n8p1   0.000–0.071 V  (71.2 mV)
+  nstd_phvt   n1p1   0.000–0.111 V  (110.6 mV)
+  nstd_phvt   n1p8   0.001–0.151 V  (149.5 mV)
+  nlvt_phvt   n8p1   0.000–0.042 V  (42.2 mV)
+  nlvt_phvt   n1p1   0.000–0.078 V  (77.6 mV)
+  nlvt_phvt   n1p8   0.000–0.115 V  (114.6 mV)
+  nlvt_pstd   n8p1   0.001–0.076 V  (75.9 mV)
+  nlvt_pstd   n1p1   0.004–0.112 V  (108.2 mV)
+  nlvt_pstd   n1p8   0.017–0.148 V  (130.4 mV)

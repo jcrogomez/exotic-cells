@@ -1,0 +1,52 @@
+e14_tunnel — ajuste WKB a Gupta 1997 (vía Saraswat EE311 p.10). Lectura a ojo ±0,3 déc.
+phi=3.0 eV: m_ox=0.328 m0, V0=1.14 V, log10C0=-2.02; rms ajuste=0.10 déc
+   validación 25,8 Å con V0=1.14: error medio -2.69 déc, máx |err| 8.04 déc
+   validación 25,8 Å con V0=0.00: error medio +0.24 déc, máx |err| 2.12 déc
+phi=3.1 eV: m_ox=0.293 m0, V0=1.15 V, log10C0=-2.08; rms ajuste=0.10 déc
+   validación 25,8 Å con V0=1.15: error medio -2.47 déc, máx |err| 7.62 déc
+   validación 25,8 Å con V0=0.00: error medio +0.41 déc, máx |err| 2.13 déc
+phi=3.2 eV: m_ox=0.271 m0, V0=1.14 V, log10C0=-2.06; rms ajuste=0.10 déc
+   validación 25,8 Å con V0=1.14: error medio -2.23 déc, máx |err| 7.32 déc
+   validación 25,8 Å con V0=0.00: error medio +0.53 déc, máx |err| 2.13 déc
+
+Dejar un espesor fuera (phi=3,1): ajustar con dos, predecir el tercero
+  fuera 36.5 Å: m_ox=0.278, V0=1.25; error medio -0.06, máx 0.23 déc
+  fuera 45.5 Å: m_ox=0.287, V0=1.17; error medio +0.06, máx 0.18 déc
+  fuera 57.0 Å: m_ox=0.349, V0=0.96; error medio -0.17, máx 0.26 déc
+
+Predicción J(V) [A/cm²] para 41,5 Å. Escenarios: phi 3,0-3,2; V0 ajustado (régimen FN) o V0=0 (diferencia de
+niveles de Fermi toda en el óxido: cota alta); método B = curva medida de 25,8 Å escalada por WKB.
+    V      J_min      J_max   (método A, todos los escenarios)
+ 0.10   4.11e-20   7.84e-15
+ 0.20   4.11e-20   4.30e-14
+ 0.30   4.11e-20   1.33e-13
+ 0.50   4.11e-20   7.04e-13
+ 0.70   4.11e-20   2.68e-12
+ 1.00   4.11e-20   1.52e-11
+ 1.30   1.90e-15   7.49e-11
+ 1.50   1.96e-14   2.09e-10
+ 1.80   2.02e-13   9.61e-10
+ 2.50   1.42e-11   3.79e-08
+ 3.30   1.44e-09   8.34e-06
+ 4.00   1.48e-07   1.04e-03
+ 5.00   4.13e-04   1.07e-01
+ 6.00   5.91e-02   2.53e+00
+Método B (25,8 Å medida × T(41,5)/T(25,8)):
+ 0.95   8.34e-12   3.91e-11
+ 1.20   3.57e-11   1.64e-10
+ 1.50   1.30e-10   5.80e-10
+ 2.00   7.36e-10   3.14e-09
+ 2.50   4.87e-09   2.01e-08
+ 3.00   3.67e-08   1.51e-07
+ 3.50   3.23e-07   1.58e-06
+ 4.00   4.19e-06   1.40e-05
+ 4.50   3.94e-05   1.01e-04
+
+Óxido de 116 Å (nfet_g5v0d10v5, toxm=1,16e-8, PDK local) — J [A/cm²]:
+    1.0 V: 6.69e-54 – 9.52e-41
+    3.3 V: 2.10e-36 – 1.70e-26
+    5.0 V: 4.49e-22 – 1.18e-15
+    8.0 V: 6.03e-10 – 1.29e-07
+   10.0 V: 2.39e-06 – 7.03e-05
+   12.0 V: 4.83e-04 – 5.02e-03
+   14.0 V: 1.99e-02 – 1.11e-01

@@ -1,0 +1,48 @@
+[INFO] USER_ID: 1000, GROUP_ID: 1000
+[INFO] Final PATH variable: /foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool
+[INFO] Final PYTHONPATH variable: /usr/lib/python312.zip:/usr/lib/python3.12:/usr/lib/python3.12/lib-dynload:/usr/local/lib/python3.12/dist-packages:/usr/lib/python3/dist-packages:/foss/tools/ngspyce/local/lib/python3.12/dist-packages:/foss/tools/openems/local/lib/python3.12/dist-packages:/foss/tools/yosys/share/yosys/python3:/foss/tools/klayout/pymod
+[INFO] SKIPPING UI STARTUP
+[INFO] Executing command: 'sh -c cd /w && for f in t0_dc t8_fuente; do ngspice -b $f.sp > $f.log 2>&1; done'
+## t0_dc
+T0 bajo 30 0.00247231 0.0129618
+T0 bajo 100 0.00792104 0.0180388
+T0 bajo 300 0.0213781 0.0305609
+T0 bajo 1000 0.0525747 0.0594944
+T0 bajo 3000 0.0896835 0.0937237
+T0 bajo 10000 0.118646 0.120285
+T0 bajo 12906 0.122433 0.123747
+T0 bajo 30000 0.130583 0.13119
+T0 bajo 100000 0.135329 0.135519
+T0 bajo 300000 0.136747 0.136811
+T0 bajo 1e+06 0.13725 0.13727
+T0 bajo 3e+06 0.137395 0.137401
+T0 bajo 1e+12 0.137467 0.137467
+T0 medio 30 0.000333094 0.121409
+T0 medio 100 0.00110405 0.1215
+T0 medio 300 0.00325962 0.121754
+T0 medio 1000 0.0102943 0.122583
+T0 medio 3000 0.0268543 0.124531
+T0 medio 10000 0.0614762 0.128594
+T0 medio 12906 0.0702143 0.129618
+T0 medio 30000 0.097349 0.132791
+T0 medio 100000 0.122341 0.135706
+T0 medio 300000 0.132026 0.136834
+T0 medio 1e+06 0.135789 0.137272
+T0 medio 3e+06 0.136904 0.137401
+T0 medio 1e+12 0.137468 0.137467
+T0 alto 30 1.41058E-05 0.136806
+T0 alto 100 4.70073E-05 0.136806
+T0 alto 300 0.000140918 0.136806
+T0 alto 1000 0.000468517 0.136808
+T0 alto 3000 0.00139531 0.136812
+T0 alto 10000 0.00453609 0.136827
+T0 alto 12906 0.00579515 0.136833
+T0 alto 30000 0.0127222 0.136867
+T0 alto 100000 0.034697 0.136973
+T0 alto 300000 0.0689942 0.137138
+T0 alto 1e+06 0.105885 0.137315
+T0 alto 3e+06 0.125046 0.137407
+T0 alto 1e+12 0.137499 0.137467
+i(vdd) = -3.29287e-03
+## t8_fuente
+T8 antes=5.08117E-06 t_50mV=1.00535E-06 t_100mV=1.0105E-06 max=1.8

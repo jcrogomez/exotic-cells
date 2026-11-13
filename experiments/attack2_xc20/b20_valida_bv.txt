@@ -1,0 +1,7 @@
+Thu Nov 12 13:42:14 EST 2026
+b20_valida_bv: ruptura por avalancha de union abrupta p+(1e20)/n(Nd), integral de ionizacion con espacio muerto (1.2/1.5 eV) y local.
+Referencia DE MEMORIA (Sze): BV ~ 60 (N/1e16)^-0.75 V -> 1e17: 10.7 V; 6e16: 15.6 V; 3e17: 4.7 V; 1e18: tunel
+Nd 6e+16  BV local 18.0 V   BV espacio muerto 18.5 V
+Nd 1e+17  BV local 14.0 V   BV espacio muerto 14.0 V
+Nd 3e+17  BV local 8.5 V   BV espacio muerto 9.0 V
+Nd 1e+18  BV local 6.0 V   BV espacio muerto 6.0 V

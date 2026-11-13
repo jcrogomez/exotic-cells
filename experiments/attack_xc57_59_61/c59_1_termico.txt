@@ -1,0 +1,61 @@
+# c59_1_termico.py — dos calefactores de poly w=0.5 a cada lado, 1 W/m cada uno (2 W/m total)
+# k_ox d_um | dT_calefactor K/(W/m tot) | (b) poly central 0.15: K/(W/m), f | (c) activa Si 0.42 um: K/(W/m), f
+1.0 0.21 | 0.140 | 0.1033, 0.736 | 0.00699, 0.0603
+1.0 0.5 | 0.130 | 0.0594, 0.456 | 0.00543, 0.0433
+1.0 1.0 | 0.125 | 0.0300, 0.239 | 0.00404, 0.0322
+1.0 3.0 | 0.121 | 0.0070, 0.058 | 0.00188, 0.0153
+1.4 0.21 | 0.102 | 0.0752, 0.739 | 0.00695, 0.0821
+1.4 0.5 | 0.095 | 0.0437, 0.462 | 0.00541, 0.0595
+1.4 1.0 | 0.091 | 0.0225, 0.248 | 0.00403, 0.0444
+1.4 3.0 | 0.088 | 0.0056, 0.064 | 0.00188, 0.0211
+
+# (d) calefactor de li (w=0.5, y=0.936..1.036) centrado ENCIMA de la zona activa (0.42 um) con su puerta de poly
+k_ox 1.0: li 0.325 K/(W/m); canal Si 0.00976 (f=0.0300); puerta poly 0.01301
+k_ox 1.4: li 0.237 K/(W/m); canal Si 0.00956 (f=0.0404); puerta poly 0.01270
+
+# Potencia y corriente para +200 K y +400 K en el OBJETIVO (lineal; calefactor n+ poly 48.2 ohm/sq w=0.5 -> 96.4 ohm/um;
+# límite de tensión: 1.8 V sobre la longitud del calefactor). 'T_cal' = subida del propio calefactor.
+# objetivo | k_ox d | dT_obj | W/m total | mW por um | I por calefactor mA | V/um | T_cal K | longitud máx a 1.8 V um
+poly central | 1.0 0.21 | 200 | 1.94e+03 | 1.94 | 3.17 | 0.31 | 272 | 5.89
+poly central | 1.0 0.21 | 400 | 3.87e+03 | 3.87 | 4.48 | 0.43 | 543 | 4.17
+canal Si | 1.0 0.21 | 200 | 2.86e+04 | 28.6 | 12.18 | 1.17 | 3317 | 1.53
+canal Si | 1.0 0.21 | 400 | 5.72e+04 | 57.2 | 17.22 | 1.66 | 6635 | 1.08
+poly central | 1.0 0.5 | 200 | 3.36e+03 | 3.36 | 4.18 | 0.40 | 439 | 4.47
+poly central | 1.0 0.5 | 400 | 6.73e+03 | 6.73 | 5.91 | 0.57 | 877 | 3.16
+canal Si | 1.0 0.5 | 200 | 3.69e+04 | 36.9 | 13.83 | 1.33 | 4616 | 1.35
+canal Si | 1.0 0.5 | 400 | 7.37e+04 | 73.7 | 19.55 | 1.88 | 9232 | 0.95
+poly central | 1.0 1.0 | 200 | 6.68e+03 | 6.68 | 5.88 | 0.57 | 836 | 3.17
+poly central | 1.0 1.0 | 400 | 1.34e+04 | 13.4 | 8.32 | 0.80 | 1671 | 2.24
+canal Si | 1.0 1.0 | 200 | 4.95e+04 | 49.5 | 16.02 | 1.54 | 6204 | 1.17
+canal Si | 1.0 1.0 | 400 | 9.89e+04 | 98.9 | 22.65 | 2.18 | 12408 | 0.82
+poly central | 1.4 0.21 | 200 | 2.66e+03 | 2.66 | 3.71 | 0.36 | 271 | 5.03
+poly central | 1.4 0.21 | 400 | 5.32e+03 | 5.32 | 5.25 | 0.51 | 541 | 3.56
+canal Si | 1.4 0.21 | 200 | 2.88e+04 | 28.8 | 12.22 | 1.18 | 2435 | 1.53
+canal Si | 1.4 0.21 | 400 | 5.75e+04 | 57.5 | 17.28 | 1.67 | 4870 | 1.08
+poly central | 1.4 0.5 | 200 | 4.57e+03 | 4.57 | 4.87 | 0.47 | 433 | 3.83
+poly central | 1.4 0.5 | 400 | 9.15e+03 | 9.15 | 6.89 | 0.66 | 865 | 2.71
+canal Si | 1.4 0.5 | 200 | 3.7e+04 | 37 | 13.85 | 1.34 | 3364 | 1.35
+canal Si | 1.4 0.5 | 400 | 7.4e+04 | 74 | 19.59 | 1.89 | 6728 | 0.95
+poly central | 1.4 1.0 | 200 | 8.9e+03 | 8.9 | 6.79 | 0.65 | 808 | 2.75
+poly central | 1.4 1.0 | 400 | 1.78e+04 | 17.8 | 9.61 | 0.93 | 1615 | 1.94
+canal Si | 1.4 1.0 | 200 | 4.96e+04 | 49.6 | 16.03 | 1.55 | 4507 | 1.16
+canal Si | 1.4 1.0 | 400 | 9.91e+04 | 99.1 | 22.68 | 2.19 | 9014 | 0.82
+
+# El calefactor mismo: +200/+400/+700 K
+k_ox 1.0: +200 K con 0.77 mW/um, I=2.82 mA, 0.27 V/um, J=3.1 MA/cm2
+k_ox 1.0: +400 K con 1.53 mW/um, I=3.99 mA, 0.38 V/um, J=4.4 MA/cm2
+k_ox 1.0: +700 K con 2.69 mW/um, I=5.28 mA, 0.51 V/um, J=5.9 MA/cm2
+k_ox 1.4: +200 K con 1.06 mW/um, I=3.31 mA, 0.32 V/um, J=3.7 MA/cm2
+k_ox 1.4: +400 K con 2.11 mW/um, I=4.68 mA, 0.45 V/um, J=5.2 MA/cm2
+k_ox 1.4: +700 K con 3.70 mW/um, I=6.20 mA, 0.60 V/um, J=6.9 MA/cm2
+
+# 3D: transistor en silicio masivo, fuente de potencia P en un disco de radio a sobre semiespacio: dT = P/(4 k a).
+radio 1 um, +200 K: P = 120 mW (k=150) .. 60 mW (k=75, silicio caliente)
+radio 1 um, +400 K: P = 240 mW (k=150) .. 120 mW (k=75, silicio caliente)
+radio 5 um, +200 K: P = 600 mW (k=150) .. 300 mW (k=75, silicio caliente)
+radio 5 um, +400 K: P = 1200 mW (k=150) .. 600 mW (k=75, silicio caliente)
+radio 20 um, +200 K: P = 2400 mW (k=150) .. 1200 mW (k=75, silicio caliente)
+radio 20 um, +400 K: P = 4800 mW (k=150) .. 2400 mW (k=75, silicio caliente)
+# Comparación leída: polyheater de Aichinger/Pobegen ~55 K/W, 4.2 W para +250 K (leído-resumen por agente).
+
+# Tiempos (cálculo): difusión en óxido h^2/alpha con alpha=8e-7 m2/s: 0.326 um -> 0.13 us; 0.94 um -> 1.10 us; silicio 5 um (alpha 8.8e-5): 0.28 us

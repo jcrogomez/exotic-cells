@@ -1,0 +1,88 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO photon_e05g
+  CLASS BLOCK ;
+  FOREIGN photon_e05g ;
+  ORIGIN 51.900 9.700 ;
+  SIZE 86.800 BY 22.400 ;
+  PIN DNW
+    ANTENNADIFFAREA 121.919998 ;
+    PORT
+      LAYER nwell ;
+        RECT -51.900 8.900 34.900 12.700 ;
+        RECT -51.900 -5.900 -48.100 8.900 ;
+        RECT 31.100 -5.900 34.900 8.900 ;
+        RECT -51.900 -9.700 34.900 -5.900 ;
+      LAYER li1 ;
+        RECT -50.165 10.635 33.165 10.965 ;
+        RECT -50.165 -7.635 -49.835 10.635 ;
+        RECT 32.835 -7.635 33.165 10.635 ;
+        RECT -50.165 -7.965 33.165 -7.635 ;
+    END
+  END DNW
+  PIN K
+    ANTENNADIFFAREA 0.168100 ;
+    PORT
+      LAYER nwell ;
+        RECT 1.080 1.080 1.920 1.920 ;
+      LAYER li1 ;
+        RECT 1.335 1.335 1.665 1.665 ;
+    END
+  END K
+  PIN A
+    ANTENNADIFFAREA 11.040000 ;
+    PORT
+      LAYER li1 ;
+        RECT -0.965 3.635 3.965 3.965 ;
+        RECT -0.965 -0.635 -0.635 3.635 ;
+        RECT 3.635 -0.635 3.965 3.635 ;
+        RECT -0.965 -0.965 3.965 -0.635 ;
+    END
+  END A
+  PIN EA
+    ANTENNADIFFAREA 1.400000 ;
+    PORT
+      LAYER li1 ;
+        RECT 8.700 0.900 9.500 2.100 ;
+    END
+  END EA
+  PIN EK
+    ANTENNADIFFAREA 1.400000 ;
+    PORT
+      LAYER nwell ;
+        RECT 8.000 0.000 12.000 3.000 ;
+      LAYER li1 ;
+        RECT 10.200 0.900 11.000 2.100 ;
+    END
+  END EK
+  PIN GUARD
+    ANTENNADIFFAREA 12.240000 ;
+    PORT
+      LAYER li1 ;
+        RECT 7.035 3.635 12.965 3.965 ;
+        RECT 7.035 -0.635 7.365 3.635 ;
+        RECT 12.635 -0.635 12.965 3.635 ;
+        RECT 7.035 -0.965 12.965 -0.635 ;
+    END
+  END GUARD
+  PIN CA
+    ANTENNADIFFAREA 1.400000 ;
+    PORT
+      LAYER li1 ;
+        RECT -43.300 0.900 -42.500 2.100 ;
+    END
+  END CA
+  PIN CK
+    ANTENNADIFFAREA 1.400000 ;
+    PORT
+      LAYER nwell ;
+        RECT -44.000 0.000 -40.000 3.000 ;
+      LAYER li1 ;
+        RECT -41.800 0.900 -41.000 2.100 ;
+    END
+  END CK
+END photon_e05g
+END LIBRARY
+

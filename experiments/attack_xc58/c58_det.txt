@@ -1,0 +1,26 @@
+[INFO] USER_ID: 1000, GROUP_ID: 1000
+[INFO] Final PATH variable: /foss/tools/bin:/foss/tools/sak:/usr/local/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/foss/tools/kactus2:/foss/tools/klayout:/foss/tools/osic-multitool
+[INFO] Final PYTHONPATH variable: /usr/lib/python312.zip:/usr/lib/python3.12:/usr/lib/python3.12/lib-dynload:/usr/local/lib/python3.12/dist-packages:/usr/lib/python3/dist-packages:/foss/tools/ngspyce/local/lib/python3.12/dist-packages:/foss/tools/openems/local/lib/python3.12/dist-packages:/foss/tools/yosys/share/yosys/python3:/foss/tools/klayout/pymod
+[INFO] SKIPPING UI STARTUP
+[INFO] Executing command: 'bash /w/c58_run_det.sh'
+DET cx0_tf50p_v1.8_T27_n_o0 0.316765 0.316765 0.0892614 0.0894037
+DET cx0_tf500p_v1.8_T27_n_o0 0.316765 0.316765 0.15467 0.154688
+DET cx0_tf5n_v1.8_T27_n_o0 0.316765 0.316765 0.185502 0.185503
+DET cx2_tf50p_v1.8_T27_n_o0 0.316765 0.316765 0.222049 0.222065
+DET cx2_tf500p_v1.8_T27_n_o0 0.316765 0.316765 0.254527 0.254528
+DET cx2_tf5n_v1.8_T27_n_o0 0.316765 0.316765 0.269089 0.269089
+DET cx9_tf50p_v1.8_T27_n_o0 0.316765 0.316765 0.28417 0.28417
+DET cx9_tf500p_v1.8_T27_n_o0 0.316765 0.316765 0.293677 0.293677
+DET cx9_tf5n_v1.8_T27_n_o0 0.316765 0.316765 0.300621 0.300621
+DET cx0_tf500p_v1.81_T27_n_o0 0.31874 0.31874 0.156264 0.156282
+DET cx0_tf500p_v1.8_T85_n_o0 0.29805 0.29805 0.141468 0.141487
+DET cx2_tf500p_v1.81_T27_n_o0 0.31874 0.31874 0.256366 0.256368
+DET cx2_tf500p_v1.8_T85_n_o0 0.29805 0.29805 0.236585 0.236587
+DET cx9_tf500p_v1.81_T27_n_o0 0.31874 0.31874 0.295597 0.295597
+DET cx9_tf500p_v1.8_T85_n_o0 0.29805 0.29805 0.274746 0.274746
+DET cx0_tf500p_v1.8_T27_ideal_o0 0.316765 0.316765 0.316765 0.316765
+DET cx0_tf500p_v1.8_T85_ideal_o0 0.29805 0.29805 0.29805 0.29805
+DET cx0_tf500p_v1.8_T27_dummy_o0 0.316765 0.316765 0.434106 0.434111
+DET cx0_tf500p_v1.8_T27_pcomp_o0 0.316765 0.316765 0.208273 0.208284
+DET cx0_tf500p_v1.81_T27_dummy_o0 0.31874 0.31874 0.437503 0.437508
+DET cx0_tf500p_v1.81_T27_pcomp_o0 0.31874 0.31874 0.20999 0.210001

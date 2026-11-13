@@ -1,0 +1,56 @@
+Thu Nov 12 12:44:24 EST 2026
+## (e1) Monte Carlo del estimador síncrono frente a la fórmula (unidades normalizadas: S0=1, fs=1)
+  periodo=   64 muestras  fc/f_mod=   0.0: var_MC/var_blanco =    0.84   (1+fc/f_mod =    1.0)
+  periodo=   64 muestras  fc/f_mod=   1.0: var_MC/var_blanco =    1.99   (1+fc/f_mod =    2.0)
+  periodo=   64 muestras  fc/f_mod=  10.0: var_MC/var_blanco =    9.58   (1+fc/f_mod =   11.0)
+  periodo=   64 muestras  fc/f_mod= 100.0: var_MC/var_blanco =   92.86   (1+fc/f_mod =  101.0)
+  periodo= 1024 muestras  fc/f_mod=   0.0: var_MC/var_blanco =    1.00   (1+fc/f_mod =    1.0)
+  periodo= 1024 muestras  fc/f_mod=   1.0: var_MC/var_blanco =    1.72   (1+fc/f_mod =    2.0)
+  periodo= 1024 muestras  fc/f_mod=  10.0: var_MC/var_blanco =    9.06   (1+fc/f_mod =   11.0)
+  periodo= 1024 muestras  fc/f_mod= 100.0: var_MC/var_blanco =   81.68   (1+fc/f_mod =  101.0)
+  -> el factor medido se usa abajo como F(fc/f_mod) ~ 1 + 0,8*fc/f_mod (ajuste a ojo de la tabla; ver informe).
+
+## (e2) Tiempo a 5 sigma, solo disparo: T = 100*q/(I0*delta^2)
+  corriente                                             I0 | delta=1e-3      1e-4        1e-5        1e-6
+  bombeo 10x10 um, 10 MHz, Dit 1,17e10            14000.0pA |   0.00114 s      0.114 s       11.4 s   1.14e+03 s
+  bombeo 10x10, 1 MHz  (o 3x3 a 10 MHz)            1300.0pA |    0.0123 s       1.23 s        123 s   1.23e+04 s
+  bombeo 1x1, 10 MHz, Dit 1,17e10                   140.0pA |     0.114 s       11.4 s   1.14e+03 s   1.14e+05 s
+  bombeo 1x1, 10 MHz, Dit 1e9                        12.0pA |      1.33 s        133 s   1.33e+04 s   1.34e+06 s
+  dc-IV 10x10, VF 0,4, Dit 1,17e10 sigma 1e-15       86.0pA |     0.186 s       18.6 s   1.86e+03 s   1.86e+05 s
+  dc-IV 10x10, VF 0,3, sigma 1e-16                    0.9pA |      17.2 s   1.72e+03 s   1.72e+05 s   1.72e+07 s
+  plan XC-52: 16 nA                               16000.0pA |     0.001 s        0.1 s         10 s      1e+03 s
+
+## (e3) Con 1/f: multiplicar por F = 1 + 0,8*fc/f_mod
+  f_mod=    1000 Hz: fc=     100: x     1.1  fc=   10000: x     9.0  fc= 1000000: x   801.0  fc=10000000: x  8001.0
+  f_mod=  100000 Hz: fc=     100: x     1.0  fc=   10000: x     1.1  fc= 1000000: x     9.0  fc=10000000: x    81.0
+  f_mod= 1000000 Hz: fc=     100: x     1.0  fc=   10000: x     1.0  fc= 1000000: x     1.8  fc=10000000: x     9.0
+  Nota: la fracción de la señal alcanzada con campo B y semianchura G (lorentziana): B^2/(B^2+G^2)
+   B=0.5 mT: G=0.5 mT -> 0.50  G=1.0 mT -> 0.20  G=1.7 mT -> 0.08
+   B=1.0 mT: G=0.5 mT -> 0.80  G=1.0 mT -> 0.50  G=1.7 mT -> 0.26
+   B=2.6 mT: G=0.5 mT -> 0.96  G=1.0 mT -> 0.87  G=1.7 mT -> 0.70
+
+## (f) Placa Hall de pozo n
+  N[cm-3]   mu[cm2/Vs]  t(950)[um] t(1700)[um] | S_I = G*rH*mu*Rs [V/(A*T)] (950 / 1700) | V_H por mA y mT [uV] (950/1700) | modo tension: uV por V y mT (cuadrada)
+    1e+16       1218      5.393      3.014   |     89.1 /  159.5                      |    89.1 /  159.5               |   93.8
+    3e+16       1064      2.059      1.150   |     77.8 /  139.3                      |    77.8 /  139.3               |   81.9
+    1e+17        777      0.845      0.472   |     56.9 /  101.8                      |    56.9 /  101.8               |   59.9
+    3e+17        486      0.451      0.252   |     35.6 /   63.6                      |    35.6 /   63.6               |   37.4
+    1e+18        262      0.251      0.140   |     19.2 /   34.3                      |    19.2 /   34.3               |   20.2
+  Barrido de G*rH: 0,5..1,08 (x0,65..x1,4 sobre la tabla).
+  Caída en placa cuadrada a 1 mA: 0,95 V (950) / 1,70 V (1700, no cabe en 1,8 V con interruptores): con 1700 el límite es la tensión.
+
+  Con el campo de la bobina (a52_coil.txt): 5 vueltas met3 w=1,5: 0,265 mT/mA -> 2,65 mT a 10 mA; w=0,3: 0,52 mT en el límite CC de EM
+   mu=  500 B=0.52 mT, 1 V de polarización: V_H =   20.0 uV =  0.07 pasos de 0,305 mV ; pares de conversiones (+B/-B) para 5 sigma:  1273.9
+   mu=  500 B=1.15 mT, 1 V de polarización: V_H =   44.3 uV =  0.15 pasos de 0,305 mV ; pares de conversiones (+B/-B) para 5 sigma:   260.5
+   mu=  500 B=2.65 mT, 1 V de polarización: V_H =  102.0 uV =  0.33 pasos de 0,305 mV ; pares de conversiones (+B/-B) para 5 sigma:    49.1
+   mu=  800 B=0.52 mT, 1 V de polarización: V_H =   32.0 uV =  0.11 pasos de 0,305 mV ; pares de conversiones (+B/-B) para 5 sigma:   497.6
+   mu=  800 B=1.15 mT, 1 V de polarización: V_H =   70.8 uV =  0.23 pasos de 0,305 mV ; pares de conversiones (+B/-B) para 5 sigma:   101.7
+   mu=  800 B=2.65 mT, 1 V de polarización: V_H =  163.2 uV =  0.54 pasos de 0,305 mV ; pares de conversiones (+B/-B) para 5 sigma:    19.2
+   mu= 1100 B=0.52 mT, 1 V de polarización: V_H =   44.0 uV =  0.14 pasos de 0,305 mV ; pares de conversiones (+B/-B) para 5 sigma:   263.2
+   mu= 1100 B=1.15 mT, 1 V de polarización: V_H =   97.4 uV =  0.32 pasos de 0,305 mV ; pares de conversiones (+B/-B) para 5 sigma:    53.8
+   mu= 1100 B=2.65 mT, 1 V de polarización: V_H =  224.5 uV =  0.74 pasos de 0,305 mV ; pares de conversiones (+B/-B) para 5 sigma:    10.1
+  Ruido por conversión del lector: 0,55 % frente a 0,83 % por paso -> sigma = 0,20 mV por conversión (PLANTILLA, corrida de modelo).
+  Offset sin corriente rotatoria: 0,1..1 % de la polarización = 1..10 mV (DE MEMORIA, [?] en SKY130) = 5..200 veces V_H;
+  la inversión del campo de la bobina lo cancela (el offset no depende de B); la rotación de corriente ya no es imprescindible.
+  fem inducida en el lazo de sentido (10x10 um, 2,65 mT): 0,17 uV a 100 kHz, 1,7 uV a 1 MHz, 17 uV a 10 MHz (frente a V_H ~ 100-200 uV).
+  Ruido térmico de la placa: sqrt(4kT*950) = 4.0 nV/rtHz -> despreciable frente al lector.

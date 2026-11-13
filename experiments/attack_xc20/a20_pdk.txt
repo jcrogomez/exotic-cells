@@ -1,0 +1,301 @@
+Thu Nov 12 12:37:44 EST 2026
+== 1. hoja de difusion/poly/li (mohm/sq) y contactos (mohm) : $SKY130A/libs.tech/magic/sky130A.tech
+5096:# Resistances are in milliohms per square
+5106: resist (*ndiff,nsd)/active 	 120000
+5107: resist (*pdiff,*psd)/active	 197000
+5119: resist (allpolynonres)/active   48200
+5122: resist (allli)/locali		 12800
+5130: contact ndc,nsc		185000
+5132: contact pdc,psc		585000
+5154: resist (*ndiff,nsd)/active 	 132000
+5155: resist (*pdiff,*psd)/active	 228000
+5167: resist (allpolynonres)/active   55800
+5170: resist (allli)/locali		 17000
+5178: contact ndc,nsc		280000
+5180: contact pdc,psc		840000
+5202: resist (*ndiff,nsd)/active 	 108000
+5203: resist (*pdiff,*psd)/active	 166000
+5215: resist (allpolynonres)/active   42200
+5218: resist (allli)/locali		 10500
+5226: contact ndc,nsc		 95000
+5228: contact pdc,psc		345000
+== 2. 'silicid' en el tech de magic (solo estilo de dibujo de resistencias de poly?)
+493:  npolyres  polysilicon    silicide_block nselect2
+494:  ppolyres  polysilicon    silicide_block pselect2
+563:  xhrpoly   poly_resist    silicide_block
+== 3. conectividad: nsd conecta con nwell; pdiff no conecta con nsd
+connect
+  *nwell,*nsd,*mvnsd,dnwell,pnp,photo *nwell,*nsd,*mvnsd,dnwell,pnp,photo
+  pwell,*psd,*mvpsd,npn,isosub  pwell,*psd,*mvpsd,npn,isosub
+  *mvnsd ed
+   allnactivenonfet	allnactivenonfet
+   allpactivenonfet	allpactivenonfet
+  allnactivenonfet *ndiff,*nsd,*ndiode,*nndiode,*mvndiff,*mvnsd,*mvndiode,*ndiodelvt
+  allpactivenonfet *pdiff,*psd,*pdiode,*mvpdiff,*mvpsd,*mvpdiode,*pdiodelvt,*pdiodehvt
+== 4. reglas de union pegada (butting)
+2764: # Devices abutting tap under gate are officially npd, not npass
+4227: extend *mvpsd *mvndiff 700 "MV Butting tap length < %d (diff/tap.16)"
+4228: extend *mvnsd *mvpdiff 700 "MV Butting tap length < %d (diff/tap.16)"
+4229: extend *psd *ndiff 290 "Butting tap length < %d (diff/tap.4)"
+4230: extend *nsd *pdiff 290 "Butting tap length < %d (diff/tap.4)"
+4234:	"Diffusion spacing < %d (diff/tap.3)"
+4236:	"LV to MV Diffusion spacing < %d (diff/tap.3)"
+4240:	"MV Diffusion to MV tap spacing < %d (diff/tap.3)"
+4280:	"nFET cannot abut P-diffusion (diff/tap.3)"
+4282:	"pFET cannot abut N-diffusion (diff/tap.3)"
+4284: # Butting junction rules
+4286:	"N-Diffusion to P-tap spacing < %d across butted junction (psd.5b)"
+4288:	"N-Diffusion to P-tap spacing < %d across butted junction (psd.5a)"
+4290:	"P-Diffusion to N-tap spacing < %d across butted junction (nsd.5b)"
+4292:	"P-Diffusion to N-tap spacing < %d across butted junction (nsd.5a)"
+4295:	"MV N-Diffusion to MV P-tap spacing < %d across butted junction (psd.5b)"
+4297:	"MV N-Diffusion to MV P-tap spacing < %d across butted junction (psd.5a)"
+4299:	"MV P-Diffusion to MV N-tap spacing < %d across butted junction (nsd.5b)"
+4301:	"MV P-Diffusion to MV N-tap spacing < %d across butted junction (nsd.5a)"
+4303: # Sandwiched butting junction restrictions
+4304: edge4way (*pdiff)/a (*nsd)/a 400 ~(*pdiff)/a 0 0 "NSDM width < %d (diff/tap.5)"
+4305: edge4way (*ndiff)/a (*psd)/a 400 ~(*ndiff)/a 0 0 "PSDM width < %d (diff/tap.5)"
+4505:	"Min. space between P-tap contact and butting N diffusion < %d (licon.5b)"
+4507:	"Min. space between N-tap contact and butting P diffusion < %d (licon.5b)"
+4534:	"Min. space between P-tap contact and butting N diffusion < %d (licon.5b)"
+4536:	"Min. space between N-tap contact and butting P diffusion < %d (licon.5b)"
+4798:	"Butting P-tap spacing to NMOS gate < %d (poly.6)"
+4800:	"Butting N-tap spacing to PMOS gate < %d (poly.6)"
+4802:	"Butting MV P-tap spacing to MV NMOS gate < %d (poly.6)"
+4804:	"Butting MV N-tap spacing to MV PMOS gate < %d (poly.6)"
+== 5. klayout drc: difftap / licon.5b / siliciuro
+446:        "difftap.3",
+447:        "difftap.3 : min. difftap spacing : 0.27um"
+== 6. seccion transversal klayout (ilustrativa): profundidades
+21:poly   = layer("66/20")   # Polysilicon
+25:rpm    = layer("86/20")   # 300 ohms/square polysilicon resistor implant
+26:urpm   = layer("79/20")   # 2000 ohms/square polysilicon resistor implant
+49:dnwell_depth = 1.2
+52:nwell_depth = 0.8
+54:ldd_impl_depth = 0.06
+55:ldd_impl_radius = 0.02
+56:sd_impl_depth = 0.12
+57:sd_impl_radius = 0.04
+58:sti_depth = 0.3
+97:m_dnwell = mask(dnwell).grow(dnwell_depth, -dnwell_outdiff, mode: :round, into: feol)
+103:m_nwell = mask(nwell).grow(nwell_depth, -nwell_outdiff, mode: :round, into: feol)
+106:m_nldd = mask(nsdm.not(poly)).grow(ldd_impl_depth, -ldd_impl_radius, mode: :round, into: feol)
+109:m_nsd = mask(nsdm.not(poly_with_spacer)).grow(sd_impl_depth, -sd_impl_radius, mode: :round, into: feol)
+112:m_pldd = mask(psdm.not(poly)).grow(ldd_impl_depth, -ldd_impl_radius, mode: :round, into: feol)
+115:m_psd = mask(psdm.not(poly_with_spacer)).grow(sd_impl_depth, -sd_impl_radius, mode: :round, into: feol)
+118:mask(diff.or(tap).inverted).etch(sti_depth, taper: sti_taper, into: feol)
+120:m_bpsg = deposit(sti_depth, 0.0)
+== 7. celdas hd con toma (nsubdiff/psubdiff) y cuantas capas ndiff/pdiff tienen
+sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1.mag diff_layers=2
+sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2.mag diff_layers=2
+sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4.mag diff_layers=2
+sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4.mag diff_layers=2
+sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1.mag diff_layers=2
+sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2.mag diff_layers=2
+sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4.mag diff_layers=2
+sky130_fd_sc_hd__tap_1.mag diff_layers=0
+sky130_fd_sc_hd__tap_2.mag diff_layers=0
+sky130_fd_sc_hd__tapvgnd2_1.mag diff_layers=0
+sky130_fd_sc_hd__tapvgnd_1.mag diff_layers=0
+sky130_fd_sc_hd__tapvpwrvgnd_1.mag diff_layers=0
+   total celdas hd:      446
+== 8. modelos de diodo: cj mj pb cjsw js n bv
+-- diode_pd2nw_05v5
+17:+ level = 3.0
+21:+ cj = '0.00074079*1e-12*sky130_fd_pr__pfet_01v8__ajunction_mult' ; Units: farad/meter^2
+22:+ mj = 0.34629
+23:+ pb = 0.6587 ; Units: volt
+24:+ cjsw = '9.88e-011*1e-6*sky130_fd_pr__pfet_01v8__pjunction_mult' ; Units: farad/meter
+25:+ mjsw = 0.29781
+26:+ php = 0.7418 ; Units: volt
+32:+ js = 2.1483e-017 ; Units: amper/meter^2
+33:+ jsw = 8.04e-016 ; Units: amper/meter
+34:+ n = 1.3632
+38:+ bv = 12.69 ; Units: volt
+39:+ ibv = 0.00106 ; Units: amper
+41:+ eg = 1.05 ; Units: electron-volt
+42:+ xti = 5.2
+-- diode_pd2nw_05v5_lvt
+17:+ level = 3.0
+21:+ cj = '0.00076823*1e-12*sky130_fd_pr__pfet_01v8_lvt__ajunction_mult' ; Units: farad/meter^2
+22:+ mj = 0.3362
+23:+ pb = 0.6587 ; Units: volt
+24:+ cjsw = '9.152e-011*1e-6*sky130_fd_pr__pfet_01v8_lvt__pjunction_mult' ; Units: farad/meter
+25:+ mjsw = 0.2659
+26:+ php = 0.7418 ; Units: volt
+32:+ js = 2.1483e-017 ; Units: amper/meter^2
+33:+ jsw = 1.447e-16 ; Units: amper/meter
+34:+ n = 1.3632
+38:+ bv = 12.69 ; Units: volt
+39:+ ibv = 0.00106 ; Units: amper
+41:+ eg = 1.05 ; Units: electron-volt
+42:+ xti = 5.2
+-- diode_pd2nw_05v5_hvt
+17:+ level = 3.0
+21:+ cj = '0.00075561*1e-12*sky130_fd_pr__pfet_01v8_hvt__ajunction_mult' ; Units: farad/meter^2
+22:+ mj = 0.34629
+23:+ pb = 0.6587 ; Units: volt
+24:+ cjsw = '9.2435e-011*1e-6*sky130_fd_pr__pfet_01v8_hvt__pjunction_mult' ; Units: farad/meter
+25:+ mjsw = 0.26859
+26:+ php = 0.7418 ; Units: volt
+32:+ js = 2.17e-017 ; Units: amper/meter^2
+33:+ jsw = 8.2e-016 ; Units: amper/meter
+34:+ n = 1.2556
+38:+ bv = 12.8 ; Units: volt
+39:+ ibv = 0.00106 ; Units: amper
+41:+ eg = 1.05 ; Units: electron-volt
+42:+ xti = 2.0
+-- diode_pd2nw_11v0
+17:+ level = 3.0
+21:+ cj = '0.00077547*1e-12*sky130_fd_pr__pfet_g5v0d10v5__ajunction_mult' ; Units: farad/meter^2
+22:+ mj = 0.33956
+23:+ pb = 0.6587 ; Units: volt
+24:+ cjsw = '9.8717e-011*1e-6*sky130_fd_pr__pfet_g5v0d10v5__pjunction_mult' ; Units: farad/meter
+25:+ mjsw = 0.24676
+26:+ php = 1 ; Units: volt
+32:+ js = 2.1483e-017 ; Units: amper/meter^2
+33:+ jsw = 4.02e-018 ; Units: amper/meter
+34:+ n = 1.3632
+38:+ bv = 12.69 ; Units: volt
+39:+ ibv = 0.00106 ; Units: amper
+41:+ eg = 1.05 ; Units: electron-volt
+42:+ xti = 10.0
+-- diode_pw2nd_05v5
+17:+ level = 3.0
+21:+ cj = '0.0013459*1e-12*sky130_fd_pr__nfet_01v8__ajunction_mult' ; Units: farad/meter^2
+22:+ mj = 0.44
+23:+ pb = 0.729 ; Units: volt
+24:+ cjsw = '3.6001e-011*1e-6*sky130_fd_pr__nfet_01v8__pjunction_mult' ; Units: farad/meter
+25:+ mjsw = 0.0009
+26:+ php = 0.2 ; Units: volt
+32:+ js = 2.75e-015 ; Units: amper/meter^2
+33:+ jsw = 6e-016 ; Units: amper/meter
+34:+ n = 1.2928
+38:+ bv = 11.7 ; Units: volt
+39:+ ibv = 0.00106 ; Units: amper
+41:+ eg = 1.05 ; Units: electron-volt
+42:+ xti = 2.0
+-- diode_pw2nd_05v5_lvt
+17:+ level = 3.0
+21:+ cj = '0.001209*1e-12*sky130_fd_pr__nfet_01v8_lvt__ajunction_mult' ; Units: farad/meter^2
+22:+ mj = 0.42197
+23:+ pb = 0.7477 ; Units: volt
+24:+ cjsw = '3.6224e-011*1e-6*sky130_fd_pr__nfet_01v8_lvt__pjunction_mult' ; Units: farad/meter
+25:+ mjsw = 0.001
+26:+ php = 0.1 ; Units: volt
+32:+ js = 2.75e-015 ; Units: amper/meter^2
+33:+ jsw = 6e-016 ; Units: amper/meter
+34:+ n = 1.2928
+38:+ bv = 11.9 ; Units: volt
+39:+ ibv = 0.00106 ; Units: amper
+41:+ eg = 1.05 ; Units: electron-volt
+42:+ xti = 2.0
+-- diode_pw2nd_05v5_nvt
+17:+ level = 3.0
+21:+ cj = '0.0008602*1e-12*sky130_fd_pr__nfet_05v0_nvt__ajunction_mult' ; Units: farad/meter^2
+22:+ mj = 0.28329
+23:+ pb = 0.66345 ; Units: volt
+24:+ cjsw = '8.5152e-011*1e-6*sky130_fd_pr__nfet_05v0_nvt__pjunction_mult' ; Units: farad/meter
+25:+ mjsw = 0.057926
+26:+ php = 1 ; Units: volt
+32:+ js = 4.2966e-016 ; Units: amper/meter^2
+33:+ jsw = 8.04e-016 ; Units: amper/meter
+34:+ n = 1.5764
+38:+ bv = 12.69 ; Units: volt
+39:+ ibv = 0.00106 ; Units: amper
+41:+ eg = 1.05 ; Units: electron-volt
+42:+ xti = 0.0
+-- diode_pw2nd_11v0
+17:+ level = 3.0
+21:+ cj = '0.0008512*1e-12*sky130_fd_pr__nfet_g5v0d10v5__ajunction_mult' ; Units: farad/meter^2
+22:+ mj = 0.295
+23:+ pb = 0.72468 ; Units: volt
+24:+ cjsw = '8.5204e-011*1e-6*sky130_fd_pr__nfet_g5v0d10v5__pjunction_mult' ; Units: farad/meter
+25:+ mjsw = 0.037586
+26:+ php = 0.29067 ; Units: volt
+32:+ js = 3.75e-016 ; Units: amper/meter^2
+33:+ jsw = 5.84e-017 ; Units: amper/meter
+34:+ n = 1.0773
+38:+ bv = 12.636 ; Units: volt
+39:+ ibv = 0.00106 ; Units: amper
+41:+ eg = 0.92 ; Units: electron-volt
+42:+ xti = 0.76
+== 9. otros diodos / zener en el PDK
+sky130_fd_pr__diode_pd2nw_05v5.model.spice
+sky130_fd_pr__diode_pd2nw_05v5_hvt.model.spice
+sky130_fd_pr__diode_pd2nw_05v5_lvt.model.spice
+sky130_fd_pr__diode_pd2nw_11v0.model.spice
+sky130_fd_pr__diode_pd2nw_11v0_no_rs.model.spice
+sky130_fd_pr__diode_pw2nd_05v5.model.spice
+sky130_fd_pr__diode_pw2nd_05v5__extended_drain.model.spice
+sky130_fd_pr__diode_pw2nd_05v5_lvt.model.spice
+sky130_fd_pr__diode_pw2nd_05v5_nvt.model.spice
+sky130_fd_pr__diode_pw2nd_11v0.model.spice
+sky130_fd_pr__diode_pw2nd_11v0_no_rs.model.spice
+sky130_fd_pr__esd_rf_diode_pd2nw_11v0_100.model.spice
+sky130_fd_pr__esd_rf_diode_pd2nw_11v0_200.model.spice
+sky130_fd_pr__esd_rf_diode_pd2nw_11v0_300.model.spice
+sky130_fd_pr__esd_rf_diode_pw2nd_11v0_100.model.spice
+sky130_fd_pr__esd_rf_diode_pw2nd_11v0_100__parasitic__diode_pw2dn.model.spice
+sky130_fd_pr__esd_rf_diode_pw2nd_11v0_200.model.spice
+sky130_fd_pr__esd_rf_diode_pw2nd_11v0_200__parasitic__diode_pw2dn.model.spice
+sky130_fd_pr__esd_rf_diode_pw2nd_11v0_300.model.spice
+sky130_fd_pr__esd_rf_diode_pw2nd_11v0_300__parasitic__diode_pw2dn.model.spice
+sky130_fd_pr__nfet_20v0_nvt__parasitic__diode_ps2dn.model.spice
+sky130_fd_pr__nfet_20v0_zvt__parasitic__diode_ps2dn__extended_drain.model.spice
+sky130_fd_pr__nwdiode_top.model.spice
+sky130_fd_pr__pfet_20v0__parasitic__diode_pw2dn.model.spice
+sky130_fd_pr__pfet_g5v0d16v0__parasitic__diode_pw2dn.model.spice
+== 10. MOS 1v8 tt: xj, cj, pb, mj, ndep, nsd, gidl, bvs/xjbvs, jtss (tunel de union)
+-- $SKY130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__nfet_01v8__tt.pm3.spice
+118:agidl = 0.0
+119:bgidl = 2300000000.0
+200:bvs = 11.7
+120:cgidl = 0.5
+203:cjs = 0.001339749237
+206:cjsws = 3.67354204e-11
+121:egidl = 0.8
+199:ijthsrev = 0.1
+196:jss = 0.00275
+197:jsws = 6.0e-10
+4:level = 54.0
+204:mjs = 0.44
+207:mjsws = 0.0009
+30:ndep = 1.7e+17
+29:ngate = 1.0e+23
+223:njs = 1.2928
+31:nsd = 1.0e+20
+202:pbs = 0.729
+205:pbsws = 0.2
+104:rdsw = 65.968
+32:rsh = 1.0
+24:toxe = {4.148e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.148e-09*1.0*(sky130_fd_pr__nfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+5:version = 4.5
+28:xj = 1.5e-7
+201:xjbvs = 1.0
+-- $SKY130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__pfet_01v8__tt.pm3.spice
+143:agidl = 1.0e-10
+144:bgidl = 1181082000.0
+211:bvs = 12.69
+145:cgidl = 300.0
+248:cjs = 0.0007380194454
+251:cjsws = 9.888892e-11
+146:egidl = 0.1
+213:ijthsrev = 0.1
+208:jss = 2.1483e-5
+209:jsws = 8.04e-10
+4:level = 54.0
+249:mjs = 0.34629
+252:mjsws = 0.29781
+55:ndep = 1.7000000000000000e+17
+239:ngate = 1.0e+23
+207:njs = 1.3632
+56:nsd = 1.0e+20
+250:pbs = 0.6587
+253:pbsws = 0.7418
+85:rdsw = 547.88
+58:rsh = 1.0
+53:toxe = {4.23e-09+MC_MM_SWITCH*AGAUSS(0,1.0,1)*(4.23e-09*(sky130_fd_pr__pfet_01v8__toxe_slope/sqrt(l*w*mult)))}
+6:version = 4.5
+8:xj = 1.5e-7
+212:xjbvs = 1.0

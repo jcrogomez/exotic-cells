@@ -1,0 +1,60 @@
+b05_4_tunel. 1/G0 = 12909 Ohm
+
+(4a) Resistencia de túnel [Ohm] frente a abertura s
+  met1 barrera A 0,14um x 30nm
+    phi=1.0 eV: 0.2nm: 7.8e+00 0.3nm: 3.3e+01 0.5nm: 4.2e+02 0.7nm: 4.6e+03 1.0nm: 1.4e+05 1.3nm: 4.0e+06 1.6nm: 1.1e+08 2.0nm: 8.0e+09 3.0nm: 3.4e+14
+    phi=2.0 eV: 0.2nm: 1.3e+01 0.3nm: 8.2e+01 0.5nm: 2.5e+03 0.7nm: 6.3e+04 1.0nm: 7.0e+06 1.3nm: 7.0e+08 1.6nm: 6.7e+10 2.0nm: 2.7e+13 3.0nm: 8.1e+19
+    phi=3.1 eV: 0.2nm: 2.1e+01 0.3nm: 1.9e+02 0.5nm: 1.2e+04 0.7nm: 6.1e+05 1.0nm: 1.9e+08 1.3nm: 5.7e+10 1.6nm: 1.6e+13 2.0nm: 2.7e+16 3.0nm: 2.7e+24
+    phi=4.5 eV: 0.2nm: 3.7e+01 0.3nm: 4.8e+02 0.5nm: 6.2e+04 0.7nm: 6.7e+06 1.0nm: 6.5e+09 1.3nm: 5.7e+12 1.6nm: 4.8e+15 2.0nm: 3.6e+19 3.0nm: 1.5e+29
+  met1 barrera B 0,14um x 75nm
+    phi=1.0 eV: 0.2nm: 3.1e+00 0.3nm: 1.3e+01 0.5nm: 1.7e+02 0.7nm: 1.8e+03 1.0nm: 5.7e+04 1.3nm: 1.6e+06 1.6nm: 4.2e+07 2.0nm: 3.2e+09 3.0nm: 1.3e+14
+    phi=2.0 eV: 0.2nm: 5.2e+00 0.3nm: 3.3e+01 0.5nm: 1.0e+03 0.7nm: 2.5e+04 1.0nm: 2.8e+06 1.3nm: 2.8e+08 1.6nm: 2.7e+10 2.0nm: 1.1e+13 3.0nm: 3.2e+19
+    phi=3.1 eV: 0.2nm: 8.4e+00 0.3nm: 7.7e+01 0.5nm: 4.7e+03 0.7nm: 2.4e+05 1.0nm: 7.8e+07 1.3nm: 2.3e+10 1.6nm: 6.3e+12 2.0nm: 1.1e+16 3.0nm: 1.1e+24
+    phi=4.5 eV: 0.2nm: 1.5e+01 0.3nm: 1.9e+02 0.5nm: 2.5e+04 0.7nm: 2.7e+06 1.0nm: 2.6e+09 1.3nm: 2.3e+12 1.6nm: 1.9e+15 2.0nm: 1.4e+19 3.0nm: 5.9e+28
+  li 0,17 x 0,10 um
+    phi=1.0 eV: 0.2nm: 1.9e+00 0.3nm: 8.1e+00 0.5nm: 1.0e+02 0.7nm: 1.1e+03 1.0nm: 3.5e+04 1.3nm: 9.8e+05 1.6nm: 2.6e+07 2.0nm: 2.0e+09 3.0nm: 8.3e+13
+    phi=2.0 eV: 0.2nm: 3.2e+00 0.3nm: 2.0e+01 0.5nm: 6.2e+02 0.7nm: 1.6e+04 1.0nm: 1.7e+06 1.3nm: 1.7e+08 1.6nm: 1.6e+10 2.0nm: 6.8e+12 3.0nm: 2.0e+19
+    phi=3.1 eV: 0.2nm: 5.2e+00 0.3nm: 4.7e+01 0.5nm: 2.9e+03 0.7nm: 1.5e+05 1.0nm: 4.8e+07 1.3nm: 1.4e+10 1.6nm: 3.9e+12 2.0nm: 6.6e+15 3.0nm: 6.7e+23
+    phi=4.5 eV: 0.2nm: 9.0e+00 0.3nm: 1.2e+02 0.5nm: 1.5e+04 0.7nm: 1.7e+06 1.0nm: 1.6e+09 1.3nm: 1.4e+12 1.6nm: 1.2e+15 2.0nm: 8.8e+18 3.0nm: 3.6e+28
+  aspereza 1 nm2
+    phi=1.0 eV: 0.2nm: 3.3e+04 0.3nm: 1.4e+05 0.5nm: 1.8e+06 0.7nm: 1.9e+07 1.0nm: 5.9e+08 1.3nm: 1.7e+10 1.6nm: 4.4e+11 2.0nm: 3.3e+13 3.0nm: 1.4e+18
+    phi=2.0 eV: 0.2nm: 5.4e+04 0.3nm: 3.5e+05 0.5nm: 1.0e+07 0.7nm: 2.7e+08 1.0nm: 2.9e+10 1.3nm: 2.9e+12 1.6nm: 2.8e+14 2.0nm: 1.1e+17 3.0nm: 3.4e+23
+    phi=3.1 eV: 0.2nm: 8.8e+04 0.3nm: 8.1e+05 0.5nm: 5.0e+07 0.7nm: 2.6e+09 1.0nm: 8.2e+11 1.3nm: 2.4e+14 1.6nm: 6.6e+16 2.0nm: 1.1e+20 3.0nm: 1.1e+28
+    phi=4.5 eV: 0.2nm: 1.5e+05 0.3nm: 2.0e+06 0.5nm: 2.6e+08 0.7nm: 2.8e+10 1.0nm: 2.7e+13 1.3nm: 2.4e+16 1.6nm: 2.0e+19 2.0nm: 1.5e+23 3.0nm: 6.2e+32
+
+(4b) Abertura [nm] que da 100 Ohm / 12,9 kOhm / 1 MOhm / 1 GOhm (bisección)
+  met1 barrera A 0,14um x 30nm   phi=1.0: 0.39 / 0.79 / 1.18 / 1.81   -> ventana 100 Ohm-1 MOhm = 0.79 nm de ancho
+  met1 barrera A 0,14um x 30nm   phi=3.1: 0.27 / 0.50 / 0.73 / 1.09   -> ventana 100 Ohm-1 MOhm = 0.46 nm de ancho
+  met1 barrera A 0,14um x 30nm   phi=4.5: 0.24 / 0.43 / 0.62 / 0.92   -> ventana 100 Ohm-1 MOhm = 0.38 nm de ancho
+  met1 barrera B 0,14um x 75nm   phi=1.0: 0.46 / 0.87 / 1.26 / 1.89   -> ventana 100 Ohm-1 MOhm = 0.80 nm de ancho
+  met1 barrera B 0,14um x 75nm   phi=3.1: 0.31 / 0.55 / 0.77 / 1.13   -> ventana 100 Ohm-1 MOhm = 0.46 nm de ancho
+  met1 barrera B 0,14um x 75nm   phi=4.5: 0.27 / 0.47 / 0.66 / 0.96   -> ventana 100 Ohm-1 MOhm = 0.38 nm de ancho
+  li 0,17 x 0,10 um              phi=1.0: 0.50 / 0.91 / 1.30 / 1.94   -> ventana 100 Ohm-1 MOhm = 0.80 nm de ancho
+  li 0,17 x 0,10 um              phi=3.1: 0.34 / 0.57 / 0.80 / 1.16   -> ventana 100 Ohm-1 MOhm = 0.46 nm de ancho
+  li 0,17 x 0,10 um              phi=4.5: 0.29 / 0.49 / 0.68 / 0.98   -> ventana 100 Ohm-1 MOhm = 0.39 nm de ancho
+  aspereza 1 nm2                 phi=1.0: 0.02 / 0.14 / 0.45 / 1.05   -> ventana 100 Ohm-1 MOhm = 0.43 nm de ancho
+  aspereza 1 nm2                 phi=3.1: 0.02 / 0.12 / 0.31 / 0.65   -> ventana 100 Ohm-1 MOhm = 0.29 nm de ancho
+  aspereza 1 nm2                 phi=4.5: 0.02 / 0.11 / 0.27 / 0.56   -> ventana 100 Ohm-1 MOhm = 0.25 nm de ancho
+  (aberturas < ~0,25 nm no son un hueco: es contacto. Ahí la fórmula deja de valer.)
+
+(4c) No linealidad: término cúbico relativo g V^2 a 25 / 50 / 100 / 300 mV
+  phi=1.0 eV s=0.5 nm: 25mV:  0.007%  50mV:  0.028%  100mV:  0.113%  300mV:  1.020%
+  phi=1.0 eV s=1.0 nm: 25mV:  0.048%  50mV:  0.193%  100mV:  0.773%  300mV:  6.960%
+  phi=1.0 eV s=2.0 nm: 25mV:  0.233%  50mV:  0.933%  100mV:  3.734%  300mV: 33.602%
+  phi=3.1 eV s=0.5 nm: 25mV:  0.004%  50mV:  0.015%  100mV:  0.059%  300mV:  0.530%
+  phi=3.1 eV s=1.0 nm: 25mV:  0.018%  50mV:  0.074%  100mV:  0.294%  300mV:  2.647%
+  phi=3.1 eV s=2.0 nm: 25mV:  0.081%  50mV:  0.323%  100mV:  1.294%  300mV: 11.643%
+  phi=4.5 eV s=0.5 nm: 25mV:  0.003%  50mV:  0.011%  100mV:  0.044%  300mV:  0.396%
+  phi=4.5 eV s=1.0 nm: 25mV:  0.013%  50mV:  0.052%  100mV:  0.209%  300mV:  1.885%
+  phi=4.5 eV s=2.0 nm: 25mV:  0.057%  50mV:  0.226%  100mV:  0.905%  300mV:  8.144%
+  Contacto metálico de pocos canales: óhmico a estas tensiones (transmisión casi constante en una escala de eV): ~0 %.
+  Resistencia difusiva con autocalentamiento: dR/R = TCR * dT(V); con V=50 mV sobre 10 kOhm son 0,25 uW: dT < 0,1 K con Rth <= 4e5 K/W: < 0,03 %.
+
+(4d) De dónde saldría una grieta de esa escala (cálculo, SUPUESTO alfa_TiN 9,4e-6 /K, alfa_SiO2 0,5e-6 /K DE MEMORIA):
+     contracción libre al enfriar un tramo de largo L desde T_pico: d = (alfa_TiN - alfa_ox) * dT * L
+  L =    30 nm: dT=400K:  0.11 nm  dT=700K:  0.19 nm  dT=1600K:  0.43 nm
+  L =   100 nm: dT=400K:  0.36 nm  dT=700K:  0.62 nm  dT=1600K:  1.42 nm
+  L =   300 nm: dT=400K:  1.07 nm  dT=700K:  1.87 nm  dT=1600K:  4.27 nm
+  L =  1000 nm: dT=400K:  3.56 nm  dT=700K:  6.23 nm  dT=1600K: 14.24 nm
+
+(4e) Lo que el lector distingue (piso 0,3 mV sobre 50 mV: ~0,6 % de la escala): ver b05_5.

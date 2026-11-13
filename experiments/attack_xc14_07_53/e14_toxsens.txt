@@ -1,0 +1,10 @@
+r=1: V(6 m) a 4,098 nm = 0.3296 V; a 4,198 nm = 0.3935 V; sensibilidad 639 mV/nm
+   W×L=0.42×0.15 µm: σ(tox) = 56.90 pm → σ(V6m) ≈ 36.4 mV = 119 pasos del lector
+   W×L=1×1 µm: σ(tox) = 14.28 pm → σ(V6m) ≈ 9.1 mV = 30 pasos del lector
+   W×L=5×5 µm: σ(tox) = 2.86 pm → σ(V6m) ≈ 1.8 mV = 6 pasos del lector
+   W×L=20×20 µm: σ(tox) = 0.71 pm → σ(V6m) ≈ 0.5 mV = 1 pasos del lector
+r=100: V(6 m) a 4,098 nm = 0.8398 V; a 4,198 nm = 0.9926 V; sensibilidad 1527 mV/nm
+   W×L=0.42×0.15 µm: σ(tox) = 56.90 pm → σ(V6m) ≈ 86.9 mV = 285 pasos del lector
+   W×L=1×1 µm: σ(tox) = 14.28 pm → σ(V6m) ≈ 21.8 mV = 72 pasos del lector
+   W×L=5×5 µm: σ(tox) = 2.86 pm → σ(V6m) ≈ 4.4 mV = 14 pasos del lector
+   W×L=20×20 µm: σ(tox) = 0.71 pm → σ(V6m) ≈ 1.1 mV = 4 pasos del lector

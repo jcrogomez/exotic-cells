@@ -1,0 +1,103 @@
+1. CAMPO EN EL PLANO bajo una tira (um; alturas del tech l.5058-5068: met1 1,3761+0,36, met2 2,0061+0,36, met3 2,7861+0,845).
+   Límite continuo LEF: met1 2,8, met2 2,8 [supuesto igual a met1: comprobar], met3 6,8 mA/um. Profundidad en silicio 0,5 um.
+   capa   w um   I mA   B mT  mT/mA   cota de lámina infinita mu0*K/2
+   met1   0.14   0.39  0.039  0.100   1.76 mT
+   met1   1.00   2.80  0.275  0.098   1.76 mT
+   met1   2.00   5.60  0.521  0.093   1.76 mT
+   met1   5.00  14.00  1.014  0.072   1.76 mT
+   met1  10.00  28.00  1.356  0.048   1.76 mT
+   met2   0.30   0.84  0.064  0.076   1.76 mT
+   met2   1.00   2.80  0.212  0.076   1.76 mT
+   met2   2.00   5.60  0.410  0.073   1.76 mT
+   met2   5.00  14.00  0.862  0.062   1.76 mT
+   met2  10.00  28.00  1.238  0.044   1.76 mT
+   met3   0.30   2.04  0.113  0.056   4.27 mT
+   met3   1.00   6.80  0.376  0.055   4.27 mT
+   met3   2.00  13.60  0.738  0.054   4.27 mT
+   met3   5.00  34.00  1.659  0.049   4.27 mT
+   met3  10.00  68.00  2.604  0.038   4.27 mT
+
+2. FACTOR G = dln(tau_ef)/d(theta*E*d/VT). Analítico s1=0, s2=inf, sin volumen: 4/pi^2 = 0,405.
+   D = 10 cm2/s (ambipolar, supuesto 5-15), tau_b = 1 us (supuesto; apenas importa si d << sqrt(D tau_b) = 32 um)
+    d um s_sup cm/s s_inf cm/s       G tau_ef ns Lef=sqrt(D tau) um
+     0.5      1e+01      1e+07  -0.413     0.105               0.32   unión (colector)
+     0.5      1e+01      1e+01  -0.000   714.287              26.73   = s_sup (simétrico)
+     0.5      1e+03      1e+07  -0.410     0.105               0.32   unión (colector)
+     0.5      1e+03      1e+03  -0.000    24.410               4.94   = s_sup (simétrico)
+     0.5      1e+04      1e+07  -0.389     0.101               0.32   unión (colector)
+     0.5      1e+04      1e+04  -0.000     2.515               1.59   = s_sup (simétrico)
+     0.5      1e+05      1e+07  -0.245     0.077               0.28   unión (colector)
+     0.5      1e+05      1e+05  -0.000     0.271               0.52   = s_sup (simétrico)
+     1.0      1e+01      1e+07  -0.409     0.413               0.64   unión (colector)
+     1.0      1e+01      1e+01  -0.000   833.336              28.87   = s_sup (simétrico)
+     1.0      1e+03      1e+07  -0.404     0.410               0.64   unión (colector)
+     1.0      1e+03      1e+03  -0.000    47.695               6.91   = s_sup (simétrico)
+     1.0      1e+04      1e+07  -0.364     0.383               0.62   unión (colector)
+     1.0      1e+04      1e+04  -0.000     5.058               2.25   = s_sup (simétrico)
+     1.0      1e+05      1e+07  -0.164     0.247               0.50   unión (colector)
+     1.0      1e+05      1e+05  -0.000     0.585               0.77   = s_sup (simétrico)
+     2.0      1e+01      1e+07  -0.407     1.634               1.28   unión (colector)
+     2.0      1e+01      1e+01  -0.000   909.094              30.15   = s_sup (simétrico)
+     2.0      1e+03      1e+07  -0.397     1.609               1.27   unión (colector)
+     2.0      1e+03      1e+03  -0.000    91.185               9.55   = s_sup (simétrico)
+     2.0      1e+04      1e+07  -0.324     1.414               1.19   unión (colector)
+     2.0      1e+04      1e+04  -0.000    10.230               3.20   = s_sup (simétrico)
+     2.0      1e+05      1e+07  -0.089     0.769               0.88   unión (colector)
+     2.0      1e+05      1e+05  -0.000     1.349               1.16   = s_sup (simétrico)
+   Caras LATERALES (campo vertical de la bobina; anchura w entre una pared de STI con s y el pozo abierto/otra pared):
+   w=1 um  s_pared=1e+03  s_otra=1e+01  con fondo colector a 1 um (tau_b=0,41 ns): G_lateral=+0.0020
+   w=1 um  s_pared=1e+04  s_otra=1e+01  con fondo colector a 1 um (tau_b=0,41 ns): G_lateral=+0.0188
+   w=1 um  s_pared=1e+05  s_otra=1e+01  con fondo colector a 1 um (tau_b=0,41 ns): G_lateral=+0.1138
+   w=3 um  s_pared=1e+03  s_otra=1e+01  con fondo colector a 1 um (tau_b=0,41 ns): G_lateral=+0.0007
+   w=3 um  s_pared=1e+04  s_otra=1e+01  con fondo colector a 1 um (tau_b=0,41 ns): G_lateral=+0.0060
+   w=3 um  s_pared=1e+05  s_otra=1e+01  con fondo colector a 1 um (tau_b=0,41 ns): G_lateral=+0.0284
+
+3. SEÑAL en inyección ALTA a corriente constante: dV = (V/2)*G*theta*(V/VT)*(d/L)*f,  theta = mu_ef*B,
+   f = fracción del largo con conductividad modulada = min(1, (mu*E*tau_ef + sqrt(D*tau_ef))/L), mu = 500 cm2/Vs (supuesto).
+   Cara superior s=1e3 (escenario; con 1e5 G baja como en la tabla 2), fondo = unión pozo-sustrato. V = caída en la base.
+   Comparadores: paso del lector 0,305 mV; Hall 0,017-0,66 mV/mA a 2,65 mT => 0,0064-0,25 mV/mA a 1 mT.
+      d     L    V  mu_ef     f  dV@1mT uV  dV@1,6mT     V/T  dI/I@1mT  I_alta mA (W=5um, N=1e17) I_sub/I
+    0.5   1.0  0.3   0.05  1.00      -17.9     -28.6  -0.018 -1.19e-04                       0.38      ~1
+    0.5   1.0  0.3   0.15  1.00      -53.6     -85.7  -0.054 -3.57e-04                       0.38      ~1
+    0.5   1.0  1.0   0.05  1.00     -198.4    -317.5  -0.198 -3.97e-04                       0.38      ~1
+    0.5   1.0  1.0   0.15  1.00     -595.3    -952.5  -0.595 -1.19e-03                       0.38      ~1
+    0.5   2.5  0.3   0.05  0.38       -2.7      -4.4  -0.003 -1.82e-05                       0.36      ~1
+    0.5   2.5  0.3   0.15  0.38       -8.2     -13.1  -0.008 -5.45e-05                       0.36      ~1
+    0.5   2.5  1.0   0.05  0.97      -76.9    -123.1  -0.077 -1.54e-04                       0.92      ~1
+    0.5   2.5  1.0   0.15  0.97     -230.8    -369.3  -0.231 -4.62e-04                       0.92      ~1
+    0.5  10.0  0.3   0.05  0.05       -0.1      -0.1  -0.000 -5.73e-07                       0.18      ~1
+    0.5  10.0  0.3   0.15  0.05       -0.3      -0.4  -0.000 -1.72e-06                       0.18      ~1
+    0.5  10.0  1.0   0.05  0.08       -1.7      -2.7  -0.002 -3.37e-06                       0.32      ~1
+    0.5  10.0  1.0   0.15  0.08       -5.1      -8.1  -0.005 -1.01e-05                       0.32      ~1
+    1.0   2.0  0.3   0.05  1.00      -17.6     -28.1  -0.018 -1.17e-04                       0.39      ~1
+    1.0   2.0  0.3   0.15  1.00      -52.8     -84.4  -0.053 -3.52e-04                       0.39      ~1
+    1.0   2.0  1.0   0.05  1.00     -195.4    -312.6  -0.195 -3.91e-04                       0.39      ~1
+    1.0   2.0  1.0   0.15  1.00     -586.2    -937.9  -0.586 -1.17e-03                       0.39      ~1
+    1.0   5.0  0.3   0.05  0.37       -2.6      -4.2  -0.003 -1.75e-05                       0.37      ~1
+    1.0   5.0  0.3   0.15  0.37       -7.9     -12.6  -0.008 -5.26e-05                       0.37      ~1
+    1.0   5.0  1.0   0.05  0.95      -74.1    -118.5  -0.074 -1.48e-04                       0.93      ~1
+    1.0   5.0  1.0   0.15  0.95     -222.2    -355.6  -0.222 -4.44e-04                       0.93      ~1
+    1.0  20.0  0.3   0.05  0.05       -0.1      -0.1  -0.000 -5.55e-07                       0.19      ~1
+    1.0  20.0  0.3   0.15  0.05       -0.2      -0.4  -0.000 -1.67e-06                       0.19      ~1
+    1.0  20.0  1.0   0.05  0.08       -1.6      -2.6  -0.002 -3.25e-06                       0.33      ~1
+    1.0  20.0  1.0   0.15  0.08       -4.9      -7.8  -0.005 -9.76e-06                       0.33      ~1
+    2.0   4.0  0.3   0.05  1.00      -17.3     -27.6  -0.017 -1.15e-04                       0.40      ~1
+    2.0   4.0  0.3   0.15  1.00      -51.8     -82.9  -0.052 -3.45e-04                       0.40      ~1
+    2.0   4.0  1.0   0.05  1.00     -191.9    -307.0  -0.192 -3.84e-04                       0.40      ~1
+    2.0   4.0  1.0   0.15  1.00     -575.7    -921.1  -0.576 -1.15e-03                       0.40      ~1
+    2.0  10.0  0.3   0.05  0.37       -2.5      -4.1  -0.003 -1.70e-05                       0.37      ~1
+    2.0  10.0  0.3   0.15  0.37       -7.6     -12.2  -0.008 -5.09e-05                       0.37      ~1
+    2.0  10.0  1.0   0.05  0.93      -71.5    -114.4  -0.071 -1.43e-04                       0.93      ~1
+    2.0  10.0  1.0   0.15  0.93     -214.4    -343.1  -0.214 -4.29e-04                       0.93      ~1
+    2.0  40.0  0.3   0.05  0.05       -0.1      -0.1  -0.000 -5.39e-07                       0.19      ~1
+    2.0  40.0  0.3   0.15  0.05       -0.2      -0.4  -0.000 -1.62e-06                       0.19      ~1
+    2.0  40.0  1.0   0.05  0.08       -1.6      -2.5  -0.002 -3.15e-06                       0.33      ~1
+    2.0  40.0  1.0   0.15  0.08       -4.7      -7.6  -0.005 -9.44e-06                       0.33      ~1
+
+4. Inyección BAJA (transistor lateral pnp con colector de sustrato): dlnI_lat = theta_p*L/(2d)*(G/0,405), theta_p = mu_p*B, mu_p = 0,03-0,045 m2/Vs;
+   la corriente lateral que sobrevive es ~exp(-L/Lef), Lef = 2d/pi.
+   L/d= 1: dI/I por mT = 1.5e-05 .. 2.3e-05;  fracción lateral exp(-pi L/2d) = 2.1e-01
+   L/d= 2: dI/I por mT = 3.0e-05 .. 4.5e-05;  fracción lateral exp(-pi L/2d) = 4.3e-02
+   L/d= 3: dI/I por mT = 4.5e-05 .. 6.8e-05;  fracción lateral exp(-pi L/2d) = 9.0e-03
+   L/d= 5: dI/I por mT = 7.5e-05 .. 1.1e-04;  fracción lateral exp(-pi L/2d) = 3.9e-04
+   L/d=10: dI/I por mT = 1.5e-04 .. 2.3e-04;  fracción lateral exp(-pi L/2d) = 1.5e-07

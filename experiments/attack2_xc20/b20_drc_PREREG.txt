@@ -1,0 +1,48 @@
+b20_drc · Prerregistro de las sondas DRC de la unión pegada (XC-20)
+Hora (date): Thu Nov 12 13:33:30 EST 2026
+Escrito antes de correr b20_drc_map.py. Leído antes: precheck_map (README, PREREG, map.py), local_flow/LEEME.md y precheck_local.sh,
+reglas diff/tap, nsd/psd, poly.5-8, licon.5b, hvi, lvtn, hvtp del tech de Magic (PDK 0536d02d, el del precheck) y el deck sky130A_mr.drc.
+Herramienta: mismo contenedor que precheck_map (tt-precheck-local:ttsky26d + volumen tt_nixstore; Magic 8.3.568, KLayout 0.30.8).
+"PASA" = 0 errores en Magic drc(full) y en feol, beol, offgrid de KLayout. Sin criterio de abandono: es una medida de la herramienta.
+
+Tautologías (se deducen de las reglas leídas, sin correr):
+- T1. KLayout mr solo mira difftap.space sobre diff OR tap fusionados: cualquier forma pegada por un tramo de borde es un solo polígono
+  y no dispara difftap.3. Lo que decide en casi todas las sondas es Magic.
+- T2. Magic poly.6 exige 0,30 entre toma pegada y puerta: la variante a 0,13 la viola por definición.
+
+Predicción por sonda (PASA / RECHAZA):
+ 1a ctrl pdiff|ntap sep 0 .......................... PASA
+ 1b ctrl hueco 0,13 ................................ RECHAZA (Magic y KLayout difftap.3)
+ 2a ndiff|ptap en sustrato, sep 0 .................. PASA
+ 2b ndiff|ptap hueco 0,27 (implantes al centro) .... PASA
+ 3  frontera en L (pozo n) ......................... PASA  (duda: reglas edge4way nsd.5 en la esquina)
+ 4a isla n+ 0,5 en p+ .............................. PASA  (diff/tap.5 pide 0,40; hay 0,50)
+ 4b isla p+ 0,5 en anillo n+ ....................... PASA
+ 4c/4d islas de 0,6 ................................ PASA
+ 5  peine 4 dedos de 0,5 ........................... PASA
+ 6a cuello 0,15 con la frontera en medio ........... PASA  (duda: diff/tap.4, toma pegada >= 0,29 de largo; el cuello n mide 0,30)
+ 6b cuello p de 0,15 contra pad n ancho ............ PASA
+ 7a HV mvpdiff|mvntap en pozo n con hvi, sep 0 ..... PASA  (duda: cómo exige el deck que hvi encierre el pozo)
+ 7b HV mvndiff|mvptap en sustrato con hvi .......... PASA  (más dudosa: hvntm generado)
+ 8a/8b LVTN (todo el activo / solo banda 0,38) ..... PASA
+ 8c/8d HVTP (ídem) ................................. PASA
+ 9  puerta, borde de implantes en el centro del poly, capa tap a un lado (pozo y sustrato, L 0,15 y 0,5) ... RECHAZA (Magic: poly sobre
+    toma / FET pegado a difusión contraria / poly.6); KLayout: PASA
+ 9  ídem con todo en capa diff (solo cambia el implante) ... RECHAZA en Magic, PASA en KLayout
+ 9  borde desplazado 0,13 fuera del poly ........... RECHAZA en Magic (poly.6), PASA en KLayout
+ 9  borde desplazado 0,30 (fuente con toma pegada, control legal) ... PASA
+10  solape 0,005 y 0,01 ............................ RECHAZA
+10  hueco 0,005; 0,03; 0,26 ........................ RECHAZA
+10  hueco 0,27 (implantes al ras del activo, como en map.py) ... PASA (duda: encierro de implante 0)
+10  hueco 0,13 y 0,26 con implantes al centro ...... RECHAZA;  0,27 al centro: PASA
+11a contacto solo en una esquina (diagonal) ........ RECHAZA (difftap.3 entre aristas que se tocan en un punto)
+11b tramo pegado de 0,15 ........................... PASA
+Thu Nov 12 13:54:03 EST 2026
+RONDA 2 (añadida con la ronda 1 a medio correr, vistas las filas 01-09; antes de correr la ronda 2).
+Observado en ronda 1: mi reparto automático de implantes (crecer 0,125 y restar) deja resaltes de 0,125 x 0,125 en el margen y dispara
+MR_nsdm.WID.2 / MR_psdm.WID.2 / MR_nsdm.SP.1 de KLayout por sí solo (también en la geometría del control). Es un defecto de mi dibujo,
+no de la unión. Ronda 2 = mismas formas de activo con implantes a mano, partidos en línea recta por la frontera (sondas r2_*).
+Predicción ronda 2: r2_01a (control por shape) PASA; r2_03 L PASA; r2_05 peine PASA; r2_06a cuello centrado PASA;
+r2_06b cuello p contra pad n RECHAZA en Magic (nsd.5a, ya visto en ronda 1) y r2_06c (cuello n contra pad p) RECHAZA por la regla espejo
+(nsd.5b); r2_07a/b HV PASA; r2_08a-d PASA; r2_11a esquina RECHAZA; r2_11b tramo 0,15 RECHAZA (misma regla nsd.5: bordes de un tipo que
+siguen más allá del final de la frontera) -- cambio respecto a la ronda 1, donde predije PASA.

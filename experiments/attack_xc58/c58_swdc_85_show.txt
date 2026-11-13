@@ -1,0 +1,152 @@
+ BSIM4v5: Berkeley Short Channel IGFET Model-4
+     device m.xs3.msky130_fd_pr__ m.xs2.msky130_fd_pr__ m.xs.msky130_fd_pr__n
+      model xs3:sky130_fd_pr__nfe xs2:sky130_fd_pr__nfe xs:sky130_fd_pr__nfet
+          l               1.5e-07               1.5e-07               1.5e-07
+          w               4.2e-07               4.2e-07               4.2e-07
+          m                     1                     1                     1
+         nf                     1                     1                     1
+         sa                     0                     0                     0
+         sb                     0                     0                     0
+         sd                     0                     0                     0
+        sca                     0                     0                     0
+        scb                     0                     0                     0
+        scc                     0                     0                     0
+         sc                     0                     0                     0
+        min                     0                     0                     0
+         ad              1.26e-13              1.26e-13              1.26e-13
+         as              1.26e-13              1.26e-13              1.26e-13
+         pd              1.44e-06              1.44e-06              1.44e-06
+         ps              1.44e-06              1.44e-06              1.44e-06
+        nrd                     0                     0                     0
+        nrs                     0                     0                     0
+        off                     0                     0                     0
+       rbdb                    50                    50                    50
+       rbsb                    50                    50                    50
+       rbpb                    50                    50                    50
+       rbps                    50                    50                    50
+       rbpd                    50                    50                    50
+     delvto                     0                     0                     0
+      mulu0                     1                     1                     1
+        xgw                     0                     0                     0
+      ngcon                     1                     1                     1
+   trnqsmod                     0                     0                     0
+   acnqsmod                     0                     0                     0
+   rbodymod                     1                     1                     1
+   rgatemod                     0                     0                     0
+     geomod                     0                     0                     0
+    rgeomod                     0                     0                     0
+       gmbs                     0           1.19989e-15            1.2269e-18
+         gm                     0           4.21281e-15           4.43504e-18
+        gds           1.81317e-16           6.66133e-16           1.78257e-16
+      vdsat             0.0545885             0.0537419             0.0545885
+        vth              0.793199              0.774687              0.793197
+         id                     0           1.73276e-16           1.79786e-19
+        ibd          -2.91663e-13          -2.91663e-13          -2.91666e-13
+        ibs          -2.91663e-13          -2.90499e-13          -2.91663e-13
+        gbd           2.59244e-15           2.59244e-15           2.52829e-15
+        gbs           2.59244e-15           3.17725e-14           2.59244e-15
+       isub                     0           1.76329e-32           5.25848e-38
+      igidl                     0                     0                     0
+      igisl                     0                     0                     0
+        igs                     0                     0                     0
+        igd                     0                     0                     0
+        igb                     0                     0                     0
+       igcs                     0                     0                     0
+       igcd                     0                     0                     0
+        vbs                -0.317                -0.217                -0.317
+        vgs                -0.317                -0.217                -0.317
+        vds                     0                   0.1                 0.001
+        cgg           1.57286e-16           1.57486e-16            1.5728e-16
+        cgs           3.40399e-19          -7.59268e-19           2.55363e-19
+        cgd          -8.26773e-19          -4.66473e-21          -7.37327e-19
+        cbg           -1.5683e-16          -1.56741e-16          -1.56835e-16
+        cbd          -7.73782e-19          -1.06904e-20          -6.90479e-19
+        cbs           6.72976e-19          -1.96839e-19           5.94044e-19
+        cdg          -2.27759e-19          -3.04235e-19          -2.20675e-19
+        cdd           1.07012e-18           2.02603e-20           9.58882e-19
+        cds          -7.76527e-19           3.77042e-19          -6.71172e-19
+        csg          -2.27759e-19          -4.40202e-19          -2.24266e-19
+        csd           5.30438e-19          -4.90524e-21           4.68924e-19
+        css          -2.36848e-19           5.79065e-19          -1.78235e-19
+        cgb          -1.56799e-16          -1.56722e-16          -1.56798e-16
+        cdb          -6.58312e-20           -9.3068e-20          -6.70343e-20
+        csb          -6.58312e-20          -1.33957e-19          -6.64232e-20
+        cbb           1.56931e-16           1.56949e-16           1.56932e-16
+      capbd           2.65309e-16           2.65309e-16           2.65192e-16
+      capbs           2.65309e-16           2.77903e-16           2.65309e-16
+         qg           1.92818e-16           1.92864e-16           1.92818e-16
+         qb          -1.92753e-16          -1.92754e-16          -1.92754e-16
+         qd          -3.25055e-20          -4.52798e-20          -3.14924e-20
+         qs          -3.25055e-20          -6.55214e-20          -3.20066e-20
+       qinv                     0                     0                     0
+       qdef                     0                     0                     0
+       gcrg                     0                     0                     0
+       gtau                     0                     0                     0
+    vgsteff           3.32536e-13           8.31809e-12           3.32831e-13
+     vdseff                     0             0.0454201           0.000843126
+       cgso           1.03452e-16           1.03452e-16           1.03452e-16
+       cgdo           1.03452e-16           1.03452e-16           1.03452e-16
+       cgbo           1.30242e-20           1.30242e-20           1.30242e-20
+       weff           3.76282e-07           3.76282e-07           3.76282e-07
+       leff           1.26136e-07           1.26136e-07           1.26136e-07
+
+ Vsource: Independent voltage source
+     device                   vs3                   vd2                   vs2
+         dc                 0.317                 0.317                 0.217
+      acmag                     0                     0                     0
+      pulse         -         -         -
+        sin         -         -         -
+        exp         -         -         -
+        pwl         -         -         -
+       sffm         -         -         -
+         am         -         -         -
+    trnoise         -         -         -
+   trrandom         -         -         -
+    portnum                     0                     0                     0
+         z0                     0                     0                     0
+        pwr                     0                     0                     0
+       freq                     0                     0                     0
+      phase                     0                     0                     0
+          i          -5.83327e-13          -2.91837e-13          -2.90326e-13
+          p          -1.84915e-13          -9.25122e-14          -6.30007e-14
+
+ Vsource: Independent voltage source
+     device                   vg2                    vd                    vs
+         dc                     0                 0.318                 0.317
+      acmag                     0                     0                     0
+      pulse         -         -         -
+        sin         -         -         -
+        exp         -         -         -
+        pwl         -         -         -
+       sffm         -         -         -
+         am         -         -         -
+    trnoise         -         -         -
+   trrandom         -         -         -
+    portnum                     0                     0                     0
+         z0                     0                     0                     0
+        pwr                     0                     0                     0
+       freq                     0                     0                     0
+      phase                     0                     0                     0
+          i                     0          -2.91666e-13          -2.91663e-13
+          p                     0          -9.27498e-14          -9.24572e-14
+
+ Vsource: Independent voltage source
+     device                    vg
+         dc                     0
+      acmag                     0
+      pulse         -
+        sin         -
+        exp         -
+        pwl         -
+       sffm         -
+         am         -
+    trnoise         -
+   trrandom         -
+    portnum                     0
+         z0                     0
+        pwr                     0
+       freq                     0
+      phase                     0
+          i                     0
+          p                     0
+

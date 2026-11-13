@@ -1,0 +1,124 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO efld01m_L1
+  CLASS BLOCK ;
+  FOREIGN efld01m_L1 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 12.400 BY 3.600 ;
+  PIN A0
+    PORT
+      LAYER met1 ;
+        RECT 0.000 0.000 1.200 0.400 ;
+    END
+  END A0
+  PIN A1
+    PORT
+      LAYER met1 ;
+        RECT 0.000 0.400 1.200 0.800 ;
+    END
+  END A1
+  PIN A2
+    PORT
+      LAYER met1 ;
+        RECT 0.000 0.800 1.200 1.200 ;
+    END
+  END A2
+  PIN A3
+    PORT
+      LAYER met1 ;
+        RECT 0.000 1.200 1.200 1.600 ;
+    END
+  END A3
+  PIN A4
+    PORT
+      LAYER met1 ;
+        RECT 0.000 1.600 1.200 2.000 ;
+    END
+  END A4
+  PIN A5
+    PORT
+      LAYER met1 ;
+        RECT 0.000 2.000 1.200 2.400 ;
+    END
+  END A5
+  PIN A6
+    PORT
+      LAYER met1 ;
+        RECT 0.000 2.400 1.200 2.800 ;
+    END
+  END A6
+  PIN A7
+    PORT
+      LAYER met1 ;
+        RECT 0.000 2.800 1.200 3.200 ;
+    END
+  END A7
+  PIN A8
+    PORT
+      LAYER met1 ;
+        RECT 0.000 3.200 1.200 3.600 ;
+    END
+  END A8
+  PIN B0
+    PORT
+      LAYER met1 ;
+        RECT 11.200 0.000 12.400 0.400 ;
+    END
+  END B0
+  PIN B1
+    PORT
+      LAYER met1 ;
+        RECT 11.200 0.400 12.400 0.800 ;
+    END
+  END B1
+  PIN B2
+    PORT
+      LAYER met1 ;
+        RECT 11.200 0.800 12.400 1.200 ;
+    END
+  END B2
+  PIN B3
+    PORT
+      LAYER met1 ;
+        RECT 11.200 1.200 12.400 1.600 ;
+    END
+  END B3
+  PIN B4
+    PORT
+      LAYER met1 ;
+        RECT 11.200 1.600 12.400 2.000 ;
+    END
+  END B4
+  PIN B5
+    PORT
+      LAYER met1 ;
+        RECT 11.200 2.000 12.400 2.400 ;
+    END
+  END B5
+  PIN B6
+    PORT
+      LAYER met1 ;
+        RECT 11.200 2.400 12.400 2.800 ;
+    END
+  END B6
+  PIN B7
+    PORT
+      LAYER met1 ;
+        RECT 11.200 2.800 12.400 3.200 ;
+    END
+  END B7
+  PIN B8
+    PORT
+      LAYER met1 ;
+        RECT 11.200 3.200 12.400 3.600 ;
+    END
+  END B8
+  OBS
+      LAYER li1 ;
+        RECT 0.000 0.000 12.400 3.600 ;
+  END
+END efld01m_L1
+END LIBRARY
+

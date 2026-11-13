@@ -1,0 +1,28 @@
+(f) período del anillo frente a R en serie (interpolado):
+  3 canales        R=  4.30 kOhm  período x1.163 = 3.478 ns  pendiente local 117 ps/kOhm
+  2 canales        R=  6.45 kOhm  período x1.236 = 3.694 ns  pendiente local 87 ps/kOhm
+  1 canal 1.0 G0   R= 12.91 kOhm  período x1.380 = 4.126 ns  pendiente local 63 ps/kOhm
+  Al 0.8 G0        R= 16.13 kOhm  período x1.446 = 4.325 ns  pendiente local 60 ps/kOhm
+  Al 0.6 G0        R= 21.51 kOhm  período x1.548 = 4.630 ns  pendiente local 53 ps/kOhm
+  Al 1.1 G0        R= 11.73 kOhm  período x1.355 = 4.052 ns  pendiente local 62 ps/kOhm
+  pasos: 3->2 canales 6.2 % ; 2->1 11.7 % ; 1.0 G0 -> 0.8 G0 4.8 %
+  PLAN: 83 ps/kOhm en torno a 12.9 kOhm (corrida del laboratorio); mi interpolación arriba. Resolución de un contador de N ciclos: 1/N; dispersión entre canales [?]
+  Con barrera en paralelo R_b: R_tot = R_b || R_c ; diferencia de período entre 1 canal y abierto:
+    R_b=     10 Ohm: -0.0000 %  (-0.000 ps)
+    R_b=     50 Ohm: 0.0009 %  (0.027 ps)
+    R_b=    150 Ohm: 0.0049 %  (0.147 ps)
+    R_b=   1000 Ohm: 0.0583 %  (1.773 ps)
+    R_b=  10000 Ohm: 9.0471 %  (327.445 ps)
+  Lectura a baja tensión con resistencia en serie R_s (el contacto ve V = 1.8*R_c/(R_c+R_s) como mucho):
+    R_s=    0 kOhm: V_max sobre 12.9k = 1.80 V ; período 1 canal x1.380, 2 canales x1.236 (dif 11.67 %) ; I_pico = 139 uA
+    R_s=   10 kOhm: V_max sobre 12.9k = 1.01 V ; período 1 canal x1.573, 2 canales x1.453 (dif 8.24 %) ; I_pico = 79 uA
+    R_s=   30 kOhm: V_max sobre 12.9k = 0.54 V ; período 1 canal x1.839, 2 canales x1.767 (dif 4.07 %) ; I_pico = 42 uA
+    R_s=  100 kOhm: V_max sobre 12.9k = 0.21 V ; período 1 canal x2.247, 2 canales x2.224 (dif 1.02 %) ; I_pico = 16 uA
+
+(g) isla de Coulomb: C = 4 pi eps0 eps_r r (esfera aislada en dieléctrico infinito, cota inferior de C_sigma); E_C = e^2/2C
+  radio 2 nm, SiO2 (lo que dice XC-06)     C=0.868 aF  E_C=  92.3 meV  E_C/kT(77K)= 13.9  E_C/kT(300K)= 3.6
+  radio 1 nm (diámetro 2 nm), SiO2         C=0.434 aF  E_C= 184.6 meV  E_C/kT(77K)= 27.8  E_C/kT(300K)= 7.1
+  radio 2 nm, Al2O3 er~9 (de memoria)      C=2.003 aF  E_C=  40.0 meV  E_C/kT(77K)=  6.0  E_C/kT(300K)= 1.5
+  radio 2 nm, vacío (hueco de vacío EM)    C=0.223 aF  E_C= 360.0 meV  E_C/kT(77K)= 54.3  E_C/kT(300K)=13.9
+  Con electrodos a ~1 nm (dos uniones): cada unión añade ~ eps0 eps_r A/d con A ~ pi r^2: r=2 nm, d=1 nm, er=3.9 -> 0.43 aF por unión -> C_sigma ~ 1.74 aF -> E_C ~ 46 meV (7.0 kT a 77 K)
+  Corriente por una isla con uniones túnel de R_T: I ~ e/(2 R_T C)... orden V/(2R_T): con R_T=1 GOhm y 50 mV -> 25 pA; con barrera de 10-150 Ohm en paralelo la isla lleva < 1e-7 de la corriente: ilegible en met1 con barrera.

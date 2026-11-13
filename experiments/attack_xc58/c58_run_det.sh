@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /w
+for t in cx0_tf50p_v1.8_T27_n_o0 cx0_tf500p_v1.8_T27_n_o0 cx0_tf5n_v1.8_T27_n_o0 cx2_tf50p_v1.8_T27_n_o0 cx2_tf500p_v1.8_T27_n_o0 cx2_tf5n_v1.8_T27_n_o0 cx9_tf50p_v1.8_T27_n_o0 cx9_tf500p_v1.8_T27_n_o0 cx9_tf5n_v1.8_T27_n_o0 cx0_tf500p_v1.81_T27_n_o0 cx0_tf500p_v1.8_T85_n_o0 cx2_tf500p_v1.81_T27_n_o0 cx2_tf500p_v1.8_T85_n_o0 cx9_tf500p_v1.81_T27_n_o0 cx9_tf500p_v1.8_T85_n_o0 cx0_tf500p_v1.8_T27_ideal_o0 cx0_tf500p_v1.8_T85_ideal_o0 cx0_tf500p_v1.8_T27_dummy_o0 cx0_tf500p_v1.8_T27_pcomp_o0 cx0_tf500p_v1.81_T27_dummy_o0 cx0_tf500p_v1.81_T27_pcomp_o0; do ngspice -b c58_det_$t.sp > c58_det_$t.log 2>&1; grep '^DET' c58_det_$t.log; done

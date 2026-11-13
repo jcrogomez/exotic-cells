@@ -1,0 +1,17 @@
+sky130_fd_pr__cap_vpp_05p9x05p9_m1m2m3m4_shieldl1_wafflecap refs: 0 capas: [((22, 48), 1), ((65, 44), 4), ((66, 44), 60), ((67, 20), 4), ((68, 20), 2), ((68, 44), 49), ((69, 16), 2), ((69, 20), 2), ((69, 44), 32), ((70, 20), 2), ((70, 44), 31), ((71, 20), 2), ((82, 64), 1), ((122, 16), 1)]
+sky130_fd_pr__cap_vpp_11p3x11p3_m1m2m3m4_shieldl1_wafflecap refs: 0 capas: [((22, 48), 1), ((65, 44), 4), ((66, 44), 112), ((67, 20), 4), ((68, 20), 2), ((68, 44), 149), ((69, 16), 2), ((69, 20), 5), ((69, 44), 97), ((70, 20), 5), ((70, 44), 93), ((71, 20), 2), ((82, 64), 1), ((122, 16), 1)]
+sky130_fd_pr__cap_vpp_02p7x06p1_m1m2m3m4_shieldl1_fingercap refs: 0 capas: [((22, 48), 1), ((65, 44), 2), ((66, 44), 28), ((67, 20), 2), ((68, 20), 11), ((68, 44), 9), ((69, 16), 2), ((69, 20), 12), ((69, 44), 9), ((70, 20), 7), ((70, 44), 11), ((71, 20), 7), ((82, 64), 1), ((122, 16), 1)]
+B2 con pata n+ 48,2 y pata p+ 319,8 ohm/cuadro (misma geometría y G'): b = (b_n + b_p)/2; S=300 uV/K; G' de v3_salida (kox 1,0/1,4)
+  w=0.15 kp=15 G'=2.92: sin Rc: I*=49 uA, neto 1.02 K, cruce 99 uA |  w=0.15 kp=15 G'=2.92: con 2x152 ohm: I*=37 uA, neto 0.76 K, cruce 74 uA |
+  w=0.15 kp=15 G'=4.08: sin Rc: I*=58 uA, neto 1.02 K, cruce 116 uA |  w=0.15 kp=15 G'=4.08: con 2x152 ohm: I*=42 uA, neto 0.73 K, cruce 84 uA |
+  w=0.15 kp=30 G'=2.92: sin Rc: I*=35 uA, neto 0.51 K, cruce 70 uA |  w=0.15 kp=30 G'=2.92: con 2x152 ohm: I*=28 uA, neto 0.41 K, cruce 56 uA |
+  w=0.15 kp=30 G'=4.08: sin Rc: I*=41 uA, neto 0.51 K, cruce 82 uA |  w=0.15 kp=30 G'=4.08: con 2x152 ohm: I*=32 uA, neto 0.40 K, cruce 64 uA |
+  w=0.5 kp=15 G'=4.24: sin Rc: I*=108 uA, neto 1.02 K, cruce 217 uA |  w=0.5 kp=15 G'=4.24: con 2x152 ohm: I*=63 uA, neto 0.59 K, cruce 125 uA |
+  w=0.5 kp=15 G'=5.92: sin Rc: I*=128 uA, neto 1.02 K, cruce 256 uA |  w=0.5 kp=15 G'=5.92: con 2x152 ohm: I*=69 uA, neto 0.55 K, cruce 137 uA |
+  w=0.5 kp=30 G'=4.24: sin Rc: I*=77 uA, neto 0.51 K, cruce 153 uA |  w=0.5 kp=30 G'=4.24: con 2x152 ohm: I*=50 uA, neto 0.34 K, cruce 101 uA |
+  w=0.5 kp=30 G'=5.92: sin Rc: I*=91 uA, neto 0.51 K, cruce 181 uA |  w=0.5 kp=30 G'=5.92: con 2x152 ohm: I*=56 uA, neto 0.32 K, cruce 112 uA |
+  w=1.0 kp=15 G'=5.95: sin Rc: I*=182 uA, neto 1.02 K, cruce 363 uA |  w=1.0 kp=15 G'=5.95: con 2x152 ohm: I*=82 uA, neto 0.46 K, cruce 163 uA |
+  w=1.0 kp=15 G'=8.3: sin Rc: I*=214 uA, neto 1.02 K, cruce 429 uA |  w=1.0 kp=15 G'=8.3: con 2x152 ohm: I*=88 uA, neto 0.42 K, cruce 175 uA |
+  w=1.0 kp=30 G'=5.95: sin Rc: I*=128 uA, neto 0.51 K, cruce 257 uA |  w=1.0 kp=30 G'=5.95: con 2x152 ohm: I*=69 uA, neto 0.27 K, cruce 137 uA |
+  w=1.0 kp=30 G'=8.3: sin Rc: I*=152 uA, neto 0.51 K, cruce 303 uA |  w=1.0 kp=30 G'=8.3: con 2x152 ohm: I*=75 uA, neto 0.25 K, cruce 150 uA |
+Thu Nov 12 19:52:54 EST 2026

@@ -1,0 +1,47 @@
+Thu Nov 12 12:40:42 EST 2026
+
+== 0. masa reducida equivalente a cada F0 (WKB dos bandas, Eg = 1.12 eV)
+  F0 = 1.90e+07 V/cm  ->  m_r = 0.159 m0
+  F0 = 2.10e+07 V/cm  ->  m_r = 0.194 m0
+  F0 = 3.00e+07 V/cm  ->  m_r = 0.396 m0
+
+== 1. validacion: tunel no local en campo uniforme frente a Hurkx local integrado
+   (criterio de abandono del prerregistro: factor < 2)
+  F = 5.0e+05 V/cm: J_nolocal = 1.034e-12, J_Hurkx = 9.816e-13 A/cm2, cociente = 1.05, camino = 22.40 nm
+  F = 1.0e+06 V/cm: J_nolocal = 5.075e-04, J_Hurkx = 4.955e-04 A/cm2, cociente = 1.02, camino = 11.20 nm
+  F = 2.0e+06 V/cm: J_nolocal = 1.891e+01, J_Hurkx = 1.872e+01 A/cm2, cociente = 1.01, camino = 5.60 nm
+  F = 4.0e+06 V/cm: J_nolocal = 6.138e+03, J_Hurkx = 6.121e+03 A/cm2, cociente = 1.00, camino = 2.80 nm
+
+== 2. union abrupta simetrica: formula (Vbi con Fermi-Dirac) y Poisson propio
+  N[cm-3]   Vbi[V]  W_form[nm] Emax_form[MV/cm] | Emax_Poisson W10[nm] l_tunel_min[nm] xi_p[meV] xi_n[meV] | exp(-F0/Emax): Hurkx  plan(3e7)
+  1e+19   1.070    16.63       1.29        |    1.25       15.85        nan          -45      -43  |   3.84e-07  7.42e-11
+  2e+19   1.112    11.99       1.85        |    1.80       11.45        nan          -25      -23  |   3.55e-05  9.41e-08
+  3e+19   1.139     9.91       2.30        |    2.22        9.55      10.93          -12       -9  |   2.57e-04  2.14e-06
+  5e+19   1.177     7.80       3.02        |    2.91        7.55       7.11            6        8  |   1.84e-03  4.80e-05
+  1e+20   1.242     5.67       4.38        |    4.20        5.55       4.41           34       38  |   1.31e-02  1.06e-03
+  2e+20   1.332     4.15       6.42        |    6.08        4.15       2.81           73       78  |   5.18e-02  9.34e-03
+  3e+20   1.403     3.48       8.07        |    7.57        3.55       2.16          104      110  |   9.49e-02  2.43e-02
+  cociente exp 1e20/1e19 con Hurkx 1.9e7 y campo Emax: 10^4.5
+  cociente exp 1e20/1e19 con Hurkx 1.9e7 y campo Emedio=Emax/2: 10^9.1
+  cociente exp 1e20/1e19 con plan 3e7 y campo Emax: 10^7.2
+  cociente exp 1e20/1e19 con plan 3e7 y campo Emedio=Emax/2: 10^14.3
+
+== 3. corriente de tunel de la union abrupta simetrica (modelo no local, F0 Hurkx y F0 plan)
+  N       J_inv(-0.1V)  J_inv(-1.8V)  J_pico_directa  V_pico |  idem con F0 = 3e7: J_inv(-1.8V) J_pico
+  1e+19   2.20e-07     4.46e+00     0.00e+00      0.00  |   1.10e-02   0.00e+00
+  2e+19   1.34e-03     1.78e+02     0.00e+00      0.00  |   2.52e+00   0.00e+00
+  3e+19   5.25e-02     9.94e+02     0.00e+00      0.00  |   3.04e+01   0.00e+00
+  5e+19   1.96e+00     6.10e+03     1.79e-02      0.02  |   4.06e+02   3.95e-05
+  1e+20   7.51e+01     4.43e+04     4.61e+00      0.04  |   6.47e+03   7.84e-02
+  2e+20   1.07e+03     2.14e+05     2.02e+02      0.08  |   5.51e+04   1.35e+01
+  3e+20   3.68e+03     4.70e+05     1.16e+03      0.10  |   1.56e+05   1.34e+02
+
+== 4. (d) dopado del lado ligero deducido de cj, pb del PDK (union de un lado, abrupta: N = 2 pb cj^2/(q eps))
+   cj en F/m^2 del modelo (a20_pdk.txt seccion 8); mj < 0.5 indica union graduada: N es orden de magnitud
+  pd2nw_05v5 (p+/pozo n)   cj=7.408e-08 F/cm2 Vbi=0.66 -> N ~ 4.4e+16 cm-3, W(0 V) = 140 nm, mj=0.35, bv=12.7 V
+  pd2nw_05v5 (p+/pozo n)   cj=7.408e-08 F/cm2 Vbi=0.95 -> N ~ 6.3e+16 cm-3, W(0 V) = 140 nm, mj=0.35, bv=12.7 V
+  pw2nd_05v5 (n+/pozo p)   cj=1.346e-07 F/cm2 Vbi=0.73 -> N ~ 1.6e+17 cm-3, W(0 V) = 77 nm, mj=0.44, bv=11.7 V
+  pw2nd_05v5 (n+/pozo p)   cj=1.346e-07 F/cm2 Vbi=0.95 -> N ~ 2.1e+17 cm-3, W(0 V) = 77 nm, mj=0.44, bv=11.7 V
+  pw2nd_05v5_nvt           cj=8.602e-08 F/cm2 Vbi=0.66 -> N ~ 5.9e+16 cm-3, W(0 V) = 120 nm, mj=0.28, bv=12.7 V
+  pw2nd_05v5_nvt           cj=8.602e-08 F/cm2 Vbi=0.95 -> N ~ 8.5e+16 cm-3, W(0 V) = 120 nm, mj=0.28, bv=12.7 V
+  Area de frontera lateral 1.4 um x xj: xj = 0.12 um (klayout xsect, ilustrativo) -> 1.68e-09 cm2; xj = 0.15 um (BSIM xj, valor por defecto del modelo) -> 2.10e-09 cm2

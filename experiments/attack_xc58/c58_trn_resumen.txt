@@ -1,0 +1,3 @@
+cx2_tf500p_nt1_T27: N=600  antes de abrir: media 316.815 mV sigma 1.1767 mV | despues: media 254.618 mV sigma 1.1786 mV (±2.9 %) asimetria -0.13 curtosis-3 +0.13 corr(antes,despues) -0.009
+cx9_tf500p_nt1_T27: N=520  antes de abrir: media 316.786 mV sigma 0.6218 mV | despues: media 293.713 mV sigma 0.6268 mV (±3.1 %) asimetria +0.16 curtosis-3 +0.16 corr(antes,despues) -0.020
+cx0_tf500p_nt1_T27: N=600  antes de abrir: media 316.773 mV sigma 1.7260 mV | despues: media 154.660 mV sigma 1.7094 mV (±2.9 %) asimetria +0.05 curtosis-3 -0.13 corr(antes,despues) -0.026
