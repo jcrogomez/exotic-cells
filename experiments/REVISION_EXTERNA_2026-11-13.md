@@ -56,3 +56,5 @@ Principios añadidos:
 
 Orden de trabajo: primero el canal XC-19 y la matriz de capacidades (`docs/CAPACIDADES_SKY130.md`, `experiments/xc19_caps/`);
 después el prototipo del motor de hipótesis y la CI científica.
+
+Matriz de capacidades escrita: [`docs/CAPACIDADES_SKY130.md`](../docs/CAPACIDADES_SKY130.md) (siliciuro, TiN, SONOS, MiM, alta tensión, fotodiodos; preguntas para Tiny Tapeout en su sección 8). Afirmaciones clave comprobadas a mano: `silicide_block` es estilo de Magic; `MR_tunm.CON.1` prohíbe `tunm` en el deck del precheck.

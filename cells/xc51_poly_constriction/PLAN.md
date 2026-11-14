@@ -14,6 +14,8 @@ fusible de poly silicidado en 0,12 µm usó 10 mA a 3,3 V durante 200 µs y pas�
 Kothandaraman 2002). A 1,8 V, marginal. El poly de SKY130, a 48,2 Ω/□ (**PDK local**), quizá no esté silicidado `[?]`. Regla 11: un
 fusible es un fusible; lo exótico sería un estado intermedio estable.
 
+**[corregido 2026-11-13 21:48]** `silicide_block` es un estilo de dibujo de Magic (sección `styles` del `.tech`, l. 432–581), no una capa: no es indicio de nada. No hay capa de bloqueo de siliciuro en SKY130 ni en las capas que acepta TT; si la difusión o el poly llevan siliciuro sigue `[?]`. Ver [`docs/CAPACIDADES_SKY130.md`](../../docs/CAPACIDADES_SKY130.md).
+
 ## 2. Lectura y piso
 
 Anillo con resistencia en serie (EFLD-00/01), el mismo lector de XC-01: el enlace va en serie en un anillo y se cuenta la

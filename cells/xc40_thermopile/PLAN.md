@@ -13,6 +13,8 @@ Cómo se rellena este archivo: [`../PLANTILLA.md`](../PLANTILLA.md). Un plan no 
 polaridades y termopila con las uniones a la misma distancia. Señal: 750 µV/K por par (**fuente sin leer**); ΔT `[?]`. Aburrida: el
 umbral del propio lector deriva más que un par (−1 a −2 mV/K, **de memoria**): sin referencia diferencial no se interpreta.
 
+**[corregido 2026-11-13 21:48]** `silicide_block` es un estilo de dibujo de Magic (sección `styles` del `.tech`, l. 432–581), no una capa: no es indicio de nada. No hay capa de bloqueo de siliciuro en SKY130 ni en las capas que acepta TT; si la difusión o el poly llevan siliciuro sigue `[?]`. Ver [`docs/CAPACIDADES_SKY130.md`](../../docs/CAPACIDADES_SKY130.md).
+
 ## 2. Lectura y piso
 
 Lector en inversión débil (XC-19): la termopila va en serie entre la polarización y la puerta del dispositivo, que no consume
