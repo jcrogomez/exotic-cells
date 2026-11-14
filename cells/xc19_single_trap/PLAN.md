@@ -26,6 +26,11 @@ lectura de XC-52 (espín).
 
 **[corregido 2026-11-12 22:31]** **Control nuevo: XC-58.** Una celda kT/C con el mismo lector y el mismo registro temporal da ruido continuo y gaussiano de varianza conocida; sirve para distinguir en silicio una fluctuación continua de un evento telegráfico de dos niveles. Consecuencia de diseño: la puerta de XC-19 no debe muestrearse nunca (un nodo de 1 fF muestreado lleva 2 mV de ruido, casi siete veces el salto de una carga).
 
+**[corregido 2026-11-13 21:33]** **Decisión de Juan: primer canal completo de MISFIT.** El lector de XC-19 se cierra primero
+(condensadores, alimentación, calibración independiente, salida digital, extracción y post-layout), sin detener a las demás
+familias. Se diseña como instrumento compartido (excitación controlable, referencia, conversión a tiempo) para XC-12, XC-13, XC-37,
+XC-58 y otras, no solo para trampas. Registro: [`REVISION_EXTERNA_2026-11-13.md`](../../experiments/REVISION_EXTERNA_2026-11-13.md).
+
 ## 2. Lectura y piso
 
 Lector en inversión débil: el dispositivo descarga un nodo y el tiempo se cuenta. Todo es **corrida** sobre modelo, sin silicio.

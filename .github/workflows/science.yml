@@ -1,0 +1,40 @@
+# Scientific CI, level 2: rerun reference simulations with a pinned PDK and simulator, and judge the numbers.
+# Level 1 (tests.yml) runs on every push and checks code and repository consistency. This one is slower and runs
+# on demand, weekly, and when the decks or the tools they depend on change.
+name: science
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1"
+  push:
+    paths:
+      - "cells/xc19_*/**"
+      - "residual/**"
+      - "tools/science_ci.py"
+      - ".github/workflows/science.yml"
+env:
+  PDK_VERSION: 8afc8346a57fe1ab7934ba5a6056ea8b43078e71  # open_pdks hash used by every committed run (iic-osic-tools 2025.07)
+  NGSPICE_VERSION: "44.2"                               # the ngspice of the same image
+jobs:
+  reference-simulations:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: mamba-org/setup-micromamba@v2
+        with:
+          environment-name: sim
+          create-args: ngspice=${{ env.NGSPICE_VERSION }}
+      - name: Pinned SKY130 PDK
+        run: |
+          pip install ciel
+          ciel enable --pdk-family sky130 --pdk-root "$HOME/pdk" "$PDK_VERSION"
+          sudo ln -s "$HOME/pdk/sky130A" /pdk
+      - name: Versions
+        shell: micromamba-shell {0}
+        run: ngspice -v | head -3 && cat /pdk/SOURCES
+      - name: Reference simulations with positive and negative controls
+        shell: micromamba-shell {0}
+        run: python3 tools/science_ci.py

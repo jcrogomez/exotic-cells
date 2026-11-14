@@ -9,6 +9,7 @@
   "vehicle": "D",
   "usefulness": "H",
   "information": "H",
+  "readiness": "T3",
   "state": "INSTRUMENT (the forge: formation path for XC-05). Formation path verified in the flow; transformation not demonstrated"
  },
  {
@@ -21,6 +22,7 @@
   "vehicle": "D",
   "usefulness": "H",
   "information": "H",
+  "readiness": "–",
   "state": "MERGED into XC-01. Geometry drawn, not integrated"
  },
  {
@@ -33,6 +35,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
+  "readiness": "–",
   "state": "MERGED into XC-01. Observation only"
  },
  {
@@ -45,6 +48,7 @@
   "vehicle": "H/S",
   "usefulness": "M",
   "information": "H",
+  "readiness": "–",
   "state": "MERGED into XC-05. Outside the range of a digital readout"
  },
  {
@@ -57,6 +61,7 @@
   "vehicle": "S",
   "usefulness": "L",
   "information": "M",
+  "readiness": "T0",
   "state": "CELL. Round 2: a map by material instead of a verdict. Metal 1 is bridged by its barrier (20 to 240 ohm per um, verified); a local-interconnect neck heats to roughly 500 to 1800 K with 4 to 8 mA (verified); low-bias reader holds 48 mV or less (verified)"
  },
  {
@@ -69,6 +74,7 @@
   "vehicle": "S",
   "usefulness": "L",
   "information": "M",
+  "readiness": "T0",
   "state": "CELL. Attack round 1: the arithmetic holds; it rides on XC-05, which is still open"
  },
  {
@@ -81,6 +87,7 @@
   "vehicle": "H",
   "usefulness": "H",
   "information": "H",
+  "readiness": "T0",
   "state": "CELL. Round 4: out of reach at 3.3 V; plausible with the XC-53 pump; breakdown time unverifiable (7–14 decades), so the cell must sweep area and voltage. Waits for more than 1.8 V"
  },
  {
@@ -93,6 +100,7 @@
   "vehicle": "H/S",
   "usefulness": "M",
   "information": "H",
+  "readiness": "–",
   "state": "MERGED into XC-07. Depends on XC-07"
  },
  {
@@ -105,6 +113,7 @@
   "vehicle": "H",
   "usefulness": "H",
   "information": "M",
+  "readiness": "–",
   "state": "MERGED into XC-14. No SKY130 data"
  },
  {
@@ -117,6 +126,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "M",
+  "readiness": "T0",
   "state": "INSTRUMENT (creates traps for XC-19 and, after attack round 1, for XC-52). No design"
  },
  {
@@ -129,6 +139,7 @@
   "vehicle": "H",
   "usefulness": "H",
   "information": "L",
+  "readiness": "–",
   "state": "MERGED into XC-14. Waits for a charge pump"
  },
  {
@@ -141,6 +152,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
+  "readiness": "T2",
   "state": "INSTRUMENT (process metrology; Residual). Extraction gap confirmed; annotator applied to the whole standard-cell library; model prediction only"
  },
  {
@@ -153,6 +165,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
+  "readiness": "T0",
   "state": "INSTRUMENT (process metrology). Not in the model card"
  },
  {
@@ -165,6 +178,7 @@
   "vehicle": "D",
   "usefulness": "H",
   "information": "H",
+  "readiness": "T0",
   "state": "CELL. Round 4, verified to order: on 4.15 nm oxide the plasma charge tunnels away (no fab-time memory); the residual drifts ~mV/day and tracks oxide thickness (clock / thickness gauge, conjecture). On 11.6 nm oxide it does not tunnel; survival through anneal unknown"
  },
  {
@@ -177,6 +191,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
+  "readiness": "–",
   "state": "MERGED into XC-14. Experiment defined"
  },
  {
@@ -189,6 +204,7 @@
   "vehicle": "D",
   "usefulness": "L",
   "information": "M",
+  "readiness": "T0",
   "state": "INSTRUMENT (process metrology). Real diffusion lengths of every library cell now known (`experiments/stdcell_lod`)"
  },
  {
@@ -201,6 +217,7 @@
   "vehicle": "D",
   "usefulness": "L",
   "information": "M",
+  "readiness": "–",
   "state": "OUT (a parasitic capacitor: standard-cell territory). Low priority"
  },
  {
@@ -213,6 +230,7 @@
   "vehicle": "H",
   "usefulness": "M",
   "information": "M",
+  "readiness": "T0",
   "state": "CELL. Threshold unknown"
  },
  {
@@ -225,6 +243,7 @@
   "vehicle": "D/H",
   "usefulness": "H",
   "information": "H",
+  "readiness": "T2",
   "state": "CELL. Reader simulated against four pre-registrations and drawn as a rule-clean channel; working point revised for shot noise; no trap demonstrated, no silicon"
  },
  {
@@ -237,6 +256,7 @@
   "vehicle": "D/H",
   "usefulness": "M",
   "information": "H",
+  "readiness": "T0",
   "state": "CELL. Round 2: reverse tunnelling at zero separation is the firm observable (tens of nA to tens of uA at 1.8 V per 1.4 um, verified to the order of magnitude); negative resistance left open, it depends on a doping profile that is not public"
  },
  {
@@ -249,6 +269,7 @@
   "vehicle": "H/S",
   "usefulness": "M",
   "information": "M",
+  "readiness": "T1",
   "state": "CELL. Round 4: drawn-gap knob dead; drawn corner 6.6–9.7 V verified to order; with a pump 3–37 pA (one agent). Waits for high voltage"
  },
  {
@@ -261,6 +282,7 @@
   "vehicle": "H/S",
   "usefulness": "M",
   "information": "M",
+  "readiness": "–",
   "state": "MERGED into XC-21. Waits for high voltage"
  },
  {
@@ -273,6 +295,7 @@
   "vehicle": "H",
   "usefulness": "M",
   "information": "H",
+  "readiness": "T0",
   "state": "INSTRUMENT (control of XC-26 (carriers before photons)). Stated only; also the control for XC-26"
  },
  {
@@ -285,6 +308,7 @@
   "vehicle": "H",
   "usefulness": "M",
   "information": "M",
+  "readiness": "T0",
   "state": "CELL. Latch-up risk"
  },
  {
@@ -297,6 +321,7 @@
   "vehicle": "H",
   "usefulness": "M",
   "information": "L",
+  "readiness": "T0",
   "state": "CELL. Attack round 1: with the microcoil it is the most solid result of the round; Hall voltage 0.017 to 0.66 mV per mA depending on unknown well doping"
  },
  {
@@ -309,6 +334,7 @@
   "vehicle": "D/H",
   "usefulness": "M",
   "information": "H",
+  "readiness": "T1",
   "state": "CELL. Round 4, verified to order: lives only with the emitter well at ~+1 V and substrate ≤10 Ω·cm (0.21–0.42 pA at 5 µm vs 0.15 pA floor); dies at ≥20 Ω·cm or cathode grounded"
  },
  {
@@ -321,6 +347,7 @@
   "vehicle": "D/S",
   "usefulness": "M",
   "information": "H",
+  "readiness": "T0",
   "state": "CELL. Round 4, verified to order: a cap changes only the escape cone, +1–4 %; needs ≥5 pA and <1 % matching. Reflection variant with the internal emitter of XC-26 entered 2026-11-12; depends on XC-26 emitting and on fill blocking; transmission still needs light on the die"
  },
  {
@@ -333,6 +360,7 @@
   "vehicle": "S",
   "usefulness": "M",
   "information": "M",
+  "readiness": "T0",
   "state": "CELL, specialised vehicle. Reopened 2026-11-13: it was OUT only for needing post-processing and die access, and the vehicle classifies, it does not reject"
  },
  {
@@ -345,6 +373,7 @@
   "vehicle": "S",
   "usefulness": null,
   "information": null,
+  "readiness": "T0",
   "state": "CELL, unscoped, specialised vehicle. Reopened 2026-11-13: it was OUT for never being defined, which is an incomplete hypothesis, not a refuted one. Distinct from the metal hole arrays of XC-27"
  },
  {
@@ -357,6 +386,7 @@
   "vehicle": "S",
   "usefulness": null,
   "information": "H",
+  "readiness": "T0",
   "state": "CELL. Reopened 2026-11-13: merged into XC-54 on 2026-11-12, but coherence without Cooper pairs is a different mechanism from superconductivity; they share only the cryostat. Chain to be written"
  },
  {
@@ -369,6 +399,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "M",
+  "readiness": "T0",
   "state": "INSTRUMENT (temperature knob and control). Unverified estimate"
  },
  {
@@ -381,6 +412,7 @@
   "vehicle": "D",
   "usefulness": "L",
   "information": "M",
+  "readiness": "T0",
   "state": "INSTRUMENT (supply control). The boring explanation every coupling experiment must rule out"
  },
  {
@@ -393,6 +425,7 @@
   "vehicle": "D",
   "usefulness": "H",
   "information": "L",
+  "readiness": "–",
   "state": "OUT (done with standard cells). The conventional baseline XC-19 must beat"
  },
  {
@@ -405,6 +438,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "L",
+  "readiness": "T0",
   "state": "INSTRUMENT (readout tooling). Tooling"
  },
  {
@@ -417,6 +451,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "L",
+  "readiness": "–",
   "state": "OUT (done with standard cells). Idea"
  },
  {
@@ -429,6 +464,7 @@
   "vehicle": "D",
   "usefulness": null,
   "information": null,
+  "readiness": "–",
   "state": "OUT (not cells). Not cells: they use cells"
  },
  {
@@ -441,6 +477,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
+  "readiness": "–",
   "state": "MERGED into XC-19. Entered 2026-11-12; reuses the XC-19 reader; step size `[?]`; needs an array and temperature"
  },
  {
@@ -453,6 +490,7 @@
   "vehicle": "D",
   "usefulness": "L",
   "information": "M",
+  "readiness": "–",
   "state": "MERGED into XC-20. Entered 2026-11-12; expected weak at 1.8 V (unread source)"
  },
  {
@@ -465,6 +503,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "M",
+  "readiness": "T0",
   "state": "CELL. Entered 2026-11-12; coefficient read in the model card; oscillation judged unlikely, drift readable"
  },
  {
@@ -477,6 +516,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "M",
+  "readiness": "–",
   "state": "MERGED into XC-39. Entered 2026-11-12; the reader's own thermal drift exceeds one pair: needs a differential reference"
  },
  {
@@ -489,6 +529,7 @@
   "vehicle": "D",
   "usefulness": "L",
   "information": "M",
+  "readiness": "–",
   "state": "MERGED into XC-14. Entered 2026-11-12; signal expected near the reader step; MiM variant depends on the template"
  },
  {
@@ -501,6 +542,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "M",
+  "readiness": "–",
   "state": "MERGED into XC-14. Entered 2026-11-12; latch-up and precheck risk to be checked"
  },
  {
@@ -513,6 +555,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
+  "readiness": "–",
   "state": "MERGED into XC-19. Entered 2026-11-12; f·q per trap is above the modelled floor at 1 MHz; needs body bias at mid-supply"
  },
  {
@@ -525,6 +568,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "M",
+  "readiness": "T0",
   "state": "INSTRUMENT (stress monitor). Entered 2026-11-12; only interpretable with an external bending control"
  },
  {
@@ -537,6 +581,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
+  "readiness": "–",
   "state": "MERGED into XC-14. Entered 2026-11-12; time constant `[?]`; area sweep separates it from switch leakage"
  },
  {
@@ -549,6 +594,7 @@
   "vehicle": "D",
   "usefulness": "L",
   "information": "M",
+  "readiness": "T0",
   "state": "INSTRUMENT (control of XC-12/13). Entered 2026-11-12; partly in the model card already: a control more than a cell"
  },
  {
@@ -561,6 +607,7 @@
   "vehicle": "D",
   "usefulness": "L",
   "information": "H",
+  "readiness": "T0",
   "state": "INSTRUMENT (model metrology; Residual). Entered 2026-11-12; upstream issue read; a job for Residual"
  },
  {
@@ -573,6 +620,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "M",
+  "readiness": "–",
   "state": "OUT (a junction transistor: conventional physics). Entered 2026-11-12; sheet resistance spread read in the PDK; bias dependence `[?]`"
  },
  {
@@ -585,6 +633,7 @@
   "vehicle": "D",
   "usefulness": "L",
   "information": "L",
+  "readiness": "–",
   "state": "OUT (event rate too low for one chip). Entered 2026-11-12; event rate estimated far too low for one chip (unread source)"
  },
  {
@@ -597,6 +646,7 @@
   "vehicle": "D",
   "usefulness": "L",
   "information": "M",
+  "readiness": "–",
   "state": "MERGED into XC-26. Entered 2026-11-12; estimated below the reader floor (from memory, no source)"
  },
  {
@@ -609,6 +659,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "M",
+  "readiness": "–",
   "state": "MERGED into XC-01. Entered 2026-11-12; published fuse used 10 mA at 3.3 V; whether SKY130 polysilicon is silicided `[?]`"
  },
  {
@@ -621,6 +672,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
+  "readiness": "T0",
   "state": "CELL. Round 2: the four-state sequence does not remove classical even-in-field terms; discrimination rests on the shape against field. Coil verified at 0.373 mT per mA. No area assigned yet"
  },
  {
@@ -633,6 +685,7 @@
   "vehicle": "D/H",
   "usefulness": "H",
   "information": "L",
+  "readiness": "T0",
   "state": "INSTRUMENT (unlocks XC-07, 14, 18, 21). Round 4, verified: 8–10 V from 1.8 V with N=6–8, no device above 2.8 V, 15–18 % of a 1×2 tile; do not pump from 3.3 V (well exceeds 16.85 V breakdown); vertical PNP not yet modelled"
  },
  {
@@ -645,6 +698,7 @@
   "vehicle": "S",
   "usefulness": "L",
   "information": "H",
+  "readiness": "T0",
   "state": "CELL. Entered 2026-11-12; costs no area (the lines exist); needs a cryostat. XC-30 was merged here on 2026-11-12 and reopened on 2026-11-13"
  },
  {
@@ -657,6 +711,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
+  "readiness": "T0",
   "state": "CELL. Entered 2026-11-12; the most speculative entry; no calculation yet"
  },
  {
@@ -669,6 +724,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "L",
+  "readiness": "T0",
   "state": "INSTRUMENT (field source for XC-25 and XC-52). Attack round 1, verified: 0.19 to 0.26 mT per mA; about 2 mT at the DC current limit of metal 3"
  },
  {
@@ -681,6 +737,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "M",
+  "readiness": "T0",
   "state": "CELL. Round 3: the odd-in-current heat survives in the model (0.2 to 7 K at the junction at 100 uA); a reader in the silicon sees about 1 % of it, so readout takes seconds"
  },
  {
@@ -693,6 +750,7 @@
   "vehicle": "D",
   "usefulness": "H",
   "information": "M",
+  "readiness": "T0",
   "state": "CELL. Round 3: survives as a randomness source and as a meter of 1 to 30 fF capacitances; primary thermometry not demonstrated (the observable goes as T^-1/2, verified), calibrated secondary sensitivity still to be assessed; doubles as the continuous-noise control for XC-19"
  },
  {
@@ -705,6 +763,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
+  "readiness": "T0",
   "state": "CELL. Round 3: dead for a transistor with an on-chip heater (the channel gets 1 to 16 % of the heater's rise, verified); alive for a polysilicon element on oxide, or with oven erase"
  },
  {
@@ -717,6 +776,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "M",
+  "readiness": "T0",
   "state": "CELL. Round 3: survives with another geometry (short diode, well-substrate junction as the active face); about 1 mT from a metal 1 strip (verified); cannot be claimed to beat a Hall plate"
  },
  {
@@ -729,6 +789,7 @@
   "vehicle": "S",
   "usefulness": "L",
   "information": "H",
+  "readiness": "T0",
   "state": "CELL. Round 3: transformed into a forward diode that fires pulses at 4.2 K; nothing at 77 K (well still 6 to 37 % ionised); needs a cryostat"
  },
  {
@@ -741,6 +802,7 @@
   "vehicle": "D",
   "usefulness": "M",
   "information": "H",
+  "readiness": "T0",
   "state": "CELL. Round 3: legal and submittable; threshold moves 1.2 to 1.8 mV per nm of gate length (verified); would measure the residue of the fab's proximity correction"
  },
  {
@@ -753,6 +815,7 @@
   "vehicle": "D/S",
   "usefulness": "M",
   "information": "M",
+  "readiness": "T0",
   "state": "CELL. Round 3: the PDK itself ships seven cells with a contact on an unimplanted tap, all on p substrate (verified); on an n-well it passes only next to a normal tap; real interface unknown"
  }
 ]

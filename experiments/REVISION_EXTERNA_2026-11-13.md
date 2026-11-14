@@ -19,7 +19,7 @@ Comprobado y aplicado 11:23–11:40 (hora de `date`). Lo que depende de decision
 | 11 | `docs/CLAIMS.md` solo cubría LOD y XC-19 | Cierto | **cierto** | Sección nueva con las rondas 1–4, grados, supuestos y límites |
 | 12 | No hay RTL, `info.yaml` ni diseño superior de MISFIT | Cierto en este repo | cierto | Decisión de Juan (abajo) |
 
-## Abierto: decisiones de Juan
+## Abierto: decisiones de Juan (resueltas abajo)
 
 Estas propuestas de la revisión cambian prioridades o reglas. No se aplican sin que Juan las confirme:
 
@@ -31,3 +31,28 @@ Estas propuestas de la revisión cambian prioridades o reglas. No se aplican sin
 - Una matriz de capacidades del PDK (documentado / capas y máscaras / disponible en el shuttle / observable), empezando por
   SONOS, siliciuro, TiN, MiM, alta tensión y fotodiodos.
 - Pruebas de integración con el PDK en la CI para algunos experimentos de referencia (necesita una imagen de Docker en la CI).
+
+## Decisiones de Juan (2026-11-13 21:33)
+
+Juan aprobó las cuatro propuestas con estas precisiones. Ninguna detiene la exploración de físicas nuevas; el catálogo sigue
+abierto y se conservan los 63 identificadores con sus antecedentes y resultados (se corrige sin borrar conocimiento).
+
+| Propuesta | Decisión | Alcance |
+|---|---|---|
+| Canal completo XC-19 | Sí, prioridad de integración | Condensadores reales, alimentación, calibración independiente, salida digital, extracción y post-layout. Las demás familias siguen en paralelo. El instrumento debe servir a varias físicas, no solo a trampas |
+| Motor de hipótesis en Residual | Sí, incremental | Prototipo mínimo: una familia con 2–3 mecanismos rivales, sus predicciones y la configuración que mejor los separa, con incertidumbres explícitas. Nada de infraestructura general antes de demostrar que mejora una decisión experimental concreta |
+| Matriz de capacidades SKY130 | Sí, prioridad científica alta | Cuatro niveles: documentado, capas y reglas, fabricable en el shuttle, observable. Siliciuro y XC-20 primero; luego TiN, SONOS, MiM, alta tensión. Fuentes y grados; no inferir fabricación por aparecer en el PDK |
+| Física en la CI | Sí, por niveles | CI rápida por commit (código y consistencia); CI científica aparte con pocas simulaciones con PDK, herramientas y versiones fijadas, con controles negativos y comprobaciones numéricas, no solo códigos de salida |
+
+Principios añadidos:
+- MISFIT se diseña desde los experimentos que se pueden hacer: instrumentación compartida (excitación controlable, referencias
+  físicas, conversión a tiempo, registro) en lugar de un lector por familia, y vehículos distintos para lo que los necesite.
+- Residual debe llegar a responder qué experimento fabricar para aprender más de la física que no entendemos: se optimiza también
+  la ganancia de información, no solo la probabilidad de éxito. Un resultado negativo bien diseñado vale tanto como una celda
+  (ejemplos de Juan: una matriz de XC-20 sin resistencia negativa revela el perfil lateral de dopado; XC-52 sin espín caracteriza
+  acoplamientos magnéticos y eléctricos; XC-58 es referencia estadística frente a trampas individuales).
+- Dos métricas independientes: madurez científica (el color del catálogo) y preparación de ingeniería para tapeout (columna T
+  del README, añadida en esta fecha).
+
+Orden de trabajo: primero el canal XC-19 y la matriz de capacidades (`docs/CAPACIDADES_SKY130.md`, `experiments/xc19_caps/`);
+después el prototipo del motor de hipótesis y la CI científica.
