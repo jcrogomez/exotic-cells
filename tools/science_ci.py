@@ -13,20 +13,14 @@ Exits non-zero if any check fails.
 import os, shutil, subprocess, sys, tempfile
 
 root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-REG_TOL = 0.01  # 1 %: ngspice builds differ between the Docker image and the CI runner
+REG_TOL = 0.01  # 1 %: margin for ngspice builds (image vs CI runner); the mode itself is pinned by ngspice_pdk.sh
 
 
 def run(folder, deck, tag, d=None):
     d = d or os.path.join(root, folder)
-    spinit, local = "/pdk/libs.tech/ngspice/spinit", os.path.join(d, ".spiceinit")
-    made = os.path.exists(spinit) and not os.path.exists(local)
-    if made:  # the PDK's ngspice settings (compatibility mode), as the committed runs used
-        open(local, "w").write(open(spinit).read())
-    try:
-        out = subprocess.run(["ngspice", "-b", deck], cwd=d, capture_output=True, text=True).stdout
-    finally:
-        if made:
-            os.unlink(local)
+    # Same wrapper as the committed runs: the PDK's spinit (ngbehavior=hsa) as .spiceinit, with SPICE_USERINIT_DIR unset so
+    # ngspice reads it. References regenerated in that mode on 2026-11-14 (experiments/AUDITORIA_HSA_2026-11-13.md).
+    out = subprocess.run([os.path.join(root, "tools", "ngspice_pdk.sh"), deck], cwd=d, capture_output=True, text=True).stdout
     lines = [l for l in out.splitlines() if l.startswith(tag + " ")]
     if not lines:
         sys.exit(f"{folder}/{deck}: no {tag} line in the output\n" + out[-2000:])

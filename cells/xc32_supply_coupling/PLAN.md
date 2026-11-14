@@ -31,7 +31,7 @@ todas las demás familias. Su lector es una etapa de XC-19 **sin gemelo**, que e
 - **Señal/piso:** 20 mV sobre una etapa sola son alrededor del 10 % (**cálculo**, 0,53 %/mV); sobre la pareja, 0,1 % (**cálculo**
   con la mediana), por debajo del salto de 0,83 % de una carga. La etapa sola lo ve de sobra; la pareja debería no verlo. Esa
   diferencia es la medida.
-- **Escala de tiempo:** ns según la ficha; una conversión dura 29,2 µs (`cells/xc19_channel`), así que el lector integra el rizado
+- **Escala de tiempo:** ns según la ficha; una conversión dura 29,2 µs (`cells/xc19_channel`; [corregido 2026-11-14 16:33] 30,3 µs en modo `hsa`, `../../experiments/AUDITORIA_HSA_2026-11-13.md`), así que el lector integra el rizado
   rápido y ve su media. Lo rápido solo se ve como dispersión entre conversiones.
 
 ## 3. Explicación aburrida y controles

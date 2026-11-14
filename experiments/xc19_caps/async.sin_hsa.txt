@@ -1,0 +1,1 @@
+RES ASYNC tA_Bquiet=2.99623E-05 tA_Bprecharged_at_12us=2.99618E-05 change_pct=-0.00180227 vb_kick_max=1.08886E-05 vb_kick_min=-9.24704E-06

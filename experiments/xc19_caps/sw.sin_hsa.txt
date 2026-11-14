@@ -1,0 +1,1 @@
+RES SW t_none=2.99628E-05 p_off=2.99962E-05 p_on=3.03314E-05 p_pct=1.11731 tg_off=3.00301E-05 tg_on=3.04277E-05 tg_pct=1.3239

@@ -78,5 +78,5 @@ instead of a few femtofarads of wiring, which was the weakest number of the prev
 - A twin read after the device does not cancel fast supply noise; two readers at once cancel it but add mismatch and coupling.
   The choice has not been compared.
 - The dynamics of a real trap depend on gate and drain voltage, and the drain voltage moves during every conversion.
-- The 133 fF as layout. A 4 x 4 um transistor used as capacitor gives 27.1 us against 29.2 us for the ideal one
+- The 133 fF as layout. A 4 x 4 um transistor used as capacitor gives 27.1 us against 29.2 us for the ideal one ([corregido 2026-11-14 16:33] 28.2 against 30.3 us in `hsa` mode)
   ([`cells/xc19_channel`](../../cells/xc19_channel/README.md)), exploratory.

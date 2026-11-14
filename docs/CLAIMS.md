@@ -24,7 +24,7 @@ Environment of the runs: `experiments/manifest_2026-11-11.json`.
 | Kickback of one small stage: 0.076 mV at 1 pF, 0.016 mV at 10 pF | run | `gen_night.py` | `night.txt` |
 | LOD pair through the stage: time ratio 1.64, current ratio 2.36 | run and arithmetic | `gen_night.py` (`n4_cross.sp`) | `night.txt` |
 | Readout cell, bias cell and channel: 0 violations in Magic (full rules), in the KLayout manufacturing deck and in the full KLayout deck with front-end checks on; 23 devices as intended | run | `cells/*/xc19_*.tcl` | `cells/*/xc19_*.log`, `*.lyrdb`, `*.lvs.spice`, `residual/drc_edge/klayout_full_deck.txt` |
-| Channel from layout, three in series, 133 fF: 29.2 us, 0.80 % | run | `cells/xc19_bias/channel.sp`, `cells/xc19_channel/channel_sim.sp` | `channel.txt`, `channel_sim.txt` |
+| Channel from layout, three in series, 133 fF: 29.2 us, 0.80 % ([corregido 2026-11-14 16:33] 30.3 us in the PDK's `hsa` mode; step unchanged; `experiments/AUDITORIA_HSA_2026-11-13.md`) | run | `cells/xc19_bias/channel.sp`, `cells/xc19_channel/channel_sim.sp` | `channel.txt`, `channel_sim.txt` |
 | Shot noise of one conversion at 81 pA and 2.3 fF: 0.55 % in transient simulation (48 conversions), 0.82 % from the electron count | run and arithmetic | `experiments/xc19_noise/shot_trnoise.sp`, `shot_read.py` | `shot.txt` |
 | Mismatch: device/twin ratio moves a median of 0.047 % for 10 mV of supply; discharge times spread over two orders of magnitude | run (39 of 100 planned draws) | `experiments/xc19_weak_inversion/n5_mc.sp`, `n5_read.py` | `n5.txt` |
 | Detection at 81 pA and 2.3 fF: false events above one per second at every dwell | run (behavioural model) | `experiments/xc19_noise/detect.py` | `detect.txt` |

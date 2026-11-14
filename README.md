@@ -165,7 +165,7 @@ The full design pipeline is in [`docs/PIPELINE.md`](docs/PIPELINE.md); the tests
 | [`docs/`](docs/) | [Motivation](docs/MOTIVATION.md), [pipeline](docs/PIPELINE.md), [MISFIT chip proposal](docs/PROPOSAL.md), [exploration plan](docs/PLAN_EXPLORATORIO.md), [experiment table](docs/EXPERIMENTOS.md), [claims and evidence](docs/CLAIMS.md), [SKY130 capability matrix](docs/CAPACIDADES_SKY130.md), [reading list](docs/READING.md) |
 | [`lab/`](lab/README.md) | The lab notebook where the project started (4–12 Nov 2026): [philosophy](lab/docs/FILOSOFIA.md), decisions, the first portfolio, and the first drawn macros (constriction, cold spark, photon, LOD etch) |
 | [`residual/`](residual/README.md) | Residual, the software that compares model and silicon. Module 1 annotates extracted netlists with stress geometry; module 2 maps the legal edge of a geometry |
-| [`tools/`](tools/) | `catalogue_json.py` (catalogue → JSON), `check_runs.py` (judges committed simulation runs), `manifest.sh` (records a run's environment), `science_ci.py` (level-2 CI: reference simulations judged by their numbers) |
+| [`tools/`](tools/) | `catalogue_json.py` (catalogue → JSON), `check_runs.py` (judges committed simulation runs), `manifest.sh` (records a run's environment), `science_ci.py` (level-2 CI: reference simulations judged by their numbers), `ngspice_pdk.sh` (runs ngspice with the PDK's own settings; the Docker image otherwise skips them, see `experiments/AUDITORIA_HSA_2026-11-13.md`) |
 
 ## Contributing
 

@@ -6,6 +6,13 @@ Corrido el 2026-11-13 entre las 21:37 y las 21:57 EST (mtimes de los `.log`), co
 
 Celda nueva: [`cells/xc19_channel_caps`](../../cells/xc19_channel_caps/README.md). No se tocó ningún archivo existente.
 
+> [corregido 2026-11-14 16:33] Estas corridas no usaron los ajustes de ngspice del PDK (`ngbehavior=hsa`): la imagen fija
+> `SPICE_USERINIT_DIR` y el `.spiceinit` local no se lee ([auditoría](../AUDITORIA_HSA_2026-11-13.md)). Los 8 decks que cambian se
+> volvieron a correr el 2026-11-14 con `tools/ngspice_pdk.sh`: los `.txt` y `summary.txt` actuales son de esa corrida, y los
+> anteriores quedan como `*.sin_hsa.txt`. Los tiempos absolutos suben un 3,3 %; cocientes, saltos y A/B no cambian (≤ 0,1 %
+> relativo; la inyección a 20 µs, 0,879 → 0,865 %). Cambia una conclusión: **C2 tal como está escrita falla** (ver la tabla).
+> Las cifras de abajo son las originales, con la corrección al lado donde importa.
+
 ## 1. Qué se eligió y por qué
 
 | Nodo | Realización | Razón |
@@ -30,8 +37,8 @@ a GND y otra familia de dispositivo sin ganancia que haga falta.
 
 | # | Predicho | Obtenido | Fuente | |
 |---|---|---|---|---|
-| C1 | 17–18 µm² de MOS cap para igualar 133 fF | 4,3 × 4,0 = 17,2 µm²: 29,224 µs frente a 29,2975 µs (−0,25 %), con el canal extraído y el condensador en esquemático | `moscap.txt` | se cumple |
-| C2 | post-layout 29,3 µs ± 3 % (cableado < 1 fF) | **29,963 µs, +2,27 %**. Dentro de la banda, pero el supuesto falla: el cableado nuevo de X (met2, placas, pad) añade unos 3 fF a GND, CAL y VB | `post.txt` | se cumple por poco; supuesto fallido |
+| C1 | 17–18 µm² de MOS cap para igualar 133 fF | 4,3 × 4,0 = 17,2 µm²: 29,224 µs frente a 29,2975 µs (−0,25 %; [corregido 2026-11-14 16:33] `hsa`: 30,197 frente a 30,273, −0,25 %), con el canal extraído y el condensador en esquemático | `moscap.txt` | se cumple |
+| C2 | post-layout 29,3 µs ± 3 % (cableado < 1 fF) | **29,963 µs, +2,27 %**. Dentro de la banda, pero el supuesto falla: el cableado nuevo de X (met2, placas, pad) añade unos 3 fF a GND, CAL y VB | `post.txt` | se cumple por poco; supuesto fallido. [corregido 2026-11-14 16:33] En modo `hsa` (el que pide el PDK): 30,961 µs, +5,67 % sobre 29,3: **falla tal como está escrita**. La banda se anclaba en el ideal medido sin `hsa`; frente al ideal del mismo deck, +2,27 % en los dos modos. El criterio de muerte (± 5 % del ideal del mismo deck) no cambia (`../experiments/AUDITORIA_HSA_2026-11-13.md`) |
 | C3 | A/B < 0,1 % | 0,055 % | `post.txt` | se cumple |
 | C4 | salto 0,80 ± 0,02 % | 0,8013 % (ideal 0,8014 %; post-layout 0,8013 %) | `moscap.txt`, `post.txt` | se cumple |
 | C5 | fuga del condensador: 0 en simulación | 0 por construcción (`igcmod = igbmod = 0`). Umbral de daño: 0,6 nA ≈ 3,5·10⁻³ A/cm² sobre 17 µm² quita un 10 % del salto. Fuga real `[?]` | aritmética | abierto |
@@ -56,10 +63,11 @@ Extraída y anotada (`post.sp`, control en el mismo deck: el canal viejo con 133
 | | Ideal 133 fF | Dibujado |
 |---|---|---|
 | Descarga A / B | 29,2975 / 29,2972 µs | 29,9628 / 29,9793 µs |
+| [corregido 2026-11-14 16:33] ídem en modo `hsa` | 30,2733 / 30,2729 µs | 30,9606 / 30,9777 µs |
 | Salto por 0,305 mV | 0,8014 % | 0,8013 % |
 | Una etapa, 10 mV de alimentación | −6,52 % | −6,47 % |
 | Cociente A/B, 10 mV | 0,0001 % | 0,0001 % (sin desajuste) |
-| Filtro en VB | ninguno | 10,17 pF (AC, `vb_ac.txt`); R de salida de la cadena 656 kΩ, τ ≈ 6,7 µs |
+| Filtro en VB | ninguno | 10,17 pF (AC, `vb_ac.txt`); R de salida de la cadena 656 kΩ, τ ≈ 6,7 µs ([corregido 2026-11-14 16:33] `hsa`: 10,14 pF, 678 kΩ, τ ≈ 6,9 µs) |
 | B se reprecarga a los 12 µs de la conversión de A | — | A cambia −0,0018 %; VB se mueve 0,011 mV (`async.txt`) |
 
 Si se quiere el tiempo del ideal, el generador admite `XC19_WC`: con 6,6 µs por µm de W (`moscap.txt`), W ≈ 4,20 µm. No se
@@ -119,7 +127,7 @@ la exactitud en silicio es `[?]`. Es interna: la comprueba el propio lector, no 
 
 - Acoplo capacitivo de una línea digital a VB: 0,305 mV pide Cg = 0,305 mV × 10,17 pF / 1,8 V = 1,7 fF. Pero decae con
   τ ≈ 6,7 µs, menos que una conversión, y es común a A y B: mide la sensibilidad de una etapa a su puerta, no la del cociente.
-- Corriente continua en VB: 0,305 mV × 656 kΩ → 0,47 nA, una corriente que no se conoce mejor que el propio salto.
+- Corriente continua en VB: 0,305 mV × 656 kΩ → 0,47 nA ([corregido 2026-11-14 16:33] `hsa`: 678 kΩ → 0,45 nA), una corriente que no se conoce mejor que el propio salto.
 - Puerta propia del DUT tras un interruptor o una resistencia: es una puerta muestreada, que el PLAN prohíbe (kT/C de ~2 mV).
 - La pendiente de puerta (n·kT/q) se puede leer sin escalón: las dos posiciones de C1 (K = 3, K = 4) cambian VB de 0,472 a
   0,317 V en el esquemático de `xc19_weak_inversion` (en este canal extraído solo se corrió K = 3), y el cociente de tiempos da el
@@ -178,4 +186,4 @@ a la puerta. Entradas que debería exponer cada canal:
 
 `cv.sp` C(V) de candidatos · `moscap.sp` dimensionado y salto · `filt.sp` barrido del filtro ideal · `vb_ac.sp` filtro dibujado ·
 `post.sp` post-layout · `cal.sp` inyección · `sw.sp`, `sw_current.sp` condensador conmutado · `async.sp` interacción en la celda
-dibujada · `summary.txt` cifras derivadas de `post.txt` y `cal.txt`. Correr: `SKY130A=<ruta> ./run.sh <deck>.sp`.
+dibujada · `summary.txt` cifras derivadas de `post.txt` y `cal.txt` ([corregido 2026-11-14 16:33] ahora por `summary.py`, que reproduce exactamente la versión a mano desde `*.sin_hsa.txt`). Correr: `SKY130A=<ruta> ./run.sh <deck>.sp`.

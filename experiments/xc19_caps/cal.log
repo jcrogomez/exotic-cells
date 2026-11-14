@@ -1,113 +1,39 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
 
-Note: No compatibility mode selected!
+
+Note: Compatibility modes selected: hs a
 
 
 Circuit: * calibracion por inyeccion de carga: la linea cala (placa de metal 1 bajo la placa de metal 2 de xa, cc extraida 0,595 ff)
 
+option SCALE: Scale is set to 1e-06 for instance and model parameters
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
-Using SPARSE 1.3 as Direct Linear Solver
-
-Initial Transient Solution
---------------------------
-
-Node                                   Voltage
-----                                   -------
-vdd                                        1.8
-ctl                                          0
-pre                                          0
-hi                                         1.8
-lo                                           0
-r2                                         1.8
-r10                                        1.8
-r20                                        1.8
-f2                                           0
-f10                                          0
-f20                                          0
-xs0.vb                                0.479572
-xs0.xb                                 1.79986
-xs0.xa                                 1.79986
-xs0.cala                           8.64092e-10
-as0                                8.63812e-10
-bs0                                8.63812e-10
-xs1.vb                                0.479572
-xs1.xb                                 1.79986
-xs1.xa                                 1.79986
-xs1.cala                                   1.8
-as1                                8.63812e-10
-bs1                                8.63812e-10
-xr2.vb                                0.479572
-xr2.xb                                 1.79986
-xr2.xa                                 1.79986
-xr2.cala                           8.64092e-10
-ar2                                8.63812e-10
-br2                                8.63812e-10
-xr10.vb                               0.479572
-xr10.xb                                1.79986
-xr10.xa                                1.79986
-xr10.cala                          8.64092e-10
-ar10                               8.63812e-10
-br10                               8.63812e-10
-xr20.vb                               0.479572
-xr20.xb                                1.79986
-xr20.xa                                1.79986
-xr20.cala                          8.64092e-10
-ar20                               8.63812e-10
-br20                               8.63812e-10
-xf2.vb                                0.479572
-xf2.xb                                 1.79986
-xf2.xa                                 1.79986
-xf2.cala                                   1.8
-af2                                8.63812e-10
-bf2                                8.63812e-10
-xf10.vb                               0.479572
-xf10.xb                                1.79986
-xf10.xa                                1.79986
-xf10.cala                                  1.8
-af10                               8.63812e-10
-bf10                               8.63812e-10
-xf20.vb                               0.479572
-xf20.xb                                1.79986
-xf20.xa                                1.79986
-xf20.cala                                  1.8
-af20                               8.63812e-10
-bf20                               8.63812e-10
-bpre#branch                                  0
-vf20#branch                                  0
-vf10#branch                                  0
-vf2#branch                                   0
-vr20#branch                                  0
-vr10#branch                                  0
-vr2#branch                                   0
-vlo#branch                                   0
-vhi#branch                                   0
-vctl#branch                                  0
-vdd#branch                        -3.89241e-07
-
- Reference value :  0.00000e+00 Reference value :  1.02539e-07 Reference value :  4.73396e-07 Reference value :  8.53396e-07 Reference value :  1.25340e-06 Reference value :  1.64340e-06 Reference value :  2.03340e-06 Reference value :  2.10068e-06 Reference value :  2.12859e-06 Reference value :  2.47859e-06 Reference value :  2.91859e-06 Reference value :  3.31859e-06 Reference value :  3.75859e-06 Reference value :  4.27859e-06 Reference value :  4.81859e-06 Reference value :  5.35859e-06 Reference value :  5.89859e-06 Reference value :  6.43859e-06 Reference value :  6.97859e-06 Reference value :  7.51859e-06 Reference value :  8.05859e-06 Reference value :  8.59859e-06 Reference value :  9.13859e-06 Reference value :  9.67859e-06 Reference value :  1.01004e-05 Reference value :  1.01008e-05 Reference value :  1.03239e-05 Reference value :  1.06839e-05 Reference value :  1.10439e-05 Reference value :  1.14139e-05 Reference value :  1.17839e-05 Reference value :  1.21439e-05 Reference value :  1.25039e-05 Reference value :  1.28739e-05 Reference value :  1.32339e-05 Reference value :  1.36039e-05 Reference value :  1.39739e-05 Reference value :  1.43339e-05 Reference value :  1.46939e-05 Reference value :  1.50639e-05 Reference value :  1.54339e-05 Reference value :  1.58139e-05 Reference value :  1.61839e-05 Reference value :  1.65539e-05 Reference value :  1.69239e-05 Reference value :  1.72939e-05 Reference value :  1.76539e-05 Reference value :  1.80239e-05 Reference value :  1.83939e-05 Reference value :  1.87639e-05 Reference value :  1.91339e-05 Reference value :  1.95039e-05 Reference value :  1.98739e-05 Reference value :  2.01005e-05 Reference value :  2.01016e-05 Reference value :  2.04399e-05 Reference value :  2.08099e-05 Reference value :  2.11799e-05 Reference value :  2.15499e-05 Reference value :  2.19199e-05 Reference value :  2.22799e-05 Reference value :  2.26199e-05 Reference value :  2.29899e-05 Reference value :  2.33499e-05 Reference value :  2.37199e-05 Reference value :  2.40899e-05 Reference value :  2.44799e-05 Reference value :  2.48399e-05 Reference value :  2.52099e-05 Reference value :  2.55799e-05 Reference value :  2.59499e-05 Reference value :  2.63199e-05 Reference value :  2.66899e-05 Reference value :  2.70599e-05 Reference value :  2.74299e-05 Reference value :  2.77899e-05 Reference value :  2.81599e-05 Reference value :  2.85299e-05 Reference value :  2.88999e-05 Reference value :  2.92699e-05 Reference value :  2.96399e-05 Reference value :  2.99999e-05 Reference value :  3.03599e-05 Reference value :  3.07299e-05 Reference value :  3.10899e-05 Reference value :  3.14599e-05 Reference value :  3.18299e-05 Reference value :  3.21999e-05 Reference value :  3.25699e-05 Reference value :  3.29399e-05 Reference value :  3.33099e-05 Reference value :  3.36799e-05 Reference value :  3.40499e-05 Reference value :  3.44199e-05 Reference value :  3.47899e-05 Reference value :  3.51599e-05 Reference value :  3.55299e-05 Reference value :  3.58999e-05 Reference value :  3.62699e-05 Reference value :  3.66399e-05 Reference value :  3.70099e-05 Reference value :  3.73799e-05 Reference value :  3.77499e-05 Reference value :  3.81199e-05 Reference value :  3.84799e-05 Reference value :  3.88499e-05 Reference value :  3.92199e-05 Reference value :  3.95899e-05 Reference value :  3.99299e-05
-No. of Data Rows : 4140
-ta                  =  2.996282e-05
-tb                  =  2.997930e-05
-RES CAL case=s0 tA=2.99628E-05 tB=2.99793E-05
-ta                  =  2.996282e-05
-tb                  =  2.997930e-05
-RES CAL case=s1 tA=2.99628E-05 tB=2.99793E-05
-ta                  =  3.012410e-05
-tb                  =  2.997895e-05
-RES CAL case=r2 tA=3.01241E-05 tB=2.99789E-05
-ta                  =  3.016495e-05
-tb                  =  2.997896e-05
-RES CAL case=r10 tA=3.0165E-05 tB=2.9979E-05
-ta                  =  3.022632e-05
-tb                  =  2.997903e-05
-RES CAL case=r20 tA=3.02263E-05 tB=2.9979E-05
-ta                  =  2.980078e-05
-tb                  =  2.997965e-05
-RES CAL case=f2 tA=2.98008E-05 tB=2.99797E-05
-ta                  =  2.975956e-05
-tb                  =  2.997964e-05
-RES CAL case=f10 tA=2.97596E-05 tB=2.99796E-05
-ta                  =  2.969750e-05
-tb                  =  2.997956e-05
-RES CAL case=f20 tA=2.96975E-05 tB=2.99796E-05
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  1.33435e-07 Reference value :  5.53435e-07 Reference value :  9.73435e-07 Reference value :  1.40344e-06 Reference value :  1.82344e-06 Reference value :  2.10047e-06 Reference value :  2.10103e-06 Reference value :  2.37431e-06 Reference value :  2.72431e-06 Reference value :  3.07431e-06 Reference value :  3.43431e-06 Reference value :  3.78431e-06 Reference value :  4.14431e-06 Reference value :  4.52431e-06 Reference value :  4.88431e-06 Reference value :  5.25431e-06 Reference value :  5.62431e-06 Reference value :  5.98431e-06 Reference value :  6.33431e-06 Reference value :  6.66431e-06 Reference value :  6.99431e-06 Reference value :  7.33431e-06 Reference value :  7.67431e-06 Reference value :  8.04431e-06 Reference value :  8.36431e-06 Reference value :  8.72431e-06 Reference value :  9.10431e-06 Reference value :  9.46431e-06 Reference value :  9.81431e-06 Reference value :  1.01004e-05 Reference value :  1.01010e-05 Reference value :  1.03610e-05 Reference value :  1.07210e-05 Reference value :  1.10810e-05 Reference value :  1.14410e-05 Reference value :  1.17910e-05 Reference value :  1.21410e-05 Reference value :  1.24910e-05 Reference value :  1.28510e-05 Reference value :  1.32010e-05 Reference value :  1.35410e-05 Reference value :  1.38910e-05 Reference value :  1.42410e-05 Reference value :  1.45910e-05 Reference value :  1.49410e-05 Reference value :  1.53110e-05 Reference value :  1.56710e-05 Reference value :  1.60310e-05 Reference value :  1.64010e-05 Reference value :  1.67610e-05 Reference value :  1.71210e-05 Reference value :  1.74810e-05 Reference value :  1.78410e-05 Reference value :  1.81910e-05 Reference value :  1.85210e-05 Reference value :  1.88810e-05 Reference value :  1.92410e-05 Reference value :  1.96010e-05 Reference value :  1.99110e-05 Reference value :  2.01004e-05 Reference value :  2.01010e-05 Reference value :  2.03449e-05 Reference value :  2.07049e-05 Reference value :  2.10649e-05 Reference value :  2.14249e-05 Reference value :  2.17849e-05 Reference value :  2.21149e-05 Reference value :  2.24449e-05 Reference value :  2.28049e-05 Reference value :  2.31549e-05 Reference value :  2.35149e-05 Reference value :  2.38749e-05 Reference value :  2.42149e-05 Reference value :  2.45749e-05 Reference value :  2.49149e-05 Reference value :  2.52749e-05 Reference value :  2.56349e-05 Reference value :  2.59849e-05 Reference value :  2.63449e-05 Reference value :  2.67149e-05 Reference value :  2.70649e-05 Reference value :  2.74249e-05 Reference value :  2.77849e-05 Reference value :  2.81449e-05 Reference value :  2.85049e-05 Reference value :  2.88649e-05 Reference value :  2.92249e-05 Reference value :  2.95849e-05 Reference value :  2.99449e-05 Reference value :  3.02749e-05 Reference value :  3.06349e-05 Reference value :  3.09949e-05 Reference value :  3.13549e-05 Reference value :  3.17049e-05 Reference value :  3.20549e-05 Reference value :  3.24149e-05 Reference value :  3.27749e-05 Reference value :  3.31349e-05 Reference value :  3.34949e-05 Reference value :  3.38549e-05 Reference value :  3.42149e-05 Reference value :  3.45849e-05 Reference value :  3.49449e-05 Reference value :  3.53049e-05 Reference value :  3.56649e-05 Reference value :  3.60249e-05 Reference value :  3.63849e-05 Reference value :  3.67449e-05 Reference value :  3.71049e-05 Reference value :  3.74649e-05 Reference value :  3.78249e-05 Reference value :  3.81849e-05 Reference value :  3.85449e-05 Reference value :  3.89049e-05 Reference value :  3.92549e-05 Reference value :  3.96149e-05 Reference value :  3.99149e-05
+No. of Data Rows : 4136
+ta                  =  3.096063e-05
+tb                  =  3.097766e-05
+RES CAL case=s0 tA=3.09606E-05 tB=3.09777E-05
+ta                  =  3.096063e-05
+tb                  =  3.097766e-05
+RES CAL case=s1 tA=3.09606E-05 tB=3.09777E-05
+ta                  =  3.112691e-05
+tb                  =  3.097730e-05
+RES CAL case=r2 tA=3.11269E-05 tB=3.09773E-05
+ta                  =  3.116765e-05
+tb                  =  3.097731e-05
+RES CAL case=r10 tA=3.11676E-05 tB=3.09773E-05
+ta                  =  3.122847e-05
+tb                  =  3.097738e-05
+RES CAL case=r20 tA=3.12285E-05 tB=3.09774E-05
+ta                  =  3.079357e-05
+tb                  =  3.097803e-05
+RES CAL case=f2 tA=3.07936E-05 tB=3.0978E-05
+ta                  =  3.075246e-05
+tb                  =  3.097801e-05
+RES CAL case=f10 tA=3.07525E-05 tB=3.0978E-05
+ta                  =  3.069097e-05
+tb                  =  3.097794e-05
+RES CAL case=f20 tA=3.0691E-05 tB=3.09779E-05
 ngspice-44.2 done

@@ -1,0 +1,2 @@
+RES POST new_tA=2.99628E-05 new_tB=2.99793E-05 new_tA_step=2.97227E-05 new_tA_1v81=2.80234E-05 new_tB_1v81=2.80388E-05 vb=0.479572
+RES POST old_ideal_tA=2.92975E-05 old_ideal_tB=2.92972E-05 old_tA_1v81=2.73884E-05 old_tB_1v81=2.73881E-05

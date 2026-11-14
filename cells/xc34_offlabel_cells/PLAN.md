@@ -32,7 +32,7 @@ plan las convierte en instrumentos con contrato. Cada uso tiene su observable.
   un transistor mínimo (`experiments/lod_audit`, **corrida**). El desajuste de retardo por celda es `[?]`.
 - **Contra qué se mide:** el contador con reloj resuelve un periodo; el Cronista, del orden de 10⁻⁵ con 2²⁰ ciclos a 10 MHz
   (`EFLG00_TRAMPA.md`, laboratorio, sin publicar), pero promediando. El vernier solo aporta si mide un único suceso.
-- **Señal que tendría que ver:** un salto de 0,80 % sobre 29,2 µs (`cells/xc19_channel`) son unos 230 ns (**cálculo**): eso
+- **Señal que tendría que ver:** un salto de 0,80 % sobre 29,2 µs (`cells/xc19_channel`) son unos 230 ns (**cálculo**; [corregido 2026-11-14 16:33] en modo `hsa` 30,3 µs, unos 240 ns): eso
   ya lo cuenta un reloj. Para XC-19 el vernier no hace falta hoy; sí para retardos de anillo de XC-12, de cientos de ps.
 
 ## 3. Explicación aburrida y controles

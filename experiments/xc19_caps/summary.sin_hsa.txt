@@ -1,0 +1,16 @@
+POST tA_new_us 29.9628 tB_new_us 29.9793 tA_ideal_us 29.2975
+POST new_vs_ideal_pct 2.271
+POST A_vs_B_pct -0.0550
+POST step_pct 0.8013
+POST stage_10mV_pct new -6.473 old -6.516
+POST ratio_10mV_pct new 0.0001 old 0.0001
+CAL static_high_minus_low_ns 0.00
+CAL r2 dt_ns +161.3 pct +0.538 B_shift_ns -0.40
+CAL r10 dt_ns +202.2 pct +0.675 B_shift_ns -0.30
+CAL r20 dt_ns +263.5 pct +0.879 B_shift_ns -0.30
+CAL f2 dt_ns -162.0 pct -0.541 B_shift_ns +0.40
+CAL f10 dt_ns -203.2 pct -0.678 B_shift_ns +0.30
+CAL f20 dt_ns -265.3 pct -0.885 B_shift_ns +0.30
+CAL r2 I_implied_nA 6.64 (Q = Cc*1.8 V = 1.072 fC)
+CAL r10 I_implied_nA 5.30 (Q = Cc*1.8 V = 1.072 fC)
+CAL r20 I_implied_nA 4.07 (Q = Cc*1.8 V = 1.072 fC)

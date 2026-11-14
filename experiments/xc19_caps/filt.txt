@@ -1,7 +1,7 @@
-RES FILT cf=1e-18 tA_sync=2.92975E-05 tA_alone=2.92965E-05 tA_async=2.92982E-05 tB_async=7.26865E-06 kick_async_min=-0.000453016 kick_async_max=0.00660448 kick_sync_min=-3.88539E-06 vb=0.479572
-RES FILT cf=0.5e-12 tA_sync=2.92975E-05 tA_alone=2.92965E-05 tA_async=2.92982E-05 tB_async=7.26857E-06 kick_async_min=-2.07659E-05 kick_async_max=0.000273097 kick_sync_min=-3.64391E-06 vb=0.479572
-RES FILT cf=1e-12 tA_sync=2.92975E-05 tA_alone=2.92965E-05 tA_async=2.92982E-05 tB_async=7.26847E-06 kick_async_min=-1.30582E-05 kick_async_max=0.000137303 kick_sync_min=-3.49523E-06 vb=0.479572
-RES FILT cf=2e-12 tA_sync=2.92974E-05 tA_alone=2.92965E-05 tA_async=2.92981E-05 tB_async=7.26827E-06 kick_async_min=-1.08362E-05 kick_async_max=6.94841E-05 kick_sync_min=-3.28207E-06 vb=0.479572
-RES FILT cf=3e-12 tA_sync=2.92974E-05 tA_alone=2.92965E-05 tA_async=2.9298E-05 tB_async=7.26806E-06 kick_async_min=-9.77329E-06 kick_async_max=4.55318E-05 kick_sync_min=-3.12282E-06 vb=0.479572
-RES FILT cf=5e-12 tA_sync=2.92972E-05 tA_alone=2.92964E-05 tA_async=2.92978E-05 tB_async=7.26773E-06 kick_async_min=-8.33571E-06 kick_async_max=2.52614E-05 kick_sync_min=-2.88319E-06 vb=0.479572
-RES FILT cf=10e-12 tA_sync=2.92968E-05 tA_alone=2.92962E-05 tA_async=2.92972E-05 tB_async=7.26725E-06 kick_async_min=-6.70969E-06 kick_async_max=1.00135E-05 kick_sync_min=-2.49005E-06 vb=0.479572
+RES FILT cf=1e-18 tA_sync=3.02733E-05 tA_alone=3.02722E-05 tA_async=3.0274E-05 tB_async=7.50858E-06 kick_async_min=-0.000450958 kick_async_max=0.00653555 kick_sync_min=-3.89108E-06 vb=0.478332
+RES FILT cf=0.5e-12 tA_sync=3.02732E-05 tA_alone=3.02722E-05 tA_async=3.0274E-05 tB_async=7.5085E-06 kick_async_min=-2.084E-05 kick_async_max=0.000267804 kick_sync_min=-3.64875E-06 vb=0.478332
+RES FILT cf=1e-12 tA_sync=3.02732E-05 tA_alone=3.02722E-05 tA_async=3.02739E-05 tB_async=7.5084E-06 kick_async_min=-1.31872E-05 kick_async_max=0.000134459 kick_sync_min=-3.4996E-06 vb=0.478332
+RES FILT cf=2e-12 tA_sync=3.02731E-05 tA_alone=3.02722E-05 tA_async=3.02739E-05 tB_async=7.50818E-06 kick_async_min=-1.08453E-05 kick_async_max=6.81925E-05 kick_sync_min=-3.28581E-06 vb=0.478332
+RES FILT cf=3e-12 tA_sync=3.02731E-05 tA_alone=3.02721E-05 tA_async=3.02738E-05 tB_async=7.50797E-06 kick_async_min=-9.78043E-06 kick_async_max=4.45438E-05 kick_sync_min=-3.12614E-06 vb=0.478332
+RES FILT cf=5e-12 tA_sync=3.02729E-05 tA_alone=3.02721E-05 tA_async=3.02735E-05 tB_async=7.50762E-06 kick_async_min=-8.34062E-06 kick_async_max=2.45819E-05 kick_sync_min=-2.88593E-06 vb=0.478332
+RES FILT cf=10e-12 tA_sync=3.02725E-05 tA_alone=3.02719E-05 tA_async=3.0273E-05 tB_async=7.50713E-06 kick_async_min=-6.7795E-06 kick_async_max=9.6728E-06 kick_sync_min=-2.49199E-06 vb=0.478332

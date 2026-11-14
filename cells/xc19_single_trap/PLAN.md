@@ -34,7 +34,7 @@ XC-58 y otras, no solo para trampas. Registro: [`REVISION_EXTERNA_2026-11-13.md`
 **[corregido 2026-11-13 22:01]** **Etapa 1 del canal completo** ([`experiments/xc19_caps`](../../experiments/xc19_caps/INFORME.md), celda
 [`xc19_channel_caps`](../xc19_channel_caps/README.md); modelo, tt, 27 °C). Condensadores reales como nfet: 4,30 × 4,00 µm por nodo
 y filtro de VB de 10,17 pF en 1815 µm² (5 % de la baldosa 1×2); 3244 µm² en total, DRC 0 en Magic y en los dos decks de KLayout.
-Post-layout: 29,963 µs frente a 29,298 µs ideal (+2,3 %; el cableado aporta ~3 fF), A/B 0,055 %, salto 0,801 % (reproducido por
+Post-layout: 29,963 µs frente a 29,298 µs ideal ([corregido 2026-11-14 16:33] en modo `hsa`: 30,961 frente a 30,273 µs; `../../experiments/AUDITORIA_HSA_2026-11-13.md`) (+2,3 %; el cableado aporta ~3 fF), A/B 0,055 %, salto 0,801 % (reproducido por
 nosotros, misma cifra). Blindaje de GND en met2 entre XA y XB: acoplo de 0,21 a 0,023 fF. Calibración: la inyección de carga
 **muere** como escalón equivalente (0,54–0,88 % según el instante); el condensador de referencia conmutado (1 fF, simulado, sin
 dibujar) da 1,117 % y se mueve como el salto de puerta con la corriente: es la calibración. Filtro mínimo ~5 pF. Sin LVS formal,
@@ -49,7 +49,7 @@ Lector en inversión débil: el dispositivo descarga un nodo y el tiempo se cuen
 | Señal: salto de una carga | 0,305 mV en la puerta (**cálculo**, q/(C_ox·W·L)) → 0,83 % del tiempo | `experiments/xc19_weak_inversion/budget.txt` |
 | Ruido de disparo, punto de 81 pA y 2,3 fF | 0,55 % simulado, 0,82 % por conteo de electrones: del tamaño de la señal | `experiments/xc19_noise/shot.txt` |
 | Punto revisado, 5,5 nA y 135 fF | 98 % de detección con tres conversiones, sin falsos contra una referencia (modelo de comportamiento) | `experiments/xc19_noise/detect.txt` |
-| Canal dibujado y extraído | 29,2 µs, 0,80 % por salto | `cells/xc19_channel/channel_sim.txt` |
+| Canal dibujado y extraído | 29,2 µs, 0,80 % por salto ([corregido 2026-11-14 16:33] 30,3 µs en modo `hsa`; el salto no cambia) | `cells/xc19_channel/channel_sim.txt` |
 | Desajuste | El cociente dispositivo/gemelo se mueve 0,047 % (mediana) por 10 mV de alimentación; 39 de 100 sorteos | `experiments/xc19_weak_inversion/n5.txt` |
 
 Señal/piso: del orden de 1 en una conversión; se gana promediando, a costa del tiempo de residencia más corto que se ve.

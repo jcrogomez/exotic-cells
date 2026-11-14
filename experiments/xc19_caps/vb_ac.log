@@ -1,22 +1,25 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
 
-Note: No compatibility mode selected!
+
+Note: Compatibility modes selected: hs a
 
 
 Circuit: * capacidad efectiva del filtro dibujado en vb y resistencia de salida de la cadena: corriente ac de 1 a en vb sobre la
 
+option SCALE: Scale is set to 1e-06 for instance and model parameters
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
-Using SPARSE 1.3 as Direct Linear Solver
+Using KLU as Direct Linear Solver
  Reference value :  0.00000e+00
 No. of Data Rows : 1
-RES VBDC 0.479572
+RES VBDC 0.478332
 Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
 
-Using SPARSE 1.3 as Direct Linear Solver
+Using KLU as Direct Linear Solver
 
 No. of Data Rows : 81
-z10                 =  6.558947e+05
-z1m                 =  1.565530e+04
-z10m                =  1.565974e+03
-RES VBAC R_lowf=655895 C_at_1MHz=1.01662E-11 C_at_10MHz=1.01633E-11
+z10                 =  6.784341e+05
+z1m                 =  1.569166e+04
+z10m                =  1.569584e+03
+RES VBAC R_lowf=678434 C_at_1MHz=1.01426E-11 C_at_10MHz=1.01399E-11
 ngspice-44.2 done

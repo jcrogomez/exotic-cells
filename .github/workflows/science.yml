@@ -11,6 +11,7 @@ on:
       - "cells/xc19_*/**"
       - "residual/**"
       - "tools/science_ci.py"
+      - "tools/ngspice_pdk.sh"
       - ".github/workflows/science.yml"
 env:
   PDK_VERSION: 8afc8346a57fe1ab7934ba5a6056ea8b43078e71  # open_pdks hash used by every committed run (iic-osic-tools 2025.07)
@@ -23,18 +24,28 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - uses: mamba-org/setup-micromamba@v2
+      - name: Cached ngspice build
+        id: ngspice-cache
+        uses: actions/cache@v4
         with:
-          environment-name: sim
-          create-args: ngspice=${{ env.NGSPICE_VERSION }}
+          path: ~/ngspice
+          key: ngspice-${{ env.NGSPICE_VERSION }}-ubuntu-24.04
+      - name: Build ngspice from source (conda-forge stops at 41)
+        if: steps.ngspice-cache.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update && sudo apt-get install -y bison flex
+          curl -fsSL -o ngspice.tar.gz \
+            "https://sourceforge.net/projects/ngspice/files/ng-spice-rework/old-releases/$NGSPICE_VERSION/ngspice-$NGSPICE_VERSION.tar.gz/download"
+          tar xzf ngspice.tar.gz && cd "ngspice-$NGSPICE_VERSION"
+          ./configure --prefix="$HOME/ngspice" --with-x=no --with-readline=no --enable-openmp --disable-debug
+          make -j"$(nproc)" && make install
+      - run: echo "$HOME/ngspice/bin" >> "$GITHUB_PATH"
       - name: Pinned SKY130 PDK
         run: |
           pip install ciel
           ciel enable --pdk-family sky130 --pdk-root "$HOME/pdk" "$PDK_VERSION"
           sudo ln -s "$HOME/pdk/sky130A" /pdk
       - name: Versions
-        shell: micromamba-shell {0}
         run: ngspice -v | head -3 && cat /pdk/SOURCES
       - name: Reference simulations with positive and negative controls
-        shell: micromamba-shell {0}
         run: python3 tools/science_ci.py

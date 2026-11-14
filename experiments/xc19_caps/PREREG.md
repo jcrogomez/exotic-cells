@@ -64,3 +64,10 @@ Todo es modelo (ngspice de `hpretl/iic-osic-tools:2025.07`, sky130A `8afc8346`, 
 
 Salida digital (inversor y contador dibujados), pines, LEF, alimentación del macro, integración en el flujo, hilo real de X al
 inversor, Monte Carlo de desajuste con los condensadores, ruido con los condensadores. Fuga real de los condensadores en silicio.
+
+## Enmienda 2026-11-14 16:33 (después de los resultados; no cambia ninguna predicción)
+
+Las cifras de «Lo ya sabido» se midieron sin el modo `hsa` que pide el `spinit` del PDK (ver
+[`../AUDITORIA_HSA_2026-11-13.md`](../AUDITORIA_HSA_2026-11-13.md)). Con él, el ideal es 30,2733 µs y el MOS cap 4 × 4 da
+28,1504 µs. La banda de C2 (29,3 µs ± 3 %) quedó anclada en el ideal sin `hsa`; se deja escrita como estaba y el resultado se
+juzga tal cual en el informe: falla en modo `hsa` (+5,67 %) y pasa frente al ideal del mismo deck (+2,27 %).
