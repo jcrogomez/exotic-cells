@@ -1,0 +1,10 @@
+RES CV t=0.2u fF_per_100um2 nfet=267.969 nfet_lvt=350.697 pfet_to_vdd=231.322 var_lvt=275.153 mim=206.582
+RES CV t=0.3u fF_per_100um2 nfet=348.649 nfet_lvt=462.266 pfet_to_vdd=207.252 var_lvt=482.628 mim=206.582
+RES CV t=0.4u fF_per_100um2 nfet=462.119 nfet_lvt=569.19 pfet_to_vdd=191.524 var_lvt=653.15 mim=206.582
+RES CV t=0.48u fF_per_100um2 nfet=552.361 nfet_lvt=633.428 pfet_to_vdd=184.333 var_lvt=733.019 mim=206.582
+RES CV t=0.6u fF_per_100um2 nfet=653.213 nfet_lvt=692.984 pfet_to_vdd=185.532 var_lvt=790.947 mim=206.582
+RES CV t=0.9u fF_per_100um2 nfet=748.394 nfet_lvt=746.985 pfet_to_vdd=341.111 var_lvt=818.311 mim=206.582
+RES CV t=1.2u fF_per_100um2 nfet=770.909 nfet_lvt=765.024 pfet_to_vdd=639.816 var_lvt=818.645 mim=206.582
+RES CV t=1.5u fF_per_100um2 nfet=781.065 nfet_lvt=775.482 pfet_to_vdd=729.908 var_lvt=818.173 mim=206.582
+RES CV t=1.75u fF_per_100um2 nfet=786.755 nfet_lvt=781.726 pfet_to_vdd=749.41 var_lvt=817.995 mim=206.582
+RES CVAVG_0.9_1.8 nfet=774.194 var_lvt=818.399

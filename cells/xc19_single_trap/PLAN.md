@@ -31,6 +31,15 @@ lectura de XC-52 (espín).
 familias. Se diseña como instrumento compartido (excitación controlable, referencia, conversión a tiempo) para XC-12, XC-13, XC-37,
 XC-58 y otras, no solo para trampas. Registro: [`REVISION_EXTERNA_2026-11-13.md`](../../experiments/REVISION_EXTERNA_2026-11-13.md).
 
+**[corregido 2026-11-13 22:01]** **Etapa 1 del canal completo** ([`experiments/xc19_caps`](../../experiments/xc19_caps/INFORME.md), celda
+[`xc19_channel_caps`](../xc19_channel_caps/README.md); modelo, tt, 27 °C). Condensadores reales como nfet: 4,30 × 4,00 µm por nodo
+y filtro de VB de 10,17 pF en 1815 µm² (5 % de la baldosa 1×2); 3244 µm² en total, DRC 0 en Magic y en los dos decks de KLayout.
+Post-layout: 29,963 µs frente a 29,298 µs ideal (+2,3 %; el cableado aporta ~3 fF), A/B 0,055 %, salto 0,801 % (reproducido por
+nosotros, misma cifra). Blindaje de GND en met2 entre XA y XB: acoplo de 0,21 a 0,023 fF. Calibración: la inyección de carga
+**muere** como escalón equivalente (0,54–0,88 % según el instante); el condensador de referencia conmutado (1 fF, simulado, sin
+dibujar) da 1,117 % y se mueve como el salto de puerta con la corriente: es la calibración. Filtro mínimo ~5 pF. Sin LVS formal,
+sin Monte Carlo ni corners. T sigue en T2: falta macro (pines, LEF, alimentación), inversor y contador.
+
 ## 2. Lectura y piso
 
 Lector en inversión débil: el dispositivo descarga un nodo y el tiempo se cuenta. Todo es **corrida** sobre modelo, sin silicio.

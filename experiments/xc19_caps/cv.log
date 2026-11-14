@@ -1,0 +1,97 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * c(v) de los candidatos a condensador, tt 27 c. rampa de 1 v/us en la placa "alta"; c = i / (dv/dt).
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+g                                            0
+gn                                         1.8
+g1                                           0
+g2                                           0
+vdd                                        1.8
+g3                                         1.8
+g4                                           0
+x4.p2                                        0
+x4.cg_int1                                   0
+g5                                           0
+x5.a                                         0
+x5.b1                                        0
+l.x4.lcg#branch                     6.4704e-14
+v5#branch                                    0
+v4#branch                                    0
+v3#branch                                    0
+vdd#branch                        -2.53408e-17
+v2#branch                                    0
+v1#branch                                    0
+vgn#branch                                   0
+vg#branch                                    0
+
+ Reference value :  0.00000e+00 Reference value :  5.22800e-08 Reference value :  1.14280e-07 Reference value :  1.74280e-07 Reference value :  2.34280e-07 Reference value :  2.93280e-07 Reference value :  3.52280e-07 Reference value :  4.11280e-07 Reference value :  4.71280e-07 Reference value :  5.30280e-07 Reference value :  5.89280e-07 Reference value :  6.48280e-07 Reference value :  7.07280e-07 Reference value :  7.66280e-07 Reference value :  8.40280e-07 Reference value :  9.27280e-07 Reference value :  1.01728e-06 Reference value :  1.10528e-06 Reference value :  1.19428e-06 Reference value :  1.29028e-06 Reference value :  1.37928e-06 Reference value :  1.46828e-06 Reference value :  1.55728e-06 Reference value :  1.64528e-06 Reference value :  1.73328e-06
+No. of Data Rows : 1808
+n1                  =  2.679691e+02
+n2                  =  3.506969e+02
+n3                  =  2.313217e+02
+n4                  =  2.751530e+02
+n5                  =  2.065824e+02
+RES CV t=0.2u fF_per_100um2 nfet=267.969 nfet_lvt=350.697 pfet_to_vdd=231.322 var_lvt=275.153 mim=206.582
+n1                  =  3.486494e+02
+n2                  =  4.622656e+02
+n3                  =  2.072519e+02
+n4                  =  4.826279e+02
+n5                  =  2.065824e+02
+RES CV t=0.3u fF_per_100um2 nfet=348.649 nfet_lvt=462.266 pfet_to_vdd=207.252 var_lvt=482.628 mim=206.582
+n1                  =  4.621186e+02
+n2                  =  5.691896e+02
+n3                  =  1.915244e+02
+n4                  =  6.531502e+02
+n5                  =  2.065824e+02
+RES CV t=0.4u fF_per_100um2 nfet=462.119 nfet_lvt=569.19 pfet_to_vdd=191.524 var_lvt=653.15 mim=206.582
+n1                  =  5.523613e+02
+n2                  =  6.334285e+02
+n3                  =  1.843330e+02
+n4                  =  7.330191e+02
+n5                  =  2.065824e+02
+RES CV t=0.48u fF_per_100um2 nfet=552.361 nfet_lvt=633.428 pfet_to_vdd=184.333 var_lvt=733.019 mim=206.582
+n1                  =  6.532134e+02
+n2                  =  6.929837e+02
+n3                  =  1.855319e+02
+n4                  =  7.909470e+02
+n5                  =  2.065824e+02
+RES CV t=0.6u fF_per_100um2 nfet=653.213 nfet_lvt=692.984 pfet_to_vdd=185.532 var_lvt=790.947 mim=206.582
+n1                  =  7.483941e+02
+n2                  =  7.469852e+02
+n3                  =  3.411113e+02
+n4                  =  8.183110e+02
+n5                  =  2.065824e+02
+RES CV t=0.9u fF_per_100um2 nfet=748.394 nfet_lvt=746.985 pfet_to_vdd=341.111 var_lvt=818.311 mim=206.582
+n1                  =  7.709095e+02
+n2                  =  7.650240e+02
+n3                  =  6.398159e+02
+n4                  =  8.186452e+02
+n5                  =  2.065824e+02
+RES CV t=1.2u fF_per_100um2 nfet=770.909 nfet_lvt=765.024 pfet_to_vdd=639.816 var_lvt=818.645 mim=206.582
+n1                  =  7.810650e+02
+n2                  =  7.754820e+02
+n3                  =  7.299075e+02
+n4                  =  8.181729e+02
+n5                  =  2.065824e+02
+RES CV t=1.5u fF_per_100um2 nfet=781.065 nfet_lvt=775.482 pfet_to_vdd=729.908 var_lvt=818.173 mim=206.582
+n1                  =  7.867549e+02
+n2                  =  7.817260e+02
+n3                  =  7.494097e+02
+n4                  =  8.179950e+02
+n5                  =  2.065824e+02
+RES CV t=1.75u fF_per_100um2 nfet=786.755 nfet_lvt=781.726 pfet_to_vdd=749.41 var_lvt=817.995 mim=206.582
+a1                  =  7.741941e+02 from=  9.000000e-07 to=  1.800000e-06
+a4                  =  8.183986e+02 from=  9.000000e-07 to=  1.800000e-06
+RES CVAVG_0.9_1.8 nfet=774.194 var_lvt=818.399
+ngspice-44.2 done

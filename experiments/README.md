@@ -24,6 +24,7 @@ before anything is consolidated. Rules: [`PROTOCOLO_ATAQUES.md`](PROTOCOLO_ATAQU
 | [`lod_audit/`](lod_audit/README.md) | The open extraction flow drops the layout parameters of the STI stress model (first reproducible result) |
 | [`stdcell_lod/`](stdcell_lod/README.md) | Real diffusion lengths of every standard cell of the library |
 | [`xc19_weak_inversion/`](xc19_weak_inversion/README.md), [`xc19_noise/`](xc19_noise/README.md) | The XC-19 single-trap reader: working point, noise and event detection |
+| [`xc19_caps/`](xc19_caps/INFORME.md) | XC-19 channel, stage 1 of the complete channel: real capacitors drawn (`cells/xc19_channel_caps`), post-layout against the ideal, calibration by switched reference capacitor |
 | [`precheck_map/`](precheck_map/README.md) | Which deliberate rule breaks the Tiny Tapeout precheck accepts and which it rejects |
 | [`litho_explore/`](litho_explore/README.md) | Aerial-image lithography model of drawn shapes near the resolution limit |
 | [`xc52_demod_test/`](xc52_demod_test/) | Which terms survive the four-state field demodulation of XC-52 |
