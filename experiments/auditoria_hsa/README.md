@@ -4,7 +4,8 @@ Rescatado el **2026-11-15 16:45–16:55 EST** (`date`) desde el scratchpad de la
 (`/private/tmp/claude-501/.../scratchpad/hsa_audit/` y `.../scratchpad/paso4/`), que vive en `/private/tmp` y puede perderse.
 Informe de la auditoría: [`../AUDITORIA_HSA_2026-11-13.md`](../AUDITORIA_HSA_2026-11-13.md). Aprobado por Juan el 2026-11-15
 (punto 1 de la revisión externa). El directorio temporal **no se ha borrado**; se conserva hasta que el commit esté publicado y la
-reproducción desde un clon remoto haya pasado.
+reproducción desde un clon remoto haya pasado. [corregido 2026-11-15 17:15] Borrado por decisión de Juan, después de publicar `1952257` y de
+que la CI científica de GitHub pasara la reproducción mínima en un Ubuntu limpio (run 43767551694).
 
 ## Reproducir el fenómeno desde un clon limpio
 
