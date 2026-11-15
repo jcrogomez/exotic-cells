@@ -106,6 +106,6 @@ presupuesto de canales y área que obligue a elegir. Ninguno está aquí.
 
 ## Archivos
 
-`PREREG.md` · `motor.py` (motor; `--rapido` para la CI) · `motor_salida.txt`, `resultados.txt` · `sensibilidad.py`, `sensibilidad.txt` ·
+`PREREG.md` · `motor.py` (motor; `--rapido` para la CI) · `test_motor.py` (pruebas de la CI rápida, añadidas 2026-11-15: límites analíticos, caso exacto, monotonía, coherencia bayesiana) · `motor_salida.txt`, `resultados.txt` · `sensibilidad.py`, `sensibilidad.txt` ·
 `verificacion/` (código y logs del verificador, `ver_INFORME.md`; `ver_conv_N1500_M18.log` vacío, corrida detenida por redundante).
 Python con numpy y scipy (`.venv` de ZTASIC; scipy opcional).

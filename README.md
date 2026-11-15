@@ -137,10 +137,10 @@ still open.
 
 The table is the single source of the catalogue. [`cells/catalogue.json`](cells/catalogue.json) is generated from it by
 `tools/catalogue_json.py`; CI fails if the two disagree. CI has two levels. Level 1 (`tests.yml`, every push) checks the
-Python tools: Residual tests, simulation-log checks, catalogue sync, the XC-19 event detector. Level 2 (`science.yml`, on demand,
+Python tools: Residual tests, simulation-log checks, catalogue sync, the XC-19 event detector, the XC-20 hypothesis-engine tests. Level 2 (`science.yml`, on demand,
 weekly and when the decks change) reruns the extracted XC-19 reference simulations with the PDK and ngspice pinned, and judges
-numbers: regression against the committed results, effects put in on purpose that must be seen, and nulls that must stay null
-(`tools/science_ci.py`). Neither level reruns Magic, KLayout or the physical models of the attack rounds; those are reproduced
+numbers: regression against the committed results, effects put in on purpose that must be seen, nulls that must stay null, and planted
+simulator failures that must be refused (`tools/science_ci.py`); it also runs the minimal case of the HSA audit. Neither level reruns Magic, KLayout or the physical models of the attack rounds; those are reproduced
 by the independent verifiers.
 
 ## How a family is worked

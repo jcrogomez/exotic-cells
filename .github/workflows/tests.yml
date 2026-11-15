@@ -19,3 +19,7 @@ jobs:
           cd experiments/xc19_noise
           python3 detect.py > /tmp/detect.txt
           diff /tmp/detect.txt detect.txt
+      - name: XC-20 hypothesis engine (analytic limits, exact case, monotonicity, posterior coherence)
+        run: |
+          pip install numpy scipy
+          python3 experiments/xc20_hipotesis/test_motor.py
