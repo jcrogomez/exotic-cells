@@ -252,6 +252,32 @@ ver `gen/LEEME_B_invalido.txt`), `Bnk/`, `A2/`, `B2r/` (re-corridas), `shim/dock
 - Sin tocar: los demás generadores y `README` que corren `docker ... ngspice -b` directo (sus decks no cambian, §4.3, pero si se
   reutilizan con dispositivos en borde de bin y `sa/sb` hay que pasarlos por el wrapper `[?]` pendiente); el resto de ZTASIC (paso 4).
 
+## 6c. Paso 4: el resto de ZTASIC (2026-11-14 18:40–19:05 EST, `date`)
+
+Inventario: 175 archivos de netlist fuera de este repo (sin `99_archivo`, `.git`, PDK). Con `sa`/`sb`: solo los tests propios de la
+imagen en `00_curso/IIC-OSIC-TOOLS/_tests` y `05_exotic_lab/macros/grabado_lod` (copia de `lab/`, ya cubierta). Lo que se simuló
+con transistores sky130 es: `01_hat87/research/chip/phy02` (anillos), `03_metacal/spice/ro_rtn.py` (anillos con tamaños de celdas
+hd), `local_flow/spice` (redes peores con celdas hd), `05_exotic_lab` (= `lab/`) y ejercicios de `00_curso`.
+
+**Barrido de dispositivos** (scratchpad `paso4/dev/`): las 40 geometrías (modelo, W, L) de transistores de `sky130_fd_sc_hd`, cada
+una a |Vgs| = 0,5, 1,2 y 1,8 V con |Vds| = 1,8 V, cinco esquinas, sin modo frente a `hsa` (600 comparaciones de corriente). Todas
+≤ 1,1e-6 relativo **salvo `pfet_01v8_hvt` con L = 0,18** (W 0,42 y 0,82): +12,8 / +16,2 % de corriente a 1,8 V en tt, hasta 64 %
+a |Vgs| = 0,5 V. Es la discontinuidad de núcleo de §3 punto 4. La usan solo tres celdas: `clkdlybuf4s18_1`, `clkdlybuf4s18_2` y
+`dlygate4sd2_1`. Ninguna simulación de ZTASIC las instancia (solo aparecen en configuraciones de LibreLane, que usan liberty y
+no ngspice). Cuál de los dos bins es el bueno para L = 0,18: `[?]`.
+
+| Dónde | Modo de las corridas guardadas | Efecto de `hsa` | Veredicto |
+|---|---|---|---|
+| `local_flow/spice` (6 decks, red peor) | ya `hs a` (`.spiceinit` propio; los 4 `.log` lo dicen) | — | sin cambio |
+| `01_hat87/.../phy02/lector_ro.py` | imagen por defecto (sin modo) | 0 en las 15 frecuencias (corrido en los dos modos) | sin cambio. Aparte: la re-corrida difiere de `lector_ro.json` en S(C) en el 4.º decimal (0,02955 → 0,02957), en ambos modos; causa `[?]`, no es `hsa` |
+| `01_hat87/.../phy02/mc_*.py` (Monte Carlo) | sin modo | nominal 0 (mm = 0); con desapareamiento los sorteos cambian | `SPICE_RNDSEED` **no fija los sorteos**: dos corridas del mismo modo y semilla dan otras frecuencias (A y B). Lo publicado son σ sobre 30–60 semillas y el texto ya dice «distinto según la semilla»; ninguna afirmación depende de un sorteo concreto. Que σ no cambie con `hsa` se apoya en el mecanismo (geometrías 1,0/0,15 y 0,65/0,15, iguales en nominal), no en una corrida `[?]` |
+| `03_metacal/spice/ro_rtn.py` | sin modo | todas sus geometrías (n 0,42/0,65, p_hvt 0,42/0,84/1,0, L = 0,15) dan ≤ 1,1e-6 en el barrido | sin cambio (por barrido, no re-corrido) |
+| `00_curso` | ejercicios del curso | no auditado | fuera de alcance |
+
+**Conclusión del paso 4:** fuera de XC-19 ninguna simulación guardada de ZTASIC cambia por `hsa`. Queda una trampa para el
+futuro: cualquier simulación a nivel de transistor que incluya `clkdlybuf4s18_*` o `dlygate4sd2_1` (o un pfet_hvt de L = 0,18) da
+resultados distintos según el modo; correrla con `tools/ngspice_pdk.sh`.
+
 ## 7. Anexo: todos los decks
 
 «máx rel.» = mayor |x_B − x_A| / max(|x_A|, |x_B|) sobre los números de las líneas de resultado; «faltan» = líneas presentes en
