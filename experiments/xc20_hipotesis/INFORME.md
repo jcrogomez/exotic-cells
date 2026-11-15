@@ -1,7 +1,7 @@
 # Motor de hipótesis, prototipo mínimo: XC-20 · informe
 
 Prerregistro: [`PREREG.md`](PREREG.md), escrito el 2026-11-14 a las 19:45:11 EST (`date`), antes del código. Corrida completa:
-19:49:10–20:13:58 EST (`motor.log`). Verificación independiente: [`verificacion/ver_INFORME.md`](verificacion/ver_INFORME.md),
+19:49:10–20:13:58 EST (`motor_salida.txt`, que el verificador cita con su nombre anterior `motor.log`; renombrado porque `check_runs.py` lo leía como log de ngspice). Verificación independiente: [`verificacion/ver_INFORME.md`](verificacion/ver_INFORME.md),
 cerrada a las 20:16:56 EST; código propio (Sobol aleatorizado y cuadratura determinista), sin leer `motor.py` antes de escribir
 sus números. **Todo es modelo**: intervalos tomados del ataque 2 (`experiments/attack2_xc20/b20_INFORME.md`) y supuestos
 marcados. Nada medido.
@@ -106,6 +106,6 @@ presupuesto de canales y área que obligue a elegir. Ninguno está aquí.
 
 ## Archivos
 
-`PREREG.md` · `motor.py` (motor; `--rapido` para la CI) · `motor.log`, `resultados.txt` · `sensibilidad.py`, `sensibilidad.txt` ·
+`PREREG.md` · `motor.py` (motor; `--rapido` para la CI) · `motor_salida.txt`, `resultados.txt` · `sensibilidad.py`, `sensibilidad.txt` ·
 `verificacion/` (código y logs del verificador, `ver_INFORME.md`; `ver_conv_N1500_M18.log` vacío, corrida detenida por redundante).
 Python con numpy y scipy (`.venv` de ZTASIC; scipy opcional).
