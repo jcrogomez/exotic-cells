@@ -13,7 +13,7 @@ A run is refused before its numbers are read if ngspice exits non-zero, prints a
 so the exit code alone is not enough (checked 2026-11-15). The first checks plant such failures and require the refusal.
 Exits non-zero if any check fails.
 """
-import os, re, shutil, subprocess, sys, tempfile
+import math, os, re, shutil, subprocess, sys, tempfile
 
 root = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 REG_TOL = 0.01  # 1 %: margin for ngspice builds (image vs CI runner); the mode itself is pinned by ngspice_pdk.sh
@@ -49,13 +49,27 @@ def simulate(d, deck, tag):
     return [float(v) for v in lines[-1].split()[1:]]
 
 
-def run(folder, deck, tag, d=None):
+def validate(got, want, n):
+    """Both lists must hold exactly n finite numbers before any comparison: zip() would silently skip a truncated
+    reference or an extra output, and a nan compares False with everything (2026-11-15, external review)."""
+    why = []
+    for name, x in (("run", got), ("committed reference", want)):
+        if len(x) != n:
+            why.append(f"{name} has {len(x)} values, expected {n}")
+        if not all(math.isfinite(v) for v in x):
+            why.append(f"{name} has a non-finite value: {x}")
+    if why:
+        raise RunFailed("; ".join(why))
+
+
+def run(folder, deck, tag, n, d=None):
     d = d or os.path.join(root, folder)
     try:
         got = simulate(d, deck, tag)
+        want = [float(v) for v in open(os.path.join(d, deck.replace(".sp", ".txt"))).read().split()[1:]]
+        validate(got, want, n)
     except RunFailed as e:
         sys.exit(f"{folder}/{deck}: run refused\n{e}")
-    want = [float(v) for v in open(os.path.join(d, deck.replace(".sp", ".txt"))).read().split()[1:]]
     return got, want
 
 
@@ -91,10 +105,24 @@ with tempfile.TemporaryDirectory() as tmp:
     except RunFailed as e:
         check("positive", "clean run of the planted circuit accepted", False, str(e)[:200])
 
+# 0b. Planted shape failures of the comparison itself: truncated reference, extra output, nan; and a valid pair accepted.
+for name, got_, want_ in (("truncated reference", [1.0, 2.0, 3.0], [1.0, 2.0]), ("extra output", [1.0, 2.0, 3.0, 4.0], [1.0, 2.0, 3.0]),
+                          ("nan in the run", [1.0, float("nan"), 3.0], [1.0, 2.0, 3.0]), ("inf in the reference", [1.0, 2.0, 3.0], [1.0, float("inf"), 3.0])):
+    try:
+        validate(got_, want_, 3)
+        check("negative", f"planted comparison failure refused, {name}", False, "accepted")
+    except RunFailed as e:
+        check("negative", f"planted comparison failure refused, {name}", True, str(e)[:110])
+try:
+    validate([1.0, 2.0, 3.0], [1.0, 2.0, 3.0], 3)
+    check("positive", "valid comparison accepted", True, "3 finite values each")
+except RunFailed as e:
+    check("positive", "valid comparison accepted", False, str(e))
+
 # 1. Readout cell, extracted and annotated (cells/xc19_read/post_layout.sp).
 #    ta/tb: default chain, gate without/with a 0.305 mV step; tc/td: matched chain, same; tm: annotated cell on the default
 #    chain; ts: schematic reference; vb0/wb0: bias voltages.
-got, want = run("cells/xc19_read", "post_layout.sp", "POST")
+got, want = run("cells/xc19_read", "post_layout.sp", "POST", 8)
 for i, (g, w) in enumerate(zip(got, want)):
     check("regression", f"post_layout[{i}]", abs(g - w) <= REG_TOL * abs(w), f"{g:.6g} vs committed {w:.6g}")
 ta, tb, tc, td, tm, ts, vb0, wb0 = got
@@ -110,12 +138,12 @@ with tempfile.TemporaryDirectory() as tmp:
     deck = open(os.path.join(null, "post_layout.sp")).read()
     assert deck.count(" 0.305m") == 2
     open(os.path.join(null, "post_layout.sp"), "w").write(deck.replace(" 0.305m", " 0"))
-    n, _ = run("cells/xc19_read", "post_layout.sp", "POST", d=null)
+    n, _ = run("cells/xc19_read", "post_layout.sp", "POST", 8, d=null)
 for name, a, b in (("default chain", n[0], n[1]), ("matched chain", n[2], n[3])):
     check("negative", f"no step put in, none seen, {name}", abs(a - b) / a < 1e-4, f"{abs(a - b) / a * 100:.4f} % (< 0.01 %)")
 
 # 2. Complete channel, extracted and annotated (cells/xc19_channel/channel_sim.sp), at 1.80 V and 1.81 V.
-got, want = run("cells/xc19_channel", "channel_sim.sp", "CHSIM")
+got, want = run("cells/xc19_channel", "channel_sim.sp", "CHSIM", 4)
 for i, (g, w) in enumerate(zip(got, want)):
     check("regression", f"channel_sim[{i}]", abs(g - w) <= REG_TOL * abs(w), f"{g:.6g} vs committed {w:.6g}")
 ta, tb, ua, ub = got
