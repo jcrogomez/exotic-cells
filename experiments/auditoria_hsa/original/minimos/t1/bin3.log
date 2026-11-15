@@ -1,0 +1,281 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs
+
+
+Circuit: * que bin elige cada modo
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+BIN pfet_01v8_hvt 0.4999
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x0:sky130_fd_pr__pfet
+
+       lmin               2.5e-07
+       lmax                 5e-07
+      saref               1.1e-06
+      sbref               1.1e-06
+      kvth0              2.65e-08
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0               4.5e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0             -0.921181
+
+BIN pfet_01v8_hvt 0.5
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x1:sky130_fd_pr__pfet
+
+       lmin                 5e-07
+       lmax                 1e-06
+      saref              1.75e-06
+      sbref              1.74e-06
+      kvth0              2.65e-08
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0               4.5e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0             -0.994488
+
+BIN pfet_01v8_hvt 0.5001
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x2:sky130_fd_pr__pfet
+
+       lmin                 5e-07
+       lmax                 1e-06
+      saref              1.75e-06
+      sbref              1.74e-06
+      kvth0              2.65e-08
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0               4.5e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0             -0.994488
+
+BIN pfet_01v8_hvt 0.7
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x3:sky130_fd_pr__pfet
+
+       lmin                 5e-07
+       lmax                 1e-06
+      saref              1.75e-06
+      sbref              1.74e-06
+      kvth0              2.65e-08
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0               4.5e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0             -0.994488
+
+BIN pfet_01v8_hvt 0.1801
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x4:sky130_fd_pr__pfet
+
+       lmin               1.8e-07
+       lmax               2.5e-07
+      saref               1.1e-06
+      sbref               1.1e-06
+      kvth0              2.65e-08
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0               4.5e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0             -0.874722
+
+BIN pfet_01v8_hvt 1.0001
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x5:sky130_fd_pr__pfet
+
+       lmin                 1e-06
+       lmax                 2e-06
+      saref              2.75e-06
+      sbref              2.74e-06
+      kvth0              2.65e-08
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0               4.5e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0              -1.34669
+
+BIN pfet_01v8_hvt 0.499
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x6:sky130_fd_pr__pfet
+
+       lmin               2.5e-07
+       lmax                 5e-07
+      saref               1.1e-06
+      sbref               1.1e-06
+      kvth0              2.65e-08
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0               4.5e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0             -0.921181
+
+BIN nfet_01v8 0.4999
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x7:sky130_fd_pr__nfet
+
+       lmin               2.5e-07
+       lmax                 5e-07
+      saref              1.25e-06
+      sbref              1.24e-06
+      kvth0               9.8e-09
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0              -2.7e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0              0.805339
+
+BIN nfet_01v8 0.5
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x8:sky130_fd_pr__nfet
+
+       lmin                 5e-07
+       lmax                 1e-06
+      saref              1.75e-06
+      sbref              1.74e-06
+      kvth0               9.8e-09
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0              -2.7e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0              0.621309
+
+BIN nfet_01v8 0.5001
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x9:sky130_fd_pr__nfet
+
+       lmin                 5e-07
+       lmax                 1e-06
+      saref              1.75e-06
+      sbref              1.74e-06
+      kvth0               9.8e-09
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0              -2.7e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0              0.621309
+
+BIN nfet_01v8 0.7
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x10:sky130_fd_pr__nfe
+
+       lmin                 5e-07
+       lmax                 1e-06
+      saref              1.75e-06
+      sbref              1.74e-06
+      kvth0               9.8e-09
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0              -2.7e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0              0.621309
+
+BIN nfet_01v8 0.1801
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x11:sky130_fd_pr__nfe
+
+       lmin               1.8e-07
+       lmax               2.5e-07
+      saref               1.1e-06
+      sbref               1.1e-06
+      kvth0               9.8e-09
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0              -2.7e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0              0.206165
+
+BIN nfet_01v8 1.0001
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x12:sky130_fd_pr__nfe
+
+       lmin                 1e-06
+       lmax                 2e-06
+      saref              2.75e-06
+      sbref              2.74e-06
+      kvth0               9.8e-09
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0              -2.7e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0              0.450437
+
+BIN nfet_01v8 0.499
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x13:sky130_fd_pr__nfe
+
+       lmin               2.5e-07
+       lmax                 5e-07
+      saref              1.25e-06
+      sbref              1.24e-06
+      kvth0               9.8e-09
+     lkvth0                     0
+    llodvth                     0
+       wlod                     0
+        ku0              -2.7e-08
+       lku0                     0
+    llodku0                     0
+       stk2                     0
+     steta0                     0
+       vth0              0.805339
+
+ngspice-44.2 done

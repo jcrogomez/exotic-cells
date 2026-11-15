@@ -23,3 +23,4 @@ experiments/*/b20_spice_*/
 experiments/*/c63_magic_read/
 *.lyrdb
 *.ext
+experiments/auditoria_hsa/reproducir/corrida/

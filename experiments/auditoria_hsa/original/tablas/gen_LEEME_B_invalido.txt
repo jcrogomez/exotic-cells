@@ -1,0 +1,1 @@
+gen/B: corrida con el shim v1 (docker -e), INEFICAZ: la imagen reimpone SPICE_USERINIT_DIR; no usar. Modo B válido en gen/B2.

@@ -1,0 +1,60 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * frontera de bin: l en el borde lmin/lmax, con y sin sa/sb
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+VT pfet_01v8_hvt 0.499 sch 0.970057 3.35689E-08
+VT pfet_01v8_hvt 0.499 sa03 0.934214 5.78596E-08
+VT pfet_01v8_hvt 0.4999 sch 0.970171 3.34401E-08
+VT pfet_01v8_hvt 0.4999 sa03 0.93437 5.76241E-08
+VT pfet_01v8_hvt 0.5 sch 0.970184 3.34258E-08
+VT pfet_01v8_hvt 0.5 sa03 0.934387 5.7598E-08
+VT pfet_01v8_hvt 0.5001 sch 0.970196 3.34116E-08
+VT pfet_01v8_hvt 0.5001 sa03 0.934404 5.75719E-08
+VT pfet_01v8_hvt 0.501 sch 0.97031 3.32837E-08
+VT pfet_01v8_hvt 0.501 sa03 0.934559 5.73381E-08
+VT pfet_01v8_hvt 0.25 sch 0.885286 1.42146E-07
+VT pfet_01v8_hvt 0.25 sa03 0.834234 2.4665E-07
+VT pfet_01v8_hvt 0.18 sch 0.849185 2.65062E-07
+VT pfet_01v8_hvt 0.18 sa03 0.793397 4.34932E-07
+VT pfet_01v8_hvt 1.0 sch 0.998227 1.10901E-08
+VT pfet_01v8_hvt 1.0 sa03 0.971496 1.72777E-08
+VT nfet_01v8 0.499 sch 0.616109 2.26516E-06
+VT nfet_01v8 0.499 sa03 0.630433 2.13054E-06
+VT nfet_01v8 0.4999 sch 0.616002 2.26134E-06
+VT nfet_01v8 0.4999 sa03 0.630309 2.12713E-06
+VT nfet_01v8 0.5 sch 0.61599 2.26092E-06
+VT nfet_01v8 0.5 sa03 0.630295 2.12675E-06
+VT nfet_01v8 0.5001 sch 0.615978 2.26049E-06
+VT nfet_01v8 0.5001 sa03 0.630282 2.12637E-06
+VT nfet_01v8 0.501 sch 0.615872 2.25668E-06
+VT nfet_01v8 0.501 sa03 0.630159 2.12298E-06
+VT nfet_01v8 0.25 sch 0.714351 3.28877E-06
+VT nfet_01v8 0.25 sa03 0.734753 2.89548E-06
+VT nfet_01v8 0.18 sch 0.733747 3.76334E-06
+VT nfet_01v8 0.18 sa03 0.756042 3.22858E-06
+VT nfet_01v8 1.0 sch 0.576603 1.3089E-06
+VT nfet_01v8 1.0 sa03 0.587285 1.25927E-06
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model xpfet01v8hvt05sa03:sk
+
+      saref               1.1e-06
+      sbref               1.1e-06
+       lmin               2.5e-07
+       lmax                 5e-07
+
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model xnfet01v805sa03:sky13
+
+      saref               1.1e-06
+      sbref               1.1e-06
+       lmin               2.5e-07
+       lmax                 5e-07
+
+ngspice-44.2 done

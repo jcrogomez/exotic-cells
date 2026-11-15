@@ -1,0 +1,3310 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.755162 0.712104
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.760523 0.717817
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.793678 0.711038
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.791914 0.712332
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.778019 0.714621
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.797554 0.703402
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.809235 0.714742
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.765418 0.706376
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.762043 0.694684
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.776655 0.704175
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.738239 0.708963
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.764964 0.708784
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.778873 0.709194
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.747751 0.702229
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.802933 0.704852
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.771065 0.708266
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.785698 0.715263
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.762466 0.711407
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.786832 0.708284
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.765391 0.712674
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.777091 0.712493
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.758197 0.707657
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.772729 0.710532
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.829251 0.705477
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.768531 0.701106
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.782179 0.712017
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.797237 0.705369
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.762348 0.702334
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.799301 0.71137
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.77137 0.712438
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.778372 0.709078
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.75873 0.709295
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.770272 0.713248
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.788808 0.705358
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.761277 0.710008
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.78121 0.705925
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.759131 0.707273
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.766461 0.704733
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.768693 0.714532
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.763625 0.714539
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.755963 0.702613
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.741085 0.712876
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.728279 0.704388
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.788616 0.718235
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.785664 0.715272
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.782503 0.692801
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.760434 0.705276
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.795732 0.708374
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.778852 0.709918
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.820068 0.712097
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.782947 0.710787
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.796313 0.700823
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.803338 0.708661
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.772657 0.71364
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.786998 0.699363
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.793715 0.705055
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.778007 0.70673
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.776475 0.703383
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.764155 0.700129
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.784576 0.705569
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.789933 0.708049
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.778445 0.711233
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.794567 0.703119
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.782923 0.702287
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.707009 0.700262
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.786259 0.704236
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.735251 0.711087
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.795981 0.701966
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.763217 0.707946
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.781421 0.702197
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.799453 0.701513
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.797253 0.713209
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.76328 0.695476
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.770208 0.702476
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.735155 0.720906
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.761866 0.703602
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.784565 0.708513
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.777961 0.701713
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.756127 0.703869
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.784281 0.708989
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.756449 0.708505
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.766009 0.70365
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.771595 0.703515
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.757295 0.694
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.798303 0.713391
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.794059 0.713063
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.742011 0.713904
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.771615 0.713483
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.793736 0.708082
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.782406 0.707891
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.793273 0.707116
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.764032 0.70689
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.776598 0.701729
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.794467 0.704995
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.785235 0.701247
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.81243 0.718391
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.796861 0.703897
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.773397 0.717695
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.739181 0.696996
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.752498 0.710277
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.780252 0.71552
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.778922 0.701813
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.765022 0.706628
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.775176 0.705188
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.789801 0.702011
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.805014 0.697327
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.785852 0.717532
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.757571 0.704786
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.767294 0.714475
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.757413 0.69851
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.780207 0.710335
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.761769 0.700678
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.760878 0.713915
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.769749 0.705081
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.801623 0.704378
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.762935 0.701705
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.781642 0.696607
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.731003 0.707244
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.7888 0.70471
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.76308 0.719145
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.753933 0.703074
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.8079 0.711984
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.780793 0.703749
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.775482 0.707919
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.80096 0.709849
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.78336 0.703499
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.756856 0.701107
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.782965 0.700183
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.783219 0.705015
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.807101 0.702163
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.792759 0.708847
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.772512 0.702877
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.763029 0.707911
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.725889 0.698985
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.79558 0.705672
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.796675 0.702545
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.755917 0.709916
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.781089 0.713138
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.779761 0.714758
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.737215 0.710794
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.800507 0.723581
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.766527 0.697914
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.789315 0.713375
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.739264 0.697115
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.798804 0.706308
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.755503 0.699336
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.767446 0.715079
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.788134 0.706255
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.766652 0.703903
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.763301 0.711033
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.763946 0.694879
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.788381 0.703236
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.800294 0.708331
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.767601 0.709732
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.778992 0.704314
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.76374 0.712205
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.781793 0.712829
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.779211 0.708822
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.784042 0.708952
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.810775 0.711419
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.782753 0.702852
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.755047 0.709631
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.79339 0.709666
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.793076 0.705406
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.777953 0.707373
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.779362 0.705553
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.772456 0.717809
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.773463 0.709259
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.747524 0.705713
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.749425 0.706527
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.784306 0.703757
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.773578 0.712684
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.774243 0.702137
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.770946 0.699179
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.776344 0.702884
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.754626 0.706162
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.752839 0.716357
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.770151 0.712661
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.743307 0.702135
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.762828 0.705856
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.757605 0.704151
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.759272 0.709774
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.758463 0.706622
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.778624 0.707087
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.768617 0.715646
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.7625 0.710433
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.767918 0.715804
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.754362 0.710621
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.777205 0.71137
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.788011 0.704367
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.78873 0.709948
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.760065 0.699709
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.751399 0.704576
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.7577 0.705095
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.828046 0.705703
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.79038 0.705709
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.759934 0.703449
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.767555 0.703351
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.753273 0.71293
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.74738 0.705601
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.810003 0.711421
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.778402 0.712827
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.776783 0.705521
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.796892 0.708563
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.75945 0.708582
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.755736 0.714699
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.771737 0.708285
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.794072 0.707105
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.759575 0.700041
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.814414 0.70348
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.787964 0.706163
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.772563 0.703024
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.796239 0.713822
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.774316 0.71177
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.783195 0.714588
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.791193 0.709734
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.790624 0.70786
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.795287 0.719398
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.776327 0.713217
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.767879 0.704383
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.777397 0.717638
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.78147 0.714131
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.78731 0.706731
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.79561 0.705837
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.776967 0.706194
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.790658 0.70997
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.793954 0.70713
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.785205 0.705642
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.731508 0.7107
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.745597 0.696678
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.763904 0.713322
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.794611 0.712167
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.774526 0.698064
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.758708 0.709754
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.762433 0.718137
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.799496 0.707046
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.752716 0.70827
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.772106 0.709876
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.806872 0.707738
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.774377 0.70515
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.763916 0.712621
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.794408 0.697419
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.776666 0.703649
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.7962 0.706996
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.794205 0.713525
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.780699 0.711115
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.758866 0.709744
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.757955 0.706164
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.76944 0.698951
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.743503 0.709856
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.769562 0.710909
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.803164 0.711177
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.770681 0.708201
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.765294 0.705251
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.754974 0.71316
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.784964 0.702203
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.786507 0.710861
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.798471 0.711061
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.790349 0.706364
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.72315 0.705042
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.806464 0.713259
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.768605 0.702336
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.75498 0.699583
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.743573 0.717931
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.768795 0.709964
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.766296 0.716108
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.751887 0.709809
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.801657 0.714917
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.784349 0.699846
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.76283 0.715834
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.742666 0.707792
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.772224 0.70386
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.764622 0.701322
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.770194 0.696641
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.731063 0.707263
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.75274 0.706559
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.762485 0.711287
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.777158 0.708436
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.771984 0.706114
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.74489 0.719162
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.756853 0.712653
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.748529 0.714668
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.750041 0.708353
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.753306 0.71243
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.755965 0.705159
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.80531 0.70635
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.791102 0.700349
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.784141 0.708969
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.741296 0.714291
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.786461 0.71546
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.784871 0.7093
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.788462 0.702789
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.783515 0.71239
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.773728 0.703033
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.781395 0.704906
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+MM 0.783493 0.709791
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.773219 0.710933
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.763605 0.707828
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.806346 0.693431
+Reset re-loads circuit * copia de auditoria con semilla fija
+
+Circuit: * copia de auditoria con semilla fija
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+MM 0.751305 0.712922
+ngspice-44.2 done

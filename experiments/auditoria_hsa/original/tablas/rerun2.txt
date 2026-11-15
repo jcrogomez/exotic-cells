@@ -1,0 +1,6 @@
+A2 lab/macros/constriccion/sim/anillo_12k9.sp
+A2 lab/macros/constriccion/sim/anillo_efld00.sp
+A2 lab/macros/constriccion/sim/anillo_efld00_altaR.sp
+B2r lab/macros/constriccion/sim/anillo_12k9.sp
+B2r lab/macros/constriccion/sim/anillo_efld00.sp
+B2r lab/macros/constriccion/sim/anillo_efld00_altaR.sp

@@ -1,0 +1,87 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * geometrias en borde de bin usadas por los generadores (b20, e53, v4n, b05), esquina tt
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+VT tt nfet_01v8 1 0.5 0.641396 5.33672E-06
+VT tt nfet_01v8 2 0.5 0.634793 1.16746E-05
+VT tt nfet_01v8 2 2 0.55313 3.87446E-06
+VT tt nfet_01v8 5 1 0.58946 1.82298E-05
+VT tt nfet_01v8 4 1 0.59425 1.43225E-05
+VT tt nfet_01v8 4 4 0.53831 4.22826E-06
+VT tt nfet_01v8 1 0.15 0.769538 1.0073E-05
+VT tt nfet_01v8 0.65 0.15 0.757824 7.26807E-06
+VT tt nfet_01v8 0.42 0.15 0.774446 3.92949E-06
+VT tt nfet_01v8 4 0.5 0.631397 2.44917E-05
+VT tt nfet_01v8 5 0.5 0.630067 3.12426E-05
+VT tt nfet_01v8 1 1 0.615227 3.09748E-06
+VT tt nfet_01v8_lvt 1 0.5 0.531254 8.31612E-06
+VT tt nfet_01v8_lvt 2 0.5 0.5249 1.74971E-05
+VT tt nfet_01v8_lvt 2 2 0.463787 5.34085E-06
+VT tt nfet_01v8_lvt 5 1 0.482964 2.68893E-05
+VT tt nfet_01v8_lvt 4 1 0.484506 2.11068E-05
+VT tt nfet_01v8_lvt 4 4 0.444197 5.89114E-06
+VT tt nfet_01v8_lvt 1 0.15 0.640793 1.8068E-05
+VT tt nfet_01v8_lvt 0.65 0.15 0.603364 1.11366E-05
+VT tt nfet_01v8_lvt 0.42 0.15 0.604855 6.84898E-06
+VT tt nfet_01v8_lvt 4 0.5 0.517928 3.743E-05
+VT tt nfet_01v8_lvt 5 0.5 0.517761 4.76318E-05
+VT tt nfet_01v8_lvt 1 1 0.494085 4.6336E-06
+VT tt pfet_01v8 1 0.5 0.92221 1.40622E-07
+VT tt pfet_01v8 2 0.5 0.961042 1.52259E-07
+VT tt pfet_01v8 2 2 1.01234 1.78092E-08
+VT tt pfet_01v8 5 1 1.02212 8.14548E-08
+VT tt pfet_01v8 4 1 1.01388 6.99238E-08
+VT tt pfet_01v8 4 4 1.03847 1.18778E-08
+VT tt pfet_01v8 1 0.15 0.732314 2.17979E-06
+VT tt pfet_01v8 0.65 0.15 0.70072 1.55256E-06
+VT tt pfet_01v8 0.42 0.15 0.714561 1.01558E-06
+VT tt pfet_01v8 4 0.5 0.979662 2.35294E-07
+VT tt pfet_01v8 5 0.5 0.985268 2.74827E-07
+VT tt pfet_01v8 1 1 0.960135 4.50116E-08
+VT tt pfet_01v8_lvt 1 0.5 0.334595 2.36681E-06
+VT tt pfet_01v8_lvt 2 0.5 0.3739 4.90752E-06
+VT tt pfet_01v8_lvt 2 2 0.41747 1.09859E-06
+VT tt pfet_01v8_lvt 5 1 0.443865 5.86834E-06
+VT tt pfet_01v8_lvt 4 1 0.441826 4.72422E-06
+VT tt pfet_01v8_lvt 4 4 0.433845 1.10268E-06
+VT tt pfet_01v8_lvt 4 0.5 0.400333 9.95243E-06
+VT tt pfet_01v8_lvt 5 0.5 0.408402 1.25395E-05
+VT tt pfet_01v8_lvt 1 1 0.380499 1.1438E-06
+VT tt pfet_01v8_hvt 1 0.5 1.00222 3.95553E-08
+VT tt pfet_01v8_hvt 2 0.5 1.0239 4.84218E-08
+VT tt pfet_01v8_hvt 2 2 1.07058 4.75151E-09
+VT tt pfet_01v8_hvt 5 1 1.08189 2.11291E-08
+VT tt pfet_01v8_hvt 4 1 1.07645 1.87298E-08
+VT tt pfet_01v8_hvt 4 4 1.07965 3.67377E-09
+VT tt pfet_01v8_hvt 1 0.15 0.856977 7.98064E-07
+VT tt pfet_01v8_hvt 0.65 0.15 0.831985 6.08818E-07
+VT tt pfet_01v8_hvt 0.42 0.15 0.838024 4.1128E-07
+VT tt pfet_01v8_hvt 4 0.5 1.04182 7.24648E-08
+VT tt pfet_01v8_hvt 5 0.5 1.04772 7.12389E-08
+VT tt pfet_01v8_hvt 1 1 1.02768 1.22629E-08
+VT tt nfet_g5v0d10v5 1 0.5 0.838968 1.85697E-05
+VT tt nfet_g5v0d10v5 2 0.5 0.841825 3.74692E-05
+VT tt nfet_g5v0d10v5 2 2 0.804297 8.91526E-06
+VT tt nfet_g5v0d10v5 5 1 0.816235 4.72158E-05
+VT tt nfet_g5v0d10v5 4 1 0.817057 3.74331E-05
+VT tt nfet_g5v0d10v5 4 4 0.802382 8.9811E-06
+VT tt nfet_g5v0d10v5 4 0.5 0.837039 7.66708E-05
+VT tt nfet_g5v0d10v5 5 0.5 0.835503 9.65405E-05
+VT tt nfet_g5v0d10v5 1 1 0.819501 8.95111E-06
+VT tt pfet_g5v0d10v5 1 0.5 0.864621 5.45757E-06
+VT tt pfet_g5v0d10v5 2 0.5 0.897864 1.08581E-05
+VT tt pfet_g5v0d10v5 2 2 0.973736 2.52143E-06
+VT tt pfet_g5v0d10v5 5 1 0.987023 1.32867E-05
+VT tt pfet_g5v0d10v5 4 1 0.974806 1.04808E-05
+VT tt pfet_g5v0d10v5 4 4 0.992584 2.46828E-06
+VT tt pfet_g5v0d10v5 4 0.5 0.943052 2.25624E-05
+VT tt pfet_g5v0d10v5 5 0.5 0.95253 2.85322E-05
+VT tt pfet_g5v0d10v5 1 1 0.899819 2.57537E-06
+ngspice-44.2 done

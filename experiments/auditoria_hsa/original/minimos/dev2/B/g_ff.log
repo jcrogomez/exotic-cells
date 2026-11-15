@@ -1,0 +1,90 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * geometrias en borde de bin usadas por los generadores (b20, e53, v4n, b05), esquina ff
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+VT ff nfet_01v8 1 0.5 0.614909 6.82739E-06
+VT ff nfet_01v8 2 0.5 0.611384 1.41846E-05
+VT ff nfet_01v8 2 2 0.534515 4.44866E-06
+VT ff nfet_01v8 5 1 0.57143 2.08792E-05
+VT ff nfet_01v8 4 1 0.575739 1.65085E-05
+VT ff nfet_01v8 4 4 0.518946 4.72752E-06
+VT ff nfet_01v8 1 0.15 0.718368 1.64217E-05
+VT ff nfet_01v8 0.65 0.15 0.675915 1.59051E-05
+VT ff nfet_01v8 0.42 0.15 0.691036 7.65632E-06
+VT ff nfet_01v8 4 0.5 0.609419 2.90728E-05
+VT ff nfet_01v8 5 0.5 0.60889 3.67724E-05
+VT ff nfet_01v8 1 1 0.590491 3.92734E-06
+VT ff nfet_01v8_lvt 1 0.5 0.51138 1.02114E-05
+VT ff nfet_01v8_lvt 2 0.5 0.506423 2.05586E-05
+VT ff nfet_01v8_lvt 2 2 0.446632 6.132E-06
+VT ff nfet_01v8_lvt 5 1 0.466782 2.9777E-05
+VT ff nfet_01v8_lvt 4 1 0.468755 2.35469E-05
+VT ff nfet_01v8_lvt 4 4 0.428946 6.44197E-06
+VT ff nfet_01v8_lvt 1 0.15 0.597435 2.54496E-05
+VT ff nfet_01v8_lvt 0.65 0.15 0.5218 1.89603E-05
+VT ff nfet_01v8_lvt 0.42 0.15 0.531601 1.12704E-05
+VT ff nfet_01v8_lvt 4 0.5 0.50195 4.1944E-05
+VT ff nfet_01v8_lvt 5 0.5 0.502213 5.29284E-05
+VT ff nfet_01v8_lvt 1 1 0.474923 5.66301E-06
+VT ff pfet_01v8 1 0.5 0.891284 2.54318E-07
+VT ff pfet_01v8 2 0.5 0.934087 2.77149E-07
+VT ff pfet_01v8 2 2 0.986147 3.11602E-08
+VT ff pfet_01v8 5 1 0.994675 1.38201E-07
+VT ff pfet_01v8 4 1 0.986164 1.21497E-07
+VT ff pfet_01v8 4 4 1.01351 1.97927E-08
+VT ff pfet_01v8 1 0.15 0.637547 4.01713E-06
+VT ff pfet_01v8 0.65 0.15 0.619603 2.92646E-06
+VT ff pfet_01v8 0.42 0.15 0.61781 2.14484E-06
+VT ff pfet_01v8 4 0.5 0.95187 4.29328E-07
+VT ff pfet_01v8 5 0.5 0.957405 4.98838E-07
+VT ff pfet_01v8 1 1 0.934075 7.65956E-08
+VT ff pfet_01v8_lvt 1 0.5 0.174652 3.1257E-06
+VT ff pfet_01v8_lvt 2 0.5 0.252918 6.29975E-06
+VT ff pfet_01v8_lvt 2 2 0.305031 1.38353E-06
+VT ff pfet_01v8_lvt 5 1 0.345113 7.28655E-06
+VT ff pfet_01v8_lvt 4 1 0.343847 5.91502E-06
+VT ff pfet_01v8_lvt 4 4 0.314689 1.35237E-06
+VT ff pfet_01v8_lvt 4 0.5 0.287762 1.26202E-05
+VT ff pfet_01v8_lvt 5 0.5 0.292731 1.58994E-05
+VT ff pfet_01v8_lvt 1 1 0.26563 1.51124E-06
+VT ff pfet_01v8_hvt 1 0.5 0.953942 1.20771E-07
+VT ff pfet_01v8_hvt 2 0.5 0.997103 1.04514E-07
+VT ff pfet_01v8_hvt 2 2 1.04382 9.99021E-09
+VT ff pfet_01v8_hvt 5 1 1.0548 4.43842E-08
+VT ff pfet_01v8_hvt 4 1 1.04922 3.95987E-08
+VT ff pfet_01v8_hvt 4 4 1.06728 6.01105E-09
+VT ff pfet_01v8_hvt 1 0.15 0.797878 1.86962E-06
+VT ff pfet_01v8_hvt 0.65 0.15 0.766851 1.45515E-06
+VT ff pfet_01v8_hvt 0.42 0.15 0.754503 1.13124E-06
+VT ff pfet_01v8_hvt 4 0.5 1.01 1.50429E-07
+VT ff pfet_01v8_hvt 5 0.5 1.01325 1.65554E-07
+VT ff pfet_01v8_hvt 1 1 0.983233 3.16999E-08
+VT ff nfet_g5v0d10v5 1 0.5 0.753118 2.23203E-05
+VT ff nfet_g5v0d10v5 2 0.5 0.760537 4.33151E-05
+VT ff nfet_g5v0d10v5 2 2 0.768241 9.78729E-06
+VT ff nfet_g5v0d10v5 5 1 0.778082 5.13022E-05
+VT ff nfet_g5v0d10v5 4 1 0.778253 4.08457E-05
+VT ff nfet_g5v0d10v5 4 4 0.772661 9.67365E-06
+VT ff nfet_g5v0d10v5 4 0.5 0.767015 8.67165E-05
+VT ff nfet_g5v0d10v5 5 0.5 0.76827 0.000108662
+VT ff nfet_g5v0d10v5 1 1 0.775089 1.03611E-05
+VT ff pfet_g5v0d10v5 1 0.5 0.778213 6.4429E-06
+VT ff pfet_g5v0d10v5 2 0.5 0.819067 1.2436E-05
+VT ff pfet_g5v0d10v5 2 2 0.917918 2.8138E-06
+VT ff pfet_g5v0d10v5 5 1 0.932658 1.49146E-05
+VT ff pfet_g5v0d10v5 4 1 0.918685 1.17544E-05
+VT ff pfet_g5v0d10v5 4 4 0.937959 2.70122E-06
+VT ff pfet_g5v0d10v5 4 0.5 0.870692 2.57507E-05
+VT ff pfet_g5v0d10v5 5 0.5 0.883542 3.25344E-05
+VT ff pfet_g5v0d10v5 1 1 0.836885 3.01006E-06
+ngspice-44.2 done

@@ -1,0 +1,132 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * ventana de la diferencia de bin
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+BIN nfet_01v8 1 1.0 0.628368
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x0:sky130_fd_pr__nfet
+
+       lmin                 5e-07
+       lmax                 1e-06
+       wmin               8.4e-07
+       wmax                 1e-06
+      saref              1.75e-06
+
+BIN nfet_01v8 1 1.001 0.630524
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x1:sky130_fd_pr__nfet
+
+       lmin                 1e-06
+       lmax                 2e-06
+       wmin               8.4e-07
+       wmax                 1e-06
+      saref              2.75e-06
+
+BIN nfet_01v8 1 1.01 0.629762
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x2:sky130_fd_pr__nfet
+
+       lmin                 1e-06
+       lmax                 2e-06
+       wmin               8.4e-07
+       wmax                 1e-06
+      saref              2.75e-06
+
+BIN nfet_01v8 1 1.05 0.626515
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x3:sky130_fd_pr__nfet
+
+       lmin                 1e-06
+       lmax                 2e-06
+       wmin               8.4e-07
+       wmax                 1e-06
+      saref              2.75e-06
+
+BIN nfet_01v8 1 0.999 0.628402
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x4:sky130_fd_pr__nfet
+
+       lmin                 5e-07
+       lmax                 1e-06
+       wmin               8.4e-07
+       wmax                 1e-06
+      saref              1.75e-06
+
+BIN nfet_01v8 0.42 0.15 0.797944
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x5:sky130_fd_pr__nfet
+
+       lmin               1.5e-07
+       lmax               1.8e-07
+       wmin               3.9e-07
+       wmax               4.2e-07
+      saref              1.04e-06
+
+BIN nfet_01v8 0.42 0.4999 0.630309
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x6:sky130_fd_pr__nfet
+
+       lmin               2.5e-07
+       lmax                 5e-07
+       wmin               3.9e-07
+       wmax               4.2e-07
+      saref               1.1e-06
+
+BIN nfet_01v8 0.4201 0.4999 0.630305
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x7:sky130_fd_pr__nfet
+
+       lmin               2.5e-07
+       lmax                 5e-07
+       wmin               3.9e-07
+       wmax               4.2e-07
+      saref               1.1e-06
+
+BIN nfet_01v8 0.4199 0.4999 0.630313
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x8:sky130_fd_pr__nfet
+
+       lmin               2.5e-07
+       lmax                 5e-07
+       wmin               3.9e-07
+       wmax               4.2e-07
+      saref               1.1e-06
+
+BIN nfet_01v8 0.42 0.7 0.607665
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x9:sky130_fd_pr__nfet
+
+       lmin                 5e-07
+       lmax                 1e-06
+       wmin               3.9e-07
+       wmax               4.2e-07
+      saref              1.75e-06
+
+BIN nfet_01v8 0.65 0.15 0.784351
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x10:sky130_fd_pr__nfe
+
+       lmin               1.5e-07
+       lmax               1.8e-07
+       wmin               6.4e-07
+       wmax               6.5e-07
+      saref              1.04e-06
+
+BIN nfet_01v8 1 0.15 0.798445
+ BSIM4v5 models (Berkeley Short Channel IGFET Model-4)
+      model x11:sky130_fd_pr__nfe
+
+       lmin               1.5e-07
+       lmax               1.8e-07
+       wmin               8.4e-07
+       wmax                 1e-06
+      saref              1.04e-06
+
+ngspice-44.2 done

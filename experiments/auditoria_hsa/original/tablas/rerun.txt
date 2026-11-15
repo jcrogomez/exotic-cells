@@ -1,0 +1,13 @@
+Bnk experiments/xc19_weak_inversion/noise_K3.sp
+Bnk experiments/xc19_weak_inversion/noise_K4.sp
+Bnk experiments/xc19_weak_inversion/noise_spectrum_K4.sp
+Bnk experiments/xc19_weak_inversion/noise_spectrum_K5.sp
+Bnk experiments/xc19_weak_inversion/run1_mult_ignored/noise_K4.sp
+Bnk experiments/xc19_weak_inversion/run1_mult_ignored/noise_K5.sp
+Bnk experiments/xc19_weak_inversion/run1_mult_ignored/noise_spectrum_K4.sp
+Bnk experiments/xc19_weak_inversion/run1_mult_ignored/noise_spectrum_K5.sp
+A2 experiments/xc19_weak_inversion/run1_mult_ignored/bias_ff_27.sp
+A2 experiments/xc19_weak_inversion/run1_mult_ignored/bias_ff_85.sp
+A2 experiments/xc19_weak_inversion/run1_mult_ignored/bias_fs_27.sp
+B2r experiments/xc19_weak_inversion/run1_mult_ignored/bias_fs_85.sp
+B2r experiments/xc19_weak_inversion/run1_mult_ignored/bias_sf_27.sp

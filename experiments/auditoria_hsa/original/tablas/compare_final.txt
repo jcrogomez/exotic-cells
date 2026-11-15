@@ -1,0 +1,210 @@
+cells/xc19_bias/channel.sp                                     S-A n=10 max=0.00e+00 miss=0         A-B n=10 max=4.10e-02 miss=0 | echo n=6 max=4.10e-02 miss=0 | meas n=4 max=4.10e-02 miss=0
+      maxAB: ta = # @0[0]: 4.713e-05 -> 4.91431e-05 | maxSA: None
+cells/xc19_channel/channel_sim.sp                              S-A n=8 max=0.00e+00 miss=0          A-B n=8 max=3.22e-02 miss=0 | echo n=4 max=3.22e-02 miss=0 | meas n=4 max=3.22e-02 miss=0
+      maxAB: CHSIM # # # # @0[0]: 2.92975e-05 -> 3.02733e-05 | maxSA: None
+cells/xc19_channel/explore_moscap.sp                           S-A n=8 max=0.00e+00 miss=0          A-B n=8 max=3.22e-02 miss=0 | echo n=4 max=3.22e-02 miss=0 | meas n=4 max=3.22e-02 miss=0
+      maxAB: tb = # @0[0]: 2.92973e-05 -> 3.0273e-05 | maxSA: None
+cells/xc19_read/post_layout.sp                                 S-A n=14 max=0.00e+00 miss=0         A-B n=14 max=6.28e-05 miss=0 | echo n=8 max=6.28e-05 miss=0 | meas n=6 max=6.21e-05 miss=0
+      maxAB: POST # # # # # # # # @0[4]: 5.57115e-05 -> 5.5708e-05 | maxSA: None
+experiments/lod_audit/sim/end_to_end.sp                        S-A n=6 max=0.00e+00 miss=0          A-B n=6 max=4.44e-02 miss=0 | echo n=6 max=4.44e-02 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: E2E extracted vth # # diff_mV # @0[2]: 9.99201e-12 -> 9.54792e-12 | maxSA: None
+experiments/lod_audit/sim/lod_paso1.sp                         S-A n=44 max=0.00e+00 miss=0         A-B n=44 max=0.00e+00 miss=0 | echo n=44 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/lod_audit/sim/lod_paso4_mm.sp                      S-A n=600 max=9.35e-02 miss=0        A-B n=600 max=1.00e-01 miss=0 | echo n=600 max=1.00e-01 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: MM # # @28[0]: 0.823455 -> 0.741096 | maxSA: MM # # @186[0]: 0.712078 -> 0.785522
+experiments/stdcell_lod/devices_inv1.sp                        S-A n=8 max=0.00e+00 miss=0          A-B n=8 max=0.00e+00 miss=0 | echo n=8 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/stdcell_lod/rings.sp                               S-A n=24 max=0.00e+00 miss=0         A-B n=24 max=2.93e-01 miss=0 | echo n=8 max=5.03e-06 miss=0 | meas n=16 max=2.93e-01 miss=0
+      maxAB: anor21lod = # @0[0]: 2.1225e-09 -> 1.50153e-09 | maxSA: None
+experiments/xc19_caps/async.sp                                 S-A n=11 max=0.00e+00 miss=0         A-B n=11 max=4.03e-02 miss=0 | echo n=9 max=4.03e-02 miss=0 | meas n=2 max=3.22e-02 miss=0
+      maxAB: dmax = # at= # @0[0]: 1.08886e-05 -> 1.045e-05 | maxSA: None
+experiments/xc19_caps/cal.sp                                   S-A n=32 max=0.00e+00 miss=0         A-B n=32 max=3.24e-02 miss=0 | echo n=16 max=3.24e-02 miss=0 | meas n=16 max=3.24e-02 miss=0
+      maxAB: RES CAL case=f20 tA=# tB=# @0[0]: 2.96975e-05 -> 3.0691e-05 | maxSA: None
+experiments/xc19_caps/cv.sp                                    S-A n=107 max=0.00e+00 miss=0        A-B n=107 max=0.00e+00 miss=0 | echo n=62 max=0.00e+00 miss=0 | meas n=45 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_caps/filt.sp                                  S-A n=140 max=0.00e+00 miss=0        A-B n=140 max=3.40e-02 miss=0 | echo n=105 max=3.40e-02 miss=0 | meas n=35 max=3.22e-02 miss=0
+      maxAB: RES FILT cf=# tA_sync=# tA_alone=# tA_async=# tB_async=# kick_async_min=# kick_async_max=# kick_sync_min=# vb=# @6[6]: 1.00135e-05 -> 9.6728e-06 | maxSA: None
+experiments/xc19_caps/moscap.sp                                S-A n=42 max=0.00e+00 miss=0         A-B n=42 max=3.22e-02 miss=0 | echo n=24 max=3.22e-02 miss=0 | meas n=18 max=3.22e-02 miss=0
+      maxAB: RES MOSCAP wc=# lc=# t_ideal=# step_ideal_pct=# t_mos=# step_mos_pct=# t_mim8=# step_mim_pct=# @0[2]: 2.92975e-05 -> 3.02733e-05 | maxSA: None
+experiments/xc19_caps/post.sp                                  S-A n=20 max=0.00e+00 miss=0         A-B n=20 max=3.22e-02 miss=0 | echo n=10 max=3.22e-02 miss=0 | meas n=10 max=3.22e-02 miss=0
+      maxAB: RES POST old_ideal_tA=# old_ideal_tB=# old_tA_1v81=# old_tB_1v81=# @0[0]: 2.92975e-05 -> 3.02733e-05 | maxSA: None
+experiments/xc19_caps/sw.sp                                    S-A n=12 max=0.00e+00 miss=0         A-B n=12 max=3.22e-02 miss=0 | echo n=7 max=3.22e-02 miss=0 | meas n=5 max=3.22e-02 miss=0
+      maxAB: RES SW t_none=# p_off=# p_on=# p_pct=# tg_off=# tg_on=# tg_pct=# @0[4]: 3.00301e-05 -> 3.10304e-05 | maxSA: None
+experiments/xc19_caps/sw_current.sp                            S-A n=30 max=0.00e+00 miss=0         A-B n=30 max=3.25e-02 miss=0 | echo n=18 max=3.25e-02 miss=0 | meas n=12 max=3.25e-02 miss=0
+      maxAB: t0 = # @0[0]: 5.09636e-05 -> 5.26759e-05 | maxSA: None
+experiments/xc19_caps/vb_ac.sp                                 S-A n=7 max=0.00e+00 miss=0          A-B n=7 max=3.32e-02 miss=0 | echo n=4 max=3.32e-02 miss=0 | meas n=3 max=3.32e-02 miss=0
+      maxAB: z10 = # @0[0]: 655895 -> 678434 | maxSA: None
+experiments/xc19_noise/k3_cap.sp                               S-A n=10 max=0.00e+00 miss=0         A-B n=10 max=0.00e+00 miss=0 | echo n=7 max=0.00e+00 miss=0 | meas n=3 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_noise/shot_trnoise.sp                         S-A n=0 max=0.00e+00 miss=96         A-B n=0 max=0.00e+00 miss=0 | echo n=0 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/bias_ff_27.sp                  S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=0.00e+00 miss=0 | echo n=96 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/bias_ff_85.sp                  S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=0.00e+00 miss=0 | echo n=96 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/bias_fs_27.sp                  S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=0.00e+00 miss=0 | echo n=96 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/bias_fs_85.sp                  S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=0.00e+00 miss=0 | echo n=96 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/bias_sf_27.sp                  S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=0.00e+00 miss=0 | echo n=96 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/bias_sf_85.sp                  S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=0.00e+00 miss=0 | echo n=96 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/bias_ss_27.sp                  S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=1.08e-06 miss=0 | echo n=96 max=1.08e-06 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: BIAS ss # v1 # vdd2 # # @1[3]: 9.25486e-12 -> 9.25485e-12 | maxSA: None
+experiments/xc19_weak_inversion/bias_ss_85.sp                  S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=0.00e+00 miss=0 | echo n=96 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/bias_tt_27.sp                  S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=0.00e+00 miss=0 | echo n=96 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/bias_tt_85.sp                  S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=0.00e+00 miss=0 | echo n=96 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/dc_27.sp                       S-A n=0 max=0.00e+00 miss=0          A-B n=0 max=0.00e+00 miss=0 | echo n=0 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+      dat dc_27.dat S-A n=190 max=0.00e+00 miss=0 A-B n=190 max=3.18e-08 miss=0 row11[1]: 4.09136e-08 -> 4.09136e-08
+experiments/xc19_weak_inversion/dc_28.sp                       S-A n=0 max=0.00e+00 miss=0          A-B n=0 max=0.00e+00 miss=0 | echo n=0 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+      dat dc_28.dat S-A n=190 max=0.00e+00 miss=0 A-B n=190 max=3.37e-08 miss=0 row10[3]: 1.18859e-08 -> 1.18859e-08
+experiments/xc19_weak_inversion/explore_leak_27.sp             S-A n=8 max=0.00e+00 miss=0          A-B n=8 max=0.00e+00 miss=0 | echo n=8 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/explore_leak_85.sp             S-A n=8 max=0.00e+00 miss=0          A-B n=8 max=0.00e+00 miss=0 | echo n=8 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/explore_lod_source_side.sp     S-A n=6 max=0.00e+00 miss=0          A-B n=6 max=0.00e+00 miss=0 | echo n=6 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/explore_twin_1800.sp           S-A n=14 max=0.00e+00 miss=0         A-B n=14 max=0.00e+00 miss=0 | echo n=11 max=0.00e+00 miss=0 | meas n=3 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/explore_twin_1810.sp           S-A n=14 max=0.00e+00 miss=0         A-B n=14 max=0.00e+00 miss=0 | echo n=11 max=0.00e+00 miss=0 | meas n=3 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/leak_27.sp                     S-A n=2 max=0.00e+00 miss=0          A-B n=2 max=0.00e+00 miss=0 | echo n=2 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/leak_85.sp                     S-A n=2 max=0.00e+00 miss=0          A-B n=2 max=0.00e+00 miss=0 | echo n=2 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/n3_cap_1.sp                    S-A n=7 max=0.00e+00 miss=0          A-B n=7 max=0.00e+00 miss=0 | echo n=6 max=0.00e+00 miss=0 | meas n=1 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/n3_cap_10.sp                   S-A n=7 max=0.00e+00 miss=0          A-B n=7 max=4.19e-07 miss=0 | echo n=6 max=0.00e+00 miss=0 | meas n=1 max=4.19e-07 miss=0
+      maxAB: ta = # @0[0]: 2.38752e-05 -> 2.38752e-05 | maxSA: None
+experiments/xc19_weak_inversion/n3_cap_30.sp                   S-A n=7 max=0.00e+00 miss=0          A-B n=7 max=0.00e+00 miss=0 | echo n=6 max=0.00e+00 miss=0 | meas n=1 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/n3_cascode_1800.sp             S-A n=21 max=0.00e+00 miss=0         A-B n=21 max=0.00e+00 miss=0 | echo n=18 max=0.00e+00 miss=0 | meas n=3 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/n3_cascode_1810.sp             S-A n=21 max=0.00e+00 miss=0         A-B n=21 max=0.00e+00 miss=0 | echo n=18 max=0.00e+00 miss=0 | meas n=3 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/n4_cross.sp                    S-A n=8 max=0.00e+00 miss=0          A-B n=8 max=0.00e+00 miss=0 | echo n=4 max=0.00e+00 miss=0 | meas n=4 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/n5_mc.sp                       S-A n=21 max=9.55e-01 miss=182       A-B n=21 max=9.78e-01 miss=7 | echo n=9 max=9.78e-01 miss=1 | meas n=12 max=9.78e-01 miss=6
+      maxAB: ta = # @2[0]: 0.000249053 -> 5.41529e-06 | maxSA: te = # @0[0]: 6.74265e-06 -> 0.000150129
+experiments/xc19_weak_inversion/noise_K3.sp                    S-A n=6 max=0.00e+00 miss=0          A-B n=0 max=0.00e+00 miss=4 | echo n=0 max=0.00e+00 miss=4 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/noise_K4.sp                    S-A n=6 max=0.00e+00 miss=0          A-B n=0 max=0.00e+00 miss=4 | echo n=0 max=0.00e+00 miss=4 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/noise_spectrum_K4.sp           S-A n=0 max=0.00e+00 miss=0          A-B n=0 max=0.00e+00 miss=0 | echo n=0 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+      dat noise_spectrum_K4.dat S-A n=242 max=0.00e+00 miss=0 A-B n=242 max=0.00e+00 miss=0 None
+experiments/xc19_weak_inversion/noise_spectrum_K5.sp           S-A n=0 max=0.00e+00 miss=0          A-B n=0 max=0.00e+00 miss=0 | echo n=0 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+      dat noise_spectrum_K5.dat S-A n=242 max=0.00e+00 miss=0 A-B n=242 max=0.00e+00 miss=0 None
+experiments/xc19_weak_inversion/run1_mult_ignored/bias_ff_27.sp S-A n=0 max=0.00e+00 miss=24         A-B n=0 max=0.00e+00 miss=24 | echo n=0 max=0.00e+00 miss=24 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/bias_ff_85.sp S-A n=0 max=0.00e+00 miss=24         A-B n=0 max=0.00e+00 miss=24 | echo n=0 max=0.00e+00 miss=24 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/bias_fs_27.sp S-A n=0 max=0.00e+00 miss=24         A-B n=0 max=0.00e+00 miss=24 | echo n=0 max=0.00e+00 miss=24 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/bias_fs_85.sp S-A n=96 max=0.00e+00 miss=0         A-B n=0 max=0.00e+00 miss=24 | echo n=0 max=0.00e+00 miss=24 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/bias_sf_27.sp S-A n=96 max=0.00e+00 miss=0         A-B n=0 max=0.00e+00 miss=24 | echo n=0 max=0.00e+00 miss=24 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/bias_sf_85.sp S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=0.00e+00 miss=0 | echo n=96 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/bias_ss_27.sp S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=1.08e-06 miss=0 | echo n=96 max=1.08e-06 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: BIAS ss # v1 # vdd2 # # @1[3]: 9.25486e-12 -> 9.25485e-12 | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/bias_ss_85.sp S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=0.00e+00 miss=0 | echo n=96 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/bias_tt_27.sp S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=0.00e+00 miss=0 | echo n=96 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/bias_tt_85.sp S-A n=96 max=0.00e+00 miss=0         A-B n=96 max=0.00e+00 miss=0 | echo n=96 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/explore_leak_27.sp S-A n=8 max=0.00e+00 miss=0          A-B n=8 max=0.00e+00 miss=0 | echo n=8 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/explore_leak_85.sp S-A n=8 max=0.00e+00 miss=0          A-B n=8 max=0.00e+00 miss=0 | echo n=8 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/explore_twin_1800.sp S-A n=7 max=0.00e+00 miss=0          A-B n=7 max=0.00e+00 miss=0 | echo n=4 max=0.00e+00 miss=0 | meas n=3 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/explore_twin_1810.sp S-A n=7 max=0.00e+00 miss=0          A-B n=7 max=0.00e+00 miss=0 | echo n=4 max=0.00e+00 miss=0 | meas n=3 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/leak_27.sp   S-A n=2 max=0.00e+00 miss=0          A-B n=2 max=0.00e+00 miss=0 | echo n=2 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/leak_85.sp   S-A n=2 max=0.00e+00 miss=0          A-B n=2 max=0.00e+00 miss=0 | echo n=2 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/noise_K4.sp  S-A n=6 max=0.00e+00 miss=0          A-B n=0 max=0.00e+00 miss=4 | echo n=0 max=0.00e+00 miss=4 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/noise_K5.sp  S-A n=6 max=0.00e+00 miss=0          A-B n=0 max=0.00e+00 miss=4 | echo n=0 max=0.00e+00 miss=4 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/noise_spectrum_K4.sp S-A n=0 max=0.00e+00 miss=0          A-B n=0 max=0.00e+00 miss=0 | echo n=0 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+      dat noise_spectrum_K4.dat S-A n=242 max=0.00e+00 miss=0 A-B n=242 max=0.00e+00 miss=0 None
+experiments/xc19_weak_inversion/run1_mult_ignored/noise_spectrum_K5.sp S-A n=0 max=0.00e+00 miss=0          A-B n=0 max=0.00e+00 miss=0 | echo n=0 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+      dat noise_spectrum_K5.dat S-A n=242 max=0.00e+00 miss=0 A-B n=242 max=0.00e+00 miss=0 None
+experiments/xc19_weak_inversion/run1_mult_ignored/stage_K4_1800_27.sp S-A n=14 max=0.00e+00 miss=0         A-B n=14 max=0.00e+00 miss=0 | echo n=10 max=0.00e+00 miss=0 | meas n=4 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/stage_K4_1810_27.sp S-A n=14 max=0.00e+00 miss=0         A-B n=14 max=0.00e+00 miss=0 | echo n=10 max=0.00e+00 miss=0 | meas n=4 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/stage_K5_1800_27.sp S-A n=14 max=0.00e+00 miss=0         A-B n=14 max=1.70e-07 miss=0 | echo n=10 max=0.00e+00 miss=0 | meas n=4 max=1.70e-07 miss=0
+      maxAB: tw = # @0[0]: 5.87695e-06 -> 5.87695e-06 | maxSA: None
+experiments/xc19_weak_inversion/run1_mult_ignored/stage_K5_1810_27.sp S-A n=14 max=0.00e+00 miss=0         A-B n=14 max=0.00e+00 miss=0 | echo n=10 max=0.00e+00 miss=0 | meas n=4 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run2_explore_min_pfet/explore_twin_1800.sp S-A n=14 max=0.00e+00 miss=0         A-B n=14 max=0.00e+00 miss=0 | echo n=11 max=0.00e+00 miss=0 | meas n=3 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/run2_explore_min_pfet/explore_twin_1810.sp S-A n=14 max=0.00e+00 miss=0         A-B n=14 max=0.00e+00 miss=0 | echo n=11 max=0.00e+00 miss=0 | meas n=3 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/stage_K3_1800_27.sp            S-A n=18 max=0.00e+00 miss=0         A-B n=18 max=2.10e-04 miss=0 | echo n=14 max=2.10e-04 miss=0 | meas n=4 max=2.10e-04 miss=0
+      maxAB: ta = # @0[0]: 4.59473e-07 -> 4.59377e-07 | maxSA: None
+experiments/xc19_weak_inversion/stage_K3_1810_27.sp            S-A n=18 max=0.00e+00 miss=0         A-B n=18 max=2.29e-06 miss=0 | echo n=14 max=2.29e-06 miss=0 | meas n=4 max=2.29e-07 miss=0
+      maxAB: STAGE # # # # # # # # # # @0[3]: 4.36979e-07 -> 4.36978e-07 | maxSA: None
+experiments/xc19_weak_inversion/stage_K4_1800_27.sp            S-A n=18 max=0.00e+00 miss=0         A-B n=18 max=0.00e+00 miss=0 | echo n=14 max=0.00e+00 miss=0 | meas n=4 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+experiments/xc19_weak_inversion/stage_K4_1810_27.sp            S-A n=18 max=0.00e+00 miss=0         A-B n=18 max=0.00e+00 miss=0 | echo n=14 max=0.00e+00 miss=0 | meas n=4 max=0.00e+00 miss=0
+      maxAB: None | maxSA: None
+lab/macros/constriccion/sim/anillo_12k9.sp                     S-A -                                A-B n=22 max=0.00e+00 miss=4 | echo n=18 max=0.00e+00 miss=2 | meas n=4 max=0.00e+00 miss=2
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/anillo_efld00.sp                   S-A -                                A-B n=22 max=0.00e+00 miss=4 | echo n=18 max=0.00e+00 miss=2 | meas n=4 max=0.00e+00 miss=2
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/anillo_efld00_altaR.sp             S-A -                                A-B n=0 max=0.00e+00 miss=0 | echo n=0 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/anillo_sindrivers.sp               S-A -                                A-B n=33 max=0.00e+00 miss=0 | echo n=27 max=0.00e+00 miss=0 | meas n=6 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/driver_linea.sp                    S-A -                                A-B n=140 max=0.00e+00 miss=0 | echo n=140 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/drivers_efld00.sp                  S-A -                                A-B n=140 max=0.00e+00 miss=0 | echo n=140 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/drivers_pequenos.sp                S-A -                                A-B n=10 max=0.00e+00 miss=0 | echo n=10 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/n1.sp                              S-A -                                A-B n=35 max=0.00e+00 miss=0 | echo n=35 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/n2.sp                              S-A -                                A-B n=35 max=0.00e+00 miss=0 | echo n=35 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/n4.sp                              S-A -                                A-B n=35 max=0.00e+00 miss=0 | echo n=35 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/n8.sp                              S-A -                                A-B n=35 max=0.00e+00 miss=0 | echo n=35 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/p1.sp                              S-A -                                A-B n=35 max=0.00e+00 miss=0 | echo n=35 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/p2.sp                              S-A -                                A-B n=35 max=0.00e+00 miss=0 | echo n=35 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/p4.sp                              S-A -                                A-B n=35 max=0.00e+00 miss=0 | echo n=35 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/p8.sp                              S-A -                                A-B n=35 max=0.00e+00 miss=0 | echo n=35 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/plantilla.sp                       S-A -                                A-B n=2 max=0.00e+00 miss=0 | echo n=2 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/constriccion/sim/rtn_presupuesto.sp                 S-A -                                A-B n=4 max=2.79e-03 miss=0 | echo n=2 max=2.91e-06 miss=0 | meas n=2 max=2.79e-03 miss=0
+      maxAB: t1 = # @0[0]: 7.11837e-09 -> 7.13831e-09 | maxSA: -
+lab/macros/grabado_lod/sim/lod_paso1.sp                        S-A -                                A-B n=44 max=0.00e+00 miss=0 | echo n=44 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/grabado_lod/sim/lod_paso4_mm.sp                     S-A -                                A-B n=600 max=8.72e-02 miss=0 | echo n=600 max=8.72e-02 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: MM # # @84[0]: 0.819579 -> 0.748076 | maxSA: -
+lab/macros/photon/sim/cap_fd.sp                                S-A -                                A-B n=32 max=0.00e+00 miss=0 | echo n=32 max=0.00e+00 miss=0 | meas n=0 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/photon/sim/fuga_ebufn.sp                            S-A -                                A-B n=84 max=0.00e+00 miss=0 | echo n=80 max=0.00e+00 miss=0 | meas n=4 max=0.00e+00 miss=0
+      maxAB: None | maxSA: -
+lab/macros/photon/sim/lectura.sp                               S-A -                                A-B n=144 max=3.52e-06 miss=0 | echo n=110 max=2.71e-06 miss=0 | meas n=34 max=3.52e-06 miss=0
+      maxAB: t16 = # @0[0]: 0.36957 -> 0.369569 | maxSA: -

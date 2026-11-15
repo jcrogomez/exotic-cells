@@ -1,0 +1,4 @@
+mc_mm_switch=0 semilla 1: fA 2.26243 GHz, fB 2.26243 GHz, diferencia relativa 0.000e+00
+mc_mm_switch=1 semilla 1: fA 2.27015 GHz, fB 2.24619 GHz, diferencia relativa 1.055e-02
+mc_mm_switch=1 semilla 2: fA 2.27316 GHz, fB 2.26429 GHz, diferencia relativa 3.901e-03
+mc_mm_switch=1 semilla 3: fA 2.27846 GHz, fB 2.25810 GHz, diferencia relativa 8.934e-03

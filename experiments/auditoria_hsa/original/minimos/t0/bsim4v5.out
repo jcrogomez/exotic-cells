@@ -1,0 +1,3 @@
+
+Checking parameters for BSIM 4.5 model xpfet01v81015sd:sky130_fd_pr__pfet_01v8__model.80
+Fatal: Pclm = -0.441182 is not positive.

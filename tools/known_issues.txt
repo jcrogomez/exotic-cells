@@ -2,3 +2,5 @@
 experiments/xc19_weak_inversion/n5_mc.log | the summary echo referenced measurements of the previous plot and printed errors; the measurements themselves are in the log and are read from there by n5_read.py. Generator fixed for the next run.
 experiments/xc19_weak_inversion/dc_27.log | first deck of part 1; harmless parser notes
 experiments/xc19_weak_inversion/dc_28.log | first deck of part 1; harmless parser notes
+experiments/auditoria_hsa/original/minimos/t0/lod.log | HSA audit, rescued as evidence: first version of the minimal LOD deck, failed BSIM4 parameter checking; superseded by lod2.sp, no number of the audit comes from it
+experiments/auditoria_hsa/original/minimos/t1/lod.log | HSA audit, rescued as evidence: same failed first LOD deck as t0/lod.log, in hs mode; superseded by lod2.sp

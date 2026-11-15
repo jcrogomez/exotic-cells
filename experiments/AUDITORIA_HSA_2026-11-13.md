@@ -86,7 +86,8 @@ Hechos (todos `tt`, 27 °C; carpetas `hsa_audit/hyp/`):
    `noinit`, `skywaterpdk`, `ng_nomodcheck`— no cambia nada): en 31 combinaciones de tipo × geometría **esquemáticas**
    (nfet/pfet 01v8, lvt, hvt; W 0,42–5; L 0,15–1) la diferencia es **0**. Con ad/as/pd/ps: 0. Con `m=2`: 0. (`types.sp`, `lod2.sp`.)
 2. Con `sa = sb` (0,26; 0,3; 3 µm) la diferencia aparece **solo en ciertas L**: nfet 0,42/0,5 +3,18 mV; pfet_01v8_hvt 0,42/0,5
-   −7,96 mV (+12 % de corriente); pfet_01v8 0,42/0,5 −7,52 mV; nfet 1/1 +1,8 a +2,2 mV; en L = 0,15 y L = 0,7: **0**. El
+   −7,96 mV (+12 % de corriente); pfet_01v8 0,42/0,5 −7,52 mV; nfet 1/1 +1,8 a +2,2 mV; en L = 0,15 y L = 0,7: **0**. [corregido 2026-11-15 16:52: a Vg 0,9 V, Vd 0,05 V, `hyp/t0` y `t1/bin4.log` dan nfet 1/1 **+2,242 mV**, fuera del
+   rango «+1,8 a +2,2»; de dónde salía +1,8 `[?]`. Reproducido en `experiments/auditoria_hsa/reproducir/`.] El
    corrimiento es el mismo para cualquier `sa` (−7,957 mV con 0,26, 0,3 y 3 µm): es el término de referencia, no el de `sa`.
 3. `showmod` del modelo elegido (`bin3.sp`, `bin4.sp`): para L = 0,5 sin modo se usa el bin `lmin=0,25 lmax=0,5`
    (`saref=1,1e-6`); con `hs`, el bin `lmin=0,5 lmax=1,0` (`saref=1,75e-6 sbref=1,74e-6`). Para nfet W = 1, L = 1: sin modo
@@ -230,6 +231,9 @@ muerte relativos sobreviven.
 mecanismo, no en una corrida.
 
 ## 6. Archivos de la auditoría (scratchpad, no versionados)
+
+[corregido 2026-11-15 16:52] Rescatados al repo, sin las copias del repo ni los volcados pesados, en
+[`auditoria_hsa/`](auditoria_hsa/README.md), con una reproducción mínima desde un clon limpio y la lista de lo que no se rescató.
 
 `hsa_audit/{A,B}/repo/**/<deck>.hsa_{A,B}.log`, `times_{A,B}.txt`, `compare.py`, `compare.json`, `compare_final.txt`,
 `derive.py`, `derive.md`, `hyp/` (decks mínimos: `dev.sp`, `types.sp`, `lod2.sp`, `bin.sp`, `bin2.sp`, `bin3.sp`, `bin4.sp`,

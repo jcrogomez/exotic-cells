@@ -1,0 +1,55 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * minimo: nfet_01v8 0.42/0.15 en varias formas, tt 27 c
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+DEVID vg=0.2 6.22299E-13 6.22299E-13 3.17702E-13 3.17702E-13 1.2446E-12
+DEVVTH vg=0.2 0.774446 0.774446 0.797944 0.797944 0.774446
+DEVCAP vg=0.2 1.51563E-16 1.51563E-16 1.52099E-16 -7.82225E-19 -7.82225E-19
+DEVP vg=0.2 0 0.926771
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+DEVID vg=0.3 1.03825E-11 1.03825E-11 5.30886E-12 5.30886E-12 2.0765E-11
+DEVVTH vg=0.3 0.774446 0.774446 0.797944 0.797944 0.774446
+DEVCAP vg=0.3 1.52106E-16 1.52106E-16 1.5138E-16 -1.79907E-18 -1.79907E-18
+DEVP vg=0.3 0 0.926771
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+DEVID vg=0.5 2.62115E-09 2.62115E-09 1.37992E-09 1.37992E-09 5.24231E-09
+DEVVTH vg=0.5 0.774446 0.774446 0.797944 0.797944 0.774446
+DEVCAP vg=0.5 1.85165E-16 1.85165E-16 1.77785E-16 -1.11726E-17 -1.11726E-17
+DEVP vg=0.5 0 0.926771
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+DEVID vg=0.9 3.92949E-06 3.92949E-06 3.21792E-06 3.21792E-06 7.85899E-06
+DEVVTH vg=0.9 0.774446 0.774446 0.797944 0.797944 0.774446
+DEVCAP vg=0.9 3.75425E-16 3.75425E-16 3.68743E-16 -1.49076E-16 -1.49076E-16
+DEVP vg=0.9 0 0.926771
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+No. of Data Rows : 1
+DEVID vg=1.8 2.55126E-05 2.55126E-05 2.47338E-05 2.47338E-05 5.10252E-05
+DEVVTH vg=1.8 0.774446 0.774446 0.797944 0.797944 0.774446
+DEVCAP vg=1.8 4.28614E-16 4.28614E-16 4.28425E-16 -2.13313E-16 -2.13313E-16
+DEVP vg=1.8 0 0.926771
+ngspice-44.2 done
