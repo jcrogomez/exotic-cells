@@ -12,6 +12,7 @@ on:
       - "residual/**"
       - "tools/science_ci.py"
       - "tools/ngspice_pdk.sh"
+      - "experiments/auditoria_hsa/reproducir/**"
       - ".github/workflows/science.yml"
 env:
   PDK_VERSION: 8afc8346a57fe1ab7934ba5a6056ea8b43078e71  # open_pdks hash used by every committed run (iic-osic-tools 2025.07)
@@ -49,3 +50,5 @@ jobs:
         run: ngspice -v | head -3 && cat /pdk/SOURCES
       - name: Reference simulations with positive and negative controls
         run: python3 tools/science_ci.py
+      - name: HSA audit, minimal case (no compatibility mode vs the PDK's hsa mode)
+        run: sh experiments/auditoria_hsa/reproducir/reproducir.sh
