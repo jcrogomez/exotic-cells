@@ -30,6 +30,8 @@ fuente p+ y drenaje n+: transistor túnel; borde legal por buscar). Absorbe XC-3
 
 **[corregido 2026-11-13 21:48]** Matriz de capacidades ([`docs/CAPACIDADES_SKY130.md`](../../docs/CAPACIDADES_SKY130.md)): ninguna fuente de SkyWater dice si la difusión lleva siliciuro; no existe capa de bloqueo; las resistencias de capa documentadas (n+ 120, p+ 197 Ω/□) son de silicio sin siliciuro. Que d = 0 sea una unión y no un cable es **inferido**, no leído: la compuerta sigue `[?]` hasta que Tiny Tapeout responda o se mida. Con el siliciuro fuera, la explicación aburrida pasa a ser la resistencia en serie (~1 kΩ, unos 20 mV a 20 µA, aritmética). Medida barata propuesta: tiras Kelvin de n+, p+, poly y li junto a XC-20. Dutta 2017 es CMOS bulk de 65 nm (ficha indexada), sin leer.
 
+**[corregido 2026-11-14 20:19]** Prototipo del motor de hipótesis ([informe](../../experiments/xc20_hipotesis/INFORME.md), verificado por código independiente; modelo, no silicio): con el lector de precarga de XC-26 tal cual (techo calculado 1,25 nA) el primer canal de §5.2 no distingue túnel de puente óhmico: los dos saturan. Con un lector de nA a mA acierta el 90 %, y una segunda tensión inversa (−0,9 V) separa los tres mecanismos mejor que la temperatura (+0,22 frente a +0,08 bits); el peine no añade nada. Esto se deduce ya de los intervalos; el motor da el tamaño y que el orden resiste los supuestos. Propuesta, pendiente de Juan: lector de rango ancho y dos tensiones antes que dos temperaturas.
+
 ## 2. Lectura y piso
 
 Lector de precarga y descarga (el instrumento de XC-26): la unión en inversa a 1,8 V mueve un nodo y se cuenta el tiempo.

@@ -1,0 +1,54 @@
+sigma=0.05  a_D0        XC26   innerseed=1 M=2^16 N=6000/mec: I=0.9183±0.0000 bits  acierto=0.6673±0.0013 E[max post]=0.6667
+sigma=0.05  a_D0        ancho  innerseed=1 M=2^16 N=6000/mec: I=1.3534±0.0030 bits  acierto=0.8966±0.0020 E[max post]=0.8950
+sigma=0.05  b_D0+85C    ancho  innerseed=1 M=2^16 N=6000/mec: I=1.4428±0.0035 bits  acierto=0.9559±0.0015 E[max post]=0.9552
+sigma=0.05  c_D0+-0.9V  XC26   innerseed=1 M=2^16 N=6000/mec: I=0.9559±0.0014 bits  acierto=0.7028±0.0013 E[max post]=0.7021
+sigma=0.05  c_D0+-0.9V  ancho  innerseed=1 M=2^16 N=6000/mec: I=1.5850±0.0000 bits  acierto=1.0000±0.0000 E[max post]=1.0000
+sigma=0.5   a_D0        XC26   innerseed=1 M=2^16 N=6000/mec: I=0.9189±0.0002 bits  acierto=0.6673±0.0002 E[max post]=0.6671
+sigma=0.5   a_D0        ancho  innerseed=1 M=2^16 N=6000/mec: I=1.2644±0.0048 bits  acierto=0.8835±0.0023 E[max post]=0.8869
+sigma=0.5   b_D0+85C    ancho  innerseed=1 M=2^16 N=6000/mec: I=1.2910±0.0040 bits  acierto=0.8843±0.0023 E[max post]=0.8869
+sigma=0.5   c_D0+-0.9V  XC26   innerseed=1 M=2^16 N=6000/mec: I=0.9599±0.0015 bits  acierto=0.7064±0.0014 E[max post]=0.7059
+sigma=0.5   c_D0+-0.9V  ancho  innerseed=1 M=2^16 N=6000/mec: I=1.4569±0.0037 bits  acierto=0.9621±0.0014 E[max post]=0.9612
+sigma=0.05  a_D0        XC26   innerseed=2 M=2^16 N=6000/mec: I=0.9183±0.0000 bits  acierto=0.6650±0.0018 E[max post]=0.6667
+sigma=0.05  a_D0        ancho  innerseed=2 M=2^16 N=6000/mec: I=1.3534±0.0030 bits  acierto=0.8966±0.0020 E[max post]=0.8950
+sigma=0.05  b_D0+85C    ancho  innerseed=2 M=2^16 N=6000/mec: I=1.4428±0.0035 bits  acierto=0.9559±0.0015 E[max post]=0.9551
+sigma=0.05  c_D0+-0.9V  XC26   innerseed=2 M=2^16 N=6000/mec: I=0.9559±0.0014 bits  acierto=0.7028±0.0013 E[max post]=0.7021
+sigma=0.05  c_D0+-0.9V  ancho  innerseed=2 M=2^16 N=6000/mec: I=1.5850±0.0000 bits  acierto=1.0000±0.0000 E[max post]=1.0000
+sigma=0.5   a_D0        XC26   innerseed=2 M=2^16 N=6000/mec: I=0.9189±0.0002 bits  acierto=0.6673±0.0002 E[max post]=0.6671
+sigma=0.5   a_D0        ancho  innerseed=2 M=2^16 N=6000/mec: I=1.2644±0.0048 bits  acierto=0.8835±0.0023 E[max post]=0.8869
+sigma=0.5   b_D0+85C    ancho  innerseed=2 M=2^16 N=6000/mec: I=1.2910±0.0040 bits  acierto=0.8843±0.0023 E[max post]=0.8869
+sigma=0.5   c_D0+-0.9V  XC26   innerseed=2 M=2^16 N=6000/mec: I=0.9599±0.0015 bits  acierto=0.7064±0.0014 E[max post]=0.7059
+sigma=0.5   c_D0+-0.9V  ancho  innerseed=2 M=2^16 N=6000/mec: I=1.4569±0.0037 bits  acierto=0.9621±0.0014 E[max post]=0.9612
+
+Diferencias pareadas (mismo exterior, semilla interior 1):
+sigma=0.05: b_D0+85C/ancho - a_D0/ancho = +0.0894 ± 0.0031 bits
+sigma=0.05: c_D0+-0.9V/ancho - a_D0/ancho = +0.2316 ± 0.0030 bits
+sigma=0.05: c_D0+-0.9V/XC26 - a_D0/XC26 = +0.0376 ± 0.0014 bits
+sigma=0.05: c_D0+-0.9V/ancho - b_D0+85C/ancho = +0.1422 ± 0.0035 bits
+sigma=0.5: b_D0+85C/ancho - a_D0/ancho = +0.0266 ± 0.0025 bits
+sigma=0.5: c_D0+-0.9V/ancho - a_D0/ancho = +0.1925 ± 0.0047 bits
+sigma=0.5: c_D0+-0.9V/XC26 - a_D0/XC26 = +0.0410 ± 0.0015 bits
+sigma=0.5: c_D0+-0.9V/ancho - b_D0+85C/ancho = +0.1659 ± 0.0043 bits
+
+Sensibilidad al prior (orden T, R, G; semilla interior 1):
+prior=(0.2, 0.2, 0.6) sigma=0.05  a_D0        XC26  : I=0.9710±0.0000 (H=1.3710) acierto=0.8004
+prior=(0.2, 0.2, 0.6) sigma=0.05  a_D0        ancho : I=1.2320±0.0018 (H=1.3710) acierto=0.9380
+prior=(0.2, 0.2, 0.6) sigma=0.05  b_D0+85C    ancho : I=1.2856±0.0021 (H=1.3710) acierto=0.9736
+prior=(0.2, 0.2, 0.6) sigma=0.05  c_D0+-0.9V  XC26  : I=0.9935±0.0009 (H=1.3710) acierto=0.8217
+prior=(0.2, 0.2, 0.6) sigma=0.05  c_D0+-0.9V  ancho : I=1.3710±0.0000 (H=1.3710) acierto=1.0000
+prior=(0.2, 0.2, 0.6) sigma=0.5   a_D0        XC26  : I=0.9713±0.0001 (H=1.3710) acierto=0.8004
+prior=(0.2, 0.2, 0.6) sigma=0.5   a_D0        ancho : I=1.1781±0.0029 (H=1.3710) acierto=0.9301
+prior=(0.2, 0.2, 0.6) sigma=0.5   b_D0+85C    ancho : I=1.1943±0.0024 (H=1.3710) acierto=0.9306
+prior=(0.2, 0.2, 0.6) sigma=0.5   c_D0+-0.9V  XC26  : I=0.9959±0.0009 (H=1.3710) acierto=0.8239
+prior=(0.2, 0.2, 0.6) sigma=0.5   c_D0+-0.9V  ancho : I=1.2938±0.0023 (H=1.3710) acierto=0.9772
+prior=(0.6, 0.2, 0.2) sigma=0.05  a_D0        XC26  : I=0.7219±0.0000 (H=1.3710) acierto=0.8000
+prior=(0.6, 0.2, 0.2) sigma=0.05  a_D0        ancho : I=1.1403±0.0030 (H=1.3710) acierto=0.9242
+prior=(0.6, 0.2, 0.2) sigma=0.05  b_D0+85C    ancho : I=1.2270±0.0035 (H=1.3710) acierto=0.9549
+prior=(0.6, 0.2, 0.2) sigma=0.05  c_D0+-0.9V  XC26  : I=0.7503±0.0011 (H=1.3710) acierto=0.8000
+prior=(0.6, 0.2, 0.2) sigma=0.05  c_D0+-0.9V  ancho : I=1.3710±0.0000 (H=1.3710) acierto=1.0000
+prior=(0.6, 0.2, 0.2) sigma=0.5   a_D0        XC26  : I=0.7224±0.0001 (H=1.3710) acierto=0.8000
+prior=(0.6, 0.2, 0.2) sigma=0.5   a_D0        ancho : I=1.0386±0.0056 (H=1.3710) acierto=0.8997
+prior=(0.6, 0.2, 0.2) sigma=0.5   b_D0+85C    ancho : I=1.0733±0.0043 (H=1.3710) acierto=0.9050
+prior=(0.6, 0.2, 0.2) sigma=0.5   c_D0+-0.9V  XC26  : I=0.7533±0.0012 (H=1.3710) acierto=0.8000
+prior=(0.6, 0.2, 0.2) sigma=0.5   c_D0+-0.9V  ancho : I=1.2383±0.0043 (H=1.3710) acierto=0.9613
+
+tiempo 1336.8 s

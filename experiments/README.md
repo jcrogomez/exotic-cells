@@ -26,6 +26,7 @@ before anything is consolidated. Rules: [`PROTOCOLO_ATAQUES.md`](PROTOCOLO_ATAQU
 | [`xc19_weak_inversion/`](xc19_weak_inversion/README.md), [`xc19_noise/`](xc19_noise/README.md) | The XC-19 single-trap reader: working point, noise and event detection |
 | [`xc19_caps/`](xc19_caps/INFORME.md) | XC-19 channel, stage 1 of the complete channel: real capacitors drawn (`cells/xc19_channel_caps`), post-layout against the ideal, calibration by switched reference capacitor |
 | [`AUDITORIA_HSA_2026-11-13.md`](AUDITORIA_HSA_2026-11-13.md) | Reproducibility audit: committed ngspice runs skipped the PDK's `hsa` mode (Docker `SPICE_USERINIT_DIR`); 11 XC-19 decks change +3.3 % in absolute time, ratios unchanged; those decks rerun 2026-11-14 |
+| [`xc20_hipotesis/`](xc20_hipotesis/INFORME.md) | Hypothesis-engine prototype on XC-20: tunnelling vs ohmic bridge vs ordinary junction; which drawn structures and readings separate them (information gain), independently verified |
 | [`precheck_map/`](precheck_map/README.md) | Which deliberate rule breaks the Tiny Tapeout precheck accepts and which it rejects |
 | [`litho_explore/`](litho_explore/README.md) | Aerial-image lithography model of drawn shapes near the resolution limit |
 | [`xc52_demod_test/`](xc52_demod_test/) | Which terms survive the four-state field demodulation of XC-52 |
