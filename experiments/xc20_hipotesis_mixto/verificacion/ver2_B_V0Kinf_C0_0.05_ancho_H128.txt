@@ -1,0 +1,12 @@
+# V0Kinf C0_0.05 ancho ntrain=300000/mec ntest=100000/mec H=128 epocas=8 semilla=1 (datos 1 s)
+V0Kinf C0_0.05 ancho D0             I>=1.3540±0.0007 acierto=0.8953  [T->0.70/0.30/0.00 R->0.02/0.98/0.00 G->0.00/0.00/1.00]  (34 s)
+V0Kinf C0_0.05 ancho D0+85C         I>=1.4448±0.0008 acierto=0.9559  [T->0.93/0.07/0.00 R->0.06/0.94/0.00 G->0.00/0.00/1.00]  (93 s)
+V0Kinf C0_0.05 ancho D0+-0.9V       I>=1.5850±0.0000 acierto=1.0000  [T->1.00/0.00/0.00 R->0.00/1.00/0.00 G->0.00/0.00/1.00]  (148 s)
+V0Kinf C0_0.05 ancho D0+peine       I>=1.3553±0.0007 acierto=0.8954  [T->0.70/0.30/0.00 R->0.01/0.99/0.00 G->0.00/0.00/1.00]  (198 s)
+V0Kinf C0_0.05 ancho D0+85C+-0.9V   I>=1.5850±0.0000 acierto=1.0000  [T->1.00/0.00/0.00 R->0.00/1.00/0.00 G->0.00/0.00/1.00]  (249 s)
+V0Kinf C0_0.05 ancho DIF D0+-0.9V - D0+85C = +0.1402 ± 0.0008  (diferencia de cotas)
+V0Kinf C0_0.05 ancho DIF D0+85C - D0 = +0.0908 ± 0.0008  (diferencia de cotas)
+V0Kinf C0_0.05 ancho DIF D0+-0.9V - D0 = +0.2309 ± 0.0007  (diferencia de cotas)
+V0Kinf C0_0.05 ancho DIF D0+peine - D0 = +0.0013 ± 0.0001  (diferencia de cotas)
+V0Kinf C0_0.05 ancho DIF D0+85C+-0.9V - D0+-0.9V = +0.0000 ± 0.0000  (diferencia de cotas)
+# tiempo 250 s

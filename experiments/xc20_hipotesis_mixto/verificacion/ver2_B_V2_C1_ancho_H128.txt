@@ -1,0 +1,12 @@
+# V2 C1 ancho ntrain=300000/mec ntest=100000/mec H=128 epocas=8 semilla=1 (datos 1 s)
+V2 C1 ancho D0             I>=1.4029±0.0009 acierto=0.9393  [T->0.89/0.11/0.00 R->0.07/0.93/0.00 G->0.00/0.00/1.00]  (37 s)
+V2 C1 ancho D0+85C         I>=1.5665±0.0004 acierto=0.9956  [T->0.99/0.01/0.00 R->0.01/0.99/0.00 G->0.00/0.00/1.00]  (72 s)
+V2 C1 ancho D0+-0.9V       I>=1.5666±0.0004 acierto=0.9957  [T->1.00/0.00/0.00 R->0.01/0.99/0.00 G->0.00/0.00/1.00]  (107 s)
+V2 C1 ancho D0+peine       I>=1.4052±0.0009 acierto=0.9394  [T->0.89/0.11/0.00 R->0.08/0.92/0.00 G->0.00/0.00/1.00]  (141 s)
+V2 C1 ancho D0+85C+-0.9V   I>=1.5819±0.0003 acierto=0.9995  [T->1.00/0.00/0.00 R->0.00/1.00/0.00 G->0.00/0.00/1.00]  (172 s)
+V2 C1 ancho DIF D0+-0.9V - D0+85C = +0.0001 ± 0.0005  (diferencia de cotas)
+V2 C1 ancho DIF D0+85C - D0 = +0.1635 ± 0.0009  (diferencia de cotas)
+V2 C1 ancho DIF D0+-0.9V - D0 = +0.1636 ± 0.0009  (diferencia de cotas)
+V2 C1 ancho DIF D0+peine - D0 = +0.0023 ± 0.0003  (diferencia de cotas)
+V2 C1 ancho DIF D0+85C+-0.9V - D0+-0.9V = +0.0154 ± 0.0004  (diferencia de cotas)
+# tiempo 173 s

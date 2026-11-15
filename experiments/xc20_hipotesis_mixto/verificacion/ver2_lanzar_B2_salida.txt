@@ -1,0 +1,12 @@
+inicio V1 C1 ancho Sun Nov 15 17:30:28 EST 2026
+inicio V1 C0_0.05 ancho Sun Nov 15 17:30:28 EST 2026
+inicio V2 C0_0.05 ancho Sun Nov 15 17:30:28 EST 2026
+fin V2 C0_0.05 ancho Sun Nov 15 17:34:27 EST 2026
+inicio V2 C1 ancho Sun Nov 15 17:34:27 EST 2026
+fin V1 C1 ancho Sun Nov 15 17:35:30 EST 2026
+inicio V3 C0_0.05 ancho Sun Nov 15 17:35:30 EST 2026
+fin V1 C0_0.05 ancho Sun Nov 15 17:35:32 EST 2026
+inicio V3 C1 ancho Sun Nov 15 17:35:32 EST 2026
+fin V2 C1 ancho Sun Nov 15 17:37:20 EST 2026
+fin V3 C0_0.05 ancho Sun Nov 15 17:38:14 EST 2026
+fin V3 C1 ancho Sun Nov 15 17:38:15 EST 2026

@@ -1,0 +1,14 @@
+# V4 C1 ancho ntrain=600000/mec ntest=100000/mec H=256 epocas=10 semilla=2 (datos 33 s)
+V4 C1 ancho D0             I>=1.0751±0.0009 acierto=0.6493  I(tunel)>=0.4114±0.0006 acierto_tunel=0.7664  [T->0.81/0.04/0.15/0.00 R->0.32/0.52/0.16/0.00 M->0.30/0.43/0.27/0.00 G->0.00/0.00/0.00/1.00]  (200 s)
+/Users/juancarlosromero/made-in-TaiJuan/projects/ZTASIC/06_exotic_cells/experiments/xc20_hipotesis_mixto/verificacion/ver2_clasif.py:37: RuntimeWarning: overflow encountered in exp
+  s = 1.0 / (1.0 + np.exp(-x))
+V4 C1 ancho D0+85C         I>=1.3498±0.0009 acierto=0.7589  I(tunel)>=0.5697±0.0007 acierto_tunel=0.8268  [T->0.90/0.01/0.09/0.00 R->0.02/0.88/0.10/0.00 M->0.18/0.56/0.26/0.00 G->0.00/0.00/0.00/1.00]  (565 s)
+V4 C1 ancho D0+-0.9V       I>=1.4424±0.0008 acierto=0.7834  I(tunel)>=0.5643±0.0006 acierto_tunel=0.8191  [T->0.97/0.00/0.03/0.00 R->0.02/0.85/0.14/0.00 M->0.12/0.57/0.31/0.00 G->0.00/0.00/0.00/1.00]  (874 s)
+V4 C1 ancho D0+peine       I>=1.0989±0.0009 acierto=0.6588  I(tunel)>=0.4188±0.0006 acierto_tunel=0.7691  [T->0.81/0.09/0.09/0.00 R->0.30/0.61/0.09/0.00 M->0.29/0.50/0.21/0.00 G->0.00/0.00/0.00/1.00]  (1110 s)
+V4 C1 ancho D0+85C+-0.9V   I>=1.4886±0.0008 acierto=0.8033  I(tunel)>=0.6029±0.0006 acierto_tunel=0.8364  [T->0.98/0.00/0.02/0.00 R->0.00/0.93/0.07/0.00 M->0.11/0.58/0.31/0.00 G->0.00/0.00/0.00/1.00]  (1402 s)
+V4 C1 ancho DIF D0+-0.9V - D0+85C = +0.0926 ± 0.0010  (diferencia de cotas)
+V4 C1 ancho DIF D0+85C - D0 = +0.2746 ± 0.0009  (diferencia de cotas)
+V4 C1 ancho DIF D0+-0.9V - D0 = +0.3673 ± 0.0010  (diferencia de cotas)
+V4 C1 ancho DIF D0+peine - D0 = +0.0238 ± 0.0004  (diferencia de cotas)
+V4 C1 ancho DIF D0+85C+-0.9V - D0+-0.9V = +0.0462 ± 0.0005  (diferencia de cotas)
+# tiempo 1403 s

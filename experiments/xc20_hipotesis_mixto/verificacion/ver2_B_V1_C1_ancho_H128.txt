@@ -1,0 +1,12 @@
+# V1 C1 ancho ntrain=300000/mec ntest=100000/mec H=128 epocas=8 semilla=1 (datos 1 s)
+V1 C1 ancho D0             I>=1.3139±0.0009 acierto=0.7313  I(tunel)>=0.4910±0.0006 acierto_tunel=0.7805  [T->0.87/0.11/0.03/0.00 R->0.07/0.93/0.00/0.00 M->0.10/0.76/0.13/0.00 G->0.00/0.00/0.00/1.00]  (64 s)
+V1 C1 ancho D0+85C         I>=1.4762±0.0007 acierto=0.7852  I(tunel)>=0.5523±0.0005 acierto_tunel=0.8057  [T->0.96/0.00/0.03/0.00 R->0.00/0.95/0.04/0.00 M->0.05/0.73/0.22/0.00 G->0.00/0.00/0.00/1.00]  (137 s)
+V1 C1 ancho D0+-0.9V       I>=1.5593±0.0005 acierto=0.8111  I(tunel)>=0.5669±0.0005 acierto_tunel=0.8128  [T->1.00/0.00/0.00/0.00 R->0.00/0.97/0.03/0.00 M->0.01/0.71/0.28/0.00 G->0.00/0.00/0.00/1.00]  (200 s)
+V1 C1 ancho D0+peine       I>=1.3156±0.0009 acierto=0.7315  I(tunel)>=0.4927±0.0005 acierto_tunel=0.7807  [T->0.87/0.11/0.03/0.00 R->0.07/0.93/0.00/0.00 M->0.10/0.76/0.13/0.00 G->0.00/0.00/0.00/1.00]  (250 s)
+V1 C1 ancho D0+85C+-0.9V   I>=1.5643±0.0005 acierto=0.8155  I(tunel)>=0.5717±0.0005 acierto_tunel=0.8171  [T->1.00/0.00/0.00/0.00 R->0.00/0.96/0.04/0.00 M->0.00/0.69/0.30/0.00 G->0.00/0.00/0.00/1.00]  (301 s)
+V1 C1 ancho DIF D0+-0.9V - D0+85C = +0.0830 ± 0.0007  (diferencia de cotas)
+V1 C1 ancho DIF D0+85C - D0 = +0.1623 ± 0.0008  (diferencia de cotas)
+V1 C1 ancho DIF D0+-0.9V - D0 = +0.2453 ± 0.0009  (diferencia de cotas)
+V1 C1 ancho DIF D0+peine - D0 = +0.0017 ± 0.0002  (diferencia de cotas)
+V1 C1 ancho DIF D0+85C+-0.9V - D0+-0.9V = +0.0050 ± 0.0002  (diferencia de cotas)
+# tiempo 302 s

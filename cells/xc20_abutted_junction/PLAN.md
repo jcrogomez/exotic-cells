@@ -32,6 +32,13 @@ fuente p+ y drenaje n+: transistor túnel; borde legal por buscar). Absorbe XC-3
 
 **[corregido 2026-11-14 20:19]** Prototipo del motor de hipótesis ([informe](../../experiments/xc20_hipotesis/INFORME.md), verificado por código independiente; modelo, no silicio): con el lector de precarga de XC-26 tal cual (techo calculado 1,25 nA) el primer canal de §5.2 no distingue túnel de puente óhmico: los dos saturan. Con un lector de nA a mA acierta el 90 %, y una segunda tensión inversa (−0,9 V) separa los tres mecanismos mejor que la temperatura (+0,22 frente a +0,08 bits); el peine no añade nada. Esto se deduce ya de los intervalos; el motor da el tamaño y que el orden resiste los supuestos. Propuesta, pendiente de Juan: lector de rango ancho y dos tensiones antes que dos temperaturas.
 
+**[corregido 2026-11-15 18:10]** Ronda 2 del motor ([informe](../../experiments/xc20_hipotesis_mixto/INFORME.md); verificada con
+otro estimador; modelo, no silicio), con túnel y puente a la vez, puente no lineal, excitador con límite y ganancia común. Leer
+d = 0,27 con un lector sensible y d = 0 con uno de rango ancho (un lector por estructura) gana a cualquier lector único en todo lo
+modelado: el túnel residual a 0,27 µm, si la supresión es ≤ 10⁹, cae en el rango del lector de XC-26 y hace de d = 0,27 el mejor
+detector de túnel, no solo el control térmico. Con ganancia común, la segunda temperatura casi empata con la segunda tensión. La
+incógnita que decide es cuánto se suprime el túnel a 0,27 µm (solo hay «≥ 7·10³»). Propuesta, pendiente de Juan.
+
 ## 2. Lectura y piso
 
 Lector de precarga y descarga (el instrumento de XC-26): la unión en inversa a 1,8 V mueve un nodo y se cuenta el tiempo.

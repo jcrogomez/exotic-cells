@@ -1,0 +1,5 @@
+# V0Kinf C0_0.5 XC26 ntrain=300000/mec ntest=100000/mec H=128 epocas=8 semilla=1 (datos 1 s)
+V0Kinf C0_0.5 XC26 D0+-0.9V       I>=0.9581±0.0004 acierto=0.7049  [T->0.11/0.89/0.00 R->0.00/1.00/0.00 G->0.00/0.00/1.00]  (22 s)
+V0Kinf C0_0.5 XC26 D0             I>=0.9186±0.0000 acierto=0.6672  [T->0.09/0.91/0.00 R->0.09/0.91/0.00 G->0.00/0.00/1.00]  (44 s)
+V0Kinf C0_0.5 XC26 DIF D0+-0.9V - D0 = +0.0395 ± 0.0004  (diferencia de cotas)
+# tiempo 44 s

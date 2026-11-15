@@ -1,0 +1,4 @@
+V1: bajo M (sin excitador), fracción túnel a -1,8 V/27 C: P(f<0,01)=0.680 P(f<0,1)=0.845 P(f>0,9)=0.007 P(f>0,99)=0.000
+   t0/K en d=0,27: P(>1 nA)=0.173  P(>1,25 nA)=0.156 P(>150 fA)=0.940  P(>2 pA)=0.754
+V4: bajo M (sin excitador), fracción túnel a -1,8 V/27 C: P(f<0,01)=0.479 P(f<0,1)=0.652 P(f>0,9)=0.111 P(f>0,99)=0.037
+   t0/K en d=0,27: P(>1 nA)=0.173  P(>1,25 nA)=0.155 P(>150 fA)=0.939  P(>2 pA)=0.751

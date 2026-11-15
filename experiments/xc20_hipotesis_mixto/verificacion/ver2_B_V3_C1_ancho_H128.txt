@@ -1,0 +1,14 @@
+# V3 C1 ancho ntrain=300000/mec ntest=100000/mec H=128 epocas=8 semilla=1 (datos 25 s)
+V3 C1 ancho D0             I>=1.3821±0.0010 acierto=0.9381  [T->0.88/0.12/0.00 R->0.07/0.93/0.00 G->0.00/0.00/1.00]  (58 s)
+/Users/juancarlosromero/made-in-TaiJuan/projects/ZTASIC/06_exotic_cells/experiments/xc20_hipotesis_mixto/verificacion/ver2_clasif.py:37: RuntimeWarning: overflow encountered in exp
+  s = 1.0 / (1.0 + np.exp(-x))
+V3 C1 ancho D0+85C         I>=1.5059±0.0008 acierto=0.9786  [T->0.96/0.04/0.00 R->0.03/0.97/0.00 G->0.00/0.00/1.00]  (91 s)
+V3 C1 ancho D0+-0.9V       I>=1.5826±0.0003 acierto=0.9998  [T->1.00/0.00/0.00 R->0.00/1.00/0.00 G->0.00/0.00/1.00]  (118 s)
+V3 C1 ancho D0+peine       I>=1.4090±0.0009 acierto=0.9430  [T->0.91/0.09/0.00 R->0.08/0.92/0.00 G->0.00/0.00/1.00]  (140 s)
+V3 C1 ancho D0+85C+-0.9V   I>=1.5831±0.0002 acierto=0.9998  [T->1.00/0.00/0.00 R->0.00/1.00/0.00 G->0.00/0.00/1.00]  (163 s)
+V3 C1 ancho DIF D0+-0.9V - D0+85C = +0.0767 ± 0.0008  (diferencia de cotas)
+V3 C1 ancho DIF D0+85C - D0 = +0.1238 ± 0.0009  (diferencia de cotas)
+V3 C1 ancho DIF D0+-0.9V - D0 = +0.2005 ± 0.0010  (diferencia de cotas)
+V3 C1 ancho DIF D0+peine - D0 = +0.0269 ± 0.0005  (diferencia de cotas)
+V3 C1 ancho DIF D0+85C+-0.9V - D0+-0.9V = +0.0005 ± 0.0001  (diferencia de cotas)
+# tiempo 163 s

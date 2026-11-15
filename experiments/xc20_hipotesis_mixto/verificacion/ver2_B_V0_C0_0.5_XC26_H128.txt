@@ -1,0 +1,8 @@
+# V0 C0_0.5 XC26 ntrain=300000/mec ntest=100000/mec H=128 epocas=8 semilla=1 (datos 1 s)
+V0 C0_0.5 XC26 D0+-0.9V       I>=1.3907±0.0011 acierto=0.9413  [T->0.90/0.10/0.00 R->0.08/0.92/0.00 G->0.00/0.00/1.00]  (22 s)
+V0 C0_0.5 XC26 D0+85C         I>=1.3749±0.0011 acierto=0.9444  [T->0.88/0.12/0.00 R->0.05/0.95/0.00 G->0.00/0.00/1.00]  (44 s)
+V0 C0_0.5 XC26 D0             I>=1.3259±0.0012 acierto=0.9213  [T->0.88/0.12/0.00 R->0.12/0.88/0.00 G->0.00/0.00/1.00]  (62 s)
+V0 C0_0.5 XC26 DIF D0+-0.9V - D0+85C = +0.0158 ± 0.0009  (diferencia de cotas)
+V0 C0_0.5 XC26 DIF D0+85C - D0 = +0.0490 ± 0.0006  (diferencia de cotas)
+V0 C0_0.5 XC26 DIF D0+-0.9V - D0 = +0.0648 ± 0.0008  (diferencia de cotas)
+# tiempo 63 s

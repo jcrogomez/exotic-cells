@@ -1,0 +1,6 @@
+D3 C0_0.05: ancho - XC26 (D0+-0.9V): +0.1083 ± 0.0012 bits (diferencia de cotas, pareada)
+D3 C0_0.5: ancho - XC26 (D0+-0.9V): -0.0577 ± 0.0014 bits (diferencia de cotas, pareada)
+D3 C1: ancho - XC26 (D0+-0.9V): +0.1395 ± 0.0013 bits (diferencia de cotas, pareada)
+D3 C2: ancho - XC26 (D0+-0.9V): +0.1395 ± 0.0013 bits (diferencia de cotas, pareada)
+P5: C1 - C2, D0+85C (ancho): +0.0609 ± 0.0006 bits (diferencia de cotas, pareada)
+P5: C1 - C2, D0+-0.9V (ancho): +0.0000 ± 0.0000 bits (diferencia de cotas, pareada)
