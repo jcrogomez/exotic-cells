@@ -10,7 +10,7 @@
   "usefulness": "H",
   "information": "H",
   "readiness": "T3",
-  "state": "INSTRUMENT (the forge: formation path for XC-05). Formation path verified in the flow; transformation not demonstrated"
+  "state": "INSTRUMENT (the forge: formation path for XC-05). Formation path verified in the flow; transformation not demonstrated. E-fuse use suggested by a Tiny Tapeout contributor (2026-11-16)"
  },
  {
   "id": "XC-02",

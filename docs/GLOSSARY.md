@@ -11,6 +11,7 @@ Short definitions for readers arriving from digital design or from Tiny Tapeout.
 | **Barber-Agakov bound** | A lower bound on mutual information computed with a trained classifier. Each bound is valid; the *difference* between two of them is not a bound on the difference of the true values |
 | **Boring explanation** | The ordinary cause that would produce the same reading: plain leakage, the reader itself, heat, supply droop, mismatch. Ruled out first |
 | **Calibration step** | A known current, capacitor or gate step on each reader channel. If it shows up and the cell does not, the null is real |
+| **E-fuse** | A thin trace blown on purpose by a current pulse: a one-time-programmable bit. The hard part is that it stays open. In the catalogue it is the XC-01 forge, and a fuse that does not open cleanly leads to the few-channel contact of [XC-05](../cells/xc05_atomic_contact/PLAN.md) |
 | **Extraction** | Turning a layout into a netlist for simulation. Magic's extraction drops the diffusion-length parameters ([LOD](#lod)) |
 | **Hypothesis engine** | For XC-20: a simulation of many possible chips, each read by a candidate design, scored by how much the readings tell us about the mechanism ([round 3](../experiments/xc20_hipotesis_r3/INFORME.md)) |
 | **K** | In XC-20, how much tunnelling drops when the gap opens from 0 to 0.27 µm. Large K: tunnelling vanishes fast |

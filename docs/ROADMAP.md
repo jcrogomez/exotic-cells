@@ -37,10 +37,11 @@ This page is the single to-do list.
 - [ ] XC-19: finish the first complete channel (E4.1 in PLAN_EXPLORATORIO)
 - [ ] XC-14: write its pre-registration now that the shuttle side is open (A2)
 - [ ] Kelvin strips of n+, p+, poly and li next to XC-20: the in-silicon check of A1
+- [ ] E-fuse (XC-01 → XC-05): read papers on fuses without silicide (Q10) before any new XC-01 work; then a pre-registration with two outcomes (clean open / rejoin or few channels) and re-reads over time (P8)
 
 ### Ask
 - [ ] Tiny Tapeout contributor: Q1 (antenna "not enforced" or "negligible")
-- [ ] Tiny Tapeout: Q3 (high voltage), Q5 (local current), Q7 (number of chips)
+- [ ] Tiny Tapeout: Q3 (high voltage), Q5 (local current, now including e-fuse pulses), Q7 (number of chips)
 - [ ] Look at the GF180 PDK for the high-voltage families (Q9)
 
 ### Later
@@ -50,6 +51,7 @@ This page is the single to-do list.
 
 ## Done (most recent first)
 
+- 2026-11-16 · A Tiny Tapeout contributor suggested the e-fuse and named its hard part (A6); XC-01/XC-05 moved to tier B.
 - 2026-11-16 · A Tiny Tapeout contributor answered silicide and antenna (A1, A2). Juan approved the XC-20 separation matrix (0, 0.27, 0.54, 1.08 µm
   and a no-junction cell) without freezing the macro; round 3 of the engine stays not consolidated
   ([report §7](../experiments/xc20_hipotesis_r3/INFORME.md)). New design rule: structures that hold the ordinary physics

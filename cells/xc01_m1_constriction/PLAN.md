@@ -14,6 +14,8 @@ una escritura o peso fijo, leída por retardo → EFLD-01: formar una, leer cont
 infraestructura verificada (DRC 0, LVS 17/17, cada vía bajo régimen: `NIGHT_SPRINT_2026-11-05.md`). Abierto: el tiempo de formación
 no tiene modelo, y hace falta permiso de estrés.
 
+**[corregido 2026-11-16 09:24]** Un colaborador de Tiny Tapeout (2026-11-16) ve el e-fuse interesante y potencialmente útil, pero difícil: romper una traza corta es fácil; garantizar que no vuelva a unirse, no. Recomienda leer papers antes. Consecuencias: (1) la forja sube al nivel B del ranking como e-fuse, con dos desenlaces útiles: corte limpio (fusible) o reconexión / pocos átomos (XC-05); (2) coincide con la ronda 2: en met1 la barrera puentea (20–240 Ω/µm), así que un corte limpio no está garantizado; (3) sin siliciuro (A1), el mecanismo clásico por electromigración de siliciuro sobre poly no estaría disponible (de memoria, sin leer). Registro: [`docs/OPEN_QUESTIONS.md`](../../docs/OPEN_QUESTIONS.md) A6, Q10, P8.
+
 **Configuraciones añadidas por la búsqueda del 2026-11-12:**
 
 - **XC-01/02:** barrer el largo del cuello. Producto de Blech 1260 A/cm en Al puro a 350 °C, rango 900–9000 según estructura

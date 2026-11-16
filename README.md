@@ -114,7 +114,7 @@ still open.
 
 | | ID | Family | Mechanism | Engine | Vehicle | U | I | T | State |
 |---|---|---|---|---|---|---|---|---|---|
-| 🔵 | XC-01 | [Metal-1 constriction](cells/xc01_m1_constriction/PLAN.md) | Electromigration | F | D | H | H | T3 | INSTRUMENT (the forge: formation path for XC-05). Formation path verified in the flow; transformation not demonstrated |
+| 🔵 | XC-01 | [Metal-1 constriction](cells/xc01_m1_constriction/PLAN.md) | Electromigration | F | D | H | H | T3 | INSTRUMENT (the forge: formation path for XC-05). Formation path verified in the flow; transformation not demonstrated. E-fuse use suggested by a Tiny Tapeout contributor (2026-11-16) |
 | ⚪ | XC-02 | [Local-interconnect constriction](cells/xc02_li_constriction/PLAN.md) | Joule heating | F+P | D | H | H | – | MERGED into XC-01. Geometry drawn, not integrated |
 | ⚪ | XC-03 | [Contact or via as the transformation site](cells/xc03_contact_site/PLAN.md) | Interface failure | P | D | M | H | – | MERGED into XC-01. Observation only |
 | ⚪ | XC-04 | [Tunnelling nanogap](cells/xc04_tunnel_nanogap/PLAN.md) | Direct tunnelling across about 1 nm | P | H/S | M | H | – | MERGED into XC-05. Outside the range of a digital readout |
