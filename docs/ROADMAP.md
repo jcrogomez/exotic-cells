@@ -2,7 +2,8 @@
 
 Where MISFIT is, and what comes next. No dates are promised. Last update: 2026-11-16. The detailed work per front is in
 [PLAN_EXPLORATORIO](PLAN_EXPLORATORIO.md) (Spanish); the gates before tapeout are in [PIPELINE](PIPELINE.md#gates-before-tapeout).
-This page is the single to-do list.
+This page is the single to-do list. Everything that can be studied before silicon, by kind, is in the
+[research agenda](RESEARCH_AGENDA.md).
 
 ## Where we are
 
@@ -70,6 +71,7 @@ This page is the single to-do list.
 
 ## Done (most recent first)
 
+- 2026-11-16 · Repo reorganised for newcomers: research agenda, architectures, good first tasks, shared-instrument figure.
 - 2026-11-16 · A Tiny Tapeout contributor: digital pins only unless analog voltages are needed (extra cost); prioritise DFT (A8).
 - 2026-11-16 · A Tiny Tapeout contributor: ~8 mA per tile is fine (A7); analog spec read (0.1 V drop at 20 mA; 4 mA on analog pins).
 - 2026-11-16 · A Tiny Tapeout contributor suggested the e-fuse and named its hard part (A6); XC-01/XC-05 moved to tier B.

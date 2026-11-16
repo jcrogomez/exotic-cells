@@ -37,7 +37,7 @@ for b in blocks:
         if st in ("open", "instrument") and not re.search(r"open in the catalogue|instrument", b, re.I):
             errors.append(f"{i} is '{st}' in the catalogue but sits in tier A/B without saying so")
 
-docs = [os.path.join(root, "README.md")] + [os.path.join(root, "docs", f) for f in sorted(os.listdir(os.path.join(root, "docs")))
+docs = [os.path.join(root, "README.md"), os.path.join(root, "CONTRIBUTING.md")] + [os.path.join(root, "docs", f) for f in sorted(os.listdir(os.path.join(root, "docs")))
                                              if f.endswith(".md")]
 for f in docs:
     d = os.path.dirname(f)

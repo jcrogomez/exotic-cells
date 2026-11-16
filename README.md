@@ -28,6 +28,9 @@ it tells us something about how SKY130 is really made that is not written down a
 | The chip | [MISFIT proposal](docs/PROPOSAL.md) |
 | The short version, as I'd explain it on Discord | [For Tiny Tapeout folks](docs/FOR_TINY_TAPEOUT.md) |
 | Terms like LOD, RTN, kT/C or Barber-Agakov | [Glossary](docs/GLOSSARY.md) |
+| Sources to read, models to build, maths to test, experiments to run | [Research agenda](docs/RESEARCH_AGENDA.md) |
+| What each cell would make possible, with standard cells or on its own | [Architectures](docs/ARCHITECTURES.md) |
+| A small task to start with | [Good first tasks](CONTRIBUTING.md#good-first-tasks) |
 | The whole idea space | [Catalogue](#catalogue) below |
 
 ## What has been tested, and what has not
@@ -52,6 +55,8 @@ oscillators 2.5–5.1 % faster when put back. [Residual](residual/README.md) ann
 **How it will be measured.** Almost everything is read digitally: a cell's current discharges a precharged node and an on-chip
 counter times it. The Tiny Tapeout board only reads counters. Each channel carries a known calibration, so a null is a real
 null and not a broken reader.
+
+![One reader for many cells, read through digital pins only](docs/figures/shared_instrument.svg)
 
 **Colour is evidence, not readiness.** A family turns green when it survives the attack *and* the independent verifier: it
 means "worth designing for silicon", not "works" and not "ready for tapeout". Readiness for tapeout is a second, independent

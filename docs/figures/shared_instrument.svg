@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Helvetica, Arial, sans-serif" font-size="14">
+  <title>MISFIT shared instrument: exotic cells and references, multiplexer, reader, counters, digital pins, with design-for-test paths</title>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+  </defs>
+  <rect width="960" height="400" fill="#ffffff"/>
+  <text x="20" y="30" font-size="17" font-weight="bold" fill="#1f2328">One reader for many cells, read through digital pins only</text>
+
+  <!-- cells column -->
+  <g font-size="13">
+    <rect x="20" y="52" width="210" height="34" rx="6" fill="#dafbe1" stroke="#1a7f37"/><text x="32" y="74">XC-20 tunnel matrix</text>
+    <rect x="20" y="94" width="210" height="34" rx="6" fill="#dafbe1" stroke="#1a7f37"/><text x="32" y="116">XC-19 single-trap transistor</text>
+    <rect x="20" y="136" width="210" height="34" rx="6" fill="#dafbe1" stroke="#1a7f37"/><text x="32" y="158">XC-14 floating gates</text>
+    <rect x="20" y="178" width="210" height="34" rx="6" fill="#dafbe1" stroke="#1a7f37"/><text x="32" y="200">XC-01 e-fuse, others</text>
+    <rect x="20" y="220" width="210" height="34" rx="6" fill="#eaeef2" stroke="#8c959f"/><text x="32" y="242">references (no target physics)</text>
+    <rect x="20" y="262" width="210" height="34" rx="6" fill="#fff8c5" stroke="#9a6700"/><text x="32" y="284">calibration: I, C, gate step</text>
+  </g>
+  <text x="20" y="320" font-size="12" fill="#57606a">green: exotic cells · grey: ordinary-physics</text>
+  <text x="20" y="336" font-size="12" fill="#57606a">references · yellow: known inputs (DFT)</text>
+
+  <!-- arrows to mux -->
+  <g stroke="#57606a" stroke-width="1.5" marker-end="url(#a)">
+    <line x1="230" y1="69" x2="298" y2="150"/><line x1="230" y1="111" x2="298" y2="160"/>
+    <line x1="230" y1="153" x2="298" y2="170"/><line x1="230" y1="195" x2="298" y2="180"/>
+    <line x1="230" y1="237" x2="298" y2="190"/><line x1="230" y1="279" x2="298" y2="200"/>
+  </g>
+
+  <!-- mux -->
+  <polygon points="300,120 360,140 360,230 300,250" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="308" y="190" font-weight="bold" fill="#0969da">mux</text>
+
+  <!-- reader -->
+  <line x1="360" y1="185" x2="408" y2="185" stroke="#57606a" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="410" y="140" width="180" height="90" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="424" y="166" font-weight="bold" fill="#0969da">reader</text>
+  <text x="424" y="188" font-size="13">precharge a node,</text>
+  <text x="424" y="206" font-size="13">the cell's current</text>
+  <text x="424" y="224" font-size="13">discharges it</text>
+
+  <!-- counter -->
+  <line x1="590" y1="185" x2="638" y2="185" stroke="#57606a" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="640" y="140" width="130" height="90" rx="8" fill="#ddf4ff" stroke="#0969da"/>
+  <text x="654" y="166" font-weight="bold" fill="#0969da">counter</text>
+  <text x="654" y="188" font-size="13">time of the</text>
+  <text x="654" y="206" font-size="13">discharge</text>
+  <text x="654" y="224" font-size="13">→ a number</text>
+
+  <!-- pins -->
+  <line x1="770" y1="185" x2="818" y2="185" stroke="#57606a" stroke-width="1.5" marker-end="url(#a)"/>
+  <rect x="820" y="140" width="120" height="90" rx="8" fill="#f6f8fa" stroke="#1f2328"/>
+  <text x="834" y="166" font-weight="bold">digital pins</text>
+  <text x="834" y="188" font-size="13">TT board reads</text>
+  <text x="834" y="206" font-size="13">counters only</text>
+
+  <!-- DFT band -->
+  <rect x="300" y="268" width="640" height="104" rx="8" fill="#fff8c5" stroke="#9a6700"/>
+  <text x="314" y="292" font-weight="bold" fill="#9a6700">Design for test (gate 7, before anything is frozen)</text>
+  <g font-size="13" fill="#1f2328">
+    <text x="314" y="314">• reader self-test from the pins, before trusting any cell</text>
+    <text x="314" y="334">• counter and mux readback · safe power-up: nothing pulses until enabled</text>
+    <text x="314" y="354">• per-macro enables; find a bad channel and exclude it · no reading during pulses</text>
+  </g>
+  <text x="20" y="390" font-size="12" fill="#57606a">Conceptual block diagram. The reader is drawn and DRC clean (XC-19); nothing here is fabricated.</text>
+</svg>

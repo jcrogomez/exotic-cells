@@ -41,3 +41,15 @@ Priority entries (to be read first) are marked P.
 | P | Bahr, Marathe, Weinstein, J. Microelectromech. Syst. 24, 1520 (2015) | XC-55 | Exists. Quality factor 252 near 2.8 GHz in that paper; above 13 000 at 3.185 GHz reported by the same group in 32 nm SOI |
 | P | Leduc et al., APL 97, 102509 (2010), arXiv 1003.5584 | XC-54 | Critical temperature of titanium nitride between 0 and 5 K with composition (abstract) |
 | | Gharib et al., arXiv 2609.35624 | XC-54 | Titanium nitride nanowires in the resistor layer of a commercial 22 nm process, measured between 0.15 and 1.19 K (abstract). Nothing found for local interconnect or barrier layers |
+
+## Added on 2026-11-16: searches still to do
+
+No source identified yet for these; each is a search task, not a citation. They come from advice on the Tiny Tapeout side
+and from the open questions ([OPEN_QUESTIONS](OPEN_QUESTIONS.md)).
+
+| | Search | For | Why |
+|---|---|---|---|
+| P | E-fuses in processes without silicide on poly; metal and TiN fuses; reports of blown traces rejoining | XC-01, XC-05 (Q10, P8) | A Tiny Tapeout contributor recalls that rejoining is a known problem but not where it was reported. Classic e-fuses rely on silicide electromigration (from memory, unread) |
+| P | Plasma (antenna) charge surviving the anneal on thick gate oxide | XC-14 (P3) | Decides whether a fab-written gate can still be read |
+| | SKY130 substrate resistivity | XC-26 (P4) | The optical link lives at ≤ 10 Ω·cm and dies at ≥ 20 |
+| | Electrical specs of the Tiny Tapeout tile power switches (`tt-multiplexer/pg/sky130`, `iic-jku/sky130_power_gate`) | All (A7) | On-resistance and pulse rating are not stated on the pages read |
