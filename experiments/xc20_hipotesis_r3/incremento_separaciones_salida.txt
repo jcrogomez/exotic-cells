@@ -94,4 +94,61 @@ las dos juntas         (E4 − E2) · I(s_F;Y)             +0.0338 ± 0.0005  [b
 las dos juntas         (E4 − E2) · I(clase;Y)           +0.0415 ± 0.0006  [bajo umbral]
 las dos juntas         (E4 − E2) · estrechamiento d.t. log10 B (décadas) +0.0400 ± 0.0002
 
-1,08 µm sin 0,54 µm (E2 + d108): no hay diseño con esa combinación en la ronda 3 → [?]
+# E2 + d108 y reparto de Shapley (PREREG_E2d108.md)
+# φ(0,54) = ½[(E3 − E2) + (E4 − E2d108)] · φ(1,08) = ½[(E2d108 − E2) + (E4 − E3)]; el ± de φ es pareado sobre los mismos chips
+
+## W1 · lector A2 · calibración C3b
+1,08 µm dado E2 (E2d108 − E2)   · I(túnel;Y)           +0.0103 ± 0.0002  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(túnel;Y)           +0.0008 ± 0.0001  [bajo umbral]
+Shapley · I(túnel;Y)           φ(0,54) = +0.0055 ± 0.0001 · φ(1,08) = +0.0057 ± 0.0001
+1,08 µm dado E2 (E2d108 − E2)   · I(Kbin;Y|túnel)      +0.0895 ± 0.0010  [≥ 0,05 y > 2σ]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(Kbin;Y|túnel)      +0.0107 ± 0.0005  [bajo umbral]
+Shapley · I(Kbin;Y|túnel)      φ(0,54) = +0.0520 ± 0.0006 · φ(1,08) = +0.0482 ± 0.0006
+1,08 µm dado E2 (E2d108 − E2)   · I(M;Y)               +0.0461 ± 0.0004  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(M;Y)               +0.0012 ± 0.0001  [bajo umbral]
+Shapley · I(M;Y)               φ(0,54) = +0.0191 ± 0.0002 · φ(1,08) = +0.0282 ± 0.0003
+1,08 µm dado E2 (E2d108 − E2)   · I(F/túnel res.;Y)    +0.0000 ± 0.0000  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(F/túnel res.;Y)    -0.0000 ± 0.0000  [bajo umbral]
+Shapley · I(F/túnel res.;Y)    φ(0,54) = +0.0000 ± 0.0000 · φ(1,08) = +0.0000 ± 0.0000
+
+## W1 · lector S10 · calibración C3b
+1,08 µm dado E2 (E2d108 − E2)   · I(túnel;Y)           +0.0044 ± 0.0002  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(túnel;Y)           +0.0010 ± 0.0001  [bajo umbral]
+Shapley · I(túnel;Y)           φ(0,54) = +0.0026 ± 0.0001 · φ(1,08) = +0.0028 ± 0.0001
+1,08 µm dado E2 (E2d108 − E2)   · I(Kbin;Y|túnel)      +0.0408 ± 0.0008  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(Kbin;Y|túnel)      +0.0082 ± 0.0005  [bajo umbral]
+Shapley · I(Kbin;Y|túnel)      φ(0,54) = +0.0251 ± 0.0005 · φ(1,08) = +0.0240 ± 0.0005
+1,08 µm dado E2 (E2d108 − E2)   · I(M;Y)               +0.0072 ± 0.0003  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(M;Y)               +0.0013 ± 0.0001  [bajo umbral]
+Shapley · I(M;Y)               φ(0,54) = +0.0026 ± 0.0001 · φ(1,08) = +0.0059 ± 0.0002
+1,08 µm dado E2 (E2d108 − E2)   · I(F/túnel res.;Y)    +0.0000 ± 0.0000  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(F/túnel res.;Y)    -0.0000 ± 0.0000  [bajo umbral]
+Shapley · I(F/túnel res.;Y)    φ(0,54) = +0.0000 ± 0.0000 · φ(1,08) = +0.0000 ± 0.0000
+
+## W2 · lector A2 · calibración C3b
+1,08 µm dado E2 (E2d108 − E2)   · I(s_T;Y)             +0.0028 ± 0.0002  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(s_T;Y)             +0.0116 ± 0.0003  [bajo umbral]
+Shapley · I(s_T;Y)             φ(0,54) = +0.0110 ± 0.0003 · φ(1,08) = +0.0034 ± 0.0001
+1,08 µm dado E2 (E2d108 − E2)   · I(Kbin;Y|túnel)      +0.0375 ± 0.0009  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(Kbin;Y|túnel)      +0.0857 ± 0.0011  [≥ 0,05 y > 2σ]
+Shapley · I(Kbin;Y|túnel)      φ(0,54) = +0.0897 ± 0.0010 · φ(1,08) = +0.0334 ± 0.0005
+1,08 µm dado E2 (E2d108 − E2)   · I(s_F;Y)             +0.0435 ± 0.0006  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(s_F;Y)             +0.0377 ± 0.0005  [bajo umbral]
+Shapley · I(s_F;Y)             φ(0,54) = +0.0423 ± 0.0004 · φ(1,08) = +0.0389 ± 0.0004
+1,08 µm dado E2 (E2d108 − E2)   · I(clase;Y)           +0.0488 ± 0.0006  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(clase;Y)           +0.0445 ± 0.0006  [bajo umbral]
+Shapley · I(clase;Y)           φ(0,54) = +0.0506 ± 0.0005 · φ(1,08) = +0.0427 ± 0.0005
+
+## W2 · lector S10 · calibración C3b
+1,08 µm dado E2 (E2d108 − E2)   · I(s_T;Y)             +0.0019 ± 0.0002  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(s_T;Y)             +0.0067 ± 0.0002  [bajo umbral]
+Shapley · I(s_T;Y)             φ(0,54) = +0.0064 ± 0.0002 · φ(1,08) = +0.0022 ± 0.0001
+1,08 µm dado E2 (E2d108 − E2)   · I(Kbin;Y|túnel)      +0.0242 ± 0.0008  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(Kbin;Y|túnel)      +0.0450 ± 0.0010  [bajo umbral]
+Shapley · I(Kbin;Y|túnel)      φ(0,54) = +0.0511 ± 0.0008 · φ(1,08) = +0.0181 ± 0.0005
+1,08 µm dado E2 (E2d108 − E2)   · I(s_F;Y)             +0.0170 ± 0.0004  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(s_F;Y)             +0.0168 ± 0.0004  [bajo umbral]
+Shapley · I(s_F;Y)             φ(0,54) = +0.0177 ± 0.0003 · φ(1,08) = +0.0162 ± 0.0003
+1,08 µm dado E2 (E2d108 − E2)   · I(clase;Y)           +0.0191 ± 0.0005  [bajo umbral]
+0,54 µm dado E2 + 1,08 (E4 − E2d108) · I(clase;Y)           +0.0224 ± 0.0004  [bajo umbral]
+Shapley · I(clase;Y)           φ(0,54) = +0.0230 ± 0.0004 · φ(1,08) = +0.0185 ± 0.0004

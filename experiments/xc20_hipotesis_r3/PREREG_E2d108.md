@@ -39,3 +39,42 @@ túnel daría lo mismo. Con q en 0,5–1,5, el túnel en 1,08 µm es aún menor 
 - **H3 muere** si φ(1,08) ≥ φ(0,54) en W1 A2 o en W2 A2.
 - **Fila inválida** si E2d108 − E2 < −2σ − 0,005 en cualquier cantidad (viola monotonía: E2 ⊂ E2d108), o si E4 − E2d108 lo hace.
 - Ningún resultado cambia la decisión de dibujar 0,54 y 1,08 (ya tomada) ni consolida la ronda 3.
+
+## Resultados · 2026-11-16 09:34 (`date`)
+
+Corridas: `verificacion/ver3_log_W1_d108p.txt` (W1, pareada: 300 000 / 100 000 por clase, como las filas base) y
+`verificacion/ver3_log_W2_d108.txt` (W2). Tabla completa: `incremento_separaciones_salida.txt`, sección «E2 + d108».
+
+**Incidencia antes del resultado.** La primera corrida de W1 (`ver3_log_W1_d108.txt`) usó los valores por defecto de
+`ver3_correr.py` para 5 clases (240 000 / 60 000), no los 300 000 / 100 000 que las corridas originales fijaron por entorno.
+Su mundo de prueba es otro y no está pareada con E2, E3 y E4: **no se usa**. Se conserva. El error venía de `REGENERAR.md`,
+que no fijaba esas variables; corregido.
+
+| Cantidad, A2 | E3 − E2 (0,54 sola) | E2d108 − E2 (1,08 sola) | φ(0,54) | φ(1,08) |
+|---|---|---|---|---|
+| W1, I(Kbin \| túnel) | +0,093 | **+0,090** ± 0,001 | +0,052 ± 0,001 | +0,048 ± 0,001 |
+| W1, I(M) | +0,037 | +0,046 | +0,019 | +0,028 |
+| W2, I(Kbin \| túnel) | +0,094 | **+0,038** ± 0,001 | +0,090 ± 0,001 | +0,033 ± 0,001 |
+| W2, I(s_F) | +0,047 | +0,044 | +0,042 | +0,039 |
+
+Ninguna fila viola la monotonía.
+
+**Veredictos, con las palabras de arriba:**
+- **H1 (sustitución) se cumple.** En W1 A2, 1,08 µm sola da +0,090 frente a +0,093 de 0,54 µm sola: diferencia 0,004 (≤ 0,03).
+- **H2: no muere por su criterio** (I(s_F) de 1,08 sola = +0,044 < +0,047), **pero su predicción sobre K falla:** predije
+  +0,06 a +0,094 y salió +0,038.
+- **H3 se cumple en los dos, pero en W1 es casi un empate:** φ(0,54) − φ(1,08) = +0,004 en W1 y +0,056 en W2.
+
+**Lectura (modelo, no silicio; restas de cotas inferiores, no certificadas):**
+- **Con mecanismos exclusivos (W1), las dos separaciones son intercambiables.** Cualquiera de las dos sola da ~0,09 bits sobre
+  K, y juntas apenas suman (+0,100). Lo que importa es tener *una* celda de unión sin túnel, no cuál.
+- **Con fuga convencional que coexiste con el túnel y decae con d (W2), 0,54 µm no es intercambiable.** (En W1 la fuga F
+  también decae con d, pero nunca coexiste con el túnel.) 1,08 µm sola da menos de la mitad sobre K
+  (+0,038 frente a +0,094). Conjetura: lejos, la fuga convencional ya cayó, y 1,08 µm no sirve de referencia para lo que hay en
+  0,27 µm; 0,54 µm está más cerca y sí.
+- Esto da a «0,54 µm prioritaria» una razón más precisa que la que tenía: es prioritaria **si la fuga convencional coexiste con el túnel
+  y depende de la separación**. Si no, cualquiera de las dos sirve.
+- 1,08 µm conserva su papel de referencia lejana: su Shapley en I(s_F) en W2 es casi igual al de 0,54 µm (+0,039 frente a
+  +0,042).
+
+Nada de esto cambia la decisión de dibujar las dos, ni consolida la ronda 3.

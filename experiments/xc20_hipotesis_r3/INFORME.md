@@ -157,7 +157,10 @@ capacidad mueven E4 − E2 ≤ 0,006 bits (§4 del verificador), pero no existen
   Es el papel que Juan le asigna: contrastar el decaimiento de la fuga con el fondo. Su valor depende de que F coexista con el
   túnel, que es el supuesto de W2 (el W2 del verificador; el de mi motor está roto, §1).
 - **Ninguna fila viola la monotonía** (ningún aporte negativo más allá de 2σ).
-- **No medido:** 1,08 µm sin 0,54 µm (no hay diseño E2 + d108) `[?]`; W1q1 S10 E3 (no se corrió).
+- ~~**No medido:** 1,08 µm sin 0,54 µm (no hay diseño E2 + d108) `[?]`~~; W1q1 S10 E3 (no se corrió).
+  **[corregido 2026-11-16 09:34]** E2 + d108 corrido con prerregistro propio ([`PREREG_E2d108.md`](PREREG_E2d108.md)): en W1 las dos
+  separaciones son intercambiables (1,08 sola +0,090 sobre K, frente a +0,093); en W2 no (1,08 sola +0,038 frente a +0,094).
+  Shapley sobre K, A2: W1 0,052 / 0,048; W2 0,090 / 0,033.
 - **Ancho del posterior de B:** ni 0,54 ni 1,08 lo estrechan (≤ 0,04 décadas). Lo fija la celda sin unión (E1 → E2: de 0,98 a
   0,55 décadas, W1 A2).
 

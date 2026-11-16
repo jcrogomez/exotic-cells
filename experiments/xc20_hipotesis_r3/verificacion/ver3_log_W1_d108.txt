@@ -1,0 +1,12 @@
+# 2026-11-16 09:31:18 EST W1 d108 ntr=240000/clase nte=60000/clase H=128 ep=8 semilla=1 prueba=2000 (mundos 41 s)
+/Users/juancarlosromero/made-in-TaiJuan/projects/ZTASIC/06_exotic_cells/experiments/xc20_hipotesis_r3/verificacion/ver3_red.py:11: RuntimeWarning: overflow encountered in exp
+  s = 1.0 / (1.0 + np.exp(-x))
+W1 C3b A2 E2d108  I(M)>=1.6748±0.0011 acc=0.767 | I(tun)>=0.7024±0.0008 (H=0.971) accT=0.904 | I(F/tunres)>=0.9150±0.0004  (24 s)
+   confusión (fila = verdad): T->0.97/0.00/0.03/0.00/0.00 R->0.00/0.96/0.04/0.00/0.00 M->0.11/0.44/0.45/0.00/0.00 G->0.00/0.00/0.00/0.81/0.19 F->0.00/0.00/0.00/0.36/0.64
+   I(Kbin|tun)>=1.1288±0.0031 (H=3, normalizada 0.3763) | K estimada/acotada/nada = 0.201/0.485/0.314 (cobertura 0.919); central: 0.203/0.436/0.361 (cob. 0.907) | I(qbin|tun)>=-0.0011±0.0002
+   log10 B: d.t. posterior media 0.5466±0.0002 décadas (prior 1.1547); I(Bbin16;Y)>=1.0082±0.0019
+W1 C3b S10 E2d108  I(M)>=1.6365±0.0011 acc=0.747 | I(tun)>=0.6811±0.0007 (H=0.971) accT=0.889 | I(F/tunres)>=0.9182±0.0000  (23 s)
+   confusión (fila = verdad): T->0.97/0.00/0.03/0.00/0.00 R->0.00/0.94/0.06/0.00/0.00 M->0.11/0.49/0.40/0.00/0.00 G->0.00/0.00/0.00/0.89/0.11 F->0.00/0.00/0.00/0.45/0.55
+   I(Kbin|tun)>=0.9879±0.0033 (H=3, normalizada 0.3293) | K estimada/acotada/nada = 0.175/0.408/0.417 (cobertura 0.926); central: 0.172/0.309/0.519 (cob. 0.915) | I(qbin|tun)>=-0.0007±0.0002
+   log10 B: d.t. posterior media 1.1233±0.0001 décadas (prior 1.1547); I(Bbin16;Y)>=0.0551±0.0007
+# fin 2026-11-16 09:32:08 EST (91 s)

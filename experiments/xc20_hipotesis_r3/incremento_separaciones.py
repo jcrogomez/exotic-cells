@@ -20,7 +20,7 @@ V = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'verificacion')
 
 
 def fn(var, rd, des, cal='C3b'):
-    for t in ('base', 'unicos'):
+    for t in ('base', 'unicos', 'd108p', 'd108'):   # d108p: W1 E2d108 pareada (300 k / 100 k); d108: W2
         f = os.path.join(V, f"ver3_lt_{var}_{cal}_{rd}_{des}_{t}.npz")
         if os.path.exists(f):
             return f
@@ -73,4 +73,39 @@ for var, qs in Q.items():
             r = pdiff(fb, fa, 'sdB')
             if r is not None:
                 print(f"{nm} · {'estrechamiento d.t. log10 B (décadas)':<20} {r[0]:+.4f} ± {r[1]:.4f}")
-print('\n1,08 µm sin 0,54 µm (E2 + d108): no hay diseño con esa combinación en la ronda 3 → [?]')
+
+# --- añadido 2026-11-16 (PREREG_E2d108.md): 1,08 µm sin 0,54 µm, y reparto de Shapley de dos componentes ---
+print('\n# E2 + d108 y reparto de Shapley (PREREG_E2d108.md)')
+print('# φ(0,54) = ½[(E3 − E2) + (E4 − E2d108)] · φ(1,08) = ½[(E2d108 − E2) + (E4 − E3)]; el ± de φ es pareado sobre los mismos chips')
+
+
+def pshap(fs, key, terms):
+    """Media estratificada y error pareado de una combinación lineal de filas (todas sobre los mismos chips de prueba)."""
+    L = [np.load(fs[d]) for d in fs]
+    lab = L[0]['lab']
+    for X in L:
+        assert np.array_equal(X['lab'], lab), 'mundos de prueba distintos'
+    if any(key not in X.files for X in L):
+        return None
+    x = sum(c * np.load(fs[d])[key].astype(float) for d, c in terms)
+    ok = np.isfinite(x)
+    per = [x[(lab == j) & ok] for j in np.unique(lab) if ok[lab == j].any()]
+    return np.mean([q.mean() for q in per]), np.sqrt(sum(q.var(ddof=1) / len(q) for q in per)) / len(per)
+
+
+for var, qs in Q.items():
+    if var == 'W1q1':
+        continue
+    for rd in ('A2', 'S10'):
+        fs = {d: fn(var, rd, d) for d in ('E2', 'E3', 'E2d108', 'E4')}
+        if None in fs.values():
+            print(f"\n## {var} {rd}: [?] falta {[d for d, f in fs.items() if f is None]}")
+            continue
+        print(f"\n## {var} · lector {rd} · calibración C3b")
+        for k, lab in qs:
+            print(f"1,08 µm dado E2 (E2d108 − E2)   · {lab:<20} {fmt(pdiff(fs['E2d108'], fs['E2'], k))}")
+            print(f"0,54 µm dado E2 + 1,08 (E4 − E2d108) · {lab:<20} {fmt(pdiff(fs['E4'], fs['E2d108'], k))}")
+            a = pshap(fs, k, [('E3', .5), ('E2', -.5), ('E4', .5), ('E2d108', -.5)])
+            b = pshap(fs, k, [('E2d108', .5), ('E2', -.5), ('E4', .5), ('E3', -.5)])
+            if a and b:
+                print(f"Shapley · {lab:<20} φ(0,54) = {a[0]:+.4f} ± {a[1]:.4f} · φ(1,08) = {b[0]:+.4f} ± {b[1]:.4f}")
