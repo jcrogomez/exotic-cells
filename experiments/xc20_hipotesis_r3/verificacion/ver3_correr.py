@@ -18,6 +18,7 @@ from ver3_red import train_eval
 
 DESIGNS = dict(DESIGNS)
 DESIGNS['E2sin27'] = [k for k in DESIGNS['E2'] if not k.startswith('d27')]   # mutante del testigo K
+DESIGNS['E2d108'] = DESIGNS['E2'] + ['d108']   # 1,08 µm sin 0,54 µm (PREREG_E2d108.md, 2026-11-16)
 
 
 def env(k, d):
