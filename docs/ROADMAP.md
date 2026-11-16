@@ -41,7 +41,7 @@ This page is the single to-do list.
 
 ### Ask
 - [ ] Tiny Tapeout contributor: Q1 (antenna "not enforced" or "negligible")
-- [ ] Tiny Tapeout: Q3 (high voltage), Q5 (local current, now including e-fuse pulses), Q7 (number of chips)
+- [ ] Tiny Tapeout: Q3 (high voltage), Q7 (number of chips)
 - [ ] Look at the GF180 PDK for the high-voltage families (Q9)
 
 ### Later
@@ -51,6 +51,7 @@ This page is the single to-do list.
 
 ## Done (most recent first)
 
+- 2026-11-16 · A Tiny Tapeout contributor: ~8 mA per tile is fine (A7); analog spec read (0.1 V drop at 20 mA; 4 mA on analog pins).
 - 2026-11-16 · A Tiny Tapeout contributor suggested the e-fuse and named its hard part (A6); XC-01/XC-05 moved to tier B.
 - 2026-11-16 · A Tiny Tapeout contributor answered silicide and antenna (A1, A2). Juan approved the XC-20 separation matrix (0, 0.27, 0.54, 1.08 µm
   and a no-junction cell) without freezing the macro; round 3 of the engine stays not consolidated
