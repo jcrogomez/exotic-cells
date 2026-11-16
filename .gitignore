@@ -25,3 +25,4 @@ experiments/*/c63_magic_read/
 *.ext
 experiments/auditoria_hsa/reproducir/corrida/
 experiments/xc20_hipotesis_mixto/verificacion/ver2_lt_*.npz
+experiments/xc20_hipotesis_r3/verificacion/ver3_*.npz

@@ -1,0 +1,24 @@
+# 2026-11-15 19:58:38 EST W1 s2 ntr=300000/clase nte=100000/clase H=128 ep=8 semilla=2 prueba=2000 (mundos 94 s)
+W1 C3b A2 E2      I(M)>=1.6337±0.0009 acc=0.749 | I(tun)>=0.6958±0.0006 (H=0.971) accT=0.899 | I(F/tunres)>=0.9162±0.0002  (90 s)
+   confusión (fila = verdad): T->0.98/0.00/0.02/0.00/0.00 R->0.00/0.95/0.05/0.00/0.00 M->0.11/0.45/0.43/0.00/0.00 G->0.00/0.00/0.00/0.73/0.27 F->0.00/0.00/0.00/0.34/0.66
+   I(Kbin|tun)>=1.0407±0.0024 (H=3, normalizada 0.3469) | K estimada/acotada/nada = 0.175/0.470/0.355 (cobertura 0.919); central: 0.176/0.412/0.412 (cob. 0.906) | I(qbin|tun)>=-0.0010±0.0001
+   log10 B: d.t. posterior media 0.5471±0.0002 décadas (prior 1.1547); I(Bbin16;Y)>=1.0062±0.0014
+   TESTIGO K (T, t0=10 µA, K=1e7, q=1; 4000 chips): estimada/acotada/nada = 0.768/0.005/0.226; contiene 1e7: 0.919; central 0.763/0.021/0.216
+   TESTIGO F (f0=1e-12, λF=0,5; 4000 chips): P(F|y) media 0.810, mediana 0.855, fracción con P(F)>0,8: 0.572; P(túnel) media 0.000
+W1 C3b A2 E4      I(M)>=1.6796±0.0009 acc=0.768 | I(tun)>=0.7059±0.0006 (H=0.971) accT=0.905 | I(F/tunres)>=0.9162±0.0002  (240 s)
+   confusión (fila = verdad): T->0.97/0.00/0.02/0.00/0.00 R->0.00/0.96/0.04/0.00/0.00 M->0.11/0.43/0.45/0.00/0.00 G->0.00/0.00/0.00/0.82/0.18 F->0.00/0.00/0.00/0.36/0.64
+   I(Kbin|tun)>=1.1414±0.0024 (H=3, normalizada 0.3805) | K estimada/acotada/nada = 0.204/0.483/0.313 (cobertura 0.920); central: 0.206/0.437/0.357 (cob. 0.907) | I(qbin|tun)>=0.0931±0.0009
+   log10 B: d.t. posterior media 0.5456±0.0002 décadas (prior 1.1547); I(Bbin16;Y)>=1.0128±0.0015
+   TESTIGO F (f0=1e-12, λF=0,5; 4000 chips): P(F|y) media 0.946, mediana 1.000, fracción con P(F)>0,8: 0.893; P(túnel) media 0.000
+W1 C3b S10 E2      I(M)>=1.6320±0.0008 acc=0.746 | I(tun)>=0.6787±0.0005 (H=0.971) accT=0.888 | I(F/tunres)>=0.9182±0.0000  (161 s)
+   confusión (fila = verdad): T->0.97/0.00/0.02/0.00/0.00 R->0.00/0.93/0.07/0.00/0.00 M->0.12/0.49/0.39/0.00/0.00 G->0.00/0.00/0.00/0.88/0.12 F->0.00/0.00/0.00/0.45/0.55
+   I(Kbin|tun)>=0.9515±0.0025 (H=3, normalizada 0.3172) | K estimada/acotada/nada = 0.165/0.391/0.443 (cobertura 0.924); central: 0.162/0.304/0.535 (cob. 0.914) | I(qbin|tun)>=-0.0010±0.0001
+   log10 B: d.t. posterior media 1.1232±0.0001 décadas (prior 1.1547); I(Bbin16;Y)>=0.0563±0.0006
+   TESTIGO K (T, t0=10 µA, K=1e7, q=1; 4000 chips): estimada/acotada/nada = 0.446/0.031/0.523; contiene 1e7: 0.907; central 0.436/0.094/0.470
+   TESTIGO F (f0=1e-12, λF=0,5; 4000 chips): P(F|y) media 0.921, mediana 0.990, fracción con P(F)>0,8: 0.856; P(túnel) media 0.000
+W1 C3b S10 E4      I(M)>=1.6381±0.0008 acc=0.748 | I(tun)>=0.6833±0.0005 (H=0.971) accT=0.890 | I(F/tunres)>=0.9182±0.0000  (189 s)
+   confusión (fila = verdad): T->0.97/0.00/0.03/0.00/0.00 R->0.00/0.94/0.06/0.00/0.00 M->0.12/0.49/0.40/0.00/0.00 G->0.00/0.00/0.00/0.90/0.10 F->0.00/0.00/0.00/0.47/0.53
+   I(Kbin|tun)>=0.9952±0.0025 (H=3, normalizada 0.3317) | K estimada/acotada/nada = 0.179/0.400/0.421 (cobertura 0.925); central: 0.176/0.314/0.510 (cob. 0.915) | I(qbin|tun)>=0.0651±0.0008
+   log10 B: d.t. posterior media 1.1234±0.0001 décadas (prior 1.1547); I(Bbin16;Y)>=0.0563±0.0005
+   TESTIGO F (f0=1e-12, λF=0,5; 4000 chips): P(F|y) media 0.941, mediana 0.999, fracción con P(F)>0,8: 0.888; P(túnel) media 0.000
+# fin 2026-11-15 20:10:37 EST (812 s)

@@ -1,0 +1,197 @@
+## D5 (E4 − E2, C3b)
+W1 A2 I(túnel;Y): +0.0112 ± 0.0002  [bajo umbral]
+W1 A2 I(Kbin;Y|túnel): +0.1002 ± 0.0010  [≥0,05 y >2σ]
+W1 A2 I(F/túnel res.;Y): +0.0000 ± 0.0000  [bajo umbral]
+W1 A2 estrechamiento d.t. log10 B (E2 − E4, décadas): +0.0019 ± 0.0000  [bajo umbral]
+W1 A2 I(qbin;Y|túnel) E4 − E2: +0.0929 ± 0.0009  [≥0,05 y >2σ]
+W1 S10 I(túnel;Y): +0.0054 ± 0.0002  [bajo umbral]
+W1 S10 I(Kbin;Y|túnel): +0.0490 ± 0.0008  [bajo umbral]
+W1 S10 I(F/túnel res.;Y): +0.0000 ± 0.0000  [bajo umbral]
+W1 S10 estrechamiento d.t. log10 B (E2 − E4, décadas): -0.0001 ± 0.0000  [bajo umbral]
+W1 S10 I(qbin;Y|túnel) E4 − E2: +0.0651 ± 0.0008  [≥0,05 y >2σ]
+W2 A2 I(s_T;Y): +0.0144 ± 0.0003  [bajo umbral]
+W2 A2 I(Kbin;Y|túnel): +0.1231 ± 0.0013  [≥0,05 y >2σ]
+W2 A2 I(F/túnel res.;Y): +0.0503 ± 0.0008  [≥0,05 y >2σ]
+W2 A2 I(s_F;Y): +0.0812 ± 0.0007  [≥0,05 y >2σ]
+W2 A2 estrechamiento d.t. log10 B (E2 − E4, décadas): +0.0038 ± 0.0000  [bajo umbral]
+W2 A2 I(qbin;Y|túnel) E4 − E2: +0.0633 ± 0.0009  [≥0,05 y >2σ]
+W2 S10 I(s_T;Y): +0.0086 ± 0.0003  [bajo umbral]
+W2 S10 I(Kbin;Y|túnel): +0.0692 ± 0.0011  [≥0,05 y >2σ]
+W2 S10 I(F/túnel res.;Y): +0.0261 ± 0.0006  [bajo umbral]
+W2 S10 I(s_F;Y): +0.0338 ± 0.0005  [bajo umbral]
+W2 S10 estrechamiento d.t. log10 B (E2 − E4, décadas): +0.0400 ± 0.0002  [bajo umbral]
+W2 S10 I(qbin;Y|túnel) E4 − E2: +0.0531 ± 0.0008  [≥0,05 y >2σ]
+W1q1 A2 I(túnel;Y): +0.0114 ± 0.0002  [bajo umbral]
+W1q1 A2 I(Kbin;Y|túnel): +0.1119 ± 0.0011  [≥0,05 y >2σ]
+W1q1 A2 I(F/túnel res.;Y): +0.0000 ± 0.0000  [bajo umbral]
+W1q1 A2 estrechamiento d.t. log10 B (E2 − E4, décadas): +0.0021 ± 0.0000  [bajo umbral]
+W1q1 A2 I(qbin;Y|túnel) E4 − E2: [?] (falta la fila)
+W1q1 S10 I(túnel;Y): +0.0052 ± 0.0002  [bajo umbral]
+W1q1 S10 I(Kbin;Y|túnel): +0.0492 ± 0.0008  [bajo umbral]
+W1q1 S10 I(F/túnel res.;Y): +0.0000 ± 0.0000  [bajo umbral]
+W1q1 S10 estrechamiento d.t. log10 B (E2 − E4, décadas): -0.0004 ± 0.0000  [bajo umbral]
+W1q1 S10 I(qbin;Y|túnel) E4 − E2: [?] (falta la fila)
+## D5 extra: E3 − E2 y E5 − E4 (W1, C3b)
+W1 A2 E3−E2 I(túnel;Y): +0.0101 ± 0.0002  [bajo umbral]
+W1 A2 E5−E4 I(túnel;Y): +0.0045 ± 0.0002  [bajo umbral]
+W1 A2 E3−E2 I(Kbin;Y|túnel): +0.0933 ± 0.0010  [≥0,05 y >2σ]
+W1 A2 E5−E4 I(Kbin;Y|túnel): +0.0447 ± 0.0008  [bajo umbral]
+W1 A2 E3−E2 I(F/túnel res.;Y): +0.0000 ± 0.0000  [bajo umbral]
+W1 A2 E5−E4 I(F/túnel res.;Y): +0.0001 ± 0.0000  [bajo umbral]
+W1 A2 E3−E2 I(M;Y): +0.0369 ± 0.0004  [bajo umbral]
+W1 A2 E5−E4 I(M;Y): +0.0579 ± 0.0004  [≥0,05 y >2σ]
+W1 S10 E3−E2 I(túnel;Y): +0.0041 ± 0.0002  [bajo umbral]
+W1 S10 E5−E4 I(túnel;Y): +0.0028 ± 0.0001  [bajo umbral]
+W1 S10 E3−E2 I(Kbin;Y|túnel): +0.0419 ± 0.0008  [bajo umbral]
+W1 S10 E5−E4 I(Kbin;Y|túnel): +0.0377 ± 0.0008  [bajo umbral]
+W1 S10 E3−E2 I(F/túnel res.;Y): +0.0000 ± 0.0000  [bajo umbral]
+W1 S10 E5−E4 I(F/túnel res.;Y): +0.0000 ± 0.0000  [bajo umbral]
+W1 S10 E3−E2 I(M;Y): +0.0038 ± 0.0002  [bajo umbral]
+W1 S10 E5−E4 I(M;Y): +0.0189 ± 0.0003  [bajo umbral]
+## D6 (E2 − E1, C3b)
+W1 A2 I(M;Y): +0.0557 ± 0.0005  [≥0,05 y >2σ]
+W1 A2 I(Kbin;Y|túnel): +0.0965 ± 0.0011  [≥0,05 y >2σ]
+W1 S10 I(M;Y): +0.0266 ± 0.0004  [bajo umbral]
+W1 S10 I(Kbin;Y|túnel): +0.1349 ± 0.0013  [≥0,05 y >2σ]
+W2 A2 I(M;Y): +0.0611 ± 0.0007  [≥0,05 y >2σ]
+W2 A2 I(Kbin;Y|túnel): +0.0369 ± 0.0009  [bajo umbral]
+W2 S10 I(M;Y): +0.0657 ± 0.0008  [≥0,05 y >2σ]
+W2 S10 I(Kbin;Y|túnel): +0.0769 ± 0.0012  [≥0,05 y >2σ]
+## D7 (S_f − A2, C3b), I(M;Y) e I(Kbin|túnel)
+W1 E1 S1 − A2 I(M;Y): +0.0910 ± 0.0007  [≥0,05 y >2σ]
+W1 E1 S1 − A2 I(Kbin;Y|túnel): +0.0961 ± 0.0015  [≥0,05 y >2σ]
+W1 E1 S10 − A2 I(M;Y): +0.0271 ± 0.0006  [bajo umbral]
+W1 E1 S10 − A2 I(Kbin;Y|túnel): -0.1263 ± 0.0019  [≤−0,05 y >2σ]
+W1 E1 S100 − A2 I(M;Y): -0.0409 ± 0.0006  [bajo umbral]
+W1 E1 S100 − A2 I(Kbin;Y|túnel): -0.4168 ± 0.0023  [≤−0,05 y >2σ]
+W1 E2 S1 − A2 I(M;Y): +0.0706 ± 0.0006  [≥0,05 y >2σ]
+W1 E2 S1 − A2 I(Kbin;Y|túnel): +0.1443 ± 0.0015  [≥0,05 y >2σ]
+W1 E2 S10 − A2 I(M;Y): -0.0020 ± 0.0006  [bajo umbral]
+W1 E2 S10 − A2 I(Kbin;Y|túnel): -0.0878 ± 0.0018  [≤−0,05 y >2σ]
+W1 E2 S100 − A2 I(M;Y): -0.0746 ± 0.0007  [≤−0,05 y >2σ]
+W1 E2 S100 − A2 I(Kbin;Y|túnel): -0.3763 ± 0.0022  [≤−0,05 y >2σ]
+W1 E4 S1 − A2 I(M;Y): +0.0409 ± 0.0005  [bajo umbral]
+W1 E4 S1 − A2 I(Kbin;Y|túnel): +0.1551 ± 0.0016  [≥0,05 y >2σ]
+W1 E4 S10 − A2 I(M;Y): -0.0409 ± 0.0006  [bajo umbral]
+W1 E4 S10 − A2 I(Kbin;Y|túnel): -0.1390 ± 0.0020  [≤−0,05 y >2σ]
+W1 E4 S100 − A2 I(M;Y): -0.1181 ± 0.0007  [≤−0,05 y >2σ]
+W1 E4 S100 − A2 I(Kbin;Y|túnel): -0.4596 ± 0.0023  [≤−0,05 y >2σ]
+W2 E1 S10 − A2 I(M;Y): -0.0445 ± 0.0009  [bajo umbral]
+W2 E1 S10 − A2 I(Kbin;Y|túnel): -0.0803 ± 0.0020  [≤−0,05 y >2σ]
+W2 E2 S10 − A2 I(M;Y): -0.0399 ± 0.0008  [bajo umbral]
+W2 E2 S10 − A2 I(Kbin;Y|túnel): -0.0403 ± 0.0019  [bajo umbral]
+W2 E4 S1 − A2 I(M;Y): +0.0254 ± 0.0008  [bajo umbral]
+W2 E4 S1 − A2 I(Kbin;Y|túnel): +0.1295 ± 0.0017  [≥0,05 y >2σ]
+W2 E4 S10 − A2 I(M;Y): -0.0918 ± 0.0009  [≤−0,05 y >2σ]
+W2 E4 S10 − A2 I(Kbin;Y|túnel): -0.0942 ± 0.0021  [≤−0,05 y >2σ]
+W2 E4 S100 − A2 I(M;Y): -0.1988 ± 0.0011  [≤−0,05 y >2σ]
+W2 E4 S100 − A2 I(Kbin;Y|túnel): -0.3692 ± 0.0024  [≤−0,05 y >2σ]
+W1K6 E1 S10 − A2 I(M;Y): -0.0168 ± 0.0008  [bajo umbral]
+W1K6 E1 S10 − A2 I(Kbin;Y|túnel): +0.1082 ± 0.0015  [≥0,05 y >2σ]
+W1K6 E4 S10 − A2 I(M;Y): -0.0840 ± 0.0007  [≤−0,05 y >2σ]
+W1K6 E4 S10 − A2 I(Kbin;Y|túnel): +0.1182 ± 0.0015  [≥0,05 y >2σ]
+## D7 calibración: S10 − A2 con C1, C3a, C3c
+W1 C1 E1 S10 − A2 I(M;Y): +0.0235 ± 0.0006  [bajo umbral]
+W1 C1 E1 S10 − A2 I(Kbin;Y|túnel): -0.2445 ± 0.0018  [≤−0,05 y >2σ]
+W1 C1 E2 S10 − A2 I(M;Y): -0.0047 ± 0.0006  [bajo umbral]
+W1 C1 E2 S10 − A2 I(Kbin;Y|túnel): -0.2106 ± 0.0017  [≤−0,05 y >2σ]
+W1 C1 E4 S10 − A2 I(M;Y): -0.0431 ± 0.0006  [bajo umbral]
+W1 C1 E4 S10 − A2 I(Kbin;Y|túnel): -0.2738 ± 0.0018  [≤−0,05 y >2σ]
+W1 C3a E1 S10 − A2 I(M;Y): +0.0238 ± 0.0006  [bajo umbral]
+W1 C3a E1 S10 − A2 I(Kbin;Y|túnel): -0.2314 ± 0.0018  [≤−0,05 y >2σ]
+W1 C3a E2 S10 − A2 I(M;Y): -0.0046 ± 0.0006  [bajo umbral]
+W1 C3a E2 S10 − A2 I(Kbin;Y|túnel): -0.1970 ± 0.0017  [≤−0,05 y >2σ]
+W1 C3a E4 S10 − A2 I(M;Y): -0.0431 ± 0.0006  [bajo umbral]
+W1 C3a E4 S10 − A2 I(Kbin;Y|túnel): -0.2584 ± 0.0018  [≤−0,05 y >2σ]
+W1 C3b E1 S10 − A2 I(M;Y): +0.0271 ± 0.0006  [bajo umbral]
+W1 C3b E1 S10 − A2 I(Kbin;Y|túnel): -0.1263 ± 0.0019  [≤−0,05 y >2σ]
+W1 C3b E2 S10 − A2 I(M;Y): -0.0020 ± 0.0006  [bajo umbral]
+W1 C3b E2 S10 − A2 I(Kbin;Y|túnel): -0.0878 ± 0.0018  [≤−0,05 y >2σ]
+W1 C3b E4 S10 − A2 I(M;Y): -0.0409 ± 0.0006  [bajo umbral]
+W1 C3b E4 S10 − A2 I(Kbin;Y|túnel): -0.1390 ± 0.0020  [≤−0,05 y >2σ]
+W1 C3c E1 S10 − A2 I(M;Y): +0.0458 ± 0.0007  [bajo umbral]
+W1 C3c E1 S10 − A2 I(Kbin;Y|túnel): +0.0835 ± 0.0021  [≥0,05 y >2σ]
+W1 C3c E2 S10 − A2 I(M;Y): +0.0149 ± 0.0007  [bajo umbral]
+W1 C3c E2 S10 − A2 I(Kbin;Y|túnel): +0.1254 ± 0.0021  [≥0,05 y >2σ]
+W1 C3c E4 S10 − A2 I(M;Y): -0.0242 ± 0.0007  [bajo umbral]
+W1 C3c E4 S10 − A2 I(Kbin;Y|túnel): +0.0868 ± 0.0022  [≥0,05 y >2σ]
+## P6: A2 con C1 frente a C3b (efecto de g_s, g_a independientes), y D8 con C1
+W1 E1 A2: C1 − C3b I(M;Y): +0.0036 ± 0.0002  [bajo umbral]
+W1 E1 A2: C1 − C3b I(Kbin;Y|túnel): +0.1183 ± 0.0014  [≥0,05 y >2σ]
+W1 E2 A2: C1 − C3b I(M;Y): +0.0027 ± 0.0003  [bajo umbral]
+W1 E2 A2: C1 − C3b I(Kbin;Y|túnel): +0.1228 ± 0.0014  [≥0,05 y >2σ]
+W1 E4 A2: C1 − C3b I(M;Y): +0.0023 ± 0.0003  [bajo umbral]
+W1 E4 A2: C1 − C3b I(Kbin;Y|túnel): +0.1348 ± 0.0015  [≥0,05 y >2σ]
+W1 C1 E1 A2 − X: +0.3105 ± 0.0009  [≥0,05 y >2σ]
+W1 C1 E1 A2 − A: +0.0875 ± 0.0006  [≥0,05 y >2σ]
+W1 C1 E4 A2 − X: +0.3622 ± 0.0009  [≥0,05 y >2σ]
+W1 C1 E4 A2 − A: +0.1897 ± 0.0007  [≥0,05 y >2σ]
+## D8 (A2 − X y A2 − A, C3b, I(M;Y))
+W1 E1 A2 − X: +0.3080 ± 0.0010  [≥0,05 y >2σ]
+W1 E1 A2 − A: +0.0851 ± 0.0006  [≥0,05 y >2σ]
+W1 E4 A2 − X: +0.3605 ± 0.0009  [≥0,05 y >2σ]
+W1 E4 A2 − A: +0.1887 ± 0.0007  [≥0,05 y >2σ]
+W1K6 E1 A2 − X: +0.1831 ± 0.0010  [≥0,05 y >2σ]
+W1K6 E1 A2 − A: +0.2289 ± 0.0008  [≥0,05 y >2σ]
+W1K6 E4 A2 − X: +0.2234 ± 0.0008  [≥0,05 y >2σ]
+W1K6 E4 A2 − A: +0.3692 ± 0.0009  [≥0,05 y >2σ]
+W2 E1 A2 − X: +0.5040 ± 0.0012  [≥0,05 y >2σ]
+W2 E1 A2 − A: +0.1334 ± 0.0010  [≥0,05 y >2σ]
+W2 E4 A2 − X: +0.4997 ± 0.0011  [≥0,05 y >2σ]
+W2 E4 A2 − A: +0.2875 ± 0.0011  [≥0,05 y >2σ]
+## P3 (W1K6, E4): S10 − A2 en I(Kbin|túnel)
+W1K6 E1 S10 − A2 I(Kbin|túnel): +0.1082 ± 0.0015  [≥0,05 y >2σ]
+W1K6 E1 S10 − A2 I(M;Y): -0.0168 ± 0.0008  [bajo umbral]
+W1K6 E4 S10 − A2 I(Kbin|túnel): +0.1182 ± 0.0015  [≥0,05 y >2σ]
+W1K6 E4 S10 − A2 I(M;Y): -0.0840 ± 0.0007  [≤−0,05 y >2σ]
+## Mecanismo de la ganancia de K con q = 1: W1q1 frente a W1q1cut (túnel anulado en 0,54 y 1,08)
+W1q1 A2 E4 − E2 I(Kbin|túnel): +0.1119 ± 0.0011  [≥0,05 y >2σ]
+W1q1cut A2 E4 − E2 I(Kbin|túnel): +0.0966 ± 0.0010  [≥0,05 y >2σ]
+W1q1 − W1q1cut A2 E4 I(Kbin|túnel) (mismos chips): +0.0152 ± 0.0004  [bajo umbral]
+W1q1 S10 E4 − E2 I(Kbin|túnel): +0.0492 ± 0.0008  [bajo umbral]
+W1q1cut S10 E4 − E2 I(Kbin|túnel): [?] (falta la fila)
+W1q1 − W1q1cut S10 E4 I(Kbin|túnel) (mismos chips): +0.0005 ± 0.0002  [bajo umbral]
+## P4: E3 − E2 y E6 − E6c en I(F/túnel residual)
+W1 A2 E3 − E2: +0.0000 ± 0.0000  [bajo umbral]
+W1 A2 E6 − E6c: -0.0000 ± 0.0000  [bajo umbral]
+W1 S10 E3 − E2: +0.0000 ± 0.0000  [bajo umbral]
+W1 S10 E6 − E6c: +0.0000 ± 0.0000  [bajo umbral]
+W2 A2 E3 − E2: +0.0304 ± 0.0007  [bajo umbral]
+W2 A2 E6 − E6c: +0.1623 ± 0.0011  [≥0,05 y >2σ]
+W2 A2 E6 − E6c I(s_F;Y): +0.1271 ± 0.0008  [≥0,05 y >2σ]
+W2 S10 E3 − E2: +0.0167 ± 0.0005  [bajo umbral]
+W2 S10 E6 − E6c: +0.0821 ± 0.0009  [≥0,05 y >2σ]
+W2 S10 E6 − E6c I(s_F;Y): +0.0507 ± 0.0006  [≥0,05 y >2σ]
+## Monotonía (I(M;Y), siguiente − anterior; debe ser ≥ −(2σ + 0,005))
+W1 A2 E2−E1 I(M;Y): +0.0557 ± 0.0005 ok
+W1 A2 E2−E1 I(túnel;Y): +0.0138 ± 0.0003 ok
+W1 A2 E2−E1 I(Kbin;Y|túnel): +0.0965 ± 0.0011 ok
+W1 A2 E2−E1 I(F/túnel res.;Y): +0.0000 ± 0.0000 ok
+W1 A2 E3−E2 I(M;Y): +0.0369 ± 0.0004 ok
+W1 A2 E3−E2 I(túnel;Y): +0.0101 ± 0.0002 ok
+W1 A2 E3−E2 I(Kbin;Y|túnel): +0.0933 ± 0.0010 ok
+W1 A2 E3−E2 I(F/túnel res.;Y): +0.0000 ± 0.0000 ok
+W1 A2 E4−E3 I(M;Y): +0.0104 ± 0.0002 ok
+W1 A2 E4−E3 I(túnel;Y): +0.0010 ± 0.0001 ok
+W1 A2 E4−E3 I(Kbin;Y|túnel): +0.0069 ± 0.0004 ok
+W1 A2 E4−E3 I(F/túnel res.;Y): -0.0000 ± 0.0000 ok
+W1 A2 E5−E4 I(M;Y): +0.0579 ± 0.0004 ok
+W1 A2 E5−E4 I(túnel;Y): +0.0045 ± 0.0002 ok
+W1 A2 E5−E4 I(Kbin;Y|túnel): +0.0447 ± 0.0008 ok
+W1 A2 E5−E4 I(F/túnel res.;Y): +0.0001 ± 0.0000 ok
+W1 S10 E2−E1 I(M;Y): +0.0266 ± 0.0004 ok
+W1 S10 E2−E1 I(túnel;Y): +0.0131 ± 0.0003 ok
+W1 S10 E2−E1 I(Kbin;Y|túnel): +0.1349 ± 0.0013 ok
+W1 S10 E2−E1 I(F/túnel res.;Y): -0.0000 ± 0.0000 ok
+W1 S10 E3−E2 I(M;Y): +0.0038 ± 0.0002 ok
+W1 S10 E3−E2 I(túnel;Y): +0.0041 ± 0.0002 ok
+W1 S10 E3−E2 I(Kbin;Y|túnel): +0.0419 ± 0.0008 ok
+W1 S10 E3−E2 I(F/túnel res.;Y): +0.0000 ± 0.0000 ok
+W1 S10 E4−E3 I(M;Y): +0.0046 ± 0.0002 ok
+W1 S10 E4−E3 I(túnel;Y): +0.0013 ± 0.0001 ok
+W1 S10 E4−E3 I(Kbin;Y|túnel): +0.0071 ± 0.0004 ok
+W1 S10 E4−E3 I(F/túnel res.;Y): -0.0000 ± 0.0000 ok
+W1 S10 E5−E4 I(M;Y): +0.0189 ± 0.0003 ok
+W1 S10 E5−E4 I(túnel;Y): +0.0028 ± 0.0001 ok
+W1 S10 E5−E4 I(Kbin;Y|túnel): +0.0377 ± 0.0008 ok
+W1 S10 E5−E4 I(F/túnel res.;Y): +0.0000 ± 0.0000 ok

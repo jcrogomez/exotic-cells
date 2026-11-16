@@ -29,6 +29,7 @@ before anything is consolidated. Rules: [`PROTOCOLO_ATAQUES.md`](PROTOCOLO_ATAQU
 | [`auditoria_hsa/`](auditoria_hsa/README.md) | The HSA audit's scripts, minimal decks, tables and logs, rescued from a temporary folder (2026-11-15), with SHA-256 hashes and a minimal reproduction (no mode vs `hsa`) that runs from a clean clone |
 | [`xc20_hipotesis/`](xc20_hipotesis/INFORME.md) | Hypothesis-engine prototype on XC-20: tunnelling vs ohmic bridge vs ordinary junction; which drawn structures and readings separate them (information gain), independently verified |
 | [`xc20_hipotesis_mixto/`](xc20_hipotesis_mixto/INFORME.md) | Hypothesis engine, round 2 on XC-20: tunnelling and bridge together, non-linear bridge, driver limits, shared calibration gain; one reader per structure (sensitive on d = 0.27, wide on d = 0) beats any single reader in the model; independently verified |
+| [`xc20_hipotesis_r3/`](xc20_hipotesis_r3/INFORME.md) | Hypothesis engine, round 3 on XC-20: separations 0.27/0.54/1.08 µm, no-junction cell, conventional leakage and background, partially shared calibration, two front-ends vs selectable ranges. Verifier results stand; author estimator not yet in agreement (not consolidated) |
 | [`precheck_map/`](precheck_map/README.md) | Which deliberate rule breaks the Tiny Tapeout precheck accepts and which it rejects |
 | [`litho_explore/`](litho_explore/README.md) | Aerial-image lithography model of drawn shapes near the resolution limit |
 | [`xc52_demod_test/`](xc52_demod_test/) | Which terms survive the four-state field demodulation of XC-52 |

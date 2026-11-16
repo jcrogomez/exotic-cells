@@ -1,0 +1,10 @@
+FALLA mutante sin_norm: I_M motor 1.6793, mutante 1.6599, diferencia pareada -0.0193 ± 0.0519
+ok    mutante lector_d027: I_M motor 1.6793, mutante -1246.7775, diferencia pareada -1248.4567 ± 169.4413
+ok    testigo K, estimada: fracción estimada 0.87; intervalo mediano [6.55, 7.50]; contiene 10^7: 0.90
+ok    testigo K, contiene 10^7: 0.90
+ok    testigo K, mutante sin d027 deja de estimar: fracción estimada 0.00
+FALLA testigo B, E1: sesgo de log10 g0 >  1 década: sesgo mediano -0.86 décadas
+ok    testigo B, E2: sesgo de log10 g0 ≤ 1 década: sesgo mediano -0.92 décadas
+ok    testigo F, E6: P(F | y) > 0,8: mediana 1.000, fracción > 0,8: 0.88
+fallos: 2
+Sun Nov 15 20:34:10 EST 2026
