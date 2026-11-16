@@ -132,7 +132,9 @@ size of the signal. Tonight's runs found three such effects in the reader alone 
 ## Open decisions
 
 - Scope of the first die: the narrow recommendation above, or the wider programme.
-- Vehicle: digital only, hybrid, or more than one die. Number of analog pins and whether 3.3 V is used.
+- Vehicle: digital only, hybrid, or more than one die. Number of analog pins and whether 3.3 V is used. [2026-11-16] Advice from a
+  Tiny Tapeout contributor: digital pins only unless analog voltages must be measured, and prioritise design for test
+  ([OPEN_QUESTIONS](OPEN_QUESTIONS.md) A8).
 - Number of chips to order. Single-trap and antenna experiments are statistical: one die says nothing about the process.
 
 ## Risks

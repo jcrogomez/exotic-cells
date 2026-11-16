@@ -38,7 +38,16 @@ This page is the single to-do list.
         only beats 1.08 µm when conventional leakage coexists with tunnelling and decays with distance: `PREREG_E2d108.md`)
 - [ ] XC-19: finish the first complete channel (E4.1 in PLAN_EXPLORATORIO)
 - [ ] XC-14: write its pre-registration now that the shuttle side is open (A2)
-- [ ] Kelvin strips of n+, p+, poly and li next to XC-20: the in-silicon check of A1
+- [ ] Kelvin strips of n+, p+, poly and li next to XC-20: the in-silicon check of A1. With digital pins only (A8), read them
+      through the reader (resistance as a discharge time) or decide to pay for analog pins
+- [ ] **DFT plan** (A8), before drawing more cells. Every channel must be testable without the exotic physics:
+  - [ ] reader self-test: calibration current, switched reference capacitor and gate step selectable from the digital pins,
+        so the reader is proven before any cell is trusted
+  - [ ] counter and multiplexer readback: a known pattern through every counter; the selected channel read back
+  - [ ] safe power-up state: no fuse, coil, heater or pump active until enabled, so XC-14's first read is not disturbed and
+        nothing stresses a cell by default
+  - [ ] per-macro enables, so a shorted or leaking macro can be isolated without losing the chip
+  - [ ] no reading while a fuse, coil or heater pulses (A7: ~40 mV supply droop at 8 mA, extrapolated)
 - [ ] E-fuse (XC-01 → XC-05): read papers on fuses without silicide (Q10) before any new XC-01 work; then a pre-registration with two outcomes (clean open / rejoin or few channels) and re-reads over time (P8)
 
 ### Ask
@@ -56,6 +65,7 @@ This page is the single to-do list.
 
 ## Done (most recent first)
 
+- 2026-11-16 · A Tiny Tapeout contributor: digital pins only unless analog voltages are needed (extra cost); prioritise DFT (A8).
 - 2026-11-16 · A Tiny Tapeout contributor: ~8 mA per tile is fine (A7); analog spec read (0.1 V drop at 20 mA; 4 mA on analog pins).
 - 2026-11-16 · A Tiny Tapeout contributor suggested the e-fuse and named its hard part (A6); XC-01/XC-05 moved to tier B.
 - 2026-11-16 · A Tiny Tapeout contributor answered silicide and antenna (A1, A2). Juan approved the XC-20 separation matrix (0, 0.27, 0.54, 1.08 µm
