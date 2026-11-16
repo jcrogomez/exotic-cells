@@ -39,14 +39,19 @@ This page is the single to-do list.
 - [ ] XC-19: finish the first complete channel (E4.1 in PLAN_EXPLORATORIO)
 - [ ] XC-14: write its pre-registration now that the shuttle side is open (A2)
 - [ ] Kelvin strips of n+, p+, poly and li next to XC-20: the in-silicon check of A1. With digital pins only (A8), read them
-      through the reader (resistance as a discharge time) or decide to pay for analog pins
-- [ ] **DFT plan** (A8), before drawing more cells. Every channel must be testable without the exotic physics:
+      through the reader (resistance as a discharge time) or decide to pay for analog pins. Juan, 2026-11-16: a time
+      readout does not automatically keep the four-terminal property (material vs contact, switch and routing resistance);
+      **keep the Kelvin structures until the time readout is shown to answer the silicide question**
+- [ ] **Shared instrumentation system** (Juan, 2026-11-16): one instrument that characterises many cells, calibrates itself
+      and isolates faults with the fewest digital pins. The architecture decision is in [PROPOSAL](PROPOSAL.md#architecture-decision-juan-2026-11-16)
+- [ ] **DFT plan** (A8; gate 7 of [PIPELINE](PIPELINE.md#gates-before-tapeout)), before drawing more cells. Every channel must be testable without the exotic physics:
   - [ ] reader self-test: calibration current, switched reference capacitor and gate step selectable from the digital pins,
         so the reader is proven before any cell is trusted
   - [ ] counter and multiplexer readback: a known pattern through every counter; the selected channel read back
   - [ ] safe power-up state: no fuse, coil, heater or pump active until enabled, so XC-14's first read is not disturbed and
         nothing stresses a cell by default
   - [ ] per-macro enables, so a shorted or leaking macro can be isolated without losing the chip
+  - [ ] identify a faulty channel and exclude it, keeping the rest usable (Juan, 2026-11-16)
   - [ ] no reading while a fuse, coil or heater pulses (A7: ~40 mV supply droop at 8 mA, extrapolated)
 - [ ] E-fuse (XC-01 → XC-05): read papers on fuses without silicide (Q10) before any new XC-01 work; then a pre-registration with two outcomes (clean open / rejoin or few channels) and re-reads over time (P8)
 

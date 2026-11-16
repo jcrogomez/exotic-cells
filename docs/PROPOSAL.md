@@ -129,12 +129,27 @@ size of the signal. Tonight's runs found three such effects in the reader alone 
 3. Opto channel: emitter, detector and dummy at several distances.
 4. Process matrix: diffusion length crossed with well distance, mirrored replicas; antenna structures with their own references.
 
+## Architecture decision (Juan, 2026-11-16)
+
+| Aspect | Decision |
+|---|---|
+| Vehicle | Design for the digital pins first |
+| Signal conversion | Analog physics inside the chip, turned into time or events that are counted and read digitally |
+| External analog pins | Only when they give a capability nothing else can, and justify their cost |
+| Design for test | A requirement before the design is frozen ([PIPELINE](PIPELINE.md#gates-before-tapeout), gate 7) |
+| XC-20 round 3 | Still not consolidated |
+| Tapeout | Not authorised yet |
+
+Origin: advice from a Tiny Tapeout contributor ([OPEN_QUESTIONS](OPEN_QUESTIONS.md) A8). The digital-pin constraint is not
+meant to limit the physics explored; it is meant to force smarter instruments. The open question it leaves: how to build one
+shared instrumentation system that characterises many cells, calibrates itself and isolates faults with the fewest pins
+([ROADMAP](ROADMAP.md)).
+
 ## Open decisions
 
 - Scope of the first die: the narrow recommendation above, or the wider programme.
-- Vehicle: digital only, hybrid, or more than one die. Number of analog pins and whether 3.3 V is used. [2026-11-16] Advice from a
-  Tiny Tapeout contributor: digital pins only unless analog voltages must be measured, and prioritise design for test
-  ([OPEN_QUESTIONS](OPEN_QUESTIONS.md) A8).
+- ~~Vehicle: digital only, hybrid, or more than one die.~~ Decided 2026-11-16: digital pins first (above). Still open: whether
+  any capability justifies analog pins or 3.3 V.
 - Number of chips to order. Single-trap and antenna experiments are statistical: one die says nothing about the process.
 
 ## Risks

@@ -77,7 +77,10 @@ Added 2026-11-16 (Juan's decision after XC-20 round 3). Not every structure on a
 unusual physics. Some exist to isolate the ordinary physics rigorously, so that the unusual part becomes identifiable
 somewhere else. In the XC-20 hypothesis engine (model, not silicon), the 0.54 µm separation, where tunnelling is expected to
 have practically vanished, carried almost all the information the extra cells add about the tunnel parameter (provisional:
-a difference of two variational lower bounds, round not consolidated). It reads leakage plus background without tunnelling,
+a difference of two variational lower bounds, round not consolidated). [corrected 2026-11-16 10:54] With the missing design
+(1.08 µm without 0.54 µm, `PREREG_E2d108.md`): when mechanisms are exclusive, either separation alone gives the same, so what
+matters is having one junction cell without tunnelling; 0.54 µm is only clearly better when conventional leakage coexists
+with tunnelling and decays with distance. It reads leakage plus background without tunnelling,
 and that lets the excess at 0.27 µm be attributed to tunnelling
 ([round 3](../experiments/xc20_hipotesis_r3/INFORME.md)). Rule for every MISFIT cell and for the future experiment engine of
 Residual: each family plans its **ordinary-physics references** (same leakage, same background, same reader, no target
@@ -94,3 +97,7 @@ effect) as deliberately as its target structure, and justifies them by what they
    own LVS extracted from GDS, comparing the real devices.
 6. **Edge report**: every rule a custom cell sits within one grid step of, every rule that only one deck checks, and every
    disagreement between decks, listed with the cell that causes it.
+7. **Design for test** (Juan, 2026-11-16). Before a new macro is integrated, each instrument has a self-test, calibration and
+   diagnostic path that does not depend on the phenomenon it measures: reader self-test from the digital pins, counter and
+   multiplexer readback, a safe power-up state, per-macro enables, no reading during supply-disturbing pulses, and a way to
+   identify a faulty channel and exclude it without losing the rest of the chip.
