@@ -34,6 +34,8 @@ This page is the single to-do list.
   - [ ] report tunnel presence, K given tunnel, and background separately
   - [ ] design an identifiable background control, including geometric differences between cells
   - [ ] keep failed predictions and invalidated runs in the history
+  - [ ] sensitivity of the value of 0.54 and 1.08 µm to the priors of F, B and K: when does each one change value? (0.54 µm
+        only beats 1.08 µm when conventional leakage coexists with tunnelling and decays with distance: `PREREG_E2d108.md`)
 - [ ] XC-19: finish the first complete channel (E4.1 in PLAN_EXPLORATORIO)
 - [ ] XC-14: write its pre-registration now that the shuttle side is open (A2)
 - [ ] Kelvin strips of n+, p+, poly and li next to XC-20: the in-silicon check of A1
@@ -48,6 +50,9 @@ This page is the single to-do list.
 - [ ] Tier B cells that fit after phase 3
 - [ ] A source for the spin-dependent recombination size before any XC-52 area
 - [ ] Reconcile ngspice and Monte Carlo for kT/C (P7)
+- [ ] Residual, idea only: the value of a structure is relative to the experiment it sits in (Shapley value over V(S), where
+      V can be information on a mechanism or a parameter, or the power to falsify). Not a property of a cell, and not built
+      until V(S) has controlled errors and the choice is robust to models and priors
 
 ## Done (most recent first)
 

@@ -109,3 +109,18 @@ for var, qs in Q.items():
             b = pshap(fs, k, [('E2d108', .5), ('E2', -.5), ('E4', .5), ('E3', -.5)])
             if a and b:
                 print(f"Shapley · {lab:<20} φ(0,54) = {a[0]:+.4f} ± {a[1]:.4f} · φ(1,08) = {b[0]:+.4f} ± {b[1]:.4f}")
+
+# --- añadido 2026-11-16 (exploratorio, después de ver los resultados): solapamiento entre las dos separaciones ---
+# R = I(K;A|Y0) + I(K;B|Y0) − I(K;A,B|Y0) = (E3 − E2) + (E2d108 − E2) − (E4 − E2). R > 0: redundancia; R < 0: sinergia.
+print('\n# Solapamiento R = (E3 − E2) + (E2d108 − E2) − (E4 − E2), pareado (exploratorio, no prerregistrado)')
+for var, qs in Q.items():
+    if var == 'W1q1':
+        continue
+    for rd in ('A2', 'S10'):
+        fs = {d: fn(var, rd, d) for d in ('E2', 'E3', 'E2d108', 'E4')}
+        if None in fs.values():
+            continue
+        for k, lab in qs:
+            r = pshap(fs, k, [('E3', 1), ('E2d108', 1), ('E4', -1), ('E2', -1)])
+            if r:
+                print(f"{var} {rd} · {lab:<20} R = {r[0]:+.4f} ± {r[1]:.4f}")

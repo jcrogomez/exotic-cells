@@ -78,3 +78,20 @@ Ninguna fila viola la monotonía.
   +0,042).
 
 Nada de esto cambia la decisión de dibujar las dos, ni consolida la ronda 3.
+
+## Añadido exploratorio · 2026-11-16 10:17 · solapamiento entre separaciones (no prerregistrado)
+
+Propuesto por una revisión externa pegada por Juan, después de ver los resultados. Se calcula, no se juzga contra nada.
+
+R = I(K;A|Y0) + I(K;B|Y0) − I(K;A,B|Y0), con A = 0,54 µm, B = 1,08 µm, Y0 = E2. R > 0 es redundancia (las dos dicen lo mismo);
+R < 0 sería sinergia. Pareado sobre los mismos chips (`incremento_separaciones_salida.txt`, sección «Solapamiento»):
+
+| A2 | R sobre K | R sobre el mecanismo | R sobre s_F |
+|---|---|---|---|
+| W1 (exclusivos) | +0,083 ± 0,001 | +0,036 | — |
+| W2 (simultáneos) | +0,008 ± 0,001 | +0,012 | +0,009 |
+
+- En W1 casi todo lo que aporta una separación lo aporta también la otra: son referencias redundantes.
+- En W2 los aportes son casi aditivos (R ≈ 0): cada distancia dice algo distinto sobre una mezcla con forma espacial.
+- **Ningún R es negativo:** en este modelo no hay sinergia entre las dos separaciones.
+- Mismas reservas que todo §7: combinación de cuatro cotas inferiores; no certifica información verdadera.
