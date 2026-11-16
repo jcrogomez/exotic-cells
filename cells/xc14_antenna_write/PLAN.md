@@ -23,6 +23,8 @@ el barrido es qué se cuelga del nodo y con qué área. Los planes de las absorb
 
 **[corregido 2026-11-13 10:42] Ronda de ataque 4 (nodo flotante y alta tensión)** En óxido de 4,15 nm muere como memoria de fábrica: la carga de plasma se descarga por túnel (verificado; en 1 s solo se pierde el exceso sobre ~3 V, a 2 V tarda 24 s–2 días). Nace otra lectura, verificada al orden: el residual (~0–1,3 V a 6 meses) deriva 0–1,2 mV/día y depende del espesor del óxido (hasta 2,6 V/nm) → reloj de vida y medidor de espesor local; medir diferencias entre copias y deriva, no el valor absoluto. En óxido de 11,6 nm la carga no escapa por túnel (verificado); si sobrevive al recocido final es `[?]`. Ver `experiments/RONDA_4_NODO_2026-11-13.md`.
 
+**[corregido 2026-11-16 09:10]** Antena: según un colaborador de Tiny Tapeout (2026-11-16), en SKY130 las comprobaciones de antena se pueden ignorar, mientras que en GF180 sí hay que cumplir las reglas de antena de la fábrica. Afirmación de tercero, sin documento. La compuerta del lado del shuttle queda abierta para SKY130. El contraste con GF180 sugiere que habla de lo que se exige, no de la física: no predice que la carga de plasma sea despreciable (pregunta de seguimiento Q1). SKY130 es la ventana para este experimento. Registro: [`docs/OPEN_QUESTIONS.md`](../../docs/OPEN_QUESTIONS.md) A2.
+
 ## 2. Lectura y piso
 
 Lo que se lee es el umbral con el que nace un transistor cuya puerta no tiene camino de descarga. Lector: etapa en inversión

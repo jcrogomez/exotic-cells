@@ -86,7 +86,8 @@ effect) as deliberately as its target structure, and justifies them by what they
 ## Gates before tapeout
 
 1. Readout instrument meets its pre-registered resolution in simulation, with noise simulated explicitly.
-2. Answers from Tiny Tapeout on what is still unknown: number of chips, custom macros, fill blocking, bench stress, antenna.
+2. Answers from Tiny Tapeout on what is still unknown: number of chips, custom macros, fill blocking, bench stress. Silicide and
+   antenna answered on 2026-11-16; the live list is [OPEN_QUESTIONS](OPEN_QUESTIONS.md).
 3. One pre-registration per cell that occupies silicon.
 4. Real area of one complete channel per instrument on the template actually chosen, from placement, not from sums.
 5. The shuttle precheck passed (its requirement, not ours), with the precheck map of step 5 showing what each cell relies on;

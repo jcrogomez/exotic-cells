@@ -138,6 +138,8 @@ size of the signal. Tonight's runs found three such effects in the reader alone 
 ## Risks
 
 - Permission for bench stress may be refused: the BENCH zone is designed to be removed.
-- A deliberate antenna structure may be rejected by the foundry even though the Tiny Tapeout precheck does not test for it.
+- ~~A deliberate antenna structure may be rejected by the foundry even though the Tiny Tapeout precheck does not test for it.~~
+  [corrected 2026-11-16] On SKY130, antenna checks can be ignored (a Tiny Tapeout contributor, 2026-11-16; third party, no document;
+  [OPEN_QUESTIONS](OPEN_QUESTIONS.md) A2). They are enforced on GF180, so SKY130 is the window for antenna experiments.
 - Signals near the mismatch floor need more replicas than the area allows.
 - The readout instrument is harder than any cell. If it fails, every result is inconclusive.

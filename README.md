@@ -5,15 +5,58 @@ chip that will measure them. Made in TaiJuan.
 
 > The GDS draws a precursor. Physics finishes the device. Engineering turns the result into a primitive.
 
-Standard cells are built by suppressing everything a process does that was not asked for: leakage, stress, traps, parasitics,
-plasma charging. Exotic Cells starts from the opposite question: **which of those behaviours can be drawn on purpose, predicted,
-measured, and turned into a component?**
+## The premise
 
-**Nothing here has been fabricated.** Every result is a calculation, a simulation with the open PDK, or a design-rule run. A
-family turns green when it survives an attack that tries to kill it *and* an independent verifier who reproduces the numbers with
-their own code. Green means "worth designing for silicon", not "works" and not "ready for tapeout": the colour is a level of
-scientific evidence on paper. Readiness for tapeout is a second, independent scale (column **T**): a fascinating family can
-stay at T0 because it needs another vehicle, and a finished instrument can reach T3 without having shown any exotic physics.
+![The three regions, and what each XC-20 structure is for](docs/figures/idea_and_xc20.svg)
+
+Standard cells are built by suppressing everything a process does that nobody asked for: leakage, stress, traps, parasitics,
+plasma charging, stray light. The design rules say what you are *allowed* to draw, and standard cells use only a small slice
+of that. Exotic Cells explores the rest: **which of those ignored behaviours can be drawn on purpose, mostly inside the rules,
+predicted, measured, and turned into a component?**
+
+Every candidate has two useful outcomes. If it works, even a little, it is a device the open PDK does not offer. If it fails,
+it tells us something about how SKY130 is really made that is not written down anywhere.
+
+## Start here
+
+| If you want | Read |
+|---|---|
+| The best candidates, with what each would show and what its failure would teach | [Ranking](docs/RANKING.md) |
+| What we do not know yet, and the answers we have received | [Open questions](docs/OPEN_QUESTIONS.md) |
+| What comes next, as one to-do list | [Roadmap](docs/ROADMAP.md) |
+| Every headline number and the file that produces it | [Claims](docs/CLAIMS.md) |
+| The chip | [MISFIT proposal](docs/PROPOSAL.md) |
+| The short version, as I'd explain it on Discord | [For Tiny Tapeout folks](docs/FOR_TINY_TAPEOUT.md) |
+| Terms like LOD, RTN, kT/C or Barber-Agakov | [Glossary](docs/GLOSSARY.md) |
+| The whole idea space | [Catalogue](#catalogue) below |
+
+## What has been tested, and what has not
+
+**Nothing here has been fabricated.** No silicon exists yet.
+
+What has been done, and how:
+- **Simulations with the open PDK** (ngspice with the PDK's own settings), **design-rule runs** (Magic and KLayout, and the
+  Tiny Tapeout precheck), and **small physics models** in Python (numpy, scipy, devsim, scikit-fem).
+- **Prediction first.** Before each run we write the prediction and what would kill the idea
+  ([pre-registrations](cells/preregistros/README.md)).
+- **Attack, then verify.** Each family is attacked with the most boring explanation first. Whatever survives is reproduced by
+  an independent verifier with their own code, without reading the attacker's scripts. Only what both agree on is kept. Of 63
+  ideas, 15 survived; many died or came out transformed, and the dead ones stay in the catalogue with their reason.
+- **The checks catch us.** In the last XC-20 round the verifier disagreed with the author's estimator, so that round is
+  recorded as not consolidated rather than averaged.
+
+The one result that is already more than a prediction: Magic's extraction drops the diffusion-length (LOD) stress parameters,
+so two layouts the model separates by 31 mV extract to the same netlist; across the standard-cell library it makes ring
+oscillators 2.5–5.1 % faster when put back. [Residual](residual/README.md) annotates it back.
+
+**How it will be measured.** Almost everything is read digitally: a cell's current discharges a precharged node and an on-chip
+counter times it. The Tiny Tapeout board only reads counters. Each channel carries a known calibration, so a null is a real
+null and not a broken reader.
+
+**Colour is evidence, not readiness.** A family turns green when it survives the attack *and* the independent verifier: it
+means "worth designing for silicon", not "works" and not "ready for tapeout". Readiness for tapeout is a second, independent
+scale (column **T**): a fascinating family can stay at T0 because it needs another vehicle, and a finished instrument can
+reach T3 without having shown any exotic physics.
 
 ## The idea in one picture
 
@@ -84,13 +127,13 @@ still open.
 | ⚪ | XC-11 | [Single-poly floating gate](cells/xc11_floating_gate/PLAN.md) | Injection and tunnelling | F | H | H | L | – | MERGED into XC-14. Waits for a charge pump |
 | 🔵 | XC-12 | [Diffusion-length stress (LOD)](cells/xc12_lod_stress/PLAN.md) | STI mechanical stress | P | D | M | H | T2 | INSTRUMENT (process metrology; Residual). Extraction gap confirmed; annotator applied to the whole standard-cell library; model prediction only |
 | 🔵 | XC-13 | [Well proximity (WPE)](cells/xc13_well_proximity/PLAN.md) | Extra doping near the well edge | P | D | M | H | T0 | INSTRUMENT (process metrology). Not in the model card |
-| 🟢 | XC-14 | [Antenna as a fab-time write](cells/xc14_antenna_write/PLAN.md) | Plasma charge on a floating gate | F+P | D | H | H | T0 | CELL. Round 4, verified to order: on 4.15 nm oxide the plasma charge tunnels away (no fab-time memory); the residual drifts ~mV/day and tracks oxide thickness (clock / thickness gauge, conjecture). On 11.6 nm oxide it does not tunnel; survival through anneal unknown |
+| 🟢 | XC-14 | [Antenna as a fab-time write](cells/xc14_antenna_write/PLAN.md) | Plasma charge on a floating gate | F+P | D | H | H | T0 | CELL. Round 4, verified to order: on 4.15 nm oxide the plasma charge tunnels away (no fab-time memory); the residual drifts ~mV/day and tracks oxide thickness (clock / thickness gauge, conjecture). On 11.6 nm oxide it does not tunnel; survival through anneal unknown. Antenna checks can be ignored on SKY130 (third party, 2026-11-16) |
 | ⚪ | XC-15 | [Antenna factorial](cells/xc15_antenna_factorial/PLAN.md) | Plasma damage to gate oxide | P | D | M | H | – | MERGED into XC-14. Experiment defined |
 | 🔵 | XC-16 | [Placement environment](cells/xc16_placement/PLAN.md) | Neighbours, orientation, density | P | D | L | M | T0 | INSTRUMENT (process metrology). Real diffusion lengths of every library cell now known (`experiments/stdcell_lod`) |
 | 🔴 | XC-17 | [Electrode by design](cells/xc17_electrode/PLAN.md) | Parasitic capacitance | P | D | L | M | – | OUT (a parasitic capacitor: standard-cell territory). Low priority |
 | 🟡 | XC-18 | [Field-oxide transistor](cells/xc18_field_oxide_fet/PLAN.md) | Parasitic channel under isolation | F | H | M | M | T0 | CELL. Threshold unknown |
 | 🟡 | XC-19 | [Single trap (RTN)](cells/xc19_single_trap/PLAN.md) | Capture and emission at one defect | F+P | D/H | H | H | T2 | CELL. Reader simulated against four pre-registrations and drawn as a rule-clean channel; working point revised for shot noise; no trap demonstrated, no silicon |
-| 🟢 | XC-20 | [Abutted p+/n+ junction](cells/xc20_abutted_junction/PLAN.md) | Band-to-band tunnelling | P | D/H | M | H | T0 | CELL. Round 2: reverse tunnelling at zero separation is the firm observable (tens of nA to tens of uA at 1.8 V per 1.4 um, verified to the order of magnitude); negative resistance left open, it depends on a doping profile that is not public |
+| 🟢 | XC-20 | [Abutted p+/n+ junction](cells/xc20_abutted_junction/PLAN.md) | Band-to-band tunnelling | P | D/H | M | H | T0 | CELL. Round 2: reverse tunnelling at zero separation is the firm observable (tens of nA to tens of uA at 1.8 V per 1.4 um, verified to the order of magnitude); negative resistance left open, it depends on a doping profile that is not public. Silicide gate very likely open (third party, 2026-11-16); separation matrix approved, macro not frozen |
 | 🟢 | XC-21 | [Avalanche junction as emitter](cells/xc21_avalanche_emitter/PLAN.md) | Reverse breakdown | F | H/S | M | M | T1 | CELL. Round 4: drawn-gap knob dead; drawn corner 6.6–9.7 V verified to order; with a pump 3–37 pA (one agent). Waits for high voltage |
 | ⚪ | XC-22 | [SPAD](cells/xc22_spad/PLAN.md) | Geiger-mode avalanche | F | H/S | M | M | – | MERGED into XC-21. Waits for high voltage |
 | 🔵 | XC-23 | [Lateral multi-terminal junction](cells/xc23_lateral_junction/PLAN.md) | Minority-carrier diffusion | P | H | M | H | T0 | INSTRUMENT (control of XC-26 (carriers before photons)). Stated only; also the control for XC-26 |
@@ -162,7 +205,7 @@ The full design pipeline is in [`docs/PIPELINE.md`](docs/PIPELINE.md); the tests
 |---|---|
 | [`cells/`](cells/) | One folder per family (`xcNN_name/PLAN.md`), the plan template ([`PLANTILLA.md`](cells/PLANTILLA.md)), the test catalogue ([`PRUEBAS.md`](cells/PRUEBAS.md)), process data ([`notas/DATOS_PROCESO.md`](cells/notas/DATOS_PROCESO.md)), the map of the design space ([`notas/MAPA_ESPACIO.md`](cells/notas/MAPA_ESPACIO.md)) and pre-registrations. `xc19_read/`, `xc19_bias/`, `xc19_channel/` hold the first drawn layout: the readout of XC-19 |
 | [`experiments/`](experiments/README.md) | Every run, each against a prediction written first: attack and verify rounds, the LOD audit, the precheck map, lithography |
-| [`docs/`](docs/) | [Motivation](docs/MOTIVATION.md), [pipeline](docs/PIPELINE.md), [MISFIT chip proposal](docs/PROPOSAL.md), [exploration plan](docs/PLAN_EXPLORATORIO.md), [experiment table](docs/EXPERIMENTOS.md), [claims and evidence](docs/CLAIMS.md), [SKY130 capability matrix](docs/CAPACIDADES_SKY130.md), [reading list](docs/READING.md) |
+| [`docs/`](docs/) | [Motivation](docs/MOTIVATION.md), [pipeline](docs/PIPELINE.md), [MISFIT chip proposal](docs/PROPOSAL.md), [ranking](docs/RANKING.md), [roadmap](docs/ROADMAP.md), [open questions](docs/OPEN_QUESTIONS.md), [exploration plan](docs/PLAN_EXPLORATORIO.md), [experiment table](docs/EXPERIMENTOS.md), [claims and evidence](docs/CLAIMS.md), [SKY130 capability matrix](docs/CAPACIDADES_SKY130.md), [reading list](docs/READING.md) |
 | [`lab/`](lab/README.md) | The lab notebook where the project started (4–12 Nov 2026): [philosophy](lab/docs/FILOSOFIA.md), decisions, the first portfolio, and the first drawn macros (constriction, cold spark, photon, LOD etch) |
 | [`residual/`](residual/README.md) | Residual, the software that compares model and silicon. Module 1 annotates extracted netlists with stress geometry; module 2 maps the legal edge of a geometry |
 | [`tools/`](tools/) | `catalogue_json.py` (catalogue → JSON), `check_runs.py` (judges committed simulation runs), `manifest.sh` (records a run's environment), `science_ci.py` (level-2 CI: reference simulations judged by their numbers), `ngspice_pdk.sh` (runs ngspice with the PDK's own settings; the Docker image otherwise skips them, see `experiments/AUDITORIA_HSA_2026-11-13.md`) |

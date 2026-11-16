@@ -179,7 +179,7 @@
   "usefulness": "H",
   "information": "H",
   "readiness": "T0",
-  "state": "CELL. Round 4, verified to order: on 4.15 nm oxide the plasma charge tunnels away (no fab-time memory); the residual drifts ~mV/day and tracks oxide thickness (clock / thickness gauge, conjecture). On 11.6 nm oxide it does not tunnel; survival through anneal unknown"
+  "state": "CELL. Round 4, verified to order: on 4.15 nm oxide the plasma charge tunnels away (no fab-time memory); the residual drifts ~mV/day and tracks oxide thickness (clock / thickness gauge, conjecture). On 11.6 nm oxide it does not tunnel; survival through anneal unknown. Antenna checks can be ignored on SKY130 (third party, 2026-11-16)"
  },
  {
   "id": "XC-15",
@@ -257,7 +257,7 @@
   "usefulness": "M",
   "information": "H",
   "readiness": "T0",
-  "state": "CELL. Round 2: reverse tunnelling at zero separation is the firm observable (tens of nA to tens of uA at 1.8 V per 1.4 um, verified to the order of magnitude); negative resistance left open, it depends on a doping profile that is not public"
+  "state": "CELL. Round 2: reverse tunnelling at zero separation is the firm observable (tens of nA to tens of uA at 1.8 V per 1.4 um, verified to the order of magnitude); negative resistance left open, it depends on a doping profile that is not public. Silicide gate very likely open (third party, 2026-11-16); separation matrix approved, macro not frozen"
  },
  {
   "id": "XC-21",

@@ -14,6 +14,8 @@ jobs:
         run: python3 tools/check_runs.py
       - name: Catalogue JSON matches the table
         run: python3 tools/catalogue_json.py --check
+      - name: Ranking agrees with the catalogue; front-document links resolve
+        run: python3 tools/check_docs.py
       - name: Event-detection study is reproducible
         run: |
           cd experiments/xc19_noise

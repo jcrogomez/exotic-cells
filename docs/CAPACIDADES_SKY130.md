@@ -88,6 +88,7 @@ Corridas de esta sesión (scripts y salidas en el scratchpad, temporales; se des
 
 ### 1.3 XC-20, en concreto
 
+- **[corregido 2026-11-16 09:10]** Un colaborador de Tiny Tapeout (2026-11-16) cree que SKY130 no está siliciurado. Tercero, sin documento; apoya lo inferido. Registro: [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md) A1.
 - La compuerta "¿hay siliciuro sobre la frontera en d = 0?" no se cierra con fuentes: **[?]**.
 - El peso de las fuentes leídas apunta a **sin siliciuro en la difusión** (resistencias de capa, ninguna máscara ni regla
   que lo controle). Grado: **inferido**, no leído.
@@ -179,6 +180,8 @@ autoriza. Es la pregunta a TT con más familias detrás.
 ---
 
 ## 8. Preguntas concretas para Tiny Tapeout
+
+**[corregido 2026-11-16 09:10]** La 1 tiene respuesta de tercero (sin siliciuro, A1) y la antena también (A2). La lista viva de preguntas está ahora en [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md); esta sección queda como registro del 2026-11-13.
 
 1. **Siliciuro.** En el proceso que fabrica los shuttles SKY130 de TT, ¿la difusión n+/p+ y el poly llevan siliciuro? ¿Hay
    alguna capa que lo bloquee? ¿Qué hace físicamente la máscara RPM ("Resistor Protect")?
