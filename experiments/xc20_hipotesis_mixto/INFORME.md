@@ -143,6 +143,13 @@ la condición para seguir. Antes de generalizarlo hay que resolver lo de §7.
    - Rs, Imax y σδ son **supuestos** `[?]`.
    - El excitador fabrica firmas: el límite de corriente hace que el 21 % de los chips R de V4 lean igual a −1,8 y −0,9 V
      (verificador).
+   - [corregido 2026-11-15 19:02] **Excitador con Imax activo** (`comprueba_excitador.py` → `comprueba_excitador_salida.txt`, 20 000
+     chips por mecanismo, V4): `min(I, Imax)` da la corriente correcta. Con el límite activo el punto real es I = Imax, con
+     V_dev = I_dev⁻¹(Imax) y la fuente en V_dev + Rs·Imax ≤ Vap; se cumple en todos los puntos. La tensión que de verdad
+     queda sobre el dispositivo cae mucho: mediana 0,06–0,15 V en R y M (20–42 % de esos chips limitados en `base` y `peine`),
+     1,35–1,55 V en T (2–6 %). En `d027` y en G nunca se activa. El motor no usa esa tensión para nada más, así que no cambia
+     ningún número. Sí es una pérdida: una fuente real avisa cuando entra en compliance y el modelo no le da esa lectura al
+     experimentador, lo que es conservador. Es una opción de diseño de la ronda 3 `[?]`.
 3. **Lo que dejó abierto el verificador:**
    - La regla de D1 (2σ de Monte Carlo) mide significación, no tamaño. Hay que fijar un umbral de efecto para la próxima ronda.
    - Censura sobre la lectura y no sobre la corriente: no se exploró la otra opción `[?]`.
@@ -152,6 +159,9 @@ la condición para seguir. Antes de generalizarlo hay que resolver lo de §7.
    - en `tools/science_ci.py`, exigir longitud y valores finitos antes de `zip(got, want)`;
    - añadir un modelo discreto con mecanismos solapados e información mutua exacta a `test_motor.py`. Haría visible la mutación
      equivalente (la normalización de G), que con mecanismos que se solapan sí pesa.
+   - [corregido 2026-11-15 19:02] Los dos están hechos: bf89139 (science_ci) y a22c58c (prueba E). La prueba E no usa una
+     información mutua cerrada. Compara, pareado, contra una marginalización conjunta escrita aparte y exige que el mutante sin
+     normalización de G quede más lejos de ella que el motor. Detecta la mutación: 0,179 ± 0,017 bits de diferencia.
 
 ## Archivos
 
@@ -161,4 +171,5 @@ la condición para seguir. Antes de generalizarlo hay que resolver lo de §7.
 | `motor2.py` | El código; `--rapido`, `--convergencia`, `--extra`, `--mixto` |
 | `resultados2.txt`, `convergencia2.txt`, `extra2.txt`, `mixto2.txt` | Las tablas |
 | `*_salida.txt` | La salida de consola con la hora final |
+| `comprueba_excitador.py`, `comprueba_excitador_salida.txt` | Consistencia del excitador con Imax activo (§7.2) |
 | `verificacion/` | Código, tablas e informe del verificador; los volcados por muestra `ver2_lt_*.npz` (68 MB) se regeneran con sus scripts y no se versionan |

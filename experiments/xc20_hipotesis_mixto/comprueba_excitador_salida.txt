@@ -1,0 +1,26 @@
+T base  1.8 27: limitados 0.0176; residuo lazo 8.9e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada 1.553 V (mediana); de los limitados, sobre el techo del ancho 0.000
+T d027  1.8 27: limitados 0.0000; residuo lazo 2.2e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada nan V (mediana); de los limitados, sobre el techo del ancho nan
+T base  1.8 85: limitados 0.0211; residuo lazo 8.9e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada 1.540 V (mediana); de los limitados, sobre el techo del ancho 0.000
+T d027  1.8 85: limitados 0.0000; residuo lazo 2.2e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada nan V (mediana); de los limitados, sobre el techo del ancho nan
+T base  0.9 27: limitados 0.0000; residuo lazo 2.2e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada nan V (mediana); de los limitados, sobre el techo del ancho nan
+T peine 1.8 27: limitados 0.0619; residuo lazo 1.6e-15; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada 1.354 V (mediana); de los limitados, sobre el techo del ancho 0.002
+R base  1.8 27: limitados 0.3042; residuo lazo 1.1e-15; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada 0.119 V (mediana); de los limitados, sobre el techo del ancho 0.179
+R d027  1.8 27: limitados 0.0000; residuo lazo 2.2e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada nan V (mediana); de los limitados, sobre el techo del ancho nan
+R base  1.8 85: limitados 0.2955; residuo lazo 1.1e-15; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada 0.128 V (mediana); de los limitados, sobre el techo del ancho 0.176
+R d027  1.8 85: limitados 0.0000; residuo lazo 2.2e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada nan V (mediana); de los limitados, sobre el techo del ancho nan
+R base  0.9 27: limitados 0.2084; residuo lazo 5.6e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada 0.060 V (mediana); de los limitados, sobre el techo del ancho 0.123
+R peine 1.8 27: limitados 0.3856; residuo lazo 1.6e-15; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada 0.061 V (mediana); de los limitados, sobre el techo del ancho 0.195
+M base  1.8 27: limitados 0.3214; residuo lazo 1.1e-15; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada 0.139 V (mediana); de los limitados, sobre el techo del ancho 0.172
+M d027  1.8 27: limitados 0.0000; residuo lazo 2.2e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada nan V (mediana); de los limitados, sobre el techo del ancho nan
+M base  1.8 85: limitados 0.3136; residuo lazo 1.1e-15; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada 0.152 V (mediana); de los limitados, sobre el techo del ancho 0.170
+M d027  1.8 85: limitados 0.0000; residuo lazo 2.2e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada nan V (mediana); de los limitados, sobre el techo del ancho nan
+M base  0.9 27: limitados 0.2106; residuo lazo 5.6e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada 0.065 V (mediana); de los limitados, sobre el techo del ancho 0.126
+M peine 1.8 27: limitados 0.4201; residuo lazo 1.3e-15; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada 0.083 V (mediana); de los limitados, sobre el techo del ancho 0.180
+G base  1.8 27: limitados 0.0000; residuo lazo 2.2e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada nan V (mediana); de los limitados, sobre el techo del ancho nan
+G d027  1.8 27: limitados 0.0000; residuo lazo 2.2e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada nan V (mediana); de los limitados, sobre el techo del ancho nan
+G base  1.8 85: limitados 0.0000; residuo lazo 2.2e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada nan V (mediana); de los limitados, sobre el techo del ancho nan
+G d027  1.8 85: limitados 0.0000; residuo lazo 2.2e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada nan V (mediana); de los limitados, sobre el techo del ancho nan
+G base  0.9 27: limitados 0.0000; residuo lazo 1.1e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada nan V (mediana); de los limitados, sobre el techo del ancho nan
+G peine 1.8 27: limitados 0.0000; residuo lazo 2.2e-16; fuente<=Vap True; min(I,Imax) correcto True; Vdev limitada nan V (mediana); de los limitados, sobre el techo del ancho nan
+ok: excitador coherente en todos los puntos
+Sun Nov 15 19:02:20 EST 2026
