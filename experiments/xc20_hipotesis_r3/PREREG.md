@@ -248,3 +248,81 @@ Antes de congelar, sin código del motor escrito ni corrido:
     - P3: decía 36 %; es 16 %.
   - Con eso bajé el umbral de P3 de 0,1 a 0,05 bits. Las demás predicciones no cambian.
   - Añadí E6c a la lista de corridas: P4 lo nombraba y §4 no lo tenía.
+
+### Enmienda 1 · 2026-11-15 19:27 · revisión externa «XC-20 · Mi decisión antes de la ronda 3»
+
+Escrita después del congelado y antes de escribir el motor; no hay nada corrido. No cambia ninguna predicción P1–P7 ni elimina
+variantes. Añade lo que sigue.
+
+**1. Composición física.**
+- **Ya cubierto:**
+  - B está en todas las hipótesis, también con T, R, M y F (§3, «Fondo B»).
+  - G está sumada en todas (§3, «Fondo térmico»). Con g0 desde 3·10⁻¹⁸ A, la hipótesis G es en la práctica la nula de «solo
+    unión y fondo».
+  - T y R coexisten en M.
+- **No cubierto:** F es exclusiva. No coexiste con T ni con R. Es una simplificación, y su efecto esperado es inflar
+  I(F frente a túnel residual), porque nunca hay que separar F de un túnel que está a la vez.
+- **Se añade la variante W2** (componentes simultáneos):
+  - I_obs = G + B + s_T·I_T + s_R·I_R + s_F·I_F, con s_T, s_R, s_F ∈ {0, 1} independientes, cada uno con probabilidad 1/2.
+  - Hay ocho clases, incluida la nula s = 0 (solo G y B). Cada componente usa los priors de W1.
+  - Se informan I(clase; Y), I(s_T; Y), I(s_R; Y) e I(s_F; Y).
+- **Corridas añadidas:** W2 × C3b × {X, A, A2, S10} × {E1, E2, E4, E6, E6c} (20 filas).
+- Las decisiones D5–D8 se juzgan en W1, como está escrito, y además en W2. Si el veredicto difiere, se escribe «depende de la
+  exclusividad» y se da preferencia a W2, que impone menos.
+
+**2. Identificabilidad.**
+- **Ya cubierto:** la presencia de túnel (I(túnel; Y)) y su ley espacial (I(Kbin; Y | túnel) y las clases de K) se informan por
+  separado (§4 y §5). Con q = 1, K y la longitud característica λ = 0,27 µm / ln K son la misma cantidad.
+- **Se añade:**
+  - I(qbin; Y | túnel), con q en 4 bins iguales de 0,5 a 1,5.
+  - Para 0,54 y 1,08 µm, aunque el túnel exponencial quede bajo el piso (P1):
+    - I(s_F; Y) en W2;
+    - el ancho del posterior de log10 B (desviación típica posterior frente a la del prior).
+  - **D5'** (complementaria, no sustituye a D5): las separaciones nuevas valen si E2 → E4 sube ≥ 0,05 bits en I(s_F; Y) (W2) o
+    estrecha el posterior de log10 B en ≥ 0,3 décadas. D5 se juzga tal como estaba.
+
+**3. Aritmética de los priors.** El control reproducible es `aritmetica_priors.py` → `aritmetica_priors_salida.txt`. Integra en
+una rejilla y coteja con 10⁶ muestras.
+- Con los priors de la ronda 2 (K ≤ 10⁶) reproduce las cifras de la revisión:
+  - t0/K en 150 fA–1,25 nA: 0,784;
+  - t0/K² > 1 pA: 0,026.
+- **Las cifras de §6 cambian por dos cosas:**
+  - el techo de K pasa de 10⁶ a 10¹², como pedía la revisión anterior (no validar el mixto para K arbitraria);
+  - el umbral de §6 es 1 pA, no el piso de 150 fA.
+- Con K ≤ 10¹²:
+  - t0/K en 150 fA–1,25 nA: 0,372;
+  - en 1 pA–1,25 nA: 0,271;
+  - t0/K² > 1 pA: 0,0068.
+- El umbral de 1 pA lo elegí yo como margen sobre el piso y no lo dije. P2 queda como estaba; esta tabla da las dos lecturas.
+
+**4. Instrumentación.**
+- **Ya cubierto:**
+  - C3 es g_s = g_c + δ_s y g_a = g_c + δ_a, con δ independientes (§3).
+  - La celda sin unión es una lectura más: pasa por el lector sensible con su g_c + δ_s y su ε, y se censura igual. No es un
+    fondo conocido.
+- **No cubierto, y se añade:**
+  - **Fuga de los interruptores de S_f.** Hasta ahora solo subía el piso. Ahora suma también una corriente desconocida L_sw a las
+    lecturas del rango bajo:
+    - L_sw = f·150 fA·u, con u log-U 0,1–1, común al chip (mismos interruptores), ×U(1, 50) a 85 °C;
+    - el motor la infiere, no la conoce.
+    - La inyección de carga con signo queda fuera `[?]`: el motor trabaja con log I y no admite una corriente neta negativa.
+  - **Desajuste entre el fondo de la celda sin unión y el de las celdas con unión.**
+    - B por celda = B·10^u, con u normal de 0,15 décadas, independiente por celda (supuesto).
+    - Se aplica en W2. W1 queda como estaba congelado, con B idéntico en todas las celdas, y la diferencia W1 − W2 incluye ese
+      efecto.
+
+**5. Diferencias pareadas y priors iguales.**
+- Para cada variante y calibración, todos los diseños y arquitecturas comparten los mismos chips externos y las mismas
+  realizaciones de ruido y de calibración. Se sortean una vez para las 11 lecturas posibles y cada diseño toma su subconjunto.
+- Toda diferencia de D5–D8 se informa pareada, con su error estándar pareado.
+- Los priors sobre las hipótesis son los mismos en las dos ramas de cada comparación.
+
+**6. Coste y umbral.**
+- 0,05 bits es un criterio exploratorio, no una justificación de área.
+- Cada decisión informa su coste aproximado:
+  - celdas nuevas (la celda base es un pozo de 4 × 3 µm, PLAN §5.2);
+  - lecturas extra;
+  - entradas de multiplexor;
+  - si exige un segundo front-end.
+- El área de los lectores es `[?]`.
+- Por decisión se informan la información mutua, su error estadístico, la sensibilidad a los priors (las variantes) y ese coste.
