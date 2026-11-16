@@ -96,7 +96,11 @@ presupuesto de canales y área que obligue a elegir. Ninguno está aquí.
    canal y se cancela en los cocientes. Con ese modelo, 85 °C separaría T de R también con σ = 0,5, y la predicción 3 («sin
    calibración solo sirve la segunda tensión») dependería de él. No corrido.
 2. Bajo T y R la fuga térmica de d = 0 se toma de la lectura de d = 0,27 (misma área, forma 1,2 fija), no se integra. Es la resta
-   del experimentador y el verificador, que sí integra, da los mismos números.
+   del experimentador y el verificador, que sí integra, da los mismos números. [corregido 2026-11-15 19:01] Cuando la lectura de
+   d = 0,27 queda bajo el piso, el motor pone ese térmico a 0 en vez de integrarlo. En estos diseños no pesa (el térmico queda
+   órdenes de magnitud bajo la señal), pero con mecanismos solapados (prueba E de `test_motor.py`: T, R y G del mismo orden,
+   0,1–10 pA, lector de XC-26, σ = 0,05) el motor queda −0,024 ± 0,010 bits por debajo de una marginalización conjunta en la
+   pregunta «G o no G». No cambia ningún número de este informe; `motor2.py` (ronda 2) integra el térmico y no lo tiene.
 3. **T en d = 0,27 se modela como 0.** El prerregistro dice «≥ 7·10³ menos»: con t0 = 0,5 mA serían hasta 71 nA, por encima del
    piso del lector ancho. El modelo descarta esa firma y subestima lo que aporta d = 0,27 (verificador).
 4. Las filas de confusión con el lector de XC-26 son un empate del `argmax` (T y R dan la misma verosimilitud): el acierto es
@@ -106,6 +110,6 @@ presupuesto de canales y área que obligue a elegir. Ninguno está aquí.
 
 ## Archivos
 
-`PREREG.md` · `motor.py` (motor; `--rapido` para la CI) · `test_motor.py` (pruebas de la CI rápida, añadidas 2026-11-15: límites analíticos, caso exacto, monotonía, coherencia bayesiana) · `motor_salida.txt`, `resultados.txt` · `sensibilidad.py`, `sensibilidad.txt` ·
+`PREREG.md` · `motor.py` (motor; `--rapido` para la CI) · `test_motor.py` (pruebas de la CI rápida, añadidas 2026-11-15: límites analíticos, caso exacto, monotonía, coherencia bayesiana; E, mecanismos solapados contra una marginalización conjunta, con un mutante sin la normalización de G que debe fallar) · `motor_salida.txt`, `resultados.txt` · `sensibilidad.py`, `sensibilidad.txt` ·
 `verificacion/` (código y logs del verificador, `ver_INFORME.md`; `ver_conv_N1500_M18.log` vacío, corrida detenida por redundante).
 Python con numpy y scipy (`.venv` de ZTASIC; scipy opcional).

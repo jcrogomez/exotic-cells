@@ -18,11 +18,18 @@ Tres clases de prueba, separadas a propósito:
      («D0 + 85 C, ambos» 0,955 frente a 1,434), unas 40 sigmas.
   D. Coherencia bayesiana: el promedio sobre las lecturas simuladas de P(h | y) es el prior de h (ley de la probabilidad total).
      Se exige |media - prior| <= 4 errores estándar + 1e-9.
+  E. Mecanismos solapados por la ruta real de logverosimilitudes (añadido 2026-11-15, revisión externa): priors cambiados para
+     que T, R y G den corrientes del mismo orden (0,1–10 pA) leídas con XC26, y una marginalización conjunta de referencia
+     escrita aparte (todos los parámetros a la vez, sin la resta del térmico). Se exige que la normalización de G sea la buena:
+     una copia de motor.py sin ella (la mutación equivalente de abajo, generada al vuelo) debe alejarse de la referencia en la
+     pregunta «G o no G» más que el motor, por más de 4 errores estándar de la diferencia pareada motor - mutante. El sesgo propio
+     del motor frente a la referencia se imprime y no se exige: es una aproximación conocida de la ronda 1 (pone a 0 el térmico
+     cuando la lectura de d = 0,27 queda bajo el piso), de ~0,02–0,03 bits aquí y despreciable en los diseños de la ronda 1, donde
+     el térmico queda órdenes de magnitud bajo la señal. La ronda 2 (motor2.py) no la tiene.
 Mutaciones probadas a mano el 2026-11-15 (copia de motor.py en el scratchpad): invertir la cola saturada de la verosimilitud
 censurada -> 13 fallos; ignorar el prior en resume() -> 1 fallo; quitar la normalización de G por las lecturas de d = 0,27 ->
-0 fallos, y tampoco cambia ningún número del motor en estos diseños: G está separada de T y R por órdenes de magnitud y ese
-factor no pesa. Es una mutación equivalente aquí; con mecanismos que se solapan (túnel + puente, punto 4) sí pesaría y hará
-falta una prueba que la vea.
+0 fallos en A-D, y tampoco cambia ningún número del motor en estos diseños: G está separada de T y R por órdenes de magnitud y
+ese factor no pesa. Es una mutación equivalente en ellos; la prueba E la ve.
 """
 import math, os, sys
 import numpy as np
@@ -135,6 +142,59 @@ for dn, lector, sigma, prior in (("D0 + 85 C", "ambos", 0.5, (1 / 3, 1 / 3, 1 / 
     se = (post * w[:, None]).std(0) / math.sqrt(len(post))
     ok("D media de la posterior = prior, %s, %s, sigma %.2f" % (dn.split(":")[0], lector, sigma),
        bool(np.all(np.abs(m - prior) <= 4 * se + 1e-9)), "media %s, prior %s" % (np.round(m, 4), np.round(prior, 4)))
+
+# ---------------- E. Mecanismos solapados: normalización de G por la ruta real ----------------
+import importlib.util, types
+src = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "motor.py")).read()
+MUT_A = "np.logaddexp.reduce(ll, axis=1) - np.logaddexp.reduce(lw, axis=1) if ter else"
+assert src.count(MUT_A) == 1, "la línea de la normalización de G cambió: actualizar la prueba E"
+mut = types.ModuleType("motor_mutante")
+exec(compile(src.replace(MUT_A, "np.logaddexp.reduce(ll, axis=1) - math.log(n_int) if ter else"), "motor_mutante", "exec"), mut.__dict__)
+
+def solapado(mod):
+    def muestrea(m, n, rng):
+        p = {"g0": mod.logu(rng, 1e-13, 1e-11, n), "gea": rng.uniform(0.56, 1.12, n), "gsh": rng.uniform(1.0, 1.4, n)}
+        if m == "T":
+            p.update(t0=mod.logu(rng, 1e-13, 1e-11, n), tea=rng.uniform(0.010, 0.034, n), tsh=mod.logu(rng, 15, 57, n))
+        if m == "R":
+            p.update(rb=mod.logu(rng, 1.8e11, 1.8e13, n), tcr=rng.uniform(0.002, 0.004, n))
+        return p
+    return muestrea
+orig = M.muestrea
+M.muestrea, mut.muestrea = solapado(M), solapado(mut)
+DS, SIG, NE, NR, NI = [("base", 1.8, 27), ("d027", 1.8, 27)], 0.05, 200, 50000, 20000
+try:
+    rng = np.random.default_rng(3)                       # mismas lecturas que logverosimilitudes(semilla=3)
+    ysE = np.empty((3 * NE, len(DS)))
+    for k, m in enumerate(M.MECS):
+        pp = M.muestrea(m, NE, rng)
+        for j, (e, v, t) in enumerate(DS):
+            ysE[k * NE:(k + 1) * NE, j] = M.lee(M.corriente(m, pp, e, v, t), "XC26", t, SIG, rng)
+    rng = np.random.default_rng(99)                      # referencia: marginalización conjunta, otra muestra interna
+    lref = np.empty((len(ysE), 3))
+    for k, m in enumerate(M.MECS):
+        pp = M.muestrea(m, NR, rng)
+        ll = sum(M.loglik(ysE[:, j:j + 1], M.corriente(m, pp, e, v, t)[None, :], "XC26", t, SIG) for j, (e, v, t) in enumerate(DS))
+        lref[:, k] = np.logaddexp.reduce(ll, axis=1) - math.log(NR)
+    verE = np.repeat(np.arange(3), NE)
+    def bits_g(lp):  # «G o no G», prior 2/3 - 1/3
+        lpost = lp + math.log(1 / 3); lpy = np.logaddexp.reduce(lpost, axis=1)
+        lg = np.stack([np.logaddexp.reduce(lpost[:, :2], axis=1), lpost[:, 2]], 1)
+        vg = (verE == 2).astype(int)
+        return (lg[np.arange(len(verE)), vg] - lpy - np.log(np.array([2 / 3, 1 / 3])[vg])) / math.log(2)
+    bref = bits_g(lref)
+    v1, lp1 = M.logverosimilitudes(DS, "XC26", SIG, NE, NI, semilla=3)
+    v2, lp2 = mut.logverosimilitudes(DS, "XC26", SIG, NE, NI, semilla=3)
+    assert (v1 == verE).all() and (v2 == verE).all()
+    e1, e2 = bits_g(lp1) - bref, bits_g(lp2) - bref
+    dif = np.abs(e2) - np.abs(e1)
+    se = dif.std() / math.sqrt(len(dif))
+    print("     E sesgo del motor frente a la referencia, «G o no G»: %+.4f ± %.4f bits (no exigido; ver docstring)"
+          % (e1.mean(), e1.std() / math.sqrt(len(e1))))
+    ok("E la normalización de G importa con mecanismos solapados: el mutante se aleja más de la referencia",
+       dif.mean() > 4 * se, "mutante %+.4f, motor %+.4f; |mutante| - |motor| = %.4f ± %.4f" % (e2.mean(), e1.mean(), dif.mean(), se))
+finally:
+    M.muestrea = orig
 
 print("fallos:", len(fallos))
 sys.exit(bool(fallos))
