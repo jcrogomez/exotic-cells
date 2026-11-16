@@ -326,3 +326,15 @@ una rejilla y coteja con 10⁶ muestras.
   - si exige un segundo front-end.
 - El área de los lectores es `[?]`.
 - Por decisión se informan la información mutua, su error estadístico, la sensibilidad a los priors (las variantes) y ese coste.
+
+### Aclaración posterior a los resultados · 2026-11-16 08:59 · decisión de Juan
+
+**Escrita después de ver los números de la ronda 3. No es una enmienda previa ni cambia ninguna predicción.**
+
+- **Umbral de 0,05 bits:** es ganancia **absoluta** de información mutua, en bits, no información normalizada por H(Kbin).
+  Razón dimensional: I(K;Y)/H(K) no tiene unidades de bits. Con 8 intervalos equiprobables H(Kbin) = 3 bits, y +0,100 bits
+  equivale al 3,3 % de esa entropía; sigue siendo +0,100 bits.
+- **Grado:** como la interpretación se fijó después de observar resultados, el veredicto de D5 se clasifica como **decisión
+  exploratoria**, no como cumplimiento confirmatorio inequívoco del prerregistro.
+- **Advertencia que la acompaña:** el +0,100 es la resta de dos cotas inferiores de Barber-Agakov. Cada cota es válida, pero la
+  resta no es una cota de la ganancia verdadera. Su error de Monte Carlo pareado (±0,001) no mide la holgura.

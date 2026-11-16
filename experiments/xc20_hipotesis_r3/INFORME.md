@@ -112,6 +112,9 @@ verificador, salvo que se diga otra cosa. Su instrumento pasa sus controles, per
   - «estimada» en todos los chips o en la mayoría;
   - la selección de rango de S_f.
 
+**[corregido 2026-11-16 08:59]** Juan resolvió la ambigüedad: el umbral es en bits absolutos. Queda registrada como
+aclaración posterior en el PREREG, y D5 pasa a **decisión exploratoria**, no confirmatoria. Ver §7.
+
 ## 6. Qué haría falta para consolidar
 
 1. Corregir S_f en `motor3.py`: error compartido por rango, el rango observado y L_sw solo en el rango bajo.
@@ -120,6 +123,64 @@ verificador, salvo que se diga otra cosa. Su instrumento pasa sus controles, per
 4. Bajar el error pareado de mi motor por debajo de ~0,01. Con este estimador harían falta del orden de 4× las lecturas
    externas y 4× la etapa 2: unas 16 h de CPU por la lista de decisiones `[estimación]`.
 5. Otra opción: un segundo verificador de otra familia que reproduzca las filas de §3.
+
+## 7. Decisión de Juan (2026-11-16) y aporte de cada separación
+
+**Decisión, tal como la dio Juan** (resumen; aplica a la dirección de ingeniería, no al tapeout):
+- Se dibujan d = 0, 0,27, 0,54 y 1,08 µm y la celda sin unión.
+  - 0,54 µm: control prioritario para separar fuga convencional, fondo y la corriente residual atribuible al túnel.
+  - 1,08 µm: referencia de mayor separación, para ver si la fuga sigue cayendo o se acerca a un fondo.
+  - Sin unión: control obligatorio del instrumento y del pozo.
+- Dirección: matriz pequeña de separaciones, control nulo y lectura de dos rangos; sigue abierta la comparación entre
+  front-ends separados y rangos seleccionables. **No se congela el macro para tapeout.**
+- **La ronda 3 sigue NO CONSOLIDADA.** No se sustituyen los números del autor por los del verificador ni se declara validado
+  el modelo.
+
+**Aporte por separado** (`incremento_separaciones.py` → `incremento_separaciones_salida.txt`, desde los volcados del
+verificador, mismos chips de prueba, C3b). Advertencia, la misma que hizo Juan: **cada fila es la resta de dos cotas inferiores
+de Barber-Agakov y no certifica la ganancia verdadera.** El ± es error de Monte Carlo pareado, no holgura. Los controles de
+capacidad mueven E4 − E2 ≤ 0,006 bits (§4 del verificador), pero no existen para E3, y la cota todavía no llegó a meseta.
+
+| Aporte | I(Kbin \| túnel) | I(túnel) o I(s_T) | I(F) o I(s_F) | I(M) o I(clase) |
+|---|---|---|---|---|
+| **0,54 dado E2**, W1 A2 | **+0,093** ± 0,001 | +0,010 | 0 (saturada) | +0,037 |
+| **1,08 dado E2 + 0,54**, W1 A2 | +0,007 ± 0,000 | +0,001 | 0 (saturada) | +0,010 |
+| **0,54 dado E2**, W2 A2 | **+0,094** ± 0,001 | +0,010 | +0,047 | **+0,057** |
+| **1,08 dado E2 + 0,54**, W2 A2 | +0,029 ± 0,001 | +0,004 | +0,034 | +0,037 |
+| 0,54 dado E2, W1 S10 | +0,042 | +0,004 | 0 | +0,004 |
+| 1,08 dado E2 + 0,54, W1 S10 | +0,007 | +0,001 | 0 | +0,005 |
+| 0,54 dado E2, W2 S10 | +0,057 | +0,006 | +0,019 | +0,024 |
+| 1,08 dado E2 + 0,54, W2 S10 | +0,012 | +0,003 | +0,015 | +0,018 |
+
+- **No se reparten los 0,100 bits a partes iguales.** Con mecanismos exclusivos (W1), 0,54 µm aporta casi todo y 1,08 µm, +0,007.
+- **Con fuga convencional coexistente (W2), 1,08 µm sí aporta:** +0,034 en s_F y +0,029 en K, debajo del umbral por separado.
+  Es el papel que Juan le asigna: contrastar el decaimiento de la fuga con el fondo. Su valor depende de que F coexista con el
+  túnel, que es el supuesto de W2 (el W2 del verificador; el de mi motor está roto, §1).
+- **Ninguna fila viola la monotonía** (ningún aporte negativo más allá de 2σ).
+- **No medido:** 1,08 µm sin 0,54 µm (no hay diseño E2 + d108) `[?]`; W1q1 S10 E3 (no se corrió).
+- **Ancho del posterior de B:** ni 0,54 ni 1,08 lo estrechan (≤ 0,04 décadas). Lo fija la celda sin unión (E1 → E2: de 0,98 a
+  0,55 décadas, W1 A2).
+
+**Coste de cada separación** (PREREG §6; áreas de lector `[?]`):
+
+| | Celda | Lecturas | Multiplexor | Front-end |
+|---|---|---|---|---|
+| 0,54 µm | 1 celda, pozo n de 4 × 3 µm (PLAN §5.2) | 1 a 27 °C (E3/E4); 2 con 85 °C (E5) | 1 entrada | el mismo |
+| 1,08 µm | 1 celda, pozo n de 4 × 3 µm | 1 a 27 °C; 2 con 85 °C | 1 entrada | el mismo |
+
+Ruteo: una línea por celda hasta la entrada del multiplexor; longitud `[?]` hasta tener la colocación. El área real de un
+canal de lector sigue sin medir (PLAN_EXPLORATORIO E4.1).
+
+**Pendiente antes de otra ronda grande** (lista de Juan, sin empezar; cada punto necesita su prerregistro):
+1. Corregir W2 y las correlaciones de S_f en `motor3.py`.
+2. Revisar las discrepancias de W1 con una comparación que separe error del estimador de diferencias de modelado.
+3. Evaluar directamente la ganancia incremental sobre K, no como resta de dos cotas inferiores, con una segunda familia de
+   estimador e intervalo propio.
+4. Reportar por separado presencia de túnel, información sobre K dado túnel e información sobre el fondo.
+5. Diseñar un control del fondo identificable, incluidas diferencias geométricas entre celdas.
+6. Mantener en el historial las predicciones fallidas y los experimentos invalidados.
+
+Regla de diseño derivada: `docs/PIPELINE.md`, «Structures that hold the ordinary physics».
 
 ## Archivos
 
@@ -131,4 +192,5 @@ verificador, salvo que se diga otra cosa. Su instrumento pasa sus controles, per
 | `test_motor3.py`, `test_motor3_salida.txt` | Mutantes y testigos (§2) |
 | `corre_cotejo.py`, `cotejo*.log`, `res3_cotejo*.jsonl`, `res3_cotejo*.npz` | Las filas del cotejo (§3); los `.npz` llevan los bits por lectura. La parte 3 (W0 y W2) la detuve a las 21:12 durante W2 A2 E4: sus filas están en el `.jsonl`, pero no tiene `.npz` |
 | `res3_rapido.*` | Humo |
-| `verificacion/` | Código, tablas e informe del verificador. Los volcados `ver3_*.npz` (3,4 GB) se regeneran con sus scripts y no se versionan |
+| `incremento_separaciones.py`, `incremento_separaciones_salida.txt` | Aporte de cada separación por separado (§7) |
+| `verificacion/` | Código, tablas e informe del verificador; `REGENERAR.md` lista los comandos para rehacer los volcados. Los volcados `ver3_*.npz` (3,4 GB) se regeneran con sus scripts y no se versionan |

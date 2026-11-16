@@ -1,0 +1,97 @@
+# Aporte incremental por separación (diferencias de cotas de Barber-Agakov, pareadas; ver la advertencia del script)
+
+## W1 · lector A2 · calibración C3b
+0,54 µm dado E2       (E3 − E2) · I(túnel;Y)           +0.0101 ± 0.0002  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · I(Kbin;Y|túnel)      +0.0933 ± 0.0010  [≥ 0,05 y > 2σ]
+0,54 µm dado E2       (E3 − E2) · I(M;Y)               +0.0369 ± 0.0004  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · I(F/túnel res.;Y)    +0.0000 ± 0.0000  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · estrechamiento d.t. log10 B (décadas) +0.0013 ± 0.0000
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(túnel;Y)           +0.0010 ± 0.0001  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(Kbin;Y|túnel)      +0.0069 ± 0.0004  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(M;Y)               +0.0104 ± 0.0002  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(F/túnel res.;Y)    -0.0000 ± 0.0000  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · estrechamiento d.t. log10 B (décadas) +0.0006 ± 0.0000
+las dos juntas         (E4 − E2) · I(túnel;Y)           +0.0112 ± 0.0002  [bajo umbral]
+las dos juntas         (E4 − E2) · I(Kbin;Y|túnel)      +0.1002 ± 0.0010  [≥ 0,05 y > 2σ]
+las dos juntas         (E4 − E2) · I(M;Y)               +0.0473 ± 0.0004  [bajo umbral]
+las dos juntas         (E4 − E2) · I(F/túnel res.;Y)    +0.0000 ± 0.0000  [bajo umbral]
+las dos juntas         (E4 − E2) · estrechamiento d.t. log10 B (décadas) +0.0019 ± 0.0000
+
+## W1 · lector S10 · calibración C3b
+0,54 µm dado E2       (E3 − E2) · I(túnel;Y)           +0.0041 ± 0.0002  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · I(Kbin;Y|túnel)      +0.0419 ± 0.0008  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · I(M;Y)               +0.0038 ± 0.0002  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · I(F/túnel res.;Y)    +0.0000 ± 0.0000  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · estrechamiento d.t. log10 B (décadas) +0.0004 ± 0.0000
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(túnel;Y)           +0.0013 ± 0.0001  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(Kbin;Y|túnel)      +0.0071 ± 0.0004  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(M;Y)               +0.0046 ± 0.0002  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(F/túnel res.;Y)    -0.0000 ± 0.0000  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · estrechamiento d.t. log10 B (décadas) -0.0005 ± 0.0000
+las dos juntas         (E4 − E2) · I(túnel;Y)           +0.0054 ± 0.0002  [bajo umbral]
+las dos juntas         (E4 − E2) · I(Kbin;Y|túnel)      +0.0490 ± 0.0008  [bajo umbral]
+las dos juntas         (E4 − E2) · I(M;Y)               +0.0085 ± 0.0003  [bajo umbral]
+las dos juntas         (E4 − E2) · I(F/túnel res.;Y)    +0.0000 ± 0.0000  [bajo umbral]
+las dos juntas         (E4 − E2) · estrechamiento d.t. log10 B (décadas) -0.0001 ± 0.0000
+
+## W1q1 · lector A2 · calibración C3b
+0,54 µm dado E2       (E3 − E2) · I(túnel;Y)           +0.0104 ± 0.0002  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · I(Kbin;Y|túnel)      +0.0967 ± 0.0010  [≥ 0,05 y > 2σ]
+0,54 µm dado E2       (E3 − E2) · I(M;Y)               +0.0367 ± 0.0004  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · estrechamiento d.t. log10 B (décadas) +0.0015 ± 0.0000
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(túnel;Y)           +0.0010 ± 0.0001  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(Kbin;Y|túnel)      +0.0151 ± 0.0005  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(M;Y)               +0.0104 ± 0.0002  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · estrechamiento d.t. log10 B (décadas) +0.0007 ± 0.0000
+las dos juntas         (E4 − E2) · I(túnel;Y)           +0.0114 ± 0.0002  [bajo umbral]
+las dos juntas         (E4 − E2) · I(Kbin;Y|túnel)      +0.1119 ± 0.0011  [≥ 0,05 y > 2σ]
+las dos juntas         (E4 − E2) · I(M;Y)               +0.0471 ± 0.0004  [bajo umbral]
+las dos juntas         (E4 − E2) · estrechamiento d.t. log10 B (décadas) +0.0021 ± 0.0000
+
+## W1q1 · lector S10 · calibración C3b
+0,54 µm dado E2       (E3 − E2) · I(túnel;Y)           [?] (falta la fila)
+0,54 µm dado E2       (E3 − E2) · I(Kbin;Y|túnel)      [?] (falta la fila)
+0,54 µm dado E2       (E3 − E2) · I(M;Y)               [?] (falta la fila)
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(túnel;Y)           [?] (falta la fila)
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(Kbin;Y|túnel)      [?] (falta la fila)
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(M;Y)               [?] (falta la fila)
+las dos juntas         (E4 − E2) · I(túnel;Y)           +0.0052 ± 0.0002  [bajo umbral]
+las dos juntas         (E4 − E2) · I(Kbin;Y|túnel)      +0.0492 ± 0.0008  [bajo umbral]
+las dos juntas         (E4 − E2) · I(M;Y)               +0.0086 ± 0.0003  [bajo umbral]
+las dos juntas         (E4 − E2) · estrechamiento d.t. log10 B (décadas) -0.0004 ± 0.0000
+
+## W2 · lector A2 · calibración C3b
+0,54 µm dado E2       (E3 − E2) · I(s_T;Y)             +0.0104 ± 0.0003  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · I(Kbin;Y|túnel)      +0.0938 ± 0.0012  [≥ 0,05 y > 2σ]
+0,54 µm dado E2       (E3 − E2) · I(s_F;Y)             +0.0469 ± 0.0006  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · I(clase;Y)           +0.0567 ± 0.0007  [≥ 0,05 y > 2σ]
+0,54 µm dado E2       (E3 − E2) · estrechamiento d.t. log10 B (décadas) +0.0016 ± 0.0000
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(s_T;Y)             +0.0040 ± 0.0002  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(Kbin;Y|túnel)      +0.0294 ± 0.0008  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(s_F;Y)             +0.0344 ± 0.0005  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(clase;Y)           +0.0366 ± 0.0006  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · estrechamiento d.t. log10 B (décadas) +0.0022 ± 0.0000
+las dos juntas         (E4 − E2) · I(s_T;Y)             +0.0144 ± 0.0003  [bajo umbral]
+las dos juntas         (E4 − E2) · I(Kbin;Y|túnel)      +0.1231 ± 0.0013  [≥ 0,05 y > 2σ]
+las dos juntas         (E4 − E2) · I(s_F;Y)             +0.0812 ± 0.0007  [≥ 0,05 y > 2σ]
+las dos juntas         (E4 − E2) · I(clase;Y)           +0.0933 ± 0.0008  [≥ 0,05 y > 2σ]
+las dos juntas         (E4 − E2) · estrechamiento d.t. log10 B (décadas) +0.0038 ± 0.0000
+
+## W2 · lector S10 · calibración C3b
+0,54 µm dado E2       (E3 − E2) · I(s_T;Y)             +0.0061 ± 0.0002  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · I(Kbin;Y|túnel)      +0.0573 ± 0.0010  [≥ 0,05 y > 2σ]
+0,54 µm dado E2       (E3 − E2) · I(s_F;Y)             +0.0185 ± 0.0004  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · I(clase;Y)           +0.0236 ± 0.0005  [bajo umbral]
+0,54 µm dado E2       (E3 − E2) · estrechamiento d.t. log10 B (décadas) +0.0221 ± 0.0002
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(s_T;Y)             +0.0025 ± 0.0002  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(Kbin;Y|túnel)      +0.0120 ± 0.0006  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(s_F;Y)             +0.0153 ± 0.0004  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · I(clase;Y)           +0.0179 ± 0.0004  [bajo umbral]
+1,08 µm dado E2 + 0,54 (E4 − E3) · estrechamiento d.t. log10 B (décadas) +0.0178 ± 0.0002
+las dos juntas         (E4 − E2) · I(s_T;Y)             +0.0086 ± 0.0003  [bajo umbral]
+las dos juntas         (E4 − E2) · I(Kbin;Y|túnel)      +0.0692 ± 0.0011  [≥ 0,05 y > 2σ]
+las dos juntas         (E4 − E2) · I(s_F;Y)             +0.0338 ± 0.0005  [bajo umbral]
+las dos juntas         (E4 − E2) · I(clase;Y)           +0.0415 ± 0.0006  [bajo umbral]
+las dos juntas         (E4 − E2) · estrechamiento d.t. log10 B (décadas) +0.0400 ± 0.0002
+
+1,08 µm sin 0,54 µm (E2 + d108): no hay diseño con esa combinación en la ronda 3 → [?]

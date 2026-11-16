@@ -71,6 +71,18 @@ Three zones, all explored:
 
 Reliability rules (current density, voltage, ageing) are not geometry: they are what the bench exceeds on purpose.
 
+## Structures that hold the ordinary physics
+
+Added 2026-11-16 (Juan's decision after XC-20 round 3). Not every structure on an experimental chip has to contain the
+unusual physics. Some exist to isolate the ordinary physics rigorously, so that the unusual part becomes identifiable
+somewhere else. In the XC-20 hypothesis engine (model, not silicon), the 0.54 µm separation, where tunnelling is expected to
+have practically vanished, carried almost all the information the extra cells add about the tunnel parameter (provisional:
+a difference of two variational lower bounds, round not consolidated). It reads leakage plus background without tunnelling,
+and that lets the excess at 0.27 µm be attributed to tunnelling
+([round 3](../experiments/xc20_hipotesis_r3/INFORME.md)). Rule for every MISFIT cell and for the future experiment engine of
+Residual: each family plans its **ordinary-physics references** (same leakage, same background, same reader, no target
+effect) as deliberately as its target structure, and justifies them by what they let the target structure prove.
+
 ## Gates before tapeout
 
 1. Readout instrument meets its pre-registered resolution in simulation, with noise simulated explicitly.

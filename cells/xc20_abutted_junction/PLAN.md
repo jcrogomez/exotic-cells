@@ -108,6 +108,11 @@ Geometría base del laboratorio: pozo n de 4 × 3 µm, p+ de 1,0 × 1,4 µm, n+ 
 
 Primero un canal completo con d = 0, d = 0,27 y la celda sin unión; la matriz después.
 
+**[corregido 2026-11-16 08:59]** Decisión de Juan tras la ronda 3 del motor (modelo, no silicio; ronda no consolidada): se
+dibujan d = 0, 0,27, 0,54, 1,08 µm y la celda sin unión. 0,54 es el control prioritario de fuga convencional y fondo; 1,08, la
+referencia lejana para ver si la fuga sigue cayendo o llega a un fondo; la celda sin unión es obligatoria. No se congela el
+macro. Aporte de cada una: [`xc20_hipotesis_r3/INFORME.md` §7](../../experiments/xc20_hipotesis_r3/INFORME.md).
+
 ### 5.3 En silicio
 
 1. **Virgen:** tiempos de todos los canales, incluidos fantasma y celda sin unión, a temperatura ambiente.
