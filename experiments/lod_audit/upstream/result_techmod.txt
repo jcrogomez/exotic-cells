@@ -1,0 +1,5 @@
+# modified tech file (l1=sa l2=sb on nfet_01v8), Magic 8.3.530
+X0 D G S B sky130_fd_pr__nfet_01v8 sb=0.3 sa=0.3 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.15
+X0 D G S B sky130_fd_pr__nfet_01v8 sb=3 sa=3 ad=1.26 pd=6.84 as=1.26 ps=6.84 w=0.42 l=0.15
+X0 M G1 S SUB sky130_fd_pr__nfet_01v8 sb=0.5 sa=0.3 ad=0.105 pd=0.92 as=0.126 ps=1.44 w=0.42 l=0.15
+X1 D G2 M SUB sky130_fd_pr__nfet_01v8 sb=0.3 sa=0.5 ad=0.126 pd=1.44 as=0.105 ps=0.92 w=0.42 l=0.15

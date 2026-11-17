@@ -1,0 +1,19 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * supply transfer, case s1: rs = 1.85 ohm, load dc 1m, c(b) = 133 ff. extracted xc-19 channel, tt, 27 c.
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  2.74334e-06 Reference value :  6.27334e-06 Reference value :  9.69334e-06 Reference value :  1.30033e-05 Reference value :  1.63033e-05 Reference value :  1.93433e-05 Reference value :  2.07733e-05 Reference value :  2.15633e-05 Reference value :  2.29433e-05 Reference value :  2.43533e-05 Reference value :  2.51333e-05 Reference value :  2.74533e-05 Reference value :  2.89833e-05 Reference value :  2.97533e-05 Reference value :  3.33433e-05 Reference value :  3.78833e-05 Reference value :  4.27533e-05 Reference value :  4.74433e-05 Reference value :  5.07933e-05 Reference value :  5.14933e-05 Reference value :  5.72333e-05 Reference value :  6.19633e-05 Reference value :  6.66433e-05 Reference value :  7.14833e-05 Reference value :  7.64033e-05 Reference value :  8.01033e-05 Reference value :  8.43333e-05 Reference value :  8.77233e-05 Reference value :  9.12633e-05 Reference value :  9.57133e-05 Reference value :  9.97733e-05 Reference value :  1.03853e-04 Reference value :  1.07733e-04 Reference value :  1.08503e-04 Reference value :  1.11513e-04 Reference value :  1.12173e-04 Reference value :  1.16083e-04 Reference value :  1.21133e-04 Reference value :  1.24763e-04 Reference value :  1.27093e-04
+No. of Data Rows : 13026
+ta                  =  3.065901e-05
+tb                  =  3.065868e-05
+vmin                =  1.798121e+00 at=  3.025334e-05
+STRANS s1 3.0659E-05 3.06587E-05 1.79812
+ngspice-44.2 done

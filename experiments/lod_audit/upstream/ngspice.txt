@@ -1,0 +1,20 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * minimal case: what the sky130 model does with the diffusion length that the extracted netlist does not carry.
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+v0 = 7.744455e-01
+v030 = 7.979440e-01
+v300 = 7.668554e-01
+dvth_mv = 3.108859e+01
+id_ratio = 1.295823e+00
+Note: Simulation executed from .control section 

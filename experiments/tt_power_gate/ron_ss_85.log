@@ -1,0 +1,61 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * on-resistance of the switch transistor of the tiny tapeout 1.8 v power gates, device alone.
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Reset re-loads circuit * on-resistance of the switch transistor of the tiny tapeout 1.8 v power gates, device alone.
+
+Circuit: * on-resistance of the switch transistor of the tiny tapeout 1.8 v power gates, device alone.
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+DROP_mV corner=ss temp=85 iload=1m
+hp_1 = 2.026354e+00
+hp_2 = 9.725228e-01
+hp_4 = 4.249910e-01
+ll_1 = 2.364120e+00
+ll_2 = 1.134403e+00
+ll_4 = 4.956696e-01
+Reset re-loads circuit * on-resistance of the switch transistor of the tiny tapeout 1.8 v power gates, device alone.
+
+Circuit: * on-resistance of the switch transistor of the tiny tapeout 1.8 v power gates, device alone.
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+DROP_mV corner=ss temp=85 iload=8m
+hp_1 = 1.638558e+01
+hp_2 = 7.820052e+00
+hp_4 = 3.407507e+00
+ll_1 = 1.916732e+01
+ll_2 = 9.133176e+00
+ll_4 = 3.976495e+00
+Reset re-loads circuit * on-resistance of the switch transistor of the tiny tapeout 1.8 v power gates, device alone.
+
+Circuit: * on-resistance of the switch transistor of the tiny tapeout 1.8 v power gates, device alone.
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+DROP_mV corner=ss temp=85 iload=20m
+hp_1 = 4.174822e+01
+hp_2 = 1.972474e+01
+hp_4 = 8.551542e+00
+ll_1 = 4.907754e+01
+ll_2 = 2.308789e+01
+ll_4 = 9.988830e+00
+Note: Simulation executed from .control section 

@@ -1,0 +1,9 @@
+== lod_sa030 sa=sb=0.30 um : full DRC, violations 0 
+== lod_sa300 sa=sb=3.0 um : full DRC, violations 0 
+X0 D G S B sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.15
+X0 D G S B sky130_fd_pr__nfet_01v8 ad=1.26 pd=6.84 as=1.26 ps=6.84 w=0.42 l=0.15
+v0 = 7.744455e-01
+v030 = 7.979440e-01
+v300 = 7.668554e-01
+dvth_mv = 3.108859e+01
+id_ratio = 1.295823e+00

@@ -1,0 +1,19 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * supply transfer, case s8: rs = 1.85 ohm, load dc 8m, c(b) = 133 ff. extracted xc-19 channel, tt, 27 c.
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  2.73261e-06 Reference value :  6.12261e-06 Reference value :  9.53261e-06 Reference value :  1.29426e-05 Reference value :  1.36926e-05 Reference value :  1.44526e-05 Reference value :  1.72226e-05 Reference value :  1.94626e-05 Reference value :  2.26126e-05 Reference value :  2.61626e-05 Reference value :  3.08926e-05 Reference value :  3.43326e-05 Reference value :  3.80726e-05 Reference value :  3.91226e-05 Reference value :  4.16526e-05 Reference value :  4.31126e-05 Reference value :  4.38626e-05 Reference value :  4.55226e-05 Reference value :  4.91626e-05 Reference value :  5.27626e-05 Reference value :  5.63026e-05 Reference value :  6.06226e-05 Reference value :  6.36526e-05 Reference value :  6.64126e-05 Reference value :  7.01826e-05 Reference value :  7.34226e-05 Reference value :  7.72126e-05 Reference value :  8.10426e-05 Reference value :  8.23626e-05 Reference value :  8.31426e-05 Reference value :  8.38926e-05 Reference value :  8.51226e-05 Reference value :  8.91726e-05 Reference value :  9.25626e-05 Reference value :  9.67626e-05 Reference value :  9.98926e-05 Reference value :  1.03753e-04 Reference value :  1.07943e-04 Reference value :  1.11373e-04 Reference value :  1.14733e-04 Reference value :  1.18363e-04 Reference value :  1.23203e-04 Reference value :  1.26023e-04 Reference value :  1.28333e-04 Reference value :  1.29083e-04 Reference value :  1.29833e-04
+No. of Data Rows : 13026
+ta                  =  3.349719e-05
+tb                  =  3.349683e-05
+vmin                =  1.785173e+00 at=  3.305261e-05
+STRANS s8 3.34972E-05 3.34968E-05 1.78517
+ngspice-44.2 done
