@@ -26,3 +26,19 @@ experiments/*/c63_magic_read/
 experiments/auditoria_hsa/reproducir/corrida/
 experiments/xc20_hipotesis_mixto/verificacion/ver2_lt_*.npz
 experiments/xc20_hipotesis_r3/verificacion/ver3_*.npz
+# scratch of the tech-file test (holds a modified copy of the PDK tech file); rebuilt by run_techmod.sh
+experiments/lod_audit/upstream/techmod/
+# cocotb / Icarus build products
+instrument/test/sim_build/
+# MISFIT-01: rebuilt by instrument/misfit01/b/lvs.sh, cell/build.sh and sim/extract_c.sh
+instrument/misfit01/b/build*/
+instrument/misfit01/results/pex/x_*/
+instrument/misfit01/results/pex/*.gds
+instrument/misfit01/results/**/.spiceinit
+# MISFIT-02: rebuilt by its build.sh, run_cell.sh and lvs.sh
+instrument/misfit02/cell/build*/
+instrument/misfit02/tile/build*/
+instrument/misfit02/results/cell*/x*/
+instrument/misfit02/results/**/*.gds
+instrument/misfit02/results/cell*/j_*.txt
+instrument/misfit02/results/cell*/t_*.txt

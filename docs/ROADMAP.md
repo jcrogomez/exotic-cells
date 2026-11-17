@@ -1,6 +1,6 @@
 # Roadmap
 
-Where MISFIT is, and what comes next. No dates are promised. Last update: 2026-11-16. The detailed work per front is in
+Where MISFIT is, and what comes next. No dates are promised. Last update: 2026-11-17. The detailed work per front is in
 [PLAN_EXPLORATORIO](PLAN_EXPLORATORIO.md) (Spanish); the gates before tapeout are in [PIPELINE](PIPELINE.md#gates-before-tapeout).
 This page is the single to-do list. Everything that can be studied before silicon, by kind, is in the
 [research agenda](RESEARCH_AGENDA.md).
@@ -40,9 +40,21 @@ This page is the single to-do list. Everything that can be studied before silico
 - [ ] XC-19: finish the first complete channel (E4.1 in PLAN_EXPLORATORIO)
 - [ ] XC-14: write its pre-registration now that the shuttle side is open (A2)
 - [ ] Kelvin strips of n+, p+, poly and li next to XC-20: the in-silicon check of A1. With digital pins only (A8), read them
-      through the reader (resistance as a discharge time) or decide to pay for analog pins. Juan, 2026-11-16: a time
+      through the reader (resistance as a discharge time). No analog pins (Juan, 2026-11-17). Juan, 2026-11-16: a time
       readout does not automatically keep the four-terminal property (material vs contact, switch and routing resistance);
       **keep the Kelvin structures until the time readout is shown to answer the silicide question**
+- [ ] **Instrument skeleton** ([`instrument/`](../instrument/README.md), started 2026-11-17): RTL top level with four slots, cocotb
+      tests (13 pass), interface contract, risk matrix. Behavioural slots only; nothing frozen
+- [ ] **MISFIT-01**, the integration trial ([`instrument/misfit01/`](../instrument/misfit01/README.md), pre-registered): a hand-drawn
+      inverter passes DRC, LVS with its devices, the precheck and three negative controls by two routes: as a row cell in the
+      digital flow, and as a free-geometry macro under a separately hardened core (custom GDS, our own LVS). As a macro
+      inside the digital flow it fails at the power grid, as predicted. XC-19 is not redrawn yet
+  - [x] phase 2, **MISFIT-02** ([`instrument/misfit02/`](../instrument/misfit02/README.md), pre-registered): a drawn cell of known
+        time (545 and 1060 ns) read as 29–30 and 54–55 counts; six of seven predictions held, one failed low; the real
+        instrument core and the cell pass DRC, LVS and the precheck in one tile. Two legs composed, not co-simulated
+  - [ ] the instrument core alone nearly fills a 1×1 tile (MISFIT-02, stage 2): decide the tile size before the slots
+  - [ ] a double-height row cell; wire resistance in the extraction; a timing statement for the logic-to-cell boundary
+  - [ ] decide row cells, free geometry, or both (the evidence supports both; not decided)
 - [ ] **Shared instrumentation system** (Juan, 2026-11-16): one instrument that characterises many cells, calibrates itself
       and isolates faults with the fewest digital pins. The architecture decision is in [PROPOSAL](PROPOSAL.md#architecture-decision-juan-2026-11-16)
 - [ ] **DFT plan** (A8; gate 7 of [PIPELINE](PIPELINE.md#gates-before-tapeout)), before drawing more cells. Every channel must be testable without the exotic physics:
@@ -54,9 +66,18 @@ This page is the single to-do list. Everything that can be studied before silico
   - [ ] per-macro enables, so a shorted or leaking macro can be isolated without losing the chip
   - [ ] identify a faulty channel and exclude it, keeping the rest usable (Juan, 2026-11-16)
   - [ ] no reading while a fuse, coil or heater pulses (A7: ~40 mV supply droop at 8 mA, extrapolated)
+  - [x] supply sensitivity to the tile's own activity, simulated against a pre-registration ([`experiments/supply_transfer`](../experiments/supply_transfer/README.md)):
+        +1.27 % per mA for one side; the twin protects only a cell that takes as long as its twin
+  - [ ] choose, with evidence, how an unknown cell is protected from supply changes: equal digital activity in every
+        compared window, calibration re-read in the same window, or randomised order. Not chosen
 - [ ] E-fuse (XC-01 → XC-05): read papers on fuses without silicide (Q10) before any new XC-01 work; then a pre-registration with two outcomes (clean open / rejoin or few channels) and re-reads over time (P8)
 
 ### Ask
+- [ ] open_pdks (not Magic): the LOD extraction gap is in the SKY130 tech file; one line makes Magic write `sa`/`sb` for
+      simple devices, and is wrong for shared diffusion. Draft and reproducers ready, **not filed**; LVS with the extra
+      parameters untested ([draft](../experiments/lod_audit/upstream/MAGIC_ISSUE_DRAFT.md))
+- [ ] Tiny Tapeout: which integration route keeps a functional macro's connections and still lets the whole tile be
+      verified ([`instrument/INTEGRATION.md`](../instrument/INTEGRATION.md)); whether a power-switch figure with parasitics exists
 - [ ] Tiny Tapeout contributor: Q1 (antenna "not enforced" or "negligible")
 - [ ] Tiny Tapeout: Q3 (high voltage), Q7 (number of chips)
 - [ ] Look at the GF180 PDK for the high-voltage families (Q9)
@@ -71,6 +92,16 @@ This page is the single to-do list. Everything that can be studied before silico
 
 ## Done (most recent first)
 
+- 2026-11-17 · MISFIT-02: a hand-drawn time cell read through the instrument's counter (SPICE time → RTL count), and the real
+  instrument core with that cell through DRC, own LVS and the precheck.
+- 2026-11-17 · MISFIT-01: a hand-drawn device through Tiny Tapeout's checks by two routes (row cell in the digital flow;
+  free geometry under a hardened core); the macro route inside the digital flow fails at the power grid. Precedent found and
+  read: `htfab/cell-tester`. A precheck-only rule (`licon.SP.6`) caught what Magic's DRC did not.
+- 2026-11-17 · Instrument skeleton (RTL, 13 cocotb tests, contract, risks, integration routes read from the sources). Supply
+  transfer function of the XC-19 channel simulated; six pre-registered predictions held. LOD gap traced to the tech file.
+- 2026-11-17 · Juan: digital pins only, no analog pins. Tile power switch read from the Tiny Tapeout sources and its
+  transistor simulated ([`experiments/tt_power_gate`](../experiments/tt_power_gate/README.md)). Minimal case of the LOD extraction gap prepared
+  for upstream, not filed.
 - 2026-11-16 · Repo reorganised for newcomers: research agenda, architectures, good first tasks, shared-instrument figure.
 - 2026-11-16 · A Tiny Tapeout contributor: digital pins only unless analog voltages are needed (extra cost); prioritise DFT (A8).
 - 2026-11-16 · A Tiny Tapeout contributor: ~8 mA per tile is fine (A7); analog spec read (0.1 V drop at 20 mA; 4 mA on analog pins).

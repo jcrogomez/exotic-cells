@@ -19,7 +19,7 @@ source.** In order of what they would change:
 | 5 | Grasser et al. 2010 (time-dependent defect spectroscopy) | XC-19 | How to separate defects by capture and emission times |
 | 6 | **Search:** plasma charge surviving the anneal on thick gate oxide | XC-14 | P3, before silicon answers it |
 | 7 | Scheer et al. 1998; Agraït et al. 2003 | XC-05 | Channels in aluminium contacts |
-| 8 | `TinyTapeout/tt-multiplexer`, `pg/sky130` subfolders; `iic-jku/sky130_power_gate` | All | On-resistance and pulse rating of the tile power switches (A7 states neither) |
+| 8 | `TinyTapeout/tt-multiplexer`, `pg/sky130` subfolders; `iic-jku/sky130_power_gate` | All | Transistor alone simulated 2026-11-17: 1.59 Ω for the smallest gate ([`experiments/tt_power_gate`](../experiments/tt_power_gate/README.md)). Still missing: with parasitics, the variant per tile, the pulse rating |
 | 9 | **Search:** SKY130 substrate resistivity | XC-26 | P4 |
 
 ## 2. Physical models to build or interpret
@@ -35,7 +35,7 @@ source.** In order of what they would change:
 | Plasma charge, tunnelling discharge, anneal | XC-14 | Discharge verified; residual drift to order; anneal missing | Add an anneal step once a source is read (§1, item 6) |
 | Fuse neck: heating, electromigration, barrier bridging, rejoin | XC-01, XC-05 | Heating verified (li 500–1800 K at 4–8 mA); metal 1 bridged by its barrier (verified); rejoin not modelled | A rejoin model, after §1 item 2 |
 | Spin-dependent recombination against classical even-in-field terms | XC-52 | Shape discriminator verified (×4 quadratic vs ×1.6–2.0 saturating) | Needs the size from §1 item 1 |
-| Supply droop from pulses | All | Spec: 0.1 V at 20 mA (A7); ~40 mV at 8 mA extrapolated | A droop model per macro, feeding the "no reading during pulses" rule |
+| Supply droop from pulses | All | Spec: 0.1 V at 20 mA (A7); ~40 mV at 8 mA extrapolated; switch transistor alone 1.59 mV per mA ([`experiments/tt_power_gate`](../experiments/tt_power_gate/README.md)) | A droop model per macro, feeding the "no reading during pulses" rule; whether a reading survives the tile's own digital activity |
 | Optical emission and collection | XC-26 | Collected fraction verified to order; emission efficiency is a ×100 interval | Substrate resistivity (P4) |
 | LOD stress in silicon vs model | XC-12, Residual | Model prediction only | Silicon, through the process matrix |
 
@@ -65,6 +65,6 @@ controls is [EXPERIMENTOS](EXPERIMENTOS.md) (Spanish). The order on the first ch
 ## 5. Tools to build
 
 - The shared instrument with design-for-test ([ARCHITECTURES](ARCHITECTURES.md), gate 7 of [PIPELINE](PIPELINE.md)).
-- A digital readout for Kelvin strips that keeps the four-terminal property, or the case for analog pins.
+- A digital readout for Kelvin strips that keeps the four-terminal property (no analog pins: Juan, 2026-11-17).
 - Residual: module 3 idea, choosing structures by their value relative to the rest of the experiment. Not before the
   estimates have controlled errors.

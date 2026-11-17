@@ -22,6 +22,9 @@ before anything is consolidated. Rules: [`PROTOCOLO_ATAQUES.md`](PROTOCOLO_ATAQU
 | Folder | What |
 |---|---|
 | [`lod_audit/`](lod_audit/README.md) | The open extraction flow drops the layout parameters of the STI stress model (first reproducible result) |
+| [`lod_audit/upstream/`](lod_audit/upstream/MAGIC_ISSUE_DRAFT.md) | Minimal case of the same gap, in English; the gap traced to the tech file (one line makes Magic write `sa`/`sb`, wrong for shared diffusion); draft report for open_pdks (not filed) |
+| [`tt_power_gate/`](tt_power_gate/README.md) | On-resistance of the Tiny Tapeout tile power switch (transistor alone, from the upstream schematics) and what it means for the reader |
+| [`supply_transfer/`](supply_transfer/README.md) | From tile current to reading error: static, mid-conversion step, clock-rate ripple, equal and unequal twins. Pre-registered; six predictions held |
 | [`stdcell_lod/`](stdcell_lod/README.md) | Real diffusion lengths of every standard cell of the library |
 | [`xc19_weak_inversion/`](xc19_weak_inversion/README.md), [`xc19_noise/`](xc19_noise/README.md) | The XC-19 single-trap reader: working point, noise and event detection |
 | [`xc19_caps/`](xc19_caps/INFORME.md) | XC-19 channel, stage 1 of the complete channel: real capacitors drawn (`cells/xc19_channel_caps`), post-layout against the ideal, calibration by switched reference capacitor |

@@ -7,7 +7,7 @@ Environment of the runs: `experiments/manifest_2026-11-11.json`.
 
 | Claim | Grade | Produced by | Result file |
 |---|---|---|---|
-| Magic's extraction omits `sa`/`sb`; two layouts differing only in diffusion length extract to the same transistor | run | `experiments/lod_audit/lod.tcl` | `lod_sa030.spice`, `lod_sa300.spice` |
+| The open flow's extraction omits `sa`/`sb` (the SKY130 tech file does not ask Magic for them; [corrected 2026-11-17], it was attributed to Magic); two layouts differing only in diffusion length extract to the same transistor | run | `experiments/lod_audit/lod.tcl` | `lod_sa030.spice`, `lod_sa300.spice` |
 | The model then separates them by 31.09 mV (W = 0.42 um); 44.1 mV at W = 5 um | run | `experiments/lod_audit/sim/lod_paso1.sp`, `end_to_end.sp` | `lod_paso1.log`, `end_to_end.log` |
 | Mismatch sigma of threshold: 17.3 mV (0.42/0.15), 5.13 mV (5/0.15) | run | `experiments/lod_audit/sim/lod_paso4_mm.sp` | `lod_paso4_mm.log` |
 | Irregular-diffusion formula is BSIM4 eq. 14.10; `SA`/`SB` not positive turns the stress effect off | source read (BSIM4.8.0 manual, section 14.2 and parameter table) | | `residual/README.md` |
@@ -30,6 +30,15 @@ Environment of the runs: `experiments/manifest_2026-11-11.json`.
 | Detection at 81 pA and 2.3 fF: false events above one per second at every dwell | run (behavioural model) | `experiments/xc19_noise/detect.py` | `detect.txt` |
 | Detection at 5.5 nA and 135 fF: 98 % from three conversions, no false events against a reference | run (behavioural model) | `experiments/xc19_noise/detect.py`, `k3_cap.sp` | `detect.txt`, `k3_cap.txt` |
 | About 0.66 visible traps per decade of dwell time per minimum device | estimate | arithmetic in `experiments/xc19_weak_inversion/README.md` | from `noia` of the model card, read as a trap density |
+| Tile power switch, transistor alone (`tt_pg_1v8_hp_1`, schematic, no metal): 1.59 ohm at tt, 27 C; 12.80 mV at 8 mA; 16.39 mV at ss, 85 C | run | `experiments/tt_power_gate/gen.sh` | `drops.txt` |
+| Supply transfer of the extracted XC-19 channel behind 1.85 ohm: one side +1.27 % per mA; equal twins in the same window ≤ 0.0003 %; twin twice as slow, ratio +0.63 % | run, pre-registered | `experiments/supply_transfer/gen.py`, `run.sh` | `strans.txt` |
+| A tech-file line (`l1=sa l2=sb`) makes Magic 8.3.530 write `sa`/`sb` for single devices; for shared diffusion it writes 0.5 where BSIM4 uses 0.95 | run and arithmetic | `experiments/lod_audit/upstream/run_techmod.sh` | `result_techmod.txt` |
+| Instrument RTL: 13 cocotb tests pass against behavioural slots (protocol, selection, counting, flags; nothing electrical) | run | `instrument/test/run.sh` | `instrument/test/results.xml` |
+| A hand-drawn inverter (nfet 0.65/0.5, pfet 1.00/0.5) as a row cell in a Tiny Tapeout 1×1 tile: flow DRC 0, LVS from GDS matches with both devices, precheck passes, no template check off; cut supply, changed channel and missing device are each rejected | run, pre-registered | `instrument/misfit01/setup_arm.sh` (needs the local bench) | `instrument/misfit01/results/` |
+| The same inverter as a 12 × 9 µm free-geometry macro under a separately hardened core (custom GDS on the 1×1 digital template): DRC 0 on the final GDS, own netgen LVS matches with devices compared, precheck passes; supply not joined, macro missing and a different channel length are each flagged | run, pre-registered | `instrument/misfit01/b/lvs.sh` (needs the local bench for the core and the precheck) | `instrument/misfit01/results/b_lvs.rpt`, `b_precheck.md` |
+| The same inverter as a macro with metal-4 supply fails at power-grid generation under the Tiny Tapeout template (no metal 5) | run, predicted | `instrument/misfit01/a1/` | `results/a1r2_generatepdn.log` |
+| Time cell (13 hand-drawn devices): 544.8 and 1059.6 ns extracted with capacitance, within 1.2 % of its schematic; ratio 1.938 to 1.949 over corners; the instrument's RTL reads those times as 29–30 and 54–55 counts, within one clock at every phase | run, pre-registered; two legs composed, not co-simulated | `instrument/misfit02/sim/run_cell.sh`, `rtl_test/run.sh` | `instrument/misfit02/results/cell/cell_times.txt`, `results/counts.txt` |
+| The instrument core (1047 cells) and the time cell in one 1×1 tile: DRC 0 from the GDS, own LVS matches, precheck passes; the core needs 161 × 87 µm | run | `instrument/misfit02/tile/lvs.sh` (needs the local bench) | `instrument/misfit02/results/tile_lvs.rpt`, `tile_precheck.md` |
 | A single trap moves the threshold 0.305 mV | arithmetic | q / (C_ox W L), sheet-charge bound | |
 
 Not in this table because they are not established: that silicon follows any of these models; how the standard-cell library was

@@ -52,4 +52,4 @@ and from the open questions ([OPEN_QUESTIONS](OPEN_QUESTIONS.md)).
 | P | E-fuses in processes without silicide on poly; metal and TiN fuses; reports of blown traces rejoining | XC-01, XC-05 (Q10, P8) | A Tiny Tapeout contributor recalls that rejoining is a known problem but not where it was reported. Classic e-fuses rely on silicide electromigration (from memory, unread) |
 | P | Plasma (antenna) charge surviving the anneal on thick gate oxide | XC-14 (P3) | Decides whether a fab-written gate can still be read |
 | | SKY130 substrate resistivity | XC-26 (P4) | The optical link lives at ≤ 10 Ω·cm and dies at ≥ 20 |
-| | Electrical specs of the Tiny Tapeout tile power switches (`tt-multiplexer/pg/sky130`, `iic-jku/sky130_power_gate`) | All (A7) | On-resistance and pulse rating are not stated on the pages read |
+| | Electrical specs of the Tiny Tapeout tile power switches (`tt-multiplexer/pg/sky130`, `iic-jku/sky130_power_gate`) | All (A7) | On-resistance of the transistor alone simulated 2026-11-17 ([`experiments/tt_power_gate`](../experiments/tt_power_gate/README.md)); still missing: the extracted figure, the variant per tile, the pulse rating |
