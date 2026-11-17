@@ -1,0 +1,18 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1794938614" />
+    <testcase name="t01_reset_is_safe" classname="test_misfit" file="/work/test/test_misfit.py" lineno="89" time="0.0015811920166015625" sim_time_ns="321.001" ratio_time="203012.0292979493" />
+    <testcase name="t02_register_readback" classname="test_misfit" file="/work/test/test_misfit.py" lineno="100" time="0.0037643909454345703" sim_time_ns="1741.001" ratio_time="462492.08045500034" />
+    <testcase name="t03_refused_when_not_armed_or_disabled" classname="test_misfit" file="/work/test/test_misfit.py" lineno="112" time="0.008628606796264648" sim_time_ns="3441.0009999999997" ratio_time="398789.8720207786" />
+    <testcase name="t04_selftest_internal_reference" classname="test_misfit" file="/work/test/test_misfit.py" lineno="134" time="0.1922588348388672" sim_time_ns="100121.001" ratio_time="520761.50926386175" />
+    <testcase name="t05_only_the_selected_slot_is_touched" classname="test_misfit" file="/work/test/test_misfit.py" lineno="150" time="0.015351533889770508" sim_time_ns="6481.001000000004" ratio_time="422172.86210849707" />
+    <testcase name="t06_acquisition_and_resolution" classname="test_misfit" file="/work/test/test_misfit.py" lineno="170" time="0.44586968421936035" sim_time_ns="229921.001" ratio_time="515668.61156427657" />
+    <testcase name="t07_calibration_seen_cell_not" classname="test_misfit" file="/work/test/test_misfit.py" lineno="187" time="0.3881242275238037" sim_time_ns="205421.001" ratio_time="529266.1123232805" />
+    <testcase name="t08_twin_single_and_simultaneous" classname="test_misfit" file="/work/test/test_misfit.py" lineno="206" time="0.4035160541534424" sim_time_ns="211541.00100000005" ratio_time="524244.32391866803" />
+    <testcase name="t09_fault_injection_and_isolation" classname="test_misfit" file="/work/test/test_misfit.py" lineno="225" time="0.4159669876098633" sim_time_ns="218401.00099999993" ratio_time="525044.0720186163" />
+    <testcase name="t10_timeout_and_recovery" classname="test_misfit" file="/work/test/test_misfit.py" lineno="252" time="9.633394241333008" sim_time_ns="5035921.001" ratio_time="522756.6603049313" />
+    <testcase name="t11_abort_disarm_and_reset_mid_run" classname="test_misfit" file="/work/test/test_misfit.py" lineno="270" time="0.055082082748413086" sim_time_ns="30441.001000000164" ratio_time="552647.9661097631" />
+    <testcase name="t12_unknown_cell_is_classified" classname="test_misfit" file="/work/test/test_misfit.py" lineno="305" time="15.870741128921509" sim_time_ns="8281641.001" ratio_time="521818.1642386083" />
+    <testcase name="t13_asynchronous_edge_phase_sweep" classname="test_misfit" file="/work/test/test_misfit.py" lineno="341" time="0.660820722579956" sim_time_ns="343281.00100000016" ratio_time="519476.7495483086" />
+  </testsuite>
+</testsuites>
