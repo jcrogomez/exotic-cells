@@ -1,0 +1,21 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * time cell, schematic, weak nfet 0.42/4, mos capacitor 6x6 (a) and 2 x 6x6 (b). tt, 27 c
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  9.15481e-07 Reference value :  1.75748e-06 Reference value :  2.51748e-06 Reference value :  3.73448e-06 Reference value :  4.79348e-06 Reference value :  6.00748e-06 Reference value :  7.05248e-06 Reference value :  7.44448e-06 Reference value :  8.93148e-06 Reference value :  9.99148e-06 Reference value :  1.10445e-05 Reference value :  1.21545e-05 Reference value :  1.31245e-05 Reference value :  1.41425e-05 Reference value :  1.51745e-05 Reference value :  1.63845e-05 Reference value :  1.73375e-05 Reference value :  1.83765e-05 Reference value :  1.93305e-05
+No. of Data Rows : 20019
+ta                  =  2.569076e-08 targ=  1.257908e-07 trig=  1.001000e-07
+tb                  =  4.844674e-08 targ=  1.485467e-07 trig=  1.001000e-07
+ra                  =  2.773718e-09 targ=  1.270182e-07 trig=  1.242445e-07
+Error: &(tb: no such variable.
+rb                  =  3.626787e-09 targ=  1.500541e-07 trig=  1.464273e-07
+SCH L=4 ta= 2.56908E-08 tb= 4.84467E-08 ratio= /ta) rise_a= 2.77372E-09 rise_b= 3.62679E-09
+ngspice-44.2 done

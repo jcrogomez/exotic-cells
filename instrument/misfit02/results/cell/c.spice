@@ -1,0 +1,43 @@
+* NGSPICE file created from misfit_tcell.ext - technology: sky130A
+
+.subckt misfit_tcell PRE XA XB VGND VPWR
+X0 XB a_2934_297# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.16 as=0.58 ps=3.16 w=1 l=0.5
+X1 a_2934_297# a_n4720_214# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.16 as=0.58 ps=3.16 w=1 l=0.5
+X2 XA a_n2320_n2676# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.377 pd=2.46 as=0.377 ps=2.46 w=0.65 l=0.5
+X3 VGND a_n2320_n2676# VGND VGND sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=37.551 ps=161.06 w=12 l=12
+X4 VGND a_n4720_214# a_2934_297# VGND sky130_fd_pr__nfet_01v8 ad=0.21 pd=1.84 as=0.21 ps=1.84 w=0.42 l=24
+X5 a_n4720_214# PRE VGND VGND sky130_fd_pr__nfet_01v8 ad=0.377 pd=2.46 as=0.377 ps=2.46 w=0.65 l=0.5
+X6 a_n4720_214# PRE VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.16 as=0.58 ps=3.16 w=1 l=0.5
+X7 XB a_2934_297# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.377 pd=2.46 as=0.377 ps=2.46 w=0.65 l=0.5
+X8 a_n2320_n2676# a_n4720_214# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.21 pd=1.84 as=0.21 ps=1.84 w=0.42 l=24
+X9 XA a_n2320_n2676# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.16 as=0.58 ps=3.16 w=1 l=0.5
+X10 a_n2320_n2676# a_n4720_214# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.16 as=0.58 ps=3.16 w=1 l=0.5
+X11 VGND a_2934_297# VGND VGND sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=0 ps=0 w=12 l=12
+X12 VGND a_2934_297# VGND VGND sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=0 ps=0 w=12 l=12
+C0 PRE XA 0
+C1 XB a_n4720_214# 0.08202f
+C2 a_2934_297# a_n4720_214# 0.77571f
+C3 a_n2320_n2676# a_n4720_214# 0.8374f
+C4 a_2934_297# XB 0.20868f
+C5 VPWR a_n4720_214# 0.71127f
+C6 a_2934_297# a_n2320_n2676# 0.00449f
+C7 VPWR XB 0.26645f
+C8 VPWR a_2934_297# 0.7622f
+C9 PRE a_n4720_214# 0.14662f
+C10 VPWR a_n2320_n2676# 0.94053f
+C11 XA a_n4720_214# 0.09551f
+C12 XB XA 0.02718f
+C13 a_2934_297# XA 0.00808f
+C14 PRE a_n2320_n2676# 0.14752f
+C15 XA a_n2320_n2676# 0.07541f
+C16 VPWR PRE 0.28618f
+C17 VPWR XA 0.33771f
+C18 XB VGND 0.3759f
+C19 XA VGND 0.35539f
+C20 PRE VGND 0.7671f
+C21 VPWR VGND 6.34449f
+C22 a_2934_297# VGND 11.9696f
+C23 a_n2320_n2676# VGND 5.5369f
+C24 a_n4720_214# VGND 15.7025f
+.ends
+

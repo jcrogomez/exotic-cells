@@ -1,0 +1,20 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * time cell, schematic: 4 weak nfets 0.42/8 in series, mos capacitor 4 x 6x6 (a) and 8 x 6x6 (b). tt, 27 c
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  5.48726e-07 Reference value :  1.40173e-06 Reference value :  2.28573e-06 Reference value :  3.25973e-06 Reference value :  4.22373e-06 Reference value :  4.91273e-06 Reference value :  5.52873e-06 Reference value :  6.09873e-06 Reference value :  6.82473e-06 Reference value :  7.53973e-06 Reference value :  8.19673e-06 Reference value :  9.00573e-06 Reference value :  9.80773e-06 Reference value :  1.04887e-05 Reference value :  1.12667e-05 Reference value :  1.19227e-05 Reference value :  1.27557e-05 Reference value :  1.35027e-05 Reference value :  1.40327e-05 Reference value :  1.47347e-05 Reference value :  1.55067e-05 Reference value :  1.59027e-05 Reference value :  1.64787e-05 Reference value :  1.70807e-05 Reference value :  1.79957e-05 Reference value :  1.89697e-05 Reference value :  1.97157e-05
+No. of Data Rows : 20018
+ta                  =  7.240107e-07 targ=  8.241107e-07 trig=  1.001000e-07
+tb                  =  1.410599e-06 targ=  1.510699e-06 trig=  1.001000e-07
+ra                  =  1.723085e-08 targ=  8.304512e-07 trig=  8.132203e-07
+rb                  =  2.763349e-08 targ=  1.521007e-06 trig=  1.493374e-06
+SCH s4c4 ta= 7.24011E-07 tb= 1.4106E-06 ratio= 1.94831 rise_a= 1.72308E-08 rise_b= 2.76335E-08
+ngspice-44.2 done

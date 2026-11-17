@@ -1,0 +1,19 @@
+* MISFIT-02 time cell: the intended circuit (reference for LVS and the schematic simulation). 13 devices.
+.subckt misfit_tcell PRE XA XB VGND VPWR
+* precharge-bar inverter
+Xn0 pre_n PRE VGND VGND sky130_fd_pr__nfet_01v8 w=0.65 l=0.5
+Xp0 pre_n PRE VPWR VPWR sky130_fd_pr__pfet_01v8 w=1 l=0.5
+* side A: precharge, weak discharge, one capacitor, reading inverter
+Xpa na pre_n VPWR VPWR sky130_fd_pr__pfet_01v8 w=1 l=0.5
+Xna na pre_n VGND VGND sky130_fd_pr__nfet_01v8 w=0.42 l=24
+Xca VGND na VGND VGND sky130_fd_pr__nfet_01v8 w=12 l=12
+Xn1 XA na VGND VGND sky130_fd_pr__nfet_01v8 w=0.65 l=0.5
+Xp1 XA na VPWR VPWR sky130_fd_pr__pfet_01v8 w=1 l=0.5
+* side B: the same with two capacitors
+Xpb nb pre_n VPWR VPWR sky130_fd_pr__pfet_01v8 w=1 l=0.5
+Xnb nb pre_n VGND VGND sky130_fd_pr__nfet_01v8 w=0.42 l=24
+Xcb1 VGND nb VGND VGND sky130_fd_pr__nfet_01v8 w=12 l=12
+Xcb2 VGND nb VGND VGND sky130_fd_pr__nfet_01v8 w=12 l=12
+Xn2 XB nb VGND VGND sky130_fd_pr__nfet_01v8 w=0.65 l=0.5
+Xp2 XB nb VPWR VPWR sky130_fd_pr__pfet_01v8 w=1 l=0.5
+.ends

@@ -1,0 +1,7 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1794942703" />
+    <testcase name="p4_p5_counts_follow_the_extracted_times" classname="test_misfit02" file="/work/misfit02/rtl_test/test_misfit02.py" lineno="26" time="1.2781133651733398" sim_time_ns="690561.001" ratio_time="540297.144069333" />
+    <testcase name="n3_n4_no_valid_count_from_a_stuck_or_truncated_cell" classname="test_misfit02" file="/work/misfit02/rtl_test/test_misfit02.py" lineno="53" time="0.17214465141296387" sim_time_ns="96281.00099999993" ratio_time="559302.8898064805" />
+  </testsuite>
+</testsuites>

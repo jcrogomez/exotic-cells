@@ -1,0 +1,18 @@
+* NGSPICE file created from misfit_tcell.ext - technology: sky130A
+
+.subckt misfit_tcell PRE XA XB VGND VPWR
+X0 XB VGND VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.16 as=0.58 ps=3.16 w=1 l=0.5
+X1 VGND a_n2320_214# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.16 as=0.58 ps=3.16 w=1 l=0.5
+X2 XA a_n2320_n2676# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.377 pd=2.46 as=0.377 ps=2.46 w=0.65 l=0.5
+X3 VGND a_n2320_n2676# VGND VGND sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=37.761 ps=162.89999 w=12 l=12
+X4 VGND a_n2320_214# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.21 pd=1.84 as=0 ps=0 w=0.42 l=12
+X5 a_n2320_n2676# a_n2320_214# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.21 pd=1.84 as=0.21 ps=1.84 w=0.42 l=12
+X6 a_n2320_214# PRE VGND VGND sky130_fd_pr__nfet_01v8 ad=0.377 pd=2.46 as=0.377 ps=2.46 w=0.65 l=0.5
+X7 a_n2320_214# PRE VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.16 as=0.58 ps=3.16 w=1 l=0.5
+X8 XB VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=0.377 pd=2.46 as=0.377 ps=2.46 w=0.65 l=0.5
+X9 XA a_n2320_n2676# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.16 as=0.58 ps=3.16 w=1 l=0.5
+X10 a_n2320_n2676# a_n2320_214# VPWR VPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.16 as=0.58 ps=3.16 w=1 l=0.5
+X11 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=0 ps=0 w=12 l=12
+X12 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=6 pd=25 as=0 ps=0 w=12 l=12
+.ends
+

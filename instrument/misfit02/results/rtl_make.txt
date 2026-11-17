@@ -1,0 +1,49 @@
+rm -f /work/misfit02/results/rtl_results.xml
+"make" -f Makefile /work/misfit02/results/rtl_results.xml
+make[1]: Entering directory '/work/test'
+mkdir -p sim_build
+/foss/tools/bin/iverilog -o sim_build/sim.vvp -D COCOTB_SIM=1 -s tt_um_misfit -g2012 -f sim_build/cmds.f  /work/test/../models/misfit_cell_slot.v /work/test/../rtl/misfit_core.v /work/test/../rtl/tt_um_misfit.v
+rm -f /work/misfit02/results/rtl_results.xml
+MODULE=test_misfit02 TESTCASE= TOPLEVEL=tt_um_misfit TOPLEVEL_LANG=verilog \
+         /foss/tools/bin/vvp -M /usr/local/lib/python3.12/dist-packages/cocotb/libs -m libcocotbvpi_icarus   sim_build/sim.vvp  
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.12/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1794942703
+     0.00ns INFO     cocotb.regression                  Found test test_misfit02.p4_p5_counts_follow_the_extracted_times
+     0.00ns INFO     cocotb.regression                  Found test test_misfit02.n3_n4_no_valid_count_from_a_stuck_or_truncated_cell
+     0.00ns INFO     cocotb.regression                  running p4_p5_counts_follow_the_extracted_times (1/2)
+/work/misfit02/rtl_test/test_misfit02.py:20: ResourceWarning: unclosed file <_io.TextIOWrapper name='/work/misfit02/rtl_test/../results/cell/cell_times.txt' mode='r' encoding='UTF-8'>
+  for line in open(TIMES):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/work/misfit02/rtl_test/test_misfit02.py:48: ResourceWarning: unclosed file <_io.TextIOWrapper name='/work/misfit02/rtl_test/../results/counts.txt' mode='w' encoding='UTF-8'>
+  open(OUT, "w").write("\n".join(report) + "\n")
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+690561.00ns INFO     cocotb.tt_um_misfit                # level corner temp vdd | t_A t_B (ns, SPICE) | N_A N_B over 20 clock phases | worst |N*T - t - 2T| (ns) | (N_B-2)/(N_A-2) range | P5 (1.88 to 2.04)
+690561.00ns INFO     cocotb.tt_um_misfit                c ff 27 1.8 | 482.2 937.6 | [26, 27] [48, 49] | 20 | 1.880 to 1.958 | P5 held
+690561.00ns INFO     cocotb.tt_um_misfit                c ff -40 1.8 | 382.7 741.7 | [21, 22] [39, 40] | 20 | 1.850 to 1.947 | P5 FAILED
+690561.00ns INFO     cocotb.tt_um_misfit                c ss 27 1.8 | 641.5 1247.5 | [34, 35] [64, 65] | 20 | 1.909 to 1.969 | P5 held
+690561.00ns INFO     cocotb.tt_um_misfit                c ss 85 1.8 | 755.7 1472.7 | [39, 40] [75, 76] | 20 | 1.921 to 1.973 | P5 held
+690561.00ns INFO     cocotb.tt_um_misfit                c tt 27 1.79 | 549.5 1068.6 | [29, 30] [55, 56] | 20 | 1.893 to 1.963 | P5 held
+690561.00ns INFO     cocotb.tt_um_misfit                c tt 27 1.8 | 544.8 1059.6 | [29, 30] [54, 55] | 20 | 1.893 to 1.963 | P5 held
+690561.00ns INFO     cocotb.tt_um_misfit                c tt 27 1.81 | 540.2 1050.8 | [28, 29] [54, 55] | 20 | 1.926 to 2.000 | P5 held
+690561.00ns INFO     cocotb.tt_um_misfit                c tt 85 1.8 | 638.1 1242.9 | [33, 34] [64, 65] | 20 | 1.938 to 2.000 | P5 held
+690561.00ns INFO     cocotb.tt_um_misfit                dev tt 27 1.8 | 539.7 1051.2 | [28, 29] [54, 55] | 20 | 1.926 to 2.000 | P5 held
+690561.00ns INFO     cocotb.tt_um_misfit                sch tt 27 1.8 | 538.7 1050.1 | [28, 29] [54, 55] | 20 | 1.926 to 2.000 | P5 held
+690561.00ns INFO     cocotb.regression                  p4_p5_counts_follow_the_extracted_times passed
+690561.00ns INFO     cocotb.regression                  running n3_n4_no_valid_count_from_a_stuck_or_truncated_cell (2/2)
+/work/misfit02/rtl_test/test_misfit02.py:57: ResourceWarning: unclosed file <_io.TextIOWrapper name='/work/misfit02/rtl_test/../results/cell/cell_times.txt' mode='r' encoding='UTF-8'>
+  lvl, corner, temp, vdd, ta, tb = next(r for r in rows() if r[0] == "c" and r[1] == "tt" and r[2] == "27" and r[3] == "1.8")
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+786842.00ns INFO     cocotb.regression                  n3_n4_no_valid_count_from_a_stuck_or_truncated_cell passed
+786842.00ns INFO     cocotb.regression                  ***************************************************************************************************************************
+                                                        ** TEST                                                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        ***************************************************************************************************************************
+                                                        ** test_misfit02.p4_p5_counts_follow_the_extracted_times               PASS      690561.00           1.28     540297.14  **
+                                                        ** test_misfit02.n3_n4_no_valid_count_from_a_stuck_or_truncated_cell   PASS       96281.00           0.17     559302.89  **
+                                                        ***************************************************************************************************************************
+                                                        ** TESTS=2 PASS=2 FAIL=0 SKIP=0                                                  786842.00           1.65     475682.47  **
+                                                        ***************************************************************************************************************************
+                                                        
+make[1]: Leaving directory '/work/test'
