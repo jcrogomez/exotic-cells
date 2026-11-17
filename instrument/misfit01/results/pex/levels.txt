@@ -1,0 +1,5 @@
+TILE tt_um_misfit01.c.spice 1.8 -3.7718E-09 1.8 2.27121E-09 9.00863E-10 1.12491E-09
+TILE tt_um_misfit01.dev.spice 1.8 3.66766E-09 1.8 2.96356E-09 6.15122E-10 7.33709E-10
+TILE tt_um_misfit01b.c.spice 0 0
+TILE tt_um_misfit01b.dev.spice 1.8 3.26909E-09 1.8 2.96346E-09 7.9505E-10 9.0194E-10
+TILE tt_um_misfit01b.c.spice+rshunt 1.8 2.0696E-09 1.8 3.62748E-09 1.45208E-09 1.64612E-09

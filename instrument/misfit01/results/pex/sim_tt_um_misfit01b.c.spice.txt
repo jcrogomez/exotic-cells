@@ -1,0 +1,169 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+Warning: singular matrix:  check node xdut.misfit01_core_0/misfit01_core_19/hi
+
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: singular matrix:  check node xdut.misfit01_core_0/misfit01_core_19/hi
+
+Warning: singular matrix:  check node xdut.misfit01_core_0/misfit01_core_19/hi
+
+Warning: singular matrix:  check node xdut.misfit01_core_0/misfit01_core_19/hi
+
+Warning: singular matrix:  check node xdut.misfit01_core_0/misfit01_core_19/hi
+
+Warning: singular matrix:  check node xdut.misfit01_core_0/misfit01_core_19/hi
+
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Error: Transient op failed, timestep too small
+
+
+Error: The operating point could not be simulated successfully.
+    Any of the following steps may fail.!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * tt_um_misfit01b.c.spice: tile extracted from the final gds. clk 50 mhz; ui_in[0] toggles every 40 ns, away from the clock edge.
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+Transient solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+vdd                                             1.8                  1.8
+clk                                               0                    0
+rstn                                              0                    0
+din                                               0                    0
+xdut.misfit_inv_m4_0/y                     0.854129              0.85413
+xdut.misfit_inv_m4_0/a                      0.78386             0.783861
+xdut.xmisfit01_core_0.misfit01_core_4/hi                  1.8                  1.8
+uio_oe[4]                              -2.40642e-16         -2.40642e-16
+xdut.xmisfit01_core_0.misfit01_core_5/hi                  1.8                  1.8
+uio_oe[5]                              -8.40224e-16         -8.40224e-16
+xdut.xmisfit01_core_0.misfit01_core_6/hi                  1.8                  1.8
+uio_oe[6]                               -8.5066e-16          -8.5066e-16
+xdut.xmisfit01_core_0.misfit01_core_7/hi                  1.8                  1.8
+uio_oe[7]                              -3.82686e-16         -3.82686e-16
+xdut.xmisfit01_core_0.misfit01_core_8/hi                  1.8                  1.8
+uio_out[0]                             -3.84825e-09         -3.84817e-09
+xdut.xmisfit01_core_0.misfit01_core_9/hi                  1.8                  1.8
+uio_out[1]                             -3.45112e-10         -3.45105e-10
+uo_out[1]                                   1.35875              1.35875
+xdut.xmisfit01_core_0._25_/a                1.13199              1.13199
+xdut.xmisfit01_core_0.clkbuf_0_clk/x             0.871477             0.872622 *
+uo_out[0]                                  0.397396             0.397402
+xdut.xmisfit01_core_0._24_/a               0.879311             0.879458
+xdut.xmisfit01_core_0.misfit01_core/hi                  1.8                  1.8
+uio_oe[3]                              -1.19496e-16         -1.19496e-16
+xdut.xmisfit01_core_0.input2/x             0.860156             0.859884
+xdut.xmisfit01_core_0._00_/d               0.711373             0.711834
+xdut.xmisfit01_core_0._01_/clk             0.850331             0.850499
+xdut.xmisfit01_core_0._00_/clk             0.852096              0.85231
+xdut.xmisfit01_core_0.misfit01_core_20/hi                  1.8                  1.8
+uo_out[6]                              -5.25158e-07         -5.25147e-07
+xdut.xmisfit01_core_0.misfit01_core_21/hi                  1.8                  1.8
+uo_out[7]                              -4.48526e-08         -4.48517e-08
+xdut.xmisfit01_core_0.misfit01_core_10/hi                  1.8                  1.8
+uio_out[2]                             -3.14001e-11         -3.13994e-11
+xdut.xmisfit01_core_0.misfit01_core_11/hi                  1.8                  1.8
+uio_out[3]                             -2.73551e-12         -2.73545e-12
+xdut.xmisfit01_core_0.misfit01_core_22/hi                  1.8                  1.8
+uio_oe[0]                              -1.70295e-18         -1.70295e-18
+xdut.xmisfit01_core_0.misfit01_core_12/hi                  1.8                  1.8
+uio_out[4]                             -8.67886e-14         -8.67867e-14
+xdut.xmisfit01_core_0.misfit01_core_23/hi                  1.8                  1.8
+uio_oe[1]                               5.98395e-18          5.98395e-18
+xdut.xmisfit01_core_0.misfit01_core_13/hi                  1.8                  1.8
+uio_out[5]                             -9.95302e-15          -9.9528e-15
+xdut.xmisfit01_core_0.misfit01_core_24/hi                  1.8                  1.8
+uio_oe[2]                              -6.47689e-17         -6.47689e-17
+xdut.xmisfit01_core_0.misfit01_core_14/hi                  1.8                  1.8
+uio_out[6]                             -1.66948e-14         -1.66944e-14
+xdut.xmisfit01_core_0.misfit01_core_15/hi                  1.8                  1.8
+uio_out[7]                             -1.19049e-15         -1.19049e-15
+xdut.xmisfit01_core_0.misfit01_core_16/hi              1.79884              1.79884
+uo_out[2]                               -0.00982136          -0.00982118
+xdut.xmisfit01_core_0.misfit01_core_17/hi              1.79989              1.79989
+uo_out[3]                              -0.000887484         -0.000887468
+xdut.xmisfit01_core_0.misfit01_core_18/hi              1.79999              1.79999
+uo_out[4]                              -7.24505e-05         -7.24491e-05
+xdut.xmisfit01_core_0.misfit01_core_19/hi                  1.8                  1.8
+uo_out[5]                              -6.16911e-06         -6.16899e-06
+xdut.misfit01_core_0/misfit01_core_19/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_18/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_17/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_16/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_15/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_14/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_24/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_13/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_23/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_12/hi                 -nan                 -nan
+xdut.misfit01_core_0/_01_/clk                  -nan                 -nan
+xdut.misfit01_core_0/clkbuf_0_clk/x                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_22/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_11/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_10/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_21/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_20/hi                 -nan                 -nan
+xdut.misfit01_core_0/_00_/d                    -nan                 -nan
+xdut.misfit01_core_0/_00_/clk                  -nan                 -nan
+xdut.misfit01_core_0/_24_/a                    -nan                 -nan
+xdut.misfit01_core_0/input2/x                  -nan                 -nan
+xdut.misfit01_core_0/_25_/a                    -nan                 -nan
+xdut.misfit01_core_0/misfit01_core/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_9/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_8/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_7/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_6/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_5/hi                 -nan                 -nan
+xdut.misfit01_core_0/misfit01_core_4/hi                 -nan                 -nan
+vdin#branch                             1.72525e+07          1.90785e+07 *
+vrst#branch                             1.72789e+07          1.71946e+07 *
+vclk#branch                             3.88636e+07          3.84567e+07 *
+vdd#branch                             -4.31368e+10         -4.31375e+10
+
+
+doAnalyses: TRAN:  Timestep too small; initial timepoint: cause unrecorded.
+
+
+tran simulation(s) aborted
+Error: scale vector time, frequency or dc has no data.
+Error: scale vector time, frequency or dc has no data.
+Error: scale vector time, frequency or dc has no data.
+Error: scale vector time, frequency or dc has no data.
+Error: scale vector time, frequency or dc has no data.
+Error: scale vector time, frequency or dc has no data.
+Error: scale vector time, frequency or dc has no data.
+Error: scale vector time, frequency or dc has no data.
+Error: &y_reset: no such variable.
+Error: &y_after1: no such variable.
+Error: &y_after0: no such variable.
+Error: &q_after1: no such variable.
+
+No. of Data Rows : 0
+ meas tran y_reset find v(uo_out[1]) at=40n failed!
+
+ meas tran y_after1 find v(uo_out[1]) at=68n failed!
+
+ meas tran y_after0 find v(uo_out[1]) at=108n failed!
+
+ meas tran q_after1 find v(uo_out[0]) at=88n failed!
+
+tfall               =  0.000000e+00 targ=  0.000000e+00 trig=  0.000000e+00
+trise               =  0.000000e+00 targ=  0.000000e+00 trig=  0.000000e+00
+TILE tt_um_misfit01b.c.spice 0 0
+ngspice-44.2 done

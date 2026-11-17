@@ -1,0 +1,56 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO misfit_inv
+  CLASS CORE ;
+  FOREIGN misfit_inv ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 3.680 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER li1 ;
+        RECT 0.145 1.035 0.475 1.275 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER li1 ;
+        RECT 1.910 0.310 2.080 2.450 ;
+    END
+  END Y
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 -0.240 3.680 0.240 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 2.480 3.680 2.960 ;
+    END
+  END VPWR
+  OBS
+    LAYER li1 ;
+      RECT 0.000 -0.085 3.680 0.085 ;
+      RECT 0.000 2.635 3.680 2.805 ;
+      RECT 0.680 0.085 0.850 0.810 ;
+      RECT 0.680 1.520 0.850 2.635 ;
+      RECT 2.725 0.085 2.895 0.800 ;
+      RECT 2.725 1.620 2.895 2.635 ;
+  END
+END misfit_inv
+END LIBRARY

@@ -1,0 +1,5 @@
+* NGSPICE file created from misfit_inv.ext - technology: sky130A
+
+.subckt misfit_inv A Y VGND VPWR
+.ends
+

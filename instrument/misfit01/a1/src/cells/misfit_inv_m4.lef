@@ -1,0 +1,53 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO misfit_inv_m4
+  CLASS BLOCK ;
+  FOREIGN misfit_inv_m4 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 12.000 BY 9.000 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.300 4.000 0.800 4.310 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 11.200 4.520 11.700 4.850 ;
+    END
+  END Y
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 7.200 0.000 8.800 9.000 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 9.400 0.000 11.000 9.000 ;
+    END
+  END VPWR
+  OBS
+    LAYER li1 ;
+      RECT 0.000 0.000 12.000 9.000 ;
+    LAYER met1 ;
+      RECT 1.100 0.000 10.900 9.000 ;
+    LAYER met2 ;
+      RECT 7.000 2.300 11.000 6.400 ;
+    LAYER met3 ;
+      RECT 7.000 2.300 11.000 6.400 ;
+  END
+END misfit_inv_m4
+END LIBRARY

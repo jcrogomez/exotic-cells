@@ -1,0 +1,186 @@
+
+Magic 8.3 revision 530 - Compiled on Tue Jul 29 09:47:45 AM CEST 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "../../misfit_inv.tcl" from command line.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   4.060 x 1.605   (-0.190,  1.305), ( 3.870,  2.910)  6.516     
+lambda:   406.00 x 160.50  (-19.00,  130.50), ( 387.00,  291.00)  65163.00  
+internal:    812 x 321     (   -38,  261  ), (   774,  582  )  260652    
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   3.680 x 0.480   ( 0.000, -0.240), ( 3.680,  0.240)  1.766     
+lambda:   368.00 x 48.00   (  0.00, -24.00), ( 368.00,  24.00)  17664.00  
+internal:    736 x 96      (     0, -48   ), (   736,  48   )  70656     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   3.680 x 0.480   ( 0.000,  2.480), ( 3.680,  2.960)  1.766     
+lambda:   368.00 x 48.00   (  0.00,  248.00), ( 368.00,  296.00)  17664.00  
+internal:    736 x 96      (     0,  496  ), (   736,  592  )  70656     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   3.680 x 0.170   ( 0.000, -0.085), ( 3.680,  0.085)  0.626     
+lambda:   368.00 x 17.00   (  0.00, -8.50 ), ( 368.00,  8.50 )  6256.00   
+internal:    736 x 34      (     0, -17   ), (   736,  17   )  25024     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   3.680 x 0.170   ( 0.000,  2.635), ( 3.680,  2.805)  0.626     
+lambda:   368.00 x 17.00   (  0.00,  263.50), ( 368.00,  280.50)  6256.00   
+internal:    736 x 34      (     0,  527  ), (   736,  561  )  25024     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 0.145, -0.085), ( 0.315,  0.085)  0.029     
+lambda:    17.00 x 17.00   ( 14.50, -8.50 ), ( 31.50,  8.50 )  289.00    
+internal:     34 x 34      (    29, -17   ), (    63,  17   )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 0.145,  2.635), ( 0.315,  2.805)  0.029     
+lambda:    17.00 x 17.00   ( 14.50,  263.50), ( 31.50,  280.50)  289.00    
+internal:     34 x 34      (    29,  527  ), (    63,  561  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 0.605, -0.085), ( 0.775,  0.085)  0.029     
+lambda:    17.00 x 17.00   ( 60.50, -8.50 ), ( 77.50,  8.50 )  289.00    
+internal:     34 x 34      (   121, -17   ), (   155,  17   )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 0.605,  2.635), ( 0.775,  2.805)  0.029     
+lambda:    17.00 x 17.00   ( 60.50,  263.50), ( 77.50,  280.50)  289.00    
+internal:     34 x 34      (   121,  527  ), (   155,  561  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 1.065, -0.085), ( 1.235,  0.085)  0.029     
+lambda:    17.00 x 17.00   ( 106.50, -8.50 ), ( 123.50,  8.50 )  289.00    
+internal:     34 x 34      (   213, -17   ), (   247,  17   )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 1.065,  2.635), ( 1.235,  2.805)  0.029     
+lambda:    17.00 x 17.00   ( 106.50,  263.50), ( 123.50,  280.50)  289.00    
+internal:     34 x 34      (   213,  527  ), (   247,  561  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 1.525, -0.085), ( 1.695,  0.085)  0.029     
+lambda:    17.00 x 17.00   ( 152.50, -8.50 ), ( 169.50,  8.50 )  289.00    
+internal:     34 x 34      (   305, -17   ), (   339,  17   )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 1.525,  2.635), ( 1.695,  2.805)  0.029     
+lambda:    17.00 x 17.00   ( 152.50,  263.50), ( 169.50,  280.50)  289.00    
+internal:     34 x 34      (   305,  527  ), (   339,  561  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 1.985, -0.085), ( 2.155,  0.085)  0.029     
+lambda:    17.00 x 17.00   ( 198.50, -8.50 ), ( 215.50,  8.50 )  289.00    
+internal:     34 x 34      (   397, -17   ), (   431,  17   )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 1.985,  2.635), ( 2.155,  2.805)  0.029     
+lambda:    17.00 x 17.00   ( 198.50,  263.50), ( 215.50,  280.50)  289.00    
+internal:     34 x 34      (   397,  527  ), (   431,  561  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 2.445, -0.085), ( 2.615,  0.085)  0.029     
+lambda:    17.00 x 17.00   ( 244.50, -8.50 ), ( 261.50,  8.50 )  289.00    
+internal:     34 x 34      (   489, -17   ), (   523,  17   )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 2.445,  2.635), ( 2.615,  2.805)  0.029     
+lambda:    17.00 x 17.00   ( 244.50,  263.50), ( 261.50,  280.50)  289.00    
+internal:     34 x 34      (   489,  527  ), (   523,  561  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 2.905, -0.085), ( 3.075,  0.085)  0.029     
+lambda:    17.00 x 17.00   ( 290.50, -8.50 ), ( 307.50,  8.50 )  289.00    
+internal:     34 x 34      (   581, -17   ), (   615,  17   )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 2.905,  2.635), ( 3.075,  2.805)  0.029     
+lambda:    17.00 x 17.00   ( 290.50,  263.50), ( 307.50,  280.50)  289.00    
+internal:     34 x 34      (   581,  527  ), (   615,  561  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 3.365, -0.085), ( 3.535,  0.085)  0.029     
+lambda:    17.00 x 17.00   ( 336.50, -8.50 ), ( 353.50,  8.50 )  289.00    
+internal:     34 x 34      (   673, -17   ), (   707,  17   )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 3.365,  2.635), ( 3.535,  2.805)  0.029     
+lambda:    17.00 x 17.00   ( 336.50,  263.50), ( 353.50,  280.50)  289.00    
+internal:     34 x 34      (   673,  527  ), (   707,  561  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.330 x 0.240   ( 0.145,  1.035), ( 0.475,  1.275)  0.079     
+lambda:    33.00 x 24.00   ( 14.50,  103.50), ( 47.50,  127.50)  792.00    
+internal:     66 x 48      (    29,  207  ), (    95,  255  )  3168      
+Adjusting size of label "A" in cell misfit_inv.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.240   ( 1.910,  1.075), ( 2.080,  1.315)  0.041     
+lambda:    17.00 x 24.00   ( 191.00,  107.50), ( 208.00,  131.50)  408.00    
+internal:     34 x 48      (   382,  215  ), (   416,  263  )  1632      
+Adjusting size of label "Y" in cell misfit_inv.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   3.680 x 0.480   ( 0.000, -0.240), ( 3.680,  0.240)  1.766     
+lambda:   368.00 x 48.00   (  0.00, -24.00), ( 368.00,  24.00)  17664.00  
+internal:    736 x 96      (     0, -48   ), (   736,  48   )  70656     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   3.680 x 0.480   ( 0.000,  2.480), ( 3.680,  2.960)  1.766     
+lambda:   368.00 x 48.00   (  0.00,  248.00), ( 368.00,  296.00)  17664.00  
+internal:    736 x 96      (     0,  496  ), (   736,  592  )  70656     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   3.680 x 2.720   ( 0.000,  0.000), ( 3.680,  2.720)  10.010    
+lambda:   368.00 x 272.00  (  0.00,  0.00 ), ( 368.00,  272.00)  100096.00 
+internal:    736 x 544     (     0,  0    ), (   736,  544  )  400384    
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  200.000 x 200.000  (-100.000, -100.000), ( 100.000,  100.000)  40000.000 
+lambda:   20000.00 x 20000.00  (-10000.00, -10000.00), ( 10000.00,  10000.00)  400000000.00
+internal:  40000 x 40000   (-20000, -20000), ( 20000,  20000)  1600000000
+DRC style is now "drc(full)"
+Loading DRC CIF style.
+DRC misfit_inv violations=1
+   All nwells must contain metal-connected N+ taps (nwell.4)  @ {-38 261 0 582} {0 261 774 582}
+   Generating output for cell misfit_inv
+Extracting misfit_inv into misfit_inv.ext:
+exttospice finished.

@@ -1,0 +1,7 @@
+* NGSPICE file created from misfit_inv.ext - technology: sky130A
+
+.subckt misfit_inv A Y VGND VPWR
+X0 Y A VGND VGND sky130_fd_pr__nfet_01v8 ad=0.377 pd=2.46 as=0.377 ps=2.46 w=0.65 l=0.5
+X1 Y A a_110_297# VPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=3.16 as=0.58 ps=3.16 w=1 l=0.5
+.ends
+
