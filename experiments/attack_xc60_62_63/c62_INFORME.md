@@ -1,6 +1,8 @@
 # c62 — Informe del ataque a XC-62 (transistor impreso por proximidad)
 Cerrado: Thu Nov 12 19:16:33 EST 2026 (hora de `date`). Prerregistro: `c62_PREREG.md`. Óptica SUPUESTA y sin calibrar (248 nm; NA 0,60/0,70; σ 0,5/0,8), umbral constante, sin resina ni grabado, **sin la corrección de la fábrica**: da intervalos y cota, no predicción.
 
+> **[nota 2026-11-22 19:56]** Este modelo no converge al nanómetro. Con la fuente de 7×7 y la caja de 5,12 µm, los anchos cambian 1–6 nm al truncar vecinas lejanas o alargar la línea ([etapa 2, C0](../xc62_etapa2/INFORME.md)). Las cifras de este informe por debajo de unos nm (vecinas a 1,0 µm, referencia aislada 0,149–0,151) quedan dentro de ese ruido numérico. Las conclusiones gruesas (+5…+76 mV con vecinas a 0,21 sin OPC) no cambian. Prueba de convergencia prerregistrada y sin correr: [`XC-62_2026-11-22_etapa2b_convergencia.md`](../../cells/preregistros/XC-62_2026-11-22_etapa2b_convergencia.md).
+
 ## (d) Reglas de poly (PDK local, `libs.tech/magic/sky130A.tech`)
 | Regla | Valor | Línea |
 |---|---|---|

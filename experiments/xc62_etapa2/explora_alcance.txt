@@ -1,0 +1,6 @@
+13:12:17 NA 0.6 sigma 0.8
+N=1024 (caja 5.12 um) ns=7: umbral 0.3279 | a2 R1 s0.42: 5.773 nm | a3 densa: 1.866 nm
+N=1024 (caja 5.12 um) ns=13: umbral 0.3217 | a2 R1 s0.42: 0.988 nm | a3 densa: 0.611 nm
+N=2048 (caja 10.24 um) ns=7: umbral 0.3295 | a2 R1 s0.42: 2.750 nm | a3 densa: 3.453 nm
+N=2048 (caja 10.24 um) ns=13: umbral 0.3226 | a2 R1 s0.42: 0.571 nm | a3 densa: 0.837 nm
+13:13:31

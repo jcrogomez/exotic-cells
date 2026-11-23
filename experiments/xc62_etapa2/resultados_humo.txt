@@ -1,0 +1,14 @@
+etapa2 · inicio 2026-11-22 13:10:28 EST · humo=True
+T-MI: estimado 0.4856 ± 0.0016, exacto 0.4859; mutante 1.0000 -> PASA
+a9 LOD: [{'n': 8, 's': 0.21, 'max_dsasb_igualada': 0.0, 'max_dsasb_mutante': 0.10000000000000009}, {'n': 16, 's': 0.42, 'max_dsasb_igualada': 0.0, 'max_dsasb_mutante': 0.10000000000000142}] -> PASA
+NA 0.6 σ 0.5: umbral 0.250; a2 [('R2 n32 s0.21 centro', np.float64(2.1869)), ('R1 0.15 s0.42 m3', np.float64(0.703))] nm; a3 [('densa m3', np.float64(0.979)), ('aislada', np.float64(0.8836))] nm; T-R1 bajo A 0.9054; P1' 1.676; sesgo B 15 nm/borde -> w 0.1434
+   lecturas 3.8 s, recurrencias a FFT 0
+NA 0.6 σ 0.8: umbral 0.328; a2 [('R2 n32 s0.21 centro', np.float64(2.7255)), ('R1 0.15 s0.42 m3', np.float64(5.7731))] nm; a3 [('densa m3', np.float64(1.8664)), ('aislada', np.float64(2.1466))] nm; T-R1 bajo A 0.9218; P1' 1.024; sesgo B 0 nm/borde -> w 0.1474
+   lecturas 2.8 s, recurrencias a FFT 0
+NA 0.7 σ 0.5: umbral 0.231; a2 [('R2 n32 s0.21 centro', np.float64(3.5063)), ('R1 0.15 s0.42 m3', np.float64(1.0135))] nm; a3 [('densa m3', np.float64(2.6323)), ('aislada', np.float64(1.016))] nm; T-R1 bajo A 0.9248; P1' 1.378; sesgo B 20 nm/borde -> w 0.1476
+   lecturas 3.8 s, recurrencias a FFT 0
+NA 0.7 σ 0.8: umbral 0.319; a2 [('R2 n32 s0.21 centro', np.float64(6.2189)), ('R1 0.15 s0.42 m3', np.float64(0.0874))] nm; a3 [('densa m3', np.float64(0.308)), ('aislada', np.float64(0.2077))] nm; T-R1 bajo A 0.9316; P1' 1.064; sesgo B 5 nm/borde -> w 0.1536
+   lecturas 3.9 s, recurrencias a FFT 0
+a2 FALLA · a3 FALLA · T-R1 PASA · P1' FALLADA · P1 [np.float64(1.59), np.float64(1.033), np.float64(1.381), np.float64(1.057)] FALLADA · recurrencias 0
+humo: fin tras C0/C1
+fin 2026-11-22 13:11:39 EST
