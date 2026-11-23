@@ -1,0 +1,9 @@
+prereg_calc_2b · 2026-11-22 19:31:33
+exploración (NA 0,60 σ 0,8): {(1024, 7): (5.773, 1.866), (1024, 13): (0.988, 0.611), (2048, 7): (2.75, 3.453), (2048, 13): (0.571, 0.837)}
+puntos de fuente: {7: 29, 13: 113, 19: 253, 25: 441, 31: 709, 37: 1009}
+N=1024: p = 2.85; a2 = 0,1 nm en ns ≈ 29.0 -> primer peldaño ≥: 31
+N=2048: p = 2.54; a2 = 0,1 nm en ns ≈ 25.8 -> primer peldaño ≥: 31
+presupuesto de resolución estimado: escalera completa, 6 geometrías × 4 ajustes = 2.76 h
+auditoría estimada: polar + mutante 1.00 h; dx 2,5 nm 0.59 h
+memoria por forma del evaluador incremental: 0,22 GB a 29 puntos -> 5.4 GB a ns 31, 7.7 GB a ns 37
+tolerancia secundaria, R2: 0,5 nm × 1,8 mV/nm = 0.9 mV frente a σ de la diferencia 4,99 mV (n = 24, prereg_calc.txt)
