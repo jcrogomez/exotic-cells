@@ -1,0 +1,8 @@
+slot XC-19: 58.20 x 95.69 um = 5569 um2 ; nucleo (die endurecido de misfit02_core_r2): 14013 um2
+1x1: 161.00 x 111.52 = 17955 um2 ; libre tras nucleo + 1 slot (en bruto): -1628 um2 ; alto libre bajo el nucleo: 24.48 um
+1x2: 161.00 x 225.76 = 36347 um2 ; libre tras nucleo + 1 slot (en bruto): 16764 um2 ; alto libre bajo el nucleo: 138.72 um
+2x2: 334.88 x 225.76 = 75603 um2 ; libre tras nucleo + 1 slot (en bruto): 56020 um2 ; alto libre bajo el nucleo: 138.72 um
+tt 27: tA = 27.943 us = 1397.2 cuentas ; s_c = 0.8074 % ; 10 % de s_c = 0.0807 % del cociente ; = 1.128 cuentas
+ff -40: tA = 42.153 us = 2107.6 cuentas ; s_c = 1.0006 % ; 10 % de s_c = 0.1001 % del cociente ; = 2.109 cuentas
+ss 85: tA = 28.055 us = 1402.7 cuentas ; s_c = 0.6840 % ; 10 % de s_c = 0.0684 % del cociente ; = 0.959 cuentas
+ff 85: tA = 2.275 us = 113.8 cuentas ; s_c = 0.6311 % ; 10 % de s_c = 0.0631 % del cociente ; = 0.072 cuentas
