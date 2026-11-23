@@ -1,0 +1,64 @@
+# MISFIT-03 etapa a · contrato del macro extraido · veredictos (generado por analiza_contrato.py)
+
+| esquina | tA src=01 (us) | tB src=01 (us) | tA/tB-1 src=11 (%) | paso P4 (%) | trampa (cuentas) | paso (cuentas) | VB (V) |
+|---|---|---|---|---|---|---|---|
+| tt 27 | 27.943 | 27.939 | 0.0127 | 0.1745 | 11.28 | 2.53 | 0.4783 |
+| ff -40 | 42.153 | 42.147 | 0.0124 | 0.1642 | 21.09 | 6.20 | 0.4633 |
+| ss 85 | 28.055 | 28.051 | 0.0133 | 0.1824 | 9.59 | 1.85 | 0.4955 |
+| ff 85 | 2.275 | 2.275 | 0.0113 | 0.1294 | 0.72 | 0.17 | 0.4190 |
+
+## Predicciones
+
+- **P3** (tt 27, src=01): tA = 27.943 us, banda 30,96-33,4 us -> FALSA
+- **P5'** tt 27: abs(tA/tB - 1) en src=11 = 0.0127 %, limite 0,15 % -> cumplida
+- **P5'** ff -40: abs(tA/tB - 1) en src=11 = 0.0124 %, limite 0,15 % -> cumplida
+- **P5'** ss 85: abs(tA/tB - 1) en src=11 = 0.0133 %, limite 0,15 % -> cumplida
+- **P5'** ff 85: abs(tA/tB - 1) en src=11 = 0.0113 %, limite 0,15 % -> cumplida
+- **P4** tt 27: paso = 0.1745 %, banda 0,25-0,60 % -> FALSA
+- **P4** tt 27: paso = 0.1745 %, >= 0,15 % -> cumplida; criterio de muerte K2 (< 0,10 %): no
+- **P4** ff -40: paso = 0.1642 %, >= 0,15 % -> cumplida; criterio de muerte K2 (< 0,10 %): no
+- **P4** ss 85: paso = 0.1824 %, >= 0,15 % -> cumplida; criterio de muerte K2 (< 0,10 %): no
+- **P4** ff 85: paso = 0.1294 %, >= 0,15 % -> FALSA; criterio de muerte K2 (< 0,10 %): no
+- **P6** tt 27: trampa = 11.28 cuentas, prediccion >= 10 -> cumplida
+- **P6** ff -40: trampa = 21.09 cuentas, prediccion >= 10 -> cumplida
+- **P6** ss 85: trampa = 9.59 cuentas, prediccion >= 10 -> FALSA
+- **P6** ff 85: trampa = 0.72 cuentas, prediccion < 2 (fallo esperado) -> cumplida
+- **P6'** tt 27: paso de unidad = 2.53 cuentas, prediccion >= 5 -> FALSA
+- **P6'** ff -40: paso de unidad = 6.20 cuentas, prediccion >= 5 -> cumplida
+- **P6'** ss 85: paso de unidad = 1.85 cuentas (sin prediccion binaria; diseno 4,8)
+- **P6'** ff 85: paso de unidad = 0.17 cuentas, prediccion < 1 (fallo esperado) -> cumplida
+- **P7** tt 27: A/B se mueve 0.00020 % con +-10 mV (tA: 29.878 / 27.943 / 26.140 us), limite 0,01 % -> cumplida
+- **P7** ff -40: A/B se mueve 0.00020 % con +-10 mV (tA: 45.777 / 42.153 / 38.836 us), limite 0,01 % -> cumplida
+- **P7** ss 85: A/B se mueve 0.00028 % con +-10 mV (tA: 29.684 / 28.055 / 26.518 us), limite 0,01 % -> cumplida
+- **P7** ff 85: A/B se mueve 0.00059 % con +-10 mV (tA: 2.389 / 2.275 / 2.168 us), limite 0,01 % -> cumplida
+- **P2** tt 27: en=0, corriente estatica del macro por .op 2.7142 nA; xa = 1.43 uV en el .op; transitorio 1,4 ms con entradas moviendose: max(xa, xb) = 1.75 uV, macro 2.7142 nA, decodificador 0.0094 nA; limite 1 nA: macro -> FALSA, macro + decodificador -> FALSA
+- **P2** ff -40: en=0, corriente estatica del macro por .op 1.1449 nA; xa = 0.33 uV en el .op; transitorio con entradas moviendose: **no corrido** (el simulador no avanza)
+- **P2** ss 85: en=0, corriente estatica del macro por .op 1.2143 nA; xa = 1.23 uV en el .op; transitorio con entradas moviendose: **no corrido** (el simulador no avanza)
+- **P2** ff 85: en=0, corriente estatica del macro por .op 305.8780 nA; xa = 138.80 uV en el .op; transitorio 1,4 ms con entradas moviendose: max(xa, xb) = 139.24 uV, macro 305.8780 nA, decodificador 3.1846 nA; limite 50 nA: macro -> FALSA, macro + decodificador -> FALSA
+
+## Fallos inyectados
+
+Banda sana = [min, max] de la misma lectura del macro sano en las 4 esquinas.
+
+- tt 27: **F1** paso = 0.0041 % (< 0,05 % -> cumplida; banda sana 0.1294-0.1824) · **F2** A desplazado 0.7191 % (> 0,25 % -> cumplida) · **F3** xa al final de la precarga = 1.800 V (stuck -> cumplida) · **F4** xa al final de la precarga = 1.800 V, cruce — us (stuck o timeout -> cumplida) · **F7** tA/tB src=11 = 0.4896 (< 0,80 -> cumplida)
+- ff -40: **F1** paso = 0.0030 % (< 0,05 % -> cumplida; banda sana 0.1294-0.1824) · **F2** A desplazado 0.6492 % (> 0,25 % -> cumplida) · **F3** xa al final de la precarga = 1.800 V (stuck -> cumplida) · **F4** xa al final de la precarga = 1.800 V, cruce — us (stuck o timeout -> cumplida) · **F7** tA/tB src=11 = 0.3564 (< 0,80 -> cumplida)
+- ss 85: **F1** paso = 0.0118 % (< 0,05 % -> cumplida; banda sana 0.1294-0.1824) · **F2** A desplazado 0.7971 % (> 0,25 % -> cumplida) · **F3** xa al final de la precarga = 1.800 V (stuck -> cumplida) · **F4** xa al final de la precarga = 1.800 V, cruce — us (stuck o timeout -> cumplida) · **F7** tA/tB src=11 = 0.5813 (< 0,80 -> cumplida)
+- ff 85: **F1** paso = 0.0016 % (< 0,05 % -> cumplida; banda sana 0.1294-0.1824) · **F2** A desplazado 0.5881 % (> 0,25 % -> cumplida) · **F3** xa al final de la precarga = 1.800 V (stuck -> cumplida) · **F4** xa al final de la precarga = 1.800 V, cruce — us (stuck o timeout -> cumplida) · **F7** tA/tB src=11 = 0.4692 (< 0,80 -> cumplida)
+- tt 27: **F5** en=0 con VBIAS y C1 pegados a VDD: corriente macro 2.714 nA, por VBIAS/C1 (alimentacion del decodificador) 33.473 nA, VB 0.4783 V, xa max 0.002 mV (macro + decodificador supera 1 nA -> cumplida; VB > 0,1 V -> cumplida)
+- tt 27: **F6** DUT de A abierto, src=01: cruce de xa — us en 1,4 ms (timeout = sin cruce en 1,31 ms -> cumplida); XA min 1.7999 V
+- tt 27: **src=00**: cruce xa — us, xb — us (timeout esperado); XA min 1.7999 V
+- ff -40: **F5** en=0 con VBIAS y C1 pegados a VDD: corriente macro 1.145 nA, por VBIAS/C1 (alimentacion del decodificador) 19.960 nA, VB 0.4634 V, xa max 0.000 mV (VB > 0,1 V -> cumplida)
+- ff -40: **F6** DUT de A abierto, src=01: cruce de xa — us en 1,4 ms (timeout = sin cruce en 1,31 ms -> cumplida); XA min 1.8000 V
+- ff -40: **src=00**: cruce xa — us, xb — us (timeout esperado); XA min 1.8000 V
+- ss 85: **F5** en=0 con VBIAS y C1 pegados a VDD: corriente macro 1.227 nA, por VBIAS/C1 (alimentacion del decodificador) 35.377 nA, VB 0.4955 V, xa max 0.002 mV (VB > 0,1 V -> cumplida)
+- ss 85: **F6** DUT de A abierto, src=01: cruce de xa — us en 1,4 ms (timeout = sin cruce en 1,31 ms -> cumplida); XA min 1.7390 V
+- ss 85: **src=00**: cruce xa — us, xb — us (timeout esperado); XA min 1.7291 V
+- ff 85: **F5** en=0 con VBIAS y C1 pegados a VDD: corriente macro 305.886 nA, por VBIAS/C1 (alimentacion del decodificador) 386.934 nA, VB 0.4191 V, xa max 0.139 mV (macro + decodificador supera 50 nA -> cumplida; VB > 0,1 V -> cumplida)
+- ff 85: **F6** DUT de A abierto, src=01: cruce de xa — us en 1,4 ms (timeout = sin cruce en 1,31 ms -> cumplida); XA min 1.7331 V
+- ff 85: **src=00**: cruce xa — us, xb — us (timeout esperado); XA min 1.7072 V
+
+## Mutante del criterio (fallo invisible = dentro de la banda sana en las 4 esquinas)
+
+- F1: dentro de la banda sana en 0 de 4 esquinas -> visible
+- F2: dentro de la banda sana en 0 de 4 esquinas -> visible
+- F7: dentro de la banda sana en 0 de 4 esquinas -> visible

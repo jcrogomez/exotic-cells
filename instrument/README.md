@@ -27,7 +27,7 @@ assuming beforehand how it behaves; and that the instrument stays useful when a 
 | Protocol (registers, write strobe) | Addresses and bytes | What a measurement is |
 | Selection and isolation | Which slot is enabled and selected | What is inside a slot |
 | Measurement engine | Precharge, a window, two edges, a count | Which physics produced the edges |
-| Slot (macro) | Its own physics, calibration current, reference capacitor | Other slots, the protocol |
+| Slot (macro) | Its own physics, its reference discharge and capacitor units | Other slots, the protocol |
 
 A slot's four input lines and two output lines are the only coupling the design intends. Unintended coupling (supply,
 substrate, leakage) is the subject of [`RISKS.md`](RISKS.md).
@@ -58,7 +58,7 @@ SKY130): 991 cells, 142 flip-flops, slots as black boxes. No timing, no area, no
 
 ## Controls built in
 
-- **Positive:** calibration current and reference capacitor per slot (`src` 2 and 3); the internal digital reference
+- **Positive:** differential capacitor calibration per slot (`src` 2: 2 units on A, 1 on B; `src` 3: 1 unit each); the internal digital reference
   (channel 7), which needs no slot at all.
 - **Negative:** `src` 0 (no source selected: a discharge here is leakage or a fault); a refused start; a disabled slot.
 - **Not built yet:** a slot with no cell (structural blank), temperature, drift across repeats, randomised reading order.

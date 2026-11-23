@@ -1,0 +1,5 @@
+diseno_ref3_analisis (de diseno_ref3.txt, 14:07:46-14:12:50). CALCULO DE DISENO, esquematico, u = 0,6 fF ideal, 2 interruptores cerrados por nodo en src=10 y src=11.
+ff -40 C: DUT  46.40 us ( 2320 cuentas), trampa 0.996 % =  23.1 cuentas | ref 2x6  78.93 us ( 3946 cuentas; ref/DUT 1.70), unidad 0.383 % =  15.1 cuentas | trampa en el DUT apagado mueve la ref 2x4: 0.0e+00 s
+ff  85 C: DUT   2.53 us (  127 cuentas), trampa 0.604 % =   0.8 cuentas | ref 2x6   2.74 us (  137 cuentas; ref/DUT 1.08), unidad 0.297 % =   0.4 cuentas | trampa en el DUT apagado mueve la ref 2x4: 0.0e+00 s
+ss  85 C: DUT  30.50 us ( 1525 cuentas), trampa 0.681 % =  10.4 cuentas | ref 2x6  21.52 us ( 1076 cuentas; ref/DUT 0.71), unidad 0.446 % =   4.8 cuentas | trampa en el DUT apagado mueve la ref 2x4: 0.0e+00 s
+tt  27 C: DUT  30.35 us ( 1517 cuentas), trampa 0.802 % =  12.2 cuentas | ref 2x6  30.44 us ( 1522 cuentas; ref/DUT 1.00), unidad 0.411 % =   6.3 cuentas | trampa en el DUT apagado mueve la ref 2x4: 0.0e+00 s

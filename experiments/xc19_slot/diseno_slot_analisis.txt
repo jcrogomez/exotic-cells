@@ -1,0 +1,8 @@
+diseno_slot_analisis.py-en-linea (de diseno_slot.txt, 07:36:42-07:39:20). u = 0,54 fF ideal. CALCULO DE DISENO.
+K1 = un interruptor + 1 u (estado: cerrado frente a todo abierto). K2 = gemelos (1 u cerrado frente a 0 u cerrado).
+ff -40 C: t  47.265 us =  2363 cuentas | salto de trampa 1.002 % =  23.7 cuentas | K1 0.724 % (K1/trampa 0.723) | K2 0.345 % (K2/trampa 0.344) | 2.ª unidad/1.ª 1.023
+ff  85 C: t   2.570 us =   128 cuentas | salto de trampa 0.609 % =   0.8 cuentas | K1 0.659 % (K1/trampa 1.081) | K2 0.274 % (K2/trampa 0.450) | 2.ª unidad/1.ª 1.039
+ss  85 C: t  31.182 us =  1559 cuentas | salto de trampa 0.684 % =  10.7 cuentas | K1 0.876 % (K1/trampa 1.280) | K2 0.399 % (K2/trampa 0.582) | 2.ª unidad/1.ª 1.002
+tt  27 C: t  30.961 us =  1548 cuentas | salto de trampa 0.807 % =  12.5 cuentas | K1 0.797 % (K1/trampa 0.988) | K2 0.365 % (K2/trampa 0.453) | 2.ª unidad/1.ª 1.021
+K1/trampa entre esquinas: 0.723-1.280, dispersion relativa 54.7 %
+K2/trampa entre esquinas: 0.344-0.582, dispersion relativa 52.1 %

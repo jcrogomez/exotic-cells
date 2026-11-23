@@ -1,0 +1,64 @@
+== PWU 1.10
+DRC xc19_slot_core violations=0
+VDD   total  0.660 fF  a GND  0.316  a XB  0.065  u =  0.595 fF
+SA2B  total  0.649 fF  a GND  0.325  a XA  0.065  u =  0.584 fF
+SB1B  total  0.646 fF  a GND  0.259  a XB  0.152  u =  0.494 fF
+SA1B  total  0.646 fF  a GND  0.263  a XA  0.152  u =  0.494 fF
+XA total 9.717 fF, XB total 8.779 fF, XA-XB 23.4 aF
+== PWU 1.20
+DRC xc19_slot_core violations=0
+VDD   total  0.698 fF  a GND  0.331  a XB  0.066  u =  0.632 fF
+SA2B  total  0.687 fF  a GND  0.340  a XA  0.066  u =  0.620 fF
+SB1B  total  0.682 fF  a GND  0.273  a XB  0.154  u =  0.528 fF
+SA1B  total  0.682 fF  a GND  0.277  a XA  0.154  u =  0.528 fF
+XA total 9.724 fF, XB total 8.786 fF, XA-XB 23.4 aF
+== PWU 1.20 (tira de X simetrica)
+DRC xc19_slot_core violations=0
+VDD   total  0.712 fF  a GND  0.326  a XB  0.087  u =  0.625 fF
+SA2B  total  0.701 fF  a GND  0.335  a XA  0.087  u =  0.615 fF
+SB1B  total  0.682 fF  a GND  0.272  a XB  0.154  u =  0.528 fF
+SA1B  total  0.682 fF  a GND  0.277  a XA  0.154  u =  0.528 fF
+XA total 9.782 fF, XB total 8.844 fF, XA-XB 23.4 aF
+== PWU 1.30 (tira de X simetrica)
+DRC xc19_slot_core violations=1
+VDD   total  0.757 fF  a GND  0.340  a XB  0.088  u =  0.669 fF
+SA2B  total  0.747 fF  a GND  0.349  a XA  0.088  u =  0.659 fF
+SB1B  total  0.726 fF  a GND  0.286  a XB  0.156  u =  0.570 fF
+SA1B  total  0.726 fF  a GND  0.291  a XA  0.156  u =  0.570 fF
+XA total 9.789 fF, XB total 8.851 fF, XA-XB 23.4 aF
+== PWU 0.85 (tira de X simetrica)
+DRC xc19_slot_core violations=0
+VDD   total  0.594 fF  a GND  0.273  a XB  0.083  u =  0.511 fF
+SA2B  total  0.584 fF  a GND  0.282  a XA  0.083  u =  0.501 fF
+SB1B  total  0.569 fF  a GND  0.222  a XB  0.147  u =  0.422 fF
+SA1B  total  0.569 fF  a GND  0.227  a XA  0.147  u =  0.422 fF
+SB0B  total  0.077 fF  a GND  0.016  a XB  0.054  u =  0.024 fF
+SA0B  total  0.077 fF  a GND  0.016  a XA  0.054  u =  0.024 fF
+XA total 9.755 fF, XB total 8.817 fF, XA-XB 23.4 aF
+== PWU 0.90 (tira de X simetrica)
+DRC xc19_slot_core violations=0
+VDD   total  0.609 fF  a GND  0.281  a XB  0.084  u =  0.526 fF
+SA2B  total  0.599 fF  a GND  0.289  a XA  0.084  u =  0.515 fF
+SB1B  total  0.583 fF  a GND  0.230  a XB  0.148  u =  0.435 fF
+SA1B  total  0.583 fF  a GND  0.234  a XA  0.148  u =  0.435 fF
+SB0B  total  0.077 fF  a GND  0.016  a XB  0.054  u =  0.024 fF
+SA0B  total  0.077 fF  a GND  0.016  a XA  0.054  u =  0.024 fF
+XA total 9.759 fF, XB total 8.821 fF, XA-XB 23.4 aF
+== PWU 0.95 (tira de X simetrica)
+DRC xc19_slot_core violations=0
+VDD   total  0.625 fF  a GND  0.288  a XB  0.084  u =  0.540 fF
+SA2B  total  0.614 fF  a GND  0.297  a XA  0.084  u =  0.530 fF
+SB1B  total  0.599 fF  a GND  0.237  a XB  0.149  u =  0.450 fF
+SA1B  total  0.599 fF  a GND  0.242  a XA  0.149  u =  0.450 fF
+SB0B  total  0.077 fF  a GND  0.016  a XB  0.054  u =  0.024 fF
+SA0B  total  0.077 fF  a GND  0.016  a XA  0.054  u =  0.024 fF
+XA total 9.763 fF, XB total 8.825 fF, XA-XB 23.4 aF
+== PWU 0.95 XBS 11.40
+DRC xc19_slot_core violations=0
+XA total 9.763 fF, XB total 9.161 fF, XA-XB 23.4 aF
+== PWU 0.95 XBS 11.40 XBH 0.80
+DRC xc19_slot_core violations=0
+XA total 9.763 fF, XB total 9.739 fF, XA-XB 23.4 aF
+== PWU 0.95 XBS 11.40 XBH 1.20
+DRC xc19_slot_core violations=0
+XA total 9.763 fF, XB total 10.060 fF, XA-XB 23.4 aF

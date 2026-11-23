@@ -1,0 +1,2 @@
+RES CREF t_off=3.09921E-05 sw_only=0.415171 c03=0.628354 c04=0.699663 c05=0.770971 c06=0.84228 c07=0.913556
+pendiente 0.7130 %/fF, ordenada 0.4145 %, sw_only medido 0.4152 %; Cref para 0,80 %: 0.541 fF; fraccion del paso que es del interruptor a 0,80 %: 0.52

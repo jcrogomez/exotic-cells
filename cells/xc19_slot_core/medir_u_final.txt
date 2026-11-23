@@ -1,0 +1,7 @@
+VDD   total  0.625 fF  a GND  0.288  a XB  0.084  u =  0.540 fF
+SA2B  total  0.614 fF  a GND  0.297  a XA  0.084  u =  0.530 fF
+SB1B  total  0.599 fF  a GND  0.237  a XB  0.149  u =  0.450 fF
+SA1B  total  0.599 fF  a GND  0.242  a XA  0.149  u =  0.450 fF
+SB0B  total  0.077 fF  a GND  0.016  a XB  0.054  u =  0.024 fF
+SA0B  total  0.077 fF  a GND  0.016  a XA  0.054  u =  0.024 fF
+XA total 9.763 fF, XB total 9.739 fF, XA-XB 23.4 aF

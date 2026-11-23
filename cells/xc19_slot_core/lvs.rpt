@@ -1,0 +1,100 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Cell xc19_slot_core (0) disconnected node: CALA
+Cell xc19_slot_core (0) disconnected node: CALB
+Cell xc19_slot_core (1) disconnected node: CALA
+Cell xc19_slot_core (1) disconnected node: CALB
+Class xc19_slot_core (0):  Merged 67 parallel devices.
+Class xc19_slot_core (1):  Merged 67 parallel devices.
+Cell xc19_slot_core (0) disconnected node: CALA
+Cell xc19_slot_core (0) disconnected node: CALB
+Cell xc19_slot_core (1) disconnected node: CALA
+Cell xc19_slot_core (1) disconnected node: CALB
+Subcircuit summary:
+Circuit 1: xc19_slot_core                  |Circuit 2: xc19_slot_core                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (2)            |sky130_fd_pr__pfet_01v8_hvt (2)            
+sky130_fd_pr__nfet_01v8 (86->19)           |sky130_fd_pr__nfet_01v8 (86->19)           
+sky130_fd_pr__pfet_01v8 (8)                |sky130_fd_pr__pfet_01v8 (8)                
+Number of devices: 29                      |Number of devices: 29                      
+Number of nets: 33                         |Number of nets: 33                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: xc19_slot_core                  |Circuit 2: xc19_slot_core                  
+-------------------------------------------|-------------------------------------------
+C1                                         |C1                                         
+VBIAS                                      |VBIAS                                      
+XA_OUT                                     |XA_OUT                                     
+XB_OUT                                     |XB_OUT                                     
+GND                                        |GND                                        
+VB                                         |VB                                         
+VDD                                        |VDD                                        
+PREA                                       |PREA                                       
+PREB                                       |PREB                                       
+DUTA                                       |DUTA                                       
+DUTB                                       |DUTB                                       
+REFA                                       |REFA                                       
+REFB                                       |REFB                                       
+SB0B                                       |SB0B                                       
+SB1B                                       |SB1B                                       
+SA0B                                       |SA0B                                       
+SA1B                                       |SA1B                                       
+SA2B                                       |SA2B                                       
+XA                                         |XA                                         
+XB                                         |XB                                         
+CALA                                       |CALA                                       
+CALB                                       |CALB                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes xc19_slot_core and xc19_slot_core are equivalent.
+
+Final result: Circuits match uniquely.
+.

@@ -25,7 +25,7 @@ No analog pins.
 | 0 | `ID` | r | 0x4D | Constant |
 | 1 | `CTRL` | rw | 0 | bit 0 `arm`; bit 1 `dual` (A and B in the same window); bit 2 `twin` (single read of B instead of A) |
 | 2 | `CHSEL` | rw | 0 | Slot 0–3; 7 = internal digital reference |
-| 3 | `SRC` | rw | 0 | 0 none, 1 cell, 2 calibration current, 3 reference capacitor |
+| 3 | `SRC` | rw | 0 | 0 none, 1 cell, 2 differential calibration (2 units A, 1 unit B), 3 symmetric reference (1 unit each) |
 | 4 | `ENMASK` | rw | 0 | One enable bit per slot |
 | 5 | `TMO` | rw | 16 | Window = 2^`TMO` clocks, clamped to 24 |
 | 6 | `CMD` | w | | bit 0 start; bit 1 abort; bit 2 clear flags |
@@ -58,7 +58,7 @@ Each slot is a macro `misfit_cell_slot` with exactly these signal ports, at digi
 |---|---|---|---|
 | `en` | in | Slot enabled | With `en` low the macro draws no static current beyond leakage, drives `xa` and `xb` low, and applies no stimulus to its cell |
 | `pre` | in | Precharge | High: measured nodes A and B are precharged. Falling edge: the discharge starts |
-| `src[1:0]` | in | Source | 0: nothing connected to the nodes. 1: the cell on A, its twin (or blank) on B. 2: calibration current on both. 3: reference capacitor switched on both |
+| `src[1:0]` | in | Source | 0: nothing connected to the nodes. 1: the cell on A, its twin (or blank) on B. 2: differential calibration, 2 capacitor units on A and 1 on B. 3: 1 unit on both (symmetric reference). In 2 and 3 a reference discharge of known geometry replaces the cell |
 | `xa`, `xb` | out | Discharged | Rise once when node A (B) has crossed the comparator threshold; low during precharge. Asynchronous to `clk` |
 
 Supply and ground reach the macro as power pins, not as signals. How (power pins in a hardened macro, or drawn stripes) depends
@@ -69,6 +69,8 @@ What the core guarantees to a slot: `en`, `pre` and `src` are all low after rese
 
 What the core assumes of a slot, and cannot check: that `en` low really makes it inert; that its outputs are valid logic
 levels when enabled; that it does not disturb its neighbours through supply, substrate or wells ([`RISKS.md`](RISKS.md)).
+
+Change of 2026-11-23 (MISFIT-03, amendment 1): `src` 2 and 3 were a calibration current and a single switched capacitor. The calibration certifies the timing chain and its differential sensitivity, not the detection of one electron charge.
 
 ## Replacing the behavioural model
 
