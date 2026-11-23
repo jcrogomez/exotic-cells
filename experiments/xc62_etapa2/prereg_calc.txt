@@ -1,0 +1,16 @@
+A (c62, sin OPC) NA 0.60 sigma 0.5: L centro densa 0,21 x3 = 0.089 -> cociente R_densa/R_aislada = 1.685
+A (c62, sin OPC) NA 0.60 sigma 0.8: L centro densa 0,21 x3 = 0.146 -> cociente R_densa/R_aislada = 1.027
+A (c62, sin OPC) NA 0.70 sigma 0.5: L centro densa 0,21 x3 = 0.109 -> cociente R_densa/R_aislada = 1.376
+A (c62, sin OPC) NA 0.70 sigma 0.8: L centro densa 0,21 x3 = 0.142 -> cociente R_densa/R_aislada = 1.056
+R2 n=8: desajuste del peine 6.12 mV; de la diferencia peine-referencia (ambos n) 8.65 mV
+R2 n=16: desajuste del peine 4.33 mV; de la diferencia peine-referencia (ambos n) 6.12 mV
+R2 n=24: desajuste del peine 3.53 mV; de la diferencia peine-referencia (ambos n) 4.99 mV
+R2 n=32: desajuste del peine 3.06 mV; de la diferencia peine-referencia (ambos n) 4.33 mV
+R2: n mínimo para que la diferencia baje de 5 mV: 24
+R1 línea 0,15 x 30 um a 48,2 ohm/cuadro: 200 cuadros, 9.64 kohm
+R1 sigma_R 0.1% por línea -> sigma del cociente 0.141%
+R1 sigma_R 0.3% por línea -> sigma del cociente 0.424%
+R1 sigma_R 1.0% por línea -> sigma del cociente 1.414%
+R1 sigma_R 3.0% por línea -> sigma del cociente 4.243%
+testigo R1 (C, impreso = dibujado): 0,150 / 0,160 = 0.9375
+techo de información sobre la clase de OPC (3 clases equiprobables): 1.5850 bits
