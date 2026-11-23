@@ -77,7 +77,7 @@ de defectos no hay equivalente en la biblioteca.
 
 1. Hecho: presupuesto de la etapa, etapa completa y polarización, ruido y detección, contra cuatro prerregistros.
 2. Hecho: `xc19_read`, `xc19_bias` y `xc19_channel` dibujados por script, 0 violaciones en los dos decks, extraídos y anotados.
-3. Pendiente: dibujar los condensadores (2 × 133 fF y el filtro de 10 pF) y repetir la simulación extraída.
+3. Hecho [corregido 2026-11-22 19:59: esta línea estaba desfasada desde el 2026-11-13]: condensadores dibujados y simulación extraída en `xc19_channel_caps` / `experiments/xc19_caps`. Lo que falta para el slot del instrumento: [`experiments/xc19_slot/DISENO.md`](../../experiments/xc19_slot/DISENO.md).
 4. Pendiente: terminar el Monte Carlo de desajuste (39 de 100 sorteos).
 5. Pendiente: pines en metal, LEF con obstrucciones, y decidir cómo recibe alimentación el macro.
 6. Pendiente: integración en el flujo digital (N7 del plan de la noche, no corrido) con el inversor de umbral y el contador.

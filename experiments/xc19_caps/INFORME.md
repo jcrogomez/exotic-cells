@@ -118,7 +118,7 @@ La prueba que importa: moviendo la puerta del DUT −20, 0, +20 mV (la corriente
 | +20 mV | 17,75 µs | 1,124 % | 0,792 % | 0,807 % |
 
 El conmutado se mueve un 1,3 % relativo para un factor 2,9 de corriente, como el salto (2,0 %); la inyección, un 34 %. **El
-condensador conmutado se comporta como un ΔI/I fijo: es la calibración equivalente a una carga.** Para 0,8 %: Cref ≈ 0,57 fF
+condensador conmutado se comporta como un ΔI/I fijo: es la calibración equivalente a una carga.** **[corregido 2026-11-23 07:40]** Solo se probó moviendo la puerta a tt y 27 °C. Entre esquinas y temperaturas (ff −40, tt 27, ss 85, ff 85) el cociente calibración/salto de trampa va de 0,72 a 1,28: el salto de una carga es ΔV/(n·kT/q) y depende de la temperatura y la esquina; el condensador da ΔC/C y no. Verifica la cadena de lectura, pero no equivale a una carga sin conocer n·kT/q ([`../xc19_slot/diseno_slot_analisis.txt`](../xc19_slot/diseno_slot_analisis.txt), cálculo de diseño). Para 0,8 %: Cref ≈ 0,57 fF
 con el pfet de 0,42/0,15 (aritmética lineal desde 1,0 fF a 0,73 %/fF, sin simular). Coste: un pfet, que cabe en el pozo de la
 precarga, una placa de metal y una línea digital estática por nodo. Su valor depende de las capacidades de unión del modelo;
 la exactitud en silicio es `[?]`. Es interna: la comprueba el propio lector, no un instrumento externo.

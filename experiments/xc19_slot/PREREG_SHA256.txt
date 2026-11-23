@@ -1,0 +1,9 @@
+# MISFIT-03 etapa a, sellado 2026-11-23 07:41:09 EST
+eb0917c44a45cb93c435126d70bfc05ff281256b41ee8c73eb34ddf202d3e25d  cells/preregistros/MISFIT-03_2026-11-23_slot_xc19.md
+4ad2d9bafe5569dd9dc9b3117e3c032e9188bae3702c53cc3eb543cc66b72080  experiments/xc19_slot/diseno_cref.txt
+9827f08ca8e0cc7a2843b44705c949b0b257fe1009ba653a10356c54dc863a56  experiments/xc19_slot/diseno_slot.txt
+a3715ee5e647ec15202ff998360d239c12820ecf93d9247b302370f2fdf5e239  experiments/xc19_slot/diseno_slot_analisis.txt
+# MISFIT-03 enmienda 1, sellado 2026-11-23 14:13:48 EST
+f3255a6d7f29e3f85cfad6310d3b739893045c760767cafd93e135cd0e7848cc  cells/preregistros/MISFIT-03_2026-11-23_slot_xc19_enmienda1.md
+2c2af867ea072354e485782756e08030840c0eb4ce33e1b1ed1bfa0dd742b3bc  experiments/xc19_slot/diseno_ref3.txt
+0c4c74e7f81351fa17cf95867b3110bec007aa740d45da0664644e244564f656  experiments/xc19_slot/diseno_ref3_analisis.txt
