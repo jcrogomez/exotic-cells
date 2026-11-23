@@ -1,0 +1,18 @@
+xc62_incremental · inicio 2026-11-22 09:31:51 EST
+T1 filas comparadas 56/56, diferencias 0, umbrales iguales True -> PASA
+image_cached idéntica bit a bit a image(): True
+ajuste NA 0.6 σ 0.5: formas en caché 8, 1.78 GB, precálculo medio 0.52 s/forma, RSS pico 1.07 GB
+ajuste NA 0.6 σ 0.8: formas en caché 7, 1.56 GB, precálculo medio 0.53 s/forma, RSS pico 1.80 GB
+ajuste NA 0.7 σ 0.5: formas en caché 7, 1.56 GB, precálculo medio 0.53 s/forma, RSS pico 1.80 GB
+ajuste NA 0.7 σ 0.8: formas en caché 8, 1.78 GB, precálculo medio 0.53 s/forma, RSS pico 2.03 GB
+T3a 56 filas: máx dL 1.67e-16 µm, máx dVeq 4.26e-14 mV -> PASA
+T2 300 píxeles en 2 ajustes: máx |ΔI| 2.66e-15 -> PASA
+T3b 59 geometrías encadenadas: máx |ΔI| 1.78e-15, dL 3.89e-16 µm, dVeq 4.55e-13 mV -> PASA
+recurrencias a FFT completa (fuera de ROI o solape): 1
+T4 (NA 0.6 σ 0.5, mediana): c62 literal 581 ms · FFT con pupilas en caché 528 ms · incremental desde cero 9.0 ms · mover una vecina 8.6 ms
+   aceleración frente a FFT en caché: 59× (desde cero), 61× (mover); frente a c62 literal: 64×
+T6 N=512 ROI 18000 px: FFT 103 ms, incremental 2.4 ms
+T6 N=512 ROI 44800 px: FFT 97 ms, incremental 5.8 ms
+T6 N=1024 ROI 18000 px: FFT 526 ms, incremental 2.4 ms
+T6 N=1024 ROI 44800 px: FFT 526 ms, incremental 5.8 ms
+RSS pico 2.03 GB · fin 2026-11-22 09:33:33 EST
