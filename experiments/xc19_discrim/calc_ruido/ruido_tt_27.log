@@ -1,0 +1,32 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * xc-19 discriminacion · calculo previo al prerregistro (no experimento): ruido de drenaje del dut (nfet 0,42/0,15,
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+v(vb) = 4.868021e-01
+RES tt 27 vb=0.486802 id=-6.27064E-09
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Drain conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Drain conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Drain conductance reset to 1.0e3 mho.
+Warning: Source conductance reset to 1.0e3 mho.
+Warning: Drain conductance reset to 1.0e3 mho.
+
+No. of Data Rows : 41
+
+No. of Data Rows : 1
+ngspice-44.2 done

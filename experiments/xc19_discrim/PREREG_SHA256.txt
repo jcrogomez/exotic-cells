@@ -1,0 +1,12 @@
+# SHA-256 de los prerregistros del simulador de discriminacion (sellado = hora de esta linea, de date)
+3d830f1e16df39282bc1e6fa193e8c0a883995be1ae5e282f737f493670087ca  cells/preregistros/XC-19_2026-11-23_discriminacion_abanico.md  sellado 2026-11-23 17:45:59 EST
+5b5db8beaba9b56caf80106e585e483771ce95a5787a35c3f9f898ece53d5b00  experiments/xc19_discrim/prereg_calc.py
+2fc708dc53bdefd1348981a1a9ab43d15e7506aec862f17c1624903f8de55182  experiments/xc19_discrim/prereg_calc.txt
+305e24ce289a3ea16b537e8b202cf5a32edce1c59e8e872fab8cda35cec2978c  experiments/xc19_discrim/calc_ruido/integra.py
+f3739766fb5c9c9bfb7da9b832ec611f39dd65bfac2713981c4b1ffbe807e28a  experiments/xc19_discrim/calc_ruido/integra.txt
+83957459ef1a7bfaf1f968579eff23583e171c72fcd6906db30af47d82b0df72  cells/preregistros/XC-19_2026-11-23_discriminacion_abanico_enmienda1.md  sellado 2026-11-23 17:47:33 EST
+9565e226bdd3209e5b8a684d194ba85ef553140dcffe3b0b5dd60d4056dfbf96  cells/preregistros/XC-19_2026-11-23_discriminacion_abanico_enmienda2.md  sellado 2026-11-23 17:48:15 EST (resellado: la hora del texto decia 17:49, date 17:48)
+02ab93d5e3b6c65036c2ec8a1f6a16226bcec7470724bc5bd022e8b52b6fa756  cells/preregistros/XC-19_2026-11-23_discriminacion_abanico_enmienda3.md  sellado 2026-11-23 17:51:01 EST (resellado: el texto decia 17:51, date 17:50)
+8ffd89fd126dced46616600bcd8343127ecdc3fe1f586173a05c0b9afe912f9b  sim.py
+a25789b54bb01902c572e825f4d222fecb403838501d400e4ebe15a90c8d6aa9  run_ea.py
+# (las dos lineas anteriores: sim.py y run_ea.py (E_A v2) al lanzar la corrida completa, 17:52:37 EST)

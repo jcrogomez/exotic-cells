@@ -1,0 +1,47 @@
+Cox = 8.321 fF/um^2 ; q/(Cox W L) para 0,42 x 0,15 = 0.3056 mV (el salto usado en xc19_caps: 0,305 mV)
+
+## 1. Macro extraido (MISFIT-03, etapa a): tiempo, sensibilidad y cuentas
+esquina | tA (us) | dt/t por 0,305 mV (%) | salto (cuentas) | ruido de disparo por conversion (cuentas, 0,108 %) | cuentas totales
+tt 27 | 27.943 | 0.8074 | 11.28 | 1.51 | 1397
+ff -40 | 42.153 | 1.0006 | 21.09 | 2.28 | 2108
+ss 85 | 28.055 | 0.6840 | 9.59 | 1.51 | 1403
+ff 85 | 2.275 | 0.6311 | 0.72 | 0.12 | 114
+Si el ruido de disparo por conversion es < 0,3 cuentas, la cuantizacion no se promedia sola (sin dither): ver ff 85.
+
+## 2. El 1/f del modelo del PDK leido como trampas discretas (McWhorter)
+Si el 1/f del modelo es la suma de trampas de dos niveles (p = 1/2, varianza a^2/4 cada una) con amplitudes exponenciales de
+media eta * q/(Cox W L) (<a^2> = 2 (eta a0)^2), el numero de trampas cuyo tiempo cae en la banda es N = 4 sigma^2 / <a^2>.
+banda = [1/T, fa/2]; esquina | (fa, T) | sigma_1f (mV) | N con eta = 1 | N con eta = 2 | P(>= 1 trampa), eta = 1 | eta = 2
+tt 27 | (1000 Hz, 1 s) | 0.1288 | 0.355 | 0.089 | 0.299 | 0.085
+tt 27 | (1000 Hz, 100 s) | 0.1471 | 0.463 | 0.116 | 0.371 | 0.109
+tt 27 | (10000 Hz, 1 s) | 0.1703 | 0.621 | 0.155 | 0.462 | 0.144
+tt 27 | (10000 Hz, 100 s) | 0.1845 | 0.729 | 0.182 | 0.518 | 0.167
+ff -40 | (1000 Hz, 1 s) | 0.1150 | 0.283 | 0.071 | 0.246 | 0.068
+ff -40 | (1000 Hz, 100 s) | 0.1313 | 0.369 | 0.092 | 0.309 | 0.088
+ff -40 | (10000 Hz, 1 s) | 0.1518 | 0.494 | 0.123 | 0.390 | 0.116
+ff -40 | (10000 Hz, 100 s) | 0.1646 | 0.580 | 0.145 | 0.440 | 0.135
+ss 85 | (1000 Hz, 1 s) | 0.1413 | 0.428 | 0.107 | 0.348 | 0.101
+ss 85 | (1000 Hz, 100 s) | 0.1614 | 0.558 | 0.139 | 0.428 | 0.130
+ss 85 | (10000 Hz, 1 s) | 0.1879 | 0.756 | 0.189 | 0.530 | 0.172
+ss 85 | (10000 Hz, 100 s) | 0.2034 | 0.886 | 0.221 | 0.588 | 0.199
+ff 85 | (1000 Hz, 1 s) | 0.1384 | 0.410 | 0.103 | 0.337 | 0.098
+ff 85 | (1000 Hz, 100 s) | 0.1582 | 0.536 | 0.134 | 0.415 | 0.125
+ff 85 | (10000 Hz, 1 s) | 0.1811 | 0.702 | 0.176 | 0.504 | 0.161
+ff 85 | (10000 Hz, 100 s) | 0.1966 | 0.828 | 0.207 | 0.563 | 0.187
+Lectura: para el DUT minimo el 1/f del modelo equivale a menos de una trampa en banda. En ese tamano la hipotesis
+'1/f gaussiano continuo' no es fisica: la pregunta real es 0, 1 o 2 trampas por dispositivo (Poisson).
+
+## 3. Abanico: area relativa A (amplitud ~ 1/A, numero ~ A) y techo de Poisson para distinguir densidad x3 de x1
+Techo = bits sobre f (f = 3 frente a f = 1, equiprobables) si cada trampa en banda se contara sin error. lambda0 = N de la
+seccion 2 a tt 27, (1 kHz, 1 s), eta = 1. R = replicas de la misma configuracion.
+A | salto por trampa a tt (cuentas) | lambda por dispositivo (f = 1) | techo R=1 | R=4 | R=16 | R=64 | R para 0,5 bits
+1 | 11.28 | 0.355 | 0.124 | 0.400 | 0.850 | 0.999 | 6
+2 | 5.64 | 0.710 | 0.230 | 0.628 | 0.973 | 1.000 | 3
+4 | 2.82 | 1.420 | 0.400 | 0.850 | 0.999 | 1.000 | 2
+8 | 1.41 | 2.840 | 0.628 | 0.973 | 1.000 | 1.000 | 1
+Lectura: el techo depende de R*A (el total de area), no de como se reparte; el instrumento decide cuanto de ese techo se
+alcanza. El area grande diluye el salto (1/A) hacia el ruido de disparo; la chica lo deja visible pero con pocas trampas.
+
+## 4. Tautologias para la prediccion
+- tt 27: una trampa del DUT minimo = 11.3 cuentas frente a 1.51 de disparo por conversion: 7.5 sigma en una conversion. Contra ruido blanco la deteccion es trivial; lo que decide es el numero de trampas.
+- ff 85: una trampa = 0.72 cuentas y el disparo 0.123 cuentas: la cuantizacion no se promedia. Con la fase de pre fija respecto al reloj (pre es sincrono en el nucleo), la lectura es determinista salvo en el borde: una trampa se ve solo si mueve el cruce sobre un entero, en una fraccion ~ 0.72 de las fases.
