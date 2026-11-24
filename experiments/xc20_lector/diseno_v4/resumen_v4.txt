@@ -1,0 +1,33 @@
+# XC-20 v4 (precarga pfet_01v8_hvt w=1 m=2 en pila, latch SR, 8 dlygate4sd3), C = 200 fF. I*T/C (V); T = (flanco 12 - flanco 2)/10
+## tt27
+I = 1e-10 A: periodo 0.001996 s, f = 501.1 Hz, I*T/C = 0.9978 V
+I = 3.16e-10 A: periodo 0.000631 s, f = 1585 Hz, I*T/C = 0.9978 V
+I = 1e-09 A: periodo 0.0001995 s, f = 5014 Hz, I*T/C = 0.9973 V
+I = 3.16e-09 A: periodo 6.307e-05 s, f = 1.585e+04 Hz, I*T/C = 0.9973 V
+I = 1e-08 A: periodo 1.995e-05 s, f = 5.011e+04 Hz, I*T/C = 0.9977 V
+I = 3.16e-08 A: periodo 6.375e-06 s, f = 1.569e+05 Hz, I*T/C = 1.0080 V
+I = 1e-07 A: periodo 1.999e-06 s, f = 5.003e+05 Hz, I*T/C = 0.9994 V
+I = 3.16e-07 A: periodo 6.343e-07 s, f = 1.576e+06 Hz, I*T/C = 1.0030 V
+I = 1e-06 A: periodo 2.027e-07 s, f = 4.933e+06 Hz, I*T/C = 1.0135 V
+I = 3.16e-06 A: periodo 6.611e-08 s, f = 1.513e+07 Hz, I*T/C = 1.0453 V
+I = 1e-05 A: periodo 2.276e-08 s, f = 4.393e+07 Hz, I*T/C = 1.1382 V
+I = 3.16e-05 A: periodo 8.917e-09 s, f = 1.121e+08 Hz, I*T/C = 1.4100 V
+I = 0.0001 A: periodo 6.138e-09 s, f = 1.629e+08 Hz, I*T/C = 3.0688 V
+I = 0.000316 A: periodo 6.159e-09 s, f = 1.624e+08 Hz, I*T/C = 9.7381 V
+I = 0.001 A: periodo 6.154e-09 s, f = 1.625e+08 Hz, I*T/C = 30.7692 V
+## ff85
+I = 1e-10 A: periodo 0.002893 s, f = 345.6 Hz, I*T/C = 1.4467 V
+I = 3.16e-10 A: periodo 0.0007125 s, f = 1403 Hz, I*T/C = 1.1266 V
+I = 1e-09 A: periodo 0.0002108 s, f = 4743 Hz, I*T/C = 1.0542 V
+I = 3.16e-09 A: periodo 6.533e-05 s, f = 1.531e+04 Hz, I*T/C = 1.0330 V
+I = 1e-08 A: periodo 2.302e-05 s, f = 4.344e+04 Hz, I*T/C = 1.1511 V
+I = 3.16e-08 A: periodo 6.483e-06 s, f = 1.543e+05 Hz, I*T/C = 1.0251 V
+I = 1e-07 A: periodo 2.05e-06 s, f = 4.877e+05 Hz, I*T/C = 1.0251 V
+I = 3.16e-07 A: periodo 6.498e-07 s, f = 1.539e+06 Hz, I*T/C = 1.0274 V
+I = 1e-06 A: periodo 2.07e-07 s, f = 4.83e+06 Hz, I*T/C = 1.0352 V
+I = 3.16e-06 A: periodo 6.702e-08 s, f = 1.492e+07 Hz, I*T/C = 1.0597 V
+I = 1e-05 A: periodo 2.268e-08 s, f = 4.409e+07 Hz, I*T/C = 1.1340 V
+I = 3.16e-05 A: periodo 8.61e-09 s, f = 1.161e+08 Hz, I*T/C = 1.3614 V
+I = 0.0001 A: periodo 4.91e-09 s, f = 2.037e+08 Hz, I*T/C = 2.4549 V
+I = 0.000316 A: periodo 4.904e-09 s, f = 2.039e+08 Hz, I*T/C = 7.7535 V
+I = 0.001 A: periodo 4.903e-09 s, f = 2.04e+08 Hz, I*T/C = 24.5130 V

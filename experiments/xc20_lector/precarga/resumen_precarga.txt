@@ -1,0 +1,5 @@
+# XC-20 v4, precarga en 200 fF, tt 27. I*T/C = excursion efectiva (V); constante = lineal. T = (flanco 12 - flanco 2)/10
+v3  pfet 4x16         | 1e-10 A: sin flancos | 3.2e-10 A: sin flancos | 1e-09 A: 1 flanco | 1e-08 A: 1.226 | 1e-05 A: 1.392
+a   pfet 1x2          | 1e-10 A: 1 flanco | 3.2e-10 A: 1.140 | 1e-09 A: 1.149 | 1e-08 A: 1.033 | 1e-05 A: 1.204
+b   hvt 1x2           | 1e-10 A: 1.030 | 3.2e-10 A: 1.030 | 1e-09 A: 1.030 | 1e-08 A: 1.030 | 1e-05 A: 1.201
+c   hvt 1x2 en pila   | 1e-10 A: 0.998 | 3.2e-10 A: 0.998 | 1e-09 A: 0.997 | 1e-08 A: 0.998 | 1e-05 A: 1.138
