@@ -1,0 +1,30 @@
+# etapa b, diseno (sin veredicto): puerta del DUT de A = VB + desplazamiento, src = 01. tA desde T0; trampa = tA(k=0) - tA(k=1)
+# linea VB con 2 campos = la medida de A fallo (sin cruce en 1 ms); con 3 = tA tB vb
+## vb_ff_-40
+  -200 mV (puerta 0.263 V): A sin cruce en 1 ms
+  -150 mV (puerta 0.313 V): A sin cruce en 1 ms
+  -100 mV (puerta 0.363 V): A sin cruce en 1 ms
+   -50 mV (puerta 0.413 V): tA   245.403 us, trampa 1.0110 % =  124.05 cuentas
+    +0 mV (puerta 0.463 V): tA    46.881 us, trampa 0.9964 % =   23.36 cuentas
+   +50 mV (puerta 0.513 V): tA     9.274 us, trampa 0.9672 % =    4.49 cuentas
+## vb_ff_85
+  -200 mV (puerta 0.219 V): tA   177.241 us, trampa 0.6556 % =   58.10 cuentas
+  -150 mV (puerta 0.269 V): tA    60.234 us, trampa 0.6561 % =   19.76 cuentas
+  -100 mV (puerta 0.319 V): tA    20.539 us, trampa 0.6514 % =    6.69 cuentas
+   -50 mV (puerta 0.369 V): tA     7.081 us, trampa 0.6430 % =    2.28 cuentas
+    +0 mV (puerta 0.419 V): tA     2.489 us, trampa 0.6277 % =    0.78 cuentas
+   +50 mV (puerta 0.469 V): tA     0.902 us, trampa 0.5995 % =    0.27 cuentas
+## vb_ss_85
+  -200 mV (puerta 0.296 V): A sin cruce en 1 ms
+  -150 mV (puerta 0.346 V): tA   917.965 us, trampa 0.6712 % =  308.05 cuentas
+  -100 mV (puerta 0.396 V): tA   298.948 us, trampa 0.6887 % =  102.95 cuentas
+   -50 mV (puerta 0.446 V): tA    96.093 us, trampa 0.6891 % =   33.11 cuentas
+    +0 mV (puerta 0.496 V): tA    31.102 us, trampa 0.6807 % =   10.58 cuentas
+   +50 mV (puerta 0.546 V): tA    10.275 us, trampa 0.6647 % =    3.42 cuentas
+## vb_tt_27
+  -200 mV (puerta 0.278 V): A sin cruce en 1 ms
+  -150 mV (puerta 0.328 V): A sin cruce en 1 ms
+  -100 mV (puerta 0.378 V): tA   451.999 us, trampa 0.8228 % =  185.95 cuentas
+   -50 mV (puerta 0.428 V): tA   117.241 us, trampa 0.8163 % =   47.85 cuentas
+    +0 mV (puerta 0.478 V): tA    30.872 us, trampa 0.8036 % =   12.41 cuentas
+   +50 mV (puerta 0.528 V): tA     8.357 us, trampa 0.7819 % =    3.27 cuentas
