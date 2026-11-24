@@ -31,3 +31,10 @@ Fuentes de W1 (resumen, no texto completo): [NBTI, an atomic-scale defect perspe
 [SDR y flúor en NBTI](https://pure.psu.edu/en/publications/spin-dependent-recombination-study-of-the-atomic-scale-effects-of/),
 [sensibilidad absoluta de NZFMR](https://pure.psu.edu/en/publications/on-the-absolute-sensitivity-of-near-zero-field-magnetoresistance-/).
 Por la regla del repo, verificar DOI en Crossref antes de citarlas en público.
+
+## Estado de W1 (2026-11-24)
+
+- Lectura prerregistrada: **`[?]`, inclinado a muerte** ([`W1_RESULTADO.md`](../../experiments/attack2_xc52/W1_RESULTADO.md)).
+- A ~3–4,3 MV/cm, las medidas directas, extrapoladas, dan ΔNit ~1e9, y el modelo ~5–7e10. Ninguna llega al 1e11 donde se ha visto
+  la respuesta de espín.
+- La medida que lo decide (ΔNit por DCIV antes y después del estrés en el propio chip) cabe como etapa previa de XC-52.
