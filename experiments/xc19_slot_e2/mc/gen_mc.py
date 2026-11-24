@@ -19,7 +19,9 @@ for p in P:
     s = s.replace(f"B{p}_gt {p}_GT 0 V=v({p}_VB)+{G.TRAP}\n", f"B{p}_gt {p}_GT 0 V=v({p}_VB)+{G.TRAP}*v(k)\n")
 assert s.count("*v(k)") == K
 EST = [("e01", 0, 1.8, 0), ("e01t", 0, 1.8, 1), ("e11", 1.8, 1.8, 0), ("e10", 1.8, 0, 0)]
-c = [".control", "set noaskquit", f"set rndseed={seed}", "save " + " ".join(f"v({p}_oa) v({p}_ob)" for p in P), "let i = 0", f"while i < {N}", "  reset"]
+# v2: 'set rndseed' dentro de .control se ignora y la semilla sale del proceso; en contenedores nuevos es identica (M2101-M2104
+# v1, en mc/v1_rndseed_ignorado/, dieron lo mismo). setseed + reset es determinista y depende de la semilla
+c = [".control", "set noaskquit", f"setseed {seed}", "save " + " ".join(f"v({p}_oa) v({p}_ob)" for p in P), "let i = 0", f"while i < {N}", "  reset"]
 for e, s1, s0, k in EST:
     c += [f"  alter Vs1 dc = {s1}", f"  alter Vs0 dc = {s0}", f"  alter Vk dc = {k}", f"  tran 10n {TS}u 0 50n"]
     for j, p in enumerate(P):

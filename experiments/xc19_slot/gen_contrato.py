@@ -18,7 +18,8 @@ cerrado) se inyectan en el decodificador o con una resistencia de 1 ohm.
 import os, re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-INC = os.path.join(HERE, "..", "..", "cells", "xc19_slot_core", "xc19_slot_core_lod.inc")
+INC = os.environ.get("XC19_INC") or os.path.join(HERE, "..", "..", "cells", "xc19_slot_core", "xc19_slot_core_lod.inc")
+# XC19_INC: otro macro (MISFIT-03 enmienda 2). Sin la variable, el sellado de la etapa a.
 CORNERS = (("tt", "27"), ("ff", "-40"), ("ss", "85"), ("ff", "85"))
 T0 = 1e-6          # flanco de bajada de pre (fin de la precarga)
 TRAP = 0.305e-3    # salto de una carga en la puerta, como xc19_caps/post.sp
@@ -50,6 +51,10 @@ p2A = [n for n in (s2A[1], s2A[3]) if n != "XA"][0]
 preA = find(lambda d: d[2] == "PREA")
 
 
+# enmienda 2: si el nodo de S2 de A lleva unidad MOS (puerta en p2A, fuente = drenador = GND), F1 la quita tambien
+MOSU2A = [d for d in dev if d[2] == p2A and d[1] == d[3] == "GND"]
+
+
 def variant(name, gate_to_gt=False, drop_dev=None, drop_cap_node=None):
     ports = PORTS + (["GT"] if gate_to_gt else [])
     out = [f".subckt {name} " + " ".join(ports)]
@@ -62,6 +67,8 @@ def variant(name, gate_to_gt=False, drop_dev=None, drop_cap_node=None):
             out.append(l); break
         if drop_dev is not None and f == drop_dev:
             continue
+        if drop_cap_node and f in MOSU2A:
+            ncap += 1; continue
         if drop_cap_node and f[0].startswith("C") and drop_cap_node in (f[1], f[2]):
             ncap += 1; continue
         if gate_to_gt and f == dutA:
@@ -222,8 +229,9 @@ Vdc5 vdc_f5 0 1.8
 
 
 if __name__ == "__main__":
+    OUT = os.environ.get("XC19_OUT") or HERE          # enmienda 2: los decks de otro macro van a otra carpeta
     for c, t in CORNERS:
-        open(os.path.join(HERE, f"contrato_{c}_{t}.sp"), "w").write(timing_deck(c, t))
-        open(os.path.join(HERE, f"largo_{c}_{t}.sp"), "w").write(long_deck(c, t))
+        open(os.path.join(OUT, f"contrato_{c}_{t}.sp"), "w").write(timing_deck(c, t))
+        open(os.path.join(OUT, f"largo_{c}_{t}.sp"), "w").write(long_deck(c, t))
     print("DUT A:", " ".join(dutA[:5]), "| nodo S2A:", p2A, f"({NC_F1} capacidades quitadas en F1)",
           "| precarga A:", " ".join(preA[:5]), "| puertos:", " ".join(PORTS))

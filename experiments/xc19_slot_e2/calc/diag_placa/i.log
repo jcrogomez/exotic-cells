@@ -1,0 +1,47 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-03 etapa a · diag placa · esquina tt 27 c. generado por gen_contrato.py (no editar a mano).
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  5.12800e-07 Reference value :  1.00031e-06 Reference value :  1.00091e-06 Reference value :  1.26511e-06 Reference value :  1.75511e-06 Reference value :  2.24511e-06 Reference value :  2.80511e-06 Reference value :  3.36511e-06 Reference value :  3.89511e-06 Reference value :  4.43511e-06 Reference value :  5.00511e-06 Reference value :  5.55511e-06 Reference value :  6.11511e-06 Reference value :  6.65511e-06 Reference value :  7.13511e-06 Reference value :  7.68511e-06 Reference value :  8.22511e-06 Reference value :  8.76511e-06 Reference value :  9.30511e-06 Reference value :  9.84511e-06 Reference value :  1.04051e-05 Reference value :  1.09251e-05 Reference value :  1.14551e-05 Reference value :  1.19851e-05 Reference value :  1.25251e-05 Reference value :  1.30651e-05 Reference value :  1.36051e-05 Reference value :  1.41551e-05 Reference value :  1.46851e-05 Reference value :  1.52151e-05 Reference value :  1.57551e-05 Reference value :  1.62951e-05 Reference value :  1.68251e-05 Reference value :  1.74051e-05 Reference value :  1.79251e-05 Reference value :  1.84451e-05 Reference value :  1.89251e-05 Reference value :  1.93851e-05 Reference value :  1.98451e-05 Reference value :  2.03051e-05 Reference value :  2.08351e-05 Reference value :  2.13651e-05 Reference value :  2.19051e-05 Reference value :  2.24351e-05 Reference value :  2.29651e-05 Reference value :  2.35151e-05 Reference value :  2.38951e-05 Reference value :  2.44251e-05 Reference value :  2.50251e-05 Reference value :  2.55651e-05 Reference value :  2.61151e-05 Reference value :  2.67051e-05 Reference value :  2.72851e-05 Reference value :  2.78351e-05 Reference value :  2.83651e-05 Reference value :  2.89051e-05 Reference value :  2.94351e-05 Reference value :  3.00151e-05 Reference value :  3.05651e-05 Reference value :  3.11251e-05 Reference value :  3.16651e-05
+No. of Data Rows : 3246
+t0                  =  4.239997e-06
+p2_0                =  1.700000e+00
+p1_0                =  1.700000e+00
+RES X=1.7 t=4.24E-06 p2=1.7 p1=1.7
+t1                  =  1.046148e-05
+p2_1                =  1.500000e+00
+p1_1                =  1.500000e+00
+RES X=1.5 t=1.04615E-05 p2=1.5 p1=1.5
+t2                  =  1.680700e-05
+p2_2                =  1.300000e+00
+p1_2                =  1.300000e+00
+RES X=1.3 t=1.6807E-05 p2=1.3 p1=1.3
+t3                  =  2.003214e-05
+p2_3                =  1.200001e+00
+p1_3                =  1.200000e+00
+RES X=1.2 t=2.00321E-05 p2=1.2 p1=1.2
+t4                  =  2.329524e-05
+p2_4                =  1.100001e+00
+p1_4                =  1.100000e+00
+RES X=1.1 t=2.32952E-05 p2=1.1 p1=1.1
+t5                  =  2.659896e-05
+p2_5                =  1.000001e+00
+p1_5                =  1.000001e+00
+RES X=1.0 t=2.6599E-05 p2=1 p1=1
+t6                  =  2.827137e-05
+p2_6                =  9.500012e-01
+p1_6                =  9.500011e-01
+RES X=0.95 t=2.82714E-05 p2=0.950001 p1=0.950001
+t7                  =  2.996430e-05
+p2_7                =  9.000014e-01
+p1_7                =  9.000013e-01
+RES X=0.9 t=2.99643E-05 p2=0.900001 p1=0.900001
+ngspice-44.2 done

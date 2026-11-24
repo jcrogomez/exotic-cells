@@ -1,0 +1,31 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-03 etapa a · diag c ideal · esquina tt 27 c. generado por gen_contrato.py (no editar a mano).
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  2.82800e-07 Reference value :  6.22800e-07 Reference value :  9.62800e-07 Reference value :  1.00058e-06 Reference value :  1.00095e-06 Reference value :  1.09512e-06 Reference value :  1.36512e-06 Reference value :  1.64512e-06 Reference value :  1.91512e-06 Reference value :  2.18512e-06 Reference value :  2.50512e-06 Reference value :  2.84512e-06 Reference value :  3.20512e-06 Reference value :  3.54512e-06 Reference value :  3.88512e-06 Reference value :  4.23512e-06 Reference value :  4.58512e-06 Reference value :  4.92512e-06 Reference value :  5.27512e-06 Reference value :  5.61512e-06 Reference value :  5.96512e-06 Reference value :  6.31512e-06 Reference value :  6.66512e-06 Reference value :  7.01512e-06 Reference value :  7.35512e-06 Reference value :  7.70512e-06 Reference value :  8.05512e-06 Reference value :  8.39512e-06 Reference value :  8.74512e-06 Reference value :  9.08512e-06 Reference value :  9.43512e-06 Reference value :  9.78512e-06 Reference value :  1.01251e-05 Reference value :  1.04651e-05 Reference value :  1.08051e-05 Reference value :  1.11451e-05 Reference value :  1.14751e-05 Reference value :  1.17851e-05 Reference value :  1.20851e-05 Reference value :  1.23751e-05 Reference value :  1.26651e-05 Reference value :  1.29951e-05 Reference value :  1.33251e-05 Reference value :  1.36651e-05 Reference value :  1.40051e-05 Reference value :  1.43751e-05 Reference value :  1.47251e-05 Reference value :  1.50751e-05 Reference value :  1.54351e-05 Reference value :  1.57851e-05 Reference value :  1.61251e-05 Reference value :  1.64651e-05 Reference value :  1.68151e-05 Reference value :  1.71451e-05 Reference value :  1.74851e-05 Reference value :  1.78251e-05 Reference value :  1.81551e-05 Reference value :  1.85051e-05 Reference value :  1.88551e-05 Reference value :  1.91951e-05 Reference value :  1.95451e-05 Reference value :  1.98951e-05 Reference value :  2.02351e-05 Reference value :  2.05751e-05 Reference value :  2.09251e-05 Reference value :  2.12651e-05 Reference value :  2.16151e-05 Reference value :  2.19551e-05 Reference value :  2.22951e-05 Reference value :  2.26451e-05 Reference value :  2.29851e-05 Reference value :  2.33251e-05 Reference value :  2.36751e-05 Reference value :  2.39951e-05 Reference value :  2.43351e-05 Reference value :  2.46851e-05 Reference value :  2.50351e-05 Reference value :  2.53651e-05 Reference value :  2.57151e-05 Reference value :  2.60651e-05 Reference value :  2.64151e-05 Reference value :  2.67451e-05 Reference value :  2.70851e-05 Reference value :  2.74251e-05 Reference value :  2.77651e-05 Reference value :  2.81051e-05 Reference value :  2.84251e-05 Reference value :  2.87651e-05 Reference value :  2.90851e-05 Reference value :  2.93851e-05 Reference value :  2.96751e-05 Reference value :  2.99651e-05 Reference value :  3.02651e-05 Reference value :  3.06151e-05 Reference value :  3.09451e-05 Reference value :  3.12951e-05 Reference value :  3.16451e-05 Reference value :  3.20051e-05 Reference value :  3.23551e-05 Reference value :  3.26951e-05 Reference value :  3.30151e-05 Reference value :  3.33451e-05 Reference value :  3.36851e-05 Reference value :  3.40151e-05 Reference value :  3.43551e-05 Reference value :  3.46951e-05 Reference value :  3.50351e-05 Reference value :  3.53751e-05 Reference value :  3.57151e-05 Reference value :  3.60651e-05 Reference value :  3.64051e-05 Reference value :  3.67451e-05 Reference value :  3.70851e-05 Reference value :  3.74251e-05 Reference value :  3.77751e-05 Reference value :  3.81151e-05 Reference value :  3.84551e-05 Reference value :  3.87951e-05 Reference value :  3.91351e-05 Reference value :  3.94651e-05 Reference value :  3.98051e-05
+No. of Data Rows : 4046
+h11_oa              =  3.006273e-05
+RES h11_oa=3.00627E-05
+h11_ob              =  3.005897e-05
+RES h11_ob=3.0059E-05
+h10_oa              =  3.011363e-05
+RES h10_oa=3.01136E-05
+h10_ob              =  3.005918e-05
+RES h10_ob=3.00592E-05
+c053_oa             =  3.016435e-05
+RES c053_oa=3.01644E-05
+c053_ob             =  3.005892e-05
+RES c053_ob=3.00589E-05
+c106_oa             =  3.026597e-05
+RES c106_oa=3.0266E-05
+c106_ob             =  3.005886e-05
+RES c106_ob=3.00589E-05
+ngspice-44.2 done

@@ -1,0 +1,10 @@
+# MISFIT-03 enmienda 2, C4 (ruido de disparo, tt 27). Tiempos desde T0 = 1 us. sigma en %.
+R0: N = 64 (se esperan 64); sigma ln(tA/tB) = 0.0000 %; sigma ln tA = 0.0000 %; media tA = 31.6407 us
+R1: N = 56 (se esperan 64); sigma ln(tA/tB) = 0.1512 %; sigma ln tA = 0.1035 %; media tA = 31.6386 us
+R3: N = 64 (se esperan 64); sigma ln(tA/tB) = 0.4446 %; sigma ln tA = 0.3059 %; media tA = 31.6403 us
+R1p: N = 64 (se esperan 64); sigma ln(tA/tB) = 0.1559 %; sigma ln tA = 0.1111 %; media tA = 30.8731 us
+N4: R0 rango relativo entre muestras 0.00e+00 (<= 1e-6) y distancia al h11 nominal 0.0000 % (<= 0,01 %) -> cumplida
+N1: sigma R1 = 0.1512 % en [0,115, 0,195] -> cumplida (N = 56)
+N2: sigma R1p = 0.1559 % en [0,115, 0,195] -> cumplida (N = 64)
+N3: sigma(R3)/sigma(R1) = 2.941 en [2,4, 3,6] -> cumplida
+SNR de la trampa en un disparo (R1', una rama): 0.8085% / 0.1111% = 7.27

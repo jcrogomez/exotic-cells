@@ -1,0 +1,19 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-03 etapa a · enmienda 2 calculo hvt, en=0 .op · esquina ff 85 c. generado por gen_contrato.py (no editar a mano).
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+RES ff 85 i_core=-3.05878E-07
+RES ff 85 i_hvt=-2.45638E-09
+RES ff 85 xa_core=1.8 oa_core=0.000138796
+RES ff 85 xa_hvt=1.8 oa_hvt=1.10704E-06
+ngspice-44.2 done

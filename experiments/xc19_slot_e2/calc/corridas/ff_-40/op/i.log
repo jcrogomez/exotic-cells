@@ -1,0 +1,21 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-03 etapa a · enmienda 2 calculo hvt, en=0 .op · esquina ff -40 c. generado por gen_contrato.py (no editar a mano).
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+RES ff -40 i_core=-1.14487E-09
+RES ff -40 i_hvt=-2.34644E-12
+RES ff -40 xa_core=1.8 oa_core=3.29992E-07
+RES ff -40 xa_hvt=1.8 oa_hvt=6.76381E-10
+ngspice-44.2 done

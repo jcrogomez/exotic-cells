@@ -226,6 +226,8 @@ proc block {t} {
   set li 5.60
   fet ndiff ndiffc $li 1.03 0.65 0.15
   fet pdiff pdiffc $li 2.20 1.00 0.15
+  # MISFIT-03 amendment 2 (env INVHVT=1): the inverter pfet becomes hvt (P2: off-state leakage with en = 0)
+  if {[info exists ::env(INVHVT)] && $::env(INVHVT)} { R pfethvt [e $li + 0.30] 2.20 [e $li + 0.45] 3.20 }
   R poly [e $li + 0.30] 0.90 [e $li + 0.45] 3.33
   R poly [e $li - 0.60] 1.80 [e $li + 0.45] 2.10
   R polycont [e $li - 0.50] 1.865 [e $li - 0.33] 2.035
@@ -290,12 +292,66 @@ proc block {t} {
   # ---- plates for S1 and S2: metal 2 on the switch source over metal 1 on GND (joined to the bus)
   # identical plates of PWU x PHU centred on each riser; bottom plates joined to a GND riser (metal 1) beside them
   global PWU PHU
+  if {[info exists ::env(MOSU)] && $::env(MOSU)} {
+    # MISFIT-03 amendment 2 (env MOSU=1): the unit is an nfet MOS capacitor W 0.42 x L 0.30 per plate node (S1 and S2), gate on
+    # the node, source / drain to a p-tap and to GND on metal 1; in place of the metal plates. Between 0.9 and 1.8 V it is in
+    # strong inversion. They sit beyond the reference (lx 7.5..9.8), S2's above S1's; the plate nodes come over on metal 2 from
+    # the switch risers (S1 under S2).
+    # S1 riser down to -5.62 and over to the lower capacitor's gate pad; S2 riser over to the upper one
+    R metal2 2.845 -5.62 3.205 -5.20
+    R metal2 2.845 -5.62 7.645 -5.34
+    R metal2 4.245 -5.05 8.18 -4.75
+    R metal2 7.82 -5.05 8.18 -4.105
+    # lower capacitor (S1): diffusion 7.75..8.65 x -6.05..-5.63, gate 8.05..8.35, gate pad on the left at (7.465, -5.39)
+    R ndiff 7.75 -6.05 8.65 -5.63
+    R poly 8.05 -6.18 8.35 -5.34
+    R poly 7.30 -5.50 8.35 -5.34
+    R poly 7.30 -5.555 7.63 -5.225
+    R polycont 7.38 -5.475 7.55 -5.305
+    R locali 7.30 -5.475 7.63 -5.305
+    R viali 7.38 -5.475 7.55 -5.305
+    v1 7.465 -5.39
+    R ndiffc 7.79 -5.99 7.96 -5.69
+    R ndiffc 8.44 -5.99 8.61 -5.69
+    R psubdiff 8.92 -6.05 9.34 -5.63
+    R psubdiffcont 9.045 -5.99 9.215 -5.69
+    R locali 7.71 -6.01 9.295 -5.67
+    R viali 9.045 -5.925 9.215 -5.755
+    R metal1 8.98 -5.99 9.75 -5.69
+    # upper capacitor (S2): diffusion 7.55..8.45 x -5.00..-4.58, gate 7.85..8.15, gate pad above at (8.0, -4.285)
+    R ndiff 7.55 -5.00 8.45 -4.58
+    R poly 7.85 -5.13 8.15 -4.45
+    R poly 7.835 -4.45 8.165 -4.12
+    R polycont 7.915 -4.37 8.085 -4.20
+    R locali 7.835 -4.37 8.165 -4.20
+    R viali 7.915 -4.37 8.085 -4.20
+    v1 8.0 -4.285
+    R ndiffc 7.59 -4.94 7.76 -4.64
+    R ndiffc 8.24 -4.94 8.41 -4.64
+    R psubdiff 8.72 -5.00 9.14 -4.58
+    R psubdiffcont 8.845 -4.94 9.015 -4.64
+    R locali 7.51 -4.96 9.095 -4.62
+    R viali 8.845 -4.875 9.015 -4.705
+    R metal1 8.78 -4.94 9.75 -4.64
+    # GND on metal 1 down to the reference switch's GND strip
+    R metal1 9.45 [e -10.02 + 0.05] 9.75 -4.64
+  } else {
   foreach c {3.025 4.425} {
     R metal2 [e $c - $PWU / 2.0] [e -5.20 - $PHU] [e $c + $PWU / 2.0] -5.20
     R metal1 [e $c - $PWU / 2.0 + 0.20] [e -5.40 - $PHU + 0.40] [e $c + $PWU / 2.0 - 0.20] -5.40
   }
   R metal1 [e 3.025 - $PWU / 2.0 + 0.20] [e -5.40 - $PHU + 0.40] 5.70 [e -5.40 - $PHU + 0.60]
   R metal1 5.40 [e -5.40 - $PHU + 0.40] 5.70 $gby0
+  }
+  # MISFIT-03 amendment 2 (env SANDW=1): a metal-3 lid on GND over both plates (m1 / m2 / m3 sandwich), fed from the GND riser
+  # through a via1 + via2 stack at lx 5.55 beside plate S2
+  if {[info exists ::env(SANDW)] && $::env(SANDW)} {
+    set ys [e -5.20 - $PHU / 2.0]
+    v1 5.55 $ys
+    R metal2 [e 5.55 - 0.235] [e $ys - 0.18] [e 5.55 + 0.235] [e $ys + 0.18]
+    R via2 [e 5.55 - 0.14] [e $ys - 0.14] [e 5.55 + 0.14] [e $ys + 0.14]
+    R metal3 [e 3.025 - $PWU / 2.0 - 0.20] [e -5.20 - $PHU - 0.20] 5.85 -5.00
+  }
   # ---- reference: 6 columns, top row T (drain -> X) and bottom row Bt (source -> SR), one poly per column
   set yT -6.50 ; set yB [e $yT - 1.66]
   for {set i 0} {$i < 6} {incr i} {

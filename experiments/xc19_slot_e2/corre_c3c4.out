@@ -1,0 +1,20 @@
+ok 11 IA 4.323 nA IB 4.323 nA, NA 0.000e+00 A ruido/R0
+ok 11 IA 4.323 nA IB 4.323 nA, NA 2.632e-10 A ruido/R1
+ok 11 IA 4.323 nA IB 4.323 nA, NA 7.895e-10 A ruido/R3
+ok 01 IA 4.430 nA IB 4.431 nA, NA 2.664e-10 A ruido/R1p
+ok tt 27 1 2100 mc/C0
+ok tt_mm 27 2 2101 mc/M2101
+ok tt_mm 27 2 2102 mc/M2102
+ok tt_mm 27 2 2103 mc/M2103
+ok tt_mm 27 2 2104 mc/M2104
+inicio 09:46:53
+ruido/R1 10:09:06
+ruido/R3 10:14:22
+mc/C0 10:18:16
+ruido/R0 10:24:07
+mc/M2101 10:28:39
+mc/M2102 10:32:01
+mc/M2103 10:37:40
+mc/M2104 10:40:41
+ruido/R1p 10:42:31
+fin 10:42:31

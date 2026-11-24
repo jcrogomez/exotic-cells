@@ -7,6 +7,7 @@ Uso: python3 analiza_contrato.py > contrato_analisis.txt
 import os, re, collections
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+HERE = os.environ.get("XC19_OUT") or HERE   # enmienda 2: lee contrato.txt de otra carpeta
 T0 = 1e-6; F = 50e6
 CORN = ["tt 27", "ff -40", "ss 85", "ff 85"]
 V = collections.defaultdict(dict)
