@@ -13,8 +13,8 @@ Leyenda: ✅ hecho en el modelo · 🟡 parcial o con veredicto falso pendiente 
 | **Celda de tiempo** (referencia digital, canal 7) | ✅ extraída, dentro del 1,2 % de su esquemático; el RTL la lee dentro de 1 ciclo en todas las fases (MISFIT-02) | — | 🚫 su valor absoluto en el dado |
 | **Interruptor de potencia del tile** | 🟡 solo el transistor en esquemático: 1×1 en `tt_power_gate/drops.txt`; la cifra del 1×2 es aritmética (`CANDIDATURA` W2) | ❌ con metal y extraído · ❌ corriente real del tile 1×2 sumando núcleo, slots y, si entra, la bobina | — |
 | **Cadena de polarización (VB)** | ✅ usable en 5 esquinas a 27 y 85 °C (`bias_table.txt`) · ✅ ruido 1/f integrado (`xc19_discrim/calc_ruido/integra.txt`) | ❌ **etapa b**: ajuste sin pines analógicos (~10 µs), sin prerregistrar · ❌ Monte Carlo del paso de unidad con desajuste | 🚫 deriva térmica real (RISKS 7) |
-| **Decodificador E7** | ✅ simulado dentro del contrato del slot; F5 solo se ve en la corriente del tile (`INFORME_etapa_a.md`) | ❌ sintetizado y colocado junto al núcleo, no a mano | — |
-| **Integración del tile (MISFIT-04)** | ❌ nada | ❌ macro colocado y rutado con la red de met4 · ❌ pines de alimentación conectados por el flujo (RISKS 11) · ❌ extracción con el rutado: acoplo desde `pre` y desde el reloj (RISKS 6), pistas sobre nodos sensibles (RISKS 13) · ❌ precheck del tile completo · ❌ slot en corto que alimenta a sus vecinos (RISKS 3) | — |
+| **Decodificador E7** | ✅ simulado dentro del contrato del slot; F5 solo se ve en la corriente del tile (`INFORME_etapa_a.md`) · ✅ sintetizado en el núcleo: tabla E7 9/9 alcanzables y 16/16 en el módulo; entradas quietas en la ventana (MISFIT-04 I2, I3) | ❌ glitches con tiempos reales (I3 es retardo unitario) | — |
+| **Integración del tile (MISFIT-04)** | ✅ tile 1×2: DRC 0, LVS match, precheck 15/15 · ✅ extracción plana con acoplo: agresores reales dan 0,0129 % a tt (umbral 0,0807 %), todo de `input3.X` · ✅ campaña de 10 sabotajes (`experiments/misfit04/RESULTADOS.md`) | ❌ testigo S7 cerca del umbral (dio 5,7×, se pedían > 10×) · ❌ un chequeo que vea S2 (VGND del macro cortada, oculta por la fusión de sustrato) · ❌ `input3.X` con la celda real (b4) · ❌ slot en corto que alimenta a sus vecinos (RISKS 3) · ❌ deriva de X en reposo armado (A2) | — |
 
 ## 2. Slot XC-19 (lector de una carga)
 
@@ -28,7 +28,7 @@ Leyenda: ✅ hecho en el modelo · 🟡 parcial o con veredicto falso pendiente 
 | Transitorio de `en = 0` en ff −40 y ss 85 | ❌ no corrió (el simulador no avanza) | ídem |
 | Ruido sobre el macro extraído con sus capacidades reales | ❌ (RISKS 10). Hoy está calculado en la cadena, no en el macro | — |
 | Monte Carlo de desajuste del macro | ❌ el canal viejo tiene 39 de 100 tiradas (`n5.txt`) | — |
-| Precheck | ❌ pendiente para MISFIT-04 (E10) | — |
+| Precheck | ✅ MISFIT-04 1×2, 15/15 (`experiments/misfit04/i1/`) | — |
 | Si existen trampas visibles | 🚫 el modelo no tiene trampas; el salto se inyecta a mano | — |
 
 ## 3. Abanico de DUT (C0–C9) y simulador de discriminación
