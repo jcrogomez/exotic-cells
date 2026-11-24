@@ -1,0 +1,38 @@
+# E_A · 2026-11-23 17:52:37 EST · fa = 1 kHz, T = 1 s, NCHIP = 2000
+T1: deteccion 1.0000 (>= 0,95 -> pasa), falsos 0.0000 (<= 0,01 -> pasa)
+D1 tt 27 S: deteccion (permanencia >= 10) 0.525 de 259, falsos 0.3507 de 1423, I = 0.0204 [0.0117, 0.0325] bits
+D1 tt 27 D: deteccion (permanencia >= 10) 0.459 de 296, falsos 0.3263 de 1416, I = 0.0174 [0.0093, 0.0283] bits
+D1 ff -40 S: deteccion (permanencia >= 10) 0.632 de 231, falsos 0.3191 de 1498, I = 0.0545 [0.0392, 0.0739] bits
+D1 ff -40 D: deteccion (permanencia >= 10) 0.617 de 240, falsos 0.3058 de 1465, I = 0.0566 [0.0400, 0.0764] bits
+D1 ss 85 S: deteccion (permanencia >= 10) 0.484 de 341, falsos 0.3313 de 1307, I = 0.0173 [0.0088, 0.0282] bits
+D1 ss 85 D: deteccion (permanencia >= 10) 0.536 de 338, falsos 0.3090 de 1304, I = 0.0310 [0.0197, 0.0454] bits
+D1 ff 85 S: deteccion (permanencia >= 10) 0.602 de 344, falsos 0.7878 de 1296, I = 0.0169 [0.0089, 0.0280] bits
+D1 ff 85 D: deteccion (permanencia >= 10) 0.479 de 359, falsos 0.4901 de 1318, I = 0.0008 [0.0000, 0.0042] bits
+M1 D1 (amplitudes x0): I = 0.0000 bits (<= 0,02)
+M4 (mismas trampas en B): deteccion 0.000 frente a 0.507 sano (debe caer)
+M2 (etiquetas barajadas): I = 0.0005 bits (<= 0,02)
+M3 (ff 85 sin cuantizacion): deteccion 0.427, I = 0.0055 bits frente a S 0.0169 (debe subir)
+(D1 terminado en 63 s)
+D2 tt 27 S A1 (A=1, R=16): I = 0.0199 [0.0113, 0.0319], techo 0.8502, fraccion 0.023, area 96.6 um^2, 0.206 mbit/um^2
+D2 tt 27 S A2 (A=2, R=8): I = 0.0006 [0.0000, 0.0035], techo 0.8502, fraccion 0.001, area 53.9 um^2, 0.010 mbit/um^2
+D2 tt 27 S A4 (A=4, R=4): I = 0.0001 [0.0000, 0.0020], techo 0.8502, fraccion 0.000, area 27.1 um^2, 0.003 mbit/um^2
+D2 tt 27 S A8 (A=8, R=2): I = 0.0008 [0.0000, 0.0044], techo 0.8502, fraccion 0.001, area 17.1 um^2, 0.047 mbit/um^2
+D2 ff -40 S A1 (A=1, R=16): I = 0.0851 [0.0655, 0.1071], techo 0.7846, fraccion 0.108, area 96.6 um^2, 0.881 mbit/um^2
+D2 ff -40 S A2 (A=2, R=8): I = 0.0004 [0.0000, 0.0032], techo 0.7846, fraccion 0.000, area 53.9 um^2, 0.007 mbit/um^2
+D2 ff -40 S A4 (A=4, R=4): I = 0.0001 [0.0000, 0.0022], techo 0.7846, fraccion 0.000, area 27.1 um^2, 0.003 mbit/um^2
+D2 ff -40 S A8 (A=8, R=2): I = 0.0005 [0.0000, 0.0037], techo 0.7846, fraccion 0.001, area 17.1 um^2, 0.028 mbit/um^2
+D2 ss 85 S A1 (A=1, R=16): I = 0.0010 [0.0000, 0.0046], techo 0.8957, fraccion 0.001, area 96.6 um^2, 0.011 mbit/um^2
+D2 ss 85 S A2 (A=2, R=8): I = 0.0021 [0.0001, 0.0068], techo 0.8957, fraccion 0.002, area 53.9 um^2, 0.038 mbit/um^2
+D2 ss 85 S A4 (A=4, R=4): I = 0.0001 [0.0000, 0.0022], techo 0.8957, fraccion 0.000, area 27.1 um^2, 0.004 mbit/um^2
+D2 ss 85 S A8 (A=8, R=2): I = 0.0009 [0.0000, 0.0044], techo 0.8957, fraccion 0.001, area 17.1 um^2, 0.055 mbit/um^2
+D2 ff 85 S A1 (A=1, R=16): I = 0.2769 [0.2426, 0.3138], techo 0.8860, fraccion 0.313, area 96.6 um^2, 2.866 mbit/um^2
+D2 ff 85 S A2 (A=2, R=8): I = 0.0197 [0.0103, 0.0317], techo 0.8860, fraccion 0.022, area 53.9 um^2, 0.365 mbit/um^2
+D2 ff 85 S A4 (A=4, R=4): I = 0.0020 [0.0001, 0.0067], techo 0.8860, fraccion 0.002, area 27.1 um^2, 0.075 mbit/um^2
+D2 ff 85 S A8 (A=8, R=2): I = 0.0000 [0.0000, 0.0019], techo 0.8860, fraccion 0.000, area 17.1 um^2, 0.000 mbit/um^2
+D2 ff 85 D A1 (A=1, R=16): I = 0.0873 [0.0673, 0.1093], techo 0.8860, fraccion 0.098, area 96.6 um^2, 0.903 mbit/um^2
+D2 ff 85 D A2 (A=2, R=8): I = 0.0304 [0.0195, 0.0457], techo 0.8860, fraccion 0.034, area 53.9 um^2, 0.564 mbit/um^2
+D2 ff 85 D A4 (A=4, R=4): I = 0.0014 [0.0000, 0.0058], techo 0.8860, fraccion 0.002, area 27.1 um^2, 0.053 mbit/um^2
+D2 ff 85 D A8 (A=8, R=2): I = 0.0083 [0.0033, 0.0173], techo 0.8860, fraccion 0.009, area 17.1 um^2, 0.488 mbit/um^2
+T2 (f = 10 frente a 1, A1, R = 16, tt): I = 0.1322, techo 1.0000, fraccion 0.132 (>= 0,80)
+M1 D2 (amplitudes x0): I = 0.0000 bits (<= 0,02)
+(total 3568 s)
