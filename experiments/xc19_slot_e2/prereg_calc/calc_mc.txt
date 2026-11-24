@@ -1,0 +1,6 @@
+n = 1.3: salto de trampa dI/I = 0.911 %  (cuentas nominales a tt: 13.93)
+   sigma ln I (DUT) = 0.514; trampa < 10 cuentas si tA < 22.16 us -> fraccion de chips 25.9 %
+   referencia 2x6: sigma ln(tA/tB) en src = 11 = 0.2216
+n = 1.6: salto de trampa dI/I = 0.739 %  (cuentas nominales a tt: 11.33)
+   sigma ln I (DUT) = 0.418; trampa < 10 cuentas si tA < 27.25 us -> fraccion de chips 38.2 %
+   referencia 2x6: sigma ln(tA/tB) en src = 11 = 0.1769

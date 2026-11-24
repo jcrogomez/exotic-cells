@@ -1,0 +1,8 @@
+C_X = 151.3 fF, Q = 136.8 fC, N = Q/q = 853771 electrones
+disparo, una rama: sigma_t/t = sqrt(q/Q) = 0.1082 %
+disparo, cociente A/B (dos ramas independientes): 0.1531 %
+kT/C al soltar la precarga, 27 C: 0.166 mV -> 0.0183 % por rama
+kT/C al soltar la precarga, -40 C: 0.146 mV -> 0.0161 % por rama
+kT/C al soltar la precarga, 85 C: 0.181 mV -> 0.0200 % por rama
+desajuste DUT/gemelo, n = 1.3: sigma ln(I) por dispositivo = 0.514; sigma ln(tA/tB) = 0.727 (x2.07 a 1 sigma)
+desajuste DUT/gemelo, n = 1.6: sigma ln(I) por dispositivo = 0.418; sigma ln(tA/tB) = 0.591 (x1.81 a 1 sigma)
