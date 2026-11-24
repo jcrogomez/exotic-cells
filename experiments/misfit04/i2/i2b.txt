@@ -1,0 +1,2 @@
+I2B combinaciones=16 discrepancias=0
+tb_i2b.v:18: $finish called at 16000 (1ps)

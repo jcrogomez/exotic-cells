@@ -1,0 +1,6 @@
+DISCREPANCIA 1010
+DISCREPANCIA 1011
+DISCREPANCIA 1110
+DISCREPANCIA 1111
+I2B combinaciones=16 discrepancias=4
+tb_i2b.v:18: $finish called at 16000 (1ps)
