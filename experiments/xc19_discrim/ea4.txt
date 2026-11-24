@@ -1,0 +1,50 @@
+# E_A v3 · 2026-11-24 09:52:30 EST · fa = 1 kHz, T = 1 s, NCHIP = 2000
+T1: deteccion 1.0000 (>= 0,95 -> pasa), falsos 0.0005 (<= 0,01 -> pasa)
+T2 (f = 10 frente a 1, A1, R = 16, tt, BT) (A=1, R=16): I = 0.9796 [0.9616, 0.9943], techo 1.0000, fraccion 0.980, area 96.6 um^2, 10.138 mbit/um^2 (>= 0,80 -> pasa)
+d1 tt 27 S: deteccion (permanencia >= 10) 0.8993055555555556 de 288, falsos 0.4229137199434229 de 1414, I = 0.1601 [0.1342, 0.1890] bits
+d1 tt 27 D: deteccion (permanencia >= 10) 0.8838709677419355 de 310, falsos 0.42627737226277373 de 1370, I = 0.1484 [0.1251, 0.1753] bits
+d1 ff -40 S: deteccion (permanencia >= 10) 0.8444444444444444 de 225, falsos 0.3488681757656458 de 1502, I = 0.1323 [0.1083, 0.1579] bits
+d1 ff -40 D: deteccion (permanencia >= 10) 0.8085106382978723 de 235, falsos 0.31657963446475196 de 1532, I = 0.1401 [0.1150, 0.1693] bits
+d1 ss 85 S: deteccion (permanencia >= 10) 0.9166666666666666 de 336, falsos 0.6173508907823393 de 1291, I = 0.0866 [0.0684, 0.1046] bits
+d1 ss 85 D: deteccion (permanencia >= 10) 0.9426934097421203 de 349, falsos 0.6083333333333333 de 1320, I = 0.1089 [0.0893, 0.1294] bits
+d1 ff 85 S: deteccion (permanencia >= 10) 1.0 de 346, falsos 1.0 de 1312, I = 0.0000 [0.0000, 0.0000] bits
+d1 ff 85 D: deteccion (permanencia >= 10) 1.0 de 308, falsos 1.0 de 1383, I = 0.0000 [0.0000, 0.0000] bits
+d1 tt 27 S {'b_area': 12}: deteccion (permanencia >= 10) 0.9204545454545454 de 264, falsos 0.41742160278745644 de 1435, I = 0.1566 [0.1324, 0.1825] bits
+d1 tt 27 S {'amp_scale': 0.0}: deteccion (permanencia >= 10) 0.0 de 321, falsos 0.0 de 1376, I = 0.0017 [0.0000, 0.0043] bits
+d1 tt 27 S: deteccion (permanencia >= 10) 0.8766233766233766 de 308, falsos 0.43403028118240805 de 1387, I = 0.1195 [0.0964, 0.1448] bits
+d1 tt 27 S {'same_traps_in_B': True}: deteccion (permanencia >= 10) 0.003246753246753247 de 308, falsos 0.0 de 1387, I = 0.0009 [0.0000, 0.0026] bits
+d1 ff 85 S {'quant': False}: deteccion (permanencia >= 10) 1.0 de 337, falsos 1.0 de 1338, I = 0.0000 [0.0000, 0.0000] bits
+d1 tt 27 S {'kth': 50.0}: deteccion (permanencia >= 10) 0.0 de 281, falsos 0.0 de 1420, I = 0.0000 [0.0000, 0.0000] bits
+d2 tt 27 S A1 (A=1, R=16): I = 0.4144 [0.3757, 0.4546], techo 0.8502, fraccion 0.487, area 96.6 um^2, 4.289 mbit/um^2
+d2 tt 27 S A2 (A=2, R=8): I = 0.1808 [0.1534, 0.2117], techo 0.8502, fraccion 0.213, area 53.9 um^2, 3.358 mbit/um^2
+d2 tt 27 S A4 (A=4, R=4): I = 0.0042 [0.0007, 0.0101], techo 0.8502, fraccion 0.005, area 27.1 um^2, 0.154 mbit/um^2
+d2 tt 27 S A8 (A=8, R=2): I = 0.0037 [0.0005, 0.0101], techo 0.8502, fraccion 0.004, area 17.1 um^2, 0.215 mbit/um^2
+d2 ff -40 S A1 (A=1, R=16): I = 0.3757 [0.3389, 0.4149], techo 0.7846, fraccion 0.479, area 96.6 um^2, 3.888 mbit/um^2
+d2 ff -40 S A2 (A=2, R=8): I = 0.1248 [0.1011, 0.1515], techo 0.7846, fraccion 0.159, area 53.9 um^2, 2.317 mbit/um^2
+d2 ff -40 S A4 (A=4, R=4): I = 0.0016 [0.0000, 0.0057], techo 0.7846, fraccion 0.002, area 27.1 um^2, 0.058 mbit/um^2
+d2 ff -40 S A8 (A=8, R=2): I = 0.0063 [0.0014, 0.0138], techo 0.7846, fraccion 0.008, area 17.1 um^2, 0.369 mbit/um^2
+d2 ss 85 S A1 (A=1, R=16): I = 0.4546 [0.4145, 0.4964], techo 0.8957, fraccion 0.507, area 96.6 um^2, 4.705 mbit/um^2
+d2 ss 85 S A2 (A=2, R=8): I = 0.1952 [0.1672, 0.2298], techo 0.8957, fraccion 0.218, area 53.9 um^2, 3.624 mbit/um^2
+d2 ss 85 S A4 (A=4, R=4): I = 0.0010 [0.0000, 0.0048], techo 0.8957, fraccion 0.001, area 27.1 um^2, 0.037 mbit/um^2
+d2 ss 85 S A8 (A=8, R=2): I = 0.0117 [0.0053, 0.0203], techo 0.8957, fraccion 0.013, area 17.1 um^2, 0.682 mbit/um^2
+d2 ff 85 S A1 (A=1, R=16): I = 0.1290 [0.1056, 0.1561], techo 0.8860, fraccion 0.146, area 96.6 um^2, 1.336 mbit/um^2
+d2 ff 85 S A2 (A=2, R=8): I = 0.0571 [0.0413, 0.0757], techo 0.8860, fraccion 0.064, area 53.9 um^2, 1.059 mbit/um^2
+d2 ff 85 S A4 (A=4, R=4): I = 0.0603 [0.0435, 0.0791], techo 0.8860, fraccion 0.068, area 27.1 um^2, 2.227 mbit/um^2
+d2 ff 85 S A8 (A=8, R=2): I = 0.0023 [0.0002, 0.0072], techo 0.8860, fraccion 0.003, area 17.1 um^2, 0.133 mbit/um^2
+d2 ff 85 D A1 (A=1, R=16): I = 0.1036 [0.0829, 0.1274], techo 0.8860, fraccion 0.117, area 96.6 um^2, 1.072 mbit/um^2
+d2 ff 85 D A2 (A=2, R=8): I = 0.0145 [0.0067, 0.0255], techo 0.8860, fraccion 0.016, area 53.9 um^2, 0.269 mbit/um^2
+d2 ff 85 D A4 (A=4, R=4): I = 0.0465 [0.0326, 0.0641], techo 0.8860, fraccion 0.052, area 27.1 um^2, 1.716 mbit/um^2
+d2 ff 85 D A8 (A=8, R=2): I = 0.0001 [0.0000, 0.0018], techo 0.8860, fraccion 0.000, area 17.1 um^2, 0.003 mbit/um^2
+d2 tt 27 S A1 {'b_area': 12} (A=1, R=16): I = 0.6032 [0.5608, 0.6466], techo 0.8502, fraccion 0.709, area 96.6 um^2, 6.242 mbit/um^2
+d2 tt 27 S A2 {'b_area': 12} (A=2, R=8): I = 0.3934 [0.3570, 0.4337], techo 0.8502, fraccion 0.463, area 53.9 um^2, 7.305 mbit/um^2
+d2 tt 27 S A4 {'b_area': 12} (A=4, R=4): I = 0.0082 [0.0027, 0.0156], techo 0.8502, fraccion 0.010, area 27.1 um^2, 0.303 mbit/um^2
+d2 tt 27 S A8 {'b_area': 12} (A=8, R=2): I = 0.0913 [0.0684, 0.1140], techo 0.8502, fraccion 0.107, area 17.1 um^2, 5.340 mbit/um^2
+d2 tt 27 S A1 {'fhi': 1.5, 'b_area': 1} (A=1, R=16): I = 0.0487 [0.0342, 0.0663], techo 0.1814, fraccion 0.269, area 96.6 um^2, 0.504 mbit/um^2
+d2 tt 27 S A1 {'fhi': 1.5, 'b_area': 12} (A=1, R=16): I = 0.0972 [0.0764, 0.1226], techo 0.1814, fraccion 0.536, area 96.6 um^2, 1.006 mbit/um^2
+d2 tt 27 S A1 {'fhi': 2.0, 'b_area': 1} (A=1, R=16): I = 0.1675 [0.1398, 0.1969], techo 0.4773, fraccion 0.351, area 96.6 um^2, 1.733 mbit/um^2
+d2 tt 27 S A1 {'fhi': 2.0, 'b_area': 12} (A=1, R=16): I = 0.2302 [0.2006, 0.2633], techo 0.4773, fraccion 0.482, area 96.6 um^2, 2.382 mbit/um^2
+d2 tt 27 S A1 {'fhi': 3.0, 'b_area': 1} (A=1, R=16): I = 0.4197 [0.3804, 0.4594], techo 0.8502, fraccion 0.494, area 96.6 um^2, 4.343 mbit/um^2
+d2 tt 27 S A1 {'fhi': 3.0, 'b_area': 12} (A=1, R=16): I = 0.6516 [0.6103, 0.6955], techo 0.8502, fraccion 0.766, area 96.6 um^2, 6.743 mbit/um^2
+d2 tt 27 S A1 {'amp_scale': 0.0} (A=1, R=16): I = 0.0001 [0.0000, 0.0022], techo 0.8502, fraccion 0.000, area 96.6 um^2, 0.001 mbit/um^2
+d2 tt 27 S A1 {'kth': 50.0} (A=1, R=16): I = 0.0000 [0.0000, 0.0000], techo 0.8502, fraccion 0.000, area 96.6 um^2, 0.000 mbit/um^2
+(total 684 s)

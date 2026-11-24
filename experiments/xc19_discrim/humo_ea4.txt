@@ -1,0 +1,4 @@
+# E_A v3 · 2026-11-24 09:51:48 EST · fa = 1 kHz, T = 1 s, NCHIP = 400 (HUMO)
+T1: deteccion 1.0000 (>= 0,95 -> pasa), falsos 0.0025 (<= 0,01 -> pasa)
+T2 (f = 10 frente a 1, A1, R = 16, tt, BT) (A=1, R=16): I = 0.9767 [0.9376, 1.0000], techo 1.0000, fraccion 0.977, area 96.6 um^2, 10.109 mbit/um^2 (>= 0,80 -> pasa)
+(humo: 12 s)

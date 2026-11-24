@@ -11,3 +11,6 @@ f3739766fb5c9c9bfb7da9b832ec611f39dd65bfac2713981c4b1ffbe807e28a  experiments/xc
 a25789b54bb01902c572e825f4d222fecb403838501d400e4ebe15a90c8d6aa9  run_ea.py
 # (las dos lineas anteriores: sim.py y run_ea.py (E_A v2) al lanzar la corrida completa, 17:52:37 EST)
 ac1fa75eb7dd10c97eb9aa08242aa214fbfa73b700a7f81ee195c28f2a373588  cells/preregistros/XC-19_2026-11-24_discriminacion_abanico_enmienda4.md  sellado 2026-11-24 09:50:32 EST
+88941a41c710ee94da06582bfc9ce4778cff9d1e18701946b2926f3c1e6ab435  sim.py
+0cf329d13c187800f2f8641c28a8aa8fa398c353283a1866ce50f81d8c48143a  run_ea4.py
+# (las dos lineas anteriores: sim.py con b_area y run_ea4.py (E_A v3) al lanzar la corrida completa, 09:52:30 EST, tras el humo humo_ea4.txt)

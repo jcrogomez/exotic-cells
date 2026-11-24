@@ -1,0 +1,18 @@
+Tue Nov 24 09:55:33 EST 2026
+E_B v2 (e_b2.py) HUMO (enmienda 4, A4.6): T1 y T2, NCHIP = 400 por mitad (entrenamiento y prueba aparte), fa = 1 kHz, T = 1 s, eta = 1, sal de semillas 'e4'
+techos tt 27, R*A = 16 (poisson_bits): f = 1.5: 0.181 | f = 2.0: 0.477 | f = 3.0: 0.850 | f = 10.0: 1.000
+tiempo de pared 40 s
+
+## T1
+T1: det 1.000 [1.000, 1.000] | fp 0.000 [0.000, 0.000] | bits 0.998 [0.985, 1.000] | pasa(det>=0,95 y fp<=0,01) True
+
+## T2: celda | A | R | bits [IC 95 %] | techo | frac = bits/techo | techo_prior | bits/techo_prior
+T2 prior tt 27 S A1 BT | 1 | 16 | 0.719 [0.630, 0.811] | 1.000 | 0.719 | 0.979 | 0.734
+T2 fijo tt 27 S A1 BT | 1 | 16 | 1.000 [0.991, 1.000] | 1.000 | 1.000 | - | -
+
+Criterio del humo (fijado en el docstring): T2 prior frac >= 0,80 -> False (frac = 0.719)
+
+## JSON
+{"celda": "T1", "n_prueba": 400, "det": 1.0, "fp": 0.0, "bits": 0.99819587904281, "umbral": 0.5, "bits_ic": [0.984780070975503, 1.0], "det_ic": [1.0, 1.0], "fp_ic": [0.0, 0.0], "pasa": true}
+{"celda": "T2 prior tt 27 S A1 BT", "esquina": "tt 27", "clase": "A1", "A": 1, "R": 16, "variante": "S", "prior": true, "f_alt": 10.0, "b_area": 1.0, "techo": 0.9999996406231478, "n_prueba": 400, "bits": 0.7192548067382968, "acierto": 0.945, "umbral": 0.7328762083585609, "bits_ic": [0.6298624512839185, 0.811391381202276], "techo_prior": 0.9793076756207637, "frac_techo_prior": 0.734452332646505, "frac_techo": 0.7192550652219181}
+{"celda": "T2 fijo tt 27 S A1 BT", "esquina": "tt 27", "clase": "A1", "A": 1, "R": 16, "variante": "S", "prior": false, "f_alt": 10.0, "b_area": 1.0, "techo": 0.9999996406231478, "n_prueba": 400, "bits": 1.0, "acierto": 1.0, "umbral": 0.5, "bits_ic": [0.9912540071703689, 1.0], "frac_techo": 1.0000003593769813}

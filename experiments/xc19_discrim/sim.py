@@ -90,10 +90,11 @@ def telegraph(rng, tau, a, n, dt):
 
 
 def simulate(rng, corner, cls, f, eta, fa, T, variant, n_dev, rho_scale=1.0, amp_scale=1.0, same_traps_in_B=False,
-             quant=True):
+             quant=True, b_area=1.0):
     """Devuelve y (n_dev x N enteros), verdad por dispositivo (n_banda, n_permanencia>=10) y t_k.
     rho_scale: multiplica la densidad de C0 (prior sobre lambda0). amp_scale: mutante M1 (0). same_traps_in_B: mutante M4.
-    quant=False: mutante M3 (lectura continua en cuentas)."""
+    quant=False: mutante M3 (lectura continua en cuentas). b_area: area relativa de B (1 = gemelo C0; 12 = referencia 2x6 de
+    MISFIT-03, enmienda 4 A4.5: densidad x12, amplitud media /12)."""
     c, t = corner
     tc, sc = CP[corner]
     W, L = GEOM[cls]
@@ -104,7 +105,7 @@ def simulate(rng, corner, cls, f, eta, fa, T, variant, n_dev, rho_scale=1.0, amp
     N = int(round(fa * T)); dt = 1.0 / fa
     rho = NB[(c, t, fa, T, eta)] / math.log10(T * fa / 2) * rho_scale
     trA = traps(rng, n_dev, rho, f, A, eta)
-    trB = trA if same_traps_in_B else traps(rng, n_dev, rho, 1.0, 1.0, eta)
+    trB = trA if same_traps_in_B else traps(rng, n_dev, rho, 1.0, b_area, eta)   # b_area = 12: B = referencia 2x6 (enmienda 4, A4.5)
     Y = np.empty((n_dev, N), dtype=np.int32)
     truth = np.zeros((n_dev, 2), dtype=np.int32)
     for d in range(n_dev):
