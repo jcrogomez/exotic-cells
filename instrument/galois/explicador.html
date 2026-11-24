@@ -143,7 +143,7 @@ footer{color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
 <div class="card"><h3>La tautología</h3><p>Si las trampas siguen una ley de Poisson con N = 0,355 visibles por DUT mínimo en la banda de 1 kHz y 1 s, la probabilidad de ver al menos una es 0,299. Se deduce sin simular nada.</p></div>
 <div class="card"><h3>La respuesta</h3><p>Un abanico de configuraciones C0–C9 con réplicas: geometría de difusión, esquina de STI, poly vecina, antena, unión butted, y áreas 1×, 2×, 4× y 8×. Cada una entra al chip por los bits por µm² que aporta para distinguir explicaciones.</p></div>
 <div class="card"><h3>El techo</h3><p>Ningún estimador puede pasar del límite de Poisson, que solo depende de réplicas × área: 0,124, 0,400, 0,850 y 0,999 bits a R·A = 1, 4, 16 y 64.</p></div>
-<div class="card"><h3>En curso</h3><p>Dos estimadores independientes sobre el mismo generador. Solo se consolida si difieren en ≤ 0,05 bits. Uno terminó; el otro corre. No se publica ninguna cifra antes de cotejarlos.</p></div>
+<div class="card"><h3>Benchmark inválido</h3><p>Dos estimadores independientes sobre el mismo generador. Difieren más de 0,05 bits y el testigo de chip T2 falla en los dos: no se consolida nada. Hallazgo de diseño: el gemelo B lleva sus propias trampas (~30 % de falsos positivos).</p></div>
 </div>
 </div></section>
 
@@ -154,7 +154,7 @@ footer{color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
 <li><b>Prerregistro antes de correr.</b>Predicción, criterio de muerte, control negativo y testigo, sellados con SHA-256. El resultado negativo se publica igual.</li>
 <li><b>Lo aburrido primero.</b>Antes de creer en física nueva se descartan el arnés, el parser, la extracción y el comparador. P3 cayó por el comparador, no por el macro.</li>
 <li><b>Observado, demostrado, conjetura.</b>Tres categorías que no se mezclan. Si un número no sale de un archivo o de una corrida reproducible, se escribe <code>[?]</code>.</li>
-<li><b>Verificar la verificación.</b>MISFIT-04 sabotea su propio tile diez veces. La predicción es que DRC, LVS y precheck ven la conectividad pero no la medida.</li>
+<li><b>Verificar la verificación.</b>MISFIT-04 sabotea su propio tile diez veces. Resultado: ven 4 de 5 fallos de conectividad (una tierra cortada se esconde en el sustrato) y 0 de 4 fallos de medida; las pruebas de medida ven 4 de 4.</li>
 <li><b>Lo que el modelo no tiene, el silicio lo dirá.</b>Trampas visibles, túnel en p+/n+ pegados, carga del plasma: se diseña para que la respuesta, sea cual sea, se lea.</li>
 </ol>
 </div></section>
@@ -165,7 +165,7 @@ footer{color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
 <div><b>MISFIT-01</b><span>Un inversor dibujado a mano en un tile de TT por tres rutas. Precheck pasa; met4 como alimentación del macro falla, como se predijo.</span></div>
 <div><b>MISFIT-02</b><span>Celda de tiempo leída por el núcleo real: 1047 celdas, DRC 0, LVS, precheck de 15 pruebas.</span></div>
 <div><b>MISFIT-03</b><span>Slot XC-19 completo con decodificador, calibración y fallos inyectados. Etapa a corrida.</span></div>
-<div><b>MISFIT-04</b><span>Núcleo + decodificador + slot en el 1×2, con agresores reales y campaña de sabotaje. Prerregistrado; núcleo endureciéndose.</span></div>
+<div><b>MISFIT-04</b><span>Núcleo + decodificador + slot en el 1×2, con agresores reales y campaña de sabotaje. Tile limpio (DRC 0, LVS, precheck 15/15); agresores reales a 1/6 del umbral. Benchmark inválido en dos puntos: testigo S7 a 5,7× (se pedían 10×) y S2 invisible.</span></div>
 <div><b>Galois</b><span>El chip que va a silicio: el 1×2 o el 2×2 lleno con lo que gane su lugar.</span></div>
 </div>
 </div></section>
@@ -180,11 +180,11 @@ const TRACKS=[-9.225,-7.175,-5.775,-5.075,-4.375,3.335,5.735,19.16,20.05,22.16,2
 const S=(c,t)=>({c,t});
 const ZONES={
 core:{t:"Núcleo digital del instrumento",w:"Contador a 50 MHz, protocolo de 8 bits por los pines de TT y lógica de cuatro slots. Un slot deshabilitado o sin seleccionar no llega al motor, haga lo que haga.",
- s:[S("ok","13 pruebas cocotb de protocolo, selección, conteo y flags; solo lógica."),S("ok","Endurecido con la celda de tiempo en un 1×1: DRC 0, LVS, precheck (MISFIT-02)."),S("par","MISFIT-04: endureciéndose con el decodificador E7 dentro y 15 pines inferiores nuevos."),S("no","Perfil de corriente en cada estado; flanco lento de xa al sincronizador."),S("no","Modelo de src = 10/11 actualizado y cocotb corrido de nuevo.")]},
+ s:[S("ok","13 pruebas cocotb de protocolo, selección, conteo y flags; solo lógica."),S("ok","Endurecido con la celda de tiempo en un 1×1: DRC 0, LVS, precheck (MISFIT-02)."),S("ok","MISFIT-04: endurecido con el decodificador E7 dentro; tabla E7 9/9 y entradas quietas durante la medida."),S("no","Perfil de corriente en cada estado; flanco lento de xa al sincronizador."),S("no","Modelo de src = 10/11 actualizado y cocotb corrido de nuevo.")]},
 slot:{t:"Slot XC-19: lector de una carga",w:"Dos nodos gemelos A y B, cada uno descargado por su DUT. Una escalera de placas de calibración (src = 10: dos unidades en A y una en B; src = 11: una en cada lado) y una referencia de descarga reproducible. Con en = 0 debería quedar inerte.",
  s:[S("ok","DRC 0 en Magic y en dos decks de KLayout; LVS único (96 dispositivos)."),S("ok","Simetría A/B 0,011–0,013 %; cociente insensible a ±10 mV de alimentación; los 7 fallos inyectados se detectan."),S("par","Con en = 0 fugan 2,7 nA a tt (límite 1 nA), por los pfet de los inversores. Arreglo: pfet hvt."),S("par","Paso de calibración 0,17 % a tt (banda 0,25–0,60 %)."),S("no","Ruido y Monte Carlo sobre el macro extraído; precheck."),S("imp","Si existen trampas visibles: el modelo no las tiene.")]},
 tracks:{t:"Las 15 pistas de metal3",w:"13 líneas del decodificador bajan del núcleo al macro y XA_OUT y XB_OUT suben. Los pines del macro están en li, entre los dispositivos: un buscador geométrico encontró sitio para la pila li→m3 de 13 de ellos. A los bloques A y B se les dio colocación espejada para no meter asimetría.",
- s:[S("ok","Plan de colocación para 13 de 15 pines, sin tocar geometría ajena (plan.py)."),S("no","DUTA y DUTB: sin sitio en línea recta; necesitan una ruta en L."),S("no","Acoplo extraído de cada pista con XA y XB: es la prueba I4 de MISFIT-04.")]},
+ s:[S("ok","Plan de colocación para 13 de 15 pines, sin tocar geometría ajena (plan.py)."),S("no","DUTA y DUTB: sin sitio en línea recta; necesitan una ruta en L."),S("ok","Acoplo extraído con XA y XB (MISFIT-04 I4): 0,0129 % a tt, todo de un búfer junto a XA_OUT.")]},
 free:{t:"Espacio libre: el abanico, la metrología y las apuestas",w:"Tras el núcleo y un slot quedan 16 764 µm² en bruto en un 1×2 y 56 020 µm² en un 2×2, sin contar rutado ni red de met4. Ahí van las celdas que ganen su lugar.",
  s:[S("par","Abanico C0–C9 de DUT con réplicas: prerregistrado; sin modelo para C1–C6 todavía."),S("ok","XC-12 (matriz LOD): el modelo separa 31,09 mV dos geometrías que la extracción de hoy no distingue."),S("par","XC-62 (poly densa/aislada): etapa 2 con benchmark inválido; convergencia prerregistrada."),S("ok","XC-20 (p+/n+ pegados): el precheck la acepta a separación 0. Falta el lector de rango amplio."),S("ok","XC-14 (antena): el precheck no revisa antenas. Falta su prerregistro."),S("imp","Magnitud del túnel en XC-20; si la carga del plasma sobrevive en XC-14.")]},
 };
