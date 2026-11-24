@@ -1,3 +1,5 @@
+> **Errata (2026-11-24):** las tres semillas de `c58b_ciclos` (101–103) dieron el mismo sorteo: `set rndseed` se ignora. N efectivo = 640, no 1920. Las barras de este archivo están calculadas con N = 1920. Ver [`../AUDITORIA_SEMILLAS_2026-11-24.md`](../AUDITORIA_SEMILLAS_2026-11-24.md).
+
 # c58b · Análisis de las simulaciones terminadas de XC-58
 
 Cerrado: Thu Nov 12 22:33:49 EST 2026 (hora de `date`). Todo es modelo; nada medido en silicio. Las cifras salen de `c58b_analisis.py` → `c58b_tablas.txt`,
