@@ -1,0 +1,23 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * cadena ss 85
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+v(k0_vb) = 4.898234e-01
+v(k1_vb) = 3.349664e-01
+v(k2_vb) = 3.405044e-01
+v(k3_vb) = 3.464626e-01
+v(k4_vb) = 3.525982e-01
+v(k5_vb) = 3.590103e-01
+v(k6_vb) = 3.647939e-01
+v(k7_vb) = 3.702797e-01
+ngspice-44.2 done

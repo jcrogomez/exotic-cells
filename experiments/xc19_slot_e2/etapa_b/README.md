@@ -40,3 +40,16 @@ ya estaba en el prerregistro: trampa ≥ 10 cuentas, es decir tA ≥ ~31 µs a f
    segunda cadena en paralelo, y verificarlo en las 4 esquinas.
 2. Comprobar que el paso de calibración (P4) y la trampa no cambian de forma con el código; aquí solo se movió la puerta del DUT
    de A.
+
+## Cadena de ajuste (`cadena/`, esquemático, `.op`, conexiones ideales sin interruptores)
+
+| Opción | Lo que da | Sirve |
+|---|---|---|
+| Un diodo extra 1/1 en serie, ancho W de 1 a 64 (`resumen_cadena.txt`) | −120 a −157 mV, sea cual sea W | no: es un salto, no un ajuste fino |
+| Más espejos 0,42/0,15 en paralelo, M de 16 a 256 (`resumen_espejos.txt`) | −13 a −21 mV por cada duplicación; −53 a −82 mV con M = 256 | solo, no llega a −150 mV |
+| 3 bits: toma C1 (2 o 3 diodos) × M (`resumen_codigos.txt`) | de 0 a −152…−157 mV en las 4 esquinas | cubre ff 85 (−152 mV); **el paso máximo es 32–80 mV**: 80 mV a ff −40 y 60 mV a tt 27, en el hueco entre "2 diodos, M = 128" y "3 diodos, M = 2" |
+
+- El objetivo de ≤ 50 mV por paso no se cumple aún: sobra en el hueco central.
+- Rellenarlo con 2 diodos y M = 256, o 3 diodos y M = 1, queda **sin correr**.
+- Además, ningún interruptor está modelado: falta su caída y su fuga. Y los espejos extra tendrían que llevar el mismo LOD que el DUT,
+  o dejan de copiarlo (la razón de ser de `xc19_bias`).
