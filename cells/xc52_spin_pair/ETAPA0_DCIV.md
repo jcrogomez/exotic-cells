@@ -41,22 +41,27 @@ medida sin pasar por ΔVth.
 
 El intervalo de cada fila sale de σ. Cada +0,1 V de VF multiplica la señal ×6,9.
 
-**Fondo**, de `fondo/` (ngspice, pfet 10×10 µm, S/D de 0,29 µm). Es la corriente del pozo con S = D = VDD y pozo = VDD − VF:
+**Fondo**, de `fondo/` (ngspice, v2): corriente del pozo con S = D = VDD y pozo = VDD − VF, más el diodo pozo-sustrato aparte.
+`resumen_fondo.txt`.
+- La v1 de este cálculo estaba mal: `wrdata -i(a) -i(b)` lo lee ngspice como **una resta**, y su "228 pA" era la suma de los dos
+  dispositivos.
 
-| Esquina | VF = 0,30 V | VF = 0,40 V | VF = 0,50 V |
-|---|---|---|---|
-| tt 27 | 228 pA | 3,88 nA | 66 nA |
-| tt 85 | 27,9 nA | 301 nA | 3,24 µA |
+| Dispositivo | Esquina | VF = 0,30 V | VF = 0,40 V | VF = 0,50 V | Pozo-sustrato |
+|---|---|---|---|---|---|
+| 10×10 µm (100 µm²) | tt 27 | 58,5 pA | 997 pA | 17,0 nA | 0,6 fA |
+| 30×33 µm (1000 µm²) | tt 27 | 169 pA | 2,88 nA | 49,2 nA | 3,5 fA |
+| 10×10 µm | tt 85 | 7,17 nA | 77,3 nA | 832 nA | 1,5 pA |
 
-- El fondo es **plano en la puerta**, porque el modelo no tiene trampas de interfaz. Lo que depende de la puerta es lo que se busca.
-- Viene de las uniones S/D–pozo y crece ×17 por cada +0,1 V de VF en la corrida (idealidad efectiva ~1,36), frente a ×6,9 de la
-  señal. Así que conviene VF bajo y una
-  puerta grande con S/D estrechos.
-- A tt 27 y VF = 0,30 V, Nit = 1e10 es un 0,2–11 % del fondo, y ΔNit = 1e11 un 2–110 %. **El lector tiene que resolver ~1e-3
-  relativo entre puntos del barrido.**
-- **La lectura se hace a temperatura ambiente,** no caliente: a 85 °C el fondo sube ×120.
-- Aquí falta un fondo: la unión pozo-sustrato. Está en inversa con ~1,4 V y su fuga llega al mismo nodo `[?]`. Con dos
-  dispositivos en el deck, `wrdata` escribió solo el primero: el de 1000 µm² está sin leer.
+- El fondo es **plano en la puerta** (variación 0 en el barrido), porque el modelo no tiene trampas de interfaz. Lo que dependa de la
+  puerta es lo que se busca.
+- Viene de las uniones S/D–pozo: escala con W (el perímetro de S/D), no con el área de la puerta. Crece ×17 por cada +0,1 V de VF
+  (idealidad efectiva ~1,36), frente a ×6,9 de la señal.
+- Por tanto conviene **VF bajo y una puerta grande con L larga**. A tt 27 y VF = 0,30 V, Nit = 1e10 es:
+  - un 0,7–44 % del fondo en 100 µm²;
+  - un 2–150 % en 1000 µm².
+- ΔNit = 1e11 multiplica esos porcentajes por diez. **El lector tiene que resolver ~1e-3 relativo entre puntos del barrido.**
+- **La lectura se hace a temperatura ambiente:** a 85 °C el fondo sube ×120.
+- La unión pozo-sustrato (en inversa, ~1,4 V) es despreciable: de fA a pA.
 
 ## Bloques que necesita y de dónde salen
 
@@ -79,6 +84,6 @@ El intervalo de cada fila sale de σ. Cada +0,1 V de VF multiplica la señal ×6
 
 ## Siguiente
 
-1. El fondo pozo-sustrato y el dispositivo de 1000 µm² (un `wrdata` por vector).
+1. Hecho: el fondo pozo-sustrato y el dispositivo de 1000 µm². Falta: la dependencia en la puerta de GIDL y fugas de puerta en el modelo, con la puerta por encima de VDD − VF.
 2. Prerregistro con el umbral de W1 traducido al cociente medible.
 3. Pedir área en el tile: compite con el slot 2 o el 3 del 1×2 `[?]`. **Lo decide Juan.**

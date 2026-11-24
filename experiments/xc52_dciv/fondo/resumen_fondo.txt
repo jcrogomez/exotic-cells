@@ -1,0 +1,8 @@
+fondo_tt_27_vf30_a100.txt  pfet-pozo 5.847e-11 A (variacion en Vg 0.0e+00 relativa) | pozo-sustrato 5.80e-16 A
+fondo_tt_27_vf30_a1000.txt pfet-pozo 1.690e-10 A (variacion en Vg 0.0e+00 relativa) | pozo-sustrato 3.53e-15 A
+fondo_tt_27_vf40_a100.txt  pfet-pozo 9.971e-10 A (variacion en Vg 0.0e+00 relativa) | pozo-sustrato 5.80e-16 A
+fondo_tt_27_vf40_a1000.txt pfet-pozo 2.883e-09 A (variacion en Vg 0.0e+00 relativa) | pozo-sustrato 3.53e-15 A
+fondo_tt_27_vf50_a100.txt  pfet-pozo 1.700e-08 A (variacion en Vg 0.0e+00 relativa) | pozo-sustrato 5.80e-16 A
+fondo_tt_27_vf50_a1000.txt pfet-pozo 4.916e-08 A (variacion en Vg 0.0e+00 relativa) | pozo-sustrato 3.53e-15 A
+fondo_tt_85_vf30_a100.txt  pfet-pozo 7.171e-09 A (variacion en Vg 0.0e+00 relativa) | pozo-sustrato 1.47e-12 A
+fondo_tt_85_vf30_a1000.txt pfet-pozo 2.073e-08 A (variacion en Vg 0.0e+00 relativa) | pozo-sustrato 8.05e-12 A
