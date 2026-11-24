@@ -1,0 +1,7 @@
+src=01: ventana 2.451-30.391 us (1397 ciclos); cambios en las 13 lineas del decodificador: 2796; redes del nucleo que cambian: 738; cambios totales: 842373
+   las que mas cambian: dut.clkload0.X 2794, dut.clkload10.X 2794, dut.clkload11.X 2794, dut.clkload12.X 2794, dut.clkload13.X 2794, dut.clkload14.X 2794, dut.clkload1.X 2794, dut.clkload2.X 2794, dut.clkload3.X 2794, dut.clkload4.X 2794, dut.clkload5.X 2794, dut.clkload6.X 2794
+src=10: ventana 32.471-60.411 us (1397 ciclos); cambios en las 13 lineas del decodificador: 2796; redes del nucleo que cambian: 737; cambios totales: 840975
+   las que mas cambian: dut.clkload0.X 2794, dut.clkload10.X 2794, dut.clkload11.X 2794, dut.clkload12.X 2794, dut.clkload13.X 2794, dut.clkload14.X 2794, dut.clkload1.X 2794, dut.clkload2.X 2794, dut.clkload3.X 2794, dut.clkload4.X 2794, dut.clkload5.X 2794, dut.clkload6.X 2794
+src=11: ventana 62.491-90.431 us (1397 ciclos); cambios en las 13 lineas del decodificador: 2796; redes del nucleo que cambian: 737; cambios totales: 840975
+   las que mas cambian: dut.clkload0.X 2794, dut.clkload10.X 2794, dut.clkload11.X 2794, dut.clkload12.X 2794, dut.clkload13.X 2794, dut.clkload14.X 2794, dut.clkload1.X 2794, dut.clkload2.X 2794, dut.clkload3.X 2794, dut.clkload4.X 2794, dut.clkload5.X 2794, dut.clkload6.X 2794
+I2/I3 veredicto: cambios del decodificador en las tres ventanas = 8388 (prediccion 0) -> FALSA

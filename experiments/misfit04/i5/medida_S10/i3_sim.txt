@@ -1,0 +1,14 @@
+VCD info: dumpfile i3.vcd opened for output.
+VENTANA src=01 inicio 2431000
+XA src=01 30374000
+XB src=01 30391000
+FIN src=01 30451000
+VENTANA src=10 inicio 32451000
+XA src=10 60394000
+XB src=10 60411000
+FIN src=10 60471000
+VENTANA src=11 inicio 62471000
+XA src=11 90414000
+XB src=11 90431000
+FIN src=11 90491000
+tb_i3.v:28: $finish called at 90880000 (1ps)

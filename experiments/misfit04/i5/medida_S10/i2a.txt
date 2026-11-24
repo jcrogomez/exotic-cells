@@ -1,0 +1,2 @@
+I2A lecturas=33 combinaciones_distintas=9 discrepancias=0
+tb_i2.v:53: $finish called at 20880000 (1ps)

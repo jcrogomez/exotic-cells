@@ -45,3 +45,12 @@ instrument/misfit02/results/cell*/t_*.txt
 # MISFIT-03 etapa a: logs de cada corrida de ngspice (las lineas RES estan fusionadas en contrato.txt); se regeneran con run_contrato.sh
 experiments/xc19_slot/corridas/**/*.log
 experiments/xc19_slot/corridas/**/*.raw
+# MISFIT-04: regenerable heavy outputs (kept on disk; see experiments/misfit04/REGENERAR.md)
+experiments/misfit04/i5/build_*/
+experiments/misfit04/**/*.vcd
+experiments/misfit04/**/*.vvp
+experiments/misfit04/i4/ext/**/*.spice
+experiments/misfit04/i4/ext/*.spice
+experiments/misfit04/i4/corridas/**/*.log
+instrument/misfit04/tile/build/
+experiments/misfit04/i4/ext/**/*.gds

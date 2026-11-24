@@ -1,0 +1,15 @@
+# MISFIT-04 I4 · agresores reales, activos frente a quietos (enmienda 2, A4)
+
+tt  27: control c frente al contrato 0.0000 % (vale) · max_k |D(tA/tB)| = 0.01288 % (umbral 0.0807 %; margen 6x) por fase 0.01288 0.01288 0.01288 0.01288 0.01073
+           ablacion (fase 0, un agresor): ag685 0.00000 % · agin2 0.00000 % · agin3 0.01288 %
+           S7 testigo max_k 0.46176 % (5.7x umbral) · S8 0.40704 % (5.04x umbral)
+ff -40: control c frente al contrato 0.0002 % (vale) · max_k |D(tA/tB)| = 0.01352 % (umbral 0.1001 %; margen 7x) por fase 0.01352 0.01352 0.01352 0.01352 0.01186
+ss  85: control c frente al contrato 0.0000 % (vale) · max_k |D(tA/tB)| = 0.01354 % (umbral 0.0684 %; margen 5x) por fase 0.01354 0.01354 0.01354 0.01354 0.01140
+ff  85: control c frente al contrato 0.0004 % (vale) · max_k |D(tA/tB)| = 0.00000 % (umbral 0.0631 %; margen infx) por fase 0.00000 0.00000 0.00000 0.00000 0.00000
+           ablacion (fase 0, un agresor): ag685 0.00000 % · agin2 0.00000 % · agin3 0.00000 %
+           S7 testigo max_k 0.44585 % (7.1x umbral) · S8 0.39226 % (6.22x umbral)
+
+Control del deck: vale en las 4 esquinas
+I4 (tile sano): cumplida
+Testigo S7 a tt 27: 5.7x el umbral (requisito > 10x) -> I4 CIEGO: benchmark invalido
+S8 a tt 27: detectado por I4

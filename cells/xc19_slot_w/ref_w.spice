@@ -1,0 +1,6 @@
+* Referencia del wrapper xc19_slot_w (MISFIT-04), escrita a mano: el macro de MISFIT-03 (ref.spice, 96 dispositivos) con CALA y
+* CALB a GND como en el contrato, y sus 15 pines de señal sacados con su mismo nombre. DUMMYB es una pista sin dispositivos.
+.include ../xc19_slot_core/ref.spice
+.subckt xc19_slot_w XA_OUT SA2B SA1B REFA SA0B C1 VBIAS DUTA PREA DUTB PREB SB0B REFB SB1B XB_OUT DUMMYB VDD GND
+Xm XB_OUT REFB SB0B SB1B XA_OUT REFA SA0B SA1B SA2B VDD GND VBIAS C1 PREA XA DUTA PREB XB DUTB VB GND GND xc19_slot_core
+.ends

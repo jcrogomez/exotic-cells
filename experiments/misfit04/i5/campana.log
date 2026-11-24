@@ -1,0 +1,9 @@
+ok	0	match	pasa		21:27:05
+S1	0	MISMATCH	pasa		21:30:38
+S2	0	match	pasa		21:34:46
+S3	0	MISMATCH	pasa		21:43:59
+S4	0	MISMATCH	pasa		21:57:25
+S5	0	match	pasa		22:06:42
+S6	0	MISMATCH	pasa		22:11:15
+S7	1	match	FALLA	 Magic DRC , KLayout BEOL 	22:13:37
+S8	1	match	FALLA	 Magic DRC , KLayout BEOL 	22:15:38

@@ -1,0 +1,6 @@
+DISCREPANCIA precarga en=1 pre=1 src=10 got=0011001110100 hand=0011001110000
+DISCREPANCIA cuenta en=1 pre=0 src=10 got=1111001110100 hand=1111001110000
+DISCREPANCIA precarga en=1 pre=1 src=11 got=0011001100000 hand=0011001100100
+DISCREPANCIA cuenta en=1 pre=0 src=11 got=1111001100000 hand=1111001100100
+I2A lecturas=33 combinaciones_distintas=9 discrepancias=4
+tb_i2.v:53: $finish called at 20880000 (1ps)

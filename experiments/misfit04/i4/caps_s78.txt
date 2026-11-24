@@ -1,0 +1,4 @@
+S7: red m3_3400_24445# · a XA 663.59 aF · resto 2016.91 aF · XA total sano 10.566 fF, S7 11.203 fF
+   otras redes nuevas acopladas a XA: 
+S8: red m3_3400_24429# · a XA 843.01 aF · resto 2168.12 aF · XA total sano 10.566 fF, S8 11.383 fF
+   otras redes nuevas acopladas a XA: 
