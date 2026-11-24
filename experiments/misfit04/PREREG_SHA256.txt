@@ -4,3 +4,5 @@ c9913e836dc4b702704921298e76305816668ead708c3586e66f8c7af0adfce6  experiments/mi
 # sellado 2026-11-23 18:19:25 EST, antes de cualquier RTL o layout de MISFIT-04
 0c7576260d0ea0a8ec51694c29562b774acffe48419d46e31f1051caf93d1b01  cells/preregistros/MISFIT-04_2026-11-23_tile_integrado_enmienda1.md
 # enmienda 1 sellada 18:32:51 EST, antes de correr I2
+c8e15a4754fb139c8f22dd3d939de84ca345c6ad91188bceded151701cd6e75b  cells/preregistros/MISFIT-04_2026-11-23_tile_integrado_enmienda2.md
+# enmienda 2 sellada 21:23:58 EST, antes de la SPICE de I4 y de la campaña I5
