@@ -1,0 +1,5 @@
+# v2: 11 codigos. VB - VB(2d16) en mV, ordenados como salen; al final el paso maximo entre codigos vecinos (ordenados por VB)
+ff_-40  2d16:+0 2d32:-13 2d64:-26 2d128:-40 2d256:-53 2d512:-66 3d1:-107 3d2:-119 3d4:-132 3d8:-144 3d16:-157 | paso max 41 mV
+ff_85   2d16:+0 2d32:-21 2d64:-41 2d128:-62 2d256:-82 2d512:-103 3d1:-74 3d2:-93 3d4:-113 3d8:-132 3d16:-152 | paso max 21 mV
+ss_85   2d16:+0 2d32:-19 2d64:-37 2d128:-56 2d256:-75 2d512:-94 3d1:-79 3d2:-98 3d4:-117 3d8:-136 3d16:-155 | paso max 19 mV
+tt_27   2d16:+0 2d32:-16 2d64:-32 2d128:-48 2d256:-64 2d512:-81 3d1:-92 3d2:-108 3d4:-124 3d8:-139 3d16:-155 | paso max 16 mV

@@ -53,3 +53,9 @@ ya estaba en el prerregistro: trampa ≥ 10 cuentas, es decir tA ≥ ~31 µs a f
 - Rellenarlo con 2 diodos y M = 256, o 3 diodos y M = 1, queda **sin correr**.
 - Además, ningún interruptor está modelado: falta su caída y su fuga. Y los espejos extra tendrían que llevar el mismo LOD que el DUT,
   o dejan de copiarlo (la razón de ser de `xc19_bias`).
+
+**v2 de los códigos** (`resumen_codigos_v2.txt`; `gen_codigos.py` reescrito, y la v1 queda en `resumen_codigos.txt`):
+- Se añaden 2 diodos con M = 256 y 512, y 3 diodos con M = 1.
+- Son 11 códigos (4 bits), de 0 a −152…−157 mV. **El paso máximo es 16–41 mV** en las 4 esquinas: cumple ≤ 50 mV.
+- Coste: M = 512 son 512 espejos 0,42/0,15, con área `[?]` y sin dibujar.
+- Antes de dibujar falta modelar los interruptores (caída y fuga) y elegir cómo comparten el LOD con el DUT.
