@@ -6,3 +6,5 @@ c9913e836dc4b702704921298e76305816668ead708c3586e66f8c7af0adfce6  experiments/mi
 # enmienda 1 sellada 18:32:51 EST, antes de correr I2
 c8e15a4754fb139c8f22dd3d939de84ca345c6ad91188bceded151701cd6e75b  cells/preregistros/MISFIT-04_2026-11-23_tile_integrado_enmienda2.md
 # enmienda 2 sellada 21:23:58 EST, antes de la SPICE de I4 y de la campaña I5
+0de69e2c3025a7bbf8a74c803446e47ec1cbb41bcbc5fbfaca652d70fb59c14f  cells/preregistros/MISFIT-04_2026-11-24_tile_integrado_enmienda3.md
+# enmienda 3 sellada 07:36:12 EST, antes de cualquier código o corrida de E1-E3
