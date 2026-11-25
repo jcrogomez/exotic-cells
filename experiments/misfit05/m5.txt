@@ -1,0 +1,56 @@
+# MISFIT-05 · analiza_m5.py · tiempos desde T0 = 1 us
+
+## Fuga en DC (D1) y testigo de 40 pA
+tt 27 vx=1.8: I = 6.7674e-09 A; L = 9.1679e-15 A; L/I = 1.355e-06; VB = 0.4783; testigo 40 pA leido 40.000 pA -> ok
+tt 27 vx=0.9: I = 3.4295e-09 A; L = 8.6830e-15 A; L/I = 2.532e-06; VB = 0.4783; testigo 40 pA leido 40.000 pA -> ok
+ff -40 vx=1.8: I = 5.5922e-09 A; L = 1.0263e-16 A; L/I = 1.835e-08; VB = 0.4633; testigo 40 pA leido 40.000 pA -> ok
+ff -40 vx=0.9: I = 2.4186e-09 A; L = 8.9375e-17 A; L/I = 3.695e-08; VB = 0.4633; testigo 40 pA leido 40.000 pA -> ok
+ss 85 vx=1.8: I = 5.5686e-09 A; L = 1.1437e-12 A; L/I = 2.054e-04; VB = 0.4955; testigo 40 pA leido 40.000 pA -> ok
+ss 85 vx=0.9: I = 3.1869e-09 A; L = 1.1404e-12 A; L/I = 3.578e-04; VB = 0.4955; testigo 40 pA leido 40.000 pA -> ok
+ff 85 vx=1.8: I = 8.9926e-08 A; L = 3.1606e-12 A; L/I = 3.515e-05; VB = 0.4190; testigo 40 pA leido 40.000 pA -> ok
+ff 85 vx=0.9: I = 4.4916e-08 A; L = 2.9341e-12 A; L/I = 6.533e-05; VB = 0.4190; testigo 40 pA leido 40.000 pA -> ok
+D1: L/I maximo por esquina = tt 27 2.53e-06, ff -40 3.70e-08, ss 85 3.58e-04, ff 85 6.53e-05
+D1 prediccion (banda 1e-6..1e-3 y mayor a 85 C): FALSA | corte <= 1e-3: cumple | 15*L/I maximo = 0.5368 % (muere si > 5 %)
+
+## Transitorio (D2-D5) y controles
+tt 27: control n1 frente al contrato: A +0.0000 %, B +0.0000 % -> ok
+  mutante mc: tA/tA(1) = 0.5012, B +0.2935 % -> ok | testigo wi (40 pA): -0.8830 % -> ok | testigo wc (1 fF): +0.6718 % -> ok
+  tA (us): N=1 30.8732, N=2 30.9508, N=4 31.1059, N=8 31.4162, N=16 32.0369
+  D2, % por rama extra: N=2 +0.2514, N=4 +0.2512, N=8 +0.2513, N=16 +0.2513 | tA(16)/tA(1) = 1.0377
+  D3, linealidad: incremento por rama N=16 frente a N=2 = -0.03 %
+  D4, salto de una carga: N=1 -0.8085 %, N=16 -0.8081 %, cambio relativo -0.04 %
+  D5, ln(tA/tB) N=16 menos N=1 = +0.01760 puntos de %
+ff -40: control n1 frente al contrato: A +0.0000 %, B +0.0000 % -> ok
+  mutante mc: tA/tA(1) = 0.5013, B +0.2858 % -> ok | testigo wi (40 pA): -1.2527 % -> ok | testigo wc (1 fF): +0.6458 % -> ok
+  tA (us): N=1 46.8842, N=2 46.9938, N=4 47.2131, N=8 47.6517, N=16 48.5292
+  D2, % por rama extra: N=2 +0.2338, N=4 +0.2338, N=8 +0.2339, N=16 +0.2339 | tA(16)/tA(1) = 1.0351
+  D3, linealidad: incremento por rama N=16 frente a N=2 = +0.06 %
+  D4, salto de una carga: N=1 -1.0029 %, N=16 -1.0019 %, cambio relativo -0.10 %
+  D5, ln(tA/tB) N=16 menos N=1 = +0.01706 puntos de %
+ss 85: control n1 frente al contrato: A +0.0000 %, B +0.0000 % -> ok
+  mutante mc: tA/tA(1) = 0.5019, B +0.2740 % -> ok | testigo wi (40 pA): -0.9610 % -> ok | testigo wc (1 fF): +0.6970 % -> ok
+  tA (us): N=1 31.1027, N=2 31.1772, N=4 31.3260, N=8 31.6233, N=16 32.2158
+  D2, % por rama extra: N=2 +0.2395, N=4 +0.2393, N=8 +0.2391, N=16 +0.2386 | tA(16)/tA(1) = 1.0358
+  D3, linealidad: incremento por rama N=16 frente a N=2 = -0.39 %
+  D4, salto de una carga: N=1 -0.6845 %, N=16 -0.6813 %, cambio relativo -0.46 %
+  D5, ln(tA/tB) N=16 menos N=1 = +0.01284 puntos de %
+ff 85: control n1 frente al contrato: A +0.0000 %, B +0.0000 % -> ok
+  mutante mc: tA/tA(1) = 0.5006, B +0.2725 % -> ok | testigo wi (40 pA): -0.0683 % -> ok | testigo wc (1 fF): +0.6469 % -> ok
+  tA (us): N=1 2.4888, N=2 2.4945, N=4 2.5058, N=8 2.5285, N=16 2.5740
+  D2, % por rama extra: N=2 +0.2282, N=4 +0.2282, N=8 +0.2282, N=16 +0.2282 | tA(16)/tA(1) = 1.0342
+  D3, linealidad: incremento por rama N=16 frente a N=2 = -0.00 %
+  D4, salto de una carga: N=1 -0.6328 %, N=16 -0.6321 %, cambio relativo -0.12 %
+  D5, ln(tA/tB) N=16 menos N=1 = +0.01555 puntos de %
+D2 prediccion (+0,05..+0,30 % por rama): cumplida | corte tA(16) <= 1,10 tA(1): cumple
+D3 prediccion (+-20 %): cumplida
+D4 prediccion (< 3 % relativo): cumplida | corte <= 5 %: cumple
+D5 prediccion (<= 0,02): cumplida | corte <= 0,0807: cumple
+
+## Todo abierto, 1,4 ms (D6)
+ss 85: control h00 XA_min 1.72945 frente al contrato +0.0000 % -> ok | a16: XA min 1.5765 V, XB min 1.5765 V, salidas max 0.000/0.000 V -> no cruza
+ff 85: control h00 XA_min 1.70882 frente al contrato +0.0000 % -> ok | a16: XA min 1.3201 V, XB min 1.3201 V, salidas max 0.001/0.001 V -> no cruza
+D6 prediccion (no cruza y XA min >= 1,2 V): cumplida | corte (no cruza): cumple
+
+## Veredicto
+Benchmark: valido
+SIGUE: un lector puede llevar hasta 16 ramas (cortes de D1, D2, D4, D5 y D6 en las 4 esquinas)

@@ -1,0 +1,35 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-03 etapa a · misfit-05 fuga dc · esquina tt 27 c. generado por gen_contrato.py (no editar a mano).
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+DC tt 27 vx=1.8 g=0 9.16788E-15 4.00092E-11 0.478317
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+DC tt 27 vx=1.8 g=1.8 6.76737E-09 6.80737E-09 0.478317
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+No. of Data Rows : 1
+DC tt 27 vx=0.9 g=0 8.68299E-15 4.00087E-11 0.478317
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+DC tt 27 vx=0.9 g=1.8 3.42947E-09 3.46947E-09 0.478317
+ngspice-44.2 done
+salida 0
