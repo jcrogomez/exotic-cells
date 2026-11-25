@@ -89,6 +89,7 @@ foreach t {A B} {
 # 3. capacitors, as xc19_channel_caps.tcl, everything below the readout cells moved down by D
 set D 1.60
 set WC 4.30 ; set LC 4.00 ; set NROW 11 ; set NFING 3 ; set WF 5.50 ; set LF 10.0 ; set PW 2.30 ; set PH 0.90
+if {[info exists ::env(NROW)]} { set NROW $::env(NROW) }   ;# MISFIT-09: rows of the VB filter (default 11 = 33 fingers)
 set gby0 [e -1.98 - $D] ; set gby1 [e -1.08 - $D]
 r metal1 -1.65 $gby0 28.60 $gby1
 # GND of each readout cell (tap strap) down to the bus

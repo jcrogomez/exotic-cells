@@ -1,0 +1,20 @@
+# MISFIT-09 · analiza_m9.py · B = macro v_hm (33 dedos), S = macro pequeno v_f3 (3 dedos). Tiempos desde T0 = 1 us
+tt 27: control hB frente al contrato: A +0.0000 %, B +0.0000 % -> ok
+  tA: B 30.8732 us, S 30.8832 us (+0.0324 %) | salto: B -0.8085 %, S -0.8089 % (+0.05 % rel.) | paso: B +0.9625 %, S +0.9621 % (-0.04 % rel.) | ln(tA/tB): -0.00033 puntos -> cumple
+  testigo (1 fF en XA del pequeno): +0.6716 % -> ok
+ff -40: control hB frente al contrato: A +0.0000 %, B +0.0000 % -> ok
+  tA: B 46.8842 us, S 46.8984 us (+0.0303 %) | salto: B -1.0029 %, S -1.0032 % (+0.03 % rel.) | paso: B +0.9676 %, S +0.9673 % (-0.03 % rel.) | ln(tA/tB): -0.00000 puntos -> cumple
+  testigo (1 fF en XA del pequeno): +0.6454 % -> ok
+ss 85: control hB frente al contrato: A +0.0000 %, B +0.0000 % -> ok
+  tA: B 31.1027 us, S 31.1124 us (+0.0312 %) | salto: B -0.6845 %, S -0.6849 % (+0.06 % rel.) | paso: B +0.9531 %, S +0.9525 % (-0.07 % rel.) | ln(tA/tB): -0.00033 puntos -> cumple
+  testigo (1 fF en XA del pequeno): +0.6968 % -> ok
+ff 85: control hB frente al contrato: A +0.0000 %, B +0.0000 % -> ok
+  tA: B 2.4888 us, S 2.4901 us (+0.0534 %) | salto: B -0.6328 %, S -0.6337 % (+0.14 % rel.) | paso: B +0.7787 %, S +0.7783 % (-0.05 % rel.) | ln(tA/tB): -0.00041 puntos -> cumple
+  testigo (1 fF en XA del pequeno): +0.6462 % -> ok
+S5 (4 esquinas): cumplida
+Benchmark (controles y testigo): valido
+Capacidad de VB (AC, tt 27; sin prediccion): C = -Im(V)/(2 pi f |V|^2) con 1 A de prueba
+  macro B a 1e+06 Hz: C = 10.156 pF; R paralelo = 679 kOhm
+  macro B a 1e+07 Hz: C = 10.156 pF; R paralelo = 675 kOhm
+  macro S a 1e+06 Hz: C = 0.958 pF; R paralelo = 679 kOhm
+  macro S a 1e+07 Hz: C = 0.958 pF; R paralelo = 677 kOhm
