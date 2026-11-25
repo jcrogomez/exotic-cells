@@ -1,0 +1,24 @@
+# XC-64 · analiza_cruces.py · limpio = solo reglas de presencia de toma (LU.x, nwell.4)
+
+## Caza por parejas, releida con el criterio corregido (posterior)
+  sub  mvndiff     mvpsubdiff  isla limpia en [0.000, 0.000]
+  sub  ndiff       psubdiff    isla limpia en [0.000, 0.000]
+  well mvpdiff     mvnsubdiff  isla limpia en [0.000, 0.000]
+  well pdiff       nsubdiff    isla limpia en [0.000, 0.000]
+  total: 4 (se esperaban 4)
+
+## Caza por cruce de bordes: 264 escaneos. A = rectangulo de 2 um; B = 0,5 um, sobresale s de A
+parejas esperadas (con locali, metal1, o poly/nwell): 53 con puntos a caballo limpios; sin ninguno: 35 ['sub:locali/mvnsubdiff', 'sub:locali/mvpdiff', 'sub:locali/nsubdiff', 'sub:locali/nwell', 'sub:locali/pdiff', 'sub:metal1/mvnsubdiff', 'sub:metal1/mvpdiff', 'sub:metal1/nsubdiff']
+testigo (metal1 a caballo de ndiff, sustrato): 49 puntos limpios -> ok
+
+## Parejas NO esperadas con puntos a caballo limpios: 8
+  well A=mvnsubdiff  B=nwell       limpio para s en [0.01, 0.49] (49 de 49 puntos); B dentro: limpio; B fuera pegado: limpio; lejos: limpio
+  well A=mvpdiff     B=nwell       limpio para s en [0.01, 0.49] (49 de 49 puntos); B dentro: limpio; B fuera pegado: limpio; lejos: limpio
+  well A=nsubdiff    B=nwell       limpio para s en [0.01, 0.49] (49 de 49 puntos); B dentro: limpio; B fuera pegado: limpio; lejos: limpio
+  well A=nwell       B=mvnsubdiff  limpio para s en [0.01, 0.49] (49 de 49 puntos); B dentro: limpio; B fuera pegado: limpio; lejos: limpio
+  well A=nwell       B=mvpdiff     limpio para s en [0.01, 0.49] (49 de 49 puntos); B dentro: limpio; B fuera pegado: limpio; lejos: limpio
+  well A=nwell       B=nsubdiff    limpio para s en [0.01, 0.49] (49 de 49 puntos); B dentro: limpio; B fuera pegado: limpio; lejos: limpio
+  well A=nwell       B=pdiff       limpio para s en [0.01, 0.49] (49 de 49 puntos); B dentro: limpio; B fuera pegado: limpio; lejos: limpio
+  well A=pdiff       B=nwell       limpio para s en [0.01, 0.49] (49 de 49 puntos); B dentro: limpio; B fuera pegado: limpio; lejos: limpio
+
+Prediccion (ninguna pareja no esperada): FALSA: cada una se mira en el GDS antes de creerla

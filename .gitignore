@@ -65,3 +65,4 @@ instrument/misfit08/cocotb/
 # MISFIT-09: regeneracion de control del macro v_hm (identica a v_hm en dispositivos y capacidades)
 cells/xc19_slot_core_a2/v_ctlhm/
 cells/xc19_slot_core_a2/xc19_bias
+experiments/xc64_hunt/out/

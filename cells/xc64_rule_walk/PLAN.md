@@ -65,6 +65,14 @@ El punto legal más holgado de cada escalera. No se compara con ningún componen
 
 Lectura de cada escalera con el lector que le toque, en frío de fábrica y tras estrés (eje de tiempo del plan del tile).
 
+### 5.3 Hecho (2026-11-25): tres cazas de islas legales
+
+[`experiments/xc64_hunt/RESULTADOS.md`](../../experiments/xc64_hunt/RESULTADOS.md). Cuatro sondas a mano, 156 parejas de capas
+caminando la separación, y 264 parejas con una forma a caballo del borde de otra. **Ninguna isla nueva** con formas
+rectangulares de dos capas: solo la familia de XC-20, que tiene cuatro miembros (dos polaridades, baja y alta tensión). Lo de
+"más allá de la regla" no pasa el precheck en nada de lo probado. Siguiente: formas (anillo, codo, muesca, esquina), lo legal que
+se imprime distinto justo en la regla, y estructuras de tres capas con contactos.
+
 ## 6. Qué la mataría
 
 Que ninguna regla candidata tenga a la vez magnitud legible y tramo enviable más allá del valor de la regla. Entonces queda

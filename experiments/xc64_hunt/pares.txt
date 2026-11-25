@@ -1,0 +1,55 @@
+# XC-64 caza sistematica · analiza_pares.py · 156 escaneos
+escaneos incompletos: 0; parejas que nunca quedan limpias ni a 0,400: 10
+
+## Fusiones (una capa consigo misma; triviales)
+  sub  locali      limpio en [0.000, 0.000]
+  sub  metal1      limpio en [0.000, 0.000]
+  sub  mvndiff     limpio en [0.000, 0.000]
+  sub  mvnsubdiff  limpio en [0.000, 0.000]
+  sub  mvpdiff     limpio en [0.000, 0.000]
+  sub  mvpsubdiff  limpio en [0.000, 0.000]
+  sub  ndiff       limpio en [0.000, 0.000]
+  sub  nsubdiff    limpio en [0.000, 0.000]
+  sub  nwell       limpio en [0.000, 0.000]
+  sub  pdiff       limpio en [0.000, 0.000]
+  sub  poly        limpio en [0.000, 0.000]
+  sub  psubdiff    limpio en [0.000, 0.000]
+  well locali      limpio en [0.000, 0.000]
+  well metal1      limpio en [0.000, 0.000]
+  well mvndiff     limpio en [0.000, 0.000]
+  well mvnsubdiff  limpio en [0.000, 0.000]
+  well mvpdiff     limpio en [0.000, 0.000]
+  well mvpsubdiff  limpio en [0.000, 0.000]
+  well ndiff       limpio en [0.000, 0.000]
+  well nsubdiff    limpio en [0.000, 0.000]
+  well pdiff       limpio en [0.000, 0.000]
+  well poly        limpio en [0.000, 0.000]
+  well psubdiff    limpio en [0.000, 0.000]
+
+## Islas entre capas distintas
+  sub  mvndiff     mvnsubdiff  limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: MV Diffusion to MV tap spacing < 0.27um (diff/tap.3)
+  sub  mvndiff     mvpdiff     limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: MV Diffusion spacing < 0.3um (diff/tap.15a)
+  sub  mvndiff     mvpsubdiff  limpio en [0.000, 0.000]  <- esperada; reglas que la rodean: MV Diffusion to MV tap spacing < 0.27um (diff/tap.3); MV N-Diffusion to MV P-tap spacing < 0.125um across butted j; MV N-Diffusion to MV P-tap spacing < 0.125um across butted j
+  sub  mvpdiff     mvnsubdiff  limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: MV Diffusion to MV tap spacing < 0.27um (diff/tap.3); MV P-Diffusion to MV N-tap spacing < 0.125um across butted j; MV P-Diffusion to MV N-tap spacing < 0.125um across butted j
+  sub  ndiff       nsubdiff    limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: Diffusion spacing < 0.27um (diff/tap.3)
+  sub  ndiff       pdiff       limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: Diffusion spacing < 0.27um (diff/tap.3)
+  sub  ndiff       psubdiff    limpio en [0.000, 0.000]  <- esperada; reglas que la rodean: Diffusion spacing < 0.27um (diff/tap.3); N-Diffusion to P-tap spacing < 0.125um across butted junctio; N-Diffusion to P-tap spacing < 0.125um across butted junctio
+  sub  pdiff       nsubdiff    limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: Diffusion spacing < 0.27um (diff/tap.3); P-Diffusion to N-tap spacing < 0.125um across butted junctio; P-Diffusion to N-tap spacing < 0.125um across butted junctio
+  sub  pdiff       psubdiff    limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: Diffusion spacing < 0.27um (diff/tap.3)
+  sub  psubdiff    nsubdiff    limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: Diffusion spacing < 0.27um (diff/tap.3)
+  well mvndiff     mvnsubdiff  limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: MV Diffusion to MV tap spacing < 0.27um (diff/tap.3)
+  well mvndiff     mvpdiff     limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: MV Diffusion spacing < 0.3um (diff/tap.15a)
+  well mvndiff     mvpsubdiff  limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: MV Diffusion to MV tap spacing < 0.27um (diff/tap.3); MV N-Diffusion to MV P-tap spacing < 0.125um across butted j; MV N-Diffusion to MV P-tap spacing < 0.125um across butted j
+  well mvpdiff     mvnsubdiff  limpio en [0.000, 0.000]  <- esperada; reglas que la rodean: MV Diffusion to MV tap spacing < 0.27um (diff/tap.3); MV P-Diffusion to MV N-tap spacing < 0.125um across butted j; MV P-Diffusion to MV N-tap spacing < 0.125um across butted j
+  well ndiff       nsubdiff    limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: Diffusion spacing < 0.27um (diff/tap.3)
+  well ndiff       pdiff       limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: Diffusion spacing < 0.27um (diff/tap.3)
+  well ndiff       psubdiff    limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: Diffusion spacing < 0.27um (diff/tap.3); N-Diffusion to P-tap spacing < 0.125um across butted junctio; N-Diffusion to P-tap spacing < 0.125um across butted junctio
+  well pdiff       nsubdiff    limpio en [0.000, 0.000]  <- esperada; reglas que la rodean: Diffusion spacing < 0.27um (diff/tap.3); P-Diffusion to N-tap spacing < 0.125um across butted junctio; P-Diffusion to N-tap spacing < 0.125um across butted junctio
+  well pdiff       psubdiff    limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: Diffusion spacing < 0.27um (diff/tap.3)
+  well psubdiff    nsubdiff    limpio en [0.000, 0.000]  <- NO ESPERADA; reglas que la rodean: Diffusion spacing < 0.27um (diff/tap.3)
+
+## Veredicto
+testigo XC-20 (pdiff, nsubdiff en pozo, isla en 0): aparece
+islas esperadas que faltan: ninguna
+islas no esperadas: 16 -> sub:mvndiff/mvnsubdiff, sub:mvndiff/mvpdiff, sub:mvpdiff/mvnsubdiff, sub:ndiff/nsubdiff, sub:ndiff/pdiff, sub:pdiff/nsubdiff, sub:pdiff/psubdiff, sub:psubdiff/nsubdiff, well:mvndiff/mvnsubdiff, well:mvndiff/mvpdiff, well:mvndiff/mvpsubdiff, well:ndiff/nsubdiff, well:ndiff/pdiff, well:ndiff/psubdiff, well:pdiff/psubdiff, well:psubdiff/nsubdiff
+Prediccion (exactamente las cuatro esperadas): FALSA

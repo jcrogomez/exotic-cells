@@ -1,0 +1,15 @@
+inicio 2026-11-25 13:13:03 EST
+  cd /work/experiments/xc64_hunt && rm -rf out && mkdir out
+  for p in pn_space m1_width tfet_n tfet_p vt_edge well_edge; do
+    PROBE=probes/$p.tcl OUT=out timeout 600 magic -dnull -noconsole -rcfile /pdk/libs.tech/magic/sky130A.magicrc /work/residual/drc_edge/scan.tcl > out/$p.magic.log 2>&1
+    pts=$(awk -F";" "NR>1 && (\$2==0 || (NR%8)==0) {print \$1}" out/$p.magic.csv | tr "\n" " ")
+    timeout 1500 bash /work/residual/drc_edge/klayout_points.sh out $p $pts
+    echo "$p: $(($(wc -l < out/$p.magic.csv)-1)) puntos, $(echo $pts | wc -w) por KLayout"
+  done'
+pn_space: 81 puntos, 34 por KLayout
+m1_width: 21 puntos, 14 por KLayout
+tfet_n: 81 puntos, 28 por KLayout
+tfet_p: 81 puntos, 28 por KLayout
+vt_edge: 101 puntos, 14 por KLayout
+well_edge: 151 puntos, 34 por KLayout
+fin 2026-11-25 13:24:22 EST

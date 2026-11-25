@@ -162,6 +162,7 @@ his note of 2026-11-16 to keep them until a time readout was shown to answer it.
 | Seats | Cell | What silicon would show | Return | State | Next test |
 |---|---|---|---|---|---|
 | 5 | **XC-20** p+ touching n+, at 0, 0.27, 0.54, 1.08 µm and a no-junction cell ("the tunnel") | Reverse current at zero gap far above the 0.27 µm cell, nearly flat with temperature | P, N | Physics verified to order; abutment passes the precheck; matrix approved 2026-11-16, macro not frozen | R2, C4 |
+| — | XC-20 variants found by the rule walk | The same abutted junction is legal in four forms: p+/n+ in a well, n+/p+ in substrate, and both with high-voltage diffusions | P, N | Found 2026-11-25 by enumeration ([XC-64 hunts](../experiments/xc64_hunt/RESULTADOS.md)); not drawn | C4 |
 | 3 | **XC-63** contact on unimplanted silicon | A contact that rectifies: a Schottky diode from standard layers | P | Verified that the PDK ships seven such cells; no cell of ours | C5 |
 | 3 | **XC-39** polysilicon resistor heating itself | Resistance drift with its own power | N | Coefficient read from the model card | C5 |
 | 3 | **XC-52 stage 0** gated-diode (DCIV) trap count before and after on-chip stress ("the ghost's first step") | Whether 1.8 V stress creates interface traps at all | N | Design note; the spin cell itself leans dead until this is known | C7 |
@@ -281,7 +282,7 @@ is the sketch, not the frozen criterion.
 |---|---|---|
 | **G1** regenerate | Does the generator rebuild today's reader 1a matrix from a table, with identical DRC/LVS results? | hand edits are needed |
 | **G2** a second table | Does a different table (the XC-20 separation matrix) come out DRC/LVS/precheck clean with no hand edits? | each family needs its own generator |
-| **G3** rule walk, first ladder | Diffusion beside a gate, stepped across poly.7: which points pass Magic, both KLayout decks and the precheck, and is there a readable quantity? | no point past the rule is submittable *and* nothing readable changes inside it |
+| **G3** rule walk | Three island hunts done ([report](../experiments/xc64_hunt/RESULTADOS.md)): with two-layer rectangles Magic leaves no legal island beyond the XC-20 family, which has four members (two polarities, low and high voltage); nothing past a rule passes the precheck. Next: shapes (ring, bent and notched gates, corners), legal shapes that print differently at the rule value, three-layer structures with contacts | a hunt over shapes also finds nothing submittable *and* no legal-side ladder has a readable quantity |
 | **G4** stress in place | Stressing one seat moves its neighbours' readings by less than the trap step (supply transfer is 1.27 % per mA) | neighbours move more than that |
 | **G5** host program | Run against the RTL simulation, it produces valid atlas records for every seat and flags an injected fault | records cannot be produced from the pins alone |
 
