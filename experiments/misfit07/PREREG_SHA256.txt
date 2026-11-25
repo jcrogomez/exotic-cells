@@ -1,0 +1,5 @@
+04383b9bc2c61ac7fe5d95acab30d0a712dabbd8f51617c7fd5957bd5ff7b737  cells/preregistros/MISFIT-07_2026-11-25_filtro_de_polarizacion.md
+# sellado 2026-11-25 12:12:25 EST, antes de escribir gen_m7.py
+c59e98f0d8bd791c331e6a4af095b902e9ef48e4ff5731ae7778046dcab0bf0a  cells/preregistros/MISFIT-07_2026-11-25_filtro_de_polarizacion_enmienda1.md
+# enmienda 1 sellada 2026-11-25 12:24:47 EST, antes de escribir gen_m7b.py
+# gen_m7.py: tras su corrida solo se le anadio 'if __name__ == "__main__"' para poder importarlo desde gen_m7b.py; los decks tr_* no se regeneraron

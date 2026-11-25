@@ -1,0 +1,8 @@
+2637aece4ed49d894227f38a58449ce3726aebfc601172251f7708bc3020959c  cells/preregistros/MISFIT-08_2026-11-25_dieta_del_nucleo.md
+# sellado 2026-11-25 12:29:46 EST, antes de escribir el RTL lean
+# 12:36 humo del banco (20 000 y 300 000 ciclos), antes de la corrida que cuenta. Lo que salio y lo que cambie:
+#  - el banco no sembraba ($random sin semilla): las 5 semillas eran la misma. Corregido.
+#  - el primer RTL lean NO era equivalente: dejaba leer la cuenta en marcha (el original da 0 hasta el cruce). Corregido en el
+#    RTL (la cuenta solo es visible con su lado parado). El banco lo vio; el mutante tambien se ve.
+#  - estimulo: ventanas de 64 a 2048 ciclos (antes 1 a 2048) para que haya suficientes medidas terminadas.
+#  - conteo generico de Yosys en el humo: 142 -> 118 flip-flops, pero 991 -> 1435 celdas. L5 puede salir falsa; no se toca.

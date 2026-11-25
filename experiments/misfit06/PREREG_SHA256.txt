@@ -1,0 +1,6 @@
+b1b68ba5faf0509ef50739e4c765629e72b5fb833cc2c66aac12b0968ca7e21c  cells/preregistros/MISFIT-06_2026-11-25_area_del_nucleo.md
+# sellado 2026-11-25 11:48:42 EST, antes de lanzar ninguna corrida
+# 11:48 primer lanzamiento: las 3 corridas salieron con rc=2 en segundos (faltaba crear runs/core; fallo del script, ninguna corrio). Corregido y relanzado; el prerregistro no cambia.
+dc18522a2f4c5f964818e8ad56c0a33f02b17d9d7e6943530615c8a1dad48220  cells/preregistros/MISFIT-06_2026-11-25_area_del_nucleo_enmienda1.md
+# enmienda 1 sellada 2026-11-25 12:01:45 EST, antes de lanzar obs
+# 12:24 m2: el tope de 20 min (gtimeout 1200) NO corto la corrida; a los 28 min seguia en la iteracion 10 del rutado detallado con 3258 violaciones. La pare a mano (docker stop). Cuenta como 'no termina' dentro del tope. Fallo mio: gtimeout no mata el contenedor.

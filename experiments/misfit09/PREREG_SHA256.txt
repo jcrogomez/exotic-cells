@@ -1,0 +1,4 @@
+8ae08723a3422690fdaf2a2c54fdb6b08a3bc23f19b89fe78f90ea3c55e93296  cells/preregistros/MISFIT-09_2026-11-25_lector_pequeno.md
+# sellado 2026-11-25 12:48:44 EST, antes de tocar el generador
+# 12:49 dibujo y chequeos hechos (S1-S4). Nota: el mutante del LVS se detecta por "Property errors were found"
+#  (netgen funde los dedos en paralelo y sigue diciendo "match uniquely"); el resumen de check.sh no mira esa linea.

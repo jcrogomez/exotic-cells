@@ -1,0 +1,4 @@
+ad610a162c4f79295ee23782675cc1339baa234b6dabe91d5682bc0ee48bbf8c  cells/preregistros/MISFIT-05_2026-11-25_multiplexado_dut.md
+efe7c8955ec7d738e500ad070724305dd69bf847a9ccd4c85abbe6980f3fc42f  prereg_calc.py
+4c179fda721b04f7fb34d764531819b7594ac88e9b4322f5bc61a54845056867  prereg_calc.txt
+# sellado 2026-11-25 11:11:38 EST, antes de escribir gen_m5.py o de correr nada

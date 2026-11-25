@@ -1,0 +1,5 @@
+# MISFIT-05 prereg_calc: de contrato.txt (v_hm). tA desde T0 = 1 us.
+tt 27: tA = 30.873 us; VB = 0.4783 V; trampa = -0.808 %; L/I por rama abierta: de h00-f6 = 0.00e+00 (caida 0.00 mV); cota subumbral = 4.9e-06..7.6e-05; 15 ramas, con el mayor de los tres = 0.114 %
+ff -40: tA = 46.884 us; VB = 0.4633 V; trampa = -1.003 %; L/I por rama abierta: de h00-f6 = 0.00e+00 (caida 0.00 mV); cota subumbral = 7.3e-06..1.0e-04; 15 ramas, con el mayor de los tres = 0.157 %
+ss 85: tA = 31.103 us; VB = 0.4955 V; trampa = -0.685 %; L/I por rama abierta: de h00-f6 = 2.43e-04 (caida 9.85 mV); cota subumbral = 3.1e-06..5.3e-05; 15 ramas, con el mayor de los tres = 0.365 %
+ff 85: tA = 2.489 us; VB = 0.4190 V; trampa = -0.633 %; L/I por rama abierta: de h00-f6 = 5.03e-05 (caida 25.43 mV); cota subumbral = 2.4e-05..2.7e-04; 15 ramas, con el mayor de los tres = 0.403 %

@@ -1,0 +1,6 @@
+9b573f913bf2b771a45559c1660cb6466c94d6aeb4dfd463217a884698f6dbe6  cells/preregistros/MISFIT-10_2026-11-25_altura_del_nucleo.md
+# sellado 2026-11-25 12:56:33 EST, antes de lanzar ninguna corrida
+# 12:57 la corrida lean de 20 filas fallo en 15 s: [GPL-0301] ocupacion 135 % en la colocacion global. Mi cuenta de ~97 % no contaba los margenes del bloque ni el relleno de celdas del colocador. H3 se cumple, pero por un motivo mas tosco del previsto; con esa escala, 26 y 24 filas tambien pueden caer en lo mismo. No se toca nada.
+f217d5347a8edecc7e1cc16fea87b1e80f03564f944f6754bde105fc03cfe3bd  cells/preregistros/MISFIT-10_2026-11-25_altura_del_nucleo_enmienda1.md
+# enmienda 1 sellada 2026-11-25 13:00:19 EST, antes de lanzar la segunda tanda
+# nota: un comando lanzado desde la carpeta equivocada dejo un archivo suelto local_flow/PREREG_SHA256.txt (una linea, sin valor). No se borra sin permiso de Juan.
