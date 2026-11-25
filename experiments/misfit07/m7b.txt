@@ -1,0 +1,38 @@
+# MISFIT-07 enmienda 1 · analiza_m7b.py · K = golpe sobre VB (mV), Sa = salto en lectura asincrona, Da = desplazamiento de tA(a) frente a k = 33
+tt 27: control h33 frente al contrato: A +0.0000 %, B +0.0000 % -> ok
+  k=33: tA 117.241 us, tB 30.855 us (A/B = 3.80); K 0.0650 mV; Sa -0.8163 % (cambio +0.00 %); Da +0.0000 % -> cumple
+  k=16: tA 117.242 us, tB 30.859 us (A/B = 3.80); K 0.0750 mV; Sa -0.8163 % (cambio -0.00 %); Da +0.0009 % -> cumple
+  k= 8: tA 117.242 us, tB 30.861 us (A/B = 3.80); K 0.0810 mV; Sa -0.8163 % (cambio -0.00 %); Da +0.0009 % -> cumple
+  k= 4: tA 117.242 us, tB 30.862 us (A/B = 3.80); K 0.0860 mV; Sa -0.8163 % (cambio -0.00 %); Da +0.0009 % -> cumple
+  k= 2: tA 117.242 us, tB 30.862 us (A/B = 3.80); K 0.0890 mV; Sa -0.8163 % (cambio -0.00 %); Da +0.0009 % -> cumple
+  k= 0: tA 117.242 us, tB 30.863 us (A/B = 3.80); K 0.2470 mV; Sa -0.8163 % (cambio -0.00 %); Da +0.0009 % -> cumple
+  G1 en esta esquina: K(0)/K(33) = 3.8 -> las variantes difieren
+ff -40: control h33 frente al contrato: A +0.0000 %, B +0.0000 % -> ok
+  k=33: tA 245.403 us, tB 46.846 us (A/B = 5.24); K 0.0510 mV; Sa -1.0110 % (cambio +0.00 %); Da +0.0000 % -> cumple
+  k=16: tA 245.403 us, tB 46.852 us (A/B = 5.24); K 0.0580 mV; Sa -1.0110 % (cambio +0.00 %); Da +0.0000 % -> cumple
+  k= 8: tA 245.403 us, tB 46.855 us (A/B = 5.24); K 0.0640 mV; Sa -1.0106 % (cambio -0.04 %); Da +0.0000 % -> cumple
+  k= 4: tA 245.403 us, tB 46.856 us (A/B = 5.24); K 0.0670 mV; Sa -1.0106 % (cambio -0.04 %); Da +0.0000 % -> cumple
+  k= 2: tA 245.403 us, tB 46.856 us (A/B = 5.24); K 0.0700 mV; Sa -1.0106 % (cambio -0.04 %); Da +0.0000 % -> cumple
+  k= 0: tA 245.403 us, tB 46.857 us (A/B = 5.24); K 0.2510 mV; Sa -1.0106 % (cambio -0.04 %); Da +0.0000 % -> cumple
+  G1 en esta esquina: K(0)/K(33) = 4.9 -> las variantes difieren
+ss 85: control h33 frente al contrato: A +0.0000 %, B +0.0000 % -> ok
+  k=33: tA 96.093 us, tB 31.089 us (A/B = 3.09); K 0.0610 mV; Sa -0.6891 % (cambio +0.00 %); Da +0.0000 % -> cumple
+  k=16: tA 96.094 us, tB 31.093 us (A/B = 3.09); K 0.0730 mV; Sa -0.6891 % (cambio -0.00 %); Da +0.0015 % -> cumple
+  k= 8: tA 96.094 us, tB 31.094 us (A/B = 3.09); K 0.0820 mV; Sa -0.6890 % (cambio -0.02 %); Da +0.0018 % -> cumple
+  k= 4: tA 96.094 us, tB 31.095 us (A/B = 3.09); K 0.0870 mV; Sa -0.6891 % (cambio -0.00 %); Da +0.0020 % -> cumple
+  k= 2: tA 96.095 us, tB 31.096 us (A/B = 3.09); K 0.0890 mV; Sa -0.6891 % (cambio -0.00 %); Da +0.0021 % -> cumple
+  k= 0: tA 96.095 us, tB 31.096 us (A/B = 3.09); K 0.2450 mV; Sa -0.6891 % (cambio -0.00 %); Da +0.0022 % -> cumple
+  G1 en esta esquina: K(0)/K(33) = 4.0 -> las variantes difieren
+ff 85: control h33 frente al contrato: A +0.0000 %, B +0.0000 % -> ok
+  k=33: tA 7.081 us, tB 2.487 us (A/B = 2.85); K 0.0790 mV; Sa -0.6428 % (cambio +0.00 %); Da +0.0000 % -> cumple
+  k=16: tA 7.082 us, tB 2.488 us (A/B = 2.85); K 0.0910 mV; Sa -0.6426 % (cambio -0.03 %); Da +0.0073 % -> cumple
+  k= 8: tA 7.082 us, tB 2.488 us (A/B = 2.85); K 0.1000 mV; Sa -0.6425 % (cambio -0.05 %); Da +0.0100 % -> cumple
+  k= 4: tA 7.082 us, tB 2.488 us (A/B = 2.85); K 0.1030 mV; Sa -0.6423 % (cambio -0.08 %); Da +0.0109 % -> cumple
+  k= 2: tA 7.082 us, tB 2.488 us (A/B = 2.85); K 0.1050 mV; Sa -0.6423 % (cambio -0.08 %); Da +0.0112 % -> cumple
+  k= 0: tA 7.082 us, tB 2.489 us (A/B = 2.85); K 0.2660 mV; Sa -0.6423 % (cambio -0.08 %); Da +0.0114 % -> cumple
+  G1 en esta esquina: K(0)/K(33) = 3.4 -> las variantes difieren
+G1 (testigo, 4 esquinas): cumplida
+G2-G3 (k >= 4 cumple en las 4 esquinas): cumplidas; por k: k=33 si, k=16 si, k=8 si, k=4 si, k=2 si, k=0 si
+Benchmark: valido
+Corte: 0 dedos = 0 um2 de puerta
+SIGUE: el filtro cabe en la franja (corte <= 8)
