@@ -1,0 +1,16 @@
+# MISFIT-10 · analiza_m10.py · 'limpio' = termina, DRC Magic 0, LVS 0, 0 violaciones de setup y hold, 0 um de met4 de senal en la obstruccion
+lean 28 filas (76.16 um): NO cierra (GPL-0302 Target density 0.6500 is too low  openroad.py:314 for the available free area.)
+lean 26 filas (70.72 um): NO cierra (GPL-0301 Utilization 101.553 % exceeds     openroad.py:312 100%.)
+lean 24 filas (65.28 um): NO cierra (GPL-0301 Utilization 110.799 % exceeds     openroad.py:312 100%.)
+lean 22 filas (59.84 um): NO cierra (GPL-0301 Utilization 121.898 % exceeds     openroad.py:312 100%.)
+lean 20 filas (54.40 um): NO cierra (GPL-0301 Utilization 135.467 % exceeds     openroad.py:312 100%.)
+orig 26 filas (70.72 um): NO cierra (GPL-0302 Target density 0.7000 is too low  openroad.py:314 for the available free area.)
+orig 24 filas (65.28 um): NO cierra (GPL-0301 Utilization 107.239 % exceeds     openroad.py:312 100%.)
+orig 22 filas (59.84 um): NO cierra (GPL-0301 Utilization 117.981 % exceeds     openroad.py:312 100%.)
+H1 (lean limpio a 28 y 26): FALSA
+H2 (lean limpio a 24): FALSA
+H3 (testigo: lean no cierra a 20): cumplida
+H4 (original limpio a 26): FALSA
+Minimo que cierra limpio: lean None filas; original None filas (el original solo se probo a 26, 24 y 22; a 32 cierra, MISFIT-06)
+H5 (lean 2 filas por debajo del original): FALSA o no decidible con estos puntos
+Benchmark: INVALIDO
