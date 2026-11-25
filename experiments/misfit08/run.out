@@ -1,0 +1,23 @@
+  cd /work/misfit08 && rm -rf cocotb && mkdir cocotb && cp ../test/test_misfit.py cocotb/ &&
+  printf "SIM ?= icarus\nTOPLEVEL_LANG ?= verilog\nVERILOG_SOURCES = /work/models/misfit_cell_slot.v /work/misfit08/misfit_core.v /work/rtl/tt_um_misfit.v\nTOPLEVEL = tt_um_misfit\nMODULE = test_misfit\nCOCOTB_HDL_TIMEUNIT = 1ns\nCOCOTB_HDL_TIMEPRECISION = 1ps\ninclude \$(shell cocotb-config --makefiles)/Makefile.sim\n" > cocotb/Makefile &&
+  (cd cocotb && timeout 1200 make > ../cocotb.txt 2>&1; grep -E "TESTS=|FAIL" ../cocotb.txt | tail -3)
+  for v in lean mut; do
+    iverilog -g2012 -o eq_$v.vvp eq_tb.v ../rtl/misfit_core.v eq_$v.v || exit 1
+    for s in 1 2 3 4 5; do echo "$v $(timeout 1200 vvp -n eq_$v.vvp +seed=$s +cycles=$CYC | grep -E "^EQ|MISMATCH" | tail -1)"; done
+  done > eq.txt; cat eq.txt
+  yosys -q -p "read_verilog misfit_core.v; synth -top misfit_core; tee -o synth_lean.txt stat" > /dev/null 2>&1
+  yosys -q -p "read_verilog ../rtl/misfit_core.v; synth -top misfit_core; tee -o synth_ref.txt stat" > /dev/null 2>&1
+  for f in synth_ref.txt synth_lean.txt; do echo "$f $(grep -E "Number of cells" $f | tail -1) dff: $(grep -E "DFF" $f | awk "{s+=\$2} END {print s}")"; done'
+                                                          ** TESTS=13 PASS=13 FAIL=0 SKIP=0                               14668673.01          38.42     381786.00  **
+lean EQ 1 2000000 0 2158 1865 251 752047 1774
+lean EQ 2 2000000 0 2099 1829 236 750054 1665
+lean EQ 3 2000000 0 2143 1828 254 752489 1693
+lean EQ 4 2000000 0 2154 1885 259 752999 1653
+lean EQ 5 2000000 0 2135 1819 254 750229 1667
+mut EQ 1 2000000 38519 2158 1865 251 752047 1774
+mut EQ 2 2000000 37895 2099 1829 236 750054 1665
+mut EQ 3 2000000 37313 2143 1828 254 752489 1693
+mut EQ 4 2000000 36728 2154 1885 259 752999 1653
+mut EQ 5 2000000 37585 2135 1819 254 750229 1667
+synth_ref.txt    Number of cells:                991 dff: 142
+synth_lean.txt    Number of cells:               1482 dff: 118

@@ -1,0 +1,89 @@
+rm -f results.xml
+"make" -f Makefile results.xml
+make[1]: Entering directory '/work/misfit08/cocotb'
+mkdir -p sim_build
+/foss/tools/bin/iverilog -o sim_build/sim.vvp -D COCOTB_SIM=1 -s tt_um_misfit -g2012 -f sim_build/cmds.f  /work/models/misfit_cell_slot.v /work/misfit08/misfit_core.v /work/rtl/tt_um_misfit.v
+rm -f results.xml
+MODULE=test_misfit TESTCASE= TOPLEVEL=tt_um_misfit TOPLEVEL_LANG=verilog \
+         /foss/tools/bin/vvp -M /usr/local/lib/python3.12/dist-packages/cocotb/libs -m libcocotbvpi_icarus   sim_build/sim.vvp  
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:79   in set_program_name_in_venv        Did not detect Python virtual environment. Using system-wide Python interpreter
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+     0.00ns INFO     cocotb                             Running on Icarus Verilog version 13.0 (devel)
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /usr/local/lib/python3.12/dist-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1795628198
+     0.00ns INFO     cocotb.regression                  Found test test_misfit.t01_reset_is_safe
+     0.00ns INFO     cocotb.regression                  Found test test_misfit.t02_register_readback
+     0.00ns INFO     cocotb.regression                  Found test test_misfit.t03_refused_when_not_armed_or_disabled
+     0.00ns INFO     cocotb.regression                  Found test test_misfit.t04_selftest_internal_reference
+     0.00ns INFO     cocotb.regression                  Found test test_misfit.t05_only_the_selected_slot_is_touched
+     0.00ns INFO     cocotb.regression                  Found test test_misfit.t06_acquisition_and_resolution
+     0.00ns INFO     cocotb.regression                  Found test test_misfit.t07_calibration_seen_cell_not
+     0.00ns INFO     cocotb.regression                  Found test test_misfit.t08_twin_single_and_simultaneous
+     0.00ns INFO     cocotb.regression                  Found test test_misfit.t09_fault_injection_and_isolation
+     0.00ns INFO     cocotb.regression                  Found test test_misfit.t10_timeout_and_recovery
+     0.00ns INFO     cocotb.regression                  Found test test_misfit.t11_abort_disarm_and_reset_mid_run
+     0.00ns INFO     cocotb.regression                  Found test test_misfit.t12_unknown_cell_is_classified
+     0.00ns INFO     cocotb.regression                  Found test test_misfit.t13_asynchronous_edge_phase_sweep
+     0.00ns INFO     cocotb.regression                  running t01_reset_is_safe (1/13)
+                                                          After reset nothing is armed, no slot is enabled, precharged or stimulated.
+   321.00ns INFO     cocotb.regression                  t01_reset_is_safe passed
+   321.00ns INFO     cocotb.regression                  running t02_register_readback (2/13)
+                                                          Every configuration register reads back what was written.
+  2062.00ns INFO     cocotb.regression                  t02_register_readback passed
+  2062.00ns INFO     cocotb.regression                  running t03_refused_when_not_armed_or_disabled (3/13)
+                                                          A start is refused, flagged, and touches no slot, unless the instrument is armed and the slot enabled.
+  5503.00ns INFO     cocotb.regression                  t03_refused_when_not_armed_or_disabled passed
+  5503.00ns INFO     cocotb.regression                  running t04_selftest_internal_reference (4/13)
+                                                          Channel 7 times a purely digital delay: counter, protocol and readout proven with every slot disabled.
+105624.00ns INFO     cocotb.regression                  t04_selftest_internal_reference passed
+105624.00ns INFO     cocotb.regression                  running t05_only_the_selected_slot_is_touched (5/13)
+                                                          During an acquisition on slot 2, slots 0, 1 and 3 see no precharge and no stimulus, enabled or not.
+112105.01ns INFO     cocotb.regression                  t05_only_the_selected_slot_is_touched passed
+112105.01ns INFO     cocotb.regression                  running t06_acquisition_and_resolution (6/13)
+                                                          A discharge time becomes a count; a 0.8 % step (one trap in the XC-19 budget) is resolved at 50 MHz.
+342026.01ns INFO     cocotb.regression                  t06_acquisition_and_resolution passed
+342026.01ns INFO     cocotb.regression                  running t07_calibration_seen_cell_not (7/13)
+                                                          The null that matters: calibration and reference answer, the cell does not, and the three are told apart.
+547447.01ns INFO     cocotb.regression                  t07_calibration_seen_cell_not passed
+547447.01ns INFO     cocotb.regression                  running t08_twin_single_and_simultaneous (8/13)
+                                                          Side A alone, side B alone, and both in the same window.
+758988.01ns INFO     cocotb.regression                  t08_twin_single_and_simultaneous passed
+758988.01ns INFO     cocotb.regression                  running t09_fault_injection_and_isolation (9/13)
+                                                          A slot whose output is stuck or unknown is flagged, can be excluded, and does not disturb the others.
+977389.01ns INFO     cocotb.regression                  t09_fault_injection_and_isolation passed
+977389.01ns INFO     cocotb.regression                  running t10_timeout_and_recovery (10/13)
+                                                          A cell slower than the window is reported as such, and the next acquisition is unaffected.
+6013310.01ns INFO     cocotb.regression                  t10_timeout_and_recovery passed
+6013310.01ns INFO     cocotb.regression                  running t11_abort_disarm_and_reset_mid_run (11/13)
+                                                           Abort, disarm and reset each stop a running acquisition and leave every slot inert.
+6043751.01ns INFO     cocotb.regression                  t11_abort_disarm_and_reset_mid_run passed
+6043751.01ns INFO     cocotb.regression                  running t12_unknown_cell_is_classified (12/13)
+                                                           An unknown cell is interrogated by widening the window: fast, slow, silent or stuck, with no prior assumption.
+14325392.01ns INFO     cocotb.regression                  t12_unknown_cell_is_classified passed
+14325392.01ns INFO     cocotb.regression                  running t13_asynchronous_edge_phase_sweep (13/13)
+                                                            An edge arriving at every phase of the clock (1 ns steps over two periods, and 0.1 ns steps around a clock edge)
+                                                            is captured once, the count never decreases as the edge moves later, and it moves by exactly one per period.
+                                                            Logic simulation has no metastability: this shows the capture logic is sound, not what the failure rate is.
+14668673.01ns INFO     cocotb.tt_um_misfit                phase sweep counts: [301, 302, 302, 302, 302, 302, 302, 302, 302, 302, 302, 302, 302, 302, 302, 302, 302, 302, 302, 302, 302, 303, 303, 303, 303, 303, 303, 303, 303, 303, 303, 303, 303, 303, 303, 303, 303, 303, 303, 303, 303]
+14668673.01ns INFO     cocotb.regression                  t13_asynchronous_edge_phase_sweep passed
+14668673.01ns INFO     cocotb.regression                  ************************************************************************************************************
+                                                          ** TEST                                                STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                          ************************************************************************************************************
+                                                          ** test_misfit.t01_reset_is_safe                        PASS         321.00           0.00     118487.70  **
+                                                          ** test_misfit.t02_register_readback                    PASS        1741.00           0.00     501806.45  **
+                                                          ** test_misfit.t03_refused_when_not_armed_or_disabled   PASS        3441.00           0.01     309460.19  **
+                                                          ** test_misfit.t04_selftest_internal_reference          PASS      100121.00           0.21     480217.73  **
+                                                          ** test_misfit.t05_only_the_selected_slot_is_touched    PASS        6481.00           0.02     392238.26  **
+                                                          ** test_misfit.t06_acquisition_and_resolution           PASS      229921.00           0.47     492467.68  **
+                                                          ** test_misfit.t07_calibration_seen_cell_not            PASS      205421.00           0.41     496603.21  **
+                                                          ** test_misfit.t08_twin_single_and_simultaneous         PASS      211541.00           0.44     480507.80  **
+                                                          ** test_misfit.t09_fault_injection_and_isolation        PASS      218401.00           0.50     440188.92  **
+                                                          ** test_misfit.t10_timeout_and_recovery                 PASS     5035921.00          11.13     452647.45  **
+                                                          ** test_misfit.t11_abort_disarm_and_reset_mid_run       PASS       30441.00           0.07     424273.72  **
+                                                          ** test_misfit.t12_unknown_cell_is_classified           PASS     8281641.00          23.97     345484.42  **
+                                                          ** test_misfit.t13_asynchronous_edge_phase_sweep        PASS      343281.00           0.91     376690.31  **
+                                                          ************************************************************************************************************
+                                                          ** TESTS=13 PASS=13 FAIL=0 SKIP=0                               14668673.01          38.42     381786.00  **
+                                                          ************************************************************************************************************
+                                                          
+make[1]: Leaving directory '/work/misfit08/cocotb'
