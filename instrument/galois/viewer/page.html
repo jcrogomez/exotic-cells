@@ -1,0 +1,676 @@
+<!doctype html>
+<!--
+  SPDX-License-Identifier: Apache-2.0
+  Galois (MISFIT-04): the tile as built and what has been checked on it, step by step.
+  One self-contained file: no external requests. Built from instrument/galois/viewer/ by build.py; the data comes from extract.py.
+  The form (one screen, steps along the top, the layout at true scale with whatever is not the step's subject greyed out) is
+  modelled on the Tiny Breakout physical design tutorial by Alexei Zverovitch (github.com/zvea/tiny-breakout). No code is shared.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Galois: the MISFIT-04 tile, step by step</title>
+<script>
+(function () {
+  var t = null;
+  try { t = localStorage.getItem("galois-theme"); } catch (e) {}
+  if (t !== "light" && t !== "dark") t = window.matchMedia && matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", t);
+})();
+</script>
+<style>
+:root {
+  --bg: #ffffff; --ink: #1b1d1f; --muted: #5d6369; --rule: #c9cdd1; --bar: #eef0f2; --focus: #1a56c4;
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --stage: #f3f4f6; --die: #d9dde2; --die-edge: #7d8792; --core: #fbfbfc; --grey: #aab2bb;
+  --logic: #d9b662; --ff: #2f9a8b; --buf: #d64f98; --fill: #b9c1ca; --tap: #8a95a1; --diode: #b8860b; --tie: #8d8a33;
+  --nwell: #8bc34a; --diff: #a39a35; --poly: #9c1b34; --li1: #8d82c9; --met1: #2b9fd8; --met2: #e0458f; --met3: #34a853; --met4: #e8a317;
+  --cut: #1f2630; --vpwr: #d0453a; --vgnd: #2f63c4; --add: #e4572e; --del: #7b2fd6; --label: #1b1d1f; --halo: rgba(255,255,255,0.85);
+  --ok: #1e7d4f; --bad: #b3261e; --unk: #8a6100;
+}
+:root[data-theme="dark"] {
+  --bg: #121416; --ink: #e4e6e8; --muted: #9aa0a6; --rule: #3d4247; --bar: #1d2125; --focus: #7fb0ff;
+  --stage: #0d0f11; --die: #2a2f35; --die-edge: #8a949f; --core: #1b1f23; --grey: #4a525b;
+  --logic: #cfae5f; --ff: #36b3a2; --buf: #ec62ab; --fill: #3b424a; --tap: #58626d; --diode: #d6a21f; --tie: #a8a544;
+  --nwell: #6f9c3c; --diff: #c2b84a; --poly: #e0556f; --li1: #a79cf0; --met1: #3fb2ea; --met2: #f060a4; --met3: #46c46a; --met4: #f2b233;
+  --cut: #e4e6e8; --vpwr: #ff6b5e; --vgnd: #5b8dee; --add: #ff7a4d; --del: #b47bff; --label: #e4e6e8; --halo: rgba(13,15,17,0.85);
+  --ok: #4ec58a; --bad: #ff7b72; --unk: #e0b341;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--font); overflow: hidden; }
+button { font: inherit; color: inherit; }
+.app { display: grid; grid-template-columns: minmax(300px, 30%) 1fr; grid-template-rows: auto 1fr; height: 100%; }
+.top { grid-column: 1 / 3; display: flex; align-items: center; gap: 16px; padding: 8px 14px; border-bottom: 1px solid var(--rule); background: var(--bar); }
+.brand h1 { font-size: 16px; margin: 0; color: var(--focus); white-space: nowrap; }
+.brand p { margin: 0; font-size: 12px; color: var(--muted); white-space: nowrap; }
+.steps { flex: 1; min-width: 0; overflow-x: auto; }
+.track { display: flex; min-width: max-content; }
+.track button { flex: 1; min-width: 62px; background: none; border: 0; padding: 2px 4px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 11px; color: var(--muted); position: relative; }
+.track button::before { content: ""; position: absolute; top: 12px; left: 0; right: 0; height: 1px; background: var(--rule); z-index: 0; }
+.track button i { position: relative; z-index: 1; width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--rule); background: var(--bg); display: grid; place-items: center; font-style: normal; font-size: 11px; }
+.track button.on { color: var(--ink); font-weight: 600; }
+.track button.on i { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.track button.seen i { border-color: var(--ink); }
+.track button:focus-visible, .iconbtn:focus-visible, .nav button:focus-visible, .pick button:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+.iconbtn { width: 30px; height: 30px; border: 1px solid var(--rule); background: var(--bg); border-radius: 6px; cursor: pointer; display: grid; place-items: center; }
+.iconbtn svg { width: 16px; height: 16px; }
+.panel { overflow-y: auto; padding: 12px 16px 28px; border-right: 1px solid var(--rule); }
+.nav { display: flex; gap: 8px; margin-bottom: 12px; }
+.nav button { flex: 1; padding: 6px; border: 1px solid var(--rule); background: var(--bg); border-radius: 6px; cursor: pointer; }
+.nav button[disabled] { opacity: 0.4; cursor: default; }
+.panel h2 { font-size: 17px; margin: 0 0 4px; }
+.lede { color: var(--muted); font-size: 13px; margin: 0 0 10px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
+.panel p { margin: 0 0 10px; }
+.panel code { font-family: var(--mono); font-size: 13px; }
+.panel table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 0 0 12px; }
+.panel th, .panel td { text-align: left; padding: 4px 6px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.panel th { color: var(--muted); font-weight: 500; }
+.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.grade { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 6px; border-radius: 10px; border: 1px solid currentColor; white-space: nowrap; }
+.g-ok { color: var(--ok); } .g-bad { color: var(--bad); } .g-unk { color: var(--unk); }
+.src { font-size: 12px; color: var(--muted); }
+.model { font-size: 12px; color: var(--unk); border: 1px solid var(--unk); border-radius: 6px; padding: 6px 8px; margin: 0 0 10px; }
+.pick { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.pick button { padding: 4px 9px; border: 1px solid var(--rule); background: var(--bg); border-radius: 6px; cursor: pointer; font-size: 13px; }
+.pick button.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.stage { position: relative; background: var(--stage); min-width: 0; min-height: 0; }
+.view { position: absolute; inset: 0; outline: none; touch-action: none; cursor: grab; }
+.view.drag { cursor: grabbing; }
+canvas { display: block; width: 100%; height: 100%; }
+.zoom { position: absolute; left: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; }
+.legend { position: absolute; left: 50px; top: 10px; right: 10px; margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 12px; pointer-events: none; }
+.legend li { display: flex; align-items: center; gap: 5px; background: var(--halo); padding: 1px 5px; border-radius: 4px; }
+.legend i { width: 12px; height: 12px; border: 1px solid rgba(127,127,127,0.6); display: inline-block; }
+.scale { position: absolute; left: 12px; bottom: 10px; font-size: 11px; color: var(--muted); }
+.scale i { display: block; height: 5px; border: 1px solid var(--muted); border-top: 0; margin-bottom: 2px; }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font-size: 12px; padding: 3px 7px; border-radius: 4px; white-space: nowrap; transform: translate(12px, 12px); }
+.card { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(92%, 760px); background: var(--bg); border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.25); }
+.card h3 { margin: 0 0 6px; font-size: 14px; }
+.card svg { width: 100%; height: auto; display: block; }
+.card .src { margin-top: 6px; }
+.loading { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); }
+@media (max-width: 820px) {
+  body { overflow: auto; }
+  .app { display: block; height: auto; }
+  .top { flex-wrap: wrap; position: sticky; top: 0; z-index: 3; }
+  .stage { height: 62vh; }
+  .panel { border-right: 0; border-bottom: 1px solid var(--rule); }
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand"><h1>Galois · MISFIT-04</h1><p>The tile as built, and what was checked on it</p></div>
+    <nav class="steps" aria-label="Steps"><div class="track" id="track"></div></nav>
+    <button type="button" class="iconbtn" id="theme" aria-label="Switch theme"></button>
+  </header>
+  <main class="panel" id="panel">
+    <div class="nav">
+      <button type="button" id="prev">&larr; Back</button>
+      <button type="button" id="next">Next &rarr;</button>
+    </div>
+    <h2 id="title" tabindex="-1"></h2>
+    <div id="body"></div>
+  </main>
+  <section class="stage" aria-label="The tile at this step">
+    <div class="view" id="view" tabindex="0" role="group" aria-label="The tile: scroll or + and - to zoom, drag to move, arrow keys to step">
+      <canvas id="canvas" role="img" aria-label="The tile layout"></canvas>
+      <div class="loading" id="loading">Loading the layout…</div>
+      <div class="zoom">
+        <button type="button" class="iconbtn" id="zin" aria-label="Zoom in (+)" title="Zoom in (+)"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M8 3v10M3 8h10"/></svg></button>
+        <button type="button" class="iconbtn" id="zout" aria-label="Zoom out (-)" title="Zoom out (-)"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 8h10"/></svg></button>
+        <button type="button" class="iconbtn" id="zfit" aria-label="Back to this step's view (0)" title="Back to this step's view (0)"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6V2.5H6M10 2.5h3.5V6M13.5 10v3.5H10M6 13.5H2.5V10"/></svg></button>
+      </div>
+      <ul class="legend" id="legend" aria-label="Legend"></ul>
+      <div class="scale"><i id="scalebar"></i><span id="scaletext"></span></div>
+      <div class="card" id="card" hidden></div>
+      <div class="tip" id="tip" hidden></div>
+    </div>
+  </section>
+</div>
+<script>
+var DATA_GZ = "/*DATA*/";
+</script>
+<script>
+(function () {
+  "use strict";
+  var bin = atob(DATA_GZ), u8 = new Uint8Array(bin.length);
+  for (var i = 0; i < bin.length; i++) u8[i] = bin.charCodeAt(i);
+  var loading = document.getElementById("loading");
+  if (typeof DecompressionStream === "undefined") { loading.textContent = "This page needs a browser from 2023 or later (DecompressionStream)."; return; }
+  new Response(new Blob([u8]).stream().pipeThrough(new DecompressionStream("gzip"))).text()
+    .then(function (text) { start(JSON.parse(text)); loading.remove(); })
+    .catch(function (e) { loading.textContent = "Could not show the layout: " + e; console.error(e); });
+})();
+
+function start(D) {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var U = 1000;                                   // database units per µm
+  function um(v) { return v / U; }
+  function fmt(v, dp) { return v.toLocaleString("en-GB", { minimumFractionDigits: dp === undefined ? 2 : dp, maximumFractionDigits: dp === undefined ? 2 : dp }); }
+  function n(v) { return v.toLocaleString("en-GB"); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function ease(t) { return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; }
+  function grade(k, txt) { return '<span class="grade g-' + k + '">' + txt + "</span>"; }
+
+  // ---- colours, read from the stylesheet so both themes work -------------------------------------
+  var C = {};
+  function readColours() {
+    var cs = getComputedStyle(document.documentElement);
+    ["stage", "die", "die-edge", "core", "grey", "logic", "ff", "buf", "fill", "tap", "diode", "tie", "nwell", "diff", "poly", "li1", "met1", "met2", "met3", "met4",
+     "cut", "vpwr", "vgnd", "add", "del", "label", "halo", "ink", "muted", "rule", "bg", "ok", "bad", "unk", "focus"].forEach(function (k) { C[k] = cs.getPropertyValue("--" + k).trim(); });
+  }
+  readColours();
+
+  // ---- geometry: one Path2D per drawable, in database units -------------------------------------
+  // A drawable's key is <part>.<layer>: cells.* (the core's standard cells by class), corew.* (the core's wiring),
+  // mac.* (the XC-19 macro), wrap.* (its wrapper: risers and stubs), top.* (what the tile's assembly adds)
+  var G = {}, ORDER = [];
+  function addShapes(part, sh, layers) {
+    layers.forEach(function (l) {
+      var p = new Path2D(), r = sh[l] || [], q = sh["~" + l] || [], k;
+      for (k = 0; k < r.length; k += 4) p.rect(r[k], r[k + 1], r[k + 2] - r[k], r[k + 3] - r[k + 1]);
+      q.forEach(function (pts) { p.moveTo(pts[0], pts[1]); for (var j = 2; j < pts.length; j += 2) p.lineTo(pts[j], pts[j + 1]); p.closePath(); });
+      if (!r.length && !q.length) return;
+      var col = /con$|^via/.test(l) ? "cut" : l;
+      G[part + "." + l] = { path: p, col: col, a: 0, to: 0, from: 0 }; ORDER.push(part + "." + l);
+    });
+  }
+  var CLS = ["fill", "tap", "logic", "buf", "ff", "diode", "tie"];
+  CLS.forEach(function (c) {
+    var p = new Path2D(), any = false;
+    D.cells.forEach(function (q) { if (D.mcls[q[4]] === c) { p.rect(q[0], q[1], q[2], q[3]); any = true; } });
+    if (any) { G["cells." + c] = { path: p, col: c, a: 0, to: 0, from: 0, edge: true }; ORDER.push("cells." + c); }
+  });
+  addShapes("corew", D.corew, ["met1", "met2", "met3", "met4"]);
+  addShapes("mac", D.mac, ["nwell", "diff", "poly", "licon", "li1", "mcon", "met1", "via1", "met2"]);
+  addShapes("wrap", D.wrap, ["li1", "mcon", "met1", "via1", "met2", "via2", "met3", "via3", "met4"]);
+  addShapes("top", D.top, ["met3", "via3", "met4"]);
+  var NCLS = {};
+  D.cells.forEach(function (q) { var c = D.mcls[q[4]]; NCLS[c] = (NCLS[c] || 0) + 1; });
+  var CELL = {};
+  D.cells.forEach(function (q) { CELL[q[5]] = q; });
+  D.pins = D.pins.filter(function (q) { return !/^V(PWR|GND|DD|SS)/.test(q[0]); });
+  var NODE = {}; D.nodes.forEach(function (q) { NODE[q[0]] = q; });
+
+  var DIE = D.die, CORE = D.core, MAC = D.macro;
+  function box(b, pad) { pad = pad === undefined ? 0.06 : pad; var w = b[2] - b[0], h = b[3] - b[1], m = Math.max(w, h) * pad; return [b[0] - m, b[1] - m, b[2] + m, b[3] + m]; }
+  function around(x, y, half) { return [x - half, y - half, x + half, y + half]; }
+  function bboxOf(list) {
+    var b = [1e12, 1e12, -1e12, -1e12];
+    list.forEach(function (q) { b[0] = Math.min(b[0], q[1]); b[1] = Math.min(b[1], q[2]); b[2] = Math.max(b[2], q[3]); b[3] = Math.max(b[3], q[4]); });
+    return b;
+  }
+
+  // ---- the sabotage campaign, from the data -----------------------------------------------------
+  var SAB = ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10"];
+  var SABTXT = {
+    S1: ["connectivity", "The macro's VDD strap is left unjoined from the tile's VPWR."],
+    S2: ["connectivity", "The macro's GND strap is left unjoined from the tile's VGND."],
+    S3: ["connectivity", "The riser of one decoder line (SA1B) is missing."],
+    S4: ["connectivity", "The risers of XA_OUT and XB_OUT are crossed."],
+    S5: ["connectivity", "XA is shorted to GND by a small stack of metal 1, via and metal 2."],
+    S6: ["symmetry", "The macro is mirrored in x. As built, its pins no longer land under the core, so this is a connectivity fault and not the pure symmetry fault it was meant to be."],
+    S7: ["coupling", "The witness: a floating metal 3 strip over XA's line and not over XB's, driven as a 50 MHz clock in SPICE through its extracted coupling."],
+    S8: ["coupling", "A floating metal 3 plate over XA only: a passive, asymmetric capacitance."],
+    S9: ["logic", "The decoder is mutated in RTL (SA2B uses s0 instead of its complement) and the core is hardened again. The layout outside the core is unchanged."],
+    S10: ["timing", "The core is mutated so that the source select toggles during the measurement window, and hardened again. The layout outside the core is unchanged."]
+  };
+  function sabVerdict(s) {
+    var st = D.std[s], out = { std: st && (st.drc > 0 || st.lvs !== "match" || st.precheck !== "pasa"), e3: D.e3[s] === "MISMATCH", e3run: s in D.e3 };
+    out.stdTxt = st ? "DRC " + st.drc + " · LVS " + (st.lvs === "match" ? "match" : "mismatch") + " · precheck " + (st.precheck === "pasa" ? "pass" : "fail") : "not run";
+    if (s === "S7" || s === "S8") { out.meas = D.i4wit[s][1] >= 1; out.measTxt = "I4: " + fmt(D.i4wit[s][0], 3) + " %, " + fmt(D.i4wit[s][1], 1) + "× the threshold"; }
+    else if (s === "S9") { out.meas = D.meas.S9_i2 > 0; out.measTxt = "I2: " + D.meas.S9_i2 + " discrepancies against the decoder's table (healthy: " + D.meas.ok_i2 + ")"; }
+    else if (s === "S10") { out.meas = D.meas.S10_i3 > 0; out.measTxt = "I3: " + n(D.meas.S10_i3) + " toggles on the decoder's lines during the windows (healthy: " + D.meas.ok_i3 + ")"; }
+    else { out.meas = null; out.measTxt = "no measurement check runs on it"; }
+    return out;
+  }
+  var CAMP = (function () {
+    var c = { conn: 5, std: 0, mstd: 0, meas: 0, missed: [] };
+    ["S1", "S2", "S3", "S4", "S5"].forEach(function (s) { if (sabVerdict(s).std) c.std++; else c.missed.push(s); });
+    ["S7", "S8", "S9", "S10"].forEach(function (s) { var q = sabVerdict(s); if (q.std) c.mstd++; if (q.meas) c.meas++; });
+    return c;
+  })();
+  var sabSel = "S7", SABPATH = {};
+  SAB.forEach(function (s) {
+    var v = D.sab[s]; if (!v) return;
+    var mk = function (list) { var p = new Path2D(); list.forEach(function (q) { p.rect(q[1], q[2], q[3] - q[1], q[4] - q[2]); }); return p; };
+    var big = v.add.length > 200;             // S6: the whole macro moves; drawn as an outline, not shape by shape
+    SABPATH[s] = { add: big ? null : mk(v.add), del: big ? null : mk(v.del), big: big,
+                   box: big ? box(MAC, 0.25) : v.add.length + v.del.length ? box(bboxOf(v.add.concat(v.del)), 0.9) : box(CORE, 0.05) };
+  });
+
+  // ---- E2: the phase sweep ------------------------------------------------------------------------
+  var E2 = (function () {
+    var S = [["l216", "21.6"], ["l80", "8.0"], ["l40", "4.0"]], thr = D.i4["tt 27"].thr, out = { thr: thr, series: [] };
+    S.forEach(function (s) {
+      var pts = [], want = s[0] === "l216" ? 20 : 10;
+      for (var k = 0; k < 20; k++) { var v = D.e2.d[s[0] + "f" + k]; if (v) pts.push([k, v[v.length - 1][1]]); }
+      var mx = pts.reduce(function (a, p) { return Math.max(a, Math.abs(p[1])); }, 0);
+      out.series.push({ key: s[0], len: s[1], cap: D.e2.caps_aF[s[1]], pts: pts, want: want, max: mx });
+    });
+    return out;
+  })();
+
+  // ---- the steps --------------------------------------------------------------------------------
+  // show: which drawables are the step's subject (1), which stay as context (a fraction), the rest hidden
+  var CTX = 0.16;
+  function show(focus, context) { var m = {}; (context || []).forEach(function (k) { m[k] = CTX; }); focus.forEach(function (k) { m[k] = 1; }); return m; }
+  var ALLCELLS = ["cells.fill", "cells.tap", "cells.logic", "cells.buf", "cells.ff", "cells.diode", "cells.tie"];
+  var COREW = ["corew.met1", "corew.met2", "corew.met3", "corew.met4"];
+  var MACL = ["mac.nwell", "mac.diff", "mac.poly", "mac.licon", "mac.li1", "mac.mcon", "mac.met1", "mac.via1", "mac.met2"];
+  var WRAPL = ["wrap.li1", "wrap.mcon", "wrap.met1", "wrap.via1", "wrap.met2", "wrap.via2", "wrap.met3", "wrap.via3", "wrap.met4"];
+  var TOPL = ["top.met3", "top.via3", "top.met4"];
+  var tt = D.corners[0], I4 = D.i4["tt 27"];
+  var free = um(DIE[2]) * um(DIE[3]) - um(CORE[2] - CORE[0]) * um(CORE[3] - CORE[1]) - um(MAC[2] - MAC[0]) * um(MAC[3] - MAC[1]);
+  var MODEL = '<p class="model">Everything on this page is model: SPICE, extraction, DRC, LVS, gate-level simulation. None of it is silicon.</p>';
+  function srcs() { return '<p class="src">' + Array.prototype.map.call(arguments, function (s) { return "<code>" + s + "</code>"; }).join(" · ") + "</p>"; }
+
+  var STEPS = [
+    { id: "tile", short: "Tile", title: "A 1×2 Tiny Tapeout tile",
+      view: function () { return box(DIE); }, show: show([], ALLCELLS.concat(["mac.li1", "mac.met1", "mac.poly", "top.met4", "corew.met4"])), labels: ["pins"],
+      lede: "The empty rectangle the design must fit in, with its pins along the top edge.",
+      body: function () {
+        return MODEL + "<p><b>Galois</b> is the working name of the chip Exotic Cells will send to Tiny Tapeout on SkyWater 130 nm. Its job is to time the discharge of a small node so finely that <b>one electron trapped in a transistor's oxide</b> shows up as a change in a count.</p>" +
+          "<p>This page walks through <b>MISFIT-04</b>, the first complete tile: a digital core, one analog slot, the wiring between them, and the checks run on the result. Move with <b>Next</b> or the → key; scroll to zoom, drag to move.</p>" +
+          "<p>The tile is " + fmt(um(DIE[2])) + " × " + fmt(um(DIE[3])) + " µm, two Tiny Tapeout tiles stacked. It has " + D.pins.length + " signal pins on metal 4 at the top edge. Only digital pins are used.</p>" +
+          '<p class="src">Layout as built at commit <code>' + esc(D.prov.commit) + "</code>" + (D.prov.dirty ? " (with uncommitted changes)" : "") + ", data extracted on " + esc(D.prov.date) + ".</p>";
+      } },
+    { id: "core", short: "Core", title: "The digital core",
+      view: function () { return box(CORE, 0.08); }, show: show(ALLCELLS, []), legend: ["logic", "ff", "buf", "fill", "tap"],
+      lede: "Standard cells placed by the flow. Hover to name one.",
+      body: function () {
+        var live = D.cells.length - (NCLS.fill || 0) - (NCLS.tap || 0);
+        return "<p>The core is hardened with LibreLane as a block of " + fmt(um(CORE[2] - CORE[0])) + " × " + fmt(um(CORE[3] - CORE[1])) + " µm and placed at the top of the tile, so its pins are the tile's pins.</p>" +
+          "<p>It holds a counter clocked at 50 MHz, an 8-bit protocol over the tile's pins, and the decoder that drives the slot's control lines. A slot that is disabled or not selected cannot reach the counter.</p>" +
+          "<table><tr><th>Cells</th><th class=num>Count</th></tr>" +
+          [["logic", "Logic gates"], ["ff", "Flip-flops"], ["buf", "Buffers and clock cells"], ["diode", "Antenna diodes"], ["tie", "Tie cells"], ["tap", "Well taps"], ["fill", "Fill and decap"]]
+            .filter(function (r) { return NCLS[r[0]]; }).map(function (r) { return "<tr><td>" + r[1] + "</td><td class=num>" + n(NCLS[r[0]]) + "</td></tr>"; }).join("") +
+          "<tr><td><b>All instances</b></td><td class=num><b>" + n(D.cells.length) + "</b></td></tr></table>" +
+          "<p>" + n(live) + " of them do something; the rest fill the rows and tie the wells.</p>" +
+          srcs("local_flow/misfit04_core/runs/core/final/def", "instrument/misfit04/core/");
+      } },
+    { id: "wiring", short: "Wiring", title: "The core's wiring",
+      view: function () { return box(CORE, 0.08); }, show: show(COREW, ALLCELLS), legend: ["met1", "met2", "met3", "met4"],
+      lede: "Metal 1 to metal 4 inside the core, as the router left them.",
+      body: function () {
+        return "<p>Signals run on metal 1 to metal 3. The vertical metal 4 straps carry <b>VPWR</b> and <b>VGND</b>; the horizontal metal 1 rails along each row take power from them to every cell.</p>" +
+          "<p>These wires matter later for a reason that has nothing to do with logic: any of them that passes near the slot's measured nodes is a possible <b>aggressor</b>. The step on aggressors names the ones the extraction found.</p>";
+      } },
+    { id: "slot", short: "Slot", title: "The XC-19 slot, drawn by hand",
+      view: function () { return box(MAC, 0.08); }, show: show(MACL, ["wrap.met2", "wrap.met3"]), legend: ["nwell", "diff", "poly", "li1", "met1", "met2"],
+      lede: "A full-custom macro below the core: twin nodes A and B, read at the same time.",
+      body: function () {
+        return "<p>The slot is " + fmt(um(MAC[2] - MAC[0])) + " × " + fmt(um(MAC[3] - MAC[1])) + " µm of hand-drawn layout. It has two halves meant to be identical, <b>A</b> on the left and <b>B</b> on the right.</p>" +
+          "<p>In each half a node <b>X</b> is precharged to 1.8 V and then discharged by one transistor in weak inversion, the <b>DUT</b>. When X crosses the threshold of an inverter, the core stops counting. A trap in the DUT of A that holds one electron shifts its threshold and makes A cross a little earlier or later than B.</p>" +
+          "<p>The signal is the <b>ratio</b> of the two times, tA / tB. Whatever moves both halves alike, such as supply or temperature, cancels in it; whatever touches only one of them does not. Most of the checks on this page ask how well that holds once the macro sits in a real tile.</p>" +
+          "<p>The long column below the nodes is the calibration ladder: plates that add a known capacitance to A or to B, to give the ratio a scale.</p>" +
+          srcs("experiments/xc19_slot/", "instrument/misfit04/tile/build/xc19_slot_w.gds");
+      } },
+    { id: "nodes", short: "Nodes", title: "The measured nodes",
+      view: function () { var a = NODE.XA, b = NODE.XB; return around((a[1] + b[1]) / 2, a[2] - 1500, 9000); }, show: show(MACL, ["wrap.met2"]), labels: ["nodes"], legend: ["diff", "poly", "li1", "met1", "met2"],
+      lede: "XA and XB, with their precharge and DUT lines.",
+      body: function () {
+        return "<p><b>XA</b> and <b>XB</b> are the two nodes whose discharge is timed. Each has its precharge line (<b>PREA</b>, <b>PREB</b>) and the gate of its DUT (<b>DUTA</b>, <b>DUTB</b>).</p>" +
+          "<p>At the typical corner (tt, 27 °C) the discharge takes " + fmt(tt.tA_us, 3) + " µs, which the 50 MHz counter reads as " + fmt(tt.counts, 1) + " counts. One trapped electron changes the time by " + fmt(tt.sc, 4) + " % in the extracted macro.</p>" +
+          "<p>Everything near these two nodes is drawn mirrored about the axis between them. A wire that runs over one and not over the other breaks the cancellation the ratio depends on.</p>" +
+          srcs("experiments/misfit04/prereg_calc.txt");
+      } },
+    { id: "lines", short: "Lines", title: "Fifteen lines between core and slot",
+      view: function () { var b = bboxOf(D.stubs.map(function (q) { return [0, q[1], q[2], q[1], q[2]]; })); return [b[0] - 9000, b[1] - 22000, b[2] + 9000, b[3] + 9000]; },
+      show: show(WRAPL.concat(["corew.met2", "corew.met3"]), MACL.concat(ALLCELLS)), labels: ["stubs"], legend: ["met1", "met2", "met3"],
+      lede: "The wrapper lifts the macro's pins to stubs that land on the core's bottom edge.",
+      body: function () {
+        return "<p>The macro's own pins are on local interconnect, between its devices. A <b>wrapper</b> takes each one up through the metals to a metal 3 track that runs to the top of the macro, where a metal 2 stub meets a pin on the core's bottom edge.</p>" +
+          "<p>There are " + D.stubs.length + " such lines. Thirteen carry the decoder's controls down from the core: precharge, DUT gates, the calibration selects, a reference, bias. Two come back up: <b>XA_OUT</b> and <b>XB_OUT</b>, the inverter outputs the core times.</p>" +
+          "<p>The lines for A and for B are placed as mirror images, so that each side sees the same neighbours.</p>" +
+          srcs("instrument/misfit04/tile/gen_assemble.py");
+      } },
+    { id: "supply", short: "Supply", title: "Supply, and a rule that got in the way",
+      view: function () { return box(DIE); }, show: show(TOPL.concat(["corew.met4", "wrap.met4"]), ALLCELLS.concat(["mac.li1", "mac.met1", "mac.met2"])), legend: ["met4", "met3"],
+      lede: "Metal 4 straps come down from the core. Most stop above the macro on purpose.",
+      body: function () {
+        return "<p>The macro takes VDD and GND from two of the core's metal 4 straps, extended down to pads on its wrapper.</p>" +
+          "<p>The other straps stop just above the macro. A strap continuing down would pass over XA's line and not over XB's, or the other way round, and add capacitance to one side only.</p>" +
+          "<p>Tiny Tapeout's precheck then failed on the first try: it requires each supply pin to reach within 10 µm of the bottom edge. The fix is the pair of straps on the right that run the full height, outside the slot's column.</p>" +
+          "<p>For filling the rest of the chip this is a constraint: every column of slots has to sit between full-height straps, or accept one overhead with the same coupling to A and to B.</p>" +
+          "<p>After the macro and the core, " + n(Math.round(free)) + " µm² of the tile are still empty, before routing.</p>" +
+          srcs("experiments/misfit04/i1/README.md");
+      } },
+    { id: "measure", short: "Measure", title: "One measurement",
+      view: function () { return box(DIE); }, show: show([], ALLCELLS.concat(MACL)), card: cardMeasure,
+      lede: "What the counter sees, at each corner.",
+      body: function () {
+        return "<p>The core precharges both nodes, releases them and counts clock periods until each inverter flips. It reports two counts, for A and for B.</p>" +
+          "<table><tr><th>Corner</th><th class=num>tA</th><th class=num>Counts</th><th class=num>Per electron</th><th class=num>I4 threshold</th></tr>" +
+          D.corners.map(function (c) { return "<tr><td>" + c.c + " " + c.t + " °C</td><td class=num>" + fmt(c.tA_us, 3) + " µs</td><td class=num>" + fmt(c.counts, 1) + "</td><td class=num>" + fmt(c.sc, 4) + " %</td><td class=num>" + fmt(c.thr, 4) + " %</td></tr>"; }).join("") + "</table>" +
+          "<p><b>Per electron</b> is the change of tA when one electron is trapped in the DUT. The <b>threshold</b> used from here on is a tenth of that: anything in the tile that moves tA / tB by more would be mistaken for a tenth of an electron.</p>" +
+          "<p>At ff 85 °C the discharge is over in " + fmt(D.corners[3].counts, 1) + " counts, so one electron is worth " + fmt(D.corners[3].counts * D.corners[3].sc / 100, 2) + " of a count, against " + fmt(tt.counts * tt.sc / 100, 2) + " counts at tt. At that corner the instrument cannot see a single charge in one shot.</p>" +
+          srcs("experiments/misfit04/prereg_calc.txt", "experiments/xc19_slot/contrato_temporizacion.txt");
+      } },
+    { id: "aggressors", short: "Aggressors", title: "Real aggressors",
+      view: function () { var a = CELL.input3, b = CELL.input2, c = CELL._0685_; return [Math.min(b[0], a[0]) - 6000, MAC[3] - 14000, Math.max(a[0], c[0]) + 12000, CORE[1] + 16000]; },
+      show: show(["wrap.met2", "wrap.met3", "corew.met1", "corew.met2", "corew.met3"], ALLCELLS.concat(MACL)), labels: ["agr", "stubs"], legend: ["met1", "met2", "met3"],
+      lede: "The core's wires that couple to the measured lines, from a flat extraction of the tile.",
+      body: function () {
+        var rows = [];
+        Object.keys(D.agr).forEach(function (victim) { D.agr[victim].forEach(function (a) { rows.push([victim, a[0].replace("misfit04_core_0.", ""), a[1] * 1e18, a[2]]); }); });
+        return "<p>Check <b>I4</b> asks whether the core, while it is running a measurement, disturbs the measurement. The tile is extracted flat; every net that couples to XA, XB or their outputs and toggles during the window is replayed in SPICE with its real timing, against the same tile with those nets held still.</p>" +
+          "<table><tr><th>Victim</th><th>Aggressor net</th><th class=num>Coupling</th><th class=num>Toggles</th></tr>" +
+          rows.map(function (r) { return "<tr><td>" + r[0] + "</td><td><code>" + esc(r[1]) + "</code></td><td class=num>" + fmt(r[2], 2) + " aF</td><td class=num>" + r[3] + "</td></tr>"; }).join("") + "</table>" +
+          "<table><tr><th>Corner</th><th class=num>Max change of tA / tB</th><th class=num>Threshold</th><th></th></tr>" +
+          Object.keys(D.i4).map(function (k) { var r = D.i4[k]; return "<tr><td>" + k + " °C</td><td class=num>" + fmt(r.max, 5) + " %</td><td class=num>" + fmt(r.thr, 4) + " %</td><td>" + grade(r.max < r.thr ? "ok" : "bad", r.max < r.thr ? "below" : "above") + "</td></tr>"; }).join("") + "</table>" +
+          "<p>The healthy tile stays below the threshold at all four corners, by a factor of " + fmt(I4.thr / I4.max, 1) + " at tt. One net does all of it: with one aggressor at a time, <code>input3.X</code> gives " + fmt(D.abl.agin3, 5) + " % and the other two give " + fmt(D.abl.ag685, 5) + " %. It is the buffer of XB's output, sitting next to XA_OUT: B crosses first, and B's own edge kicks A.</p>" +
+          "<p>That number assumed an ideal step. With the real buffer cell in the deck the effect is " + fmt(D.e1[0][2], 5) + " % at every corner, because the buffer switches before the crossing that is timed. With a mismatch between A and B the ideal step is the realistic worst case, so that is the figure kept.</p>" +
+          "<p>" + grade(I4.max < I4.thr ? "ok" : "bad", "healthy tile: " + (I4.max < I4.thr ? "met" : "false")) + " " + grade(I4.thr / I4.max >= 10 ? "ok" : "bad", "the bet of a 10× margin: " + (I4.thr / I4.max >= 10 ? "met" : "false")) + "</p>" +
+          srcs("experiments/misfit04/i4/i4.txt", "experiments/misfit04/i4/agresores.json", "experiments/misfit04/i4/e1.txt");
+      } },
+    { id: "sabotage", short: "Sabotage", title: "Sabotage: checking the checks",
+      view: function () { return SABPATH[sabSel] ? SABPATH[sabSel].box : box(DIE); },
+      show: show(WRAPL.concat(TOPL).concat(["corew.met4"]), ALLCELLS.concat(MACL)), sab: true, legend: ["met1", "met2", "met3", "met4", "add", "del"],
+      lede: "Ten tiles broken on purpose. Which check notices each one?",
+      body: function () {
+        var v = sabVerdict(sabSel), t = SABTXT[sabSel], sp = D.sab[sabSel];
+        var nStd = 0, nConn = 0, nMeasStd = 0, nMeas = 0;
+        ["S1", "S2", "S3", "S4", "S5"].forEach(function (s) { nConn++; if (sabVerdict(s).std) nStd++; });
+        ["S7", "S8", "S9", "S10"].forEach(function (s) { var q = sabVerdict(s); if (q.std) nMeasStd++; if (q.meas) nMeas++; });
+        return "<p>A check that passes proves little until it has been seen to fail. Each sabotage is generated by the same script that assembles the healthy tile, with one thing changed, and then run through the same checks.</p>" +
+          '<div class="pick" id="sabpick">' + SAB.map(function (s) { return '<button type="button" data-s="' + s + '"' + (s === sabSel ? ' class="on"' : "") + ">" + s + "</button>"; }).join("") + "</div>" +
+          "<p><b>" + sabSel + "</b>, " + t[0] + ". " + t[1] + (sp && !SABPATH[sabSel].big && sp.add.length + sp.del.length ? " The picture shows the " + (sp.add.length ? sp.add.length + " shape" + (sp.add.length > 1 ? "s" : "") + " added" : "") + (sp.add.length && sp.del.length ? " and the " : "") + (sp.del.length ? sp.del.length + " removed" : "") + "." : "") + "</p>" +
+          "<table><tr><th>Check</th><th>Result</th><th></th></tr>" +
+          "<tr><td>Standard: DRC, LVS, precheck</td><td>" + v.stdTxt + "</td><td>" + grade(v.std ? "ok" : "bad", v.std ? "caught" : "missed") + "</td></tr>" +
+          "<tr><td>LVS without the macro's substrate taps (E3)</td><td>" + (v.e3run ? (v.e3 ? "mismatch" : "match") : "not run on it") + "</td><td>" + (v.e3run ? grade(v.e3 ? "ok" : "bad", v.e3 ? "caught" : "missed") : "") + "</td></tr>" +
+          "<tr><td>Measurement checks</td><td>" + v.measTxt + "</td><td>" + (v.meas === null ? "" : grade(v.meas ? "ok" : "bad", v.meas ? "caught" : "missed")) + "</td></tr></table>" +
+          "<p><b>Across the campaign.</b> The standard checks catch " + nStd + " of the " + nConn + " connectivity faults and " + nMeasStd + " of the 4 faults that only spoil the measurement. The measurement checks catch " + nMeas + " of those 4.</p>" +
+          "<p>The one that slips through is <b>S2</b>. The macro's NMOS devices carry substrate taps to their ground, and the tile's ground touches the same substrate, so the extraction merges the two nets through it and LVS still matches with the strap cut. An extra LVS run with those taps removed (E3) sees it.</p>" +
+          "<p>" + grade(CAMP.std === 5 ? "ok" : "bad", "standard on S1–S5: " + CAMP.std + " of 5, predicted 5") + " " + grade(CAMP.meas === 4 ? "ok" : "bad", "measurement on S7–S10: " + CAMP.meas + " of 4") + "</p>" +
+          srcs("experiments/misfit04/i5/estandar.tsv", "experiments/misfit04/e3/e3.txt", "experiments/misfit04/i5/build_" + sabSel + "/");
+      } },
+    { id: "sensitivity", short: "Sensitivity", title: "How small a coupling can I4 see?",
+      view: function () { return SABPATH.S7.box; }, show: show(["wrap.met3", "top.met3"], ALLCELLS.concat(MACL)), card: cardE2,
+      lede: "The witness strip at three lengths, its clock swept in phase.",
+      body: function () {
+        var s = E2.series, got = s.reduce(function (a, q) { return a + q.pts.length; }, 0), want = s.reduce(function (a, q) { return a + q.want; }, 0);
+        var done = got === want;
+        return "<p>The witness S7 was required to give more than 10× the threshold, to show I4 is not blind. It gave " + fmt(D.i4wit.S7[1], 1) + "×, so by its own rule the benchmark is <b>invalid</b>: I4 sees a clock coupled through " + fmt(E2.series[0].cap, 1) + " aF, and nothing was shown about a weaker one.</p>" +
+          "<p>Amendment 3 (E2) measures the sensitivity directly: the same strip at three lengths, extracted each time, with the clock's phase swept over its 20 ns period.</p>" +
+          "<table><tr><th>Strip</th><th class=num>Coupling to XA</th><th class=num>Phases</th><th class=num>Max |change|</th><th class=num>× threshold</th></tr>" +
+          s.map(function (q) { return "<tr><td>" + q.len + " µm</td><td class=num>" + fmt(q.cap, 2) + " aF</td><td class=num>" + q.pts.length + " of " + q.want + "</td><td class=num>" + fmt(q.max, 5) + " %</td><td class=num>" + fmt(q.max / E2.thr, 2) + "</td></tr>"; }).join("") + "</table>" +
+          (function () {
+            var L = s[0], rows = "", hit = 0, nd = { ok: 0, aborted: 0, control: 0 };
+            D.e2.decks.forEach(function (d) { nd[d[1]]++; });
+            s.slice(1).forEach(function (q) {
+              var dev = (q.max / L.max) / (q.cap / L.cap) - 1, x = q.max / E2.thr, in13 = x >= 1 && x <= 3; if (in13) hit++;
+              rows += "<tr><td>E2a, " + q.len + " µm</td><td>Maximum scales with the coupling within ±30 %: " + (dev > 0 ? "+" : "") + fmt(dev * 100, 1) + " %</td><td>" + grade(Math.abs(dev) <= 0.3 ? "ok" : "bad", Math.abs(dev) <= 0.3 ? "met" : "false") + "</td></tr>";
+            });
+            rows += "<tr><td>E2b</td><td>At least one short strip lands between 1× and 3× the threshold: " + hit + " of 2</td><td>" + grade(hit ? "ok" : "bad", hit ? "met" : "false, benchmark invalid") + "</td></tr>";
+            var num = 0, den = 0; s.forEach(function (q) { num += q.max * q.cap; den += q.cap * q.cap; });
+            return "<table><tr><th></th><th>Prediction</th><th></th></tr>" + rows + "</table>" +
+              "<p>Fitted through the origin, I4 responds with " + fmt(num / den * 1000, 3) + " thousandths of a percent per aF of clock on XA. The smallest coupling it can tell from nothing is then the threshold over that slope, " + fmt(E2.thr / (num / den), 0) + " aF.</p>" +
+              (done ? "" : "<p>" + grade("unk", "provisional: " + got + " of " + want + " phases") + " The verdicts above are over the phases measured so far. A missing phase can only raise the longest strip's maximum.</p>") +
+              "<p><b>What the sweep cost.</b> Of " + D.e2.decks.length + " SPICE decks, " + nd.ok + " count, " + nd.aborted + " aborted in the simulator and " + nd.control + " finished but are left out because their control phase did not repeat the earlier run within 0.001 points. Most of those ran with a 2 ns maximum time step, which turned out not to be converged for decks with few clocks in them; rerun at 0.5 ns, all but one repeat it.</p>";
+          })() +
+          "<p>In the decks that count, the control phases agree with the earlier run within " + fmt(Math.max.apply(null, [0, 1, 2, 3, 4].map(function (k) { var v = D.e2.d["l216f" + 4 * k]; return v ? Math.abs(v[v.length - 1][1] - D.e2.p3[k]) : 0; })), 5) + " points of a percent (limit 0.001).</p>" +
+          srcs("experiments/misfit04/i4/corridas/p5*/", "experiments/misfit04/e2/caps_e2.json", "cells/preregistros/MISFIT-04_2026-11-24_tile_integrado_enmienda3.md");
+      } },
+    { id: "status", short: "Status", title: "Where MISFIT-04 stands",
+      view: function () { return box(DIE); }, show: show(ALLCELLS.concat(MACL).concat(WRAPL).concat(TOPL).concat(["corew.met4"]), []), legend: ["logic", "ff", "buf", "li1", "met1", "met2", "met3", "met4"],
+      lede: "Each prediction in the words of its pre-registration, the false ones included.",
+      body: function () {
+        var st = D.std.ok;
+        return "<table><tr><th></th><th>Prediction</th><th>Verdict</th></tr>" +
+          "<tr><td>I1</td><td>The tile is clean: DRC " + st.drc + ", LVS " + st.lvs + ", precheck " + (st.precheck === "pasa" ? "passes" : "fails") + "</td><td>" + grade("ok", "met") + "</td></tr>" +
+          "<tr><td>I2</td><td>The decoder in the hardened core follows its table: " + D.meas.ok_i2 + " discrepancies</td><td>" + grade("ok", "met") + "</td></tr>" +
+          "<tr><td>I3</td><td>The decoder's lines are still during the window: " + D.meas.ok_i3 + " toggles</td><td>" + grade("ok", "met") + "</td></tr>" +
+          "<tr><td>I4</td><td>Real aggressors move tA / tB by less than the threshold: " + fmt(I4.max, 5) + " % against " + fmt(I4.thr, 4) + " % at tt</td><td>" + grade("ok", "met") + " " + grade("unk", "benchmark invalid") + "</td></tr>" +
+          "<tr><td>I4</td><td>The margin is at least 10×: it is " + fmt(I4.thr / I4.max, 1) + "×</td><td>" + grade("bad", "false") + "</td></tr>" +
+          "<tr><td>I5</td><td>Standard checks catch all of S1–S5" + (CAMP.missed.length ? ": " + CAMP.missed.join(", ") + " passes them" : "") + "</td><td>" + grade(CAMP.std === 5 ? "ok" : "bad", (CAMP.std === 5 ? "met, " : "false, ") + CAMP.std + " of 5") + "</td></tr>" +
+          "<tr><td>I5</td><td>Standard checks catch none of S7–S10</td><td>" + grade(CAMP.mstd === 0 ? "ok" : "bad", (CAMP.mstd === 0 ? "met, " : "false, ") + CAMP.mstd + " of 4") + "</td></tr>" +
+          "<tr><td>I5</td><td>Measurement checks catch all of S7–S10</td><td>" + grade(CAMP.meas === 4 ? "ok" : "bad", (CAMP.meas === 4 ? "met, " : "false, ") + CAMP.meas + " of 4") + "</td></tr></table>" +
+          "<p>The benchmark is invalid on two counts, and they are left standing: the witness S7 reached " + fmt(D.i4wit.S7[1], 1) + "× the threshold where more than 10× was required, and no check in the original campaign saw S2. Amendment 3 addresses both; its sensitivity sweep is not finished.</p>" +
+          "<p><b>Not done.</b> Noise, Monte Carlo and supply droop on this tile. Whether traps that can be seen exist at all is something only silicon will say: the PDK's model has none.</p>" +
+          "<p class=src>Files read to build this page, with the first 16 hex digits of their SHA-256:</p>" +
+          "<table>" + D.prov.files.map(function (f) { return "<tr><td><code>" + esc(f[0].replace(/^06_exotic_cells\//, "")) + "</code></td><td><code>" + f[1] + "</code></td></tr>"; }).join("") + "</table>";
+      } }
+  ];
+
+  // ---- cards over the picture --------------------------------------------------------------------
+  function cardMeasure() {
+    var W = 720, H = 300, x0 = 60, x1 = 700, y0 = 30, y1 = 250, c = tt;
+    var tx = function (t) { return x0 + (x1 - x0) * t / 1.25; }, vy = function (v) { return y1 - (y1 - y0) * v / 1.8; };
+    var s = '<h3>Discharge of X and the count, schematic (tt, 27 °C)</h3><svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Schematic discharge of nodes XA and XB from 1.8 V to the inverter threshold, where the counter stops.">';
+    s += '<line x1="' + x0 + '" y1="' + y1 + '" x2="' + x1 + '" y2="' + y1 + '" stroke="' + C.muted + '"/><line x1="' + x0 + '" y1="' + y0 + '" x2="' + x0 + '" y2="' + y1 + '" stroke="' + C.muted + '"/>';
+    s += '<line x1="' + x0 + '" y1="' + vy(0.9) + '" x2="' + x1 + '" y2="' + vy(0.9) + '" stroke="' + C.muted + '" stroke-dasharray="4 4"/><text x="' + (x1 - 4) + '" y="' + (vy(0.9) - 5) + '" text-anchor="end" font-size="12" fill="' + C.muted + '">inverter threshold, about 0.9 V</text>';
+    s += '<text x="' + (x0 - 6) + '" y="' + (vy(1.8) + 4) + '" text-anchor="end" font-size="12" fill="' + C.muted + '">1.8 V</text><text x="' + (x0 - 6) + '" y="' + (y1 + 4) + '" text-anchor="end" font-size="12" fill="' + C.muted + '">0</text>';
+    // B: reference; A: with one electron, shifted by sc (exaggerated 12x so that it can be seen, and said so)
+    var EX = 12, tB = 1, tA = 1 - EX * c.sc / 100;
+    s += '<path d="M' + tx(0) + " " + vy(1.8) + " L" + tx(tB) + " " + vy(0.9) + " L" + tx(1.25) + " " + vy(0.9 - 0.9 * 0.25 / tB) + '" fill="none" stroke="' + C.met1 + '" stroke-width="2"/>';
+    s += '<path d="M' + tx(0) + " " + vy(1.8) + " L" + tx(tA) + " " + vy(0.9) + " L" + tx(1.25) + " " + vy(0.9 - 0.9 * (1.25 - tA) / tA) + '" fill="none" stroke="' + C.met2 + '" stroke-width="2"/>';
+    s += '<line x1="' + tx(tB) + '" y1="' + vy(0.9) + '" x2="' + tx(tB) + '" y2="' + y1 + '" stroke="' + C.met1 + '" stroke-dasharray="2 3"/><line x1="' + tx(tA) + '" y1="' + vy(0.9) + '" x2="' + tx(tA) + '" y2="' + y1 + '" stroke="' + C.met2 + '" stroke-dasharray="2 3"/>';
+    s += '<text x="' + tx(tB) + '" y="' + (y1 + 16) + '" text-anchor="start" font-size="12" fill="' + C.met1 + '">B: ' + fmt(c.counts, 1) + ' counts</text>';
+    s += '<text x="' + tx(tA) + '" y="' + (y1 + 32) + '" text-anchor="end" font-size="12" fill="' + C.met2 + '">A with one electron: ' + fmt(c.counts * c.sc / 100, 2) + ' counts apart</text>';
+    for (var k = 0; k <= 24; k++) s += '<line x1="' + tx(k / 24 * 1.25) + '" y1="' + y1 + '" x2="' + tx(k / 24 * 1.25) + '" y2="' + (y1 + 4) + '" stroke="' + C.muted + '"/>';
+    s += "</svg>";
+    return s + '<p class="src">Straight lines, not simulated waveforms. The shift of A is drawn ' + EX + "× larger than its " + fmt(c.sc, 4) + " % so that it shows. The counts and the shift are those of the extracted macro.</p>";
+  }
+  function cardE2() {
+    var W = 720, H = 330, x0 = 62, x1 = 700, y0 = 16, y1 = 280, cols = { l216: C.met2, l80: C.met3, l40: C.met1 };
+    var lo = -0.5, hi = 0.15;
+    E2.series.forEach(function (q) { q.pts.forEach(function (p) { lo = Math.min(lo, p[1] * 1.08); hi = Math.max(hi, p[1] * 1.3); }); });
+    var px = function (k) { return x0 + (x1 - x0) * (k + 0.5) / 20; }, py = function (v) { return y1 - (y1 - y0) * (v - lo) / (hi - lo); };
+    var s = '<h3>Change of tA / tB against the quiet tile, by clock phase (tt, 27 °C)</h3><svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Signed change of the ratio tA over tB for three strip lengths as the clock phase is swept from 0 to 19 nanoseconds.">';
+    s += '<rect x="' + x0 + '" y="' + py(E2.thr) + '" width="' + (x1 - x0) + '" height="' + (py(-E2.thr) - py(E2.thr)) + '" fill="' + C.muted + '" opacity="0.18"/>';
+    s += '<text x="' + (x1 - 4) + '" y="' + (py(E2.thr) - 4) + '" text-anchor="end" font-size="11" fill="' + C.muted + '">± threshold, ' + fmt(E2.thr, 4) + " %</text>";
+    s += '<line x1="' + x0 + '" y1="' + py(0) + '" x2="' + x1 + '" y2="' + py(0) + '" stroke="' + C.muted + '"/><line x1="' + x0 + '" y1="' + y0 + '" x2="' + x0 + '" y2="' + y1 + '" stroke="' + C.muted + '"/>';
+    [-0.4, -0.3, -0.2, -0.1, 0, 0.1].forEach(function (v) { if (v >= lo && v <= hi) s += '<text x="' + (x0 - 6) + '" y="' + (py(v) + 4) + '" text-anchor="end" font-size="11" fill="' + C.muted + '">' + (v > 0 ? "+" : "") + fmt(v, 1) + ' %</text><line x1="' + (x0 - 3) + '" y1="' + py(v) + '" x2="' + x0 + '" y2="' + py(v) + '" stroke="' + C.muted + '"/>'; });
+    for (var k = 0; k < 20; k += 2) s += '<text x="' + px(k) + '" y="' + (y1 + 16) + '" text-anchor="middle" font-size="11" fill="' + C.muted + '">' + k + "</text>";
+    s += '<text x="' + (x0 + x1) / 2 + '" y="' + (y1 + 34) + '" text-anchor="middle" font-size="11" fill="' + C.muted + '">clock phase, ns</text>';
+    E2.series.forEach(function (q, i) {
+      var col = cols[q.key], have = {};
+      s += '<path d="' + q.pts.map(function (p, j) { return (j && q.pts[j - 1][0] === p[0] - (q.want === 20 ? 1 : 2) ? "L" : "M") + px(p[0]) + " " + py(p[1]); }).join(" ") + '" fill="none" stroke="' + col + '" stroke-width="1.5"/>';
+      q.pts.forEach(function (p) { have[p[0]] = 1; s += '<circle cx="' + px(p[0]) + '" cy="' + py(p[1]) + '" r="3.2" fill="' + col + '"><title>' + q.len + " µm, phase " + p[0] + " ns: " + (p[1] > 0 ? "+" : "") + fmt(p[1], 5) + " %</title></circle>"; });
+      if (q.want === 20) for (var k = 0; k < 20; k++) if (!have[k]) s += '<circle cx="' + px(k) + '" cy="' + (y0 + 8) + '" r="3.2" fill="none" stroke="' + col + '"><title>' + q.len + " µm, phase " + k + " ns: not measured yet</title></circle>";
+      s += '<rect x="' + (x0 + 14 + i * 150) + '" y="' + (H - 12) + '" width="10" height="10" fill="' + col + '"/><text x="' + (x0 + 30 + i * 150) + '" y="' + (H - 3) + '" font-size="12" fill="' + C.ink + '">' + q.len + " µm, " + fmt(q.cap, 0) + " aF</text>";
+    });
+    s += "</svg>";
+    return s + '<p class="src">Hollow circles at the top: phases of the 21.6 µm strip without a valid measurement. The short strips were swept in 2 ns steps, the long one in 1 ns steps, so the true maximum of a short strip may fall between two of its points. Each point is one SPICE instance against the quiet instance of the same deck.</p>';
+  }
+
+  // ---- the stage ----------------------------------------------------------------------------------
+  var view = $("view"), cv = $("canvas"), ctx = cv.getContext("2d"), tip = $("tip"), card = $("card");
+  var W = 0, H = 0, DPR = 1, cam = { x: 0, y: 0, s: 1 }, camFrom = null, camTo = null, t0 = 0, DUR = 750, cur = 0, userMoved = false;
+  function fitCam(b) {
+    var padT = 46, padB = 28, padL = 50, padR = 14;
+    var s = Math.min((W - padL - padR) / (b[2] - b[0]), (H - padT - padB) / (b[3] - b[1]));
+    return { s: s, x: (b[0] + b[2]) / 2 - ((padL - padR) / 2) / s, y: (b[1] + b[3]) / 2 - ((padT - padB) / 2) / s };
+  }
+  function sx(x) { return W / 2 + (x - cam.x) * cam.s; }
+  function sy(y) { return H / 2 - (y - cam.y) * cam.s; }
+  function wx(px) { return cam.x + (px - W / 2) / cam.s; }
+  function wy(py) { return cam.y - (py - H / 2) / cam.s; }
+  function resize() {
+    var r = view.getBoundingClientRect(); W = r.width; H = r.height; DPR = window.devicePixelRatio || 1;
+    cv.width = Math.round(W * DPR); cv.height = Math.round(H * DPR);
+    if (!userMoved) { cam = fitCam(STEPS[cur].view()); camFrom = camTo = null; }
+    draw();
+  }
+  function label(txt, x, y, col, bold) {
+    ctx.font = (bold ? "600 " : "") + "12px " + getComputedStyle(document.body).fontFamily;
+    var w = ctx.measureText(txt).width;
+    ctx.fillStyle = C.halo; ctx.fillRect(x - w / 2 - 4, y - 9, w + 8, 17);
+    ctx.fillStyle = col || C.label; ctx.textAlign = "center"; ctx.textBaseline = "middle"; ctx.fillText(txt, x, y);
+  }
+  function draw() {
+    var st = STEPS[cur];
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0); ctx.clearRect(0, 0, W, H);
+    ctx.fillStyle = C.stage; ctx.fillRect(0, 0, W, H);
+    // the die and the core's outline, always
+    ctx.fillStyle = C.die; ctx.strokeStyle = C["die-edge"]; ctx.lineWidth = 1.5;
+    ctx.fillRect(sx(DIE[0]), sy(DIE[3]), (DIE[2] - DIE[0]) * cam.s, (DIE[3] - DIE[1]) * cam.s);
+    ctx.strokeRect(sx(DIE[0]), sy(DIE[3]), (DIE[2] - DIE[0]) * cam.s, (DIE[3] - DIE[1]) * cam.s);
+    ctx.fillStyle = C.core; ctx.fillRect(sx(CORE[0]), sy(CORE[3]), (CORE[2] - CORE[0]) * cam.s, (CORE[3] - CORE[1]) * cam.s);
+    ctx.fillRect(sx(MAC[0]), sy(MAC[3]), (MAC[2] - MAC[0]) * cam.s, (MAC[3] - MAC[1]) * cam.s);
+    ctx.lineWidth = 1; ctx.setLineDash([4, 4]);
+    ctx.strokeRect(sx(CORE[0]), sy(CORE[3]), (CORE[2] - CORE[0]) * cam.s, (CORE[3] - CORE[1]) * cam.s);
+    ctx.strokeRect(sx(MAC[0]), sy(MAC[3]), (MAC[2] - MAC[0]) * cam.s, (MAC[3] - MAC[1]) * cam.s);
+    ctx.setLineDash([]);
+    // the layout, in database units
+    ctx.save();
+    ctx.setTransform(DPR * cam.s, 0, 0, -DPR * cam.s, DPR * (W / 2 - cam.x * cam.s), DPR * (H / 2 + cam.y * cam.s));
+    ORDER.forEach(function (k) {
+      var g = G[k]; if (g.a < 0.004) return;
+      var full = g.a > 0.5;
+      ctx.globalAlpha = full ? (/^cells/.test(k) ? 1 : 0.78) * Math.min(1, g.a) : g.a * 2.2;
+      ctx.fillStyle = full ? C[g.col] : C.grey; ctx.fill(g.path);
+      if (g.edge && cam.s * 1000 > 2.2) { ctx.globalAlpha = Math.min(1, g.a) * 0.5; ctx.strokeStyle = C.stage; ctx.lineWidth = 0.8 / cam.s; ctx.stroke(g.path); }
+    });
+    ctx.globalAlpha = 1;
+    if (st.sab && SABPATH[sabSel]) {
+      var sp = SABPATH[sabSel];
+      if (sp.big) { ctx.strokeStyle = C.add; ctx.lineWidth = 2 / cam.s; ctx.strokeRect(MAC[0], MAC[1], MAC[2] - MAC[0], MAC[3] - MAC[1]); }
+      else {
+        ctx.fillStyle = C.add; ctx.globalAlpha = 0.85; ctx.fill(sp.add); ctx.globalAlpha = 1;
+        ctx.strokeStyle = C.add; ctx.lineWidth = 2 / cam.s; ctx.stroke(sp.add);
+        ctx.strokeStyle = C.del; ctx.setLineDash([5 / cam.s, 4 / cam.s]); ctx.lineWidth = 2 / cam.s; ctx.stroke(sp.del); ctx.setLineDash([]);
+      }
+    }
+    ctx.restore();
+    // labels, in screen units
+    (st.labels || []).forEach(function (kind) {
+      if (kind === "pins") {
+        var b = bboxOf(D.pins.map(function (q) { return [0, q[1], q[2], q[1], q[2]]; }));
+        ctx.strokeStyle = C.met4; ctx.lineWidth = 2;
+        D.pins.forEach(function (q) { ctx.beginPath(); ctx.moveTo(sx(q[1]), sy(q[2] + 500)); ctx.lineTo(sx(q[1]), sy(q[2] - 500)); ctx.stroke(); });
+        label(D.pins.length + " pins on metal 4", sx((b[0] + b[2]) / 2), sy(DIE[3]) - 12);
+        label("core", sx((CORE[0] + CORE[2]) / 2), sy((CORE[1] + CORE[3]) / 2), null, true);
+        label("slot XC-19", sx((MAC[0] + MAC[2]) / 2), sy((MAC[1] + MAC[3]) / 2), null, true);
+        label(fmt(um(DIE[2])) + " µm", sx(DIE[2] / 2), sy(0) + 14);
+      }
+      if (kind === "nodes") D.nodes.forEach(function (q) { if (/^(XA|XB|PREA|PREB|DUTA|DUTB)$/.test(q[0])) { ctx.fillStyle = C.label; ctx.beginPath(); ctx.arc(sx(q[1]), sy(q[2]), 3, 0, 7); ctx.fill(); label(q[0], sx(q[1]) + (/A$/.test(q[0]) ? -34 : 34), sy(q[2]), null, /^X/.test(q[0])); } });
+      if (kind === "stubs") D.stubs.forEach(function (q, i) { label(q[0], sx(q[1]), sy(q[2]) - 14 - (i % 3) * 16, /^X._OUT$/.test(q[0]) ? C.add : null, /^X._OUT$/.test(q[0])); });
+      if (kind === "agr") ["input3", "input2", "_0685_"].forEach(function (nm) {
+        var q = CELL[nm]; if (!q) return;
+        ctx.strokeStyle = C.add; ctx.lineWidth = 2; ctx.strokeRect(sx(q[0]), sy(q[1] + q[3]), q[2] * cam.s, q[3] * cam.s);
+        label(nm + " (" + D.masters[q[4]] + ")", sx(q[0] + q[2] / 2), sy(q[1] + q[3]) - 12, C.add, true);
+      });
+    });
+    // scale bar
+    var target = 110 / cam.s / U, nice = [0.2, 0.5, 1, 2, 5, 10, 20, 50, 100].reduce(function (a, v) { return v <= target ? v : a; }, 0.2);
+    $("scalebar").style.width = (nice * U * cam.s) + "px"; $("scaletext").textContent = nice + " µm";
+  }
+  function frame(now) {
+    var busy = false, t;
+    if (camTo) { t = Math.min(1, (now - t0) / DUR); var e = ease(t); cam = { x: camFrom.x + (camTo.x - camFrom.x) * e, y: camFrom.y + (camTo.y - camFrom.y) * e, s: Math.exp(Math.log(camFrom.s) + (Math.log(camTo.s) - Math.log(camFrom.s)) * e) }; if (t < 1) busy = true; else camTo = null; }
+    t = Math.min(1, (now - t0) / DUR);
+    ORDER.forEach(function (k) { var g = G[k]; if (g.a !== g.to) { g.a = g.from + (g.to - g.from) * ease(t); if (t >= 1) g.a = g.to; else busy = true; } });
+    draw();
+    if (busy) requestAnimationFrame(frame);
+  }
+  function moveCam(b, instant) { camFrom = { x: cam.x, y: cam.y, s: cam.s }; camTo = fitCam(b); userMoved = false; if (instant) { cam = camTo; camTo = null; } }
+
+  // ---- the panel, the stepper, the legend ---------------------------------------------------------
+  var LEG = { logic: "Logic", ff: "Flip-flop", buf: "Buffer", fill: "Fill, decap", tap: "Tap", nwell: "n-well", diff: "Diffusion", poly: "Poly", li1: "li1", met1: "met1", met2: "met2", met3: "met3", met4: "met4", add: "Added by the sabotage", del: "Removed by it" };
+  var track = $("track"), seen = {};
+  STEPS.forEach(function (s, i) {
+    var b = document.createElement("button"); b.type = "button"; b.innerHTML = "<i>" + (i + 1) + "</i>" + s.short;
+    b.addEventListener("click", function () { go(i); }); track.appendChild(b);
+  });
+  function renderPanel() {
+    var st = STEPS[cur];
+    $("title").textContent = st.title;
+    $("body").innerHTML = '<p class="lede">' + st.lede + "</p>" + st.body();
+    var pick = $("sabpick");
+    if (pick) pick.addEventListener("click", function (e) {
+      var s = e.target.getAttribute && e.target.getAttribute("data-s"); if (!s) return;
+      sabSel = s; var top = $("panel").scrollTop; renderPanel(); $("panel").scrollTop = top;
+      moveCam(STEPS[cur].view()); t0 = performance.now(); requestAnimationFrame(frame);
+    });
+    if (st.card) { card.innerHTML = st.card(); card.hidden = false; } else card.hidden = true;
+    $("legend").innerHTML = (st.legend || []).map(function (k) { return '<li><i style="background:' + C[k] + '"></i>' + LEG[k] + "</li>"; }).join("");
+  }
+  function go(i, instant) {
+    if (i < 0 || i >= STEPS.length) return;
+    cur = i; seen[i] = 1;
+    var st = STEPS[cur];
+    ORDER.forEach(function (k) { var g = G[k]; g.from = g.a; g.to = st.show[k] || 0; if (instant) g.a = g.to; });
+    moveCam(st.view(), instant); t0 = performance.now();
+    Array.prototype.forEach.call(track.children, function (b, j) { b.className = (j === cur ? "on " : "") + (seen[j] ? "seen" : ""); if (j === cur) { b.setAttribute("aria-current", "step"); if (b.scrollIntoView) b.scrollIntoView({ block: "nearest", inline: "nearest" }); } else b.removeAttribute("aria-current"); });
+    $("prev").disabled = cur === 0; $("next").disabled = cur === STEPS.length - 1;
+    renderPanel(); $("panel").scrollTop = 0;
+    try { history.replaceState(null, "", "#" + st.id); } catch (e) {}
+    requestAnimationFrame(frame);
+  }
+  $("prev").addEventListener("click", function () { go(cur - 1); });
+  $("next").addEventListener("click", function () { go(cur + 1); });
+
+  // ---- zoom, pan, hover, keys ----------------------------------------------------------------------
+  function zoomAt(px, py, f) { var x = wx(px), y = wy(py); cam.s *= f; cam.x = x - (px - W / 2) / cam.s; cam.y = y + (py - H / 2) / cam.s; camTo = null; userMoved = true; draw(); }
+  view.addEventListener("wheel", function (e) { e.preventDefault(); var r = view.getBoundingClientRect(); zoomAt(e.clientX - r.left, e.clientY - r.top, Math.exp(-e.deltaY * 0.0015)); }, { passive: false });
+  var ptrs = {}, pinch = 0;
+  view.addEventListener("pointerdown", function (e) { if (e.target.closest && e.target.closest("button, .card")) return; ptrs[e.pointerId] = [e.clientX, e.clientY]; view.setPointerCapture(e.pointerId); view.classList.add("drag"); pinch = 0; });
+  view.addEventListener("pointermove", function (e) {
+    var r = view.getBoundingClientRect(), p = ptrs[e.pointerId], ids = Object.keys(ptrs);
+    if (p && ids.length === 1) { cam.x -= (e.clientX - p[0]) / cam.s; cam.y += (e.clientY - p[1]) / cam.s; ptrs[e.pointerId] = [e.clientX, e.clientY]; camTo = null; userMoved = true; tip.hidden = true; draw(); return; }
+    if (p && ids.length === 2) {
+      ptrs[e.pointerId] = [e.clientX, e.clientY];
+      var a = ptrs[ids[0]], b = ptrs[ids[1]], d = Math.hypot(a[0] - b[0], a[1] - b[1]);
+      if (pinch) zoomAt((a[0] + b[0]) / 2 - r.left, (a[1] + b[1]) / 2 - r.top, d / pinch);
+      pinch = d; return;
+    }
+    hover(e.clientX - r.left, e.clientY - r.top);
+  });
+  function up(e) { delete ptrs[e.pointerId]; pinch = 0; if (!Object.keys(ptrs).length) view.classList.remove("drag"); }
+  view.addEventListener("pointerup", up); view.addEventListener("pointercancel", up);
+  view.addEventListener("pointerleave", function () { tip.hidden = true; });
+  function hover(px, py) {
+    var x = wx(px), y = wy(py), txt = null, st = STEPS[cur];
+    if (st.card) { tip.hidden = true; return; }
+    if ((G["cells.logic"].to > 0.5 || st.id === "aggressors") && x >= CORE[0] && x <= CORE[2] && y >= CORE[1] && y <= CORE[3]) {
+      for (var i = 0; i < D.cells.length; i++) { var q = D.cells[i]; if (x >= q[0] && x < q[0] + q[2] && y >= q[1] && y < q[1] + q[3]) { txt = q[5] + " · " + D.masters[q[4]]; break; } }
+    } else if (G["mac.li1"].to > 0.5) {
+      var best = null, bd = 30 / cam.s;
+      D.nodes.forEach(function (q) { var d = Math.hypot(q[1] - x, q[2] - y); if (d < bd) { bd = d; best = q; } });
+      if (best) txt = "node " + best[0];
+    }
+    if (txt) { tip.textContent = txt; tip.style.left = px + "px"; tip.style.top = py + "px"; tip.hidden = false; } else tip.hidden = true;
+  }
+  $("zin").addEventListener("click", function () { zoomAt(W / 2, H / 2, 1.5); });
+  $("zout").addEventListener("click", function () { zoomAt(W / 2, H / 2, 1 / 1.5); });
+  $("zfit").addEventListener("click", function () { moveCam(STEPS[cur].view()); t0 = performance.now(); requestAnimationFrame(frame); });
+  document.addEventListener("keydown", function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var k = e.key;
+    if (k === "ArrowRight" || k === "PageDown") { go(cur + 1); e.preventDefault(); }
+    else if (k === "ArrowLeft" || k === "PageUp") { go(cur - 1); e.preventDefault(); }
+    else if (k === "+" || k === "=") zoomAt(W / 2, H / 2, 1.5);
+    else if (k === "-") zoomAt(W / 2, H / 2, 1 / 1.5);
+    else if (k === "0") $("zfit").click();
+  });
+
+  // ---- theme ---------------------------------------------------------------------------------------
+  var themeBtn = $("theme");
+  var ICON = { light: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><path d="M8 1.2v1.6M8 13.2v1.6M1.2 8h1.6M13.2 8h1.6M3.2 3.2l1.1 1.1M11.7 11.7l1.1 1.1M3.2 12.8l1.1-1.1M11.7 4.3l1.1-1.1"/></svg>',
+               dark: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M13.6 9.6A5.6 5.6 0 0 1 6.4 2.4a5.6 5.6 0 1 0 7.2 7.2z"/></svg>' };
+  function themeUI() { var th = document.documentElement.getAttribute("data-theme"), nx = th === "dark" ? "light" : "dark"; themeBtn.innerHTML = ICON[nx]; themeBtn.setAttribute("aria-label", "Switch to " + nx + " theme"); themeBtn.title = "Switch to " + nx + " theme"; }
+  themeBtn.addEventListener("click", function () {
+    var nx = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", nx); try { localStorage.setItem("galois-theme", nx); } catch (e) {}
+    readColours(); themeUI(); renderPanel(); draw();
+  });
+  themeUI();
+
+  window.addEventListener("hashchange", function () { STEPS.forEach(function (st, i) { if ("#" + st.id === location.hash && i !== cur) go(i); }); });
+  window.addEventListener("resize", resize);
+  var r0 = view.getBoundingClientRect(); W = r0.width; H = r0.height;
+  var first = 0; STEPS.forEach(function (s, i) { if ("#" + s.id === location.hash) first = i; });
+  go(first, true); resize();
+  window.galoisProbe = { steps: STEPS.map(function (s) { return s.id; }), go: go, state: function () { return { cur: cur, cam: cam, W: W, H: H }; } };
+}
+</script>
+</body>
+</html>
