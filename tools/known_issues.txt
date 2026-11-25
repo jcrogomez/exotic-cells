@@ -4,3 +4,32 @@ experiments/xc19_weak_inversion/dc_27.log | first deck of part 1; harmless parse
 experiments/xc19_weak_inversion/dc_28.log | first deck of part 1; harmless parser notes
 experiments/auditoria_hsa/original/minimos/t0/lod.log | HSA audit, rescued as evidence: first version of the minimal LOD deck, failed BSIM4 parameter checking; superseded by lod2.sp, no number of the audit comes from it
 experiments/auditoria_hsa/original/minimos/t1/lod.log | HSA audit, rescued as evidence: same failed first LOD deck as t0/lod.log, in hs mode; superseded by lod2.sp
+# 2026-11-25. The entries below are logs where "measure ... out of interval" means "this node did not cross in the window", and that is the reported result, not a broken run. Each reason names the report that states it.
+experiments/xc19_slot_e2/diseno/corridas/contrato_ff_-40/contrato_ff_-40.log | contract deck: fault instances (F1, F3, F4, F7) are expected not to cross, and at ff -40 the reference states (h11, h10) do not cross within 80 us, which is why the 160 us run exists (experiments/xc19_slot_e2/INFORME_enmienda2.md)
+experiments/xc19_slot_e2/diseno/corridas/contrato_ff_-40_t160/contrato_ff_-40_t160.log | contract deck: fault instances F3 and F4 are expected not to cross (INFORME_enmienda2.md)
+experiments/xc19_slot_e2/diseno/corridas/contrato_ff_85/contrato_ff_85.log | contract deck: fault instances F3 and F4 are expected not to cross (INFORME_enmienda2.md)
+experiments/xc19_slot_e2/diseno/corridas/contrato_ss_85/contrato_ss_85.log | contract deck: fault instances F3 and F4 are expected not to cross (INFORME_enmienda2.md)
+experiments/xc19_slot_e2/diseno/corridas/contrato_tt_27/contrato_tt_27.log | contract deck: fault instances F3 and F4 are expected not to cross (INFORME_enmienda2.md)
+experiments/xc19_slot_e2/diseno/corridas/largo_ff_-40/largo_ff_-40.log | long deck: src = 00 (h00) and the removed device (f6) are predicted not to cross in 1.4 ms (INFORME_enmienda2.md)
+experiments/xc19_slot_e2/diseno/corridas/largo_ff_85/largo_ff_85.log | long deck: src = 00 (h00) and the removed device (f6) are predicted not to cross in 1.4 ms (INFORME_enmienda2.md)
+experiments/xc19_slot_e2/diseno/corridas/largo_ss_85/largo_ss_85.log | long deck: src = 00 (h00) and the removed device (f6) are predicted not to cross in 1.4 ms (INFORME_enmienda2.md)
+experiments/xc19_slot_e2/diseno/corridas/largo_tt_27/largo_tt_27.log | long deck: src = 00 (h00) and the removed device (f6) are predicted not to cross in 1.4 ms (INFORME_enmienda2.md)
+experiments/xc19_slot_e2/etapa_b/vb_ff_-40/vb.log | design sweep of the gate offset: at the lowest offsets side A does not cross in the simulated window; reported as "sin cruce" in etapa_b/README.md
+experiments/xc19_slot_e2/etapa_b/vb_ss_85/vb.log | design sweep of the gate offset: at the lowest offsets side A does not cross in the simulated window; reported as "sin cruce" in etapa_b/README.md
+experiments/xc19_slot_e2/etapa_b/vb_tt_27/vb.log | design sweep of the gate offset: at the lowest offsets side A does not cross in the simulated window; reported as "sin cruce" in etapa_b/README.md
+experiments/xc19_slot_e2/mc/M2101/mc.log | Monte Carlo: one of the 48 chips does not cross in 200 us; counted and reported (INFORME_enmienda2.md, C3)
+experiments/xc19_slot_e2/mc/v2_macro_viejo/M2101/mc.log | kept invalid run (old macro, no verdict; INFORME_enmienda2.md, A2); chips that do not cross in the window
+experiments/xc19_slot_e2/mc/v2_macro_viejo/M2102/mc.log | kept invalid run (old macro, no verdict; INFORME_enmienda2.md, A2); chips that do not cross in the window
+experiments/xc19_slot_e2/mc/v2_macro_viejo/M2103/mc.log | kept invalid run (old macro, no verdict; INFORME_enmienda2.md, A2); chips that do not cross in the window
+experiments/xc19_slot_e2/mc/v2_macro_viejo/M2104/mc.log | kept invalid run (old macro, no verdict; INFORME_enmienda2.md, A2); chips that do not cross in the window
+experiments/xc20_lector/diseno/c200f_0/lec.log | reader design sweep: at the lowest currents the loop does not oscillate in the window; a failure reported in DISENO_lector.md (v3)
+experiments/xc20_lector/diseno/c200f_1/lec.log | reader design sweep: at the lowest currents the loop does not oscillate in the window; a failure reported in DISENO_lector.md (v3)
+experiments/xc20_lector/diseno/c200f_2/lec.log | reader design sweep: at the lowest currents the loop does not oscillate in the window; a failure reported in DISENO_lector.md (v3)
+experiments/xc20_lector/diseno/c200f_3/lec.log | reader design sweep: at the lowest currents the loop does not oscillate in the window; a failure reported in DISENO_lector.md (v3)
+experiments/xc20_lector/diseno/c200f_4/lec.log | reader design sweep: at the lowest currents the loop does not oscillate in the window; a failure reported in DISENO_lector.md (v3)
+experiments/xc20_lector/diseno_v1_sin_ic/c10p_10/lec.log | kept failed version: without .ic the loop starts at its DC equilibrium and never oscillates (DISENO_lector.md, v1)
+experiments/xc20_lector/precarga/a_0/lec.log | precharge design sweep: points where the loop does not oscillate in the window (DISENO_lector.md, resumen_precarga.txt)
+experiments/xc20_lector/precarga/v3_0/lec.log | precharge design sweep: points where the loop does not oscillate in the window (DISENO_lector.md, resumen_precarga.txt)
+experiments/xc20_lector/precarga/v3_1/lec.log | precharge design sweep: points where the loop does not oscillate in the window (DISENO_lector.md, resumen_precarga.txt)
+experiments/xc20_lector/precarga/v3_2/lec.log | precharge design sweep: points where the loop does not oscillate in the window (DISENO_lector.md, resumen_precarga.txt)
+experiments/xc19_slot/diseno_ref2_ff_-40.log | design calculation at ff -40: the reference states (a10, a11, b10, b11) do not cross within the window. Reason inferred from the measurement names on 2026-11-25, not re-run
