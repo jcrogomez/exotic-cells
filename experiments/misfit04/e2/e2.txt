@@ -1,0 +1,58 @@
+deck p5_0: SIN q (incompleto)
+deck p5_1: SIN q (incompleto)
+deck p5_2: c frente al contrato 0.0000 % (limite 0,01 %) -> ok; q = 1.0001502
+deck p5_3: c frente al contrato 0.0000 % (limite 0,01 %) -> ok; q = 1.0001502
+deck p5_4: c frente al contrato 0.0000 % (limite 0,01 %) -> ok; q = 1.0001502
+deck p5_p5c_0: c frente al contrato 0.0000 % (limite 0,01 %) -> ok; q = 1.0001502
+deck p5_p5d_0: SIN q (incompleto)
+deck p5_p5d_1: SIN q (incompleto)
+deck p5_p5d_2: SIN q (incompleto)
+deck p5_p5e_a0: FUERA, control l216f12 se aparta -0.00357; no aporta ['l216f10', 'l216f11', 'l216f7', 'l216f9']
+deck p5_p5e_b0: SIN q (incompleto)
+deck p5_p5f_0: c frente al contrato 0.0000 % (limite 0,01 %) -> ok; q = 1.0001502
+deck p5_p5g_0: SIN q (incompleto)
+deck p5_p5h_0: FUERA, control l216f12 se aparta -0.00357; no aporta ['l216f10', 'l216f11', 'l216f7', 'l216f9']
+deck p5_p5i1_0: FUERA, control l216f4 se aparta +0.00930; no aporta ['l216f1']
+deck p5_p5i2_0: FUERA, control l216f4 se aparta +0.00894; no aporta ['l216f2']
+deck p5_p5i3_0: FUERA, control l216f4 se aparta +0.00858; no aporta ['l216f3']
+deck p5_p5i5_0: FUERA, control l216f4 se aparta +0.00536; no aporta ['l216f5']
+deck p5_p5i6_0: FUERA, control l216f4 se aparta +0.00215; no aporta ['l216f6']
+deck p5_p5j1_0: c frente al contrato 0.0000 % (limite 0,01 %) -> ok; q = 1.0001502
+deck p5_p5j6_0: c frente al contrato 0.0000 % (limite 0,01 %) -> ok; q = 1.0001502
+deck p5_p5k10_0: FUERA, control l216f12 se aparta -0.00107; no aporta ['l216f10']
+deck p5_p5k11_0: c frente al contrato 0.0000 % (limite 0,01 %) -> ok; q = 1.0001502
+deck p5_p5k2_0: c frente al contrato 0.0000 % (limite 0,01 %) -> ok; q = 1.0001502
+deck p5_p5k3_0: SIN q (incompleto)
+deck p5_p5k5_0: c frente al contrato 0.0000 % (limite 0,01 %) -> ok; q = 1.0001502
+deck p5_p5k7_0: c frente al contrato 0.0000 % (limite 0,01 %) -> ok; q = 1.0001502
+deck p5_p5k9_0: c frente al contrato 0.0000 % (limite 0,01 %) -> ok; q = 1.0001502
+deck p5_p5l3_0: c frente al contrato 0.0000 % (limite 0,01 %) -> ok; q = 1.0001502
+
+## Control del deck (limite 0,001 puntos de %)
+- fase 0 ns: p3 s70 = -0.00393 %, E2 = -0.00358 %, diferencia 0.00036 -> ok
+- fase 4 ns: p3 s71 = +0.06438 %, E2 = +0.06510 %, diferencia 0.00072 -> ok
+- fase 8 ns: p3 s72 = -0.12268 %, E2 = -0.12340 %, diferencia 0.00071 -> ok
+- fase 12 ns: p3 s73 = -0.46176 %, E2 = -0.46247 %, diferencia 0.00071 -> ok
+- fase 16 ns: p3 s74 = -0.36519 %, E2 = -0.36590 %, diferencia 0.00071 -> ok
+Control del deck: valido
+
+## Barrido (Delta con signo, %)
+- l216 (C = 663.59 aF): 0:-0.0036 1:+0.1187 2:+0.1220 3:+0.0844 4:+0.0651 5:+0.0608 6:+0.0007 7:-0.0515 8:-0.1234 9:-0.2110 11:-0.4721 12:-0.4625 13:-0.4482 14:-0.4074 15:-0.4024 16:-0.3659 17:-0.3140 18:-0.2421 19:-0.1427
+  max |Delta| = 0.47213 % = 5.85x el umbral (19 fases)
+- l80 (C = 238.18 aF): 0:-0.0014 2:+0.0504 4:+0.0569 6:+0.0000 8:-0.0444 10:-0.1298 12:-0.1663 14:-0.1220 16:-0.1145 18:-0.0873
+  max |Delta| = 0.16632 % = 2.06x el umbral (10 fases)
+- l40 (C = 134.75 aF): 0:-0.0011 2:+0.0497 4:+0.0129 6:+0.0000 8:-0.0004 10:-0.0644 12:-0.0941 14:-0.0876 16:-0.0433 18:-0.0361
+  max |Delta| = 0.09407 % = 1.17x el umbral (10 fases)
+
+## E2a, linealidad (cociente de maximos dentro de +-30 % del cociente de C)
+- l80: max/max_21,6 = 0.3523, C/C_21,6 = 0.3589, desviacion -1.9 % -> cumplida
+- l40: max/max_21,6 = 0.1992, C/C_21,6 = 0.2031, desviacion -1.9 % -> cumplida
+
+## E2b, testigo cerca del umbral (al menos una de l = 4, 8 entre 1x y 3x)
+- en [1x, 3x]: ['l40', 'l80'] -> cumplida
+
+## Pendiente y acoplo minimo detectable
+- l216: 0.000711 %/aF
+- l80: 0.000698 %/aF
+- l40: 0.000698 %/aF
+- ajuste por el origen (3 tiras): 0.000710 %/aF -> acoplo minimo detectable = umbral / pendiente = 113.7 aF

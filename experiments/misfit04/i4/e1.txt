@@ -1,0 +1,12 @@
+# E1 (enmienda 3): input2/input3 con la celda real clkdlybuf4s25_1 (p4.txt, corridas/p4_*), 07:38:48-07:45:11
+esquina  control   |D(tA/tB)| real   umbral    escalon ideal (p2)   la salida del bufer cruza 0,9 V antes que su entrada
+tt 27    0,0000 %  0,00000 %         0,0807 %  0,01288 %            in3 -251,7 ns · in2 -255,1 ns
+ff -40   0,0002 %  0,00000 %         0,1001 %  0,01352 %            in3 -821,8 ns · in2 -827,3 ns
+ss 85    0,0000 %  0,00000 %         0,0684 %  0,01354 %            in3  -69,6 ns · in2  -73,1 ns
+ff 85    0,0004 %  0,00000 %         0,0631 %  0,00000 %            in3  -20,0 ns · in2  -20,2 ns
+Resolucion: meas da 6 cifras (100 ps sobre ~29 us a tt): 0 significa < ~0,0004 % a tt (vale tambien para los ceros de la ablacion de I4).
+E1a (< umbral en las 4): cumplida. E1b (real <= ideal donde el ideal != 0): cumplida.
+Causa: la entrada del bufer es la salida lenta del inversor del macro; el bufer conmuta con su propio umbral, por debajo de
+0,9 V, decenas a cientos de ns antes del cruce medido, y el golpe sobre XA_OUT se apaga antes del cruce de A.
+Salvedad: aqui tA - tB es 0,3-6 ns (sin desajuste). Con desajuste A/B de ~1 % (cientos de ns) el flanco de B puede caer justo
+antes del cruce de A, que es la situacion del escalon ideal: el peor caso realista es el de p2 (0,0129-0,0135 %), no este 0.

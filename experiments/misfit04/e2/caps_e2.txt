@@ -1,0 +1,3 @@
+S7 l=4.0 um: red m3_3400_24445# a XA 134.75 aF; otras nuevas: []
+S7 l=8.0 um: red m3_3400_24445# a XA 238.18 aF; otras nuevas: []
+S7 l=21.6 um: 663.59 aF (caps_s78.json)

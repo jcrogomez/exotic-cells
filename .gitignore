@@ -54,3 +54,14 @@ experiments/misfit04/i4/ext/*.spice
 experiments/misfit04/i4/corridas/**/*.log
 instrument/misfit04/tile/build/
 experiments/misfit04/i4/ext/**/*.gds
+# MISFIT-04 enmienda 3 (E2, E3): copias del tile y extracciones planas; se regeneran (experiments/misfit04/REGENERAR.md)
+experiments/misfit04/e2/build_*/
+experiments/misfit04/e2/ext_*/
+experiments/misfit04/e3/*/*
+!experiments/misfit04/e3/*/lvs.rpt
+# MISFIT-08: productos de compilacion y de cocotb
+instrument/misfit08/*.vvp
+instrument/misfit08/cocotb/
+# MISFIT-09: regeneracion de control del macro v_hm (identica a v_hm en dispositivos y capacidades)
+cells/xc19_slot_core_a2/v_ctlhm/
+cells/xc19_slot_core_a2/xc19_bias

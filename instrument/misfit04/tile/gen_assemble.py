@@ -58,6 +58,8 @@ if V == "S5":     # XA shorted to GND: XA's line is metal 2 (local y -1.62..-1.3
     # (local -3.58..-2.68) up under it and a via1. First try (metal 1 only, no via) did not touch XA: amendment-2 witness caught it
     r("metal1", OX + 0.0, OY - 2.80, OX + 0.40, OY - 1.29)
     r("via1", OX + 0.07, OY - 1.60, OX + 0.33, OY - 1.34); r("metal2", OX + 0.02, OY - 1.65, OX + 0.38, OY - 1.29)
+if V.startswith("S7L"):   # amendment 3, E2: the same strip, length l um from local x = -3.0 (S7L4.0, S7L8.0)
+    r("metal3", OX - 3.0, OY - 1.62, OX - 3.0 + float(V[3:]), OY - 1.32)
 if V == "S7":     # clock on metal 3 over XA's line only (local x -3.66..19.9, y -1.62..-1.32)
     r("metal3", OX - 3.0, OY - 1.62, OX + 18.6, OY - 1.32)   # ends 0.41 um from the DUTA m3 track at x 19.16 (met3.2: 0.30)
     # floating in the layout (amendment 2, A4): the clock drive is applied in the I4 SPICE through the extracted coupling
