@@ -1,0 +1,6 @@
+7ca5c8425c88f37d0e87e66c26d9bff8b70f0481aaf7419ea1a127e77088e2f7  cells/preregistros/XC-64_2026-11-25_caza_de_islas.md
+# sellado 2026-11-25 13:13:02 EST, antes de escribir las sondas
+990d85a1f470239b7ec7930049ed215554ed12d756d6be462fb448b145d2f920  cells/preregistros/XC-64_2026-11-25_caza_sistematica.md
+# caza sistematica sellada 2026-11-25 13:25:19 EST, antes de escribir pares.tcl
+62771af5d088072903f9fe320fd06d5113e2e0706b06ca299b8ea9c04bbe2dac  cells/preregistros/XC-64_2026-11-25_caza_sistematica_enmienda1.md
+# enmienda 1 (cruce de bordes) sellada 2026-11-25 13:28:47 EST, antes de escribir cruces.tcl

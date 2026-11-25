@@ -1,0 +1,2 @@
+0613465ebac3d32a439bb133d2260fd3a269eb112e9eb7239d9d4b73ddc49cfd  cells/preregistros/XC-20_2026-11-25_lector_rango_ancho.md
+# sellado 2026-11-25 13:14:36 EST, antes de escribir gen_r2.py
