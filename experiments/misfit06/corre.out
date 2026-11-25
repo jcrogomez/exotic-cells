@@ -1,0 +1,8 @@
+inicio 2026-11-25 11:49:15 EST
+  empieza ctl (met4) 11:49:15
+  ctl 11:53:14 rc=0
+  empieza m3 (met3) 11:53:14
+  m3 11:56:00 rc=2
+  empieza m2 (met2) 11:56:00
+  m2 12:24:07 rc=124
+fin 2026-11-25 12:24:07 EST

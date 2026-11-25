@@ -1,0 +1,13 @@
+# MISFIT-06 · analiza_m6.py
+ctl: instancias 1681; rutado 31286 um; DRC ruteo 0; DRC Magic 0; LVS errores 0; setup ws 6.653 ns; hold ws 0.1153 ns; violaciones setup/hold 0/0; por capa (um): met1 12071, met2 11748, met3 6307, met4 1131
+m3: instancias 1680; rutado 29440 um; DRC ruteo 0; DRC Magic 34; LVS errores 0; setup ws 5.960 ns; hold ws 0.1122 ns; violaciones setup/hold 0/0; por capa (um): met1 11627, met2 12232, met3 5552
+m2: NO TERMINO (sin final/metrics.json)
+A1 (ctl repite MISFIT-04): cumplida
+A2 (m3 termina, DRC 0, LVS limpio, holguras >= 0): FALSA
+A3 (m3 sin metal 4 de senal): 0.0 um -> cumplida
+A4 (rutado de m3 frente a ctl entre 0 y +5 %): -5.90 % -> FALSA
+A5 (m2 empeora): no termino -> cumplida
+Benchmark: valido
+MUERE: el nucleo no cierra limitado a metal 3
+Metal 4 sobre el bloque de m3 (161.00 x 87.04 um): 8 franjas de alimentacion (x, ancho): [(19.08, 1.6), (22.38, 1.6), (57.95, 1.6), (61.25, 1.6), (96.82, 1.6), (100.12, 1.6), (135.69, 1.6), (138.99, 1.6)]
+  huecos entre franjas (um): [18.28, 1.7, 33.97, 1.7, 33.97, 1.7, 33.97, 1.7, 21.21]; area libre bruta = 12899 um2 de 14013 (sin contar pines ni reglas de densidad)
