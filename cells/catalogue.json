@@ -817,5 +817,18 @@
   "information": "M",
   "readiness": "T0",
   "state": "CELL. Round 3: the PDK itself ships seven cells with a contact on an unimplanted tap, all on p substrate (verified); on an n-well it passes only next to a normal tap; real interface unknown"
+ },
+ {
+  "id": "XC-64",
+  "status": "open",
+  "family": "Rule walk",
+  "plan": "cells/xc64_rule_walk/PLAN.md",
+  "mechanism": "One geometry stepped on the 5 nm grid across a design rule, reading the electrical quantity the rule protects: where the real border is and what lies past it",
+  "engine": "P",
+  "vehicle": "D",
+  "usefulness": "H",
+  "information": "H",
+  "readiness": "T0",
+  "state": "CELL (a family of ladders, one per rule). Entered 2026-11-25; generator exists (`residual/drc_edge`); first candidate measured at the edge: diffusion beside a gate. Not attacked. What may be submitted past a rule is a vehicle question"
  }
 ]

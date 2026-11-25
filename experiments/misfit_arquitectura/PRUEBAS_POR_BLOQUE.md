@@ -1,6 +1,6 @@
 # MISFIT · pruebas por bloque del chip: qué está hecho, qué falta, qué no se puede saber antes del silicio
 
-2026-11-23, 18:13 EST (`date`). Inventario, no plan congelado. Cada fila apunta al archivo que tiene el número; aquí no vive
+2026-11-23, 18:13 EST (`date`); **puesto al día el 2026-11-25** con MISFIT-03 enmienda 2, MISFIT-04 enmiendas 3 y 4, y MISFIT-05 a 07. Inventario, no plan: el orden de lo que falta está en [`docs/MISFIT_PLAN.md`](../../docs/MISFIT_PLAN.md). Cada fila apunta al archivo que tiene el número; aquí no vive
 ningún número nuevo. Todo lo "hecho" es **modelo** (SPICE, DRC, aritmética), nunca silicio.
 
 Leyenda: ✅ hecho en el modelo · 🟡 parcial o con veredicto falso pendiente de enmienda · ❌ falta · 🚫 imposible antes del silicio.
@@ -9,12 +9,12 @@ Leyenda: ✅ hecho en el modelo · 🟡 parcial o con veredicto falso pendiente 
 
 | Bloque | Hecho | Falta antes de fabricar | Imposible antes del silicio |
 |---|---|---|---|
-| **Núcleo digital** (contador, protocolo, flags) | ✅ 13 pruebas cocotb (solo lógica) · ✅ tile 1×1 con la celda de tiempo: DRC 0, LVS, precheck (`instrument/misfit02/`) | ❌ perfil de corriente por estado (RISKS 2) · ❌ flanco lento de `xa` al sincronizador (RISKS 5) · ❌ `src = 2` en `misfit_cell_slot.v` con la definición nueva, y volver a correr cocotb · ❌ secuencia de 4 estados a potencia constante, si entra XC-52 (W4) | — |
+| **Núcleo digital** (contador, protocolo, flags) | ✅ 13 pruebas cocotb (solo lógica) · ✅ tile 1×1 con la celda de tiempo: DRC 0, LVS, precheck (`instrument/misfit02/`) · ✅ bloque de 161 × 87 µm en el tile 1×2 (MISFIT-04) · ✅ cierra con el metal 4 reservado encima salvo la banda de pines: 11 856 µm² libres en bruto (`experiments/misfit06/RESULTADOS.md`) · ✅ variante lean sin contador común: equivalente ciclo a ciclo en 10 millones de ciclos aleatorios, 13/13 cocotb, −9,0 % de área de celdas (`experiments/misfit08/RESULTADOS.md`) | ❌ perfil de corriente por estado (RISKS 2) · ❌ flanco lento de `xa` al sincronizador (RISKS 5) · ❌ `src = 2` en `misfit_cell_slot.v` con la definición nueva, y volver a correr cocotb · ❌ bajar la altura del bloque con el núcleo lean (plan, B3b) · ❌ celdas de fila instanciadas dentro del núcleo (B2; el relleno sobrante está en astillas) · ❌ acoplo del núcleo hacia lo que se ponga en el metal 4 (B4) | — |
 | **Celda de tiempo** (referencia digital, canal 7) | ✅ extraída, dentro del 1,2 % de su esquemático; el RTL la lee dentro de 1 ciclo en todas las fases (MISFIT-02) | — | 🚫 su valor absoluto en el dado |
 | **Interruptor de potencia del tile** | 🟡 solo el transistor en esquemático: 1×1 en `tt_power_gate/drops.txt`; la cifra del 1×2 es aritmética (`CANDIDATURA` W2) | ❌ con metal y extraído · ❌ corriente real del tile 1×2 sumando núcleo, slots y, si entra, la bobina | — |
-| **Cadena de polarización (VB)** | ✅ usable en 5 esquinas a 27 y 85 °C (`bias_table.txt`) · ✅ ruido 1/f integrado (`xc19_discrim/calc_ruido/integra.txt`) | ❌ **etapa b**: ajuste sin pines analógicos (~10 µs), sin prerregistrar · ❌ Monte Carlo del paso de unidad con desajuste | 🚫 deriva térmica real (RISKS 7) |
+| **Cadena de polarización (VB)** | ✅ usable en 5 esquinas a 27 y 85 °C (`bias_table.txt`) · ✅ ruido 1/f integrado (`xc19_discrim/calc_ruido/integra.txt`) · 🟡 **etapa b**, diseño en esquemático: 11 códigos de 0 a −155 mV, paso máximo 16–41 mV (`xc19_slot_e2/etapa_b/README.md`) · ✅ **filtro de VB** (MISFIT-07, enmienda 1): la lectura no cambia al quitar el filtro de 10 pF, ni en lectura asíncrona (A tarda 3–5 veces más que B); sin ruido y con un solo lector (`experiments/misfit07/RESULTADOS.md`) | ❌ etapa b con interruptores reales, prerregistrada, y Monte Carlo del paso (plan, R1) · ❌ dos lectores sobre un mismo VB (R3) | 🚫 deriva térmica real (RISKS 7) |
 | **Decodificador E7** | ✅ simulado dentro del contrato del slot; F5 solo se ve en la corriente del tile (`INFORME_etapa_a.md`) · ✅ sintetizado en el núcleo: tabla E7 9/9 alcanzables y 16/16 en el módulo; entradas quietas en la ventana (MISFIT-04 I2, I3) | ❌ glitches con tiempos reales (I3 es retardo unitario) | — |
-| **Integración del tile (MISFIT-04)** | ✅ tile 1×2: DRC 0, LVS match, precheck 15/15 · ✅ extracción plana con acoplo: agresores reales dan 0,0129 % a tt (umbral 0,0807 %), todo de `input3.X` · ✅ campaña de 10 sabotajes (`experiments/misfit04/RESULTADOS.md`) | ❌ testigo S7 cerca del umbral (dio 5,7×, se pedían > 10×) · ❌ un chequeo que vea S2 (VGND del macro cortada, oculta por la fusión de sustrato) · ❌ `input3.X` con la celda real (b4) · ❌ slot en corto que alimenta a sus vecinos (RISKS 3) · ❌ deriva de X en reposo armado (A2) | — |
+| **Integración del tile (MISFIT-04)** | ✅ tile 1×2: DRC 0, LVS match, precheck 15/15 · ✅ extracción plana con acoplo: agresores reales dan 0,0129 % a tt (umbral 0,0807 %) · ✅ campaña de 10 sabotajes (`experiments/misfit04/RESULTADOS.md`) · ✅ E1: `input2/3.X` con su celda real dan 0 (`i4/e1.txt`) · ✅ E2: sensibilidad cerca del umbral, 39 de 40 fases, acoplo mínimo detectable 113,7 aF (`e2/e2.txt`, enmienda 4) · ✅ E3: un LVS sin tomas de sustrato ve S2 (`e3/e3.txt`) | ❌ slot en corto que alimenta a sus vecinos (RISKS 3) · ❌ deriva de X en reposo armado (A2) · ❌ causa de los abortos de ngspice en decks grandes `[?]` · ❌ repetir todo en el tile 1×1 del plan | — |
 
 ## 2. Slot XC-19 (lector de una carga)
 
@@ -22,13 +22,15 @@ Leyenda: ✅ hecho en el modelo · 🟡 parcial o con veredicto falso pendiente 
 |---|---|---|
 | DRC (Magic y dos decks de KLayout) y LVS | ✅ P1 | `cells/xc19_slot_core/` |
 | Simetría A/B, rechazo de la alimentación en el cociente, 7 fallos inyectados | ✅ P5′, P7, F1–F7 | `experiments/xc19_slot/INFORME_etapa_a.md` |
-| Inerte con `en = 0` | 🟡 P2 falsa: fugan los pfet de los inversores; arreglo hvt en la enmienda 2 | ídem |
-| Tamaño del paso de calibración | 🟡 P4 falsa a tt (0,17 %); se rediseña la placa | ídem |
+| Inerte con `en = 0` | ✅ con el inversor hvt (macro v_hm): 8,31 pA a ss 85 (MISFIT-03 enmienda 2, C2). La P2 original fue falsa | `experiments/xc19_slot_e2/INFORME_enmienda2.md` |
+| Tamaño del paso de calibración | ✅ 0,967 % a ff −40 con la placa rediseñada (C1b). La P4 original fue falsa a tt | ídem |
 | Tiempo absoluto | 🟡 P3 falsa por el ancla del prerregistro, no por el macro | ídem |
-| Transitorio de `en = 0` en ff −40 y ss 85 | ❌ no corrió (el simulador no avanza) | ídem |
-| Ruido sobre el macro extraído con sus capacidades reales | ❌ (RISKS 10). Hoy está calculado en la cadena, no en el macro | — |
-| Monte Carlo de desajuste del macro | ❌ el canal viejo tiene 39 de 100 tiradas (`n5.txt`) | — |
+| Transitorio de `en = 0` en ff −40 y ss 85 | ✅ corrió (C1, C2) | ídem |
+| Ruido sobre el macro extraído con sus capacidades reales | 🟡 ruido de disparo ✅ (C4: σ 0,151 %, salto a 7,3σ en un disparo; las tiradas comparten semilla) · 1/f sobre el macro ❌ (plan, R5) | ídem, `ruido.txt` |
+| Monte Carlo de desajuste del macro | 🟡 48 chips: el salto se ve en los 47 que cruzan (mediana 0,803 %) y el 40 % da < 10 cuentas, como se predijo; **falsas** las tres predicciones de dispersión (el desajuste A/B es ~2,5× el modelo) | ídem, `mc.txt` |
 | Precheck | ✅ MISFIT-04 1×2, 15/15 (`experiments/misfit04/i1/`) | — |
+| Lector pequeño para un tile 1×1 (una fila de filtro) | ✅ dibujado, 58,2 × 20,7 µm; DRC 0, LVS, KLayout 0; lee igual que el grande en 4 esquinas (MISFIT-09) | `experiments/misfit09/RESULTADOS.md` |
+| Varias ramas en un lector | ✅ 16 ramas iguales en 4 esquinas (MISFIT-05); ❌ con cableado, desajuste y dispositivos distintos (plan, R4, R6) | `experiments/misfit05/RESULTADOS.md` |
 | Si existen trampas visibles | 🚫 el modelo no tiene trampas; el salto se inyecta a mano | — |
 
 ## 3. Abanico de DUT (C0–C9) y simulador de discriminación
@@ -37,12 +39,12 @@ Leyenda: ✅ hecho en el modelo · 🟡 parcial o con veredicto falso pendiente 
 |---|---|
 | Prerregistro y 3 enmiendas sellados | ✅ `cells/preregistros/XC-19_2026-11-23_discriminacion_abanico*.md` |
 | Estimador independiente E_B | ✅ terminado; pasa T1 y los mutantes (`xc19_discrim/eb.txt`) |
-| Estimador del autor E_A | ⏳ corriendo |
-| Consolidación (diferencia ≤ 0,05 bits) y veredictos PD1–PD5 | ❌ espera a E_A |
+| Estimador del autor E_A | 🟡 terminado; nunca aplicó el prior de λ0 (hueco declarado) |
+| Consolidación (diferencia ≤ 0,05 bits) y veredictos | 🟡 **ninguna fila decide** (enmienda 4): con λ0 desconocido el control T2 da 0,72 del techo, por debajo de 0,80; parado (`xc19_discrim/RESULTADOS_enmienda4.md`) |
 | Modelo de qué distingue a C1–C6 (sa, esquina de STI, poly vecina, antena, butted) | ❌ **el simulador solo modela áreas (A1–A8)**; para C1–C6 no hay predicción de en qué difieren `[?]` |
 | Layout de C0–C9 detrás de un multiplexor | ❌ |
-| Cuánto cambian la corriente y el salto al multiplexar DUT en serie | ❌ (DECISION §3) |
-| Fuga de N interruptores abiertos a 85 °C | ❌ (DECISION §3) |
+| Cuánto cambian la corriente y el salto al multiplexar DUT en serie | ✅ 2026-11-25, 16 ramas iguales, sin cableado ni desajuste (`experiments/misfit05/RESULTADOS.md`) |
+| Fuga de N interruptores abiertos a 85 °C | ✅ 2026-11-25: 15 ramas ≤ 0,54 % de la corriente (ídem) |
 | Densidad real de trampas (λ0) | 🚫 el 1/f del PDK leído como trampas es una conjetura; por eso el prior de b6 |
 
 ## 4. Slot de metrología pasiva (devuelve datos aunque no aparezca nada exótico)
@@ -51,7 +53,7 @@ Leyenda: ✅ hecho en el modelo · 🟡 parcial o con veredicto falso pendiente 
 |---|---|---|
 | **XC-12, matriz LOD** | ✅ la extracción omite `sa`/`sb`; el modelo separa 31,09 mV; el anotador pasa su CI; el par LOD pasa por la etapa (`docs/CLAIMS.md`) | ❌ layout de la matriz con controles de orientación y proximidad · ❌ su lectura por el mismo lector · ❌ prerregistro de silicio |
 | **XC-62, pares de poly densa/aislada** | 🟡 etapa 2: **benchmark inválido** (fallan a2 y a3) · 2b de convergencia prerregistrada, sin correr (~3,8 h estimadas) | ❌ correr 2b · ❌ layout |
-| **Tiras Kelvin** (n+, p+, poly, li) | ❌ nada | ❌ diseño y prerregistro, aunque son convencionales |
+| **Tiras Kelvin** (n+, p+, poly, li) | ❌ nada | fuera del primer tile (decisión del 2026-11-25 en el plan: su sitio lo toma XC-14) |
 | **Escalera de capacidades** | ❌ nada | ❌ ídem |
 | Residuo de la OPC de la fábrica | — | 🚫 |
 
@@ -59,17 +61,14 @@ Leyenda: ✅ hecho en el modelo · 🟡 parcial o con veredicto falso pendiente 
 
 | Celda | Hecho | Falta antes de fabricar | Imposible antes del silicio |
 |---|---|---|---|
-| **XC-20, unión p+/n+ a separación 0** | ✅ el precheck la acepta a 0, la rechaza solapada y a 0,13 (`precheck_map`) · ✅ túnel verificado al orden de magnitud (rondas 1–2) · 🟡 motor de hipótesis r3 **no consolidado** | ❌ **lector de rango amplio** (el de precarga satura cerca de 1,25 nA; RISKS 14) · ❌ matriz de separación d × largo de frontera L × área A, con la descomposición área/perímetro en el prerregistro · ❌ layout · ❌ S2 (perfil de implante) y S3 (DEVSIM con túnel), por montar · ❌ anillos de guarda y latch-up (RISKS 12) | 🚫 magnitud del túnel (el perfil de dopado no es público) |
+| **XC-20, unión p+/n+ a separación 0** | ✅ el precheck la acepta a 0, la rechaza solapada y a 0,13 (`precheck_map`) · ✅ túnel verificado al orden de magnitud (rondas 1–2) · 🟡 motor de hipótesis r3 **no consolidado** · 🟡 **lector de rango ancho** en esquemático: lineal ±1,6 % de 100 pA a 1 µA a tt 27; a ff 85 pierde la década baja (`experiments/xc20_lector/DISENO_lector.md`) | ❌ prerregistro y layout del lector (plan, R2) · ❌ matriz de separación d × largo L × área A · ❌ layout · ❌ S2 (perfil de implante) y S3 (DEVSIM con túnel), por montar · ❌ anillos de guarda y latch-up (RISKS 12) | 🚫 magnitud del túnel (el perfil de dopado no es público) |
 | **XC-14, antena como escritura en fábrica** | ✅ descarga verificada y residuo al orden (ronda 4) · ✅ el precheck no comprueba antena | ❌ prerregistro · ❌ que el reset y la calibración no polaricen el nodo antes de la primera lectura (RISKS 4) · ❌ layout | 🚫 si la carga del plasma queda escrita y sobrevive al recocido |
-| **XC-52, espín (con XC-10 para crear trampas)** | ✅ el demodulador de 4 estados no elimina los términos pares (ronda 2) · ✅ bobina 0,373 mT/mA · ✅ candidatura W1–W5 | ❌ W1 diseño de estrés antes/después · ❌ W2 corriente de bobina contra la caída · ❌ W3 lector integrador · ❌ W4 protocolo · ❌ W5 discriminación | 🚫 si los centros Pb responden a ±2 mT a temperatura ambiente |
+| **XC-52, espín (con XC-10 para crear trampas)** | ✅ el demodulador de 4 estados no elimina los términos pares (ronda 2) · ✅ bobina 0,373 mT/mA · ✅ candidatura W1–W5 · 🟡 **W1 leído: `[?]`, inclinado a muerte** (ninguna fuente da ΔNit ≥ 1e11 cm⁻² a ≤ 4,3 MV/cm; `attack2_xc52/W1_RESULTADO.md`) · 🟡 etapa 0, medir en el chip las trampas que crea el estrés (DCIV): nota de diseño (`cells/xc52_spin_pair/ETAPA0_DCIV.md`) | ❌ prerregistro de la etapa 0 y cómo polarizar el pozo sin pines analógicos (plan, C7) · ❌ W2–W5 | 🚫 si los centros Pb responden a ±2 mT a temperatura ambiente |
 | XC-01 y XC-05 (constricciones) | ✅ rondas 1–2: puente por barrera, cuello de li | ❌ alimentación y protección aparte para pulsos de mA · ❌ S4 electrotérmica, por montar | 🚫 el estado tras la formación |
+| **XC-64, paseo por la regla** (alta del 2026-11-25) | ✅ la herramienta que mide el borde legal existe y midió bordes reales (`residual/drc_edge`) | ❌ todo: lista de reglas con magnitud legible y tramo enviable, primera escalera (plan, G3) | 🚫 qué pasa eléctricamente fuera de regla |
 
-## 6. Lo que más información daría antes de fabricar (por bloqueo, no por gusto)
+## 6. Qué va primero
 
-1. **MISFIT-04, integración del tile.** Sin ella no hay chip, y ataca 5 filas de RISKS a la vez (3, 6, 11, 13 y el precheck).
-2. **Enmienda 2 del slot XC-19** (P2, P4) y **ruido y Monte Carlo sobre el macro extraído.** Es el lector de todo lo demás.
-3. **Consolidar el simulador** y **darle un modelo a C1–C6.** Sin ese modelo, C1–C6 entran en el chip sin una predicción.
-4. **Lector de rango amplio para XC-20.** Es lo único que separa a XC-20 del chip.
-5. **Etapa b, polarización ajustable.** Sin ella, en ff 85 °C una carga vale menos de una cuenta.
-6. **Termómetro en el chip.** No está en ninguna fila y RISKS 7 lo pide: sin él no se pueden separar temperatura y señal.
-   Propuesta mía, no decidida.
+El orden vigente, con cada prueba y qué la mata, está en [`docs/MISFIT_PLAN.md`](../../docs/MISFIT_PLAN.md) (pruebas B, R, C, G, T).
+La lista que había aquí el 2026-11-23 quedó resuelta o absorbida: MISFIT-04 y la enmienda 2 del slot se hicieron; el lector de rango
+ancho y la etapa b tienen diseño en esquemático; el modelo para C1–C6 y el termómetro en el chip siguen sin hacer.

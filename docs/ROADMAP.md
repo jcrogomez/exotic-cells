@@ -1,16 +1,19 @@
 # Roadmap
 
-Where MISFIT is, and what comes next. No dates are promised. Last update: 2026-11-17. The detailed work per front is in
+Where MISFIT is, and what comes next. No dates are promised. Last update: 2026-11-25. The detailed work per front is in
 [PLAN_EXPLORATORIO](PLAN_EXPLORATORIO.md) (Spanish); the gates before tapeout are in [PIPELINE](PIPELINE.md#gates-before-tapeout).
-This page is the single to-do list. Everything that can be studied before silicon, by kind, is in the
+This page is the single to-do list. What goes on the first tile and its tests, in order, is the
+[build plan](MISFIT_PLAN.md). Everything that can be studied before silicon, by kind, is in the
 [research agenda](RESEARCH_AGENDA.md).
 
 ## Where we are
 
 | Stage | State |
 |---|---|
-| Catalogue of ideas | 63 identifiers; 15 survived attack and independent verification on paper |
-| Shared reader (XC-19) | Simulated against four pre-registrations; reader, bias and channel DRC clean (T2). Not yet a complete channel with pins and power |
+| Catalogue of ideas | 64 identifiers; 15 survived attack and independent verification on paper |
+| Shared reader (XC-19) | Complete slot drawn (58 × 96 µm), DRC/LVS clean, and integrated in a 1×2 tile with the digital core: DRC, own LVS and precheck pass (MISFIT-03, MISFIT-04). Contract, mismatch (48 chips) and shot noise simulated; bias trim designed in schematic, not drawn. One reader can carry 16 devices (MISFIT-05, model without wiring) |
+| Second reader (wide range, for XC-20) | Schematic only: linear within ±1.6 % from 100 pA to 1 µA at tt 27 °C ([design note](../experiments/xc20_lector/DISENO_lector.md)); no pre-registration, not drawn |
+| Metrology seats (LOD, XC-62) | Not designed |
 | Top candidate (XC-20) | Physics verified to order; hypothesis engine at round 3, **not consolidated**; structure matrix approved, macro not frozen |
 | Tiny Tapeout questions | Silicide and antenna answered by a third party ([OPEN_QUESTIONS](OPEN_QUESTIONS.md)); the rest open |
 | Silicon | None |
@@ -27,6 +30,8 @@ This page is the single to-do list. Everything that can be studied before silico
 ## To do
 
 ### Now
+- [ ] **First tile, [build plan](MISFIT_PLAN.md)** (proposed 2026-11-25, not frozen): two readers of 16 seats, area found above
+      and inside the digital core, tests B1–B4, R1–R6, C1–C8, G1–G5, T1–T4 in the order given there. Decisions taken by delegation, listed there
 - [ ] XC-20, before another large round of the hypothesis engine (Juan, 2026-11-16; each item needs its own pre-registration):
   - [ ] fix W2 and the selectable-range correlations in `motor3.py`
   - [ ] separate estimator error from modelling differences in the W1 discrepancies
@@ -92,6 +97,22 @@ This page is the single to-do list. Everything that can be studied before silico
 
 ## Done (most recent first)
 
+- 2026-11-25 · MISFIT-09: the XC-19 reader drawn with one filter row: 58.2 × 20.7 µm instead of 58.2 × 95.7, rule-clean,
+  reading unchanged in four corners. It fits the free strip of a single tile ([report](../experiments/misfit09/RESULTADOS.md)).
+- 2026-11-25 · MISFIT-08: a lean digital core without the shared timer, equivalent to the original cycle by cycle in
+  random simulation, 9.0 % less cell area after place and route ([report](../experiments/misfit08/RESULTADOS.md)).
+- 2026-11-25 · MISFIT-07: the reader's 10 pF bias filter (85 % of its area) is not needed by the reading, in four corners
+  and with asynchronous sides; first run invalid by a badly designed witness, redone ([report](../experiments/misfit07/RESULTADOS.md)).
+- 2026-11-25 · MISFIT-06: with metal 4 blocked over the digital core except the pin band, the core closes clean (DRC 0,
+  LVS 0, timing met): 11 856 µm² of metal 4 reserved above it, raw. A global metal-3 cap fails under the pins
+  ([report](../experiments/misfit06/RESULTADOS.md)).
+- 2026-11-25 · MISFIT-05: one reader carries 16 device branches in four corners (15 open branches leak ≤ 0.54 % of the
+  device current; +0.23–0.25 % of time per branch). Model without wiring or mismatch ([report](../experiments/misfit05/RESULTADOS.md)).
+- 2026-11-24 · MISFIT-04: the XC-19 slot and the digital core in one 1×2 tile pass DRC, own LVS and the precheck; real
+  aggressors stay 5–7× under threshold; a cut macro ground is invisible to the standard checks and is caught by an LVS
+  without substrate taps; coupling sensitivity from 39 of 40 phases ([report](../experiments/misfit04/RESULTADOS.md)).
+- 2026-11-24 · MISFIT-03: the extracted slot meets its contract in the corners that were missing; Monte Carlo of 48 chips and
+  shot noise run; three mismatch predictions false ([report](../experiments/xc19_slot_e2/INFORME_enmienda2.md)).
 - 2026-11-17 · MISFIT-02: a hand-drawn time cell read through the instrument's counter (SPICE time → RTL count), and the real
   instrument core with that cell through DRC, own LVS and the precheck.
 - 2026-11-17 · MISFIT-01: a hand-drawn device through Tiny Tapeout's checks by two routes (row cell in the digital flow;

@@ -13,7 +13,7 @@ isn't written down anywhere, and that's useful for anyone designing on it.
 - Simulations with the open PDK, DRC runs in Magic and KLayout, the TT precheck, and small physics models in Python.
 - Before each run I write down the prediction and what would kill the idea.
 - Every idea is attacked first with the most boring explanation (it's just normal leakage, it's the reader, it's heat).
-  Whatever survives gets re-checked by a second, independent implementation. Of 63 ideas, 15 survived.
+  Whatever survives gets re-checked by a second, independent implementation. Of 64 ideas, 15 survived.
 - One side finding: Magic's extraction drops the diffusion-length (LOD) stress info, so two layouts the model separates by
   ~31 mV extract to the same netlist.
 

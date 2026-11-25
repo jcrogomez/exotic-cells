@@ -26,6 +26,8 @@ it tells us something about how SKY130 is really made that is not written down a
 | What comes next, as one to-do list | [Roadmap](docs/ROADMAP.md) |
 | Every headline number and the file that produces it | [Claims](docs/CLAIMS.md) |
 | The chip | [MISFIT proposal](docs/PROPOSAL.md) |
+| What goes on the first tile, the area budget and every test before tapeout | [MISFIT build plan](docs/MISFIT_PLAN.md) |
+| What has been simulated and checked on each block of the chip, what is missing, and what only silicon can tell (Spanish) | [Tests by block](experiments/misfit_arquitectura/PRUEBAS_POR_BLOQUE.md) |
 | The short version, as I'd explain it on Discord | [For Tiny Tapeout folks](docs/FOR_TINY_TAPEOUT.md) |
 | Terms like LOD, RTN, kT/C or Barber-Agakov | [Glossary](docs/GLOSSARY.md) |
 | Sources to read, models to build, maths to test, experiments to run | [Research agenda](docs/RESEARCH_AGENDA.md) |
@@ -43,7 +45,7 @@ What has been done, and how:
 - **Prediction first.** Before each run we write the prediction and what would kill the idea
   ([pre-registrations](cells/preregistros/README.md)).
 - **Attack, then verify.** Each family is attacked with the most boring explanation first. Whatever survives is reproduced by
-  an independent verifier with their own code, without reading the attacker's scripts. Only what both agree on is kept. Of 63
+  an independent verifier with their own code, without reading the attacker's scripts. Only what both agree on is kept. Of 64
   ideas, 15 survived; many died or came out transformed, and the dead ones stay in the catalogue with their reason.
 - **The checks catch us.** In the last XC-20 round the verifier disagreed with the author's estimator, so that round is
   recorded as not consolidated rather than averaged.
@@ -81,7 +83,7 @@ The catalogue hunts the third region. Each family's job is to find its two borde
 | | Meaning | Count |
 |---|---|---|
 | 🟢 | **Survived**: attacked from first principles and checked by an independent verifier; it survives, sometimes transformed. Ready to be designed for silicon | 15 |
-| 🟡 | **Open**: an active family not yet attacked, or whose key number could not be verified | 11 |
+| 🟡 | **Open**: an active family not yet attacked, or whose key number could not be verified | 12 |
 | 🔵 | **Instrument**: built on the chip because other cells need it (forge, heater, pump, coil, metrology) | 14 |
 | ⚪ | **Merged** into another family; kept so its identifier is never reused | 17 |
 | 🔴 | **Cancelled**: out of the catalogue, with the reason in its row | 6 |
@@ -109,6 +111,7 @@ filtering happens at the end.
 | Heat | XC-57 Peltier junction; XC-59 electrical write, thermal erase | XC-31 heater |
 | Noise as a resource | XC-58 kT/C cell | the XC-19 reader |
 | Interfaces and printing | XC-60 magnetodiode; XC-62 proximity-printed transistor; XC-63 unimplanted contact | XC-56 microcoil |
+| The rules themselves | XC-64 rule walk: ladders across a design rule | `residual/drc_edge` |
 | Cold | XC-54 superconducting interconnect; XC-30 mesoscopic coherence; XC-61 freeze-out oscillator | cryostat |
 
 ### All identifiers
@@ -182,6 +185,7 @@ still open.
 | 🟢 | XC-61 | [Freeze-out breakdown oscillator](cells/xc61_freezeout_oscillator/PLAN.md) | Impact ionisation of frozen-out dopants in lightly doped silicon at low temperature | P | S | L | H | T0 | CELL. Round 3: transformed into a forward diode that fires pulses at 4.2 K; nothing at 77 K (well still 6 to 37 % ionised); needs a cryostat |
 | 🟢 | XC-62 | [Proximity-printed transistor](cells/xc62_proximity_fet/PLAN.md) | Lithographic rounding and pull-back changing the real gate where the drawing is legal | P | D | M | H | T0 | CELL. Round 3: legal and submittable; threshold moves 1.2 to 1.8 mV per nm of gate length (verified); would measure the residue of the fab's proximity correction |
 | 🟢 | XC-63 | [Unimplanted contact](cells/xc63_schottky_contact/PLAN.md) | Metal on lightly doped silicon forms a rectifying barrier instead of an ohmic contact | F+P | D/S | M | M | T0 | CELL. Round 3: the PDK itself ships seven cells with a contact on an unimplanted tap, all on p substrate (verified); on an n-well it passes only next to a normal tap; real interface unknown |
+| 🟡 | XC-64 | [Rule walk](cells/xc64_rule_walk/PLAN.md) | One geometry stepped on the 5 nm grid across a design rule, reading the electrical quantity the rule protects: where the real border is and what lies past it | P | D | H | H | T0 | CELL (a family of ladders, one per rule). Entered 2026-11-25; generator exists (`residual/drc_edge`); first candidate measured at the edge: diffusion beside a gate. Not attacked. What may be submitted past a rule is a vehicle question |
 
 The table is the single source of the catalogue. [`cells/catalogue.json`](cells/catalogue.json) is generated from it by
 `tools/catalogue_json.py`; CI fails if the two disagree. CI has two levels. Level 1 (`tests.yml`, every push) checks the
