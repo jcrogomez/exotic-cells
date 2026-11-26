@@ -1,2 +1,4 @@
 d51ba901a0fc95a67a33d399f1f0e34a84380f478b9186e29fc03f556d49ce98  cells/preregistros/MISFIT-20_2026-11-26_xc14_puesto_generado.md
 # sellado 2026-11-26 13:40:03 EST, antes de tocar el generador
+3d2702e8aa740b7be5f2bb5d5f1ac311e0106431ad544194b5a71cfa30efcfa7  cells/preregistros/MISFIT-20_2026-11-26_xc14_puesto_generado_enmienda1.md
+# enmienda 1 sellada 2026-11-26 13:42:31 EST, antes de la segunda pasada
