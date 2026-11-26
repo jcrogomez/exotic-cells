@@ -41,8 +41,8 @@ Leyenda: ✅ hecho en el modelo · 🟡 parcial o con veredicto falso pendiente 
 | Estimador independiente E_B | ✅ terminado; pasa T1 y los mutantes (`xc19_discrim/eb.txt`) |
 | Estimador del autor E_A | 🟡 terminado; nunca aplicó el prior de λ0 (hueco declarado) |
 | Consolidación (diferencia ≤ 0,05 bits) y veredictos | 🟡 **ninguna fila decide** (enmienda 4): con λ0 desconocido el control T2 da 0,72 del techo, por debajo de 0,80; parado (`xc19_discrim/RESULTADOS_enmienda4.md`) |
-| Modelo de qué distingue a C1–C6 (sa, esquina de STI, poly vecina, antena, butted) | ❌ **el simulador solo modela áreas (A1–A8)**; para C1–C6 no hay predicción de en qué difieren `[?]` |
-| Layout de C0–C9 detrás de un multiplexor | ❌ |
+| Modelo de qué distingue a C1–C6 | ✅ contestado (MISFIT-18, `experiments/misfit18/RESULTADOS.md`): el modelo solo distingue área y largo de difusión; C4 y C6 son idénticas a C0, C3′ casi; C1 es C0; C5 pasa a XC-14 |
+| Layout del abanico en la matriz | ✅ generado, 18 puestos, DRC 0 en las tres herramientas y LVS (MISFIT-18) · ❌ líneas de selección y decodificador |
 | Cuánto cambian la corriente y el salto al multiplexar DUT en serie | ✅ 2026-11-25, 16 ramas iguales, sin cableado ni desajuste (`experiments/misfit05/RESULTADOS.md`) |
 | Fuga de N interruptores abiertos a 85 °C | ✅ 2026-11-25: 15 ramas ≤ 0,54 % de la corriente (ídem) |
 | Densidad real de trampas (λ0) | 🚫 el 1/f del PDK leído como trampas es una conjetura; por eso el prior de b6 |

@@ -15,7 +15,8 @@ switch sources GND; each switch gate is its own pin SEL<k>.
     -2.62    poly      switch gate pad -> via stack -> metal 2 pin SEL<k>, running down to y = -3.20
 
 Table (JSON): {"name": ..., "tap_every": 8, "tap_max": 10.0, "seats": [{"id": "C0", "w": 0.42, "l": 0.15, "sa": 0.30, "sb": 0.30, "n": 1}, ...]}
-"n" repeats a seat. Limits: one row, nfet only, w >= 0.42, sa and sb >= 0.30 (a contact fits between gate and diffusion end).
+"n" repeats a seat. Per-seat options (XC-19 fan): "bone": 0.42 widens the drain diffusion 0.075 um after the gate; "dummy": true adds
+unconnected poly strips on both sides; "butt": true puts a p+ block against the source end. Limits: one row, nfet only, w >= 0.42, sa and sb >= 0.30 (a contact fits between gate and diffusion end).
 
 Usage: matrix.py <table.json> <out_dir> [--pitch-delta D]     (D shrinks the seat pitch; used only to prove the DRC looks)
 Writes <name>.tcl, <name>_ref.spice, <name>_seats.csv. Run the .tcl in Magic with the sky130A rc file (see run.sh).
@@ -25,6 +26,8 @@ import json, os, sys
 GAP = 0.27          # diffusion to diffusion, diffusion to tap
 SW_W, SW_L = 0.84, 0.15
 TAP = 0.42
+BUTT = 0.42         # p+ block touching the source end of a seat ("butt": true)
+DUMMY = 0.15        # width of the unconnected poly strips beside a seat ("dummy": true); "dummy_gap" in the table sets their distance to the diffusion
 
 
 def q(v):
@@ -44,6 +47,8 @@ def expand(table):
             d = dict(w=float(s["w"]), l=float(s["l"]), sa=float(s.get("sa", 0.30)), sb=float(s.get("sb", 0.30)))
             assert d["w"] >= 0.42 and d["l"] >= 0.15 and d["sa"] >= 0.30 and d["sb"] >= 0.30, s
             d["id"] = s["id"] if int(s.get("n", 1)) == 1 else f"{s['id']}_{k}"
+            d["bone"] = float(s.get("bone", 0.0)); d["dummy"] = bool(s.get("dummy", False)); d["butt"] = bool(s.get("butt", False))
+            assert not (d["dummy"] and d["butt"]), s
             seats.append(d)
     return seats
 
@@ -64,7 +69,7 @@ def frame(name):
 
 def build(table, pitch_delta=0.0):
     name = table["name"]; seats = expand(table); every = int(table.get("tap_every", 8)); tap_max = float(table.get("tap_max", 10.0))
-    wmax = max(s["w"] for s in seats)
+    wmax = max(s["w"] + s["bone"] for s in seats); dg = float(table.get("dummy_gap", 0.075))
     yx0 = wmax + 0.30; yx1 = yx0 + 0.37                     # X bus
     t = Tcl(); x = 0.0; rows = []
 
@@ -79,8 +84,15 @@ def build(table, pitch_delta=0.0):
     for k, s in enumerate(seats):
         w, l, sa, sb = s["w"], s["l"], s["sa"], s["sb"]; xe = sa + l + sb; ws = max(xe, 0.75, sa + max(l, 0.34))
         # a substrate tap by count, or when this seat's diffusion would end farther than tap_max from the last tap (rule LU.2: 15 um)
-        if k and (k - last_k >= every or x + ws - last_tap > tap_max): x = tap(x); last_tap = x - GAP; last_k = k
+        pre = (BUTT if s["butt"] else 0.0) + (DUMMY + dg if s["dummy"] else 0.0); post = DUMMY + dg if s["dummy"] else 0.0
+        if k and (k - last_k >= every or x + pre + ws + post - last_tap > tap_max): x = tap(x); last_tap = x - GAP; last_k = k
+        x += pre
         X = lambda v: x + v
+        if s["bone"]: t.r("ndiff", X(sa + l + 0.075), 0, X(xe), w + s["bone"])     # STI corner 0.075 um from the gate, drain side
+        if s["butt"]:                                                              # p+ touching the source end; its own contact (licon.16), tied to nothing: it is substrate
+            t.r("psubdiff", X(-BUTT), 0, X(0), w); t.r("psubdiffcont", X(-0.30), 0.06, X(-0.13), w - 0.06); t.r("locali", X(-0.30), -0.02, X(-0.13), w + 0.02)
+        if s["dummy"]:                                                             # unconnected poly strips on the field, both sides
+            t.r("poly", X(-dg - DUMMY), -0.13, X(-dg), w + 0.13); t.r("poly", X(xe + dg), -0.13, X(xe + dg + DUMMY), w + 0.13)
         # device under test
         t.r("ndiff", X(0), 0, X(xe), w)
         t.r("poly", X(sa), -0.29, X(sa + l), w + 0.13)
@@ -110,8 +122,9 @@ def build(table, pitch_delta=0.0):
         t.r("via1", cx - 0.13, cy - 0.13, cx + 0.13, cy + 0.13)
         t.r("metal2", cx - 0.18, -3.20, cx + 0.18, cy + 0.18)
         t.pin(f"SEL{k}", "metal2", cx - 0.18, -3.20, cx + 0.18, -2.90)
-        rows.append(dict(seat=k, id=s["id"], x=round(x, 3), w=w, l=l, sa=sa, sb=sb, sel=f"SEL{k}"))
-        x += ws + GAP + pitch_delta
+        opt = "bone" if s["bone"] else "dummy" if s["dummy"] else "butt" if s["butt"] else ""
+        rows.append(dict(seat=k, id=s["id"], x=round(x, 3), w=w, l=l, sa=sa, sb=sb, sel=f"SEL{k}", opt=opt))
+        x += ws + post + GAP + pitch_delta
     x = tap(x) - GAP
     for y0, y1, n in ((yx0, yx1, "X"), (-0.66, -0.37, "VB"), (-1.74, -1.34, "GND")):
         t.r("metal1", 0, y0, x, y1); t.pin(n, "metal1", 0, y0, 0.40, y1)
@@ -123,7 +136,7 @@ def build(table, pitch_delta=0.0):
         ref.append(f"XD{k} X VB s{k} GND sky130_fd_pr__nfet_01v8 w={r['w']:g} l={r['l']:g}")
         ref.append(f"XS{k} s{k} SEL{k} GND GND sky130_fd_pr__nfet_01v8 w={SW_W:g} l={SW_L:g}")
     ref.append(".ends")
-    csv = ["seat,id,x_um,w_um,l_um,sa_um,sb_um,select"] + [f"{r['seat']},{r['id']},{r['x']},{r['w']},{r['l']},{r['sa']},{r['sb']},{r['sel']}" for r in rows]
+    csv = ["seat,id,x_um,w_um,l_um,sa_um,sb_um,select,option"] + [f"{r['seat']},{r['id']},{r['x']},{r['w']},{r['l']},{r['sa']},{r['sb']},{r['sel']},{r['opt']}" for r in rows]
     return name, "\n".join(head + t.l + tail) + "\n", "\n".join(ref) + "\n", "\n".join(csv) + "\n"
 
 

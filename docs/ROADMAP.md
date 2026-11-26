@@ -97,6 +97,8 @@ This page is the single to-do list. What goes on the first tile and its tests, i
 
 ## Done (most recent first)
 
+- 2026-11-26 · MISFIT-18: the XC-19 geometry fan drawn by the generator (18 seats, rule-clean, LVS). The model tells apart
+  only area and diffusion length; three classes stay as exploratory seats ([report](../experiments/misfit18/RESULTADOS.md)).
 - 2026-11-26 · MISFIT-16: XC-20's main cell (p+ touching n+ in an n-well, switch on the ground side) drawn by the generator,
   rule-clean with LVS at the first pass; the well costs 3.8 fF per seat on the reader node
   ([report](../experiments/misfit16/RESULTADOS.md)).

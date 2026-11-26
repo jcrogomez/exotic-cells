@@ -1,0 +1,219 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: xc19fan                         |Circuit 2: xc19fan                         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (36)               |sky130_fd_pr__nfet_01v8 (35) **Mismatch**  
+Number of devices: 36 **Mismatch**         |Number of devices: 35 **Mismatch**         
+Number of nets: 39                         |Number of nets: 39                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: xc19fan                         |Circuit 2: xc19fan                         
+
+---------------------------------------------------------------------------------------
+Net: a_2513_n392#                          |Net: s9                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: a_4472_n392#                          |Net: s0                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_342_n392#                           |Net: s1                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_3632_n392#                          |Net: s2                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_1922_n392#                          |Net: s3                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_750_n392#                           |Net: s4                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_546_n392#                           |Net: s5                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_954_n392#                           |Net: s6                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_3836_n392#                          |Net: s7                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_4766_n392#                          |Net: s8                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_5000_n392#                          |Net: s10                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_1438_n392#                          |Net: s11                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_4178_n392#                          |Net: s12                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_2807_n392#                          |Net: s13                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_3140_n392#                          |Net: s14                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_3428_n392#                          |Net: s15                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_138_n392#                           |Net: s16                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: a_2264_n392#                          |Net: s17                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: X                                     |Net: X                                     
+  sky130_fd_pr__nfet_01v8/(1|3) = 18       |  sky130_fd_pr__nfet_01v8/(1|3) = 17       
+                                           |                                           
+Net: VB                                    |Net: VB                                    
+  sky130_fd_pr__nfet_01v8/2 = 18           |  sky130_fd_pr__nfet_01v8/2 = 17           
+                                           |                                           
+Net: GND                                   |Net: GND                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 18       |  sky130_fd_pr__nfet_01v8/(1|3) = 18       
+  sky130_fd_pr__nfet_01v8/4 = 36           |  sky130_fd_pr__nfet_01v8/4 = 35           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: xc19fan                         |Circuit 2: xc19fan                         
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v8:1        |Instance: sky130_fd_pr__nfet_01v8:D0       
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:2        |Instance: sky130_fd_pr__nfet_01v8:D1       
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:4        |Instance: sky130_fd_pr__nfet_01v8:D2       
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:6        |Instance: sky130_fd_pr__nfet_01v8:D3       
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:7        |Instance: sky130_fd_pr__nfet_01v8:D4       
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:8        |Instance: sky130_fd_pr__nfet_01v8:D5       
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:9        |Instance: sky130_fd_pr__nfet_01v8:D6       
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:10       |Instance: sky130_fd_pr__nfet_01v8:D7       
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:13       |Instance: sky130_fd_pr__nfet_01v8:D8       
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:15       |Instance: sky130_fd_pr__nfet_01v8:D10      
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:18       |Instance: sky130_fd_pr__nfet_01v8:D11      
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:19       |Instance: sky130_fd_pr__nfet_01v8:D12      
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:22       |Instance: sky130_fd_pr__nfet_01v8:D13      
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:23       |Instance: sky130_fd_pr__nfet_01v8:D14      
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:31       |Instance: sky130_fd_pr__nfet_01v8:D15      
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:32       |Instance: sky130_fd_pr__nfet_01v8:D16      
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:34       |Instance: sky130_fd_pr__nfet_01v8:D17      
+  (1,3) = (18,2)                           |  (1,3) = (17,2)                           
+  2 = 18                                   |  2 = 17                                   
+  4 = 54                                   |  4 = 53                                   
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:35       |(no matching instance)                     
+  (1,3) = (18,2)                           |                                           
+  2 = 18                                   |                                           
+  4 = 54                                   |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: xc19fan                         |Circuit 2: xc19fan                         
+-------------------------------------------|-------------------------------------------
+GND                                        |(no pin, node is s9)                       
+X                                          |VB **Mismatch**                            
+VB                                         |GND **Mismatch**                           
+SEL15                                      |SEL0 **Mismatch**                          
+SEL12                                      |SEL1 **Mismatch**                          
+SEL3                                       |SEL2 **Mismatch**                          
+SEL5                                       |SEL3 **Mismatch**                          
+SEL14                                      |SEL4 **Mismatch**                          
+SEL10                                      |SEL5 **Mismatch**                          
+SEL9                                       |SEL6 **Mismatch**                          
+SEL11                                      |SEL7 **Mismatch**                          
+SEL0                                       |SEL8 **Mismatch**                          
+SEL2                                       |SEL9 **Mismatch**                          
+SEL7                                       |SEL10 **Mismatch**                         
+SEL13                                      |SEL11 **Mismatch**                         
+SEL16                                      |SEL12 **Mismatch**                         
+SEL4                                       |SEL13 **Mismatch**                         
+SEL8                                       |SEL14 **Mismatch**                         
+SEL17                                      |SEL15 **Mismatch**                         
+SEL6                                       |SEL16 **Mismatch**                         
+SEL1                                       |SEL17 **Mismatch**                         
+(no pin, node is VB)                       |X                                          
+---------------------------------------------------------------------------------------
+Cell pin lists for xc19fan and xc19fan altered to match.
+Device classes xc19fan and xc19fan are equivalent.
+
+Final result: Top level cell failed pin matching.

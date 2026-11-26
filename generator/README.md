@@ -37,5 +37,8 @@ Checked on four tables ([report](../experiments/misfit11/RESULTADOS.md)): rule-c
 against the generated reference, two altered references caught by LVS, a shrunk pitch caught by DRC, and a one-seat matrix whose
 two devices extract identical to the reader's.
 
+The transistor kind takes three per-seat options for the XC-19 fan (`tables/xc19fan.json`): `"bone"` (a diffusion step 0.075 µm from
+the gate), `"dummy"` (unconnected poly strips on both sides) and `"butt"` (a p+ block against the source end).
+
 Not there yet: other device kinds (the high-voltage junctions, antennas, contacts), more than one row, the selection logic, the predicted
 reading of each seat, the precheck of a tile that contains a matrix.
