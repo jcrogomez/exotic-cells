@@ -5,8 +5,9 @@ import os, re, sys
 import importlib.util
 H = os.path.dirname(os.path.abspath(__file__))
 _sp = importlib.util.spec_from_file_location("gen17", os.path.join(H, "..", "misfit17", "gen.py")); G = importlib.util.module_from_spec(_sp); _sp.loader.exec_module(G)
-DIV = 10                      # paso maximo = el de MISFIT-17 / DIV (enmienda 1 de MISFIT-17)
-CASOS = {r: [x for x in G.CASOS[r] if x[0] in ("cal", "oos", "wit", "zero")] for r in G.LP}
+DIV = 1                       # paso maximo = el de MISFIT-17 (el fino no cambio nada, enmienda 1 de MISFIT-17)
+WIT = {"bajo": 3.2572e-9, "alto": 1.03e-6}   # testigo de +3 %
+CASOS = {r: [(k, WIT[r] if k == "wit" else i) for k, i in G.CASOS[r] if k in ("cal", "oos", "wit", "zero")] for r in G.LP}
 PIN = {"bajo": "PRENL", "alto": "PRENH"}
 
 

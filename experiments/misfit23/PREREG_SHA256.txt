@@ -1,0 +1,2 @@
+9da29eb8285533faee176e839dece7fe9a0460ce67c4662fe67e4f1e69028d83  cells/preregistros/MISFIT-23_2026-11-26_lector2_extraido_lee.md
+# sellado 2026-11-26 16:09:36 EST, antes de correr ningun deck del lazo
