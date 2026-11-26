@@ -1,0 +1,38 @@
+# XC-64 caza de formas · analiza_formas.py · enviable = Magic drc(full) 0 y KLayout de fabricacion 0
+
+## step_gate: 171 puntos, de -0.350 a 0.500 um
+  legal en Magic: [-0.350, -0.250], [0.225, 0.500]
+  enviable: [-0.350, -0.250], [0.225, 0.500]
+  Magic, de -0.245 a 0.000: N-Diffusion overhang of nFET < 0.25um (poly.7)
+  Magic, de 0.000 a 0.145: poly overhang of transistor < 0.13um (poly.8)
+  Magic, de 0.005 a 0.145: Transistor width < 0.42um (diff/tap.2)
+  Magic, de 0.005 a 0.145: No bends in transistors (poly.11)
+  Magic, de 0.150 a 0.220: poly spacing to Diffusion < 0.075um (poly.4)
+
+## hole_gate: 61 puntos, de 0.000 a 0.600 um
+  legal en Magic: {0.000}
+  enviable: {0.000}
+  Magic, de 0.010 a 0.260: Diffusion spacing < 0.27um (diff/tap.3)
+  Magic, de 0.010 a 0.600: No bends in transistors (poly.11)
+  Magic, de 0.170 a 0.600: Transistor width < 0.42um (diff/tap.2)
+  KLayout, de 0.060 a 0.220 (muestreo): difftap.3
+
+## bent_gate: 86 puntos, de 0.600 a 2.300 um
+  legal en Magic: [2.080, 2.300]
+  enviable: [2.080, 2.300]
+  Magic, de 0.600 a 1.980: No bends in transistors (poly.11)
+  Magic, de 1.620 a 1.980: N-Diffusion overhang of nFET < 0.25um (poly.7)
+  Magic, de 1.860 a 1.980: Transistor width < 0.42um (diff/tap.2)
+  Magic, de 1.860 a 1.960: poly overhang of transistor < 0.13um (poly.8)
+  Magic, de 2.000 a 2.060: poly spacing to Diffusion < 0.075um (poly.4)
+
+## ring_gate: 46 puntos, de 0.300 a 1.200 um
+  legal en Magic: nada
+  enviable: nada
+  Magic, de 0.300 a 1.200: No bends in transistors (poly.11)
+
+## Veredictos
+step_gate: control (escalon lejos, a los dos lados) ok; F1 (ningun punto enviable con el escalon bajo la puerta, 0,005 a 0,145): cumplida
+hole_gate: control (sin hueco) ok; F2 (enviable de 0,27 a 0,60): FALSA; enviable = {0.000}
+bent_gate: control (codo sobre el campo) ok; F3 (nunca enviable con el codo sobre la difusion, 0,60 a 1,80): cumplida
+ring_gate: sin control propio; F4 (nunca enviable): cumplida; enviable = nada

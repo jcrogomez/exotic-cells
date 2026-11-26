@@ -4,3 +4,5 @@
 f217d5347a8edecc7e1cc16fea87b1e80f03564f944f6754bde105fc03cfe3bd  cells/preregistros/MISFIT-10_2026-11-25_altura_del_nucleo_enmienda1.md
 # enmienda 1 sellada 2026-11-25 13:00:19 EST, antes de lanzar la segunda tanda
 # nota: un comando lanzado desde la carpeta equivocada dejo un archivo suelto local_flow/PREREG_SHA256.txt (una linea, sin valor). No se borra sin permiso de Juan.
+# 13:26 enmienda 1: lean 31 (25 min, iteracion 25 del rutado detallado) y lean 30 (20 min, iteracion 8) pasaron el tope sin que gtimeout los cortara (librelane no muere con TERM). Parados a mano con docker stop: cuentan como 'no cierra'. Para las que faltan vigilo el tope a mano.
+# 2026-11-25 21:31 orig 30 y lean 29 siguieron corriendo mucho mas alla del tope (lanzadas 13:26; paradas a mano a las 21:31, en las iteraciones 43 y 55 del rutado detallado). Cuentan como 'no cierra'. gtimeout no corta a librelane: en adelante, gtimeout -k y parada del contenedor desde fuera.

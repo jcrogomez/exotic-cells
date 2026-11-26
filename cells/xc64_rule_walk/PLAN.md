@@ -70,8 +70,9 @@ Lectura de cada escalera con el lector que le toque, en frío de fábrica y tras
 [`experiments/xc64_hunt/RESULTADOS.md`](../../experiments/xc64_hunt/RESULTADOS.md). Cuatro sondas a mano, 156 parejas de capas
 caminando la separación, y 264 parejas con una forma a caballo del borde de otra. **Ninguna isla nueva** con formas
 rectangulares de dos capas: solo la familia de XC-20, que tiene cuatro miembros (dos polaridades, baja y alta tensión). Lo de
-"más allá de la regla" no pasa el precheck en nada de lo probado. Siguiente: formas (anillo, codo, muesca, esquina), lo legal que
-se imprime distinto justo en la regla, y estructuras de tres capas con contactos.
+"más allá de la regla" no pasa el precheck en nada de lo probado. Una cuarta caza, de formas (escalón, hueco, codo, anillo), tampoco
+encontró ninguna legal: poly.11 ("no bends in transistors") las cierra todas. Siguiente: lo legal que se imprime distinto justo
+en la regla, y preguntar a Tiny Tapeout si un macro puede llevar una violación de Magic declarada.
 
 ## 6. Qué la mataría
 

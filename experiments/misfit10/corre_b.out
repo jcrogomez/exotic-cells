@@ -3,3 +3,13 @@ inicio 2026-11-25 13:00:19 EST
   empieza orig 31 filas 13:00:19
   orig 31 filas 13:05:19 rc=0
   empieza lean 30 filas 13:05:19
+  lean 31 filas 13:26:01 rc=124
+error: no such object: f821b2923847
+  lean 30 filas 13:26:01 rc=124
+  empieza orig 30 filas 13:26:02
+  empieza lean 29 filas 13:26:02
+  orig 30 filas 21:31:38 rc=124
+  lean 29 filas 21:31:38 rc=124
+  empieza orig 29 filas 21:31:38
+  orig 29 filas 21:32:18 rc=2
+fin 2026-11-25 21:32:18 EST

@@ -66,3 +66,4 @@ instrument/misfit08/cocotb/
 cells/xc19_slot_core_a2/v_ctlhm/
 cells/xc19_slot_core_a2/xc19_bias
 experiments/xc64_hunt/out/
+experiments/xc64_hunt/out_formas/

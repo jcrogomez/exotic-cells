@@ -249,7 +249,7 @@ is the sketch, not the frozen criterion.
 | Test | Question | Dies if | Cost |
 |---|---|---|---|
 | **B2** row cells inside the core | Leftover filler is in slivers (MISFIT-06). Does a hand-drawn row cell **instantiated in the netlist** get placed, and pass DRC, LVS and precheck? | the flow cannot place or connect it | one flow run + MISFIT-01 checks |
-| **B3b** shorter core block | [MISFIT-10](../experiments/misfit10/): at 28 rows or fewer the core does not place (first run, invalid by its own rule; all my predictions false). Fine grid at 31, 30, 29 rows running | — | in progress |
+| ~~**B3b** shorter core block~~ | Dead ([MISFIT-10](../experiments/misfit10/RESULTADOS.md)): the original closes at 31 rows and not at 30; the lean core closes at none of 31, 30, 29. The block stays at 32 rows and the lean core is not adopted for space | — | done |
 | **B4** noise from below | With real core activity extracted under a metal-4 plate, how much couples into a reader node? | above the reader's threshold (0.0807 % at tt, as in MISFIT-04) | extraction + SPICE, method of MISFIT-04 |
 
 ### R · readers
@@ -257,7 +257,7 @@ is the sketch, not the frozen criterion.
 | Test | Question | Dies if | Cost |
 |---|---|---|---|
 | **R1** bias trim with real switches | Do the 11 codes (0 to −155 mV, steps 16–41 mV in schematic) survive switch drop, leakage and mismatch? | a step above 50 mV in any corner, or the trap step changes shape with the code | SPICE + Monte Carlo |
-| **R2** wide-range reader | Linear within a stated band over four corners and two ranges; zero-current control; calibration current; a known current step as witness | no band covers 1 nA–1 µA in all corners | pre-registration, then layout, then extraction |
+| **R2** wide-range reader | First verdict in schematic ([report](../experiments/xc20_lector/r2/RESULTADOS.md)): with three calibration currents the model holds within 2.7 % in three corners and from 10 nA up in the fourth; it fails by 16 % at 1 nA in the hot fast corner (precharge leakage). **Precharge to be redesigned** (longer channel) and judged again, then layout | no precharge keeps 1 nA–10 µA within the band in all corners | pre-registration, schematic, then layout |
 | **R3** two front ends on one bias filter | Does reader 1b disturb reader 1a through the shared bias? | kickback above the trap step's noise floor | SPICE on extracted macros |
 | **R4** unequal devices on one reader | With real LOD and XC-62 pairs (not 16 identical branches) and extracted wiring, how biased is a ratio? | bias above the effect being measured | layout + extraction |
 | **R5** noise on the extracted macro | Trap step against 1/f and thermal noise with real capacitances ([RISKS](../instrument/RISKS.md) row 10) | step under 5σ after averaging | SPICE noise |
@@ -282,7 +282,7 @@ is the sketch, not the frozen criterion.
 |---|---|---|
 | **G1** regenerate | Does the generator rebuild today's reader 1a matrix from a table, with identical DRC/LVS results? | hand edits are needed |
 | **G2** a second table | Does a different table (the XC-20 separation matrix) come out DRC/LVS/precheck clean with no hand edits? | each family needs its own generator |
-| **G3** rule walk | Three island hunts done ([report](../experiments/xc64_hunt/RESULTADOS.md)): with two-layer rectangles Magic leaves no legal island beyond the XC-20 family, which has four members (two polarities, low and high voltage); nothing past a rule passes the precheck. Next: shapes (ring, bent and notched gates, corners), legal shapes that print differently at the rule value, three-layer structures with contacts | a hunt over shapes also finds nothing submittable *and* no legal-side ladder has a readable quantity |
+| **G3** rule walk | Three island hunts done ([report](../experiments/xc64_hunt/RESULTADOS.md)): with two-layer rectangles Magic leaves no legal island beyond the XC-20 family, which has four members (two polarities, low and high voltage); nothing past a rule passes the precheck. A fourth hunt over shapes (step, hole, bend, ring) found none legal: one rule, poly.11 "no bends in transistors", closes them all. Next: legal shapes that print differently at the rule value, and asking Tiny Tapeout whether a declared Magic violation can be accepted in a macro | a hunt over shapes also finds nothing submittable *and* no legal-side ladder has a readable quantity |
 | **G4** stress in place | Stressing one seat moves its neighbours' readings by less than the trap step (supply transfer is 1.27 % per mA) | neighbours move more than that |
 | **G5** host program | Run against the RTL simulation, it produces valid atlas records for every seat and flags an injected fault | records cannot be produced from the pins alone |
 

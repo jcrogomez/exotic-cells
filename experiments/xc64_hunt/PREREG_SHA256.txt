@@ -4,3 +4,5 @@
 # caza sistematica sellada 2026-11-25 13:25:19 EST, antes de escribir pares.tcl
 62771af5d088072903f9fe320fd06d5113e2e0706b06ca299b8ea9c04bbe2dac  cells/preregistros/XC-64_2026-11-25_caza_sistematica_enmienda1.md
 # enmienda 1 (cruce de bordes) sellada 2026-11-25 13:28:47 EST, antes de escribir cruces.tcl
+54d78609a789c10d1fe219397933297f85bf33de8214b787111b25df4bc45fe6  cells/preregistros/XC-64_2026-11-25_caza_de_formas.md
+# caza de formas sellada 2026-11-25 13:50:19 EST, antes de escribir las sondas

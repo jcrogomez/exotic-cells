@@ -1,2 +1,3 @@
 0613465ebac3d32a439bb133d2260fd3a269eb112e9eb7239d9d4b73ddc49cfd  cells/preregistros/XC-20_2026-11-25_lector_rango_ancho.md
 # sellado 2026-11-25 13:14:36 EST, antes de escribir gen_r2.py
+# 21:31 analiza_r2.py: el testigo salia 'sin dato' por comparar flotantes (1.01e-8 frente a 1e-8*1.01). Corregida la busqueda; ningun criterio cambia.

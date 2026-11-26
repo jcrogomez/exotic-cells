@@ -75,3 +75,34 @@ Las cuatro son legales solo a separación exactamente 0.
 ## ¿Qué explicación aburrida no descarté?
 
 Que Magic y el deck de KLayout no sean lo que decide en la fábrica. Todo esto mide qué aceptan dos programas, no qué se fabrica.
+
+## 4. Caza de formas (2026-11-25 21:33 EST)
+
+Prerregistro: [`XC-64_2026-11-25_caza_de_formas.md`](../../cells/preregistros/XC-64_2026-11-25_caza_de_formas.md). Sondas en `formas/`;
+`analiza_formas.py` → [`formas.txt`](formas.txt). Los tres controles pasan (el transistor corriente de cada sonda es enviable).
+
+| Sonda | Enviable | Predicción | Veredicto |
+|---|---|---|---|
+| `step_gate`: escalón de la difusión caminando a través de la puerta | solo con el escalón fuera: ≥ 0,250 µm antes de la puerta o ≥ 0,075 µm después | nunca debajo | cumplida |
+| `hole_gate`: isla de óxido dentro del canal | solo sin hueco | **enviable desde 0,27 µm** | **FALSA** |
+| `bent_gate`: puerta en L | solo con el codo sobre el campo | ídem | cumplida |
+| `ring_gate`: puerta en anillo | nunca | nunca | cumplida (sin control propio) |
+
+**Una sola regla cierra las cuatro:** poly.11, "No bends in transistors". Magic la aplica a cualquier canal que no sea un
+rectángulo: un escalón de la difusión bajo la puerta, un hueco, un codo, un anillo. Al hueco lo cierra además diff/tap.2 (cada
+camino alrededor de la isla es un transistor de menos de 0,42 µm de ancho).
+
+**Mi apuesta fallida:** creí que un hueco de óxido bajo la puerta era solo "poly sobre campo" y que bastaba respetar la
+separación de difusión. No conté con que el canal deja de ser un rectángulo.
+
+## Lectura de las cuatro cazas
+
+Por la vía del precheck de Tiny Tapeout, en SKY130:
+
+- **El espacio de formas legales de un transistor es el rectángulo.**
+- **La única isla es la unión pegada**, en cuatro variantes (dos polaridades, baja y alta tensión).
+- Lo exótico enviable está en: las islas; lo que ninguna herramienta comprueba (antenas, XC-14); y lo legal que se imprime
+  distinto de como se dibuja. Lo demás pide una exención de la fundición u otro vehículo.
+
+Es un mapa negativo, y es un mapa: dice dónde no gastar área y dónde preguntar. **Pregunta nueva para Tiny Tapeout:** si un macro
+puede llevar una violación de DRC de Magic declarada y aceptada (por ejemplo poly.11) cuando el deck de fabricación no la marca.

@@ -1,0 +1,60 @@
+# XC-20 lector 2 (R2) · analiza_r2.py · T = (flanco 12 - flanco 2)/10; modelo T = Q/(I - IL) + td ajustado en 316 pA, 31,6 nA y 3,16 uA
+W0 (control 200 fF ideal, tt 27): 1 nA T = 0.00019945799999999996, 1 uA T = 2.0269859999999999e-07; frente a la v4: -0.021 %, -0.001 % -> cumplida
+
+## tt 27
+  ajuste: Q = 139.41 fC, IL = -0.03 pA, td = 3.32 ns
+  I = 1.0e-10 A: T = 1.3944e-03 s, f = 717.2 Hz, error del modelo +0.05 %
+  I = 1.0e-09 A: T = 1.3940e-04 s, f = 7173 Hz, error del modelo -0.01 %
+  I = 1.0e-08 A: T = 1.3942e-05 s, f = 7.172e+04 Hz, error del modelo -0.02 %
+  I = 1.0e-07 A: T = 1.3976e-06 s, f = 7.155e+05 Hz, error del modelo +0.01 %
+  I = 1.0e-06 A: T = 1.4292e-07 s, f = 6.997e+06 Hz, error del modelo +0.13 %
+  I = 1.0e-05 A: T = 1.7101e-08 s, f = 5.848e+07 Hz, error del modelo -0.91 %
+  testigo +1 % en 1e-08 A: periodo -0.994 %
+  testigo +1 % en 1e-06 A: periodo -0.975 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## ff -40
+  ajuste: Q = 152.59 fC, IL = -0.00 pA, td = 2.70 ns
+  I = 1.0e-10 A: T = 1.5259e-03 s, f = 655.4 Hz, error del modelo -0.00 %
+  I = 1.0e-09 A: T = 1.5259e-04 s, f = 6554 Hz, error del modelo -0.00 %
+  I = 1.0e-08 A: T = 1.5261e-05 s, f = 6.552e+04 Hz, error del modelo -0.00 %
+  I = 1.0e-07 A: T = 1.5288e-06 s, f = 6.541e+05 Hz, error del modelo +0.01 %
+  I = 1.0e-06 A: T = 1.5540e-07 s, f = 6.435e+06 Hz, error del modelo +0.07 %
+  I = 1.0e-05 A: T = 1.7862e-08 s, f = 5.598e+07 Hz, error del modelo -0.57 %
+  testigo +1 % en 1e-08 A: periodo -1.004 %
+  testigo +1 % en 1e-06 A: periodo -0.972 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## ss 85
+  ajuste: Q = 131.25 fC, IL = -8.13 pA, td = 3.86 ns
+  I = 1.0e-10 A: T = 1.2792e-03 s, f = 781.7 Hz, error del modelo +5.39 %
+  I = 1.0e-09 A: T = 1.2794e-04 s, f = 7816 Hz, error del modelo -1.73 %
+  I = 1.0e-08 A: T = 1.2798e-05 s, f = 7.814e+04 Hz, error del modelo -2.44 %
+  I = 1.0e-07 A: T = 1.2850e-06 s, f = 7.782e+05 Hz, error del modelo -2.37 %
+  I = 1.0e-06 A: T = 1.3312e-07 s, f = 7.512e+06 Hz, error del modelo -1.48 %
+  I = 1.0e-05 A: T = 1.7442e-08 s, f = 5.733e+07 Hz, error del modelo +2.67 %
+  testigo +1 % en 1e-08 A: periodo -0.991 %
+  testigo +1 % en 1e-06 A: periodo -0.942 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## ff 85
+  ajuste: Q = 146.70 fC, IL = +28.78 pA, td = 2.49 ns
+  I = 1.0e-10 A: T = 2.0513e-03 s, f = 487.5 Hz, error del modelo -0.41 %
+  I = 1.0e-09 A: T = 1.7512e-04 s, f = 5710 Hz, error del modelo +15.94 %
+  I = 1.0e-08 A: T = 1.4713e-05 s, f = 6.797e+04 Hz, error del modelo -0.01 %
+  I = 1.0e-07 A: T = 1.4700e-06 s, f = 6.803e+05 Hz, error del modelo +0.01 %
+  I = 1.0e-06 A: T = 1.4924e-07 s, f = 6.701e+06 Hz, error del modelo +0.03 %
+  I = 1.0e-05 A: T = 1.7104e-08 s, f = 5.847e+07 Hz, error del modelo -0.31 %
+  testigo +1 % en 1e-08 A: periodo -0.992 %
+  testigo +1 % en 1e-06 A: periodo -0.973 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## Veredictos
+W1 (1 nA a 10 uA dentro de +-3 %, 4 esquinas): FALSA
+W2 (100 pA dentro de +-3 % a tt 27 y ff -40): cumplida
+W3 (testigo, 8 puntos entre -1,2 y -0,8 %): cumplida
+W4 (I = 0 sin flancos, 4 esquinas): cumplida
+W5 (IL: <= 5 pA en frio y templado, 5-150 pA a 85 C): FALSA
+W6 (td entre 2 y 8 ns): cumplida
+Benchmark: valido
+MUERE o no sigue: ver W1 y W4

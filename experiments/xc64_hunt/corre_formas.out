@@ -1,0 +1,7 @@
+inicio 2026-11-25 13:50:19 EST
+    echo "$p: $(($(wc -l < out_formas/$p.magic.csv)-1)) puntos, $(echo $pts | wc -w) por KLayout"
+step_gate: 171 puntos, 89 por KLayout
+hole_gate: 61 puntos, 8 por KLayout
+bent_gate: 86 puntos, 21 por KLayout
+ring_gate: 46 puntos, 5 por KLayout
+fin 2026-11-25 13:57:40 EST
