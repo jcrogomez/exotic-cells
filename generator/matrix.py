@@ -128,6 +128,8 @@ def build(table, pitch_delta=0.0):
 
 
 JGAP = 1.50         # between the p+ of one seat and the n+ of the next: no unintended pair closer than the widest gap tested
+WDIODE = "pdiode"   # the same for the p+ island of the n-well variant; "pdiff" draws it as plain diffusion
+WENC = 0.18         # n-well enclosure of the p+ island and of the n+ tap
 DIODE = "ndiode"    # paint the n+ island as a diode so extraction yields a device; "ndiff" draws it as plain diffusion
 
 
@@ -182,10 +184,67 @@ def build_junction(table, pitch_delta=0.0):
     return name, "\n".join(head + t.l + tail) + "\n", "\n".join(ref) + "\n", "\n".join(csv) + "\n"
 
 
+def build_wjunction(table, pitch_delta=0.0):
+    """XC-20, n-well variant (main one since MISFIT-15): a p+ island (1.0 x 1.4 um by default) painted as a diode inside one
+    shared n-well, with an n+ well tap at distance d. The well taps go to the reader node X; a switch (nfet 0.84/0.15) outside
+    the well joins the island to GND, so the junction sees the node voltage. One p+ substrate tap per seat next to the switch.
+    d = null: no junction (the tap is 3 um away). Seats: {"id": ..., "d": 0.0, "w": 1.0, "h": 1.4, "n": 1}"""
+    name = table["name"]; seats = []
+    for s in table["seats"]:
+        for k in range(int(s.get("n", 1))):
+            seats.append(dict(id=s["id"] if int(s.get("n", 1)) == 1 else f"{s['id']}_{k}", d=s.get("d"), w=float(s.get("w", 1.0)), h=float(s.get("h", 1.4))))
+    hmax = max(s["h"] for s in seats); yx0 = hmax + 0.30; yx1 = yx0 + 0.37
+    t = Tcl(); x = 0.0; rows = []; xmax = 0.0
+    for k, s in enumerate(seats):
+        d = 3.0 if s["d"] is None else float(s["d"]); w, h = s["w"], s["h"]; X = lambda v: x + v
+        t.r(WDIODE, X(0), 0, X(w), h)                                              # p+ island, in the well
+        t.r(WDIODE + "c" if WDIODE != "pdiff" else "pdiffc", X(0.04), 0.06, X(0.21), h - 0.06)
+        t.r("locali", X(0.04), -1.98, X(0.21), h + 0.02)                           # island -> switch drain
+        px = w + d                                                                 # n+ well tap, on X
+        t.r("nsubdiff", X(px), 0, X(px + 1.0), h)
+        t.r("nsubdiffcont", X(px + 0.415), 0.06, X(px + 0.585), h - 0.06)
+        t.r("locali", X(px + 0.415), -0.02, X(px + 0.585), yx0 + 0.33)
+        t.r("viali", X(px + 0.415), yx0 + 0.10, X(px + 0.585), yx0 + 0.27)
+        t.r("ndiff", X(0), -1.96, X(0.75), -1.12)                                  # switch, outside the well
+        t.r("poly", X(0.30), -2.09, X(0.45), -0.99)
+        t.r("ndiffc", X(0.04), -1.90, X(0.21), -1.18)
+        t.r("ndiffc", X(0.54), -1.90, X(0.71), -1.18)
+        t.r("locali", X(0.54), -1.98, X(0.71), -0.60)                              # switch source -> GND bus
+        t.r("viali", X(0.54), -0.86, X(0.71), -0.69)
+        t.r("psubdiff", X(1.20), -1.96, X(1.62), -1.12)                            # substrate tap -> GND bus
+        t.r("psubdiffcont", X(1.325), -1.90, X(1.495), -1.18)
+        t.r("locali", X(1.325), -1.98, X(1.495), -0.60)
+        t.r("viali", X(1.325), -0.86, X(1.495), -0.69)
+        t.r("poly", X(0.30), -2.62, X(0.64), -2.09)
+        t.r("polycont", X(0.39), -2.54, X(0.56), -2.37)
+        t.r("locali", X(0.39), -2.62, X(0.56), -2.29)
+        t.r("viali", X(0.39), -2.54, X(0.56), -2.37)
+        cx, cy = X(0.475), -2.455
+        t.r("metal1", cx - 0.20, cy - 0.20, cx + 0.20, cy + 0.20)
+        t.r("via1", cx - 0.13, cy - 0.13, cx + 0.13, cy + 0.13)
+        t.r("metal2", cx - 0.18, -3.20, cx + 0.18, cy + 0.18)
+        t.pin(f"SEL{k}", "metal2", cx - 0.18, -3.20, cx + 0.18, -2.90)
+        rows.append(dict(seat=k, id=s["id"], x=round(x, 3), d=s["d"], w=w, h=h, sel=f"SEL{k}"))
+        xmax = x + px + 1.0; x = xmax + JGAP + pitch_delta
+    t.r("nwell", -WENC, -WENC, xmax + WENC, hmax + WENC)                           # one well for the whole table, on X
+    for y0, y1, n in ((yx0, yx1, "X"), (-0.95, -0.60, "GND")):
+        t.r("metal1", 0, y0, xmax, y1); t.pin(n, "metal1", 0, y0, 0.40, y1)
+    head, tail = frame(name)
+    ref = [f"* Reference for LVS, generated from table '{name}'. Do not edit by hand.",
+           f"* n-well drawn: {xmax + 2 * WENC:.3f} x {hmax + 2 * WENC:.3f} um", f".subckt {name} X GND " + " ".join(r["sel"] for r in rows)]
+    for r in rows:
+        k = r["seat"]
+        if WDIODE != "pdiff": ref.append(f"XJ{k} n{k} X sky130_fd_pr__diode_pd2nw_05v5 area={r['w'] * r['h'] * 1e12:g} perim={2 * (r['w'] + r['h']) * 1e6:g}")
+        ref.append(f"XS{k} n{k} SEL{k} GND GND sky130_fd_pr__nfet_01v8 w={SW_W:g} l={SW_L:g}")
+    ref.append(".ends")
+    csv = ["seat,id,x_um,d_um,w_um,h_um,select"] + [f"{r['seat']},{r['id']},{r['x']},{'' if r['d'] is None else r['d']},{r['w']},{r['h']},{r['sel']}" for r in rows]
+    return name, "\n".join(head + t.l + tail) + "\n", "\n".join(ref) + "\n", "\n".join(csv) + "\n"
+
+
 if __name__ == "__main__":
     a = sys.argv[1:]; pd = 0.0
     if "--pitch-delta" in a: i = a.index("--pitch-delta"); pd = -abs(float(a[i + 1])); del a[i:i + 2]
     table = json.load(open(a[0])); out = a[1]; os.makedirs(out, exist_ok=True)
-    name, tcl, ref, csv = (build_junction if table.get("kind") == "njunction" else build)(table, pd)
+    name, tcl, ref, csv = {"njunction": build_junction, "pjunction": build_wjunction}.get(table.get("kind"), build)(table, pd)
     for suf, txt in ((".tcl", tcl), ("_ref.spice", ref), ("_seats.csv", csv)): open(os.path.join(out, name + suf), "w").write(txt)
     print(f"ok {name}: {csv.count(chr(10)) - 1} seats -> {out}")

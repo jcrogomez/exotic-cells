@@ -1,0 +1,124 @@
+
+Circuit 1 cell sky130_fd_pr__diode_pd2nw_05v5 and Circuit 2 cell sky130_fd_pr__diode_pd2nw_05v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__diode_pd2nw_05v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__diode_pd2nw_05v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__diode_pd2nw_05v5  |Circuit 2: sky130_fd_pr__diode_pd2nw_05v5  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__diode_pd2nw_05v5 and sky130_fd_pr__diode_pd2nw_05v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: xc20w                           |Circuit 2: xc20w                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__diode_pd2nw_05v5 (7)         |sky130_fd_pr__diode_pd2nw_05v5 (6) **Misma 
+sky130_fd_pr__nfet_01v8 (7)                |sky130_fd_pr__nfet_01v8 (7)                
+Number of devices: 14 **Mismatch**         |Number of devices: 13 **Mismatch**         
+Number of nets: 16                         |Number of nets: 16                         
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: xc20w                           |Circuit 2: xc20w                           
+
+---------------------------------------------------------------------------------------
+Net: a_700_n392#                           |Net: n0                                    
+  sky130_fd_pr__diode_pd2nw_05v5/1 = 1     |  sky130_fd_pr__diode_pd2nw_05v5/1 = 1     
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: a_4632_n392#                          |Net: n1                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__diode_pd2nw_05v5/1 = 1     
+  sky130_fd_pr__diode_pd2nw_05v5/1 = 1     |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: a_2154_n392#                          |Net: n2                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__diode_pd2nw_05v5/1 = 1     
+  sky130_fd_pr__diode_pd2nw_05v5/1 = 1     |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: a_3716_n392#                          |Net: n4                                    
+  sky130_fd_pr__diode_pd2nw_05v5/1 = 1     |  sky130_fd_pr__diode_pd2nw_05v5/1 = 1     
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: a_2908_n392#                          |Net: n5                                    
+  sky130_fd_pr__diode_pd2nw_05v5/1 = 1     |  sky130_fd_pr__diode_pd2nw_05v5/1 = 1     
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: a_1400_n392#                          |Net: n6                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__diode_pd2nw_05v5/1 = 1     
+  sky130_fd_pr__diode_pd2nw_05v5/1 = 1     |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: a_0_n392#                             |Net: n3                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__diode_pd2nw_05v5/1 = 1     |                                           
+                                           |                                           
+Net: X                                     |Net: X                                     
+  sky130_fd_pr__diode_pd2nw_05v5/2 = 7     |  sky130_fd_pr__diode_pd2nw_05v5/2 = 6     
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: xc20w                           |Circuit 2: xc20w                           
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__diode_pd2nw_05v5:0 |Instance: sky130_fd_pr__diode_pd2nw_05v5:J 
+  1 = 2                                    |  1 = 2                                    
+  2 = 7                                    |  2 = 6                                    
+                                           |                                           
+Instance: sky130_fd_pr__diode_pd2nw_05v5:3 |Instance: sky130_fd_pr__diode_pd2nw_05v5:J 
+  1 = 2                                    |  1 = 2                                    
+  2 = 7                                    |  2 = 6                                    
+                                           |                                           
+Instance: sky130_fd_pr__diode_pd2nw_05v5:4 |Instance: sky130_fd_pr__diode_pd2nw_05v5:J 
+  1 = 2                                    |  1 = 2                                    
+  2 = 7                                    |  2 = 6                                    
+                                           |                                           
+Instance: sky130_fd_pr__diode_pd2nw_05v5:8 |Instance: sky130_fd_pr__diode_pd2nw_05v5:J 
+  1 = 2                                    |  1 = 2                                    
+  2 = 7                                    |  2 = 6                                    
+                                           |                                           
+Instance: sky130_fd_pr__diode_pd2nw_05v5:9 |Instance: sky130_fd_pr__diode_pd2nw_05v5:J 
+  1 = 2                                    |  1 = 2                                    
+  2 = 7                                    |  2 = 6                                    
+                                           |                                           
+Instance: sky130_fd_pr__diode_pd2nw_05v5:1 |Instance: sky130_fd_pr__diode_pd2nw_05v5:J 
+  1 = 2                                    |  1 = 2                                    
+  2 = 7                                    |  2 = 6                                    
+                                           |                                           
+Instance: sky130_fd_pr__diode_pd2nw_05v5:1 |(no matching instance)                     
+  1 = 2                                    |                                           
+  2 = 7                                    |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: xc20w                           |Circuit 2: xc20w                           
+-------------------------------------------|-------------------------------------------
+X                                          |X                                          
+SEL1                                       |SEL6 **Mismatch**                          
+SEL4                                       |SEL5 **Mismatch**                          
+SEL5                                       |SEL4 **Mismatch**                          
+SEL0                                       |SEL3 **Mismatch**                          
+SEL2                                       |SEL2                                       
+SEL3                                       |SEL1 **Mismatch**                          
+SEL6                                       |SEL0 **Mismatch**                          
+GND                                        |GND                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for xc20w and xc20w altered to match.
+Device classes xc20w and xc20w are equivalent.
+
+Final result: Top level cell failed pin matching.

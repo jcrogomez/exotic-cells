@@ -28,6 +28,8 @@ Limits: one row, `w` ≥ 0.42, `sa` and `sb` ≥ 0.30.
 
 A second kind, `"kind": "njunction"`, draws the XC-20 cells: an n+ island (painted as a diode, so LVS counts it) with a p+ substrate
 tap at distance `d` (0 = touching; `null` = no junction), and a series switch to the reader node. See `tables/xc20s.json`.
+A third kind, `"kind": "pjunction"`, is the same family inside one shared n-well: a p+ island touching an n+ well tap, the well on
+the reader node and the switch between the island and ground, so the junction sees the node voltage. See `tables/xc20w.json`.
 
 ## What is checked, and what is not
 
@@ -35,5 +37,5 @@ Checked on four tables ([report](../experiments/misfit11/RESULTADOS.md)): rule-c
 against the generated reference, two altered references caught by LVS, a shrunk pitch caught by DRC, and a one-seat matrix whose
 two devices extract identical to the reader's.
 
-Not there yet: other device kinds (the n-well and high-voltage junctions, antennas, contacts), more than one row, the selection logic, the predicted
+Not there yet: other device kinds (the high-voltage junctions, antennas, contacts), more than one row, the selection logic, the predicted
 reading of each seat, the precheck of a tile that contains a matrix.

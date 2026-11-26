@@ -1,0 +1,19 @@
+* NGSPICE file created from xc20w.ext - technology: sky130A
+
+.subckt xc20w SEL0 SEL1 SEL2 SEL3 SEL4 SEL5 SEL6 X GND
+X0 a_700_n392# X sky130_fd_pr__diode_pd2nw_05v5 perim=4.8e+06 area=1.4e+12
+X1 a_3688_n392# X sky130_fd_pr__diode_pd2nw_05v5 perim=4.8e+06 area=1.4e+12
+X2 a_2880_n392# X sky130_fd_pr__diode_pd2nw_05v5 perim=4.8e+06 area=1.4e+12
+X3 GND SEL2 a_1400_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X4 a_2126_n392# X sky130_fd_pr__diode_pd2nw_05v5 perim=4.8e+06 area=1.4e+12
+X5 GND SEL0 a_0_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X6 a_4604_n392# X sky130_fd_pr__diode_pd2nw_05v5 perim=4.8e+06 area=1.4e+12
+X7 GND SEL6 a_4604_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X8 GND SEL4 a_2880_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X9 GND SEL3 a_2126_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X10 GND SEL5 a_3688_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X11 a_0_n392# X sky130_fd_pr__diode_pd2nw_05v5 perim=4.8e+06 area=1.4e+12
+X12 GND SEL1 a_700_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X13 a_1400_n392# X sky130_fd_pr__diode_pd2nw_05v5 perim=4.8e+06 area=1.4e+12
+.ends
+

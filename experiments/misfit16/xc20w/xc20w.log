@@ -1,0 +1,1117 @@
+
+Magic 8.3 revision 530 - Compiled on Tue Jul 29 09:47:45 AM CEST 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "xc20w.tcl" from command line.
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 0.000,  0.000), ( 1.000,  1.400)  1.400     
+lambda:   100.00 x 140.00  (  0.00,  0.00 ), ( 100.00,  140.00)  14000.00  
+internal:    200 x 280     (     0,  0    ), (   200,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 0.040,  0.060), ( 0.210,  1.340)  0.218     
+lambda:    17.00 x 128.00  (  4.00,  6.00 ), ( 21.00,  134.00)  2176.00   
+internal:     34 x 256     (     8,  12   ), (    42,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 3.400   ( 0.040, -1.980), ( 0.210,  1.420)  0.578     
+lambda:    17.00 x 340.00  (  4.00, -198.00), ( 21.00,  142.00)  5780.00   
+internal:     34 x 680     (     8, -396  ), (    42,  284  )  23120     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 1.000,  0.000), ( 2.000,  1.400)  1.400     
+lambda:   100.00 x 140.00  ( 100.00,  0.00 ), ( 200.00,  140.00)  14000.00  
+internal:    200 x 280     (   200,  0    ), (   400,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 1.415,  0.060), ( 1.585,  1.340)  0.218     
+lambda:    17.00 x 128.00  ( 141.50,  6.00 ), ( 158.50,  134.00)  2176.00   
+internal:     34 x 256     (   283,  12   ), (   317,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 2.050   ( 1.415, -0.020), ( 1.585,  2.030)  0.348     
+lambda:    17.00 x 205.00  ( 141.50, -2.00 ), ( 158.50,  203.00)  3485.00   
+internal:     34 x 410     (   283, -4    ), (   317,  406  )  13940     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 1.415,  1.800), ( 1.585,  1.970)  0.029     
+lambda:    17.00 x 17.00   ( 141.50,  180.00), ( 158.50,  197.00)  289.00    
+internal:     34 x 34      (   283,  360  ), (   317,  394  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.750 x 0.840   ( 0.000, -1.960), ( 0.750, -1.120)  0.630     
+lambda:    75.00 x 84.00   (  0.00, -196.00), ( 75.00, -112.00)  6300.00   
+internal:    150 x 168     (     0, -392  ), (   150, -224  )  25200     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.150 x 1.100   ( 0.300, -2.090), ( 0.450, -0.990)  0.165     
+lambda:    15.00 x 110.00  ( 30.00, -209.00), ( 45.00, -99.00)  1650.00   
+internal:     30 x 220     (    60, -418  ), (    90, -198  )  6600      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 0.040, -1.900), ( 0.210, -1.180)  0.122     
+lambda:    17.00 x 72.00   (  4.00, -190.00), ( 21.00, -118.00)  1224.00   
+internal:     34 x 144     (     8, -380  ), (    42, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 0.540, -1.900), ( 0.710, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 54.00, -190.00), ( 71.00, -118.00)  1224.00   
+internal:     34 x 144     (   108, -380  ), (   142, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 0.540, -1.980), ( 0.710, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 54.00, -198.00), ( 71.00, -60.00)  2346.00   
+internal:     34 x 276     (   108, -396  ), (   142, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 0.540, -0.860), ( 0.710, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 54.00, -86.00), ( 71.00, -69.00)  289.00    
+internal:     34 x 34      (   108, -172  ), (   142, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.420 x 0.840   ( 1.200, -1.960), ( 1.620, -1.120)  0.353     
+lambda:    42.00 x 84.00   ( 120.00, -196.00), ( 162.00, -112.00)  3528.00   
+internal:     84 x 168     (   240, -392  ), (   324, -224  )  14112     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 1.325, -1.900), ( 1.495, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 132.50, -190.00), ( 149.50, -118.00)  1224.00   
+internal:     34 x 144     (   265, -380  ), (   299, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 1.325, -1.980), ( 1.495, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 132.50, -198.00), ( 149.50, -60.00)  2346.00   
+internal:     34 x 276     (   265, -396  ), (   299, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 1.325, -0.860), ( 1.495, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 132.50, -86.00), ( 149.50, -69.00)  289.00    
+internal:     34 x 34      (   265, -172  ), (   299, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.340 x 0.530   ( 0.300, -2.620), ( 0.640, -2.090)  0.180     
+lambda:    34.00 x 53.00   ( 30.00, -262.00), ( 64.00, -209.00)  1802.00   
+internal:     68 x 106     (    60, -524  ), (   128, -418  )  7208      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 0.390, -2.540), ( 0.560, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 39.00, -254.00), ( 56.00, -237.00)  289.00    
+internal:     34 x 34      (    78, -508  ), (   112, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.330   ( 0.390, -2.620), ( 0.560, -2.290)  0.056     
+lambda:    17.00 x 33.00   ( 39.00, -262.00), ( 56.00, -229.00)  561.00    
+internal:     34 x 66      (    78, -524  ), (   112, -458  )  2244      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 0.390, -2.540), ( 0.560, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 39.00, -254.00), ( 56.00, -237.00)  289.00    
+internal:     34 x 34      (    78, -508  ), (   112, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.400 x 0.400   ( 0.275, -2.655), ( 0.675, -2.255)  0.160     
+lambda:    40.00 x 40.00   ( 27.50, -265.50), ( 67.50, -225.50)  1600.00   
+internal:     80 x 80      (    55, -531  ), (   135, -451  )  6400      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.260 x 0.260   ( 0.345, -2.585), ( 0.605, -2.325)  0.068     
+lambda:    26.00 x 26.00   ( 34.50, -258.50), ( 60.50, -232.50)  676.00    
+internal:     52 x 52      (    69, -517  ), (   121, -465  )  2704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.925   ( 0.295, -3.200), ( 0.655, -2.275)  0.333     
+lambda:    36.00 x 92.50   ( 29.50, -320.00), ( 65.50, -227.50)  3330.00   
+internal:     72 x 185     (    59, -640  ), (   131, -455  )  13320     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.300   ( 0.295, -3.200), ( 0.655, -2.900)  0.108     
+lambda:    36.00 x 30.00   ( 29.50, -320.00), ( 65.50, -290.00)  1080.00   
+internal:     72 x 60      (    59, -640  ), (   131, -580  )  4320      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 3.500,  0.000), ( 4.500,  1.400)  1.400     
+lambda:   100.00 x 140.00  ( 350.00,  0.00 ), ( 450.00,  140.00)  14000.00  
+internal:    200 x 280     (   700,  0    ), (   900,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 3.540,  0.060), ( 3.710,  1.340)  0.218     
+lambda:    17.00 x 128.00  ( 354.00,  6.00 ), ( 371.00,  134.00)  2176.00   
+internal:     34 x 256     (   708,  12   ), (   742,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 3.400   ( 3.540, -1.980), ( 3.710,  1.420)  0.578     
+lambda:    17.00 x 340.00  ( 354.00, -198.00), ( 371.00,  142.00)  5780.00   
+internal:     34 x 680     (   708, -396  ), (   742,  284  )  23120     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 4.500,  0.000), ( 5.500,  1.400)  1.400     
+lambda:   100.00 x 140.00  ( 450.00,  0.00 ), ( 550.00,  140.00)  14000.00  
+internal:    200 x 280     (   900,  0    ), (  1100,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 4.915,  0.060), ( 5.085,  1.340)  0.218     
+lambda:    17.00 x 128.00  ( 491.50,  6.00 ), ( 508.50,  134.00)  2176.00   
+internal:     34 x 256     (   983,  12   ), (  1017,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 2.050   ( 4.915, -0.020), ( 5.085,  2.030)  0.348     
+lambda:    17.00 x 205.00  ( 491.50, -2.00 ), ( 508.50,  203.00)  3485.00   
+internal:     34 x 410     (   983, -4    ), (  1017,  406  )  13940     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 4.915,  1.800), ( 5.085,  1.970)  0.029     
+lambda:    17.00 x 17.00   ( 491.50,  180.00), ( 508.50,  197.00)  289.00    
+internal:     34 x 34      (   983,  360  ), (  1017,  394  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.750 x 0.840   ( 3.500, -1.960), ( 4.250, -1.120)  0.630     
+lambda:    75.00 x 84.00   ( 350.00, -196.00), ( 425.00, -112.00)  6300.00   
+internal:    150 x 168     (   700, -392  ), (   850, -224  )  25200     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.150 x 1.100   ( 3.800, -2.090), ( 3.950, -0.990)  0.165     
+lambda:    15.00 x 110.00  ( 380.00, -209.00), ( 395.00, -99.00)  1650.00   
+internal:     30 x 220     (   760, -418  ), (   790, -198  )  6600      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 3.540, -1.900), ( 3.710, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 354.00, -190.00), ( 371.00, -118.00)  1224.00   
+internal:     34 x 144     (   708, -380  ), (   742, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 4.040, -1.900), ( 4.210, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 404.00, -190.00), ( 421.00, -118.00)  1224.00   
+internal:     34 x 144     (   808, -380  ), (   842, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 4.040, -1.980), ( 4.210, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 404.00, -198.00), ( 421.00, -60.00)  2346.00   
+internal:     34 x 276     (   808, -396  ), (   842, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 4.040, -0.860), ( 4.210, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 404.00, -86.00), ( 421.00, -69.00)  289.00    
+internal:     34 x 34      (   808, -172  ), (   842, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.420 x 0.840   ( 4.700, -1.960), ( 5.120, -1.120)  0.353     
+lambda:    42.00 x 84.00   ( 470.00, -196.00), ( 512.00, -112.00)  3528.00   
+internal:     84 x 168     (   940, -392  ), (  1024, -224  )  14112     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 4.825, -1.900), ( 4.995, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 482.50, -190.00), ( 499.50, -118.00)  1224.00   
+internal:     34 x 144     (   965, -380  ), (   999, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 4.825, -1.980), ( 4.995, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 482.50, -198.00), ( 499.50, -60.00)  2346.00   
+internal:     34 x 276     (   965, -396  ), (   999, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 4.825, -0.860), ( 4.995, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 482.50, -86.00), ( 499.50, -69.00)  289.00    
+internal:     34 x 34      (   965, -172  ), (   999, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.340 x 0.530   ( 3.800, -2.620), ( 4.140, -2.090)  0.180     
+lambda:    34.00 x 53.00   ( 380.00, -262.00), ( 414.00, -209.00)  1802.00   
+internal:     68 x 106     (   760, -524  ), (   828, -418  )  7208      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 3.890, -2.540), ( 4.060, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 389.00, -254.00), ( 406.00, -237.00)  289.00    
+internal:     34 x 34      (   778, -508  ), (   812, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.330   ( 3.890, -2.620), ( 4.060, -2.290)  0.056     
+lambda:    17.00 x 33.00   ( 389.00, -262.00), ( 406.00, -229.00)  561.00    
+internal:     34 x 66      (   778, -524  ), (   812, -458  )  2244      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 3.890, -2.540), ( 4.060, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 389.00, -254.00), ( 406.00, -237.00)  289.00    
+internal:     34 x 34      (   778, -508  ), (   812, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.400 x 0.400   ( 3.775, -2.655), ( 4.175, -2.255)  0.160     
+lambda:    40.00 x 40.00   ( 377.50, -265.50), ( 417.50, -225.50)  1600.00   
+internal:     80 x 80      (   755, -531  ), (   835, -451  )  6400      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.260 x 0.260   ( 3.845, -2.585), ( 4.105, -2.325)  0.068     
+lambda:    26.00 x 26.00   ( 384.50, -258.50), ( 410.50, -232.50)  676.00    
+internal:     52 x 52      (   769, -517  ), (   821, -465  )  2704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.925   ( 3.795, -3.200), ( 4.155, -2.275)  0.333     
+lambda:    36.00 x 92.50   ( 379.50, -320.00), ( 415.50, -227.50)  3330.00   
+internal:     72 x 185     (   759, -640  ), (   831, -455  )  13320     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.300   ( 3.795, -3.200), ( 4.155, -2.900)  0.108     
+lambda:    36.00 x 30.00   ( 379.50, -320.00), ( 415.50, -290.00)  1080.00   
+internal:     72 x 60      (   759, -640  ), (   831, -580  )  4320      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 7.000,  0.000), ( 8.000,  1.400)  1.400     
+lambda:   100.00 x 140.00  ( 700.00,  0.00 ), ( 800.00,  140.00)  14000.00  
+internal:    200 x 280     (  1400,  0    ), (  1600,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 7.040,  0.060), ( 7.210,  1.340)  0.218     
+lambda:    17.00 x 128.00  ( 704.00,  6.00 ), ( 721.00,  134.00)  2176.00   
+internal:     34 x 256     (  1408,  12   ), (  1442,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 3.400   ( 7.040, -1.980), ( 7.210,  1.420)  0.578     
+lambda:    17.00 x 340.00  ( 704.00, -198.00), ( 721.00,  142.00)  5780.00   
+internal:     34 x 680     (  1408, -396  ), (  1442,  284  )  23120     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 8.270,  0.000), ( 9.270,  1.400)  1.400     
+lambda:   100.00 x 140.00  ( 827.00,  0.00 ), ( 927.00,  140.00)  14000.00  
+internal:    200 x 280     (  1654,  0    ), (  1854,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 8.685,  0.060), ( 8.855,  1.340)  0.218     
+lambda:    17.00 x 128.00  ( 868.50,  6.00 ), ( 885.50,  134.00)  2176.00   
+internal:     34 x 256     (  1737,  12   ), (  1771,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 2.050   ( 8.685, -0.020), ( 8.855,  2.030)  0.348     
+lambda:    17.00 x 205.00  ( 868.50, -2.00 ), ( 885.50,  203.00)  3485.00   
+internal:     34 x 410     (  1737, -4    ), (  1771,  406  )  13940     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 8.685,  1.800), ( 8.855,  1.970)  0.029     
+lambda:    17.00 x 17.00   ( 868.50,  180.00), ( 885.50,  197.00)  289.00    
+internal:     34 x 34      (  1737,  360  ), (  1771,  394  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.750 x 0.840   ( 7.000, -1.960), ( 7.750, -1.120)  0.630     
+lambda:    75.00 x 84.00   ( 700.00, -196.00), ( 775.00, -112.00)  6300.00   
+internal:    150 x 168     (  1400, -392  ), (  1550, -224  )  25200     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.150 x 1.100   ( 7.300, -2.090), ( 7.450, -0.990)  0.165     
+lambda:    15.00 x 110.00  ( 730.00, -209.00), ( 745.00, -99.00)  1650.00   
+internal:     30 x 220     (  1460, -418  ), (  1490, -198  )  6600      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 7.040, -1.900), ( 7.210, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 704.00, -190.00), ( 721.00, -118.00)  1224.00   
+internal:     34 x 144     (  1408, -380  ), (  1442, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 7.540, -1.900), ( 7.710, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 754.00, -190.00), ( 771.00, -118.00)  1224.00   
+internal:     34 x 144     (  1508, -380  ), (  1542, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 7.540, -1.980), ( 7.710, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 754.00, -198.00), ( 771.00, -60.00)  2346.00   
+internal:     34 x 276     (  1508, -396  ), (  1542, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 7.540, -0.860), ( 7.710, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 754.00, -86.00), ( 771.00, -69.00)  289.00    
+internal:     34 x 34      (  1508, -172  ), (  1542, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.420 x 0.840   ( 8.200, -1.960), ( 8.620, -1.120)  0.353     
+lambda:    42.00 x 84.00   ( 820.00, -196.00), ( 862.00, -112.00)  3528.00   
+internal:     84 x 168     (  1640, -392  ), (  1724, -224  )  14112     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 8.325, -1.900), ( 8.495, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 832.50, -190.00), ( 849.50, -118.00)  1224.00   
+internal:     34 x 144     (  1665, -380  ), (  1699, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 8.325, -1.980), ( 8.495, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 832.50, -198.00), ( 849.50, -60.00)  2346.00   
+internal:     34 x 276     (  1665, -396  ), (  1699, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 8.325, -0.860), ( 8.495, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 832.50, -86.00), ( 849.50, -69.00)  289.00    
+internal:     34 x 34      (  1665, -172  ), (  1699, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.340 x 0.530   ( 7.300, -2.620), ( 7.640, -2.090)  0.180     
+lambda:    34.00 x 53.00   ( 730.00, -262.00), ( 764.00, -209.00)  1802.00   
+internal:     68 x 106     (  1460, -524  ), (  1528, -418  )  7208      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 7.390, -2.540), ( 7.560, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 739.00, -254.00), ( 756.00, -237.00)  289.00    
+internal:     34 x 34      (  1478, -508  ), (  1512, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.330   ( 7.390, -2.620), ( 7.560, -2.290)  0.056     
+lambda:    17.00 x 33.00   ( 739.00, -262.00), ( 756.00, -229.00)  561.00    
+internal:     34 x 66      (  1478, -524  ), (  1512, -458  )  2244      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 7.390, -2.540), ( 7.560, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 739.00, -254.00), ( 756.00, -237.00)  289.00    
+internal:     34 x 34      (  1478, -508  ), (  1512, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.400 x 0.400   ( 7.275, -2.655), ( 7.675, -2.255)  0.160     
+lambda:    40.00 x 40.00   ( 727.50, -265.50), ( 767.50, -225.50)  1600.00   
+internal:     80 x 80      (  1455, -531  ), (  1535, -451  )  6400      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.260 x 0.260   ( 7.345, -2.585), ( 7.605, -2.325)  0.068     
+lambda:    26.00 x 26.00   ( 734.50, -258.50), ( 760.50, -232.50)  676.00    
+internal:     52 x 52      (  1469, -517  ), (  1521, -465  )  2704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.925   ( 7.295, -3.200), ( 7.655, -2.275)  0.333     
+lambda:    36.00 x 92.50   ( 729.50, -320.00), ( 765.50, -227.50)  3330.00   
+internal:     72 x 185     (  1459, -640  ), (  1531, -455  )  13320     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.300   ( 7.295, -3.200), ( 7.655, -2.900)  0.108     
+lambda:    36.00 x 30.00   ( 729.50, -320.00), ( 765.50, -290.00)  1080.00   
+internal:     72 x 60      (  1459, -640  ), (  1531, -580  )  4320      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 10.770,  0.000), ( 11.770,  1.400)  1.400     
+lambda:   100.00 x 140.00  ( 1077.00,  0.00 ), ( 1177.00,  140.00)  14000.00  
+internal:    200 x 280     (  2154,  0    ), (  2354,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 10.810,  0.060), ( 10.980,  1.340)  0.218     
+lambda:    17.00 x 128.00  ( 1081.00,  6.00 ), ( 1098.00,  134.00)  2176.00   
+internal:     34 x 256     (  2162,  12   ), (  2196,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 3.400   ( 10.810, -1.980), ( 10.980,  1.420)  0.578     
+lambda:    17.00 x 340.00  ( 1081.00, -198.00), ( 1098.00,  142.00)  5780.00   
+internal:     34 x 680     (  2162, -396  ), (  2196,  284  )  23120     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 12.040,  0.000), ( 13.040,  1.400)  1.400     
+lambda:   100.00 x 140.00  ( 1204.00,  0.00 ), ( 1304.00,  140.00)  14000.00  
+internal:    200 x 280     (  2408,  0    ), (  2608,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 12.455,  0.060), ( 12.625,  1.340)  0.218     
+lambda:    17.00 x 128.00  ( 1245.50,  6.00 ), ( 1262.50,  134.00)  2176.00   
+internal:     34 x 256     (  2491,  12   ), (  2525,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 2.050   ( 12.455, -0.020), ( 12.625,  2.030)  0.348     
+lambda:    17.00 x 205.00  ( 1245.50, -2.00 ), ( 1262.50,  203.00)  3485.00   
+internal:     34 x 410     (  2491, -4    ), (  2525,  406  )  13940     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 12.455,  1.800), ( 12.625,  1.970)  0.029     
+lambda:    17.00 x 17.00   ( 1245.50,  180.00), ( 1262.50,  197.00)  289.00    
+internal:     34 x 34      (  2491,  360  ), (  2525,  394  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.750 x 0.840   ( 10.770, -1.960), ( 11.520, -1.120)  0.630     
+lambda:    75.00 x 84.00   ( 1077.00, -196.00), ( 1152.00, -112.00)  6300.00   
+internal:    150 x 168     (  2154, -392  ), (  2304, -224  )  25200     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.150 x 1.100   ( 11.070, -2.090), ( 11.220, -0.990)  0.165     
+lambda:    15.00 x 110.00  ( 1107.00, -209.00), ( 1122.00, -99.00)  1650.00   
+internal:     30 x 220     (  2214, -418  ), (  2244, -198  )  6600      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 10.810, -1.900), ( 10.980, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 1081.00, -190.00), ( 1098.00, -118.00)  1224.00   
+internal:     34 x 144     (  2162, -380  ), (  2196, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 11.310, -1.900), ( 11.480, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 1131.00, -190.00), ( 1148.00, -118.00)  1224.00   
+internal:     34 x 144     (  2262, -380  ), (  2296, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 11.310, -1.980), ( 11.480, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 1131.00, -198.00), ( 1148.00, -60.00)  2346.00   
+internal:     34 x 276     (  2262, -396  ), (  2296, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 11.310, -0.860), ( 11.480, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 1131.00, -86.00), ( 1148.00, -69.00)  289.00    
+internal:     34 x 34      (  2262, -172  ), (  2296, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.420 x 0.840   ( 11.970, -1.960), ( 12.390, -1.120)  0.353     
+lambda:    42.00 x 84.00   ( 1197.00, -196.00), ( 1239.00, -112.00)  3528.00   
+internal:     84 x 168     (  2394, -392  ), (  2478, -224  )  14112     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 12.095, -1.900), ( 12.265, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 1209.50, -190.00), ( 1226.50, -118.00)  1224.00   
+internal:     34 x 144     (  2419, -380  ), (  2453, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 12.095, -1.980), ( 12.265, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 1209.50, -198.00), ( 1226.50, -60.00)  2346.00   
+internal:     34 x 276     (  2419, -396  ), (  2453, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 12.095, -0.860), ( 12.265, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 1209.50, -86.00), ( 1226.50, -69.00)  289.00    
+internal:     34 x 34      (  2419, -172  ), (  2453, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.340 x 0.530   ( 11.070, -2.620), ( 11.410, -2.090)  0.180     
+lambda:    34.00 x 53.00   ( 1107.00, -262.00), ( 1141.00, -209.00)  1802.00   
+internal:     68 x 106     (  2214, -524  ), (  2282, -418  )  7208      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 11.160, -2.540), ( 11.330, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 1116.00, -254.00), ( 1133.00, -237.00)  289.00    
+internal:     34 x 34      (  2232, -508  ), (  2266, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.330   ( 11.160, -2.620), ( 11.330, -2.290)  0.056     
+lambda:    17.00 x 33.00   ( 1116.00, -262.00), ( 1133.00, -229.00)  561.00    
+internal:     34 x 66      (  2232, -524  ), (  2266, -458  )  2244      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 11.160, -2.540), ( 11.330, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 1116.00, -254.00), ( 1133.00, -237.00)  289.00    
+internal:     34 x 34      (  2232, -508  ), (  2266, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.400 x 0.400   ( 11.045, -2.655), ( 11.445, -2.255)  0.160     
+lambda:    40.00 x 40.00   ( 1104.50, -265.50), ( 1144.50, -225.50)  1600.00   
+internal:     80 x 80      (  2209, -531  ), (  2289, -451  )  6400      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.260 x 0.260   ( 11.115, -2.585), ( 11.375, -2.325)  0.068     
+lambda:    26.00 x 26.00   ( 1111.50, -258.50), ( 1137.50, -232.50)  676.00    
+internal:     52 x 52      (  2223, -517  ), (  2275, -465  )  2704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.925   ( 11.065, -3.200), ( 11.425, -2.275)  0.333     
+lambda:    36.00 x 92.50   ( 1106.50, -320.00), ( 1142.50, -227.50)  3330.00   
+internal:     72 x 185     (  2213, -640  ), (  2285, -455  )  13320     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.300   ( 11.065, -3.200), ( 11.425, -2.900)  0.108     
+lambda:    36.00 x 30.00   ( 1106.50, -320.00), ( 1142.50, -290.00)  1080.00   
+internal:     72 x 60      (  2213, -640  ), (  2285, -580  )  4320      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 14.540,  0.000), ( 15.540,  1.400)  1.400     
+lambda:   100.00 x 140.00  ( 1454.00,  0.00 ), ( 1554.00,  140.00)  14000.00  
+internal:    200 x 280     (  2908,  0    ), (  3108,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 14.580,  0.060), ( 14.750,  1.340)  0.218     
+lambda:    17.00 x 128.00  ( 1458.00,  6.00 ), ( 1475.00,  134.00)  2176.00   
+internal:     34 x 256     (  2916,  12   ), (  2950,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 3.400   ( 14.580, -1.980), ( 14.750,  1.420)  0.578     
+lambda:    17.00 x 340.00  ( 1458.00, -198.00), ( 1475.00,  142.00)  5780.00   
+internal:     34 x 680     (  2916, -396  ), (  2950,  284  )  23120     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 16.080,  0.000), ( 17.080,  1.400)  1.400     
+lambda:   100.00 x 140.00  ( 1608.00,  0.00 ), ( 1708.00,  140.00)  14000.00  
+internal:    200 x 280     (  3216,  0    ), (  3416,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 16.495,  0.060), ( 16.665,  1.340)  0.218     
+lambda:    17.00 x 128.00  ( 1649.50,  6.00 ), ( 1666.50,  134.00)  2176.00   
+internal:     34 x 256     (  3299,  12   ), (  3333,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 2.050   ( 16.495, -0.020), ( 16.665,  2.030)  0.348     
+lambda:    17.00 x 205.00  ( 1649.50, -2.00 ), ( 1666.50,  203.00)  3485.00   
+internal:     34 x 410     (  3299, -4    ), (  3333,  406  )  13940     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 16.495,  1.800), ( 16.665,  1.970)  0.029     
+lambda:    17.00 x 17.00   ( 1649.50,  180.00), ( 1666.50,  197.00)  289.00    
+internal:     34 x 34      (  3299,  360  ), (  3333,  394  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.750 x 0.840   ( 14.540, -1.960), ( 15.290, -1.120)  0.630     
+lambda:    75.00 x 84.00   ( 1454.00, -196.00), ( 1529.00, -112.00)  6300.00   
+internal:    150 x 168     (  2908, -392  ), (  3058, -224  )  25200     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.150 x 1.100   ( 14.840, -2.090), ( 14.990, -0.990)  0.165     
+lambda:    15.00 x 110.00  ( 1484.00, -209.00), ( 1499.00, -99.00)  1650.00   
+internal:     30 x 220     (  2968, -418  ), (  2998, -198  )  6600      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 14.580, -1.900), ( 14.750, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 1458.00, -190.00), ( 1475.00, -118.00)  1224.00   
+internal:     34 x 144     (  2916, -380  ), (  2950, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 15.080, -1.900), ( 15.250, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 1508.00, -190.00), ( 1525.00, -118.00)  1224.00   
+internal:     34 x 144     (  3016, -380  ), (  3050, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 15.080, -1.980), ( 15.250, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 1508.00, -198.00), ( 1525.00, -60.00)  2346.00   
+internal:     34 x 276     (  3016, -396  ), (  3050, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 15.080, -0.860), ( 15.250, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 1508.00, -86.00), ( 1525.00, -69.00)  289.00    
+internal:     34 x 34      (  3016, -172  ), (  3050, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.420 x 0.840   ( 15.740, -1.960), ( 16.160, -1.120)  0.353     
+lambda:    42.00 x 84.00   ( 1574.00, -196.00), ( 1616.00, -112.00)  3528.00   
+internal:     84 x 168     (  3148, -392  ), (  3232, -224  )  14112     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 15.865, -1.900), ( 16.035, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 1586.50, -190.00), ( 1603.50, -118.00)  1224.00   
+internal:     34 x 144     (  3173, -380  ), (  3207, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 15.865, -1.980), ( 16.035, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 1586.50, -198.00), ( 1603.50, -60.00)  2346.00   
+internal:     34 x 276     (  3173, -396  ), (  3207, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 15.865, -0.860), ( 16.035, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 1586.50, -86.00), ( 1603.50, -69.00)  289.00    
+internal:     34 x 34      (  3173, -172  ), (  3207, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.340 x 0.530   ( 14.840, -2.620), ( 15.180, -2.090)  0.180     
+lambda:    34.00 x 53.00   ( 1484.00, -262.00), ( 1518.00, -209.00)  1802.00   
+internal:     68 x 106     (  2968, -524  ), (  3036, -418  )  7208      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 14.930, -2.540), ( 15.100, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 1493.00, -254.00), ( 1510.00, -237.00)  289.00    
+internal:     34 x 34      (  2986, -508  ), (  3020, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.330   ( 14.930, -2.620), ( 15.100, -2.290)  0.056     
+lambda:    17.00 x 33.00   ( 1493.00, -262.00), ( 1510.00, -229.00)  561.00    
+internal:     34 x 66      (  2986, -524  ), (  3020, -458  )  2244      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 14.930, -2.540), ( 15.100, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 1493.00, -254.00), ( 1510.00, -237.00)  289.00    
+internal:     34 x 34      (  2986, -508  ), (  3020, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.400 x 0.400   ( 14.815, -2.655), ( 15.215, -2.255)  0.160     
+lambda:    40.00 x 40.00   ( 1481.50, -265.50), ( 1521.50, -225.50)  1600.00   
+internal:     80 x 80      (  2963, -531  ), (  3043, -451  )  6400      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.260 x 0.260   ( 14.885, -2.585), ( 15.145, -2.325)  0.068     
+lambda:    26.00 x 26.00   ( 1488.50, -258.50), ( 1514.50, -232.50)  676.00    
+internal:     52 x 52      (  2977, -517  ), (  3029, -465  )  2704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.925   ( 14.835, -3.200), ( 15.195, -2.275)  0.333     
+lambda:    36.00 x 92.50   ( 1483.50, -320.00), ( 1519.50, -227.50)  3330.00   
+internal:     72 x 185     (  2967, -640  ), (  3039, -455  )  13320     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.300   ( 14.835, -3.200), ( 15.195, -2.900)  0.108     
+lambda:    36.00 x 30.00   ( 1483.50, -320.00), ( 1519.50, -290.00)  1080.00   
+internal:     72 x 60      (  2967, -640  ), (  3039, -580  )  4320      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 18.580,  0.000), ( 19.580,  1.400)  1.400     
+lambda:   100.00 x 140.00  ( 1858.00,  0.00 ), ( 1958.00,  140.00)  14000.00  
+internal:    200 x 280     (  3716,  0    ), (  3916,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 18.620,  0.060), ( 18.790,  1.340)  0.218     
+lambda:    17.00 x 128.00  ( 1862.00,  6.00 ), ( 1879.00,  134.00)  2176.00   
+internal:     34 x 256     (  3724,  12   ), (  3758,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 3.400   ( 18.620, -1.980), ( 18.790,  1.420)  0.578     
+lambda:    17.00 x 340.00  ( 1862.00, -198.00), ( 1879.00,  142.00)  5780.00   
+internal:     34 x 680     (  3724, -396  ), (  3758,  284  )  23120     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 20.660,  0.000), ( 21.660,  1.400)  1.400     
+lambda:   100.00 x 140.00  ( 2066.00,  0.00 ), ( 2166.00,  140.00)  14000.00  
+internal:    200 x 280     (  4132,  0    ), (  4332,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 21.075,  0.060), ( 21.245,  1.340)  0.218     
+lambda:    17.00 x 128.00  ( 2107.50,  6.00 ), ( 2124.50,  134.00)  2176.00   
+internal:     34 x 256     (  4215,  12   ), (  4249,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 2.050   ( 21.075, -0.020), ( 21.245,  2.030)  0.348     
+lambda:    17.00 x 205.00  ( 2107.50, -2.00 ), ( 2124.50,  203.00)  3485.00   
+internal:     34 x 410     (  4215, -4    ), (  4249,  406  )  13940     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 21.075,  1.800), ( 21.245,  1.970)  0.029     
+lambda:    17.00 x 17.00   ( 2107.50,  180.00), ( 2124.50,  197.00)  289.00    
+internal:     34 x 34      (  4215,  360  ), (  4249,  394  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.750 x 0.840   ( 18.580, -1.960), ( 19.330, -1.120)  0.630     
+lambda:    75.00 x 84.00   ( 1858.00, -196.00), ( 1933.00, -112.00)  6300.00   
+internal:    150 x 168     (  3716, -392  ), (  3866, -224  )  25200     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.150 x 1.100   ( 18.880, -2.090), ( 19.030, -0.990)  0.165     
+lambda:    15.00 x 110.00  ( 1888.00, -209.00), ( 1903.00, -99.00)  1650.00   
+internal:     30 x 220     (  3776, -418  ), (  3806, -198  )  6600      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 18.620, -1.900), ( 18.790, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 1862.00, -190.00), ( 1879.00, -118.00)  1224.00   
+internal:     34 x 144     (  3724, -380  ), (  3758, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 19.120, -1.900), ( 19.290, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 1912.00, -190.00), ( 1929.00, -118.00)  1224.00   
+internal:     34 x 144     (  3824, -380  ), (  3858, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 19.120, -1.980), ( 19.290, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 1912.00, -198.00), ( 1929.00, -60.00)  2346.00   
+internal:     34 x 276     (  3824, -396  ), (  3858, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 19.120, -0.860), ( 19.290, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 1912.00, -86.00), ( 1929.00, -69.00)  289.00    
+internal:     34 x 34      (  3824, -172  ), (  3858, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.420 x 0.840   ( 19.780, -1.960), ( 20.200, -1.120)  0.353     
+lambda:    42.00 x 84.00   ( 1978.00, -196.00), ( 2020.00, -112.00)  3528.00   
+internal:     84 x 168     (  3956, -392  ), (  4040, -224  )  14112     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 19.905, -1.900), ( 20.075, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 1990.50, -190.00), ( 2007.50, -118.00)  1224.00   
+internal:     34 x 144     (  3981, -380  ), (  4015, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 19.905, -1.980), ( 20.075, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 1990.50, -198.00), ( 2007.50, -60.00)  2346.00   
+internal:     34 x 276     (  3981, -396  ), (  4015, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 19.905, -0.860), ( 20.075, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 1990.50, -86.00), ( 2007.50, -69.00)  289.00    
+internal:     34 x 34      (  3981, -172  ), (  4015, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.340 x 0.530   ( 18.880, -2.620), ( 19.220, -2.090)  0.180     
+lambda:    34.00 x 53.00   ( 1888.00, -262.00), ( 1922.00, -209.00)  1802.00   
+internal:     68 x 106     (  3776, -524  ), (  3844, -418  )  7208      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 18.970, -2.540), ( 19.140, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 1897.00, -254.00), ( 1914.00, -237.00)  289.00    
+internal:     34 x 34      (  3794, -508  ), (  3828, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.330   ( 18.970, -2.620), ( 19.140, -2.290)  0.056     
+lambda:    17.00 x 33.00   ( 1897.00, -262.00), ( 1914.00, -229.00)  561.00    
+internal:     34 x 66      (  3794, -524  ), (  3828, -458  )  2244      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 18.970, -2.540), ( 19.140, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 1897.00, -254.00), ( 1914.00, -237.00)  289.00    
+internal:     34 x 34      (  3794, -508  ), (  3828, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.400 x 0.400   ( 18.855, -2.655), ( 19.255, -2.255)  0.160     
+lambda:    40.00 x 40.00   ( 1885.50, -265.50), ( 1925.50, -225.50)  1600.00   
+internal:     80 x 80      (  3771, -531  ), (  3851, -451  )  6400      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.260 x 0.260   ( 18.925, -2.585), ( 19.185, -2.325)  0.068     
+lambda:    26.00 x 26.00   ( 1892.50, -258.50), ( 1918.50, -232.50)  676.00    
+internal:     52 x 52      (  3785, -517  ), (  3837, -465  )  2704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.925   ( 18.875, -3.200), ( 19.235, -2.275)  0.333     
+lambda:    36.00 x 92.50   ( 1887.50, -320.00), ( 1923.50, -227.50)  3330.00   
+internal:     72 x 185     (  3775, -640  ), (  3847, -455  )  13320     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.300   ( 18.875, -3.200), ( 19.235, -2.900)  0.108     
+lambda:    36.00 x 30.00   ( 1887.50, -320.00), ( 1923.50, -290.00)  1080.00   
+internal:     72 x 60      (  3775, -640  ), (  3847, -580  )  4320      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 23.160,  0.000), ( 24.160,  1.400)  1.400     
+lambda:   100.00 x 140.00  ( 2316.00,  0.00 ), ( 2416.00,  140.00)  14000.00  
+internal:    200 x 280     (  4632,  0    ), (  4832,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 23.200,  0.060), ( 23.370,  1.340)  0.218     
+lambda:    17.00 x 128.00  ( 2320.00,  6.00 ), ( 2337.00,  134.00)  2176.00   
+internal:     34 x 256     (  4640,  12   ), (  4674,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 3.400   ( 23.200, -1.980), ( 23.370,  1.420)  0.578     
+lambda:    17.00 x 340.00  ( 2320.00, -198.00), ( 2337.00,  142.00)  5780.00   
+internal:     34 x 680     (  4640, -396  ), (  4674,  284  )  23120     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.400   ( 27.160,  0.000), ( 28.160,  1.400)  1.400     
+lambda:   100.00 x 140.00  ( 2716.00,  0.00 ), ( 2816.00,  140.00)  14000.00  
+internal:    200 x 280     (  5432,  0    ), (  5632,  280  )  56000     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.280   ( 27.575,  0.060), ( 27.745,  1.340)  0.218     
+lambda:    17.00 x 128.00  ( 2757.50,  6.00 ), ( 2774.50,  134.00)  2176.00   
+internal:     34 x 256     (  5515,  12   ), (  5549,  268  )  8704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 2.050   ( 27.575, -0.020), ( 27.745,  2.030)  0.348     
+lambda:    17.00 x 205.00  ( 2757.50, -2.00 ), ( 2774.50,  203.00)  3485.00   
+internal:     34 x 410     (  5515, -4    ), (  5549,  406  )  13940     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 27.575,  1.800), ( 27.745,  1.970)  0.029     
+lambda:    17.00 x 17.00   ( 2757.50,  180.00), ( 2774.50,  197.00)  289.00    
+internal:     34 x 34      (  5515,  360  ), (  5549,  394  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.750 x 0.840   ( 23.160, -1.960), ( 23.910, -1.120)  0.630     
+lambda:    75.00 x 84.00   ( 2316.00, -196.00), ( 2391.00, -112.00)  6300.00   
+internal:    150 x 168     (  4632, -392  ), (  4782, -224  )  25200     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.150 x 1.100   ( 23.460, -2.090), ( 23.610, -0.990)  0.165     
+lambda:    15.00 x 110.00  ( 2346.00, -209.00), ( 2361.00, -99.00)  1650.00   
+internal:     30 x 220     (  4692, -418  ), (  4722, -198  )  6600      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 23.200, -1.900), ( 23.370, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 2320.00, -190.00), ( 2337.00, -118.00)  1224.00   
+internal:     34 x 144     (  4640, -380  ), (  4674, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 23.700, -1.900), ( 23.870, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 2370.00, -190.00), ( 2387.00, -118.00)  1224.00   
+internal:     34 x 144     (  4740, -380  ), (  4774, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 23.700, -1.980), ( 23.870, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 2370.00, -198.00), ( 2387.00, -60.00)  2346.00   
+internal:     34 x 276     (  4740, -396  ), (  4774, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 23.700, -0.860), ( 23.870, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 2370.00, -86.00), ( 2387.00, -69.00)  289.00    
+internal:     34 x 34      (  4740, -172  ), (  4774, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.420 x 0.840   ( 24.360, -1.960), ( 24.780, -1.120)  0.353     
+lambda:    42.00 x 84.00   ( 2436.00, -196.00), ( 2478.00, -112.00)  3528.00   
+internal:     84 x 168     (  4872, -392  ), (  4956, -224  )  14112     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.720   ( 24.485, -1.900), ( 24.655, -1.180)  0.122     
+lambda:    17.00 x 72.00   ( 2448.50, -190.00), ( 2465.50, -118.00)  1224.00   
+internal:     34 x 144     (  4897, -380  ), (  4931, -236  )  4896      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 1.380   ( 24.485, -1.980), ( 24.655, -0.600)  0.235     
+lambda:    17.00 x 138.00  ( 2448.50, -198.00), ( 2465.50, -60.00)  2346.00   
+internal:     34 x 276     (  4897, -396  ), (  4931, -120  )  9384      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 24.485, -0.860), ( 24.655, -0.690)  0.029     
+lambda:    17.00 x 17.00   ( 2448.50, -86.00), ( 2465.50, -69.00)  289.00    
+internal:     34 x 34      (  4897, -172  ), (  4931, -138  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.340 x 0.530   ( 23.460, -2.620), ( 23.800, -2.090)  0.180     
+lambda:    34.00 x 53.00   ( 2346.00, -262.00), ( 2380.00, -209.00)  1802.00   
+internal:     68 x 106     (  4692, -524  ), (  4760, -418  )  7208      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 23.550, -2.540), ( 23.720, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 2355.00, -254.00), ( 2372.00, -237.00)  289.00    
+internal:     34 x 34      (  4710, -508  ), (  4744, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.330   ( 23.550, -2.620), ( 23.720, -2.290)  0.056     
+lambda:    17.00 x 33.00   ( 2355.00, -262.00), ( 2372.00, -229.00)  561.00    
+internal:     34 x 66      (  4710, -524  ), (  4744, -458  )  2244      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.170 x 0.170   ( 23.550, -2.540), ( 23.720, -2.370)  0.029     
+lambda:    17.00 x 17.00   ( 2355.00, -254.00), ( 2372.00, -237.00)  289.00    
+internal:     34 x 34      (  4710, -508  ), (  4744, -474  )  1156      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.400 x 0.400   ( 23.435, -2.655), ( 23.835, -2.255)  0.160     
+lambda:    40.00 x 40.00   ( 2343.50, -265.50), ( 2383.50, -225.50)  1600.00   
+internal:     80 x 80      (  4687, -531  ), (  4767, -451  )  6400      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.260 x 0.260   ( 23.505, -2.585), ( 23.765, -2.325)  0.068     
+lambda:    26.00 x 26.00   ( 2350.50, -258.50), ( 2376.50, -232.50)  676.00    
+internal:     52 x 52      (  4701, -517  ), (  4753, -465  )  2704      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.925   ( 23.455, -3.200), ( 23.815, -2.275)  0.333     
+lambda:    36.00 x 92.50   ( 2345.50, -320.00), ( 2381.50, -227.50)  3330.00   
+internal:     72 x 185     (  4691, -640  ), (  4763, -455  )  13320     
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.360 x 0.300   ( 23.455, -3.200), ( 23.815, -2.900)  0.108     
+lambda:    36.00 x 30.00   ( 2345.50, -320.00), ( 2381.50, -290.00)  1080.00   
+internal:     72 x 60      (  4691, -640  ), (  4763, -580  )  4320      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  28.520 x 1.760   (-0.180, -0.180), ( 28.340,  1.580)  50.195    
+lambda:   2852.00 x 176.00  (-18.00, -18.00), ( 2834.00,  158.00)  501952.00 
+internal:   5704 x 352     (   -36, -36   ), (  5668,  316  )  2007808   
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  28.160 x 0.370   ( 0.000,  1.700), ( 28.160,  2.070)  10.419    
+lambda:   2816.00 x 37.00   (  0.00,  170.00), ( 2816.00,  207.00)  104192.00 
+internal:   5632 x 74      (     0,  340  ), (  5632,  414  )  416768    
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.400 x 0.370   ( 0.000,  1.700), ( 0.400,  2.070)  0.148     
+lambda:    40.00 x 37.00   (  0.00,  170.00), ( 40.00,  207.00)  1480.00   
+internal:     80 x 74      (     0,  340  ), (    80,  414  )  5920      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  28.160 x 0.350   ( 0.000, -0.950), ( 28.160, -0.600)  9.856     
+lambda:   2816.00 x 35.00   (  0.00, -95.00), ( 2816.00, -60.00)  98560.00  
+internal:   5632 x 70      (     0, -190  ), (  5632, -120  )  394240    
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.400 x 0.350   ( 0.000, -0.950), ( 0.400, -0.600)  0.140     
+lambda:    40.00 x 35.00   (  0.00, -95.00), ( 40.00, -60.00)  1400.00   
+internal:     80 x 70      (     0, -190  ), (    80, -120  )  5600      
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  1000.000 x 1000.000  (-500.000, -500.000), ( 500.000,  500.000)  1000000.000
+lambda:   100000.00 x 100000.00  (-50000.00, -50000.00), ( 50000.00,  50000.00)  10000000000.00
+internal: 200000 x 200000  (-100000, -100000), ( 100000,  100000)  40000000000
+DRC style is now "drc(full)"
+Loading DRC CIF style.
+No errors found.
+DRC xc20w violations=0
+   Generating output for cell xc20w
+Extracting xc20w into xc20w.ext:
+Device has multiple lengths:  scaling all widths to length 34
+Device has multiple lengths:  scaling all widths to length 34
+Device has multiple lengths:  scaling all widths to length 34
+Device has multiple lengths:  scaling all widths to length 34
+Device has multiple lengths:  scaling all widths to length 34
+Device has multiple lengths:  scaling all widths to length 34
+Device has multiple lengths:  scaling all widths to length 34
+exttospice finished.
+exttospice finished.
+BBOX -36 -640 5668 414

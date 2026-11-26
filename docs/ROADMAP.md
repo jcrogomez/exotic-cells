@@ -97,6 +97,9 @@ This page is the single to-do list. What goes on the first tile and its tests, i
 
 ## Done (most recent first)
 
+- 2026-11-26 · MISFIT-16: XC-20's main cell (p+ touching n+ in an n-well, switch on the ground side) drawn by the generator,
+  rule-clean with LVS at the first pass; the well costs 3.8 fF per seat on the reader node
+  ([report](../experiments/misfit16/RESULTADOS.md)).
 - 2026-11-26 · MISFIT-15: in the XC-20 seat as drawn the junction sees 0.9–1.65 V, set by its own current; with the switch on
   the ground side it sees the full node voltage. The n-well variant becomes the main cell. Tool finding: ngspice takes the
   area of an extracted PDK diode unscaled ([report](../experiments/misfit15/RESULTADOS.md)).

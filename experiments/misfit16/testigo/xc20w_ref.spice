@@ -1,0 +1,18 @@
+* Reference for LVS, generated from table 'xc20w'. Do not edit by hand.
+* n-well drawn: 28.380 x 1.760 um
+.subckt xc20w X GND SEL0 SEL1 SEL2 SEL3 SEL4 SEL5 SEL6
+XJ0 n0 X sky130_fd_pr__diode_pd2nw_05v5 area=1.4e+12 perim=4.8e+06
+XS0 n0 SEL0 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XJ1 n1 X sky130_fd_pr__diode_pd2nw_05v5 area=1.4e+12 perim=4.8e+06
+XS1 n1 SEL1 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XJ2 n2 X sky130_fd_pr__diode_pd2nw_05v5 area=1.4e+12 perim=4.8e+06
+XS2 n2 SEL2 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XJ3 n3 X sky130_fd_pr__diode_pd2nw_05v5 area=1.4e+12 perim=4.8e+06
+XS3 n3 SEL3 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XJ4 n4 X sky130_fd_pr__diode_pd2nw_05v5 area=1.4e+12 perim=4.8e+06
+XS4 n4 SEL4 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XJ5 n5 X sky130_fd_pr__diode_pd2nw_05v5 area=1.4e+12 perim=4.8e+06
+XS5 n5 SEL5 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XJ6 n6 X sky130_fd_pr__diode_pd2nw_05v5 area=1.4e+12 perim=4.8e+06
+XS6 n6 SEL6 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+.ends
