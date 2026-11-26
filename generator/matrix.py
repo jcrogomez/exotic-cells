@@ -263,13 +263,16 @@ def build_fgate(table, pitch_delta=0.0):
     """XC-14: a read transistor between the reader node X and a source switch, whose gate goes nowhere but up, in poly, to a
     metal 1 plate (the antenna). A metal 2 strip, CP, runs over all plates: the common coupling plate. Per seat: "ox" ("thick":
     nfet_g5v0d10v5 0.42/0.5, "thin": nfet_01v8 0.42/0.15), "ant_w" x "ant_h" (plate, um), "diode": true (a small n+ diode on the
-    gate, in local interconnect: the twin with a discharge path), "tied": true (the gate also goes to the VB bus)."""
+    gate, in local interconnect: the twin with a discharge path), "tied": true (the gate also goes to the VB bus).
+    Table options: "shield" (default true: a grounded metal 1 strip between the X bus and the plates), "cp_split" (default true: the
+    coupling plate is two interleaved combs, CP1 and CP2, instead of one strip CP)."""
     name = table["name"]; seats = []; pg = float(table.get("plate_gap", 0.30)); hints = []   # wide metal 1 wants 0.28 um
     for s in table["seats"]:
         for k in range(int(s.get("n", 1))):
             seats.append(dict(id=s["id"] if int(s.get("n", 1)) == 1 else f"{s['id']}_{k}", ox=s.get("ox", "thick"), aw=float(s.get("ant_w", 0.80)),
                               ah=float(s.get("ant_h", 0.45)), diode=bool(s.get("diode", False)), tied=bool(s.get("tied", False))))
-    sa = sb = 0.30; yx0 = 0.42 + 0.30; yx1 = yx0 + 0.37; yp = yx1 + 0.35; tap_max = float(table.get("tap_max", 10.0))
+    shield = bool(table.get("shield", True)); split = bool(table.get("cp_split", True))
+    sa = sb = 0.30; yx0 = 0.42 + 0.30; yx1 = yx0 + 0.37; yp = yx1 + (0.61 if shield else 0.35); tap_max = float(table.get("tap_max", 10.0))
     t = Tcl(); x = 0.0; rows = []
 
     def tap(x):
@@ -330,11 +333,23 @@ def build_fgate(table, pitch_delta=0.0):
     x = tap(max(x, xend + GAP)) - GAP
     for y0, y1, n in ((yx0, yx1, "X"), (-0.66, -0.37, "VB"), (-1.74, -1.34, "GND")):
         t.r("metal1", 0, y0, x, y1); t.pin(n, "metal1", 0, y0, 0.40, y1)
-    ytop = yp - 0.05 + max(s["ah"] for s in seats)
-    t.r("metal2", 0, yp - 0.05, x, ytop); t.pin("CP", "metal2", 0, yp - 0.05, 0.40, yp + 0.35)   # the common coupling plate
+    if shield:                                                                      # a grounded metal 1 strip between the X bus and the plates
+        t.r("metal1", -0.60, yx1 + 0.14, x, yx1 + 0.28); t.r("metal1", -0.60, -1.74, -0.30, yx1 + 0.28); t.r("metal1", -0.60, -1.74, 0, -1.34)
+    y0 = yp - 0.05; ytop = y0 + max(s["ah"] for s in seats)
+    if split:                                                                       # coupling plate as two combs of metal 2 stripes, CP1 and CP2
+        i = 0
+        while y0 + 0.5 * i + 0.36 <= ytop + 1e-9:
+            a = y0 + 0.5 * i
+            if i % 2 == 0: t.r("metal2", -0.44, a, x, a + 0.36)
+            else: t.r("metal2", 0, a, x + 0.44, a + 0.36)
+            i += 1
+        t.r("metal2", -0.44, y0, -0.14, ytop); t.r("metal2", x + 0.14, y0, x + 0.44, ytop)
+        t.pin("CP1", "metal2", -0.44, y0, -0.14, y0 + 0.40); t.pin("CP2", "metal2", x + 0.14, y0, x + 0.44, y0 + 0.40); cps = "CP1 CP2"
+    else:
+        t.r("metal2", 0, y0, x, ytop); t.pin("CP", "metal2", 0, y0, 0.40, y0 + 0.40); cps = "CP"
     head, tail = frame(name)
     if hints: tail = ['property MASKHINTS_HVI "' + " ".join(str(round(v * 200)) for v in hints) + '"'] + tail
-    ref = [f"* Reference for LVS, generated from table '{name}'. Do not edit by hand.", f".subckt {name} X VB GND CP " + " ".join(r["sel"] for r in rows)]
+    ref = [f"* Reference for LVS, generated from table '{name}'. Do not edit by hand.", f".subckt {name} X VB GND {cps} " + " ".join(r["sel"] for r in rows)]
     for r in rows:
         k = r["seat"]; g = "VB" if r["opt"] == "tied" else f"fg{k}"
         ref.append(f"XD{k} X {g} s{k} GND {r['model']} w={r['w']:g} l={r['l']:g}")

@@ -78,7 +78,7 @@ en el tiempo, y sin el circuito de programación que piden las otras. Lo más pr
    flotando de verdad, con el acoplo del drenador y de la antena, sobre el dibujo.
 7. Pendiente: leer una fuente sobre retención de carga de plasma tras el recocido final `[?]`. Sin ella la familia no tiene señal
    esperada.
-8. Hecho (2026-11-26, [MISFIT-20](../../experiments/misfit20/RESULTADOS.md)): 11 puestos generados desde una tabla (óxido grueso y fino, placas de 0,4 a 40 µm², gemelos con diodo y conectado, placa de acoplo común), limpios y con LVS. Pendiente redibujar con la placa apantallada del nodo y la tira de acoplo en dos mitades.
+8. Hecho (2026-11-26, [MISFIT-20](../../experiments/misfit20/RESULTADOS.md)): 11 puestos generados desde una tabla (óxido grueso y fino, placas de 0,4 a 40 µm², gemelos con diodo y conectado, placa de acoplo común), limpios y con LVS. Redibujado con pantalla a GND y dos líneas de acoplo ([MISFIT-21](../../experiments/misfit21/RESULTADOS.md)): acoplo del nodo 0,008, líneas 0,26 y 0,27.
 
 ### 5.2 Configuraciones a dibujar
 
