@@ -24,7 +24,10 @@ bottom edge. Substrate taps are placed by count (`tap_every`) and by distance (`
 ```
 
 `w`, `l`: width and length of the device; `sa`, `sb`: diffusion on the source and drain side of the gate; `n`: replicas.
-Limits today: one row, 1.8 V nfet only, `w` ≥ 0.42, `sa` and `sb` ≥ 0.30.
+Limits: one row, `w` ≥ 0.42, `sa` and `sb` ≥ 0.30.
+
+A second kind, `"kind": "njunction"`, draws the XC-20 cells: an n+ island (painted as a diode, so LVS counts it) with a p+ substrate
+tap at distance `d` (0 = touching; `null` = no junction), and a series switch to the reader node. See `tables/xc20s.json`.
 
 ## What is checked, and what is not
 
@@ -32,5 +35,5 @@ Checked on four tables ([report](../experiments/misfit11/RESULTADOS.md)): rule-c
 against the generated reference, two altered references caught by LVS, a shrunk pitch caught by DRC, and a one-seat matrix whose
 two devices extract identical to the reader's.
 
-Not there yet: other device kinds (the XC-20 junction, antennas, contacts), more than one row, the selection logic, the predicted
+Not there yet: other device kinds (the n-well and high-voltage junctions, antennas, contacts), more than one row, the selection logic, the predicted
 reading of each seat, the precheck of a tile that contains a matrix.

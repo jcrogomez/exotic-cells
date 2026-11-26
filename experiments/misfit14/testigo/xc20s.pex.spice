@@ -1,0 +1,67 @@
+* NGSPICE file created from xc20s.ext - technology: sky130A
+
+.subckt xc20s SEL0 SEL1 SEL2 SEL3 SEL4 SEL5 SEL6 X GND
+X0 GND a_700_n392# sky130_fd_pr__diode_pw2nd_05v5 perim=4.8e+06 area=1.4e+12
+X1 GND a_3688_n392# sky130_fd_pr__diode_pw2nd_05v5 perim=4.8e+06 area=1.4e+12
+X2 GND a_2880_n392# sky130_fd_pr__diode_pw2nd_05v5 perim=4.8e+06 area=1.4e+12
+X3 X SEL2 a_1400_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X4 GND a_2126_n392# sky130_fd_pr__diode_pw2nd_05v5 perim=4.8e+06 area=1.4e+12
+X5 X SEL0 a_0_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X6 GND a_4604_n392# sky130_fd_pr__diode_pw2nd_05v5 perim=4.8e+06 area=1.4e+12
+X7 X SEL6 a_4604_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X8 X SEL4 a_2880_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X9 X SEL3 a_2126_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X10 X SEL5 a_3688_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X11 X SEL1 a_700_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X12 GND a_0_n392# sky130_fd_pr__diode_pw2nd_05v5 perim=4.8e+06 area=1.4e+12
+X13 GND a_1400_n392# sky130_fd_pr__diode_pw2nd_05v5 perim=4.8e+06 area=1.4e+12
+C0 SEL1 a_700_n392# 0.00534f
+C1 X a_2126_n392# 0.25123f
+C2 SEL0 a_0_n392# 0.00534f
+C3 SEL0 SEL1 0.02517f
+C4 SEL5 a_4604_n392# 0
+C5 SEL0 a_700_n392# 0
+C6 SEL4 a_2880_n392# 0.00534f
+C7 a_2880_n392# SEL3 0
+C8 X a_3688_n392# 0.25025f
+C9 a_1400_n392# X 0.25159f
+C10 SEL5 SEL6 0.01906f
+C11 SEL2 SEL3 0.02424f
+C12 SEL4 SEL3 0.02331f
+C13 SEL5 SEL4 0.0217f
+C14 SEL2 a_2126_n392# 0
+C15 a_1400_n392# SEL1 0
+C16 a_1400_n392# SEL2 0.00534f
+C17 a_2126_n392# SEL3 0.00534f
+C18 X a_4604_n392# 0.24927f
+C19 X a_2880_n392# 0.25087f
+C20 X SEL6 0.01971f
+C21 X a_0_n392# 0.24289f
+C22 SEL4 a_3688_n392# 0
+C23 SEL1 X 0.01972f
+C24 SEL2 X 0.01972f
+C25 X a_700_n392# 0.25159f
+C26 SEL5 a_3688_n392# 0.00534f
+C27 SEL0 X 0.0197f
+C28 SEL4 X 0.01971f
+C29 X SEL3 0.01972f
+C30 SEL5 X 0.01971f
+C31 a_4604_n392# SEL6 0.00534f
+C32 SEL1 SEL2 0.02517f
+C33 X GND 4.07845f
+C34 SEL6 GND 0.33757f
+C35 SEL5 GND 0.31088f
+C36 SEL4 GND 0.30638f
+C37 SEL3 GND 0.30378f
+C38 SEL2 GND 0.30192f
+C39 SEL1 GND 0.301f
+C40 SEL0 GND 0.33121f
+C41 a_4604_n392# GND 0.21168f
+C42 a_3688_n392# GND 0.21059f
+C43 a_2880_n392# GND 0.21f
+C44 a_2126_n392# GND 0.2097f
+C45 a_1400_n392# GND 0.20934f
+C46 a_700_n392# GND 0.20944f
+C47 a_0_n392# GND 0.2197f
+.ends
+

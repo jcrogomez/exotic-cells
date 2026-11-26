@@ -84,7 +84,7 @@ referencia. Si la fuga es la del diodo del PDK, gana el diodo del PDK.
 1. Hecho (laboratorio, sin publicar): `legal.tcl` demuestra que p+/n+ en pozo n es legal en d = 0 y desde 0,27 µm, en Magic y en
    el deck de fabricación de KLayout. Repetido aquí con `residual/drc_edge` (sonda `pn_space`): mismo resultado, **corrida**.
 2. Hecho (laboratorio): cuatro celdas dibujadas, `chispa_d000`, `d013` (ilegal, sirve de control del DRC), `d027` y `d050`.
-3. Pendiente: redibujar con `pdiode`/`pdiodec` para que Magic extraiga un diodo, y traer el generador a esta carpeta.
+3. Hecho en parte (2026-11-26, [MISFIT-14](../../experiments/misfit14/RESULTADOS.md)): la variante en sustrato (n+ `ndiode` contra toma p+) se dibuja desde una tabla con `generator/matrix.py`, sale limpia y el LVS cuenta el diodo. Pendiente la variante en pozo n con `pdiode`.
 4. Pendiente: averiguar si el proceso tiene bloqueo de siliciuro sobre difusión y qué pasa con el siliciuro en d = 0 `[?]`.
    Es lo primero: decide si d = 0 es una unión o un puente.
 5. Pendiente: pasar el deck completo de KLayout con el front-end activo (hasta hoy solo el de fabricación).

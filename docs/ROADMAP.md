@@ -97,6 +97,8 @@ This page is the single to-do list. What goes on the first tile and its tests, i
 
 ## Done (most recent first)
 
+- 2026-11-26 · MISFIT-14: the XC-20 cells drawn by the generator (n+ touching p+ in substrate, four gaps and a control),
+  rule-clean with LVS; the junction is extracted as a device ([report](../experiments/misfit14/RESULTADOS.md)).
 - 2026-11-26 · MISFIT-13: the core with seat selection and a second reader does not close in its present block, in any of three
   selection schemes ([report](../experiments/misfit13/RESULTADOS.md)). MISFIT-12: unequal devices share a reader bus cleanly and 128
   seats with wiring stay inside the cuts ([report](../experiments/misfit12/RESULTADOS.md)). Order changed: cells first, tile count last.
