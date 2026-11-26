@@ -2,3 +2,5 @@ a76963764126adc2f87db683c1d44714352089f725aae9ae28794b8a15361780  cells/preregis
 # sellado 2026-11-26 11:55:57 EST, antes de escribir los decks
 20af25dbed5b9efc9aa7a7885c5363f9a6d97b8a97d23087ea28d84d7b7c2a9a  cells/preregistros/MISFIT-15_2026-11-26_xc20_tension_y_seleccion_enmienda1.md
 # enmienda 1 sellada 2026-11-26 11:59:32 EST, antes de la segunda pasada
+2c1f34c4c1c21e8e0341b539ab3103868a7d425784fe9dbb08913d846bd22bed  cells/preregistros/MISFIT-15_2026-11-26_xc20_tension_y_seleccion_enmienda2.md
+# enmienda 2 sellada 2026-11-26 12:11:01 EST, antes de la tercera pasada
