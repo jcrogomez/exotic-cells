@@ -97,6 +97,8 @@ This page is the single to-do list. What goes on the first tile and its tests, i
 
 ## Done (most recent first)
 
+- 2026-11-26 · MISFIT-17: XC-20's matrix read by the two-range reader 2 in four corners: all 24 currents not used for
+  calibration within 1.3 %; three of six predictions false, all mine ([report](../experiments/misfit17/RESULTADOS.md)).
 - 2026-11-26 · MISFIT-22: reader 2's analog front end drawn by the generator (node capacitor and two precharges):
   rule-clean, LVS match, 71 µm², 2.4 fF of wiring on the node ([report](../experiments/misfit22/RESULTADOS.md)).
 - 2026-11-26 · MISFIT-21: XC-14's seat redrawn with a grounded shield and two coupling lines: node-to-gate coupling down

@@ -1,0 +1,22 @@
+cal 1.0000e-10: T = 5.3555e-04 s, dispersion 0.263 %
+cal 1.0000e-08: T = 5.3695e-06 s, dispersion 0.549 %
+cal 1.0000e-06: T = 5.3591e-08 s, dispersion 0.218 %
+oos 3.1623e-10: T = 1.6992e-04 s, dispersion 0.396 %
+oos 3.1623e-09: T = 1.6972e-05 s, dispersion 0.547 %
+oos 1.0000e-07: T = 5.3801e-07 s, dispersion 0.603 %
+wit 3.1939e-09: T = 1.6807e-05 s, dispersion 0.580 %
+s6 3.1623e-09: T = 1.6904e-05 s, dispersion 0.417 %
+sh1 1.0000e-08: T = 1.0964e-05 s, dispersion 0.545 %
+sh3 1.0000e-08: T = 4.7365e-05 s, dispersion 0.254 %
+zero 0.0000e+00: sin diez periodos
+bare 3.1623e-09: T = 1.6884e-05 s, dispersion 0.488 %
+decks que no acabaron bien: ninguno
+ajuste: Q = 53.70 fC, IL = -0.266 pA, td = -0.11 ns
+fuera de muestra 3.162e-10 A: error -0.15 %
+fuera de muestra 3.162e-09 A: error +0.04 %
+fuera de muestra 1.000e-07 A: error -0.21 %
+E1 (dispersion a 3,16 nA < 0,16 %): FALSA (0.547 %)
+E2 (testigo entre -1,2 y -0,8 %): cumplida (-0.967 %)
+E3 (tres lecturas dentro de +-3 %): cumplida
+E4 (con/sin matriz entre 0,98 y 1,02): cumplida (1.0052)
+puesto 6 frente a 0: -0.4001 %

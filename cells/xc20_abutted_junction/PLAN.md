@@ -91,6 +91,10 @@ referencia. Si la fuga es la del diodo del PDK, gana el diodo del PDK.
 6. Hecho (2026-11-26, [MISFIT-15](../../experiments/misfit15/RESULTADOS.md), **corrida**, modelo): el `pd2nw` de 1,4 µm² a 1,8 V en inversa da 2,5 fA a tt 27, 1,8 aA a ff −40 y 4,4 pA a 85 °C; el `pw2nd`, 4,7 fA, 2,0 aA y 2,5 pA. Ojo: el área de un diodo extraído entra sin escalar en ngspice; hay que reescribirla.
 7. Hecho en parte (MISFIT-15): con el interruptor entre X y la isla la unión ve 0,9–1,65 V según su corriente; con el interruptor abajo ve la tensión de X. **La variante en pozo n pasa a ser la principal.** Pendiente: simular el canal de lectura por el lado p+ con la precarga de canal largo; predicción escrita antes. El modelo
    no contiene túnel: la simulación solo fija el fondo y el rango del lector, no la señal.
+   Hecho (2026-11-26, [MISFIT-17](../../experiments/misfit17/RESULTADOS.md), **corrida**, modelo): el lector 2 de dos rangos lee la
+   matriz en pozo n dentro de ±1,3 % en cuatro esquinas. **Los dos rangos ven la unión a tensiones distintas:** el bajo cerca de
+   0,9 V (el nodo oscila entre 0,78 y 1,07 V), el alto barriendo de 1,8 a 0,8 V. Una unión no óhmica dará por eso lecturas
+   distintas en cada rango; el cociente entre rangos es una medida de la forma de su curva.
 8. Pendiente: leer Dutta 2017 (ya leído entero en el laboratorio) buscando solo la corriente en inversa por debajo de la ruptura.
 
 ### 5.2 Configuraciones a dibujar

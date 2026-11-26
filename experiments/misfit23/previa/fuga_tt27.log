@@ -1,0 +1,33 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-23 cuenta previa: fuga de las dos precargas apagadas sobre x, tt 27
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  7.00000e-01 Reference value :  1.20000e+00
+No. of Data Rows : 12
+  * misfit-23 cuenta previa: fuga de las dos precargas apagadas sobre x, tt 27
+  DC transfer characteristic  Thu Nov 26 22:03:54  2026
+--------------------------------------------------------------------------------
+Index   v-sweep         ix              
+--------------------------------------------------------------------------------
+0	7.000000e-01	-1.36643e-14	
+1	8.000000e-01	-1.12007e-14	
+2	9.000000e-01	-1.02616e-14	
+3	1.000000e+00	-9.59577e-15	
+4	1.100000e+00	-8.94885e-15	
+5	1.200000e+00	-8.28772e-15	
+6	1.300000e+00	-7.61093e-15	
+7	1.400000e+00	-6.91938e-15	
+8	1.500000e+00	-6.21321e-15	
+9	1.600000e+00	-5.48869e-15	
+10	1.700000e+00	-4.67371e-15	
+11	1.800000e+00	-6.36168e-16	
+PREVIA tt 27
+ngspice-44.2 done
