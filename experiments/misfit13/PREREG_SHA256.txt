@@ -1,0 +1,2 @@
+e6520abfee11eb31d331df1026e91c940ca36143db828ec512fb38499ad43723  cells/preregistros/MISFIT-13_2026-11-26_nucleo_crecido.md
+# sellado 2026-11-26 09:36:25 EST, antes de escribir el RTL
