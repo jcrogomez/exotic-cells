@@ -97,6 +97,8 @@ This page is the single to-do list. What goes on the first tile and its tests, i
 
 ## Done (most recent first)
 
+- 2026-11-26 · MISFIT-19: XC-14's readable window: a floating gate born at 0.3–1.0 V lands inside reader 2; the thick-oxide
+  transistor is the one to read it with ([report](../experiments/misfit19/RESULTADOS.md)).
 - 2026-11-26 · MISFIT-18: the XC-19 geometry fan drawn by the generator (18 seats, rule-clean, LVS). The model tells apart
   only area and diffusion length; three classes stay as exploratory seats ([report](../experiments/misfit18/RESULTADOS.md)).
 - 2026-11-26 · MISFIT-16: XC-20's main cell (p+ touching n+ in an n-well, switch on the ground side) drawn by the generator,

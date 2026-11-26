@@ -1,0 +1,8 @@
+67b9eb76cedb1cbc2cfe6cab69c87259f29f5aee65a484ed036fb06aaca32e64  gen.py
+fd476632d6571f64f2cbc7fa64a632c32b1d5bc7dfb29cc76ff51c3f73e4da96  analiza.py
+570c09a5682782f82be588dc143f119400d5a02752432882278a7922a38d7d9e  corre.sh
+# 2026-11-26 13:33:00 EST, antes de correr
+9caef2539e8c67f6115bc281e31d64317ca761142693d0b3739b0364a0b0a034  gen.py
+0495c4e12eb1217ca1a535cafdb05f9fd3d068542d89042d60bfa0714393c5a7  analiza.py
+570c09a5682782f82be588dc143f119400d5a02752432882278a7922a38d7d9e  corre.sh
+# 2026-11-26 13:35:30 EST, pasada 2: la pasada 1 escribio una sola columna (suma de las tres corrientes) por un error mio en wrdata; vi la primera fila (2 pA de suma a V_fg = 0, tt 27). Signo y columnas corregidos; nada mas

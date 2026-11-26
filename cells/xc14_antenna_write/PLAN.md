@@ -74,8 +74,9 @@ en el tiempo, y sin el circuito de programación que piden las otras. Lo más pr
 4. Pendiente: comprobar qué dicen Magic, KLayout y LVS de una puerta sin excitador (advertencia, error o silencio), con
    `residual/drc_edge` y una sonda con respuesta conocida.
 5. Pendiente: cuarto contexto de Residual: relación de antena por paso de fabricación y por puerta, anotada en el netlist.
-6. Pendiente: simular el lector con la puerta flotante como nodo con carga inicial: rango de carga que deja al transistor dentro
-   de la ventana útil. Predicción escrita antes.
+6. Hecho en parte (2026-11-26, [MISFIT-19](../../experiments/misfit19/RESULTADOS.md), modelo): con la puerta forzada, el puesto da entre 100 pA y 10 µA para
+   una tensión de puerta de 0,3 a 1,0 V en las 4 esquinas; la ventana del transistor de óxido grueso contiene a la del fino. Pendiente: la puerta
+   flotando de verdad, con el acoplo del drenador y de la antena, sobre el dibujo.
 7. Pendiente: leer una fuente sobre retención de carga de plasma tras el recocido final `[?]`. Sin ella la familia no tiene señal
    esperada.
 8. Pendiente: dibujar por script un canal y sus controles, dentro de los límites de antena.

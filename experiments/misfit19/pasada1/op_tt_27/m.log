@@ -1,0 +1,29 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-19 puesto con puerta forzada, tt 27 c
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  6.00000e-02 Reference value :  1.25000e-01 Reference value :  1.95000e-01 Reference value :  2.60000e-01 Reference value :  3.35000e-01 Reference value :  3.95000e-01 Reference value :  4.50000e-01 Reference value :  5.15000e-01 Reference value :  5.80000e-01 Reference value :  6.55000e-01 Reference value :  7.25000e-01 Reference value :  7.90000e-01 Reference value :  8.65000e-01 Reference value :  9.40000e-01 Reference value :  1.01500e+00 Reference value :  1.10000e+00 Reference value :  1.17500e+00 Reference value :  1.27000e+00 Reference value :  1.35000e+00 Reference value :  1.42000e+00 Reference value :  1.49500e+00 Reference value :  1.56500e+00 Reference value :  1.63500e+00 Reference value :  1.71000e+00 Reference value :  1.77500e+00
+No. of Data Rows : 361
+HECHO 1.35
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  3.50000e-02 Reference value :  1.05000e-01 Reference value :  1.75000e-01 Reference value :  2.40000e-01 Reference value :  3.05000e-01 Reference value :  3.70000e-01 Reference value :  4.45000e-01 Reference value :  5.10000e-01 Reference value :  5.80000e-01 Reference value :  6.40000e-01 Reference value :  7.05000e-01 Reference value :  7.65000e-01 Reference value :  8.35000e-01 Reference value :  9.05000e-01 Reference value :  9.75000e-01 Reference value :  1.04500e+00 Reference value :  1.13000e+00 Reference value :  1.21000e+00 Reference value :  1.29000e+00 Reference value :  1.37500e+00 Reference value :  1.45000e+00 Reference value :  1.51500e+00 Reference value :  1.59000e+00 Reference value :  1.66000e+00 Reference value :  1.73000e+00
+No. of Data Rows : 361
+HECHO 0.9
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  7.00000e-02 Reference value :  1.40000e-01 Reference value :  2.00000e-01 Reference value :  2.65000e-01 Reference value :  3.30000e-01 Reference value :  3.95000e-01 Reference value :  4.60000e-01 Reference value :  5.20000e-01 Reference value :  5.85000e-01 Reference value :  6.60000e-01 Reference value :  7.30000e-01 Reference value :  7.95000e-01 Reference value :  8.70000e-01 Reference value :  9.35000e-01 Reference value :  1.00500e+00 Reference value :  1.08500e+00 Reference value :  1.16500e+00 Reference value :  1.24000e+00 Reference value :  1.31500e+00 Reference value :  1.39000e+00 Reference value :  1.46000e+00 Reference value :  1.53000e+00 Reference value :  1.60000e+00 Reference value :  1.67500e+00 Reference value :  1.75000e+00
+No. of Data Rows : 361
+HECHO 1.8
+ngspice-44.2 done
+salida 0
