@@ -15,6 +15,8 @@ Dibujo y verificación; ninguna simulación. Nada es silicio.
   contacto, 14 veces en KLayout y 1 en Magic). Corregido en el generador antes de juzgar; queda en `pasada1/`.
 - **La extracción deja 7 avisos sin texto,** uno por isla, sobre la franja superior de la isla. Cada diodo sale con el área y
   el perímetro correctos (1,4 µm², 4,8 µm). Causa `[?]`.
+- **El LVS cuenta el diodo, pero no consta que compare su área.** netgen avisa de que no encuentra las propiedades
+  `value` y `mult` del diodo. El mutante probado quita un diodo entero; un mutante de área no se probó `[?]`.
 - **Sin anillos de guarda.** El riesgo de latch-up por inyectar en el sustrato ([RISKS](../../instrument/RISKS.md) fila 12)
   no está tratado.
 
