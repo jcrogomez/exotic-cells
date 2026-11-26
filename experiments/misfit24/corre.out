@@ -1,0 +1,158 @@
+inicio 2026-11-26 17:30:39 EST
+  empieza d/alto_ff-40_cal_1.0000e-05/ 17:30:39
+  empieza d/alto_ff-40_cal_1.0000e-08/ 17:30:39
+  empieza d/alto_ff-40_cal_3.1623e-07/ 17:30:39
+  empieza d/alto_ff-40_oos_1.0000e-06/ 17:30:39
+  acaba   d/alto_ff-40_cal_1.0000e-05/ 17:32:35 salida 0 12 lineas
+  empieza d/alto_ff-40_oos_3.1623e-06/ 17:32:35
+  acaba   d/alto_ff-40_cal_3.1623e-07/ 17:32:39 salida 0 12 lineas
+  empieza d/alto_ff-40_oos_3.1623e-08/ 17:32:39
+  acaba   d/alto_ff-40_oos_1.0000e-06/ 17:32:44 salida 0 12 lineas
+  empieza d/alto_ff-40_wit_1.0300e-06/ 17:32:44
+  acaba   d/alto_ff-40_cal_1.0000e-08/ 17:32:50 salida 0 12 lineas
+  empieza d/alto_ff-40_zero_0.0000e+00/ 17:32:51
+  acaba   d/alto_ff-40_zero_0.0000e+00/ 17:34:09 salida 0 12 lineas
+  empieza d/alto_ff85_cal_1.0000e-05/ 17:34:09
+  acaba   d/alto_ff-40_oos_3.1623e-06/ 17:34:23 salida 0 12 lineas
+  empieza d/alto_ff85_cal_1.0000e-08/ 17:34:23
+  acaba   d/alto_ff-40_wit_1.0300e-06/ 17:34:55 salida 0 12 lineas
+  empieza d/alto_ff85_cal_3.1623e-07/ 17:34:55
+  acaba   d/alto_ff-40_oos_3.1623e-08/ 17:35:05 salida 0 12 lineas
+  empieza d/alto_ff85_oos_1.0000e-06/ 17:35:05
+  acaba   d/alto_ff85_cal_1.0000e-05/ 17:35:47 salida 0 12 lineas
+  empieza d/alto_ff85_oos_3.1623e-06/ 17:35:47
+  acaba   d/alto_ff85_cal_1.0000e-08/ 17:36:36 salida 0 12 lineas
+  empieza d/alto_ff85_oos_3.1623e-08/ 17:36:36
+  acaba   d/alto_ff85_cal_3.1623e-07/ 17:36:48 salida 0 12 lineas
+  empieza d/alto_ff85_wit_1.0300e-06/ 17:36:48
+  acaba   d/alto_ff85_oos_1.0000e-06/ 17:36:57 salida 0 12 lineas
+  empieza d/alto_ff85_zero_0.0000e+00/ 17:36:57
+  acaba   d/alto_ff85_oos_3.1623e-06/ 17:37:24 salida 0 12 lineas
+  empieza d/alto_ss85_cal_1.0000e-05/ 17:37:24
+  acaba   d/alto_ff85_zero_0.0000e+00/ 17:38:25 salida 0 12 lineas
+  empieza d/alto_ss85_cal_1.0000e-08/ 17:38:25
+  acaba   d/alto_ff85_wit_1.0300e-06/ 17:38:41 salida 0 12 lineas
+  acaba   d/alto_ff85_oos_3.1623e-08/ 17:38:41 salida 0 12 lineas
+  empieza d/alto_ss85_cal_3.1623e-07/ 17:38:41
+  empieza d/alto_ss85_oos_1.0000e-06/ 17:38:41
+  acaba   d/alto_ss85_cal_1.0000e-05/ 17:38:49 salida 0 12 lineas
+  empieza d/alto_ss85_oos_3.1623e-06/ 17:38:49
+  acaba   d/alto_ss85_cal_1.0000e-08/ 17:40:27 salida 0 12 lineas
+  empieza d/alto_ss85_oos_3.1623e-08/ 17:40:27
+  acaba   d/alto_ss85_oos_3.1623e-06/ 17:40:37 salida 0 12 lineas
+  empieza d/alto_ss85_wit_1.0300e-06/ 17:40:37
+  acaba   d/alto_ss85_cal_3.1623e-07/ 17:40:47 salida 0 12 lineas
+  empieza d/alto_ss85_zero_0.0000e+00/ 17:40:47
+  acaba   d/alto_ss85_oos_1.0000e-06/ 17:40:48 salida 0 12 lineas
+  empieza d/alto_tt27_cal_1.0000e-05/ 17:40:48
+  acaba   d/alto_ss85_zero_0.0000e+00/ 17:42:18 salida 0 12 lineas
+  empieza d/alto_tt27_cal_1.0000e-08/ 17:42:18
+  acaba   d/alto_ss85_oos_3.1623e-08/ 17:42:27 salida 0 12 lineas
+  empieza d/alto_tt27_cal_3.1623e-07/ 17:42:27
+  acaba   d/alto_ss85_wit_1.0300e-06/ 17:42:29 salida 0 12 lineas
+  empieza d/alto_tt27_oos_1.0000e-06/ 17:42:29
+  acaba   d/alto_tt27_cal_1.0000e-05/ 17:42:35 salida 0 12 lineas
+  empieza d/alto_tt27_oos_3.1623e-06/ 17:42:35
+  acaba   d/alto_tt27_oos_1.0000e-06/ 17:44:25 salida 0 12 lineas
+  empieza d/alto_tt27_oos_3.1623e-08/ 17:44:25
+  acaba   d/alto_tt27_cal_1.0000e-08/ 17:44:25 salida 0 12 lineas
+  empieza d/alto_tt27_wit_1.0300e-06/ 17:44:25
+  acaba   d/alto_tt27_oos_3.1623e-06/ 17:44:32 salida 0 12 lineas
+  empieza d/alto_tt27_zero_0.0000e+00/ 17:44:32
+  acaba   d/alto_tt27_cal_3.1623e-07/ 17:44:33 salida 0 12 lineas
+  empieza d/bajo_ff-40_cal_1.0000e-06/ 17:44:33
+  acaba   d/alto_tt27_zero_0.0000e+00/ 17:46:00 salida 0 12 lineas
+  empieza d/bajo_ff-40_cal_1.0000e-08/ 17:46:00
+  acaba   d/alto_tt27_wit_1.0300e-06/ 17:46:15 salida 0 12 lineas
+  empieza d/bajo_ff-40_cal_1.0000e-10/ 17:46:15
+  acaba   d/alto_tt27_oos_3.1623e-08/ 17:46:27 salida 0 12 lineas
+  empieza d/bajo_ff-40_oos_1.0000e-07/ 17:46:27
+  acaba   d/bajo_ff-40_cal_1.0000e-06/ 17:51:19 salida 0 12 lineas
+  empieza d/bajo_ff-40_oos_3.1623e-09/ 17:51:19
+  acaba   d/bajo_ff-40_oos_1.0000e-07/ 17:52:40 salida 0 12 lineas
+  empieza d/bajo_ff-40_oos_3.1623e-10/ 17:52:40
+  acaba   d/bajo_ff-40_cal_1.0000e-08/ 17:52:56 salida 0 12 lineas
+  empieza d/bajo_ff-40_wit_3.2572e-09/ 17:52:56
+  acaba   d/bajo_ff-40_oos_3.1623e-09/ 17:59:36 salida 0 12 lineas
+  empieza d/bajo_ff-40_zero_0.0000e+00/ 17:59:36
+  acaba   d/bajo_ff-40_cal_1.0000e-10/ 18:00:29 salida 0 12 lineas
+  empieza d/bajo_ff85_cal_1.0000e-06/ 18:00:29
+  acaba   d/bajo_ff-40_wit_3.2572e-09/ 18:00:32 salida 0 12 lineas
+  empieza d/bajo_ff85_cal_1.0000e-08/ 18:00:32
+  acaba   d/bajo_ff-40_zero_0.0000e+00/ 18:01:00 salida 0 12 lineas
+  empieza d/bajo_ff85_cal_1.0000e-10/ 18:01:00
+  acaba   d/bajo_ff-40_oos_3.1623e-10/ 18:01:49 salida 0 12 lineas
+  empieza d/bajo_ff85_oos_1.0000e-07/ 18:01:49
+  acaba   d/bajo_ff85_cal_1.0000e-06/ 18:07:13 salida 0 12 lineas
+  empieza d/bajo_ff85_oos_3.1623e-09/ 18:07:13
+  acaba   d/bajo_ff85_oos_1.0000e-07/ 18:09:06 salida 0 12 lineas
+  empieza d/bajo_ff85_oos_3.1623e-10/ 18:09:06
+  acaba   d/bajo_ff85_cal_1.0000e-08/ 18:09:08 salida 0 12 lineas
+  empieza d/bajo_ff85_wit_3.2572e-09/ 18:09:08
+  acaba   d/bajo_ff85_oos_3.1623e-09/ 18:16:12 salida 0 12 lineas
+  empieza d/bajo_ff85_zero_0.0000e+00/ 18:16:12
+  acaba   d/bajo_ff85_cal_1.0000e-10/ 18:16:29 salida 0 12 lineas
+  empieza d/bajo_ss85_cal_1.0000e-06/ 18:16:29
+  acaba   d/bajo_ff85_wit_3.2572e-09/ 18:17:38 salida 0 12 lineas
+  empieza d/bajo_ss85_cal_1.0000e-08/ 18:17:38
+  acaba   d/bajo_ff85_zero_0.0000e+00/ 18:17:47 salida 0 12 lineas
+  empieza d/bajo_ss85_cal_1.0000e-10/ 18:17:47
+  acaba   d/bajo_ff85_oos_3.1623e-10/ 18:19:46 salida 0 12 lineas
+  empieza d/bajo_ss85_oos_1.0000e-07/ 18:19:46
+  acaba   d/bajo_ss85_cal_1.0000e-06/ 18:22:10 salida 0 12 lineas
+  empieza d/bajo_ss85_oos_3.1623e-09/ 18:22:10
+  acaba   d/bajo_ss85_cal_1.0000e-08/ 18:24:52 salida 0 12 lineas
+  empieza d/bajo_ss85_oos_3.1623e-10/ 18:24:52
+  acaba   d/bajo_ss85_oos_1.0000e-07/ 18:26:06 salida 0 12 lineas
+  empieza d/bajo_ss85_wit_3.2572e-09/ 18:26:06
+  acaba   d/bajo_ss85_oos_3.1623e-09/ 18:29:06 salida 0 12 lineas
+  empieza d/bajo_ss85_zero_0.0000e+00/ 18:29:06
+  acaba   d/bajo_ss85_zero_0.0000e+00/ 18:30:43 salida 0 12 lineas
+  empieza d/bajo_tt27_cal_1.0000e-06/ 18:30:43
+  acaba   d/bajo_ss85_cal_1.0000e-10/ 18:30:48 salida 0 12 lineas
+  empieza d/bajo_tt27_cal_1.0000e-08/ 18:30:48
+  acaba   d/bajo_ss85_wit_3.2572e-09/ 18:33:01 salida 0 12 lineas
+  empieza d/bajo_tt27_cal_1.0000e-10/ 18:33:01
+  acaba   d/bajo_ss85_oos_3.1623e-10/ 18:33:29 salida 0 12 lineas
+  empieza d/bajo_tt27_oos_1.0000e-07/ 18:33:29
+  acaba   d/bajo_tt27_cal_1.0000e-06/ 18:36:57 salida 0 12 lineas
+  empieza d/bajo_tt27_oos_3.1623e-09/ 18:36:57
+  acaba   d/bajo_tt27_cal_1.0000e-08/ 18:38:41 salida 0 12 lineas
+  empieza d/bajo_tt27_oos_3.1623e-10/ 18:38:41
+  acaba   d/bajo_tt27_oos_1.0000e-07/ 18:40:53 salida 0 12 lineas
+  empieza d/bajo_tt27_wit_3.2572e-09/ 18:40:53
+  acaba   d/bajo_tt27_oos_3.1623e-09/ 18:45:05 salida 0 12 lineas
+  empieza d/bajo_tt27_zero_0.0000e+00/ 18:45:05
+  acaba   d/bajo_tt27_cal_1.0000e-10/ 18:46:20 salida 0 12 lineas
+  empieza dyn/alto_ff-40_oos_1.0000e-06/ 18:46:20
+  acaba   d/bajo_tt27_zero_0.0000e+00/ 18:46:30 salida 0 12 lineas
+  empieza dyn/alto_ff85_oos_1.0000e-06/ 18:46:30
+  acaba   dyn/alto_ff-40_oos_1.0000e-06/ 18:47:26 salida 0 12 lineas
+  empieza dyn/alto_ss85_oos_1.0000e-06/ 18:47:26
+  acaba   dyn/alto_ff85_oos_1.0000e-06/ 18:47:30 salida 0 12 lineas
+  empieza dyn/alto_tt27_oos_1.0000e-06/ 18:47:30
+  acaba   d/bajo_tt27_oos_3.1623e-10/ 18:47:32 salida 0 12 lineas
+  empieza dyn/bajo_ff-40_oos_3.1623e-09/ 18:47:32
+  acaba   d/bajo_tt27_wit_3.2572e-09/ 18:48:06 salida 0 12 lineas
+  empieza dyn/bajo_ff85_oos_3.1623e-09/ 18:48:06
+  acaba   dyn/alto_ss85_oos_1.0000e-06/ 18:48:25 salida 0 12 lineas
+  empieza dyn/bajo_ss85_oos_3.1623e-09/ 18:48:25
+  acaba   dyn/alto_tt27_oos_1.0000e-06/ 18:48:29 salida 0 12 lineas
+  empieza dyn/bajo_tt27_oos_3.1623e-09/ 18:48:29
+  acaba   dyn/bajo_ff-40_oos_3.1623e-09/ 18:48:32 salida 0 12 lineas
+  empieza f1/alto_tt27_cal_1.0000e-05/ 18:48:32
+  acaba   dyn/bajo_ff85_oos_3.1623e-09/ 18:48:48 salida 0 12 lineas
+  empieza f1/alto_tt27_cal_1.0000e-08/ 18:48:48
+  acaba   dyn/bajo_ss85_oos_3.1623e-09/ 18:49:24 salida 0 12 lineas
+  empieza f1/alto_tt27_cal_3.1623e-07/ 18:49:24
+  acaba   dyn/bajo_tt27_oos_3.1623e-09/ 18:49:41 salida 0 12 lineas
+  empieza f1/bajo_tt27_cal_1.0000e-06/ 18:49:41
+  acaba   f1/alto_tt27_cal_1.0000e-05/ 18:50:06 salida 0 12 lineas
+  empieza f1/bajo_tt27_cal_1.0000e-08/ 18:50:06
+  acaba   f1/alto_tt27_cal_1.0000e-08/ 18:50:59 salida 0 12 lineas
+  empieza f1/bajo_tt27_cal_1.0000e-10/ 18:50:59
+  acaba   f1/alto_tt27_cal_3.1623e-07/ 18:51:13 salida 0 12 lineas
+  acaba   f1/bajo_tt27_cal_1.0000e-06/ 18:54:12 salida 0 12 lineas
+  acaba   f1/bajo_tt27_cal_1.0000e-08/ 18:55:05 salida 0 12 lineas
+  acaba   f1/bajo_tt27_cal_1.0000e-10/ 18:55:37 salida 0 12 lineas
+fin 2026-11-26 18:55:37 EST

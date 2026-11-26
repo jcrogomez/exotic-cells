@@ -1,0 +1,89 @@
+
+## rango bajo · tt 27
+  ajuste: Q = 51.10 fC (+1.4 % frente a MISFIT-23), IL = -0.149 pA, td = 0.36 ns
+  fuera de muestra 3.162e-10 A: error +0.27 %, dispersion 0.32 %
+  fuera de muestra 3.162e-09 A: error -0.01 %, dispersion 0.16 %
+  fuera de muestra 1.000e-07 A: error -0.32 %, dispersion 0.18 %
+  testigo +3 %: periodo -2.801 %
+  sin corriente: ningun flanco en 20 ms
+  dinamico: reposo q max 0.000 V, nodo min 1.800 V, primer flanco 61894.8 ns tras EN | periodo frente a EN fijo -0.068 % | tras bajar EN q max 0.000 V, nodo min 1.800 V | consumo en reposo menos la celda +0.020 nA
+
+## rango bajo · ff -40
+  ajuste: Q = 56.81 fC (+1.2 % frente a MISFIT-23), IL = +0.227 pA, td = -0.09 ns
+  fuera de muestra 3.162e-10 A: error +0.16 %, dispersion 0.52 %
+  fuera de muestra 3.162e-09 A: error -0.18 %, dispersion 0.54 %
+  fuera de muestra 1.000e-07 A: error +0.03 %, dispersion 0.44 %
+  testigo +3 %: periodo -3.26 %
+  sin corriente: ningun flanco en 20 ms
+  dinamico: reposo q max 0.000 V, nodo min 1.800 V, primer flanco 65986.8 ns tras EN | periodo frente a EN fijo +0.024 % | tras bajar EN q max 0.000 V, nodo min 1.800 V | consumo en reposo menos la celda +0.025 nA
+
+## rango bajo · ss 85
+  ajuste: Q = 58.00 fC (+0.7 % frente a MISFIT-23), IL = -5.957 pA, td = 0.44 ns
+  fuera de muestra 3.162e-10 A: error +1.28 %, dispersion 0.13 %
+  fuera de muestra 3.162e-09 A: error +0.17 %, dispersion 0.05 %
+  fuera de muestra 1.000e-07 A: error -0.20 %, dispersion 0.10 %
+  testigo +3 %: periodo -2.877 %
+  sin corriente: ningun flanco en 20 ms
+  dinamico: reposo q max 0.000 V, nodo min 1.800 V, primer flanco 57518.8 ns tras EN | periodo frente a EN fijo +0.005 % | tras bajar EN q max 0.000 V, nodo min 1.800 V | consumo en reposo menos la celda +0.029 nA
+
+## rango bajo · ff 85
+  ajuste: Q = 52.16 fC (+1.3 % frente a MISFIT-23), IL = +3.141 pA, td = 0.29 ns
+  fuera de muestra 3.162e-10 A: error +0.12 %, dispersion 0.22 %
+  fuera de muestra 3.162e-09 A: error -0.00 %, dispersion 0.24 %
+  fuera de muestra 1.000e-07 A: error -0.04 %, dispersion 0.16 %
+  testigo +3 %: periodo -2.913 %
+  sin corriente: ningun flanco en 20 ms
+  dinamico: reposo q max 0.000 V, nodo min 1.800 V, primer flanco 63659.8 ns tras EN | periodo frente a EN fijo +0.020 % | tras bajar EN q max 0.000 V, nodo min 1.800 V | consumo en reposo menos la celda +4.981 nA
+
+## rango alto · tt 27
+  ajuste: Q = 181.60 fC (-0.0 % frente a MISFIT-23), IL = -12.795 pA, td = 3.04 ns
+  fuera de muestra 3.162e-08 A: error -0.19 %, dispersion 0.06 %
+  fuera de muestra 1.000e-06 A: error -0.38 %, dispersion 0.05 %
+  fuera de muestra 3.162e-06 A: error -0.48 %, dispersion 0.06 %
+  testigo +3 %: periodo -2.902 %
+  sin corriente: ningun flanco en 20 ms
+  dinamico: reposo q max 0.000 V, nodo min 1.781 V, primer flanco 192.3 ns tras EN | periodo frente a EN fijo -0.023 % | tras bajar EN q max 0.000 V, nodo min 1.781 V | consumo en reposo menos la celda +0.020 nA
+
+## rango alto · ff -40
+  ajuste: Q = 194.60 fC (-0.0 % frente a MISFIT-23), IL = -0.707 pA, td = 2.45 ns
+  fuera de muestra 3.162e-08 A: error -0.29 %, dispersion 0.09 %
+  fuera de muestra 1.000e-06 A: error -0.37 %, dispersion 0.06 %
+  fuera de muestra 3.162e-06 A: error -0.56 %, dispersion 0.10 %
+  testigo +3 %: periodo -2.892 %
+  sin corriente: ningun flanco en 20 ms
+  dinamico: reposo q max 0.000 V, nodo min 1.786 V, primer flanco 206.6 ns tras EN | periodo frente a EN fijo -0.010 % | tras bajar EN q max 0.000 V, nodo min 1.786 V | consumo en reposo menos la celda +0.030 nA
+
+## rango alto · ss 85
+  ajuste: Q = 171.09 fC (-0.0 % frente a MISFIT-23), IL = -29.786 pA, td = 4.55 ns
+  fuera de muestra 3.162e-08 A: error -0.17 %, dispersion 0.02 %
+  fuera de muestra 1.000e-06 A: error -0.50 %, dispersion 0.01 %
+  fuera de muestra 3.162e-06 A: error -0.70 %, dispersion 0.02 %
+  testigo +3 %: periodo -2.831 %
+  sin corriente: ningun flanco en 20 ms
+  dinamico: reposo q max 0.000 V, nodo min 1.775 V, primer flanco 178.8 ns tras EN | periodo frente a EN fijo +0.001 % | tras bajar EN q max 0.000 V, nodo min 1.775 V | consumo en reposo menos la celda +0.030 nA
+
+## rango alto · ff 85
+  ajuste: Q = 188.39 fC (-0.0 % frente a MISFIT-23), IL = -3.250 pA, td = 2.37 ns
+  fuera de muestra 3.162e-08 A: error -0.27 %, dispersion 0.02 %
+  fuera de muestra 1.000e-06 A: error -0.28 %, dispersion 0.02 %
+  fuera de muestra 3.162e-06 A: error -0.32 %, dispersion 0.02 %
+  testigo +3 %: periodo -2.877 %
+  sin corriente: ningun flanco en 20 ms
+  dinamico: reposo q max 0.000 V, nodo min 1.783 V, primer flanco 198.3 ns tras EN | periodo frente a EN fijo +0.017 % | tras bajar EN q max 0.000 V, nodo min 1.783 V | consumo en reposo menos la celda +5.340 nA
+
+## grupo C: puertas _1, tt 27
+  bajo: Q = 50.23 fC (-1.69 % frente a _4), IL = -0.670 pA, td = 0.28 ns
+  alto: Q = 180.89 fC (-0.39 % frente a _4), IL = -9.604 pA, td = 2.78 ns
+
+## Veredictos
+A1 (24 fuera de muestra dentro de +-3 %): cumplida (24 de 24); fallan: []
+A2 (testigo entre -3,5 y -2,3 %): cumplida [-2.801, -3.26, -2.877, -2.913, -2.902, -2.892, -2.831, -2.877]
+A3 (Q frente a MISFIT-23: alto +-3 %, bajo +-10 %): cumplida [('bajo', 'tt', '27', 1.4), ('bajo', 'ff', '-40', 1.2), ('bajo', 'ss', '85', 0.7), ('bajo', 'ff', '85', 1.3), ('alto', 'tt', '27', -0.0), ('alto', 'ff', '-40', -0.0), ('alto', 'ss', '85', -0.0), ('alto', 'ff', '85', -0.0)]
+A4 (sin corriente, ningun flanco): cumplida (8 de 8)
+B1 (reposo inicial quieto y primer flanco tras EN): cumplida (8 de 8); fallan: []
+B2 (periodo tras EN dentro de +-1 % del de EN fijo): cumplida (8 de 8); fallan: []
+B3 (quieto tras bajar EN): cumplida (8 de 8); fallan: []
+C1 (puertas _1: Q cambia < 3 % alto, < 10 % bajo): cumplida [('bajo', -1.69), ('alto', -0.39)]
+casos invalidos: ninguno
+decks que no acabaron en 'salida 0': ninguno
+control de capacidad: 72 valores, min 0.985 fF, max 1.820 fF bien

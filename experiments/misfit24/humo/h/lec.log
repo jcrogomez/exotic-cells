@@ -1,0 +1,59 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+Warning: sky130_fd_pr__model__parasitic__diode_ps2nw: IKR too small - model effect disabled!
+Warning: sky130_fd_pr__diode_pd2nw_05v5: IKR too small - model effect disabled!
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-24 (lazo con seleccion y habilitacion, puertas _4, en sube y baja) lector 2 rango alto (l = 0.15), caso oos, i = 1.0000e-06 a, tt 27 c
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  2.78197e-07 Reference value :  5.60687e-07 Reference value :  6.75228e-07 Reference value :  7.58729e-07 Reference value :  7.60417e-07 Reference value :  7.62210e-07 Reference value :  7.63851e-07 Reference value :  7.65370e-07 Reference value :  9.43196e-07 Reference value :  9.43923e-07 Reference value :  9.45757e-07 Reference value :  9.47678e-07 Reference value :  9.49300e-07 Reference value :  9.53328e-07 Reference value :  1.12896e-06 Reference value :  1.13114e-06 Reference value :  1.13297e-06 Reference value :  1.13462e-06 Reference value :  1.13631e-06 Reference value :  1.31322e-06 Reference value :  1.31584e-06 Reference value :  1.31770e-06 Reference value :  1.31932e-06 Reference value :  1.32108e-06 Reference value :  1.39139e-06 Reference value :  1.50034e-06 Reference value :  1.50192e-06 Reference value :  1.50370e-06 Reference value :  1.50539e-06 Reference value :  1.53752e-06 Reference value :  1.68484e-06 Reference value :  1.68700e-06 Reference value :  1.68886e-06 Reference value :  1.69051e-06 Reference value :  1.69201e-06 Reference value :  1.86891e-06 Reference value :  1.87154e-06 Reference value :  1.87335e-06 Reference value :  1.87507e-06 Reference value :  1.87685e-06 Reference value :  2.05424e-06 Reference value :  2.05681e-06 Reference value :  2.05868e-06 Reference value :  2.06047e-06 Reference value :  2.06212e-06 Reference value :  2.21523e-06 Reference value :  2.24149e-06 Reference value :  2.24292e-06 Reference value :  2.24465e-06 Reference value :  2.24634e-06 Reference value :  2.24936e-06 Reference value :  2.42611e-06 Reference value :  2.42789e-06 Reference value :  2.42952e-06 Reference value :  2.43104e-06 Reference value :  2.43275e-06 Reference value :  2.58619e-06 Reference value :  2.61230e-06 Reference value :  2.61382e-06 Reference value :  2.61541e-06 Reference value :  2.61687e-06 Reference value :  2.62156e-06 Reference value :  2.79635e-06 Reference value :  2.79838e-06 Reference value :  2.80045e-06 Reference value :  2.80212e-06 Reference value :  2.80373e-06 Reference value :  2.98178e-06 Reference value :  2.98312e-06 Reference value :  2.98440e-06 Reference value :  2.98609e-06 Reference value :  2.98779e-06 Reference value :  3.04361e-06 Reference value :  3.16775e-06 Reference value :  3.16915e-06 Reference value :  3.17105e-06 Reference value :  3.17257e-06 Reference value :  3.17382e-06 Reference value :  3.30950e-06 Reference value :  3.35300e-06 Reference value :  3.35455e-06 Reference value :  3.35629e-06 Reference value :  3.35793e-06 Reference value :  3.37974e-06 Reference value :  3.53766e-06 Reference value :  3.53957e-06 Reference value :  3.54118e-06 Reference value :  3.54287e-06 Reference value :  3.54455e-06 Reference value :  3.59231e-06 Reference value :  3.80288e-06 Reference value :  4.02452e-06 Reference value :  4.23096e-06
+No. of Data Rows : 5227
+r2                  =  9.446986e-07
+r12                 =  2.797582e-06
+r1                  =  7.592887e-07
+R17 tt 27 alto oos 1.0000e-06 9.44699E-07 2.79758E-06
+CD 1.01482E-15
+e1                  =  7.592887e-07
+ED 1 7.59289E-07
+e2                  =  9.446986e-07
+ED 2 9.44699E-07
+e3                  =  1.130045e-06
+ED 3 1.13004E-06
+e4                  =  1.315418e-06
+ED 4 1.31542E-06
+e5                  =  1.500728e-06
+ED 5 1.50073E-06
+e6                  =  1.685939e-06
+ED 6 1.68594E-06
+e7                  =  1.871101e-06
+ED 7 1.8711E-06
+e8                  =  2.056390e-06
+ED 8 2.05639E-06
+e9                  =  2.241715e-06
+ED 9 2.24171E-06
+e10                 =  2.426998e-06
+ED 10 2.427E-06
+e11                 =  2.612304e-06
+ED 11 2.6123E-06
+e12                 =  2.797582e-06
+ED 12 2.79758E-06
+DY t0 5.670000e-07
+DY t1 3.591000e-06
+qidle               =  9.368844e-09 at=  5.565440e-10
+DY qidle 9.36884E-09
+xidle               =  1.780908e+00 at=  5.670000e-07
+DY xidle 1.78091
+iidle               =  -1.000021e-06 from=  2.835000e-07 to=  5.671000e-07
+DY iidle -1.00002E-06
+qoff                =  1.857495e-06 at=  3.970196e-06
+DY qoff 1.85749E-06
+xoff                =  1.780909e+00 at=  4.346125e-06
+DY xoff 1.78091
+ngspice-44.2 done
+salida 0
