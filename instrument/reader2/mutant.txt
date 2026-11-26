@@ -1,0 +1,23 @@
+PASS idle after start
+PASS en low: nothing
+PASS src 0: nothing
+PASS src1 low in precharge
+PASS src1 xa after NA edges
+PASS src1 xb after NB edges
+PASS src1 period from difference
+PASS src1 outputs stay high
+PASS src1 cleared by precharge
+PASS src2 low in precharge
+PASS src2 xa after NA edges
+PASS src2 xb after NB edges
+PASS src2 period from difference
+PASS src2 outputs stay high
+PASS src2 cleared by precharge
+PASS src3 low in precharge
+PASS src3 xa after NA edges
+FAIL src3 xb after NB edges
+FAIL src3 period from difference
+FAIL src3 outputs stay high
+PASS src3 cleared by precharge
+FAILS 3
+tb_reader2_slot.v:37: $finish called at 747313000 (1ps)
