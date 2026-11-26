@@ -1,2 +1,4 @@
 3e7190443961ede3b1fab54d7a81fded0e2142c66d47ea433f3236b8a7223cd1  cells/preregistros/MISFIT-17_2026-11-26_xc20_leida_por_lector2.md
 # sellado 2026-11-26 13:23:50 EST, antes de escribir los decks
+b915156b0b2a44454076b38a17d53832bc3da43b8bd374713276eea061c85f36  cells/preregistros/MISFIT-17_2026-11-26_xc20_leida_por_lector2_enmienda1.md
+# enmienda 1 sellada 2026-11-26 15:20:21 EST, despues de la tanda de 88 y del diagnostico, antes de la segunda tanda

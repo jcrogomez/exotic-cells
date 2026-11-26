@@ -2,3 +2,6 @@
 99e94a7fc4ba87e6f6d5be361baaee822ae947bdb37692bc720e8ca872190f92  analiza.py
 158dd4879cc74f4d2a8f4fb902b99da5a7e5de6e23a373c9b93668eb3968ae91  corre.sh
 # 2026-11-26 13:26:17 EST, antes de la tanda. Humo previo: un deck (bajo tt27 oos 100 nA), visto solo su periodo y el control de capacidad; el control leia el primer punto (0) y pasa a leer el ultimo
+20819addd2c875205994dac53d4bd270933cc05acbbd174bdd9b26fc40b0efee  e1.py
+2a09614570060693be194de31643ea75b507b1dd78e67a582b593a77385ee585  corre_e1.sh
+# 2026-11-26 15:20:21 EST, enmienda 1, antes de correr e1
