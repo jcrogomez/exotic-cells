@@ -1,0 +1,2 @@
+9fc564acd29d7dddba314c814d325ee99da874164a0deba2e40f937e72360f01  cells/preregistros/MISFIT-14_2026-11-26_xc20_celdas_generadas.md
+# sellado 2026-11-26 09:58:49 EST, antes de escribir el tipo de dispositivo
