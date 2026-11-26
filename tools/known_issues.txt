@@ -33,3 +33,7 @@ experiments/xc20_lector/precarga/v3_0/lec.log | precharge design sweep: points w
 experiments/xc20_lector/precarga/v3_1/lec.log | precharge design sweep: points where the loop does not oscillate in the window (DISENO_lector.md, resumen_precarga.txt)
 experiments/xc20_lector/precarga/v3_2/lec.log | precharge design sweep: points where the loop does not oscillate in the window (DISENO_lector.md, resumen_precarga.txt)
 experiments/xc19_slot/diseno_ref2_ff_-40.log | design calculation at ff -40: the reference states (a10, a11, b10, b11) do not cross within the window. Reason inferred from the measurement names on 2026-11-25, not re-run
+experiments/xc20_lector/r2/ff-40_m_0.0000e+00/lec.log | zero-current control of the wide-range reader: no edge in 20 ms is the predicted result (W4, experiments/xc20_lector/r2/RESULTADOS.md)
+experiments/xc20_lector/r2/ff85_m_0.0000e+00/lec.log | zero-current control of the wide-range reader: no edge in 20 ms is the predicted result (W4, experiments/xc20_lector/r2/RESULTADOS.md)
+experiments/xc20_lector/r2/ss85_m_0.0000e+00/lec.log | zero-current control of the wide-range reader: no edge in 20 ms is the predicted result (W4, experiments/xc20_lector/r2/RESULTADOS.md)
+experiments/xc20_lector/r2/tt27_m_0.0000e+00/lec.log | zero-current control of the wide-range reader: no edge in 20 ms is the predicted result (W4, experiments/xc20_lector/r2/RESULTADOS.md)
