@@ -1,0 +1,2 @@
+73764eeb1640d90b216ba473a06e0144019ecdc69c9351c3e3879c61587ad368  cells/preregistros/MISFIT-12_2026-11-26_pruebas_rapidas.md
+# sellado 2026-11-26 09:33:55 EST, antes de generar ningun deck
