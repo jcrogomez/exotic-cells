@@ -80,3 +80,11 @@ experiments/misfit17/d/bajo_ff85_zero_0.0000e+00/lec.log | zero-current control 
 experiments/misfit17/d/bajo_ss85_zero_0.0000e+00/lec.log | zero-current control of MISFIT-17: no edges are expected, so the edge measurements fail by design (at ff 85 in the low range only the later edges are missing)
 experiments/misfit17/d/bajo_tt27_zero_0.0000e+00/lec.log | zero-current control of MISFIT-17: no edges are expected, so the edge measurements fail by design (at ff 85 in the low range only the later edges are missing)
 experiments/misfit17/e1/zero_0.0000e+00/lec.log | zero-current control of MISFIT-17: no edges are expected, so the edge measurements fail by design (at ff 85 in the low range only the later edges are missing)
+experiments/misfit23/d/alto_ff-40_zero_0.0000e+00/lec.log | zero-current control of MISFIT-23: no edges are expected, so the edge measurements fail by design
+experiments/misfit23/d/alto_ff85_zero_0.0000e+00/lec.log | zero-current control of MISFIT-23: no edges are expected, so the edge measurements fail by design
+experiments/misfit23/d/alto_ss85_zero_0.0000e+00/lec.log | zero-current control of MISFIT-23: no edges are expected, so the edge measurements fail by design
+experiments/misfit23/d/alto_tt27_zero_0.0000e+00/lec.log | zero-current control of MISFIT-23: no edges are expected, so the edge measurements fail by design
+experiments/misfit23/d/bajo_ff-40_zero_0.0000e+00/lec.log | zero-current control of MISFIT-23: no edges are expected, so the edge measurements fail by design
+experiments/misfit23/d/bajo_ff85_zero_0.0000e+00/lec.log | zero-current control of MISFIT-23: no edges are expected, so the edge measurements fail by design
+experiments/misfit23/d/bajo_ss85_zero_0.0000e+00/lec.log | zero-current control of MISFIT-23: no edges are expected, so the edge measurements fail by design
+experiments/misfit23/d/bajo_tt27_zero_0.0000e+00/lec.log | zero-current control of MISFIT-23: no edges are expected, so the edge measurements fail by design

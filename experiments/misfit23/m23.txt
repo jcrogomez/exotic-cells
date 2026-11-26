@@ -1,0 +1,74 @@
+
+## rango bajo · tt 27
+  ajuste: Q = 50.38 fC (+1.0 % frente a MISFIT-17), IL = -0.172 pA, td = 0.36 ns
+  fuera de muestra 3.162e-10 A: error +0.00 %, dispersion 0.25 %
+  fuera de muestra 3.162e-09 A: error +0.07 %, dispersion 0.28 %
+  fuera de muestra 1.000e-07 A: error -0.20 %, dispersion 0.20 %
+  testigo +3 %: periodo -2.947 %
+  sin corriente: ningun flanco en 20 ms
+
+## rango bajo · ff -40
+  ajuste: Q = 56.14 fC (+4.7 % frente a MISFIT-17), IL = -0.715 pA, td = -0.23 ns
+  fuera de muestra 3.162e-10 A: error +0.14 %, dispersion 0.58 %
+  fuera de muestra 3.162e-09 A: error +0.27 %, dispersion 0.44 %
+  fuera de muestra 1.000e-07 A: error +0.36 %, dispersion 0.37 %
+  testigo +3 %: periodo -3.087 %
+  sin corriente: ningun flanco en 20 ms
+
+## rango bajo · ss 85
+  ajuste: Q = 57.57 fC (-0.6 % frente a MISFIT-17), IL = -6.198 pA, td = 0.33 ns
+  fuera de muestra 3.162e-10 A: error +1.36 %, dispersion 0.08 %
+  fuera de muestra 3.162e-09 A: error +0.18 %, dispersion 0.10 %
+  fuera de muestra 1.000e-07 A: error -0.17 %, dispersion 0.11 %
+  testigo +3 %: periodo -2.868 %
+  sin corriente: ningun flanco en 20 ms
+
+## rango bajo · ff 85
+  ajuste: Q = 51.49 fC (-1.4 % frente a MISFIT-17), IL = +3.037 pA, td = 0.32 ns
+  fuera de muestra 3.162e-10 A: error +0.15 %, dispersion 0.21 %
+  fuera de muestra 3.162e-09 A: error -0.01 %, dispersion 0.19 %
+  fuera de muestra 1.000e-07 A: error +0.02 %, dispersion 0.23 %
+  testigo +3 %: periodo -2.973 %
+  sin corriente: ningun flanco en 20 ms
+
+## rango alto · tt 27
+  ajuste: Q = 181.66 fC (+1.8 % frente a MISFIT-17), IL = -10.381 pA, td = 2.89 ns
+  fuera de muestra 3.162e-08 A: error -0.18 %, dispersion 0.05 %
+  fuera de muestra 1.000e-06 A: error -0.36 %, dispersion 0.05 %
+  fuera de muestra 3.162e-06 A: error -0.56 %, dispersion 0.04 %
+  testigo +3 %: periodo -2.835 %
+  sin corriente: ningun flanco en 20 ms
+
+## rango alto · ff -40
+  ajuste: Q = 194.61 fC (+2.0 % frente a MISFIT-17), IL = +1.432 pA, td = 2.41 ns
+  fuera de muestra 3.162e-08 A: error -0.24 %, dispersion 0.06 %
+  fuera de muestra 1.000e-06 A: error -0.30 %, dispersion 0.05 %
+  fuera de muestra 3.162e-06 A: error -0.42 %, dispersion 0.06 %
+  testigo +3 %: periodo -2.871 %
+  sin corriente: ningun flanco en 20 ms
+
+## rango alto · ss 85
+  ajuste: Q = 171.16 fC (+1.8 % frente a MISFIT-17), IL = -29.107 pA, td = 4.38 ns
+  fuera de muestra 3.162e-08 A: error -0.17 %, dispersion 0.02 %
+  fuera de muestra 1.000e-06 A: error -0.50 %, dispersion 0.02 %
+  fuera de muestra 3.162e-06 A: error -0.67 %, dispersion 0.02 %
+  testigo +3 %: periodo -2.853 %
+  sin corriente: ningun flanco en 20 ms
+
+## rango alto · ff 85
+  ajuste: Q = 188.43 fC (+1.8 % frente a MISFIT-17), IL = -2.831 pA, td = 2.29 ns
+  fuera de muestra 3.162e-08 A: error -0.27 %, dispersion 0.04 %
+  fuera de muestra 1.000e-06 A: error -0.29 %, dispersion 0.01 %
+  fuera de muestra 3.162e-06 A: error -0.32 %, dispersion 0.02 %
+  testigo +3 %: periodo -2.881 %
+  sin corriente: ningun flanco en 20 ms
+
+## Veredictos
+P1 (24 fuera de muestra dentro de +-3 %): cumplida (24 de 24); fallan: []
+P2 (testigo entre -3,5 y -2,3 %): cumplida [-2.947, -3.087, -2.868, -2.973, -2.835, -2.871, -2.853, -2.881]
+P3 (Q: alto +1..+6 %, bajo +-10 %): cumplida [('bajo', 'tt', '27', 1.0), ('bajo', 'ff', '-40', 4.7), ('bajo', 'ss', '85', -0.6), ('bajo', 'ff', '85', -1.4), ('alto', 'tt', '27', 1.8), ('alto', 'ff', '-40', 2.0), ('alto', 'ss', '85', 1.8), ('alto', 'ff', '85', 1.8)]
+P4 (sin corriente, ningun flanco): cumplida (8 de 8)
+P5 (IL bajo ff 85 entre -10 y +20 pA): cumplida (+3.04 pA)
+casos invalidos: ninguno
+decks que no acabaron en 'salida 0': ninguno
+control de capacidad: 64 valores, min 0.985 fF, max 1.876 fF bien

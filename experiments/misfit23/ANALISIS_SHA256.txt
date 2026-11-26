@@ -2,3 +2,4 @@
 ff5519dff4b73b946948f5831aa7cfe98cd3a020f4fdc125331efa33805db78d  analiza23.py
 ded9ba2250f6e22d630a2029e9e3b4813780fc624a4842c19fa24396b96a2d18  corre.sh
 # 2026-11-26 16:09:36 EST, antes del humo y de la tanda
+# 2026-11-26 16:10:42 EST, humo hecho (humo/h: 12 flancos, control de capacidad 1,12 fF; vi tambien los flancos 2 y 12). Se lanza la tanda
