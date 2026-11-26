@@ -1,0 +1,3 @@
+# klayout -b -rd input=<gds> -r hvi_check.rb  (capa 75/20 = HVI, 66/20 = poly), 2026-11-26
+xc14fg/xc14fg.gds (pasada 2): HVI 8 poligonos, de y = -0,21 (-0,72 en el gemelo conectado) a 1,89 um; poly que cruza el borde de HVI: 0
+pasada1/xc14fg.gds:           HVI 8 poligonos, de y = -0,21 a 0,63 um;                               poly que cruza el borde de HVI: 10

@@ -1,0 +1,27 @@
+* Reference for LVS, generated from table 'xc14fg'. Do not edit by hand.
+.subckt xc14fg X VB GND CP SEL0 SEL1 SEL2 SEL3 SEL4 SEL5 SEL6 SEL7 SEL8 SEL9 SEL10
+XD0 X fg0 s0 GND sky130_fd_pr__nfet_g5v0d10v5 w=0.42 l=0.5
+XS0 s0 SEL0 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD1 X fg1 s1 GND sky130_fd_pr__nfet_g5v0d10v5 w=0.42 l=0.5
+XS1 s1 SEL1 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD2 X fg2 s2 GND sky130_fd_pr__nfet_g5v0d10v5 w=0.42 l=0.5
+XS2 s2 SEL2 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD3 X fg3 s3 GND sky130_fd_pr__nfet_g5v0d10v5 w=0.42 l=0.5
+XS3 s3 SEL3 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD4 X fg4 s4 GND sky130_fd_pr__nfet_g5v0d10v5 w=0.42 l=0.5
+XS4 s4 SEL4 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD5 X fg5 s5 GND sky130_fd_pr__nfet_g5v0d10v5 w=0.42 l=0.5
+XS5 s5 SEL5 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD6 X fg6 s6 GND sky130_fd_pr__nfet_g5v0d10v5 w=0.42 l=0.5
+XS6 s6 SEL6 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD7 X fg7 s7 GND sky130_fd_pr__nfet_g5v0d10v5 w=0.42 l=0.5
+XS7 s7 SEL7 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XJ7 GND fg7 sky130_fd_pr__diode_pw2nd_05v5 area=2.025e+11 perim=1.8e+06
+XD8 X fg8 s8 GND sky130_fd_pr__nfet_g5v0d10v5 w=0.42 l=0.5
+XS8 s8 SEL8 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XJ8 GND fg8 sky130_fd_pr__diode_pw2nd_05v5 area=2.025e+11 perim=1.8e+06
+XD9 X VB s9 GND sky130_fd_pr__nfet_g5v0d10v5 w=0.42 l=0.5
+XS9 s9 SEL9 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD10 X fg10 s10 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS10 s10 SEL10 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+.ends

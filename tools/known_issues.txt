@@ -69,3 +69,5 @@ experiments/misfit15/pasada2/op_ff_-40/m.log | MISFIT-15 pass 2: no convergence 
 experiments/misfit15/pasada2/op_ss_85/m.log | MISFIT-15 pass 2: no convergence and the 600 s cap; declared invalid and kept (amendment 2)
 experiments/misfit15/pasada2/op_ff_85/m.log | MISFIT-15 pass 2: no convergence and the 600 s cap; declared invalid and kept (amendment 2)
 experiments/misfit15/diag/m.log | diagnostic deck of the diode area: the word "error" is in the options listing ("Truncation error correction"), not a failure
+experiments/misfit20/xc14fg/xc14fg.log | Magic prints "Cannot parse MASKHINTS_HVI property value" after its DRC, yet the hint reaches the GDS: checked separately (experiments/misfit20/hvi_check.txt), and the full KLayout deck is clean
+experiments/misfit20/testigo/xc14fg.log | same Magic message about MASKHINTS_HVI as in xc14fg/; this is the witness table, whose metal 1 spacing errors are the expected result

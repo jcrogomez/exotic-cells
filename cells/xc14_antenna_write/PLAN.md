@@ -71,15 +71,14 @@ en el tiempo, y sin el circuito de programación que piden las otras. Lo más pr
 2. Pendiente, y es la compuerta: leer las reglas de antena de fabricación y la secuencia de capas en la documentación de SkyWater
    (qué acumula cada paso, si una puerta sin conexión a difusión es admisible, qué recocidos siguen al grabado).
 3. Pendiente: preguntar a Tiny Tapeout si la fábrica comprueba antena y si rechaza puertas flotantes.
-4. Pendiente: comprobar qué dicen Magic, KLayout y LVS de una puerta sin excitador (advertencia, error o silencio), con
-   `residual/drc_edge` y una sonda con respuesta conocida.
+4. Hecho (MISFIT-20): Magic, los dos decks de KLayout y el LVS aceptan una puerta sin excitador **en silencio**.
 5. Pendiente: cuarto contexto de Residual: relación de antena por paso de fabricación y por puerta, anotada en el netlist.
 6. Hecho en parte (2026-11-26, [MISFIT-19](../../experiments/misfit19/RESULTADOS.md), modelo): con la puerta forzada, el puesto da entre 100 pA y 10 µA para
    una tensión de puerta de 0,3 a 1,0 V en las 4 esquinas; la ventana del transistor de óxido grueso contiene a la del fino. Pendiente: la puerta
    flotando de verdad, con el acoplo del drenador y de la antena, sobre el dibujo.
 7. Pendiente: leer una fuente sobre retención de carga de plasma tras el recocido final `[?]`. Sin ella la familia no tiene señal
    esperada.
-8. Pendiente: dibujar por script un canal y sus controles, dentro de los límites de antena.
+8. Hecho (2026-11-26, [MISFIT-20](../../experiments/misfit20/RESULTADOS.md)): 11 puestos generados desde una tabla (óxido grueso y fino, placas de 0,4 a 40 µm², gemelos con diodo y conectado, placa de acoplo común), limpios y con LVS. Pendiente redibujar con la placa apantallada del nodo y la tira de acoplo en dos mitades.
 
 ### 5.2 Configuraciones a dibujar
 

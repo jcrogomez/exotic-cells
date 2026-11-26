@@ -1,0 +1,47 @@
+{
+ "name": "xc14fg",
+ "kind": "fgate",
+ "seats": [
+  {
+   "id": "A0",
+   "n": 2
+  },
+  {
+   "id": "A10",
+   "ant_w": 4.0,
+   "ant_h": 2.5,
+   "n": 2
+  },
+  {
+   "id": "A20",
+   "ant_w": 4.0,
+   "ant_h": 5.0,
+   "n": 2
+  },
+  {
+   "id": "A40",
+   "ant_w": 8.0,
+   "ant_h": 5.0
+  },
+  {
+   "id": "A20D",
+   "ant_w": 4.0,
+   "ant_h": 5.0,
+   "diode": true,
+   "n": 2
+  },
+  {
+   "id": "A20T",
+   "ant_w": 4.0,
+   "ant_h": 5.0,
+   "tied": true
+  },
+  {
+   "id": "N20",
+   "ox": "thin",
+   "ant_w": 4.0,
+   "ant_h": 5.0
+  }
+ ],
+ "plate_gap": 0.1
+}

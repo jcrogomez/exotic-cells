@@ -39,6 +39,8 @@ two devices extract identical to the reader's.
 
 The transistor kind takes three per-seat options for the XC-19 fan (`tables/xc19fan.json`): `"bone"` (a diffusion step 0.075 µm from
 the gate), `"dummy"` (unconnected poly strips on both sides) and `"butt"` (a p+ block against the source end).
+A fourth kind, `"kind": "fgate"`, draws XC-14's seat: a read transistor (thick or thin oxide) whose gate goes only to a metal 1 plate,
+under a common metal 2 coupling strip, with optional twins (a diode on the gate, or the gate tied to the bias bus). See `tables/xc14fg.json`.
 
 Not there yet: other device kinds (the high-voltage junctions, antennas, contacts), more than one row, the selection logic, the predicted
 reading of each seat, the precheck of a tile that contains a matrix.

@@ -254,10 +254,101 @@ def build_wjunction(table, pitch_delta=0.0):
     return name, "\n".join(head + t.l + tail) + "\n", "\n".join(ref) + "\n", "\n".join(csv) + "\n"
 
 
+GAP_MV = 0.32       # between thick-oxide diffusions (0.30 by rule)
+OX = {"thick": dict(diff="mvndiff", cont="mvndiffc", w=0.42, l=0.50, model="sky130_fd_pr__nfet_g5v0d10v5"),
+      "thin": dict(diff="ndiff", cont="ndiffc", w=0.42, l=0.15, model="sky130_fd_pr__nfet_01v8")}
+
+
+def build_fgate(table, pitch_delta=0.0):
+    """XC-14: a read transistor between the reader node X and a source switch, whose gate goes nowhere but up, in poly, to a
+    metal 1 plate (the antenna). A metal 2 strip, CP, runs over all plates: the common coupling plate. Per seat: "ox" ("thick":
+    nfet_g5v0d10v5 0.42/0.5, "thin": nfet_01v8 0.42/0.15), "ant_w" x "ant_h" (plate, um), "diode": true (a small n+ diode on the
+    gate, in local interconnect: the twin with a discharge path), "tied": true (the gate also goes to the VB bus)."""
+    name = table["name"]; seats = []; pg = float(table.get("plate_gap", 0.30)); hints = []   # wide metal 1 wants 0.28 um
+    for s in table["seats"]:
+        for k in range(int(s.get("n", 1))):
+            seats.append(dict(id=s["id"] if int(s.get("n", 1)) == 1 else f"{s['id']}_{k}", ox=s.get("ox", "thick"), aw=float(s.get("ant_w", 0.80)),
+                              ah=float(s.get("ant_h", 0.45)), diode=bool(s.get("diode", False)), tied=bool(s.get("tied", False))))
+    sa = sb = 0.30; yx0 = 0.42 + 0.30; yx1 = yx0 + 0.37; yp = yx1 + 0.35; tap_max = float(table.get("tap_max", 10.0))
+    t = Tcl(); x = 0.0; rows = []
+
+    def tap(x):
+        t.r("psubdiff", x, -1.75, x + TAP, -1.33)
+        t.r("psubdiffcont", x + 0.125, -1.69, x + 0.295, -1.39)
+        t.r("locali", x + 0.125, -1.77, x + 0.295, -1.31)
+        t.r("viali", x + 0.125, -1.625, x + 0.295, -1.455)
+        return x + TAP + GAP
+
+    x = tap(x); last_tap = x - GAP; xend = x
+    for k, s in enumerate(seats):
+        o = OX[s["ox"]]; w, l = o["w"], o["l"]; xe = sa + l + sb; gx = sa + l / 2; da = sa + l + 0.30
+        assert s["aw"] >= max(0.80, gx + 0.20) and s["ah"] >= 0.45 and (not s["diode"] or s["aw"] >= da + 0.45), s
+        ws = max(xe, 0.75)
+        if k and x + ws - last_tap > tap_max: x = tap(x); last_tap = x - GAP
+        X = lambda v: x + v
+        if s["ox"] == "thick":                                                      # thick oxide over the whole gate poly run (hvpoly.14)
+            hints += [X(sa - 0.10), -0.72 if s["tied"] else -0.18, X(sa + l + 0.10), yp + 0.45]
+        t.r(o["diff"], X(0), 0, X(xe), w)                                           # read transistor
+        t.r("poly", X(sa), -0.29 if s["tied"] else -0.13, X(sa + l), yp + 0.35)     # its gate, running up under the X bus to the plate
+        t.r(o["cont"], X(0.04), 0.06, X(0.21), w - 0.06)
+        t.r(o["cont"], X(xe - 0.21), 0.06, X(xe - 0.04), w - 0.06)
+        if s["tied"]:                                                               # twin: the gate also on the VB bus
+            t.r("poly", X(sa), -0.62, X(sa + max(l, 0.34)), -0.29)
+            t.r("polycont", X(sa + 0.09), -0.54, X(sa + 0.26), -0.37)
+            t.r("locali", X(sa + 0.09), -0.62, X(sa + 0.26), -0.29)
+            t.r("viali", X(sa + 0.09), -0.60, X(sa + 0.26), -0.43)
+        t.r("locali", X(0.04), -1.98, X(0.21), w + 0.02)                            # source -> switch drain
+        t.r("locali", X(xe - 0.21), -0.02, X(xe - 0.04), yx0 + 0.33)                # drain -> X bus
+        t.r("viali", X(xe - 0.21), yx0 + 0.10, X(xe - 0.04), yx0 + 0.27)
+        t.r("poly", X(gx - 0.17), yp + 0.02, X(gx + 0.17), yp + 0.35)               # gate pad -> metal 1 plate
+        t.r("polycont", X(gx - 0.085), yp + 0.10, X(gx + 0.085), yp + 0.27)
+        t.r("locali", X(gx - 0.085), yp + 0.02, X(gx + 0.085), yp + 0.35)
+        t.r("viali", X(gx - 0.085), yp + 0.10, X(gx + 0.085), yp + 0.27)
+        t.r("metal1", X(0), yp - 0.05, X(s["aw"]), yp - 0.05 + s["ah"])             # the antenna
+        if s["diode"]:
+            t.r("ndiode", X(da), yp - 0.04, X(da + 0.45), yp + 0.41)
+            t.r("ndiodec", X(da + 0.14), yp + 0.10, X(da + 0.31), yp + 0.27)
+            t.r("locali", X(gx - 0.085), yp + 0.10, X(da + 0.39), yp + 0.27)
+        t.r("ndiff", X(0), -1.96, X(0.75), -1.12)                                   # source switch, as in build()
+        t.r("poly", X(0.30), -2.09, X(0.45), -0.99)
+        t.r("ndiffc", X(0.04), -1.90, X(0.21), -1.18)
+        t.r("ndiffc", X(0.54), -1.90, X(0.71), -1.18)
+        t.r("locali", X(0.54), -1.98, X(0.71), -1.10)
+        t.r("viali", X(0.54), -1.625, X(0.71), -1.455)
+        t.r("poly", X(0.30), -2.62, X(0.64), -2.09)
+        t.r("polycont", X(0.39), -2.54, X(0.56), -2.37)
+        t.r("locali", X(0.39), -2.62, X(0.56), -2.29)
+        t.r("viali", X(0.39), -2.54, X(0.56), -2.37)
+        cx, cy = X(0.475), -2.455
+        t.r("metal1", cx - 0.20, cy - 0.20, cx + 0.20, cy + 0.20)
+        t.r("via1", cx - 0.13, cy - 0.13, cx + 0.13, cy + 0.13)
+        t.r("metal2", cx - 0.18, -3.20, cx + 0.18, cy + 0.18)
+        t.pin(f"SEL{k}", "metal2", cx - 0.18, -3.20, cx + 0.18, -2.90)
+        rows.append(dict(seat=k, id=s["id"], x=round(x, 3), ox=s["ox"], aw=s["aw"], ah=s["ah"], sel=f"SEL{k}", w=w, l=l, model=o["model"],
+                         opt="diode" if s["diode"] else "tied" if s["tied"] else ""))
+        xend = x + max(ws, s["aw"]); x += max(ws + GAP_MV, s["aw"] + pg) + pitch_delta
+    x = tap(max(x, xend + GAP)) - GAP
+    for y0, y1, n in ((yx0, yx1, "X"), (-0.66, -0.37, "VB"), (-1.74, -1.34, "GND")):
+        t.r("metal1", 0, y0, x, y1); t.pin(n, "metal1", 0, y0, 0.40, y1)
+    ytop = yp - 0.05 + max(s["ah"] for s in seats)
+    t.r("metal2", 0, yp - 0.05, x, ytop); t.pin("CP", "metal2", 0, yp - 0.05, 0.40, yp + 0.35)   # the common coupling plate
+    head, tail = frame(name)
+    if hints: tail = ['property MASKHINTS_HVI "' + " ".join(str(round(v * 200)) for v in hints) + '"'] + tail
+    ref = [f"* Reference for LVS, generated from table '{name}'. Do not edit by hand.", f".subckt {name} X VB GND CP " + " ".join(r["sel"] for r in rows)]
+    for r in rows:
+        k = r["seat"]; g = "VB" if r["opt"] == "tied" else f"fg{k}"
+        ref.append(f"XD{k} X {g} s{k} GND {r['model']} w={r['w']:g} l={r['l']:g}")
+        ref.append(f"XS{k} s{k} SEL{k} GND GND sky130_fd_pr__nfet_01v8 w={SW_W:g} l={SW_L:g}")
+        if r["opt"] == "diode": ref.append(f"XJ{k} GND {g} sky130_fd_pr__diode_pw2nd_05v5 area={0.45 * 0.45 * 1e12:g} perim={4 * 0.45 * 1e6:g}")
+    ref.append(".ends")
+    csv = ["seat,id,x_um,oxide,ant_w_um,ant_h_um,option,select"] + [f"{r['seat']},{r['id']},{r['x']},{r['ox']},{r['aw']},{r['ah']},{r['opt']},{r['sel']}" for r in rows]
+    return name, "\n".join(head + t.l + tail) + "\n", "\n".join(ref) + "\n", "\n".join(csv) + "\n"
+
+
 if __name__ == "__main__":
     a = sys.argv[1:]; pd = 0.0
     if "--pitch-delta" in a: i = a.index("--pitch-delta"); pd = -abs(float(a[i + 1])); del a[i:i + 2]
     table = json.load(open(a[0])); out = a[1]; os.makedirs(out, exist_ok=True)
-    name, tcl, ref, csv = {"njunction": build_junction, "pjunction": build_wjunction}.get(table.get("kind"), build)(table, pd)
+    name, tcl, ref, csv = {"njunction": build_junction, "pjunction": build_wjunction, "fgate": build_fgate}.get(table.get("kind"), build)(table, pd)
     for suf, txt in ((".tcl", tcl), ("_ref.spice", ref), ("_seats.csv", csv)): open(os.path.join(out, name + suf), "w").write(txt)
     print(f"ok {name}: {csv.count(chr(10)) - 1} seats -> {out}")

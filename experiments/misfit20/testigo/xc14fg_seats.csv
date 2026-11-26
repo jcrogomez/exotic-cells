@@ -1,0 +1,12 @@
+seat,id,x_um,oxide,ant_w_um,ant_h_um,option,select
+0,A0_0,0.69,thick,0.8,0.45,,SEL0
+1,A0_1,2.11,thick,0.8,0.45,,SEL1
+2,A10_0,3.53,thick,4.0,2.5,,SEL2
+3,A10_1,7.63,thick,4.0,2.5,,SEL3
+4,A20_0,12.42,thick,4.0,5.0,,SEL4
+5,A20_1,16.52,thick,4.0,5.0,,SEL5
+6,A40,20.62,thick,8.0,5.0,,SEL6
+7,A20D_0,29.41,thick,4.0,5.0,diode,SEL7
+8,A20D_1,33.51,thick,4.0,5.0,diode,SEL8
+9,A20T,37.61,thick,4.0,5.0,tied,SEL9
+10,N20,42.4,thin,4.0,5.0,,SEL10
