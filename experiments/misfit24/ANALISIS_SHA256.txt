@@ -1,0 +1,4 @@
+b743f76f1caf06fb452999fe018efd540f2f4aa2d423ccf8cf393813a353c221  gen24.py
+1c9ea96c4acf7cd6160bca47f40b8f0f3e8c8ebec4962e1073b7f9caa6a4d606  analiza24.py
+56a6c93513f01bd2d11b9e937f0c7185ff75a2a2a6fe3968b69ec79d1a948de2  corre.sh
+# sellado 2026-11-26 17:30:24 EST, antes de la tanda

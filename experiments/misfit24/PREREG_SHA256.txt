@@ -1,0 +1,2 @@
+e8db80445d7fe941b9ae42bb3a0399360de7567df0a3694552e39440ff923758  cells/preregistros/MISFIT-24_2026-11-26_lector2_lazo_con_seleccion.md
+# sellado 2026-11-26 17:30:24 EST, antes de la tanda; humo previo: solo vi 'salida 0', 12 flancos y 7 lineas DY
