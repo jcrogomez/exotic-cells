@@ -97,6 +97,9 @@ This page is the single to-do list. What goes on the first tile and its tests, i
 
 ## Done (most recent first)
 
+- 2026-11-26 · MISFIT-13: the core with seat selection and a second reader does not close in its present block, in any of three
+  selection schemes ([report](../experiments/misfit13/RESULTADOS.md)). MISFIT-12: unequal devices share a reader bus cleanly and 128
+  seats with wiring stay inside the cuts ([report](../experiments/misfit12/RESULTADOS.md)). Order changed: cells first, tile count last.
 - 2026-11-26 · MISFIT-11: a seat-matrix generator ([`generator/`](../generator/README.md)). A table of transistors gives a
   layout, an LVS reference and a seat list; four tables rule-clean with LVS match, 4.77 µm² per minimum seat, and the small
   reader reads an extracted 64-seat matrix inside its cuts in four corners ([report](../experiments/misfit11/RESULTADOS.md)).

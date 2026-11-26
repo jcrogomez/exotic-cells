@@ -1,0 +1,18 @@
+inicio 2026-11-26 09:35:08 EST
+  empieza A/tr_ff_-40/ 09:35:08
+  empieza A/tr_ff_85/ 09:35:08
+  empieza A/tr_ss_85/ 09:35:08
+  acaba   A/tr_ss_85/ 09:41:15 salida 0 50 lineas
+  empieza A/tr_tt_27/ 09:41:15
+  acaba   A/tr_ff_85/ 09:42:35 salida 0 50 lineas
+  empieza B/tr_ff_-40/ 09:42:35
+  acaba   A/tr_tt_27/ 09:49:20 salida 0 50 lineas
+  empieza B/tr_ff_85/ 09:49:21
+  acaba   B/tr_ff_-40/ 09:51:20 salida 0 12 lineas
+  empieza B/tr_ss_85/ 09:51:20
+  acaba   B/tr_ff_85/ 09:53:31 salida 0 12 lineas
+  empieza B/tr_tt_27/ 09:53:31
+  acaba   B/tr_ss_85/ 09:54:41 salida 0 12 lineas
+  acaba   A/tr_ff_-40/ 09:55:15 salida 0 50 lineas
+  acaba   B/tr_tt_27/ 09:56:02 salida 0 12 lineas
+fin 2026-11-26 09:56:02 EST

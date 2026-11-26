@@ -1,2 +1,11 @@
 e6520abfee11eb31d331df1026e91c940ca36143db828ec512fb38499ad43723  cells/preregistros/MISFIT-13_2026-11-26_nucleo_crecido.md
 # sellado 2026-11-26 09:36:25 EST, antes de escribir el RTL
+0f1651357cd7397e81ecbea16f068e06d32d9af2f2c01172ffadec8f2509f2ed  analiza.py
+5045bec968cc337363f761fd9c6dac5c02d49992733d89139081518a87dfa125  corre.sh
+3d7053cb33a40d15683403a3689c43bb593f4df4a2997b6704a3f6b5ea918025  ../../instrument/misfit13/misfit13_core.v
+ca806195fa304474454453da8002c93e1ebc4c39df9cf77fc00b6e7f6dc7fffb  ../../instrument/misfit13/misfit_core.v
+# RTL, cola y analisis escritos antes de lanzar, 2026-11-26 09:37:20 EST
+ae9abc19ab17c84a1d4190f94d34185f359e2b01784586b7a44d00dae1a93de7  cells/preregistros/MISFIT-13_2026-11-26_nucleo_crecido_enmienda1.md
+8480b855d447388bc7eb0a1df6318647437e1d557842100d2fb8c7dd4eb4f4f4  experiments/misfit13/corre.sh
+7078b0f90b31b04c095b41f549d9449d80dd3e72b8eb25e2ef299206570f4148  experiments/misfit13/analiza.py
+# enmienda 1 sellada 2026-11-26 09:47:16 EST, antes de repetir

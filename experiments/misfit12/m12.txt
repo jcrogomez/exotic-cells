@@ -1,0 +1,41 @@
+# MISFIT-12 · analiza.py · tiempos desde T0 = 1 us
+
+## A · lod12 leida por el lector pequeno (12 puestos, difusion variable)
+tt 27: control 0.0000 % | tA (us) por nivel 0.3: 35.025, 0.45: 26.731, 0.75: 20.941, 1.5: 17.108, 3: 15.357, 6: 14.524
+  L1 replicas, peor diferencia 0.0006 % | L2 monotono: si | cociente 0,30 / 3,00: 2.281 | L4 testigo sin efecto: dispersion de los 12 = 0.0006 % (efecto 0,30 -> 3,00: 56.2 %)
+ff -40: control 0.0000 % | tA (us) por nivel 0.3: 52.481, 0.45: 37.687, 0.75: 27.953, 1.5: 21.834, 3: 19.139, 6: 17.880
+  L1 replicas, peor diferencia 0.0004 % | L2 monotono: si | cociente 0,30 / 3,00: 2.742 | L4 testigo sin efecto: dispersion de los 12 = 0.0004 % (efecto 0,30 -> 3,00: 63.5 %)
+ss 85: control 0.0000 % | tA (us) por nivel 0.3: 35.437, 0.45: 28.279, 0.75: 23.051, 1.5: 19.455, 3: 17.770, 6: 16.957
+  L1 replicas, peor diferencia 0.0048 % | L2 monotono: si | cociente 0,30 / 3,00: 1.994 | L4 testigo sin efecto: dispersion de los 12 = 0.0773 % (efecto 0,30 -> 3,00: 49.9 %)
+ff 85: control 0.0000 % | tA (us) por nivel 0.3: 2.787, 0.45: 2.263, 0.75: 1.875, 1.5: 1.605, 3: 1.477, 6: 1.415
+  L1 replicas, peor diferencia 0.0014 % | L2 monotono: si | cociente 0,30 / 3,00: 1.887 | L4 testigo sin efecto: dispersion de los 12 = 0.0036 % (efecto 0,30 -> 3,00: 47.0 %)
+L1 (replicas dentro de 0,05 %): cumplida
+L2 (monotono en los 6 niveles): cumplida
+L3 (cociente a tt 27 entre 1,5 y 1,8): FALSA (2.281)
+L4 (testigo: 12 puestos iguales dentro de 0,3 %): cumplida
+Muere XC-12 en esta forma (el testigo falla por mas que el efecto): no
+Prueba A: valida
+
+## B · 128 puestos con cableado
+E0: Magic 0, KLayout 0 / 0, LVS 'Circuits match uniquely.', caja 142.02 x 4.29 um -> cumplida
+tt 27: control 0.0000 %, testigo +0.6716 % | % por puesto +0.3590 (64 puestos: +0.3596; -0.17 %) | tA(128)/tA(solo) = 1.4596 | salto -0.7991 % frente a -0.8089 % (-1.21 % rel.) | puesto 0 frente a 127: -0.0004 %
+ff -40: control 0.0000 %, testigo +0.6454 % | % por puesto +0.3389 (64 puestos: +0.3395; -0.16 %) | tA(128)/tA(solo) = 1.4338 | salto -0.9876 % frente a -1.0032 % (-1.56 % rel.) | puesto 0 frente a 127: -0.0004 %
+ss 85: control 0.0000 %, testigo +0.6968 % | % por puesto +0.3389 (64 puestos: +0.3455; -1.91 %) | tA(128)/tA(solo) = 1.4338 | salto -0.6544 % frente a -0.6849 % (-4.46 % rel.) | puesto 0 frente a 127: -0.0043 %
+ff 85: control 0.0000 %, testigo +0.6462 % | % por puesto +0.3327 (64 puestos: +0.3342; -0.43 %) | tA(128)/tA(solo) = 1.4259 | salto -0.6213 % frente a -0.6337 % (-1.96 % rel.) | puesto 0 frente a 127: -0.0014 %
+E1 (por puesto dentro de +-3 % del de 64): cumplida
+E2 (<= 1,5 veces): cumplida
+E3 (salto cambia <= 5 % rel.): cumplida
+Prueba B: valida
+DECIDE: 128 es alcanzable con cableado; 64 queda con margen de 2
+
+## C · lector 2 en dos rangos, relectura de datos ya vistos (EXPLORACION, no veredicto)
+rango bajo, L = 1,00 · tt 27: Q = 49.7 fC, IL = -2.26 pA, td = 0.19 ns | 1e-10 A: +1.85 %, 3.16e-10 A: +0.49 %, 1e-08 A: +0.04 %, 1e-07 A: -0.08 %
+rango bajo, L = 1,00 · ff -40: Q = 53.4 fC, IL = +3.29 pA, td = 0.28 ns | 1e-10 A: -3.16 %, 3.16e-10 A: -0.83 %, 1e-08 A: +0.37 %, 1e-07 A: +0.14 %
+rango bajo, L = 1,00 · ss 85: Q = 57.3 fC, IL = -1.88 pA, td = 0.57 ns | 1e-10 A: +1.60 %, 3.16e-10 A: +0.27 %, 1e-08 A: -0.29 %, 1e-07 A: -0.04 %
+rango bajo, L = 1,00 · ff 85: Q = 51.9 fC, IL = +8.23 pA, td = 0.22 ns | 1e-10 A: -8.40 %, 3.16e-10 A: -2.75 %, 1e-08 A: -0.09 %, 1e-07 A: +0.13 %
+rango bajo, L = 1,00: peor error 8.40 % -> apuesta (+-3 %) fallada
+rango alto, L = 0,15 · tt 27: Q = 139.8 fC, IL = -87.83 pA, td = 3.12 ns | 1e-08 A: +0.58 %, 1e-07 A: -0.17 %, 3.16e-06 A: +0.15 %
+rango alto, L = 0,15 · ff -40: Q = 152.8 fC, IL = -48.12 pA, td = 2.58 ns | 1e-08 A: +0.32 %, 1e-07 A: -0.09 %, 3.16e-06 A: +0.10 %
+rango alto, L = 0,15 · ss 85: Q = 128.4 fC, IL = +664.96 pA, td = 4.60 ns | 1e-08 A: -7.01 %, 1e-07 A: -0.96 %, 3.16e-06 A: +0.33 %
+rango alto, L = 0,15 · ff 85: Q = 146.8 fC, IL = +5.19 pA, td = 2.42 ns | 1e-08 A: +0.15 %, 1e-07 A: -0.04 %, 3.16e-06 A: +0.06 %
+rango alto, L = 0,15: peor error 7.01 % -> apuesta (+-3 %) fallada

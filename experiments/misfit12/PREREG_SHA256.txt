@@ -1,2 +1,5 @@
 73764eeb1640d90b216ba473a06e0144019ecdc69c9351c3e3879c61587ad368  cells/preregistros/MISFIT-12_2026-11-26_pruebas_rapidas.md
 # sellado 2026-11-26 09:33:55 EST, antes de generar ningun deck
+e76d37f93c90a10dc824ce0a0f877ff72e3452d53b241af715879b1ec16cbe03  analiza.py
+98a463a795929b052448e0f9a44c1213819c3a73da9e6dd693860a4f1714e586  gen.py
+# analisis y generador escritos antes de correr A y B, 2026-11-26 09:35:08 EST

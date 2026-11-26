@@ -1,0 +1,11 @@
+# MISFIT-13 · analiza.py · bloque 161 x 87,04 um (32 filas), obstruccion de met4 hasta y = 80
+v0 (control: nucleo actual, pines colocados por el flujo): cierra limpio | DRC 0, LVS 0, setup ws 4.62 ns, hold ws 0.11 ns, viol. setup 0, hold 0 | celdas 9069 um2 (1082 inst. con relleno), cable 33371 um, met4 bajo 80: 0.0 um
+v1 (64 lineas compartidas + 2o lector): NO cierra (GPL-0302 Target density 0.6000 is too low  openroad.py:314; ultima linea: [14:38:13] ERROR    LibreLane will now quit.                     __main__.py:190)
+v2 (128 lineas + 2o lector): NO cierra (GPL-0302 Target density 0.6000 is too low  openroad.py:314; ultima linea: [14:40:00] ERROR    LibreLane will now quit.                     __main__.py:190)
+v3 (8 filas + 8 columnas + 2o lector): NO cierra (GPL-0302 Target density 0.6000 is too low  openroad.py:314; ultima linea: [14:39:12] ERROR    LibreLane will now quit.                     __main__.py:190)
+N0 (control cierra limpio): cumplida
+N1 (64 lineas NO cierra limpio): cumplida
+N2 (128 lineas NO cierra limpio): cumplida
+N3 (8 + 8 cierra limpio): FALSA
+Benchmark: valido
+SE ADOPTA: ninguna cierra: el bloque del nucleo tiene que crecer
