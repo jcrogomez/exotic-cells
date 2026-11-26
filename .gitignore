@@ -67,3 +67,6 @@ cells/xc19_slot_core_a2/v_ctlhm/
 cells/xc19_slot_core_a2/xc19_bias
 experiments/xc64_hunt/out/
 experiments/xc64_hunt/out_formas/
+
+# MISFIT-15: barridos crudos, regenerables (ver experiments/misfit15/RESULTADOS.md)
+experiments/misfit15/**/f_*.txt

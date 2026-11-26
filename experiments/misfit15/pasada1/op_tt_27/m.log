@@ -1,0 +1,1181 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+Warning: sky130_fd_pr__model__parasitic__diode_ps2nw: IKR too small - model effect disabled!
+Warning: sky130_fd_pr__diode_pd2nw_05v5: IKR too small - model effect disabled!
+Warning: sky130_fd_pr__diode_pw2nd_05v5: IKR too small - model effect disabled!
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Error: Transient op failed, timestep too small
+
+
+Error: The operating point could not be simulated successfully.
+    Any of the following steps may fail.!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-15 puesto de xc-20, esquina tt 27 c. generado por gen.py
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+DC solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+xa_18_s_0                                       1.8                  1.8
+ga_18_s_0                                       1.8                  1.8
+ja_18_s_0                                       nan                 -nan
+xa_18_s_1                                       1.8                  1.8
+ga_18_s_1                                       1.8                  1.8
+ja_18_s_1                                      -nan                  nan
+xa_18_s_2                                       1.8                  1.8
+ga_18_s_2                                       1.8                  1.8
+ja_18_s_2                                      -nan                  nan
+xa_18_s_3                                       1.8                  1.8
+ga_18_s_3                                       1.8                  1.8
+ja_18_s_3                                      -nan                  nan
+xa_18_s_4                                       1.8                  1.8
+ga_18_s_4                                       1.8                  1.8
+ja_18_s_4                                      -nan                  nan
+xa_18_s_5                                       1.8                  1.8
+ga_18_s_5                                       1.8                  1.8
+ja_18_s_5                                      -nan                  nan
+xa_18_s_6                                       1.8                  1.8
+ga_18_s_6                                       1.8                  1.8
+ja_18_s_6                                      -nan                  nan
+xa_18_s_7                                       1.8                  1.8
+ga_18_s_7                                       1.8                  1.8
+ja_18_s_7                                      -nan                  nan
+xa_18_s_8                                       1.8                  1.8
+ga_18_s_8                                       1.8                  1.8
+ja_18_s_8                                      -nan                  nan
+xa_18_s_9                                       1.8                  1.8
+ga_18_s_9                                       1.8                  1.8
+ja_18_s_9                                      -nan                  nan
+xa_18_s_10                                      1.8                  1.8
+ga_18_s_10                                      1.8                  1.8
+ja_18_s_10                                     -nan                  nan
+xa_18_u_0                                       1.8                  1.8
+ga_18_u_0                                         0                    0
+ja_18_u_0                                      -nan                  nan
+xa_18_u_1                                       1.8                  1.8
+ga_18_u_1                                         0                    0
+ja_18_u_1                                       nan                  nan
+xa_18_u_2                                       1.8                  1.8
+ga_18_u_2                                         0                    0
+ja_18_u_2                                       nan                  nan
+xa_18_u_3                                       1.8                  1.8
+ga_18_u_3                                         0                    0
+ja_18_u_3                                       nan                  nan
+xa_18_u_4                                       1.8                  1.8
+ga_18_u_4                                         0                    0
+ja_18_u_4                                       nan                  nan
+xa_18_u_5                                       1.8                  1.8
+ga_18_u_5                                         0                    0
+ja_18_u_5                                       nan                  nan
+xa_18_u_6                                       1.8                  1.8
+ga_18_u_6                                         0                    0
+ja_18_u_6                                       nan                  nan
+xa_18_u_7                                       1.8                  1.8
+ga_18_u_7                                         0                    0
+ja_18_u_7                                       nan                  nan
+xa_18_u_8                                       1.8                  1.8
+ga_18_u_8                                         0                    0
+ja_18_u_8                                       nan                  nan
+xa_18_u_9                                       1.8                  1.8
+ga_18_u_9                                         0                    0
+ja_18_u_9                                       nan                  nan
+xa_18_u_10                                      1.8                  1.8
+ga_18_u_10                                        0                    0
+ja_18_u_10                                      nan                  nan
+xa_09_s_0                                       0.9                  0.9
+ga_09_s_0                                       1.8                  1.8
+ja_09_s_0                                       nan                 -nan
+xa_09_s_1                                       0.9                  0.9
+ga_09_s_1                                       1.8                  1.8
+ja_09_s_1                                      -nan                  nan
+xa_09_s_2                                       0.9                  0.9
+ga_09_s_2                                       1.8                  1.8
+ja_09_s_2                                      -nan                  nan
+xa_09_s_3                                       0.9                  0.9
+ga_09_s_3                                       1.8                  1.8
+ja_09_s_3                                      -nan                  nan
+xa_09_s_4                                       0.9                  0.9
+ga_09_s_4                                       1.8                  1.8
+ja_09_s_4                                      -nan                  nan
+xa_09_s_5                                       0.9                  0.9
+ga_09_s_5                                       1.8                  1.8
+ja_09_s_5                                      -nan                  nan
+xa_09_s_6                                       0.9                  0.9
+ga_09_s_6                                       1.8                  1.8
+ja_09_s_6                                      -nan                  nan
+xa_09_s_7                                       0.9                  0.9
+ga_09_s_7                                       1.8                  1.8
+ja_09_s_7                                      -nan                  nan
+xa_09_s_8                                       0.9                  0.9
+ga_09_s_8                                       1.8                  1.8
+ja_09_s_8                                      -nan                  nan
+xa_09_s_9                                       0.9                  0.9
+ga_09_s_9                                       1.8                  1.8
+ja_09_s_9                                      -nan                  nan
+xa_09_s_10                                      0.9                  0.9
+ga_09_s_10                                      1.8                  1.8
+ja_09_s_10                                     -nan                  nan
+xa_09_u_0                                       0.9                  0.9
+ga_09_u_0                                         0                    0
+ja_09_u_0                                      -nan                  nan
+xa_09_u_1                                       0.9                  0.9
+ga_09_u_1                                         0                    0
+ja_09_u_1                                       nan                  nan
+xa_09_u_2                                       0.9                  0.9
+ga_09_u_2                                         0                    0
+ja_09_u_2                                       nan                  nan
+xa_09_u_3                                       0.9                  0.9
+ga_09_u_3                                         0                    0
+ja_09_u_3                                       nan                  nan
+xa_09_u_4                                       0.9                  0.9
+ga_09_u_4                                         0                    0
+ja_09_u_4                                       nan                  nan
+xa_09_u_5                                       0.9                  0.9
+ga_09_u_5                                         0                    0
+ja_09_u_5                                       nan                  nan
+xa_09_u_6                                       0.9                  0.9
+ga_09_u_6                                         0                    0
+ja_09_u_6                                       nan                  nan
+xa_09_u_7                                       0.9                  0.9
+ga_09_u_7                                         0                    0
+ja_09_u_7                                       nan                  nan
+xa_09_u_8                                       0.9                  0.9
+ga_09_u_8                                         0                    0
+ja_09_u_8                                       nan                  nan
+xa_09_u_9                                       0.9                  0.9
+ga_09_u_9                                         0                    0
+ja_09_u_9                                       nan                  nan
+xa_09_u_10                                      0.9                  0.9
+ga_09_u_10                                        0                    0
+ja_09_u_10                                      nan                  nan
+xb_18_s_0                                       1.8                  1.8
+gb_18_s_0                                       1.8                  1.8
+jb_18_s_0                                       nan                  nan
+xb_18_s_1                                       1.8                  1.8
+gb_18_s_1                                       1.8                  1.8
+jb_18_s_1                                      -nan                  nan
+xb_18_s_2                                       1.8                  1.8
+gb_18_s_2                                       1.8                  1.8
+jb_18_s_2                                      -nan                  nan
+xb_18_s_3                                       1.8                  1.8
+gb_18_s_3                                       1.8                  1.8
+jb_18_s_3                                      -nan                  nan
+xb_18_s_4                                       1.8                  1.8
+gb_18_s_4                                       1.8                  1.8
+jb_18_s_4                                      -nan                  nan
+xb_18_s_5                                       1.8                  1.8
+gb_18_s_5                                       1.8                  1.8
+jb_18_s_5                                      -nan                  nan
+xb_18_s_6                                       1.8                  1.8
+gb_18_s_6                                       1.8                  1.8
+jb_18_s_6                                      -nan                  nan
+xb_18_s_7                                       1.8                  1.8
+gb_18_s_7                                       1.8                  1.8
+jb_18_s_7                                      -nan                  nan
+xb_18_s_8                                       1.8                  1.8
+gb_18_s_8                                       1.8                  1.8
+jb_18_s_8                                      -nan                  nan
+xb_18_s_9                                       1.8                  1.8
+gb_18_s_9                                       1.8                  1.8
+jb_18_s_9                                      -nan                  nan
+xb_18_s_10                                      1.8                  1.8
+gb_18_s_10                                      1.8                  1.8
+jb_18_s_10                                     -nan                  nan
+xb_18_s_11                                      1.8                  1.8
+gb_18_s_11                                      1.8                  1.8
+jb_18_s_11                                     -nan                  nan
+xb_18_u_0                                       1.8                  1.8
+gb_18_u_0                                         0                    0
+jb_18_u_0                                       nan                  nan
+xb_18_u_1                                       1.8                  1.8
+gb_18_u_1                                         0                    0
+jb_18_u_1                                      -nan                  nan
+xb_18_u_2                                       1.8                  1.8
+gb_18_u_2                                         0                    0
+jb_18_u_2                                      -nan                  nan
+xb_18_u_3                                       1.8                  1.8
+gb_18_u_3                                         0                    0
+jb_18_u_3                                      -nan                  nan
+xb_18_u_4                                       1.8                  1.8
+gb_18_u_4                                         0                    0
+jb_18_u_4                                      -nan                  nan
+xb_18_u_5                                       1.8                  1.8
+gb_18_u_5                                         0                    0
+jb_18_u_5                                      -nan                  nan
+xb_18_u_6                                       1.8                  1.8
+gb_18_u_6                                         0                    0
+jb_18_u_6                                      -nan                  nan
+xb_18_u_7                                       1.8                  1.8
+gb_18_u_7                                         0                    0
+jb_18_u_7                                      -nan                  nan
+xb_18_u_8                                       1.8                  1.8
+gb_18_u_8                                         0                    0
+jb_18_u_8                                      -nan                  nan
+xb_18_u_9                                       1.8                  1.8
+gb_18_u_9                                         0                    0
+jb_18_u_9                                      -nan                  nan
+xb_18_u_10                                      1.8                  1.8
+gb_18_u_10                                        0                    0
+jb_18_u_10                                     -nan                  nan
+xb_09_s_0                                       0.9                  0.9
+gb_09_s_0                                       1.8                  1.8
+jb_09_s_0                                       nan                  nan
+xb_09_s_1                                       0.9                  0.9
+gb_09_s_1                                       1.8                  1.8
+jb_09_s_1                                      -nan                  nan
+xb_09_s_2                                       0.9                  0.9
+gb_09_s_2                                       1.8                  1.8
+jb_09_s_2                                      -nan                  nan
+xb_09_s_3                                       0.9                  0.9
+gb_09_s_3                                       1.8                  1.8
+jb_09_s_3                                      -nan                  nan
+xb_09_s_4                                       0.9                  0.9
+gb_09_s_4                                       1.8                  1.8
+jb_09_s_4                                      -nan                  nan
+xb_09_s_5                                       0.9                  0.9
+gb_09_s_5                                       1.8                  1.8
+jb_09_s_5                                      -nan                  nan
+xb_09_s_6                                       0.9                  0.9
+gb_09_s_6                                       1.8                  1.8
+jb_09_s_6                                      -nan                  nan
+xb_09_s_7                                       0.9                  0.9
+gb_09_s_7                                       1.8                  1.8
+jb_09_s_7                                      -nan                  nan
+xb_09_s_8                                       0.9                  0.9
+gb_09_s_8                                       1.8                  1.8
+jb_09_s_8                                      -nan                  nan
+xb_09_s_9                                       0.9                  0.9
+gb_09_s_9                                       1.8                  1.8
+jb_09_s_9                                      -nan                  nan
+xb_09_s_10                                      0.9                  0.9
+gb_09_s_10                                      1.8                  1.8
+jb_09_s_10                                     -nan                  nan
+xb_09_u_0                                       0.9                  0.9
+gb_09_u_0                                         0                    0
+jb_09_u_0                                       nan                  nan
+xb_09_u_1                                       0.9                  0.9
+gb_09_u_1                                         0                    0
+jb_09_u_1                                      -nan                  nan
+xb_09_u_2                                       0.9                  0.9
+gb_09_u_2                                         0                    0
+jb_09_u_2                                      -nan                  nan
+xb_09_u_3                                       0.9                  0.9
+gb_09_u_3                                         0                    0
+jb_09_u_3                                      -nan                  nan
+xb_09_u_4                                       0.9                  0.9
+gb_09_u_4                                         0                    0
+jb_09_u_4                                      -nan                  nan
+xb_09_u_5                                       0.9                  0.9
+gb_09_u_5                                         0                    0
+jb_09_u_5                                      -nan                  nan
+xb_09_u_6                                       0.9                  0.9
+gb_09_u_6                                         0                    0
+jb_09_u_6                                      -nan                  nan
+xb_09_u_7                                       0.9                  0.9
+gb_09_u_7                                         0                    0
+jb_09_u_7                                      -nan                  nan
+xb_09_u_8                                       0.9                  0.9
+gb_09_u_8                                         0                    0
+jb_09_u_8                                      -nan                  nan
+xb_09_u_9                                       0.9                  0.9
+gb_09_u_9                                         0                    0
+jb_09_u_9                                      -nan                  nan
+xb_09_u_10                                      0.9                  0.9
+gb_09_u_10                                        0                    0
+jb_09_u_10                                     -nan                  nan
+r1                                              1.8                  1.8
+r2                                              1.8                  1.8
+xaoff                                           1.8                  1.8
+xboff                                           1.8                  1.8
+jboff0                                          nan                  nan
+jboff1                                          nan                  nan
+jboff2                                          nan                  nan
+jboff3                                          nan                  nan
+jboff4                                          nan                  nan
+jboff5                                          nan                  nan
+jboff6                                          nan                  nan
+xaon                                            1.8                  1.8
+vdd                                             1.8                  1.8
+xbon                                            1.8                  1.8
+jbon0                                           nan                  nan
+jbon1                                           nan                  nan
+jbon2                                           nan                  nan
+jbon3                                           nan                  nan
+jbon4                                           nan                  nan
+jbon5                                           nan                  nan
+jbon6                                           nan                  nan
+vd#branch                                      -nan                  nan
+vxbon#branch                                   -nan                  nan
+vxaon#branch                                    nan                  nan
+vxboff#branch                                  -nan                  nan
+vxaoff#branch                                   nan                  nan
+vr2#branch                                     -nan                  nan
+vr1#branch                                     -nan                  nan
+vgb_09_u_10#branch                             -nan                  nan
+vxb_09_u_10#branch                              nan                 -nan
+vgb_09_u_9#branch                              -nan                  nan
+vxb_09_u_9#branch                               nan                 -nan
+vgb_09_u_8#branch                              -nan                  nan
+vxb_09_u_8#branch                               nan                 -nan
+vgb_09_u_7#branch                              -nan                  nan
+vxb_09_u_7#branch                               nan                 -nan
+vgb_09_u_6#branch                              -nan                  nan
+vxb_09_u_6#branch                               nan                 -nan
+vgb_09_u_5#branch                              -nan                  nan
+vxb_09_u_5#branch                               nan                 -nan
+vgb_09_u_4#branch                              -nan                  nan
+vxb_09_u_4#branch                               nan                 -nan
+vgb_09_u_3#branch                              -nan                  nan
+vxb_09_u_3#branch                               nan                 -nan
+vgb_09_u_2#branch                              -nan                  nan
+vxb_09_u_2#branch                               nan                 -nan
+vgb_09_u_1#branch                              -nan                  nan
+vxb_09_u_1#branch                               nan                 -nan
+vgb_09_u_0#branch                              -nan                  nan
+vxb_09_u_0#branch                              -nan                  nan
+vgb_09_s_10#branch                             -nan                  nan
+vxb_09_s_10#branch                              nan                 -nan
+vgb_09_s_9#branch                              -nan                  nan
+vxb_09_s_9#branch                               nan                 -nan
+vgb_09_s_8#branch                              -nan                  nan
+vxb_09_s_8#branch                               nan                 -nan
+vgb_09_s_7#branch                              -nan                  nan
+vxb_09_s_7#branch                               nan                 -nan
+vgb_09_s_6#branch                              -nan                  nan
+vxb_09_s_6#branch                               nan                 -nan
+vgb_09_s_5#branch                              -nan                  nan
+vxb_09_s_5#branch                               nan                 -nan
+vgb_09_s_4#branch                              -nan                  nan
+vxb_09_s_4#branch                               nan                 -nan
+vgb_09_s_3#branch                              -nan                  nan
+vxb_09_s_3#branch                               nan                 -nan
+vgb_09_s_2#branch                              -nan                  nan
+vxb_09_s_2#branch                               nan                 -nan
+vgb_09_s_1#branch                              -nan                  nan
+vxb_09_s_1#branch                               nan                 -nan
+vgb_09_s_0#branch                              -nan                  nan
+vxb_09_s_0#branch                              -nan                  nan
+vgb_18_u_10#branch                             -nan                  nan
+vxb_18_u_10#branch                              nan                 -nan
+vgb_18_u_9#branch                              -nan                  nan
+vxb_18_u_9#branch                               nan                 -nan
+vgb_18_u_8#branch                              -nan                  nan
+vxb_18_u_8#branch                               nan                 -nan
+vgb_18_u_7#branch                              -nan                  nan
+vxb_18_u_7#branch                               nan                 -nan
+vgb_18_u_6#branch                              -nan                  nan
+vxb_18_u_6#branch                               nan                 -nan
+vgb_18_u_5#branch                              -nan                  nan
+vxb_18_u_5#branch                               nan                 -nan
+vgb_18_u_4#branch                              -nan                  nan
+vxb_18_u_4#branch                               nan                 -nan
+vgb_18_u_3#branch                              -nan                  nan
+vxb_18_u_3#branch                               nan                 -nan
+vgb_18_u_2#branch                              -nan                  nan
+vxb_18_u_2#branch                               nan                 -nan
+vgb_18_u_1#branch                              -nan                  nan
+vxb_18_u_1#branch                               nan                 -nan
+vgb_18_u_0#branch                              -nan                  nan
+vxb_18_u_0#branch                              -nan                  nan
+vgb_18_s_11#branch                             -nan                  nan
+vxb_18_s_11#branch                              nan                 -nan
+vgb_18_s_10#branch                             -nan                  nan
+vxb_18_s_10#branch                              nan                 -nan
+vgb_18_s_9#branch                              -nan                  nan
+vxb_18_s_9#branch                               nan                 -nan
+vgb_18_s_8#branch                              -nan                  nan
+vxb_18_s_8#branch                               nan                 -nan
+vgb_18_s_7#branch                              -nan                  nan
+vxb_18_s_7#branch                               nan                 -nan
+vgb_18_s_6#branch                              -nan                  nan
+vxb_18_s_6#branch                               nan                 -nan
+vgb_18_s_5#branch                              -nan                  nan
+vxb_18_s_5#branch                               nan                 -nan
+vgb_18_s_4#branch                              -nan                  nan
+vxb_18_s_4#branch                               nan                 -nan
+vgb_18_s_3#branch                              -nan                  nan
+vxb_18_s_3#branch                               nan                 -nan
+vgb_18_s_2#branch                              -nan                  nan
+vxb_18_s_2#branch                               nan                 -nan
+vgb_18_s_1#branch                              -nan                  nan
+vxb_18_s_1#branch                               nan                 -nan
+vgb_18_s_0#branch                              -nan                  nan
+vxb_18_s_0#branch                              -nan                  nan
+vga_09_u_10#branch                             -nan                  nan
+vxa_09_u_10#branch                              nan                  nan
+vga_09_u_9#branch                              -nan                  nan
+vxa_09_u_9#branch                               nan                  nan
+vga_09_u_8#branch                              -nan                  nan
+vxa_09_u_8#branch                               nan                  nan
+vga_09_u_7#branch                              -nan                  nan
+vxa_09_u_7#branch                               nan                  nan
+vga_09_u_6#branch                              -nan                  nan
+vxa_09_u_6#branch                               nan                  nan
+vga_09_u_5#branch                              -nan                  nan
+vxa_09_u_5#branch                               nan                  nan
+vga_09_u_4#branch                              -nan                  nan
+vxa_09_u_4#branch                               nan                  nan
+vga_09_u_3#branch                              -nan                  nan
+vxa_09_u_3#branch                               nan                  nan
+vga_09_u_2#branch                              -nan                  nan
+vxa_09_u_2#branch                               nan                  nan
+vga_09_u_1#branch                              -nan                  nan
+vxa_09_u_1#branch                               nan                  nan
+vga_09_u_0#branch                              -nan                  nan
+vxa_09_u_0#branch                               nan                  nan
+vga_09_s_10#branch                              nan                 -nan
+vxa_09_s_10#branch                              nan                  nan
+vga_09_s_9#branch                               nan                 -nan
+vxa_09_s_9#branch                               nan                  nan
+vga_09_s_8#branch                               nan                 -nan
+vxa_09_s_8#branch                               nan                  nan
+vga_09_s_7#branch                               nan                 -nan
+vxa_09_s_7#branch                               nan                  nan
+vga_09_s_6#branch                               nan                 -nan
+vxa_09_s_6#branch                               nan                  nan
+vga_09_s_5#branch                               nan                 -nan
+vxa_09_s_5#branch                               nan                  nan
+vga_09_s_4#branch                               nan                 -nan
+vxa_09_s_4#branch                               nan                  nan
+vga_09_s_3#branch                               nan                 -nan
+vxa_09_s_3#branch                               nan                  nan
+vga_09_s_2#branch                               nan                 -nan
+vxa_09_s_2#branch                               nan                  nan
+vga_09_s_1#branch                               nan                 -nan
+vxa_09_s_1#branch                               nan                  nan
+vga_09_s_0#branch                              -nan                 -nan
+vxa_09_s_0#branch                               nan                  nan
+vga_18_u_10#branch                             -nan                  nan
+vxa_18_u_10#branch                              nan                  nan
+vga_18_u_9#branch                              -nan                  nan
+vxa_18_u_9#branch                               nan                  nan
+vga_18_u_8#branch                              -nan                  nan
+vxa_18_u_8#branch                               nan                  nan
+vga_18_u_7#branch                              -nan                  nan
+vxa_18_u_7#branch                               nan                  nan
+vga_18_u_6#branch                              -nan                  nan
+vxa_18_u_6#branch                               nan                  nan
+vga_18_u_5#branch                              -nan                  nan
+vxa_18_u_5#branch                               nan                  nan
+vga_18_u_4#branch                              -nan                  nan
+vxa_18_u_4#brdoAnalyses: OP:  Timestep too small; trouble with node "vd#branch"
+
+
+op simulation(s) aborted
+Warning from checkvalid: vector ja_18_s_0 is not available or has zero length.
+Error: RHS "v(ja_18_s_0)" invalid
+Warning from checkvalid: vector vxa_18_s_0#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_s_0)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_s_1 is not available or has zero length.
+Error: RHS "v(ja_18_s_1)" invalid
+Warning from checkvalid: vector vxa_18_s_1#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_s_1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_s_2 is not available or has zero length.
+Error: RHS "v(ja_18_s_2)" invalid
+Warning from checkvalid: vector vxa_18_s_2#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_s_2)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_s_3 is not available or has zero length.
+Error: RHS "v(ja_18_s_3)" invalid
+Warning from checkvalid: vector vxa_18_s_3#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_s_3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_s_4 is not available or has zero length.
+Error: RHS "v(ja_18_s_4)" invalid
+Warning from checkvalid: vector vxa_18_s_4#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_s_4)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_s_5 is not available or has zero length.
+Error: RHS "v(ja_18_s_5)" invalid
+Warning from checkvalid: vector vxa_18_s_5#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_s_5)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_s_6 is not available or has zero length.
+Error: RHS "v(ja_18_s_6)" invalid
+Warning from checkvalid: vector vxa_18_s_6#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_s_6)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_s_7 is not available or has zero length.
+Error: RHS "v(ja_18_s_7)" invalid
+Warning from checkvalid: vector vxa_18_s_7#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_s_7)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_s_8 is not available or has zero length.
+Error: RHS "v(ja_18_s_8)" invalid
+Warning from checkvalid: vector vxa_18_s_8#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_s_8)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_s_9 is not available or has zero length.
+Error: RHS "v(ja_18_s_9)" invalid
+Warning from checkvalid: vector vxa_18_s_9#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_s_9)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_s_10 is not available or has zero length.
+Error: RHS "v(ja_18_s_10)" invalid
+Warning from checkvalid: vector vxa_18_s_10#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_s_10)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_u_0 is not available or has zero length.
+Error: RHS "v(ja_18_u_0)" invalid
+Warning from checkvalid: vector vxa_18_u_0#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_u_0)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_u_1 is not available or has zero length.
+Error: RHS "v(ja_18_u_1)" invalid
+Warning from checkvalid: vector vxa_18_u_1#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_u_1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_u_2 is not available or has zero length.
+Error: RHS "v(ja_18_u_2)" invalid
+Warning from checkvalid: vector vxa_18_u_2#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_u_2)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_u_3 is not available or has zero length.
+Error: RHS "v(ja_18_u_3)" invalid
+Warning from checkvalid: vector vxa_18_u_3#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_u_3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_u_4 is not available or has zero length.
+Error: RHS "v(ja_18_u_4)" invalid
+Warning from checkvalid: vector vxa_18_u_4#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_u_4)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_u_5 is not available or has zero length.
+Error: RHS "v(ja_18_u_5)" invalid
+Warning from checkvalid: vector vxa_18_u_5#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_u_5)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_u_6 is not available or has zero length.
+Error: RHS "v(ja_18_u_6)" invalid
+Warning from checkvalid: vector vxa_18_u_6#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_u_6)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_u_7 is not available or has zero length.
+Error: RHS "v(ja_18_u_7)" invalid
+Warning from checkvalid: vector vxa_18_u_7#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_u_7)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_u_8 is not available or has zero length.
+Error: RHS "v(ja_18_u_8)" invalid
+Warning from checkvalid: vector vxa_18_u_8#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_u_8)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_u_9 is not available or has zero length.
+Error: RHS "v(ja_18_u_9)" invalid
+Warning from checkvalid: vector vxa_18_u_9#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_u_9)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_18_u_10 is not available or has zero length.
+Error: RHS "v(ja_18_u_10)" invalid
+Warning from checkvalid: vector vxa_18_u_10#branch is not available or has zero length.
+Error: RHS "-i(vxa_18_u_10)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_s_0 is not available or has zero length.
+Error: RHS "v(ja_09_s_0)" invalid
+Warning from checkvalid: vector vxa_09_s_0#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_s_0)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_s_1 is not available or has zero length.
+Error: RHS "v(ja_09_s_1)" invalid
+Warning from checkvalid: vector vxa_09_s_1#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_s_1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_s_2 is not available or has zero length.
+Error: RHS "v(ja_09_s_2)" invalid
+Warning from checkvalid: vector vxa_09_s_2#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_s_2)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_s_3 is not available or has zero length.
+Error: RHS "v(ja_09_s_3)" invalid
+Warning from checkvalid: vector vxa_09_s_3#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_s_3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_s_4 is not available or has zero length.
+Error: RHS "v(ja_09_s_4)" invalid
+Warning from checkvalid: vector vxa_09_s_4#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_s_4)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_s_5 is not available or has zero length.
+Error: RHS "v(ja_09_s_5)" invalid
+Warning from checkvalid: vector vxa_09_s_5#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_s_5)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_s_6 is not available or has zero length.
+Error: RHS "v(ja_09_s_6)" invalid
+Warning from checkvalid: vector vxa_09_s_6#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_s_6)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_s_7 is not available or has zero length.
+Error: RHS "v(ja_09_s_7)" invalid
+Warning from checkvalid: vector vxa_09_s_7#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_s_7)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_s_8 is not available or has zero length.
+Error: RHS "v(ja_09_s_8)" invalid
+Warning from checkvalid: vector vxa_09_s_8#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_s_8)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_s_9 is not available or has zero length.
+Error: RHS "v(ja_09_s_9)" invalid
+Warning from checkvalid: vector vxa_09_s_9#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_s_9)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_s_10 is not available or has zero length.
+Error: RHS "v(ja_09_s_10)" invalid
+Warning from checkvalid: vector vxa_09_s_10#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_s_10)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_u_0 is not available or has zero length.
+Error: RHS "v(ja_09_u_0)" invalid
+Warning from checkvalid: vector vxa_09_u_0#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_u_0)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_u_1 is not available or has zero length.
+Error: RHS "v(ja_09_u_1)" invalid
+Warning from checkvalid: vector vxa_09_u_1#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_u_1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_u_2 is not available or has zero length.
+Error: RHS "v(ja_09_u_2)" invalid
+Warning from checkvalid: vector vxa_09_u_2#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_u_2)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_u_3 is not available or has zero length.
+Error: RHS "v(ja_09_u_3)" invalid
+Warning from checkvalid: vector vxa_09_u_3#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_u_3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_u_4 is not available or has zero length.
+Error: RHS "v(ja_09_u_4)" invalid
+Warning from checkvalid: vector vxa_09_u_4#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_u_4)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_u_5 is not available or has zero length.
+Error: RHS "v(ja_09_u_5)" invalid
+Warning from checkvalid: vector vxa_09_u_5#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_u_5)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_u_6 is not available or has zero length.
+Error: RHS "v(ja_09_u_6)" invalid
+Warning from checkvalid: vector vxa_09_u_6#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_u_6)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_u_7 is not available or has zero length.
+Error: RHS "v(ja_09_u_7)" invalid
+Warning from checkvalid: vector vxa_09_u_7#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_u_7)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_u_8 is not available or has zero length.
+Error: RHS "v(ja_09_u_8)" invalid
+Warning from checkvalid: vector vxa_09_u_8#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_u_8)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_u_9 is not available or has zero length.
+Error: RHS "v(ja_09_u_9)" invalid
+Warning from checkvalid: vector vxa_09_u_9#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_u_9)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja_09_u_10 is not available or has zero length.
+Error: RHS "v(ja_09_u_10)" invalid
+Warning from checkvalid: vector vxa_09_u_10#branch is not available or has zero length.
+Error: RHS "-i(vxa_09_u_10)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_s_0 is not available or has zero length.
+Error: RHS "v(xb_18_s_0)-v(jb_18_s_0)" invalid
+Warning from checkvalid: vector vxb_18_s_0#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_s_0)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_s_1 is not available or has zero length.
+Error: RHS "v(xb_18_s_1)-v(jb_18_s_1)" invalid
+Warning from checkvalid: vector vxb_18_s_1#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_s_1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_s_2 is not available or has zero length.
+Error: RHS "v(xb_18_s_2)-v(jb_18_s_2)" invalid
+Warning from checkvalid: vector vxb_18_s_2#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_s_2)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_s_3 is not available or has zero length.
+Error: RHS "v(xb_18_s_3)-v(jb_18_s_3)" invalid
+Warning from checkvalid: vector vxb_18_s_3#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_s_3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_s_4 is not available or has zero length.
+Error: RHS "v(xb_18_s_4)-v(jb_18_s_4)" invalid
+Warning from checkvalid: vector vxb_18_s_4#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_s_4)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_s_5 is not available or has zero length.
+Error: RHS "v(xb_18_s_5)-v(jb_18_s_5)" invalid
+Warning from checkvalid: vector vxb_18_s_5#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_s_5)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_s_6 is not available or has zero length.
+Error: RHS "v(xb_18_s_6)-v(jb_18_s_6)" invalid
+Warning from checkvalid: vector vxb_18_s_6#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_s_6)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_s_7 is not available or has zero length.
+Error: RHS "v(xb_18_s_7)-v(jb_18_s_7)" invalid
+Warning from checkvalid: vector vxb_18_s_7#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_s_7)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_s_8 is not available or has zero length.
+Error: RHS "v(xb_18_s_8)-v(jb_18_s_8)" invalid
+Warning from checkvalid: vector vxb_18_s_8#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_s_8)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_s_9 is not available or has zero length.
+Error: RHS "v(xb_18_s_9)-v(jb_18_s_9)" invalid
+Warning from checkvalid: vector vxb_18_s_9#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_s_9)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_s_10 is not available or has zero length.
+Error: RHS "v(xb_18_s_10)-v(jb_18_s_10)" invalid
+Warning from checkvalid: vector vxb_18_s_10#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_s_10)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_s_11 is not available or has zero length.
+Error: RHS "v(xb_18_s_11)-v(jb_18_s_11)" invalid
+Warning from checkvalid: vector vxb_18_s_11#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_s_11)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_u_0 is not available or has zero length.
+Error: RHS "v(xb_18_u_0)-v(jb_18_u_0)" invalid
+Warning from checkvalid: vector vxb_18_u_0#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_u_0)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_u_1 is not available or has zero length.
+Error: RHS "v(xb_18_u_1)-v(jb_18_u_1)" invalid
+Warning from checkvalid: vector vxb_18_u_1#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_u_1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_u_2 is not available or has zero length.
+Error: RHS "v(xb_18_u_2)-v(jb_18_u_2)" invalid
+Warning from checkvalid: vector vxb_18_u_2#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_u_2)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_u_3 is not available or has zero length.
+Error: RHS "v(xb_18_u_3)-v(jb_18_u_3)" invalid
+Warning from checkvalid: vector vxb_18_u_3#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_u_3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_u_4 is not available or has zero length.
+Error: RHS "v(xb_18_u_4)-v(jb_18_u_4)" invalid
+Warning from checkvalid: vector vxb_18_u_4#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_u_4)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_u_5 is not available or has zero length.
+Error: RHS "v(xb_18_u_5)-v(jb_18_u_5)" invalid
+Warning from checkvalid: vector vxb_18_u_5#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_u_5)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_u_6 is not available or has zero length.
+Error: RHS "v(xb_18_u_6)-v(jb_18_u_6)" invalid
+Warning from checkvalid: vector vxb_18_u_6#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_u_6)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_u_7 is not available or has zero length.
+Error: RHS "v(xb_18_u_7)-v(jb_18_u_7)" invalid
+Warning from checkvalid: vector vxb_18_u_7#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_u_7)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_u_8 is not available or has zero length.
+Error: RHS "v(xb_18_u_8)-v(jb_18_u_8)" invalid
+Warning from checkvalid: vector vxb_18_u_8#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_u_8)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_u_9 is not available or has zero length.
+Error: RHS "v(xb_18_u_9)-v(jb_18_u_9)" invalid
+Warning from checkvalid: vector vxb_18_u_9#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_u_9)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_18_u_10 is not available or has zero length.
+Error: RHS "v(xb_18_u_10)-v(jb_18_u_10)" invalid
+Warning from checkvalid: vector vxb_18_u_10#branch is not available or has zero length.
+Error: RHS "-i(vxb_18_u_10)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_s_0 is not available or has zero length.
+Error: RHS "v(xb_09_s_0)-v(jb_09_s_0)" invalid
+Warning from checkvalid: vector vxb_09_s_0#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_s_0)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_s_1 is not available or has zero length.
+Error: RHS "v(xb_09_s_1)-v(jb_09_s_1)" invalid
+Warning from checkvalid: vector vxb_09_s_1#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_s_1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_s_2 is not available or has zero length.
+Error: RHS "v(xb_09_s_2)-v(jb_09_s_2)" invalid
+Warning from checkvalid: vector vxb_09_s_2#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_s_2)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_s_3 is not available or has zero length.
+Error: RHS "v(xb_09_s_3)-v(jb_09_s_3)" invalid
+Warning from checkvalid: vector vxb_09_s_3#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_s_3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_s_4 is not available or has zero length.
+Error: RHS "v(xb_09_s_4)-v(jb_09_s_4)" invalid
+Warning from checkvalid: vector vxb_09_s_4#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_s_4)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_s_5 is not available or has zero length.
+Error: RHS "v(xb_09_s_5)-v(jb_09_s_5)" invalid
+Warning from checkvalid: vector vxb_09_s_5#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_s_5)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_s_6 is not available or has zero length.
+Error: RHS "v(xb_09_s_6)-v(jb_09_s_6)" invalid
+Warning from checkvalid: vector vxb_09_s_6#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_s_6)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_s_7 is not available or has zero length.
+Error: RHS "v(xb_09_s_7)-v(jb_09_s_7)" invalid
+Warning from checkvalid: vector vxb_09_s_7#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_s_7)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_s_8 is not available or has zero length.
+Error: RHS "v(xb_09_s_8)-v(jb_09_s_8)" invalid
+Warning from checkvalid: vector vxb_09_s_8#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_s_8)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_s_9 is not available or has zero length.
+Error: RHS "v(xb_09_s_9)-v(jb_09_s_9)" invalid
+Warning from checkvalid: vector vxb_09_s_9#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_s_9)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_s_10 is not available or has zero length.
+Error: RHS "v(xb_09_s_10)-v(jb_09_s_10)" invalid
+Warning from checkvalid: vector vxb_09_s_10#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_s_10)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_u_0 is not available or has zero length.
+Error: RHS "v(xb_09_u_0)-v(jb_09_u_0)" invalid
+Warning from checkvalid: vector vxb_09_u_0#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_u_0)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_u_1 is not available or has zero length.
+Error: RHS "v(xb_09_u_1)-v(jb_09_u_1)" invalid
+Warning from checkvalid: vector vxb_09_u_1#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_u_1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_u_2 is not available or has zero length.
+Error: RHS "v(xb_09_u_2)-v(jb_09_u_2)" invalid
+Warning from checkvalid: vector vxb_09_u_2#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_u_2)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_u_3 is not available or has zero length.
+Error: RHS "v(xb_09_u_3)-v(jb_09_u_3)" invalid
+Warning from checkvalid: vector vxb_09_u_3#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_u_3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_u_4 is not available or has zero length.
+Error: RHS "v(xb_09_u_4)-v(jb_09_u_4)" invalid
+Warning from checkvalid: vector vxb_09_u_4#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_u_4)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_u_5 is not available or has zero length.
+Error: RHS "v(xb_09_u_5)-v(jb_09_u_5)" invalid
+Warning from checkvalid: vector vxb_09_u_5#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_u_5)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_u_6 is not available or has zero length.
+Error: RHS "v(xb_09_u_6)-v(jb_09_u_6)" invalid
+Warning from checkvalid: vector vxb_09_u_6#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_u_6)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_u_7 is not available or has zero length.
+Error: RHS "v(xb_09_u_7)-v(jb_09_u_7)" invalid
+Warning from checkvalid: vector vxb_09_u_7#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_u_7)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_u_8 is not available or has zero length.
+Error: RHS "v(xb_09_u_8)-v(jb_09_u_8)" invalid
+Warning from checkvalid: vector vxb_09_u_8#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_u_8)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_u_9 is not available or has zero length.
+Error: RHS "v(xb_09_u_9)-v(jb_09_u_9)" invalid
+Warning from checkvalid: vector vxb_09_u_9#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_u_9)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb_09_u_10 is not available or has zero length.
+Error: RHS "v(xb_09_u_10)-v(jb_09_u_10)" invalid
+Warning from checkvalid: vector vxb_09_u_10#branch is not available or has zero length.
+Error: RHS "-i(vxb_09_u_10)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector r1 is not available or has zero length.
+Error: RHS "v(r1)" invalid
+Warning from checkvalid: vector vr1#branch is not available or has zero length.
+Error: RHS "-i(vr1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector r2 is not available or has zero length.
+Error: RHS "v(r2)" invalid
+Warning from checkvalid: vector vr2#branch is not available or has zero length.
+Error: RHS "-i(vr2)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xaoff is not available or has zero length.
+Error: RHS "v(xaoff)" invalid
+Warning from checkvalid: vector vxaoff#branch is not available or has zero length.
+Error: RHS "-i(vxaoff)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xboff is not available or has zero length.
+Error: RHS "v(xboff)" invalid
+Warning from checkvalid: vector vxboff#branch is not available or has zero length.
+Error: RHS "-i(vxboff)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xaon is not available or has zero length.
+Error: RHS "v(xaon)" invalid
+Warning from checkvalid: vector vxaon#branch is not available or has zero length.
+Error: RHS "-i(vxaon)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xbon is not available or has zero length.
+Error: RHS "v(xbon)" invalid
+Warning from checkvalid: vector vxbon#branch is not available or has zero length.
+Error: RHS "-i(vxbon)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+anch                               nan                  nan
+vga_18_u_3#branch                              -nan                  nan
+vxa_18_u_3#branch                               nan                  nan
+vga_18_u_2#branch                              -nan                  nan
+vxa_18_u_2#branch                               nan                  nan
+vga_18_u_1#branch                              -nan                  nan
+vxa_18_u_1#branch                               nan                  nan
+vga_18_u_0#branch                              -nan                  nan
+vxa_18_u_0#branch                               nan                  nan
+vga_18_s_10#branch                              nan                 -nan
+vxa_18_s_10#branch                              nan                  nan
+vga_18_s_9#branch                               nan                 -nan
+vxa_18_s_9#branch                               nan                  nan
+vga_18_s_8#branch                               nan                 -nan
+vxa_18_s_8#branch                               nan                  nan
+vga_18_s_7#branch                               nan                 -nan
+vxa_18_s_7#branch                               nan                  nan
+vga_18_s_6#branch                               nan                 -nan
+vxa_18_s_6#branch                               nan                  nan
+vga_18_s_5#branch                               nan                 -nan
+vxa_18_s_5#branch                               nan                  nan
+vga_18_s_4#branch                               nan                 -nan
+vxa_18_s_4#branch                               nan                  nan
+vga_18_s_3#branch                               nan                 -nan
+vxa_18_s_3#branch                               nan                  nan
+vga_18_s_2#branch                               nan                 -nan
+vxa_18_s_2#branch                               nan                  nan
+vga_18_s_1#branch                               nan                 -nan
+vxa_18_s_1#branch                               nan                  nan
+vga_18_s_0#branch                              -nan                 -nan
+vxa_18_s_0#branch                               nan                  nan
+
+K tt 27 A_18_s_0
+K tt 27 A_18_s_1
+K tt 27 A_18_s_2
+K tt 27 A_18_s_3
+K tt 27 A_18_s_4
+K tt 27 A_18_s_5
+K tt 27 A_18_s_6
+K tt 27 A_18_s_7
+K tt 27 A_18_s_8
+K tt 27 A_18_s_9
+K tt 27 A_18_s_10
+K tt 27 A_18_u_0
+K tt 27 A_18_u_1
+K tt 27 A_18_u_2
+K tt 27 A_18_u_3
+K tt 27 A_18_u_4
+K tt 27 A_18_u_5
+K tt 27 A_18_u_6
+K tt 27 A_18_u_7
+K tt 27 A_18_u_8
+K tt 27 A_18_u_9
+K tt 27 A_18_u_10
+K tt 27 A_09_s_0
+K tt 27 A_09_s_1
+K tt 27 A_09_s_2
+K tt 27 A_09_s_3
+K tt 27 A_09_s_4
+K tt 27 A_09_s_5
+K tt 27 A_09_s_6
+K tt 27 A_09_s_7
+K tt 27 A_09_s_8
+K tt 27 A_09_s_9
+K tt 27 A_09_s_10
+K tt 27 A_09_u_0
+K tt 27 A_09_u_1
+K tt 27 A_09_u_2
+K tt 27 A_09_u_3
+K tt 27 A_09_u_4
+K tt 27 A_09_u_5
+K tt 27 A_09_u_6
+K tt 27 A_09_u_7
+K tt 27 A_09_u_8
+K tt 27 A_09_u_9
+K tt 27 A_09_u_10
+K tt 27 B_18_s_0
+K tt 27 B_18_s_1
+K tt 27 B_18_s_2
+K tt 27 B_18_s_3
+K tt 27 B_18_s_4
+K tt 27 B_18_s_5
+K tt 27 B_18_s_6
+K tt 27 B_18_s_7
+K tt 27 B_18_s_8
+K tt 27 B_18_s_9
+K tt 27 B_18_s_10
+K tt 27 B_18_s_11
+K tt 27 B_18_u_0
+K tt 27 B_18_u_1
+K tt 27 B_18_u_2
+K tt 27 B_18_u_3
+K tt 27 B_18_u_4
+K tt 27 B_18_u_5
+K tt 27 B_18_u_6
+K tt 27 B_18_u_7
+K tt 27 B_18_u_8
+K tt 27 B_18_u_9
+K tt 27 B_18_u_10
+K tt 27 B_09_s_0
+K tt 27 B_09_s_1
+K tt 27 B_09_s_2
+K tt 27 B_09_s_3
+K tt 27 B_09_s_4
+K tt 27 B_09_s_5
+K tt 27 B_09_s_6
+K tt 27 B_09_s_7
+K tt 27 B_09_s_8
+K tt 27 B_09_s_9
+K tt 27 B_09_s_10
+K tt 27 B_09_u_0
+K tt 27 B_09_u_1
+K tt 27 B_09_u_2
+K tt 27 B_09_u_3
+K tt 27 B_09_u_4
+K tt 27 B_09_u_5
+K tt 27 B_09_u_6
+K tt 27 B_09_u_7
+K tt 27 B_09_u_8
+K tt 27 B_09_u_9
+K tt 27 B_09_u_10
+K tt 27 DPW
+K tt 27 DPD
+K tt 27 BUSA_off
+K tt 27 BUSB_off
+K tt 27 BUSA_on
+K tt 27 BUSB_on
+ngspice-44.2 done
+salida 0

@@ -1,0 +1,142 @@
+lineas: todas
+
+== K1 diodo suelto a 1,8 V inversa (A) ==
+pw2nd 1,4 um2 (topologia A)                                tt 27: 2.779e-03  ff -40: 2.265e-07  ss 85: 5.902e-01  ff 85: 5.902e-01
+pd2nw 1,4 um2 (topologia B)                                tt 27: 2.157e-05  ff -40: 1.580e-09  ss 85: 5.263e-03  ff 85: 5.263e-03
+pozo supuesto 112 um2                                      tt 27: 2.968e-04  ff -40: 5.155e-10  ss 85: 6.173e-01  ff 85: 6.173e-01
+apuesta < 1 pA a 27 y -40: False
+
+== Vj seleccionado, X = 1,8 (V) ==
+A X=18 sel I0=0 Vj                                         tt 27: 0.005271  ff -40: 1.096  ss 85: 2.137e-05  ff 85: 3.031e-05
+A X=18 sel n=1 1p Vj                                       tt 27: 0.005271  ff -40: 1.096  ss 85: 2.137e-05  ff 85: 3.031e-05
+A X=18 sel n=1 100p Vj                                     tt 27: 0.005271  ff -40: 1.096  ss 85: 2.137e-05  ff 85: 3.031e-05
+A X=18 sel n=1 10n Vj                                      tt 27: 0.005271  ff -40: 1.096  ss 85: 2.137e-05  ff 85: 3.031e-05
+A X=18 sel n=1 1u Vj                                       tt 27: 0.005271  ff -40: 1.056  ss 85: 2.137e-05  ff 85: 3.031e-05
+A X=18 sel n=1 10u Vj                                      tt 27: 0.005271  ff -40: 0.9788  ss 85: 2.137e-05  ff 85: 3.031e-05
+A X=18 sel n=3 1p Vj                                       tt 27: 0.005271  ff -40: 1.096  ss 85: 2.137e-05  ff 85: 3.031e-05
+A X=18 sel n=3 100p Vj                                     tt 27: 0.005271  ff -40: 1.096  ss 85: 2.137e-05  ff 85: 3.031e-05
+A X=18 sel n=3 10n Vj                                      tt 27: 0.005271  ff -40: 1.096  ss 85: 2.137e-05  ff 85: 3.031e-05
+A X=18 sel n=3 1u Vj                                       tt 27: 0.005271  ff -40: 1.076  ss 85: 2.137e-05  ff 85: 3.031e-05
+A X=18 sel n=3 10u Vj                                      tt 27: 0.005271  ff -40: 1.022  ss 85: 2.137e-05  ff 85: 3.031e-05
+A X=09 sel I0=0 Vj                                         tt 27: 0.004672  ff -40: 0.898  ss 85: 1.931e-05  ff 85: 2.636e-05
+A X=09 sel n=1 1p Vj                                       tt 27: 0.004672  ff -40: 0.898  ss 85: 1.931e-05  ff 85: 2.636e-05
+A X=09 sel n=1 100p Vj                                     tt 27: 0.004672  ff -40: 0.898  ss 85: 1.931e-05  ff 85: 2.636e-05
+A X=09 sel n=1 10n Vj                                      tt 27: 0.004672  ff -40: 0.898  ss 85: 1.931e-05  ff 85: 2.636e-05
+A X=09 sel n=1 1u Vj                                       tt 27: 0.004672  ff -40: 0.8939  ss 85: 1.931e-05  ff 85: 2.636e-05
+A X=09 sel n=1 10u Vj                                      tt 27: 0.004672  ff -40: 0.8658  ss 85: 1.931e-05  ff 85: 2.636e-05
+A X=09 sel n=3 1p Vj                                       tt 27: 0.004672  ff -40: 0.898  ss 85: 1.931e-05  ff 85: 2.636e-05
+A X=09 sel n=3 100p Vj                                     tt 27: 0.004672  ff -40: 0.898  ss 85: 1.931e-05  ff 85: 2.636e-05
+A X=09 sel n=3 10n Vj                                      tt 27: 0.004672  ff -40: 0.898  ss 85: 1.931e-05  ff 85: 2.636e-05
+A X=09 sel n=3 1u Vj                                       tt 27: 0.004672  ff -40: 0.897  ss 85: 1.931e-05  ff 85: 2.636e-05
+A X=09 sel n=3 10u Vj                                      tt 27: 0.004672  ff -40: 0.8885  ss 85: 1.931e-05  ff 85: 2.636e-05
+B X=18 sel I0=0 Vj                                         tt 27: 1.781  ff -40: 1.8  ss 85: 0.002553  ff 85: 0.003658
+B X=18 sel n=1 1p Vj                                       tt 27: 1.781  ff -40: 1.8  ss 85: 0.002553  ff 85: 0.003658
+B X=18 sel n=1 100p Vj                                     tt 27: 1.781  ff -40: 1.8  ss 85: 0.002553  ff 85: 0.003658
+B X=18 sel n=1 10n Vj                                      tt 27: 1.781  ff -40: 1.8  ss 85: 0.002553  ff 85: 0.003658
+B X=18 sel n=1 1u Vj                                       tt 27: 1.78  ff -40: 1.799  ss 85: 0.002552  ff 85: 0.003657
+B X=18 sel n=1 10u Vj                                      tt 27: 1.772  ff -40: 1.795  ss 85: 0.002548  ff 85: 0.003657
+B X=18 sel n=3 1p Vj                                       tt 27: 1.781  ff -40: 1.8  ss 85: 0.002553  ff 85: 0.003658
+B X=18 sel n=3 100p Vj                                     tt 27: 1.781  ff -40: 1.8  ss 85: 0.002553  ff 85: 0.003658
+B X=18 sel n=3 10n Vj                                      tt 27: 1.781  ff -40: 1.8  ss 85: 0.002553  ff 85: 0.003658
+B X=18 sel n=3 1u Vj                                       tt 27: 1.78  ff -40: 1.799  ss 85: 0.002553  ff 85: 0.003658
+B X=18 sel n=3 10u Vj                                      tt 27: 1.772  ff -40: 1.795  ss 85: 0.002553  ff 85: 0.003658
+B X=09 sel I0=0 Vj                                         tt 27: 0.8809  ff -40: 0.9  ss 85: 0.002294  ff 85: 0.003168
+B X=09 sel n=1 1p Vj                                       tt 27: 0.8809  ff -40: 0.9  ss 85: 0.002294  ff 85: 0.003168
+B X=09 sel n=1 100p Vj                                     tt 27: 0.8809  ff -40: 0.9  ss 85: 0.002294  ff 85: 0.003168
+B X=09 sel n=1 10n Vj                                      tt 27: 0.8809  ff -40: 0.9  ss 85: 0.002294  ff 85: 0.003168
+B X=09 sel n=1 1u Vj                                       tt 27: 0.8804  ff -40: 0.8997  ss 85: 0.002294  ff 85: 0.003167
+B X=09 sel n=1 10u Vj                                      tt 27: 0.8765  ff -40: 0.8973  ss 85: 0.002292  ff 85: 0.003167
+B X=09 sel n=3 1p Vj                                       tt 27: 0.8809  ff -40: 0.9  ss 85: 0.002294  ff 85: 0.003168
+B X=09 sel n=3 100p Vj                                     tt 27: 0.8809  ff -40: 0.9  ss 85: 0.002294  ff 85: 0.003168
+B X=09 sel n=3 10n Vj                                      tt 27: 0.8809  ff -40: 0.9  ss 85: 0.002294  ff 85: 0.003168
+B X=09 sel n=3 1u Vj                                       tt 27: 0.8808  ff -40: 0.8999  ss 85: 0.002294  ff 85: 0.003168
+B X=09 sel n=3 10u Vj                                      tt 27: 0.8798  ff -40: 0.8993  ss 85: 0.002294  ff 85: 0.003168
+
+== I_X seleccionado y no seleccionado, X = 1,8 (A) ==
+A I0=0 I_sel                                               tt 27: 4.043e-04  ff -40: 2.265e-07  ss 85: 3.084e-04  ff 85: 4.374e-04
+A I0=0 I_nosel                                             tt 27: 8.652e-14  ff -40: 3.054e-15  ss 85: 9.861e-13  ff 85: 2.780e-11
+A I0=0 nosel/sel                                           tt 27: 2.140e-10  ff -40: 1.348e-08  ss 85: 3.197e-09  ff 85: 6.355e-08
+A n=1 1p I_sel                                             tt 27: 4.043e-04  ff -40: 2.265e-07  ss 85: 3.084e-04  ff 85: 4.374e-04
+A n=1 1p I_nosel                                           tt 27: 8.652e-14  ff -40: 3.054e-15  ss 85: 9.861e-13  ff 85: 2.780e-11
+A n=1 1p nosel/sel                                         tt 27: 2.140e-10  ff -40: 1.348e-08  ss 85: 3.197e-09  ff 85: 6.355e-08
+A n=1 100p I_sel                                           tt 27: 4.043e-04  ff -40: 2.266e-07  ss 85: 3.084e-04  ff 85: 4.374e-04
+A n=1 100p I_nosel                                         tt 27: 8.652e-14  ff -40: 3.054e-15  ss 85: 9.861e-13  ff 85: 2.780e-11
+A n=1 100p nosel/sel                                       tt 27: 2.140e-10  ff -40: 1.348e-08  ss 85: 3.197e-09  ff 85: 6.355e-08
+A n=1 10n I_sel                                            tt 27: 4.043e-04  ff -40: 2.326e-07  ss 85: 3.084e-04  ff 85: 4.374e-04
+A n=1 10n I_nosel                                          tt 27: 8.652e-14  ff -40: 3.054e-15  ss 85: 9.861e-13  ff 85: 2.780e-11
+A n=1 10n nosel/sel                                        tt 27: 2.140e-10  ff -40: 1.313e-08  ss 85: 3.197e-09  ff 85: 6.355e-08
+A n=1 1u I_sel                                             tt 27: 4.043e-04  ff -40: 8.133e-07  ss 85: 3.084e-04  ff 85: 4.374e-04
+A n=1 1u I_nosel                                           tt 27: 8.652e-14  ff -40: 3.054e-15  ss 85: 9.861e-13  ff 85: 2.780e-11
+A n=1 1u nosel/sel                                         tt 27: 2.140e-10  ff -40: 3.755e-09  ss 85: 3.197e-09  ff 85: 6.355e-08
+A n=1 10u I_sel                                            tt 27: 4.043e-04  ff -40: 5.664e-06  ss 85: 3.084e-04  ff 85: 4.374e-04
+A n=1 10u I_nosel                                          tt 27: 8.652e-14  ff -40: 3.054e-15  ss 85: 9.861e-13  ff 85: 2.780e-11
+A n=1 10u nosel/sel                                        tt 27: 2.140e-10  ff -40: 5.391e-10  ss 85: 3.197e-09  ff 85: 6.355e-08
+A n=3 1p I_sel                                             tt 27: 4.043e-04  ff -40: 2.265e-07  ss 85: 3.084e-04  ff 85: 4.374e-04
+A n=3 1p I_nosel                                           tt 27: 8.652e-14  ff -40: 3.054e-15  ss 85: 9.861e-13  ff 85: 2.780e-11
+A n=3 1p nosel/sel                                         tt 27: 2.140e-10  ff -40: 1.348e-08  ss 85: 3.197e-09  ff 85: 6.355e-08
+A n=3 100p I_sel                                           tt 27: 4.043e-04  ff -40: 2.266e-07  ss 85: 3.084e-04  ff 85: 4.374e-04
+A n=3 100p I_nosel                                         tt 27: 8.652e-14  ff -40: 3.054e-15  ss 85: 9.861e-13  ff 85: 2.780e-11
+A n=3 100p nosel/sel                                       tt 27: 2.140e-10  ff -40: 1.348e-08  ss 85: 3.197e-09  ff 85: 6.355e-08
+A n=3 10n I_sel                                            tt 27: 4.043e-04  ff -40: 2.288e-07  ss 85: 3.084e-04  ff 85: 4.374e-04
+A n=3 10n I_nosel                                          tt 27: 8.652e-14  ff -40: 3.054e-15  ss 85: 9.861e-13  ff 85: 2.780e-11
+A n=3 10n nosel/sel                                        tt 27: 2.140e-10  ff -40: 1.335e-08  ss 85: 3.197e-09  ff 85: 6.355e-08
+A n=3 1u I_sel                                             tt 27: 4.043e-04  ff -40: 4.403e-07  ss 85: 3.084e-04  ff 85: 4.374e-04
+A n=3 1u I_nosel                                           tt 27: 8.652e-14  ff -40: 3.054e-15  ss 85: 9.861e-13  ff 85: 2.780e-11
+A n=3 1u nosel/sel                                         tt 27: 2.140e-10  ff -40: 6.935e-09  ss 85: 3.197e-09  ff 85: 6.355e-08
+A n=3 10u I_sel                                            tt 27: 4.043e-04  ff -40: 2.059e-06  ss 85: 3.084e-04  ff 85: 4.374e-04
+A n=3 10u I_nosel                                          tt 27: 8.652e-14  ff -40: 3.054e-15  ss 85: 9.861e-13  ff 85: 2.780e-11
+A n=3 10u nosel/sel                                        tt 27: 2.140e-10  ff -40: 1.483e-09  ss 85: 3.197e-09  ff 85: 6.355e-08
+B I0=0 I_sel                                               tt 27: 2.157e-05  ff -40: 1.580e-09  ss 85: 3.088e-04  ff 85: 4.375e-04
+B I0=0 I_nosel                                             tt 27: 3.964e-07  ff -40: 1.580e-09  ss 85: -1.778e-16  ff 85: -1.778e-16
+B I0=0 nosel/sel                                           tt 27: 1.838e-02  ff -40: 1.000e+00  ss 85: -5.757e-13  ff 85: -4.063e-13
+B n=1 1p I_sel                                             tt 27: 2.157e-05  ff -40: 1.581e-09  ss 85: 3.088e-04  ff 85: 4.375e-04
+B n=1 1p I_nosel                                           tt 27: 3.964e-07  ff -40: 1.581e-09  ss 85: -1.778e-16  ff 85: -1.778e-16
+B n=1 1p nosel/sel                                         tt 27: 1.838e-02  ff -40: 1.000e+00  ss 85: -5.757e-13  ff 85: -4.063e-13
+B n=1 100p I_sel                                           tt 27: 2.157e-05  ff -40: 1.680e-09  ss 85: 3.088e-04  ff 85: 4.375e-04
+B n=1 100p I_nosel                                         tt 27: 3.964e-07  ff -40: 1.680e-09  ss 85: -1.778e-16  ff 85: -1.778e-16
+B n=1 100p nosel/sel                                       tt 27: 1.838e-02  ff -40: 9.997e-01  ss 85: -5.757e-13  ff 85: -4.063e-13
+B n=1 10n I_sel                                            tt 27: 2.158e-05  ff -40: 1.158e-08  ss 85: 3.088e-04  ff 85: 4.375e-04
+B n=1 10n I_nosel                                          tt 27: 3.965e-07  ff -40: 1.122e-08  ss 85: -1.778e-16  ff 85: -1.778e-16
+B n=1 10n nosel/sel                                        tt 27: 1.837e-02  ff -40: 9.693e-01  ss 85: -5.757e-13  ff 85: -4.063e-13
+B n=1 1u I_sel                                             tt 27: 2.256e-05  ff -40: 1.001e-06  ss 85: 3.087e-04  ff 85: 4.374e-04
+B n=1 1u I_nosel                                           tt 27: 3.718e-07  ff -40: -7.424e-23  ss 85: -1.778e-16  ff 85: -1.778e-16
+B n=1 1u nosel/sel                                         tt 27: 1.648e-02  ff -40: -7.414e-17  ss 85: -5.759e-13  ff 85: -4.064e-13
+B n=1 10u I_sel                                            tt 27: 3.141e-05  ff -40: 9.972e-06  ss 85: 3.082e-04  ff 85: 4.374e-04
+B n=1 10u I_nosel                                          tt 27: 5.403e-07  ff -40: 4.055e-07  ss 85: -1.778e-16  ff 85: -1.778e-16
+B n=1 10u nosel/sel                                        tt 27: 1.720e-02  ff -40: 4.067e-02  ss 85: -5.767e-13  ff 85: -4.064e-13
+B n=3 1p I_sel                                             tt 27: 2.157e-05  ff -40: 1.581e-09  ss 85: 3.088e-04  ff 85: 4.375e-04
+B n=3 1p I_nosel                                           tt 27: 3.964e-07  ff -40: 1.581e-09  ss 85: -1.778e-16  ff 85: -1.778e-16
+B n=3 1p nosel/sel                                         tt 27: 1.838e-02  ff -40: 1.000e+00  ss 85: -5.757e-13  ff 85: -4.063e-13
+B n=3 100p I_sel                                           tt 27: 2.157e-05  ff -40: 1.680e-09  ss 85: 3.088e-04  ff 85: 4.375e-04
+B n=3 100p I_nosel                                         tt 27: 3.964e-07  ff -40: 1.679e-09  ss 85: -1.778e-16  ff 85: -1.778e-16
+B n=3 100p nosel/sel                                       tt 27: 1.838e-02  ff -40: 9.992e-01  ss 85: -5.757e-13  ff 85: -4.063e-13
+B n=3 10n I_sel                                            tt 27: 2.158e-05  ff -40: 1.158e-08  ss 85: 3.088e-04  ff 85: 4.375e-04
+B n=3 10n I_nosel                                          tt 27: 3.964e-07  ff -40: 1.055e-08  ss 85: -1.778e-16  ff 85: -1.778e-16
+B n=3 10n nosel/sel                                        tt 27: 1.837e-02  ff -40: 9.111e-01  ss 85: -5.757e-13  ff 85: -4.063e-13
+B n=3 1u I_sel                                             tt 27: 2.253e-05  ff -40: 1.001e-06  ss 85: 3.088e-04  ff 85: 4.375e-04
+B n=3 1u I_nosel                                           tt 27: 3.964e-07  ff -40: nan  ss 85: -1.778e-16  ff 85: -1.778e-16
+B n=3 1u nosel/sel                                         tt 27: 1.759e-02  ff -40: nan  ss 85: -5.757e-13  ff 85: -4.063e-13
+B n=3 10u I_sel                                            tt 27: 3.111e-05  ff -40: 9.913e-06  ss 85: 3.088e-04  ff 85: 4.375e-04
+B n=3 10u I_nosel                                          tt 27: 3.964e-07  ff -40: nan  ss 85: -1.778e-16  ff 85: -1.778e-16
+B n=3 10u nosel/sel                                        tt 27: 1.274e-02  ff -40: nan  ss 85: -5.757e-13  ff 85: -4.063e-13
+
+testigo B 100 nA tt 27: 2.1667e-05 A   mutante I0=0: 2.157e-05 A
+K8 A n=3 1u I_X/I0                                         tt 27: 404.3  ff -40: 0.4403  ss 85: 308.4  ff 85: 437.4
+
+== bus de 7 puestos, I0 = 0, X = 1,8 (A) ==
+BUSA_off                                                   tt 27: 6.056e-13  ff -40: 2.137e-14  ss 85: 6.903e-12  ff 85: 1.946e-10
+BUSA_on                                                    tt 27: 4.043e-04  ff -40: 2.265e-07  ss 85: 3.084e-04  ff 85: 4.374e-04
+BUSB_off                                                   tt 27: 2.996e-04  ff -40: 1.158e-08  ss 85: 6.173e-01  ff 85: 6.173e-01
+BUSB_on                                                    tt 27: 3.208e-04  ff -40: 1.158e-08  ss 85: 6.176e-01  ff 85: 6.177e-01
+
+== veredictos ==
+K1: falsa
+K2: falsa
+K3: cumplida
+K4: falsa
+K5: falsa
+K6: falsa
+K7 testigo: falsa
+K7 mutante: falsa
+K8: falsa
+benchmark: INVALIDO

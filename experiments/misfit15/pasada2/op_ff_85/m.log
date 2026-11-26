@@ -1,0 +1,945 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+Warning: sky130_fd_pr__model__parasitic__diode_ps2nw: IKR too small - model effect disabled!
+Warning: sky130_fd_pr__diode_pd2nw_05v5: IKR too small - model effect disabled!
+Warning: sky130_fd_pr__diode_pw2nd_05v5: IKR too small - model effect disabled!
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Note: True gmin stepping completed
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-15 puesto de xc-20, esquina ff 85 c. generado por gen.py
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Note: True gmin stepping completed
+
+No. of Data Rows : 1
+K ff 85 DPW 1.8 0.5902
+K ff 85 DPD 1.8 0.00526289
+K ff 85 BUSA_off 1.8 1.94575E-10
+K ff 85 BUSA_on 1.8 0.000437413
+K ff 85 BUSB_off 1.8 0.617276
+K ff 85 BUSB_on 1.8 0.617713
+K ff 85 A_18_s_0 2.95785E-05 0.000437413
+K ff 85 B_18_s_0 0.00364641 0.000436933
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Note: True gmin stepping completed
+
+No. of Data Rows : 1
+K ff 85 A_18_s_1 2.95785E-05 0.000437413
+K ff 85 B_18_s_1 0.00364641 0.000436933
+K ff 85 A_18_s_6 2.95785E-05 0.000437413
+K ff 85 B_18_s_6 0.00364641 0.000436933
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Note: True gmin stepping completed
+
+No. of Data Rows : 1
+K ff 85 A_18_s_2 2.95785E-05 0.000437413
+K ff 85 B_18_s_2 0.00365064 0.000437419
+K ff 85 A_18_s_7 2.95785E-05 0.000437413
+K ff 85 B_18_s_7 0.00364641 0.000436933
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Error: Transient op failed, timestep too small
+
+
+Error: The operating point could not be simulated successfully.
+    Any of the following steps may fail.!
+
+doAnalyses: OP:  Timestep too small; trouble with node "vuaon#branch"
+
+
+op simulation(s) aborted
+Warning from checkvalid: vector ja1 is not available or has zero length.
+Error: RHS "v(ja1)" invalid
+Warning from checkvalid: vector vxa1#branch is not available or has zero length.
+Error: RHS "-i(vxa1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb1 is not available or has zero length.
+Error: RHS "v(xb1)-v(jb1)" invalid
+Warning from checkvalid: vector vxb1#branch is not available or has zero length.
+Error: RHS "-i(vxb1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja3 is not available or has zero length.
+Error: RHS "v(ja3)" invalid
+Warning from checkvalid: vector vxa3#branch is not available or has zero length.
+Error: RHS "-i(vxa3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb3 is not available or has zero length.
+Error: RHS "v(xb3)-v(jb3)" invalid
+Warning from checkvalid: vector vxb3#branch is not available or has zero length.
+Error: RHS "-i(vxb3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Note: True gmin stepping completed
+
+No. of Data Rows : 1
+K ff 85 A_18_s_3 2.95785E-05 0.000437413
+K ff 85 B_18_s_3 0.00364641 0.000436934
+K ff 85 A_18_s_8 2.95785E-05 0.000437413
+K ff 85 B_18_s_8 0.00364641 0.000436933
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+DC solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+vdd                                             1.8                  1.8
+g                                               1.8                  1.8
+ctl                                           1e-06                1e-06
+xa1                                             1.8                  1.8
+ja1                                             nan                  nan
+xb1                                             1.8                  1.8
+jb1                                            -nan                  nan
+xa3                                             1.8                  1.8
+ja3                                             nan                  nan
+xb3                                             1.8                  1.8
+jb3                                            -nan                  nan
+r1                                              1.8                  1.8
+r2                                              1.8                  1.8
+uaoff                                           1.8                  1.8
+uboff                                           1.8                  1.8
+qboff0                                          nan                  nan
+qboff1                                          nan                  nan
+qboff2                                          nan                  nan
+qboff3                                          nan                  nan
+qboff4                                          nan                  nan
+qboff5                                          nan                  nan
+qboff6                                          nan                  nan
+uaon                                            1.8                  1.8
+ubon                                            1.8                  1.8
+qbon0                                           nan                  nan
+qbon1                                           nan                  nan
+qbon2                                           nan                  nan
+qbon3                                           nan                  nan
+qbon4                                           nan                  nan
+qbon5                                           nan                  nan
+qbon6                                           nan                  nan
+vubon#branch                                   -nan                  nan
+vuaon#branch                                    nan                  nan
+vuboff#branch                                  -nan                  nan
+vuaoff#branch                                   nan                  nan
+vr2#branch                                     -nan                  nan
+vr1#branch                                     -nan                  nan
+vxb3#branch                                     nan                 -nan
+vxa3#branch                                     nan                  nan
+vxb1#branch                                     nan                 -nan
+vxa1#branch                                     nan                  nan
+vc#branch                                         0                    0
+vg#branch                                      -nan                  nan
+vd#branch                                      -nan                  nan
+
+K ff 85 A_18_s_4
+K ff 85 B_18_s_4
+K ff 85 A_18_s_9
+K ff 85 B_18_s_9
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Error: Transient op failed, timestep too small
+
+
+Error: The operating point could not be simulated successfully.
+    Any of the following steps may fail.!
+
+doAnalyses: OP:  Timestep too small; trouble with node "vubon#branch"
+
+
+op simulation(s) aborted
+Warning from checkvalid: vector xb1 is not available or has zero length.
+Error: RHS "v(xb1)-v(jb1)" invalid
+Warning from checkvalid: vector vxb1#branch is not available or has zero length.
+Error: RHS "-i(vxb1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Error: Transient op failed, timestep too small
+
+
+Error: The operating point could not be simulated successfully.
+    Any of the following steps may fail.!
+
+
+No. of Data Rows : 1
+K ff 85 A_18_s_5 2.95785E-05 0.000437413
+K ff 85 B_18_s_5 0.00365064 0.00043744
+K ff 85 A_18_s_10 2.95785E-05 0.000437413
+K ff 85 B_18_s_10 0.00364641 0.000436933
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+DC solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+vdd                                             1.8                  1.8
+g                                               1.8                  1.8
+ctl                                           1e-07                1e-07
+xa1                                             1.8                  1.8
+ja1                                             nan                  nan
+xb1                                             1.8                  1.8
+jb1                                            -nan                  nan
+xa3                                             1.8                  1.8
+ja3                                             nan                  nan
+xb3                                             1.8                  1.8
+jb3                                            -nan                  nan
+r1                                              1.8                  1.8
+r2                                              1.8                  1.8
+uaoff                                           1.8                  1.8
+uboff                                           1.8                  1.8
+qboff0                                          nan                  nan
+qboff1                                          nan                  nan
+qboff2                                          nan                  nan
+qboff3                                          nan                  nan
+qboff4                                          nan                  nan
+qboff5                                          nan                  nan
+qboff6                                          nan                  nan
+uaon                                            1.8                  1.8
+ubon                                            1.8                  1.8
+qbon0                                           nan                  nan
+qbon1                                           nan                  nan
+qbon2                                           nan                  nan
+qbon3                                           nan                  nan
+qbon4                                           nan                  nan
+qbon5                                           nan                  nan
+qbon6                                           nan                  nan
+vubon#branch                                   -nan                  nan
+vuaon#branch                                    nan                  nan
+vuboff#branch                                  -nan                  nan
+vuaoff#branch                                   nan                  nan
+vr2#branch                                     -nan                  nan
+vr1#branch                                     -nan                  nan
+vxb3#branch                                     nan                 -nan
+vxa3#branch                                     nan                  nan
+vxb1#branch                                     nan                 -nan
+vxa1#branch                                     nan                  nan
+vc#branch                                         0                    0
+vg#branch                                      -nan                  nan
+vd#branch                                      -nan                  nan
+
+K ff 85 B_18_s_11
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+DC solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+vdd                                             1.8                  1.8
+g        doAnalyses: OP:  Timestep too small; trouble with node "vuaon#branch"
+
+
+op simulation(s) aborted
+Warning from checkvalid: vector ja1 is not available or has zero length.
+Error: RHS "v(ja1)" invalid
+Warning from checkvalid: vector vxa1#branch is not available or has zero length.
+Error: RHS "-i(vxa1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb1 is not available or has zero length.
+Error: RHS "v(xb1)-v(jb1)" invalid
+Warning from checkvalid: vector vxb1#branch is not available or has zero length.
+Error: RHS "-i(vxb1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Error: Transient op failed, timestep too small
+
+
+Error: The operating point could not be simulated successfully.
+    Any of the following steps may fail.!
+
+                                         0                    0
+ctl                                               0                    0
+xa1                                             1.8                  1.8
+ja1                                             nan                  nan
+xb1                                             1.8                  1.8
+jb1                                            -nan                  nan
+xa3                                             1.8                  1.8
+ja3                                             nan                  nan
+xb3                                             1.8                  1.8
+jb3                                            -nan                  nan
+r1                                              1.8                  1.8
+r2                                              1.8                  1.8
+uaoff                                           1.8                  1.8
+uboff                                           1.8                  1.8
+qboff0                                          nan                  nan
+qboff1                                          nan                  nan
+qboff2                                          nan                  nan
+qboff3                                          nan                  nan
+qboff4                                          nan                  nan
+qboff5                                          nan                  nan
+qboff6                                          nan                  nan
+uaon                                            1.8                  1.8
+ubon                                            1.8                  1.8
+qbon0                                           nan                  nan
+qbon1                                           nan                  nan
+qbon2                                           nan                  nan
+qbon3                                           nan                  nan
+qbon4                                           nan                  nan
+qbon5                                           nan                  nan
+qbon6                                           nan                  nan
+vubon#branch                                   -nan                  nan
+vuaon#branch                                    nan                  nan
+vuboff#branch                                  -nan                  nan
+vuaoff#branch                                   nan                  nan
+vr2#branch                                     -nan                  nan
+vr1#branch                                     -nan                  nan
+vxb3#branch                                     nan                 -nan
+vxa3#branch                                     nan                  nan
+vxb1#branch                                     nan                 -nan
+vxa1#branch                                     nan                  nan
+vc#branch                                         0                    0
+vg#branch                                      -nan                  nan
+vd#branch                                      -nan                  nan
+
+K ff 85 A_18_u_0
+K ff 85 B_18_u_0
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+DC solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+vdd                                             1.8                  1.8
+g                                                 0                    0
+ctl                                           1e-12                1e-12
+xa1                                             1.8                  1.8
+ja1                                             nan                  nan
+xb1                                             1.8                  1.8
+jb1                                            -nan                  nan
+xa3                                             1.8                  1.8
+ja3                                             doAnalyses: OP:  Timestep too small; trouble with node "vuaon#branch"
+
+
+op simulation(s) aborted
+Warning from checkvalid: vector ja1 is not available or has zero length.
+Error: RHS "v(ja1)" invalid
+Warning from checkvalid: vector vxa1#branch is not available or has zero length.
+Error: RHS "-i(vxa1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb1 is not available or has zero length.
+Error: RHS "v(xb1)-v(jb1)" invalid
+Warning from checkvalid: vector vxb1#branch is not available or has zero length.
+Error: RHS "-i(vxb1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja3 is not available or has zero length.
+Error: RHS "v(ja3)" invalid
+Warning from checkvalid: vector vxa3#branch is not available or has zero length.
+Error: RHS "-i(vxa3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb3 is not available or has zero length.
+Error: RHS "v(xb3)-v(jb3)" invalid
+Warning from checkvalid: vector vxb3#branch is not available or has zero length.
+Error: RHS "-i(vxb3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Error: Transient op failed, timestep too small
+
+
+Error: The operating point could not be simulated successfully.
+    Any of the following steps may fail.!
+
+nan                  nan
+xb3                                             1.8                  1.8
+jb3                                            -nan                  nan
+r1                                              1.8                  1.8
+r2                                              1.8                  1.8
+uaoff                                           1.8                  1.8
+uboff                                           1.8                  1.8
+qboff0                                          nan                  nan
+qboff1                                          nan                  nan
+qboff2                                          nan                  nan
+qboff3                                          nan                  nan
+qboff4                                          nan                  nan
+qboff5                                          nan                  nan
+qboff6                                          nan                  nan
+uaon                                            1.8                  1.8
+ubon                                            1.8                  1.8
+qbon0                                           nan                  nan
+qbon1                                           nan                  nan
+qbon2                                           nan                  nan
+qbon3                                           nan                  nan
+qbon4                                           nan                  nan
+qbon5                                           nan                  nan
+qbon6                                           nan                  nan
+vubon#branch                                   -nan                  nan
+vuaon#branch                                    nan                  nan
+vuboff#branch                                  -nan                  nan
+vuaoff#branch                                   nan                  nan
+vr2#branch                                     -nan                  nan
+vr1#branch                                     -nan                  nan
+vxb3#branch                                     nan                 -nan
+vxa3#branch                                     nan                  nan
+vxb1#branch                                     nan                 -nan
+vxa1#branch                                     nan                  nan
+vc#branch                                         0                    0
+vg#branch                                      -nan                  nan
+vd#branch                                      -nan                  nan
+
+K ff 85 A_18_u_1
+K ff 85 B_18_u_1
+K ff 85 A_18_u_6
+K ff 85 B_18_u_6
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+DC solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+vdd                                             1.8                  1.8
+g                                                 0                    0
+ctl                                           1e-10                1e-10
+xa1                                             1.8                  1.8
+ja1                                             nan                  nan
+xb1                                             1.8                  1.8
+jb1                                            -nan                  nan
+xa3                                             1.8                  1.8
+ja3                                             nan                  nan
+xb3                                             1.8                  1.8
+jb3                                            -nan                  nan
+r1                                              1.8                  1.8
+r2                                              1.8                  1.8
+uaoff                                           1.8                  1.8
+uboff                                           1.8                  1.8
+qboff0                                          nan  doAnalyses: OP:  Timestep too small; trouble with node "vuaon#branch"
+
+
+op simulation(s) aborted
+Warning from checkvalid: vector ja1 is not available or has zero length.
+Error: RHS "v(ja1)" invalid
+Warning from checkvalid: vector vxa1#branch is not available or has zero length.
+Error: RHS "-i(vxa1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb1 is not available or has zero length.
+Error: RHS "v(xb1)-v(jb1)" invalid
+Warning from checkvalid: vector vxb1#branch is not available or has zero length.
+Error: RHS "-i(vxb1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja3 is not available or has zero length.
+Error: RHS "v(ja3)" invalid
+Warning from checkvalid: vector vxa3#branch is not available or has zero length.
+Error: RHS "-i(vxa3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb3 is not available or has zero length.
+Error: RHS "v(xb3)-v(jb3)" invalid
+Warning from checkvalid: vector vxb3#branch is not available or has zero length.
+Error: RHS "-i(vxb3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Error: Transient op failed, timestep too small
+
+
+Error: The operating point could not be simulated successfully.
+    Any of the following steps may fail.!
+
+                nan
+qboff1                                          nan                  nan
+qboff2                                          nan                  nan
+qboff3                                          nan                  nan
+qboff4                                          nan                  nan
+qboff5                                          nan                  nan
+qboff6                                          nan                  nan
+uaon                                            1.8                  1.8
+ubon                                            1.8                  1.8
+qbon0                                           nan                  nan
+qbon1                                           nan                  nan
+qbon2                                           nan                  nan
+qbon3                                           nan                  nan
+qbon4                                           nan                  nan
+qbon5                                           nan                  nan
+qbon6                                           nan                  nan
+vubon#branch                                   -nan                  nan
+vuaon#branch                                    nan                  nan
+vuboff#branch                                  -nan                  nan
+vuaoff#branch                                   nan                  nan
+vr2#branch                                     -nan                  nan
+vr1#branch                                     -nan                  nan
+vxb3#branch                                     nan                 -nan
+vxa3#branch                                     nan                  nan
+vxb1#branch                                     nan                 -nan
+vxa1#branch                                     nan                  nan
+vc#branch                                         0                    0
+vg#branch                                      -nan                  nan
+vd#branch                                      -nan                  nan
+
+K ff 85 A_18_u_2
+K ff 85 B_18_u_2
+K ff 85 A_18_u_7
+K ff 85 B_18_u_7
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+DC solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+vdd                                             1.8                  1.8
+g                                                 0                    0
+ctl                                           1e-08                1e-08
+xa1                                             1.8                  1.8
+ja1                                             nan                  nan
+xb1                                             1.8                  1.8
+jb1                                            -nan                  nan
+xa3                                             1.8                  1.8
+ja3                                             nan                  nan
+xb3                                             1.8                  1.8
+jb3                                            -nan                  nan
+r1                                              1.8                  1.8
+r2                                              1.8                  1.8
+uaoff                                           1.8                  1.8
+uboff                                           1.8                  1.8
+qboff0                                          nan                  nan
+qboff1                                          nan                  nan
+qboff2                                          nan                  nan
+qboff3                                          nan                  nan
+qboff4                                          nan                  nan
+qboff5                                          nan                  nan
+qboff6                                          nan                  nan
+uaon                                            1.8       doAnalyses: OP:  Timestep too small; trouble with node "vuaon#branch"
+
+
+op simulation(s) aborted
+Warning from checkvalid: vector ja1 is not available or has zero length.
+Error: RHS "v(ja1)" invalid
+Warning from checkvalid: vector vxa1#branch is not available or has zero length.
+Error: RHS "-i(vxa1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb1 is not available or has zero length.
+Error: RHS "v(xb1)-v(jb1)" invalid
+Warning from checkvalid: vector vxb1#branch is not available or has zero length.
+Error: RHS "-i(vxb1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja3 is not available or has zero length.
+Error: RHS "v(ja3)" invalid
+Warning from checkvalid: vector vxa3#branch is not available or has zero length.
+Error: RHS "-i(vxa3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb3 is not available or has zero length.
+Error: RHS "v(xb3)-v(jb3)" invalid
+Warning from checkvalid: vector vxb3#branch is not available or has zero length.
+Error: RHS "-i(vxb3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Error: Transient op failed, timestep too small
+
+
+Error: The operating point could not be simulated successfully.
+    Any of the following steps may fail.!
+
+           1.8
+ubon                                            1.8                  1.8
+qbon0                                           nan                  nan
+qbon1                                           nan                  nan
+qbon2                                           nan                  nan
+qbon3                                           nan                  nan
+qbon4                                           nan                  nan
+qbon5                                           nan                  nan
+qbon6                                           nan                  nan
+vubon#branch                                   -nan                  nan
+vuaon#branch                                    nan                  nan
+vuboff#branch                                  -nan                  nan
+vuaoff#branch                                   nan                  nan
+vr2#branch                                     -nan                  nan
+vr1#branch                                     -nan                  nan
+vxb3#branch                                     nan                 -nan
+vxa3#branch                                     nan                  nan
+vxb1#branch                                     nan                 -nan
+vxa1#branch                                     nan                  nan
+vc#branch                                         0                    0
+vg#branch                                      -nan                  nan
+vd#branch                                      -nan                  nan
+
+K ff 85 A_18_u_3
+K ff 85 B_18_u_3
+K ff 85 A_18_u_8
+K ff 85 B_18_u_8
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+DC solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+vdd                                             1.8                  1.8
+g                                                 0                    0
+ctl                                           1e-06                1e-06
+xa1                                             1.8                  1.8
+ja1                                             nan                  nan
+xb1                                             1.8                  1.8
+jb1                                            -nan                  nan
+xa3                                             1.8                  1.8
+ja3                                             nan                  nan
+xb3                                             1.8                  1.8
+jb3                                            -nan                  nan
+r1                                              1.8                  1.8
+r2                                              1.8                  1.8
+uaoff                                           1.8                  1.8
+uboff                                           1.8                  1.8
+qboff0                                          nan                  nan
+qboff1                                          nan                  nan
+qboff2                                          nan                  nan
+qboff3                                          nan                  nan
+qboff4                                          nan                  nan
+qboff5                                          nan                  nan
+qboff6                                          nan                  nan
+uaon                                            1.8                  1.8
+ubon                                            1.8                  1.8
+qbon0                                           nan                  nan
+qbon1                                           nan                  nan
+qbon2                                           nan                  nan
+qbon3                                           nan                  nan
+qbon4                                           nan                  nan
+qbon5                                           nan            doAnalyses: OP:  Timestep too small; trouble with node "vuaon#branch"
+
+
+op simulation(s) aborted
+Warning from checkvalid: vector ja1 is not available or has zero length.
+Error: RHS "v(ja1)" invalid
+Warning from checkvalid: vector vxa1#branch is not available or has zero length.
+Error: RHS "-i(vxa1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb1 is not available or has zero length.
+Error: RHS "v(xb1)-v(jb1)" invalid
+Warning from checkvalid: vector vxb1#branch is not available or has zero length.
+Error: RHS "-i(vxb1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja3 is not available or has zero length.
+Error: RHS "v(ja3)" invalid
+Warning from checkvalid: vector vxa3#branch is not available or has zero length.
+Error: RHS "-i(vxa3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb3 is not available or has zero length.
+Error: RHS "v(xb3)-v(jb3)" invalid
+Warning from checkvalid: vector vxb3#branch is not available or has zero length.
+Error: RHS "-i(vxb3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Error: Transient op failed, timestep too small
+
+
+Error: The operating point could not be simulated successfully.
+    Any of the following steps may fail.!
+
+      nan
+qbon6                                           nan                  nan
+vubon#branch                                   -nan                  nan
+vuaon#branch                                    nan                  nan
+vuboff#branch                                  -nan                  nan
+vuaoff#branch                                   nan                  nan
+vr2#branch                                     -nan                  nan
+vr1#branch                                     -nan                  nan
+vxb3#branch                                     nan                 -nan
+vxa3#branch                                     nan                  nan
+vxb1#branch                                     nan                 -nan
+vxa1#branch                                     nan                  nan
+vc#branch                                         0                    0
+vg#branch                                      -nan                  nan
+vd#branch                                      -nan                  nan
+
+K ff 85 A_18_u_4
+K ff 85 B_18_u_4
+K ff 85 A_18_u_9
+K ff 85 B_18_u_9
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+DC solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+vdd                                             1.8                  1.8
+g                                                 0                    0
+ctl                                           1e-05                1e-05
+xa1                                             1.8                  1.8
+ja1                                             nan                  nan
+xb1                                             1.8                  1.8
+jb1                                            -nan                  nan
+xa3                                             1.8                  1.8
+ja3                                             nan                  nan
+xb3                                             1.8                  1.8
+jb3                                            -nan                  nan
+r1                                              1.8                  1.8
+r2                                              1.8                  1.8
+uaoff                                           1.8                  1.8
+uboff                                           1.8                  1.8
+qboff0                                          nan                  nan
+qboff1                                          nan                  nan
+qboff2                                          nan                  nan
+qboff3                                          nan                  nan
+qboff4                                          nan                  nan
+qboff5                                          nan                  nan
+qboff6                                          nan                  nan
+uaon                                            1.8                  1.8
+ubon                                            1.8                  1.8
+qbon0                                           nan                  nan
+qbon1                                           nan                  nan
+qbon2                                           nan                  nan
+qbon3                                           nan                  nan
+qbon4                                           nan                  nan
+qbon5                                           nan                  nan
+qbon6                                           nan                  nan
+vubon#branch                                   -nan                  nan
+vuaon#branch                                    nan                  nan
+vuboff#branch                                  -nan                  nan
+vuaoff#branch                                   nan                  nan
+vr2#branch                                     -nan                  nan
+vr1#branch                                     -nan                 doAnalyses: OP:  Timestep too small; trouble with node "vubon#branch"
+
+
+op simulation(s) aborted
+Warning from checkvalid: vector ja1 is not available or has zero length.
+Error: RHS "v(ja1)" invalid
+Warning from checkvalid: vector vxa1#branch is not available or has zero length.
+Error: RHS "-i(vxa1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb1 is not available or has zero length.
+Error: RHS "v(xb1)-v(jb1)" invalid
+Warning from checkvalid: vector vxb1#branch is not available or has zero length.
+Error: RHS "-i(vxb1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector ja3 is not available or has zero length.
+Error: RHS "v(ja3)" invalid
+Warning from checkvalid: vector vxa3#branch is not available or has zero length.
+Error: RHS "-i(vxa3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb3 is not available or has zero length.
+Error: RHS "v(xb3)-v(jb3)" invalid
+Warning from checkvalid: vector vxb3#branch is not available or has zero length.
+Error: RHS "-i(vxb3)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+Error: Transient op failed, timestep too small
+
+
+Error: The operating point could not be simulated successfully.
+    Any of the following steps may fail.!
+
+ nan
+vxb3#branch                                     nan                 -nan
+vxa3#branch                                     nan                  nan
+vxb1#branch                                     nan                 -nan
+vxa1#branch                                     nan                  nan
+vc#branch                                         0                    0
+vg#branch                                      -nan                  nan
+vd#branch                                      -nan                  nan
+
+K ff 85 A_18_u_5
+K ff 85 B_18_u_5
+K ff 85 A_18_u_10
+K ff 85 B_18_u_10
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+
+DC solution failed -
+
+Last Node Voltages
+------------------
+
+Node                                   Last Voltage        Previous Iter
+----                                   ------------        -------------
+vdd                                             1.8                  1.8
+g                                               1.8                  1.8
+ctl                                               0                    0
+xa1                                             0.9                  0.9
+ja1                                             nan                  nan
+xb1                                             0.9                  0.9
+jb1                                            -nan                  nan
+xa3                                             0.9                  0.9
+ja3                                             nan                  nan
+xb3                                             0.9                  0.9
+jb3                                            -nan                  nan
+r1                                              1.8                  1.8
+r2                                              1.8                  1.8
+uaoff                                           1.8                  1.8
+uboff                                           1.8                  1.8
+qboff0                                          nan                  nan
+qboff1                                          nan                  nan
+qboff2                                          nan                  nan
+qboff3                                          nan                  nan
+qboff4                                          nan                  nan
+qboff5                                          nan                  nan
+qboff6                                          nan                  nan
+uaon                                            1.8                  1.8
+ubon                                            1.8                  1.8
+qbon0                                           nan                  nan
+qbon1                                           nan                  nan
+qbon2                                           nan                  nan
+qbon3                                           nan                  nan
+qbon4                                           nan                  nan
+qbon5                                           nan                  nan
+qbon6                                           nan                  nan
+vubon#branch                                   -nan                  nan
+vuaon#branch                                    nan                  nan
+vuboff#branch                                  -nan                  nan
+vuaoff#branch                                   nan                  nan
+vr2#branch                                     -nan                  nan
+vr1#branch                                     -nan                  nan
+vxb3#branch                                     nan                 -nan
+vxa3#branch                                     nan                  nan
+vxb1#branch                                     nan                 -nan
+vxa1#branch                                     nan                  nan
+vc#branch                                         0                    0
+vg#branch                                      -nan                  nan
+vd#branch                                      -nan                  nadoAnalyses: OP:  Timestep too small; trouble with node "vuaon#branch"
+
+
+op simulation(s) aborted
+Warning from checkvalid: vector ja1 is not available or has zero length.
+Error: RHS "v(ja1)" invalid
+Warning from checkvalid: vector vxa1#branch is not available or has zero length.
+Error: RHS "-i(vxa1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Warning from checkvalid: vector xb1 is not available or has zero length.
+Error: RHS "v(xb1)-v(jb1)" invalid
+Warning from checkvalid: vector vxb1#branch is not available or has zero length.
+Error: RHS "-i(vxb1)" invalid
+Error: &a: no such variable.
+Error: &b: no such variable.
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Warning: True gmin stepping failed
+Note: Starting source stepping
+Warning: source stepping failed
+Note: Transient op started
+salida 124

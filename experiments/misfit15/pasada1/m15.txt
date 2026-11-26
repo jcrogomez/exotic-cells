@@ -1,0 +1,141 @@
+lineas: tt 27: 0 de 95 lineas; ff -40: 0 de 95 lineas; ss 85: 0 de 95 lineas; ff 85: 0 de 95 lineas
+
+== K1 diodo suelto a 1,8 V inversa (A) ==
+pw2nd 1,4 um2 (topologia A)                                tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+pd2nw 1,4 um2 (topologia B)                                tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+apuesta < 1 pA a 27 y -40: False
+
+== Vj seleccionado, X = 1,8 (V) ==
+A X=18 sel I0=0 Vj                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=18 sel n=1 1p Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=18 sel n=1 100p Vj                                     tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=18 sel n=1 10n Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=18 sel n=1 1u Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=18 sel n=1 10u Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=18 sel n=3 1p Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=18 sel n=3 100p Vj                                     tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=18 sel n=3 10n Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=18 sel n=3 1u Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=18 sel n=3 10u Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=09 sel I0=0 Vj                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=09 sel n=1 1p Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=09 sel n=1 100p Vj                                     tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=09 sel n=1 10n Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=09 sel n=1 1u Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=09 sel n=1 10u Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=09 sel n=3 1p Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=09 sel n=3 100p Vj                                     tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=09 sel n=3 10n Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=09 sel n=3 1u Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A X=09 sel n=3 10u Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=18 sel I0=0 Vj                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=18 sel n=1 1p Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=18 sel n=1 100p Vj                                     tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=18 sel n=1 10n Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=18 sel n=1 1u Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=18 sel n=1 10u Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=18 sel n=3 1p Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=18 sel n=3 100p Vj                                     tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=18 sel n=3 10n Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=18 sel n=3 1u Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=18 sel n=3 10u Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=09 sel I0=0 Vj                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=09 sel n=1 1p Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=09 sel n=1 100p Vj                                     tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=09 sel n=1 10n Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=09 sel n=1 1u Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=09 sel n=1 10u Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=09 sel n=3 1p Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=09 sel n=3 100p Vj                                     tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=09 sel n=3 10n Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=09 sel n=3 1u Vj                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B X=09 sel n=3 10u Vj                                      tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+
+== I_X seleccionado y no seleccionado, X = 1,8 (A) ==
+A I0=0 I_sel                                               tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A I0=0 I_nosel                                             tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A I0=0 nosel/sel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 1p I_sel                                             tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 1p I_nosel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 1p nosel/sel                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 100p I_sel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 100p I_nosel                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 100p nosel/sel                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 10n I_sel                                            tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 10n I_nosel                                          tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 10n nosel/sel                                        tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 1u I_sel                                             tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 1u I_nosel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 1u nosel/sel                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 10u I_sel                                            tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 10u I_nosel                                          tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=1 10u nosel/sel                                        tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 1p I_sel                                             tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 1p I_nosel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 1p nosel/sel                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 100p I_sel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 100p I_nosel                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 100p nosel/sel                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 10n I_sel                                            tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 10n I_nosel                                          tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 10n nosel/sel                                        tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 1u I_sel                                             tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 1u I_nosel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 1u nosel/sel                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 10u I_sel                                            tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 10u I_nosel                                          tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+A n=3 10u nosel/sel                                        tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B I0=0 I_sel                                               tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B I0=0 I_nosel                                             tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B I0=0 nosel/sel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 1p I_sel                                             tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 1p I_nosel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 1p nosel/sel                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 100p I_sel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 100p I_nosel                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 100p nosel/sel                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 10n I_sel                                            tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 10n I_nosel                                          tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 10n nosel/sel                                        tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 1u I_sel                                             tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 1u I_nosel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 1u nosel/sel                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 10u I_sel                                            tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 10u I_nosel                                          tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=1 10u nosel/sel                                        tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 1p I_sel                                             tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 1p I_nosel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 1p nosel/sel                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 100p I_sel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 100p I_nosel                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 100p nosel/sel                                       tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 10n I_sel                                            tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 10n I_nosel                                          tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 10n nosel/sel                                        tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 1u I_sel                                             tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 1u I_nosel                                           tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 1u nosel/sel                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 10u I_sel                                            tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 10u I_nosel                                          tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+B n=3 10u nosel/sel                                        tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+
+testigo B 100 nA tt 27: nan A   mutante I0=0: nan A
+K8 A n=3 1u I_X/I0                                         tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+
+== bus de 7 puestos, I0 = 0, X = 1,8 (A) ==
+BUSA_off                                                   tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+BUSA_on                                                    tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+BUSB_off                                                   tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+BUSB_on                                                    tt 27: nan  ff -40: nan  ss 85: nan  ff 85: nan
+
+== veredictos ==
+K1: falsa
+K2: falsa
+K3: falsa
+K4: falsa
+K5: falsa
+K6: falsa
+K7 testigo: falsa
+K7 mutante: falsa
+K8: falsa
+benchmark: INVALIDO

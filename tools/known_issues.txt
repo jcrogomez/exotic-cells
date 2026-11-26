@@ -60,3 +60,12 @@ experiments/misfit13/harden_v2_e1.log | MISFIT-13: flow run that fails detailed 
 experiments/misfit13/harden_v2_pasada1.log | MISFIT-13: flow run that fails detailed placement (DPL-0036); the failure is the reported result (experiments/misfit13/RESULTADOS.md)
 experiments/misfit13/harden_v3_e1.log | MISFIT-13: flow run that fails detailed placement (DPL-0036); the failure is the reported result (experiments/misfit13/RESULTADOS.md)
 experiments/misfit13/harden_v3_pasada1.log | MISFIT-13: flow run that fails detailed placement (DPL-0036); the failure is the reported result (experiments/misfit13/RESULTADOS.md)
+experiments/misfit15/pasada1/op_tt_27/m.log | MISFIT-15 pass 1: operating point did not converge (floating islands); declared invalid and kept (amendment 1)
+experiments/misfit15/pasada1/op_ff_-40/m.log | MISFIT-15 pass 1: operating point did not converge (floating islands); declared invalid and kept (amendment 1)
+experiments/misfit15/pasada1/op_ss_85/m.log | MISFIT-15 pass 1: operating point did not converge (floating islands); declared invalid and kept (amendment 1)
+experiments/misfit15/pasada1/op_ff_85/m.log | MISFIT-15 pass 1: operating point did not converge (floating islands); declared invalid and kept (amendment 1)
+experiments/misfit15/pasada2/op_tt_27/m.log | MISFIT-15 pass 2: no convergence and the 600 s cap; declared invalid and kept (amendment 2)
+experiments/misfit15/pasada2/op_ff_-40/m.log | MISFIT-15 pass 2: no convergence and the 600 s cap; declared invalid and kept (amendment 2)
+experiments/misfit15/pasada2/op_ss_85/m.log | MISFIT-15 pass 2: no convergence and the 600 s cap; declared invalid and kept (amendment 2)
+experiments/misfit15/pasada2/op_ff_85/m.log | MISFIT-15 pass 2: no convergence and the 600 s cap; declared invalid and kept (amendment 2)
+experiments/misfit15/diag/m.log | diagnostic deck of the diode area: the word "error" is in the options listing ("Truncation error correction"), not a failure

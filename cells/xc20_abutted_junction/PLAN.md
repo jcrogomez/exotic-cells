@@ -88,8 +88,8 @@ referencia. Si la fuga es la del diodo del PDK, gana el diodo del PDK.
 4. Pendiente: averiguar si el proceso tiene bloqueo de siliciuro sobre difusión y qué pasa con el siliciuro en d = 0 `[?]`.
    Es lo primero: decide si d = 0 es una unión o un puente.
 5. Pendiente: pasar el deck completo de KLayout con el front-end activo (hasta hoy solo el de fabricación).
-6. Pendiente: leer la fuga inversa del modelo `pd2nw` a 1,8 V y a dos temperaturas, para tener la referencia convencional.
-7. Pendiente: simular el canal de lectura por el lado p+ con la precarga de canal largo; predicción escrita antes. El modelo
+6. Hecho (2026-11-26, [MISFIT-15](../../experiments/misfit15/RESULTADOS.md), **corrida**, modelo): el `pd2nw` de 1,4 µm² a 1,8 V en inversa da 2,5 fA a tt 27, 1,8 aA a ff −40 y 4,4 pA a 85 °C; el `pw2nd`, 4,7 fA, 2,0 aA y 2,5 pA. Ojo: el área de un diodo extraído entra sin escalar en ngspice; hay que reescribirla.
+7. Hecho en parte (MISFIT-15): con el interruptor entre X y la isla la unión ve 0,9–1,65 V según su corriente; con el interruptor abajo ve la tensión de X. **La variante en pozo n pasa a ser la principal.** Pendiente: simular el canal de lectura por el lado p+ con la precarga de canal largo; predicción escrita antes. El modelo
    no contiene túnel: la simulación solo fija el fondo y el rango del lector, no la señal.
 8. Pendiente: leer Dutta 2017 (ya leído entero en el laboratorio) buscando solo la corriente en inversa por debajo de la ruptura.
 

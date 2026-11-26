@@ -1,0 +1,94 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+Warning: sky130_fd_pr__diode_pw2nd_05v5: IKR too small - model effect disabled!
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-15 diagnostico: que area usa ngspice para el diodo del pdk
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 30.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+-i(v1) -i(v2) -i(v3) = 7.699937e-03
+@d.xd1.d0[area] = 1.400000e+12
+@d2[area] = 1.400000e+12
+@d3[area] = 1.400000e+00
+@d.xd1.d0[pj] = 4.800000e+06
+@d3[pj] = 4.800000e+00
+@d.xd1.d0[cd] = 1.085913e-03
+@d2[cd] = 1.085913e-03
+@d3[cd] = 1.261883e-15
+ Diode: Junction Diode model
+     device                    d2
+      model sky130_fd_pr__diode_p
+    thermal                     0
+         vd                  -1.8
+         id           -0.00384997
+         gd           5.69715e-08
+         cd            0.00108591
+
+ Diode: Junction Diode model
+     device                    d3
+      model sky130_fd_pr__diode_p
+    thermal                     0
+         vd                  -1.8
+         id          -6.73174e-15
+         gd           1.09959e-18
+         cd           1.26188e-15
+
+******************************
+* Current simulation options *
+******************************
+
+Temperatures:
+temp = 303.150000
+tnom = 300.150000
+
+Integration method summary:
+Integration Method = TRAPEZOIDAL
+MaxOrder = 2
+xmu = 0.5
+indverbosity = 2
+epsmin = 1e-28
+
+Matrix solver:
+KLU
+
+Tolerances (absolute):
+abstol      (current) = 1e-18
+chgtol      (charge)  = 1e-14
+vntol       (voltage) = 1e-06
+pivtol      (pivot)   = 1e-13
+
+Tolerances (relative):
+reltol      (current) = 0.001
+pivrel      (pivot)   = 0.001
+
+Iteration limits:
+itl1 (DC iterations) = 100
+itl2 (DC transfer curve iterations) = 50
+itl4 (transient iterations) = 10
+gminsteps = 1
+srcsteps = 1
+
+Truncation error correction:
+trtol = 7.000000
+
+Conductances:
+gmin     (devices)  = 1e-18
+diaggmin (stepping) = 0
+gshunt = 0
+cshunt = -1
+delmin = 0
+
+Default parameters for MOS devices
+Default M: 1.000000
+Default L: 0.000100
+Default W: 0.000100
+Default AD: 0.000000
+Default AS: 0.000000
+ngspice-44.2 done
