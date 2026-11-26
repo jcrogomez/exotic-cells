@@ -1,0 +1,2 @@
+d23babf032a80198c0b5a1f27437bc5bd87ddb4d6b59339af4f3c353d55bf6e7  cells/preregistros/MISFIT-11_2026-11-26_matriz_generada.md
+# sellado 2026-11-26 08:26:38 EST, antes de escribir el generador
