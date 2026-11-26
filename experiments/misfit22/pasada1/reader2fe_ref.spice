@@ -1,0 +1,12 @@
+* Reference for LVS, generated from table 'reader2fe'. Do not edit by hand.
+.subckt reader2fe X PRENH PRENL VDD GND
+XC GND X GND GND sky130_fd_pr__nfet_01v8 w=4.3 l=4
+XP00a X PRENH m00 VDD sky130_fd_pr__pfet_01v8_hvt w=1 l=0.15
+XP00b m00 PRENH VDD VDD sky130_fd_pr__pfet_01v8_hvt w=1 l=0.15
+XP01a X PRENH m01 VDD sky130_fd_pr__pfet_01v8_hvt w=1 l=0.15
+XP01b m01 PRENH VDD VDD sky130_fd_pr__pfet_01v8_hvt w=1 l=0.15
+XP10a X PRENL m10 VDD sky130_fd_pr__pfet_01v8_hvt w=1 l=1
+XP10b m10 PRENL VDD VDD sky130_fd_pr__pfet_01v8_hvt w=1 l=1
+XP11a X PRENL m11 VDD sky130_fd_pr__pfet_01v8_hvt w=1 l=1
+XP11b m11 PRENL VDD VDD sky130_fd_pr__pfet_01v8_hvt w=1 l=1
+.ends

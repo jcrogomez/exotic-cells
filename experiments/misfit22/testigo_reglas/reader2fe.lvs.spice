@@ -1,0 +1,14 @@
+* NGSPICE file created from reader2fe.ext - technology: sky130A
+
+.subckt reader2fe PRENH PRENL X VDD GND
+X0 X PRENL a_754_1056# VDD sky130_fd_pr__pfet_01v8_hvt ad=0.175 pd=1.35 as=0.105 ps=1.21 w=1 l=1
+X1 a_1266_1056# PRENL X VDD sky130_fd_pr__pfet_01v8_hvt ad=0.105 pd=1.21 as=0.175 ps=1.35 w=1 l=1
+X2 a_754_1056# PRENL VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=0.105 pd=1.21 as=0.3 ps=2.6 w=1 l=1
+X3 GND X GND GND sky130_fd_pr__nfet_01v8 ad=1.29 pd=9.2 as=2.58 ps=18.4 w=4.3 l=4
+X4 a_342_1056# PRENH X VDD sky130_fd_pr__pfet_01v8_hvt ad=0.105 pd=1.21 as=0.175 ps=1.35 w=1 l=0.15
+X5 a_170_1056# PRENH VDD VDD sky130_fd_pr__pfet_01v8_hvt ad=0.105 pd=1.21 as=0.3 ps=2.6 w=1 l=0.15
+X6 X PRENH a_170_1056# VDD sky130_fd_pr__pfet_01v8_hvt ad=0.175 pd=1.35 as=0.105 ps=1.21 w=1 l=0.15
+X7 VDD PRENL a_1266_1056# VDD sky130_fd_pr__pfet_01v8_hvt ad=0.3 pd=2.6 as=0.105 ps=1.21 w=1 l=1
+X8 VDD PRENH a_342_1056# VDD sky130_fd_pr__pfet_01v8_hvt ad=0.3 pd=2.6 as=0.105 ps=1.21 w=1 l=0.15
+.ends
+

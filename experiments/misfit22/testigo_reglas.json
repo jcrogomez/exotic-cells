@@ -1,0 +1,20 @@
+{
+ "name": "reader2fe",
+ "kind": "reader2",
+ "cap": {
+  "w": 4.3,
+  "l": 4.0
+ },
+ "pw": 1.0,
+ "stack_gap": 0.1,
+ "stacks": [
+  {
+   "pin": "PRENH",
+   "l": 0.15
+  },
+  {
+   "pin": "PRENL",
+   "l": 1.0
+  }
+ ]
+}

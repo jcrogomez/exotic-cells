@@ -1,2 +1,4 @@
 eef0c617a88d56c085219c93800fe46f405be5829fbcf254fa061cf9071c8224  cells/preregistros/MISFIT-22_2026-11-26_lector2_dibujado.md
 # sellado 2026-11-26 15:53:59 EST, antes de tocar el generador
+5edc49c6d2f2732babd8760c63344103a98380b3d50f101d1f701cdb5b49a57f  cells/preregistros/MISFIT-22_2026-11-26_lector2_dibujado_enmienda1.md
+# enmienda 1 sellada 2026-11-26 15:55:19 EST, antes de la pasada 2

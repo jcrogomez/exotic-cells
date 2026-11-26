@@ -1,0 +1,69 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_hvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_hvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_hvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_hvt     |Circuit 2: sky130_fd_pr__pfet_01v8_hvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_hvt and sky130_fd_pr__pfet_01v8_hvt are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: reader2fe                       |Circuit 2: reader2fe                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8_hvt (8)            |sky130_fd_pr__pfet_01v8_hvt (8)            
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 9                       |Number of devices: 9                       
+Number of nets: 9                          |Number of nets: 9                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 6 symmetries with property errors.
+sky130_fd_pr__pfet_01v8_hvt:1 vs. sky130_fd_pr__pfet_01v8_hvt:P10a:
+ l circuit1: 1   circuit2: 0.5   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v8_hvt:3 vs. sky130_fd_pr__pfet_01v8_hvt:P11a:
+ l circuit1: 1   circuit2: 0.5   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v8_hvt:4 vs. sky130_fd_pr__pfet_01v8_hvt:P10b:
+ l circuit1: 1   circuit2: 0.5   (delta=66.7%, cutoff=1%)
+sky130_fd_pr__pfet_01v8_hvt:0 vs. sky130_fd_pr__pfet_01v8_hvt:P11b:
+ l circuit1: 1   circuit2: 0.5   (delta=66.7%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: reader2fe                       |Circuit 2: reader2fe                       
+-------------------------------------------|-------------------------------------------
+GND                                        |GND                                        
+X                                          |X                                          
+PRENH                                      |PRENH                                      
+PRENL                                      |PRENL                                      
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes reader2fe and reader2fe are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ reader2fe

@@ -41,6 +41,9 @@ The transistor kind takes three per-seat options for the XC-19 fan (`tables/xc19
 the gate), `"dummy"` (unconnected poly strips on both sides) and `"butt"` (a p+ block against the source end).
 A fourth kind, `"kind": "fgate"`, draws XC-14's seat: a read transistor (thick or thin oxide) whose gate goes only to a metal 1 plate,
 under a common metal 2 coupling strip, with optional twins (a diode on the gate, or the gate tied to the bias bus). See `tables/xc14fg.json`.
+A fifth kind, `"kind": "reader2"`, draws reader 2's analog front end: the node capacitor and one stacked high-threshold precharge
+per range in a shared n-well, each with its own gate line. See `tables/reader2fe.json`.
+`run.sh` prints `property errors: N` next to the LVS verdict: netgen reports a wrong width or length there, not in its "match" line.
 
 Not there yet: other device kinds (the high-voltage junctions, antennas, contacts), more than one row, the selection logic, the predicted
 reading of each seat, the precheck of a tile that contains a matrix.

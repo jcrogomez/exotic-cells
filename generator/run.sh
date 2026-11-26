@@ -16,5 +16,5 @@ docker run --rm -e N="$N" -e REFF="$REFF" -v "$OUT":/work -v "$SKY130A":/pdk:ro 
   klayout -b -rd input=$N.gds -rd report=klayout_full.lyrdb -r /tmp/full.lydrc > klayout_full.log 2>&1 || true
   printf "lvs \"$N.lvs.spice $N\" \"$REFF $N\" /pdk/libs.tech/netgen/sky130A_setup.tcl lvs_${REFF%.spice}.rpt\n" > lvs.tcl
   netgen -batch source lvs.tcl > netgen_${REFF%.spice}.txt 2>&1
-  echo "RESULT $N | $(grep "^DRC .*violations" $N.log) | KLayout mr $(grep -c "<item>" klayout_mr.lyrdb) full $(grep -c "<item>" klayout_full.lyrdb) | LVS(${REFF}): $(grep -h "Final result" -A1 netgen_${REFF%.spice}.txt | tr "\n" " ") | $(grep "^BBOX" $N.log)"
+  echo "RESULT $N | $(grep "^DRC .*violations" $N.log) | KLayout mr $(grep -c "<item>" klayout_mr.lyrdb) full $(grep -c "<item>" klayout_full.lyrdb) | LVS(${REFF}): $(grep -h "Final result" -A1 netgen_${REFF%.spice}.txt | tr "\n" " ") property errors: $(grep -c "Property errors were found" netgen_${REFF%.spice}.txt) | $(grep "^BBOX" $N.log)"
   grep -A6 "^DRC" $N.log | tail -n +2 | head -6' 2>&1 | grep -v "^\[INFO\]" || true

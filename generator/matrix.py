@@ -360,10 +360,65 @@ def build_fgate(table, pitch_delta=0.0):
     return name, "\n".join(head + t.l + tail) + "\n", "\n".join(ref) + "\n", "\n".join(csv) + "\n"
 
 
+def build_reader2(table, pitch_delta=0.0):
+    """Reader 2, analog front end: the node capacitor (nfet, gate on X, source, drain and body on GND) and the precharge
+    stacks above it in one n-well. Each stack is one p+ strip with four hvt gates, VDD . g . g . X . g . g . VDD: two parallel
+    branches of two pfets in series, the middle nodes left without contact. One gate line per stack (range select).
+    Table: {"name": ..., "kind": "reader2", "cap": {"w": 4.3, "l": 4.0}, "pw": 1.0, "stack_gap": 0.27,
+            "stacks": [{"pin": "PRENH", "l": 0.15}, {"pin": "PRENL", "l": 1.0}]}"""
+    name = table["name"]; cw, cl = float(table["cap"]["w"]), float(table["cap"]["l"]); pw = float(table.get("pw", 1.0))
+    sg = float(table.get("stack_gap", 0.27)); t = Tcl()
+    # node capacitor
+    xe = 0.30 + cl + 0.30
+    t.r("ndiff", 0, 0, xe, cw); t.r("poly", 0.30, -0.13, 0.30 + cl, cw + 0.50)
+    for x0 in (0.04, xe - 0.21):
+        t.r("ndiffc", x0, 0.06, x0 + 0.17, cw - 0.06); t.r("locali", x0, -0.60, x0 + 0.17, cw + 0.02)
+    tx = xe + GAP
+    t.r("psubdiff", tx, 0, tx + TAP, cw); t.r("psubdiffcont", tx + 0.125, 0.06, tx + 0.295, cw - 0.06)
+    t.r("locali", tx + 0.125, -0.60, tx + 0.295, cw + 0.02); t.r("locali", 0.04, -0.60, tx + 0.295, -0.43)
+    yb0, yb1 = cw + 0.25, cw + 0.42                                                 # X bar on li, over the gate contacts
+    x = 0.47
+    while x + 0.17 <= 0.30 + cl - 0.08:
+        t.r("polycont", x, yb0, x + 0.17, yb1); x += 0.34
+    # precharge stacks
+    yd0 = cw + 0.98; yd1 = yd0 + pw; ypb = yd1 + 0.13; yv = ypb + 0.57; x = 0.40; ref = []; pins = []; xmax = 0
+    for k, st in enumerate(table["stacks"]):
+        L = float(st["l"]); g = [x + 0.30, x + 0.30 + L + 0.21, x + 0.30 + 2 * L + 0.21 + 0.35, x + 0.30 + 3 * L + 0.42 + 0.35]
+        xend = g[3] + L + 0.30; xc = g[1] + L + 0.09
+        t.r("pdiff", x, yd0, xend, yd1)
+        for gx in g: t.r("poly", gx, yd0 - 0.13, gx + L, ypb); t.r("pfethvt", gx, yd0, gx + L, yd1)
+        t.r("poly", g[0], ypb, g[3] + L, ypb + 0.36)                                # gate bar and its contact
+        t.r("polycont", xc, ypb + 0.11, xc + 0.17, ypb + 0.28); t.r("locali", xc - 0.08, ypb + 0.11, xc + 0.25, ypb + 0.28)
+        t.r("viali", xc, ypb + 0.11, xc + 0.17, ypb + 0.28); cx, cy = xc + 0.085, ypb + 0.195
+        t.r("metal1", cx - 0.20, cy - 0.20, cx + 0.20, cy + 0.20); t.pin(st["pin"], "metal1", cx - 0.20, cy - 0.20, cx + 0.20, cy + 0.20)
+        for x0 in (x + 0.04, xend - 0.21):                                          # ends -> VDD bar
+            t.r("pdiffc", x0, yd0 + 0.06, x0 + 0.17, yd1 - 0.06); t.r("locali", x0, yd0 - 0.02, x0 + 0.17, yv + 0.17)
+        t.r("pdiffc", xc, yd0 + 0.06, xc + 0.17, yd1 - 0.06); t.r("locali", xc, yb0, xc + 0.17, yd1 + 0.02)   # middle -> X bar
+        p = st["pin"]; m = "sky130_fd_pr__pfet_01v8_hvt"
+        for b in (0, 1):
+            ref += [f"XP{k}{b}a X {p} m{k}{b} VDD {m} w={pw:g} l={L:g}", f"XP{k}{b}b m{k}{b} {p} VDD VDD {m} w={pw:g} l={L:g}"]
+        pins.append(p); xmax = xend; x = xend + sg + pitch_delta
+    nx = xmax + GAP                                                                 # well tap
+    t.r("nsubdiff", nx, yd0, nx + TAP, yd1); t.r("nsubdiffcont", nx + 0.125, yd0 + 0.06, nx + 0.295, yd1 - 0.06)
+    t.r("locali", nx + 0.125, yd0 - 0.02, nx + 0.295, yv + 0.17)
+    t.r("nwell", 0.40 - WENC, yd0 - WENC, nx + TAP + WENC, yd1 + WENC)
+    t.r("locali", 0.44, yv, nx + 0.295, yv + 0.17)                                  # VDD bar
+    xr = max(0.30 + cl, xmax) - 0.30
+    t.r("locali", 0.39, yb0, xr + 0.60, yb1)                                        # X bar
+    for nm, px, py in (("X", xr + 0.40, (yb0 + yb1) / 2), ("VDD", nx - 0.60, yv + 0.085), ("GND", 2.0, -0.515)):
+        t.r("viali", px - 0.085, py - 0.085, px + 0.085, py + 0.085)
+        t.r("metal1", px - 0.20, py - 0.20, px + 0.20, py + 0.20); t.pin(nm, "metal1", px - 0.20, py - 0.20, px + 0.20, py + 0.20)
+    head, tail = frame(name)
+    ref = [f"* Reference for LVS, generated from table '{name}'. Do not edit by hand.", f".subckt {name} X {' '.join(pins)} VDD GND",
+           f"XC GND X GND GND sky130_fd_pr__nfet_01v8 w={cw:g} l={cl:g}"] + ref + [".ends"]
+    csv = ["seat,id,l_um,pin"] + [f"{k},stack{k},{st['l']},{st['pin']}" for k, st in enumerate(table["stacks"])]
+    return name, "\n".join(head + t.l + tail) + "\n", "\n".join(ref) + "\n", "\n".join(csv) + "\n"
+
+
 if __name__ == "__main__":
     a = sys.argv[1:]; pd = 0.0
     if "--pitch-delta" in a: i = a.index("--pitch-delta"); pd = -abs(float(a[i + 1])); del a[i:i + 2]
     table = json.load(open(a[0])); out = a[1]; os.makedirs(out, exist_ok=True)
-    name, tcl, ref, csv = {"njunction": build_junction, "pjunction": build_wjunction, "fgate": build_fgate}.get(table.get("kind"), build)(table, pd)
+    name, tcl, ref, csv = {"njunction": build_junction, "pjunction": build_wjunction, "fgate": build_fgate, "reader2": build_reader2}.get(table.get("kind"), build)(table, pd)
     for suf, txt in ((".tcl", tcl), ("_ref.spice", ref), ("_seats.csv", csv)): open(os.path.join(out, name + suf), "w").write(txt)
     print(f"ok {name}: {csv.count(chr(10)) - 1} seats -> {out}")

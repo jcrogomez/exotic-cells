@@ -97,6 +97,8 @@ This page is the single to-do list. What goes on the first tile and its tests, i
 
 ## Done (most recent first)
 
+- 2026-11-26 · MISFIT-22: reader 2's analog front end drawn by the generator (node capacitor and two precharges):
+  rule-clean, LVS match, 71 µm², 2.4 fF of wiring on the node ([report](../experiments/misfit22/RESULTADOS.md)).
 - 2026-11-26 · MISFIT-21: XC-14's seat redrawn with a grounded shield and two coupling lines: node-to-gate coupling down
   7.7 times, three gate steps ([report](../experiments/misfit21/RESULTADOS.md)).
 - 2026-11-26 · MISFIT-20: XC-14's floating-gate seat with its antenna plate drawn by the generator, rule-clean with LVS;
