@@ -1,0 +1,15 @@
+# MISFIT-11 etapa 1 · analiza_m11.py · matrices generadas por generator/matrix.py
+M1: dispositivo  generado w=0.42 l=0.15 ad=0.126 as=0.126 pd=1.44 ps=1.44 | lector w=0.42 l=0.15 ad=0.126 as=0.126 pd=1.44 ps=1.44
+    interruptor  generado w=0.84 l=0.15 ad=0.252 as=0.252 pd=2.28 ps=2.28 | lector w=0.84 l=0.15 ad=0.252 as=0.252 pd=2.28 ps=2.28
+M1 (mismos W, L, areas y perimetros que el lector): cumplida
+u1: 1 puestos | Magic drc(full) 0 | KLayout mr 0, completo 0 | LVS: Circuits match uniquely. | caja 2.130 x 4.290 um = 9.1 um2, 9.14 um2 por puesto -> ok
+u16: 16 puestos | Magic drc(full) 0 | KLayout mr 0, completo 0 | LVS: Circuits match uniquely. | caja 18.120 x 4.290 um = 77.7 um2, 4.86 um2 por puesto -> ok
+u64: 64 puestos | Magic drc(full) 0 | KLayout mr 0, completo 0 | LVS: Circuits match uniquely. | caja 71.220 x 4.290 um = 305.5 um2, 4.77 um2 por puesto -> ok
+lod12: 12 puestos | Magic drc(full) 0 | KLayout mr 0, completo 0 | LVS: Circuits match uniquely. | caja 57.600 x 4.290 um = 247.1 um2, 20.59 um2 por puesto -> ok
+M2 (u16, u64 y lod12 limpias y con LVS match, sin editar a mano): cumplida
+M3 mutante W = 0,50 en un puesto: 'Top level cell failed pin matching.' -> detectado
+M3 mutante con un puesto de menos: 'Netlists do not match.' -> detectado
+M3: cumplida
+M4 (testigo: paso 0,10 um menor): Magic da 1 error(es): Diffusion spacing < 0.27um (diff/tap.3) -> cumplida
+M5 (area por puesto en u64 entre 4 y 7 um2): 4.77 um2 -> cumplida
+Benchmark: valido

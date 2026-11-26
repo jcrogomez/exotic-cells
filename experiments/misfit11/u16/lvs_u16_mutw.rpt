@@ -1,0 +1,59 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: u16                             |Circuit 2: u16                             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (32)               |sky130_fd_pr__nfet_01v8 (32)               
+Number of devices: 32                      |Number of devices: 32                      
+Number of nets: 35                         |Number of nets: 35                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with property errors.
+sky130_fd_pr__nfet_01v8:1 vs. sky130_fd_pr__nfet_01v8:D5:
+ w circuit1: 0.42   circuit2: 0.5   (delta=17.4%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: u16                             |Circuit 2: u16                             
+-------------------------------------------|-------------------------------------------
+X                                          |X                                          
+VB                                         |VB                                         
+SEL13                                      |SEL5 **Mismatch**                          
+SEL8                                       |SEL8                                       
+SEL1                                       |SEL1                                       
+SEL6                                       |SEL6                                       
+SEL15                                      |SEL15                                      
+SEL12                                      |SEL12                                      
+SEL4                                       |SEL4                                       
+SEL10                                      |SEL10                                      
+SEL2                                       |SEL2                                       
+SEL0                                       |SEL0                                       
+SEL7                                       |SEL7                                       
+SEL14                                      |SEL14                                      
+SEL11                                      |SEL11                                      
+SEL3                                       |SEL3                                       
+SEL5                                       |SEL13 **Mismatch**                         
+SEL9                                       |SEL9                                       
+GND                                        |GND                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for u16 and u16 altered to match.
+Device classes u16 and u16 are equivalent.
+
+Final result: Top level cell failed pin matching.
+
+The following cells had property errors:
+ u16

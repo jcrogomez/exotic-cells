@@ -1,0 +1,55 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: u16                             |Circuit 2: u16                             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (32)               |sky130_fd_pr__nfet_01v8 (32)               
+Number of devices: 32                      |Number of devices: 32                      
+Number of nets: 35                         |Number of nets: 35                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: u16                             |Circuit 2: u16                             
+-------------------------------------------|-------------------------------------------
+SEL10                                      |SEL10                                      
+SEL8                                       |SEL8                                       
+SEL14                                      |SEL14                                      
+SEL2                                       |SEL2                                       
+SEL1                                       |SEL1                                       
+SEL6                                       |SEL6                                       
+SEL15                                      |SEL15                                      
+SEL9                                       |SEL9                                       
+SEL13                                      |SEL13                                      
+SEL12                                      |SEL12                                      
+SEL0                                       |SEL0                                       
+SEL5                                       |SEL5                                       
+SEL11                                      |SEL11                                      
+SEL4                                       |SEL4                                       
+SEL3                                       |SEL3                                       
+SEL7                                       |SEL7                                       
+GND                                        |GND                                        
+X                                          |X                                          
+VB                                         |VB                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes u16 and u16 are equivalent.
+
+Final result: Circuits match uniquely.
+.

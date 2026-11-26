@@ -27,6 +27,7 @@ it tells us something about how SKY130 is really made that is not written down a
 | Every headline number and the file that produces it | [Claims](docs/CLAIMS.md) |
 | The chip | [MISFIT proposal](docs/PROPOSAL.md) |
 | What goes on the first tile, the area budget and every test before tapeout | [MISFIT build plan](docs/MISFIT_PLAN.md) |
+| Generate a matrix of devices from a table, with its checks | [`generator/`](generator/README.md) |
 | What has been simulated and checked on each block of the chip, what is missing, and what only silicon can tell (Spanish) | [Tests by block](experiments/misfit_arquitectura/PRUEBAS_POR_BLOQUE.md) |
 | The short version, as I'd explain it on Discord | [For Tiny Tapeout folks](docs/FOR_TINY_TAPEOUT.md) |
 | Terms like LOD, RTN, kT/C or Barber-Agakov | [Glossary](docs/GLOSSARY.md) |

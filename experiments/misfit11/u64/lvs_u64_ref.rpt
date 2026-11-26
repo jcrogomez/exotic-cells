@@ -1,0 +1,103 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: u64                             |Circuit 2: u64                             
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (128)              |sky130_fd_pr__nfet_01v8 (128)              
+Number of devices: 128                     |Number of devices: 128                     
+Number of nets: 131                        |Number of nets: 131                        
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: u64                             |Circuit 2: u64                             
+-------------------------------------------|-------------------------------------------
+SEL40                                      |SEL40                                      
+SEL51                                      |SEL51                                      
+SEL43                                      |SEL43                                      
+SEL53                                      |SEL53                                      
+SEL20                                      |SEL20                                      
+SEL1                                       |SEL1                                       
+SEL8                                       |SEL8                                       
+SEL62                                      |SEL62                                      
+SEL31                                      |SEL31                                      
+SEL6                                       |SEL6                                       
+SEL17                                      |SEL17                                      
+SEL46                                      |SEL46                                      
+SEL57                                      |SEL57                                      
+SEL15                                      |SEL15                                      
+SEL32                                      |SEL32                                      
+SEL35                                      |SEL35                                      
+SEL12                                      |SEL12                                      
+SEL49                                      |SEL49                                      
+SEL63                                      |SEL63                                      
+SEL41                                      |SEL41                                      
+SEL18                                      |SEL18                                      
+SEL60                                      |SEL60                                      
+SEL27                                      |SEL27                                      
+SEL48                                      |SEL48                                      
+SEL29                                      |SEL29                                      
+SEL4                                       |SEL4                                       
+SEL36                                      |SEL36                                      
+SEL38                                      |SEL38                                      
+SEL26                                      |SEL26                                      
+SEL55                                      |SEL55                                      
+SEL33                                      |SEL33                                      
+SEL10                                      |SEL10                                      
+SEL52                                      |SEL52                                      
+SEL44                                      |SEL44                                      
+SEL19                                      |SEL19                                      
+SEL21                                      |SEL21                                      
+SEL0                                       |SEL0                                       
+SEL2                                       |SEL2                                       
+SEL30                                      |SEL30                                      
+SEL7                                       |SEL7                                       
+SEL58                                      |SEL58                                      
+SEL47                                      |SEL47                                      
+SEL14                                      |SEL14                                      
+SEL24                                      |SEL24                                      
+SEL11                                      |SEL11                                      
+SEL13                                      |SEL13                                      
+SEL50                                      |SEL50                                      
+SEL42                                      |SEL42                                      
+SEL22                                      |SEL22                                      
+SEL59                                      |SEL59                                      
+SEL3                                       |SEL3                                       
+SEL61                                      |SEL61                                      
+SEL28                                      |SEL28                                      
+SEL5                                       |SEL5                                       
+SEL16                                      |SEL16                                      
+SEL45                                      |SEL45                                      
+SEL56                                      |SEL56                                      
+SEL37                                      |SEL37                                      
+SEL39                                      |SEL39                                      
+SEL25                                      |SEL25                                      
+SEL54                                      |SEL54                                      
+SEL34                                      |SEL34                                      
+SEL9                                       |SEL9                                       
+SEL23                                      |SEL23                                      
+GND                                        |GND                                        
+X                                          |X                                          
+VB                                         |VB                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes u64 and u64 are equivalent.
+
+Final result: Circuits match uniquely.
+.

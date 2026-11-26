@@ -1,0 +1,38 @@
+# MISFIT-11 etapa 2 · analiza_w.py · lector pequeno v_f3 con la matriz extraida (cableado incluido). Tiempos desde T0 = 1 us
+# referencia sin cableado (noche 1125, bloque D): +0,230 a +0,253 % por rama
+
+tt 27: control n1 frente al h01 de v_f3: A +0.0000 %, B +0.0000 % -> ok | testigo 1 fF: +0.6716 % -> ok
+  tA (us): lector solo 30.8832 | 16 puestos: puesto 0 32.6756, puesto 15 32.6758 | 64 puestos: puesto 0 37.9912, puesto 63 37.9915
+  W1, % por puesto: N=16 +0.3628, N=64 +0.3596
+  W2, tA(64 puestos)/tA(lector solo) = 1.2302
+  W3, salto de una carga: lector solo -0.8089 %, 16 puestos -0.8073 % (-0.19 % rel.), 64 puestos -0.8031 % (-0.71 % rel.)
+  W4, puesto 0 frente al ultimo: N=64 -0.0008 %, N=16 -0.0006 % | lado B igual: N=64 -0.0005 %
+
+ff -40: control n1 frente al h01 de v_f3: A +0.0000 %, B +0.0000 % -> ok | testigo 1 fF: +0.6454 % -> ok
+  tA (us): lector solo 46.8984 | 16 puestos: puesto 0 49.4681, puesto 15 49.4684 | 64 puestos: puesto 0 57.0876, puesto 63 57.0879
+  W1, % por puesto: N=16 +0.3425, N=64 +0.3395
+  W2, tA(64 puestos)/tA(lector solo) = 1.2173
+  W3, salto de una carga: lector solo -1.0032 %, 16 puestos -1.0004 % (-0.28 % rel.), 64 puestos -0.9939 % (-0.93 % rel.)
+  W4, puesto 0 frente al ultimo: N=64 -0.0005 %, N=16 -0.0006 % | lado B igual: N=64 -0.0004 %
+
+ss 85: control n1 frente al h01 de v_f3: A +0.0000 %, B +0.0000 % -> ok | testigo 1 fF: +0.6968 % -> ok
+  tA (us): lector solo 31.1124 | 16 puestos: puesto 0 32.8705, puesto 15 32.8720 | 64 puestos: puesto 0 37.9909, puesto 63 37.9926
+  W1, % por puesto: N=16 +0.3535, N=64 +0.3455
+  W2, tA(64 puestos)/tA(lector solo) = 1.2211
+  W3, salto de una carga: lector solo -0.6849 %, 16 puestos -0.6809 % (-0.60 % rel.), 64 puestos -0.6688 % (-2.35 % rel.)
+  W4, puesto 0 frente al ultimo: N=64 -0.0045 %, N=16 -0.0046 % | lado B igual: N=64 -0.0045 %
+
+ff 85: control n1 frente al h01 de v_f3: A +0.0000 %, B +0.0000 % -> ok | testigo 1 fF: +0.6462 % -> ok
+  tA (us): lector solo 2.4901 | 16 puestos: puesto 0 2.6247, puesto 15 2.6247 | 64 puestos: puesto 0 3.0226, puesto 63 3.0227
+  W1, % por puesto: N=16 +0.3379, N=64 +0.3342
+  W2, tA(64 puestos)/tA(lector solo) = 1.2139
+  W3, salto de una carga: lector solo -0.6337 %, 16 puestos -0.6321 % (-0.26 % rel.), 64 puestos -0.6266 % (-1.12 % rel.)
+  W4, puesto 0 frente al ultimo: N=64 -0.0013 %, N=16 -0.0011 % | lado B igual: N=64 -0.0017 %
+
+## Veredictos
+W1 (+0,26 a +0,40 % por puesto): cumplida
+W2 (64 puestos <= 1,5 veces): cumplida
+W3 (salto cambia <= 5 % rel. con 64): cumplida
+W4 (puesto 0 y 63 dentro de 0,05 %): cumplida
+Benchmark: valido
+DECIDE: 64 puestos por lector confirmado con cableado

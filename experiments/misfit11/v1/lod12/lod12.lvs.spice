@@ -1,0 +1,29 @@
+* NGSPICE file created from lod12.ext - technology: sky130A
+
+.subckt lod12 SEL0 SEL1 SEL2 SEL3 SEL4 SEL5 SEL6 SEL7 SEL8 SEL9 SEL10 SEL11 X VB GND
+X0 X VB a_342_n392# GND sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.15
+X1 X VB a_8538_n392# GND sky130_fd_pr__nfet_01v8 ad=2.52 pd=12.84 as=2.52 ps=12.84 w=0.42 l=0.15
+X2 X VB a_546_n392# GND sky130_fd_pr__nfet_01v8 ad=0.189 pd=1.74 as=0.189 ps=1.74 w=0.42 l=0.15
+X3 X VB a_1212_n392# GND sky130_fd_pr__nfet_01v8 ad=0.315 pd=2.34 as=0.315 ps=2.34 w=0.42 l=0.15
+X4 X VB a_1980_n392# GND sky130_fd_pr__nfet_01v8 ad=0.63 pd=3.84 as=0.63 ps=3.84 w=0.42 l=0.15
+X5 GND SEL3 a_810_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X6 GND SEL11 a_8538_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X7 X VB a_2664_n392# GND sky130_fd_pr__nfet_01v8 ad=0.63 pd=3.84 as=0.63 ps=3.84 w=0.42 l=0.15
+X8 X VB a_138_n392# GND sky130_fd_pr__nfet_01v8 ad=0.126 pd=1.44 as=0.126 ps=1.44 w=0.42 l=0.15
+X9 GND SEL0 a_138_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X10 GND SEL2 a_546_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X11 GND SEL5 a_1596_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X12 GND SEL7 a_2664_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X13 X VB a_3486_n392# GND sky130_fd_pr__nfet_01v8 ad=1.26 pd=6.84 as=1.26 ps=6.84 w=0.42 l=0.15
+X14 X VB a_810_n392# GND sky130_fd_pr__nfet_01v8 ad=0.189 pd=1.74 as=0.189 ps=1.74 w=0.42 l=0.15
+X15 GND SEL6 a_1980_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X16 X VB a_1596_n392# GND sky130_fd_pr__nfet_01v8 ad=0.315 pd=2.34 as=0.315 ps=2.34 w=0.42 l=0.15
+X17 X VB a_4770_n392# GND sky130_fd_pr__nfet_01v8 ad=1.26 pd=6.84 as=1.26 ps=6.84 w=0.42 l=0.15
+X18 GND SEL8 a_3486_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X19 GND SEL9 a_4770_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X20 GND SEL4 a_1212_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X21 X VB a_6054_n392# GND sky130_fd_pr__nfet_01v8 ad=2.52 pd=12.84 as=2.52 ps=12.84 w=0.42 l=0.15
+X22 GND SEL1 a_342_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+X23 GND SEL10 a_6054_n392# GND sky130_fd_pr__nfet_01v8 ad=0.252 pd=2.28 as=0.252 ps=2.28 w=0.84 l=0.15
+.ends
+

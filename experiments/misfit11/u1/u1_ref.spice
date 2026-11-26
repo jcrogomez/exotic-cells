@@ -1,0 +1,5 @@
+* Reference for LVS, generated from table 'u1'. Do not edit by hand.
+.subckt u1 X VB GND SEL0
+XD0 X VB s0 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS0 s0 SEL0 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+.ends

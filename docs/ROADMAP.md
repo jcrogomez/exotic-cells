@@ -97,6 +97,9 @@ This page is the single to-do list. What goes on the first tile and its tests, i
 
 ## Done (most recent first)
 
+- 2026-11-26 · MISFIT-11: a seat-matrix generator ([`generator/`](../generator/README.md)). A table of transistors gives a
+  layout, an LVS reference and a seat list; four tables rule-clean with LVS match, 4.77 µm² per minimum seat, and the small
+  reader reads an extracted 64-seat matrix inside its cuts in four corners ([report](../experiments/misfit11/RESULTADOS.md)).
 - 2026-11-26 · Night plan of 2026-11-25, 159 SPICE decks with criteria sealed before the run: a small reader stays inside
   its cuts with up to 128 identical branches (no wiring; the plan uses 64); under mismatch (48 chips) and shot noise it
   reads like the large one; the wide-range reader with a single precharge is dead and gets two ranges

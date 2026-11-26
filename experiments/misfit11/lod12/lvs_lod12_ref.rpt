@@ -1,0 +1,51 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: lod12                           |Circuit 2: lod12                           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (24)               |sky130_fd_pr__nfet_01v8 (24)               
+Number of devices: 24                      |Number of devices: 24                      
+Number of nets: 27                         |Number of nets: 27                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: lod12                           |Circuit 2: lod12                           
+-------------------------------------------|-------------------------------------------
+X                                          |X                                          
+VB                                         |VB                                         
+SEL1                                       |SEL1                                       
+SEL4                                       |SEL4                                       
+SEL8                                       |SEL8                                       
+SEL6                                       |SEL6                                       
+SEL9                                       |SEL9                                       
+SEL7                                       |SEL7                                       
+SEL5                                       |SEL5                                       
+SEL11                                      |SEL11                                      
+SEL2                                       |SEL2                                       
+SEL0                                       |SEL0                                       
+SEL3                                       |SEL3                                       
+SEL10                                      |SEL10                                      
+GND                                        |GND                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes lod12 and lod12 are equivalent.
+
+Final result: Circuits match uniquely.
+.

@@ -10,9 +10,8 @@ does is in the [ranking](RANKING.md); every headline number and its file is in [
 ## The plan in six lines
 
 1. **Two readers, up to 64 seats each.** One reader for picoamp currents (exists, drawn), one wide-range reader (schematic
-   only, now in two ranges). In SPICE without wiring a reader stays inside its three cuts up to 128 identical devices; the
-   plan uses **64** until the wiring is extracted ([night of 2026-11-25](../experiments/noche_1125/RESULTADOS.md), block D). Silicon area, not the reader, is what
-   limits the seat count.
+   only, now in two ranges). A generated, extracted matrix of 64 identical devices read by the small reader stays inside the cuts
+   in four corners ([MISFIT-11](../experiments/misfit11/RESULTADOS.md)). Silicon area, not the reader, is what limits the seat count.
 2. **Fill the seats with the exotic cells, not only with metrology.** Single traps, a tunnel junction, plasma-written gates,
    an unimplanted contact, next to the metrology that guarantees data.
 3. **Find area in three dimensions:** above the digital core (metal-only structures), inside its filler space (row-shaped
@@ -97,7 +96,8 @@ The target is one tile (1×1), decided 2026-11-25. Two floors: silicon in the st
 | One small reader (drawn, `v_f3`) | 1 204 (58.2 × 20.7 µm) | [MISFIT-09](../experiments/misfit09/RESULTADOS.md) |
 | Strip left after two readers | 1 533 | arithmetic; nothing is placed |
 | **Second floor:** metal 4 above the core | **11 856**, raw (80 µm high, five lanes between power stripes) | [MISFIT-06](../experiments/misfit06/RESULTADOS.md) |
-| Area of one device seat (device, switch, wiring) | `[?]` | no matrix is drawn; test R6 (wiring part) |
+| Area of one device seat (device, switch, buses, taps) | **4.77** for a minimum transistor, 20.6 for the long-diffusion table | generated and checked, [MISFIT-11](../experiments/misfit11/RESULTADOS.md); select lines beyond the matrix edge not included |
+| One 64-seat matrix, one side | 305 (71.2 × 4.29 µm) | same |
 | Wide-range reader | `[?]` | schematic only, two precharges; test R2 |
 
 **What this says, plainly.** Silicon is the scarce floor: after two readers, about 1 500 µm² are left for every matrix and for
@@ -244,6 +244,7 @@ is the sketch, not the frozen criterion.
 | MISFIT-07 | Does the reader need its 10 pF bias filter (85 % of its area)? | No, as far as the reading goes: with the filter removed, the trap step changes by at most 0.08 % relative and the reading by 0.011 %, even when one side takes 3–5 times longer than the other. First run invalid (badly designed witness), redone. No noise, one reader per bias | [`misfit07`](../experiments/misfit07/RESULTADOS.md) |
 | MISFIT-08 | Can the core lose its shared 24-bit timer? | Yes: 13 of 13 cocotb tests, 0 mismatches against the original in 5 × 2 000 000 random cycles (a one-count mutant is caught), 24 fewer flip-flops, **cell area −9.0 %** after place and route; one flow run per variant | [`misfit08`](../experiments/misfit08/RESULTADOS.md) |
 | MISFIT-09 | Does a reader drawn with one filter row instead of eleven fit a single tile and read the same? | Yes: 58.2 × 20.7 µm (1 204 µm², was 5 570), DRC 0 in Magic and both KLayout decks, LVS match; against the full reader in four corners the reading moves ≤ 0.053 % and the trap step ≤ 0.14 % relative. Bias capacitance 0.96 pF (was 10.16) | [`misfit09`](../experiments/misfit09/RESULTADOS.md) |
+| MISFIT-11 | Can a seat matrix be generated from a table, and does the reader still read through its real wiring? | Yes for 1.8 V transistors: four tables (1, 16, 64 equal seats; 12 seats with diffusion from 0.30 to 6 µm) come out rule-clean in Magic and both KLayout decks with LVS match, no hand edits; the generated seat extracts identical to the reader's. First pass failed a latch-up rule on the long-diffusion table; the generator now places taps by distance. With the extracted 64-seat matrix on each side: +0.33 to +0.36 % of reading time per seat, 1.21–1.23 times in total, trap step −2.35 % at worst, seat position irrelevant (0.005 %) | [`misfit11`](../experiments/misfit11/RESULTADOS.md) |
 | Night plan, 2026-11-25 | Four questions on the small reader and on reader 2, 159 SPICE decks, criteria sealed before the run | **Seats:** inside the cuts up to 128 branches without wiring; one of five predictions false (the step shrinks 4.3 % at 128 in the hot slow corner, predicted < 2 %). **Mismatch,** 48 chips: trap step median 0.805 % (the large reader gave 0.803 %), spread between twins 1.11 against 1.20; one chip of 48 falls 1.6 % under the bet band for the calibration step. **Shot noise** with independent seeds: 0.157 % per reading, all four predictions met. **Reader 2:** no single precharge length keeps 1 nA–10 µA within ±3 % in four corners; the pre-registered death rule applies | [`noche_1125`](../experiments/noche_1125/RESULTADOS.md) |
 
 ### B · finding area (first, because they size everything else)
@@ -263,7 +264,7 @@ is the sketch, not the frozen criterion.
 | **R3** two front ends on one bias filter | Does reader 1b disturb reader 1a through the shared bias? | kickback above the trap step's noise floor | SPICE on extracted macros |
 | **R4** unequal devices on one reader | With real LOD and XC-62 pairs (not 16 identical branches) and extracted wiring, how biased is a ratio? | bias above the effect being measured | layout + extraction |
 | **R5** noise on the extracted macro | Trap step against 1/f and thermal noise with real capacitances ([RISKS](../instrument/RISKS.md) row 10) | step under 5σ after averaging | SPICE noise |
-| **R6** how many seats a reader really holds | Half done ([night of 2026-11-25](../experiments/noche_1125/RESULTADOS.md), block D): 32, 64 and 128 identical branches, flat, **no wiring**, pass the three cuts in four corners; at 128 two cuts sit at 85–91 % of their limit, so the plan uses 64. **Left:** the same with extracted wiring and with two-level selection | with wiring, 64 seats break a cut: the trap step changes by more than 5 %, or open branches leak more than 5 % of the device current | layout of one matrix + SPICE, method of MISFIT-05 |
+| **R6** how many seats a reader really holds | Half done ([night of 2026-11-25](../experiments/noche_1125/RESULTADOS.md), block D): 32, 64 and 128 identical branches, flat, **no wiring**, pass the three cuts in four corners; at 128 two cuts sit at 85–91 % of their limit, so the plan uses 64. **With extracted wiring** ([MISFIT-11](../experiments/misfit11/RESULTADOS.md)): 64 seats confirmed, all four predictions met. **Left:** the select lines to the core and their decoder, two-level selection, unequal devices (R4) | the selection wiring or the decoder break a cut | layout + SPICE |
 
 ### C · cells
 
@@ -282,8 +283,8 @@ is the sketch, not the frozen criterion.
 
 | Test | Question | Dies if |
 |---|---|---|
-| **G1** regenerate | Does the generator rebuild today's reader 1a matrix from a table, with identical DRC/LVS results? | hand edits are needed |
-| **G2** a second table | Does a different table (the XC-20 separation matrix) come out DRC/LVS/precheck clean with no hand edits? | each family needs its own generator |
+| ~~**G1** regenerate~~ | Done ([MISFIT-11](../experiments/misfit11/RESULTADOS.md)): the reader has one device per side, not a matrix; the generated seat extracts identical to it, and matrices of 16 and 64 come out clean with LVS match. [`generator/`](../generator/README.md) | — |
+| **G2** a second table | Half done ([MISFIT-11](../experiments/misfit11/RESULTADOS.md)): a second transistor table (XC-12, diffusion 0.30–6 µm) comes out clean after one generator fix. **Left:** a second device *kind*, the XC-20 junction in its four variants, and the precheck on a tile | each family needs its own generator |
 | **G3** rule walk | Three island hunts done ([report](../experiments/xc64_hunt/RESULTADOS.md)): with two-layer rectangles Magic leaves no legal island beyond the XC-20 family, which has four members (two polarities, low and high voltage); nothing past a rule passes the precheck. A fourth hunt over shapes (step, hole, bend, ring) found none legal: one rule, poly.11 "no bends in transistors", closes them all. Next: legal shapes that print differently at the rule value, and asking Tiny Tapeout whether a declared Magic violation can be accepted in a macro | a hunt over shapes also finds nothing submittable *and* no legal-side ladder has a readable quantity |
 | **G4** stress in place | Stressing one seat moves its neighbours' readings by less than the trap step (supply transfer is 1.27 % per mA) | neighbours move more than that |
 | **G5** host program | Run against the RTL simulation, it produces valid atlas records for every seat and flags an injected fault | records cannot be produced from the pins alone |
@@ -323,7 +324,7 @@ each one is stated. Record: `agent/brain/decisions/2026-11-25-misfit-primer-tile
 | 4 | **The fuse goes on the first tile**, in its own zone with its own enable, blown last | an open one-time fuse is among the most useful things this tile could return; the risk is contained by test T1 and killed by C8 | C8 shows the blow disturbs neighbours past recovery |
 | 5 | **MISFIT-04 sweep:** phase 10 rerun once with two controls; phases 1 and 6 count (same settings as the valid decks, per-deck control passed); the 0.5 ns step and the per-deck control are recorded as an amendment written after the fact and labelled as such | cheapest way to close it without touching a verdict | **happened:** the rerun aborted after 2 minutes; phase 10 stays missing ([amendment 4](../cells/preregistros/MISFIT-04_2026-11-25_tile_integrado_enmienda4.md)) |
 | 6 | **The rule walk, the generator and the time axis enter the plan** | they are what turns a set of cells into a map | their tests G1–G5 |
-| 7 | **64 seats per reader, not 128** (2026-11-26) | the written rule allows 128, but that run has no wiring and two cuts at 85–91 % of their limit; at 64 they are under half ([report](../experiments/noche_1125/RESULTADOS.md)) | a run with extracted wiring leaves 128 with margin, or breaks 64 |
+| 7 | **64 seats per reader, not 128** (2026-11-26) | the written rule allows 128, but that run has no wiring and two cuts at 85–91 % of their limit; at 64 they are under half ([report](../experiments/noche_1125/RESULTADOS.md)) | a run with extracted wiring leaves 128 with margin, or breaks 64. **Checked 2026-11-26:** 64 holds with extracted wiring ([MISFIT-11](../experiments/misfit11/RESULTADOS.md)); 128 not run |
 | 8 | **Reader 2 has two ranges with two precharges** (2026-11-26) | not a choice: the pre-registered death rule of the night plan, block A | — |
 
 **Still Juan's, because it is money:** how many chips to order. The plan leans on within-die matrices and on other owners'

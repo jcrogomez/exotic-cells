@@ -1,0 +1,35 @@
+* Reference for LVS, generated from table 'u16'. Do not edit by hand.
+.subckt u16 X VB GND SEL0 SEL1 SEL2 SEL3 SEL4 SEL5 SEL6 SEL7 SEL8 SEL9 SEL10 SEL11 SEL12 SEL13 SEL14 SEL15
+XD0 X VB s0 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS0 s0 SEL0 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD1 X VB s1 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS1 s1 SEL1 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD2 X VB s2 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS2 s2 SEL2 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD3 X VB s3 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS3 s3 SEL3 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD4 X VB s4 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS4 s4 SEL4 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD5 X VB s5 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS5 s5 SEL5 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD6 X VB s6 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS6 s6 SEL6 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD7 X VB s7 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS7 s7 SEL7 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD8 X VB s8 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS8 s8 SEL8 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD9 X VB s9 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS9 s9 SEL9 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD10 X VB s10 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS10 s10 SEL10 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD11 X VB s11 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS11 s11 SEL11 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD12 X VB s12 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS12 s12 SEL12 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD13 X VB s13 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS13 s13 SEL13 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD14 X VB s14 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS14 s14 SEL14 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+XD15 X VB s15 GND sky130_fd_pr__nfet_01v8 w=0.42 l=0.15
+XS15 s15 SEL15 GND GND sky130_fd_pr__nfet_01v8 w=0.84 l=0.15
+.ends

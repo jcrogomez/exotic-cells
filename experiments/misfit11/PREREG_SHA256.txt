@@ -1,2 +1,5 @@
 d23babf032a80198c0b5a1f27437bc5bd87ddb4d6b59339af4f3c353d55bf6e7  cells/preregistros/MISFIT-11_2026-11-26_matriz_generada.md
 # sellado 2026-11-26 08:26:38 EST, antes de escribir el generador
+0cb878d1e97eded43777428aa1daf22f202cd49011613f96dba0bd91424a2d70  analiza_w.py
+0c0586f307ca97fe15f995cbdacb0e45a6ad8af64b8bc0dfeb00d89a238140fe  gen_w.py
+# etapa 2: generador de decks y analisis escritos antes de correr, 2026-11-26 08:31:26 EST
