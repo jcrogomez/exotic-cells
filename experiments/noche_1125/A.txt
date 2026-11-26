@@ -1,0 +1,172 @@
+# Noche 1125, bloque A · analiza_A.py · lector 2 con precarga de canal largo · decks leidos: 144 de 144
+# T = (flanco 12 - flanco 2)/10; modelo T = Q/(I - IL) + td ajustado en 316 pA, 31,6 nA y 3,16 uA
+
+## L = 0.50 um · tt 27
+  ajuste: Q = 98.84 fC, IL = +0.06 pA, td = 1.09 ns
+  I = 1.0e-10 A: T = 9.8815e-04 s, f = 1012 Hz, error del modelo -0.09 %
+  I = 1.0e-09 A: T = 9.8854e-05 s, f = 1.012e+04 Hz, error del modelo +0.01 %
+  I = 1.0e-08 A: T = 9.8847e-06 s, f = 1.012e+05 Hz, error del modelo -0.00 %
+  I = 1.0e-07 A: T = 9.9007e-07 s, f = 1.01e+06 Hz, error del modelo +0.06 %
+  I = 1.0e-06 A: T = 1.0004e-07 s, f = 9.996e+06 Hz, error del modelo +0.11 %
+  I = 1.0e-05 A: T = 1.0713e-08 s, f = 9.334e+07 Hz, error del modelo -2.37 %
+  testigo +1 % en 1e-08 A: periodo -1.113 %
+  testigo +1 % en 1e-06 A: periodo -0.828 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## L = 0.50 um · ff -40
+  ajuste: Q = 99.57 fC, IL = +0.08 pA, td = 0.51 ns
+  I = 1.0e-10 A: T = 9.9560e-04 s, f = 1004 Hz, error del modelo -0.09 %
+  I = 1.0e-09 A: T = 9.9470e-05 s, f = 1.005e+04 Hz, error del modelo -0.11 %
+  I = 1.0e-08 A: T = 1.0002e-05 s, f = 9.998e+04 Hz, error del modelo +0.44 %
+  I = 1.0e-07 A: T = 9.9602e-07 s, f = 1.004e+06 Hz, error del modelo -0.02 %
+  I = 1.0e-06 A: T = 1.0030e-07 s, f = 9.97e+06 Hz, error del modelo +0.22 %
+  I = 1.0e-05 A: T = 1.0310e-08 s, f = 9.699e+07 Hz, error del modelo -1.49 %
+  testigo +1 % en 1e-08 A: periodo -1.520 %
+  testigo +1 % en 1e-06 A: periodo -0.853 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## L = 0.50 um · ss 85
+  ajuste: Q = 98.73 fC, IL = -0.25 pA, td = 2.19 ns
+  I = 1.0e-10 A: T = 9.8735e-04 s, f = 1013 Hz, error del modelo +0.26 %
+  I = 1.0e-09 A: T = 9.8671e-05 s, f = 1.013e+04 Hz, error del modelo -0.03 %
+  I = 1.0e-08 A: T = 9.8792e-06 s, f = 1.012e+05 Hz, error del modelo +0.05 %
+  I = 1.0e-07 A: T = 9.9104e-07 s, f = 1.009e+06 Hz, error del modelo +0.16 %
+  I = 1.0e-06 A: T = 1.0129e-07 s, f = 9.872e+06 Hz, error del modelo +0.38 %
+  I = 1.0e-05 A: T = 1.1508e-08 s, f = 8.69e+07 Hz, error del modelo -4.58 %
+  testigo +1 % en 1e-08 A: periodo -0.998 %
+  testigo +1 % en 1e-06 A: periodo -0.984 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## L = 0.50 um · ff 85
+  ajuste: Q = 105.86 fC, IL = -0.21 pA, td = 0.89 ns
+  I = 1.0e-10 A: T = 1.0584e-03 s, f = 944.8 Hz, error del modelo +0.19 %
+  I = 1.0e-09 A: T = 1.0909e-04 s, f = 9167 Hz, error del modelo +3.07 %
+  I = 1.0e-08 A: T = 1.0580e-05 s, f = 9.451e+04 Hz, error del modelo -0.06 %
+  I = 1.0e-07 A: T = 1.0587e-06 s, f = 9.445e+05 Hz, error del modelo -0.07 %
+  I = 1.0e-06 A: T = 1.0673e-07 s, f = 9.37e+06 Hz, error del modelo -0.02 %
+  I = 1.0e-05 A: T = 1.1390e-08 s, f = 8.78e+07 Hz, error del modelo -0.72 %
+  testigo +1 % en 1e-08 A: periodo -0.976 %
+  testigo +1 % en 1e-06 A: periodo -0.927 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## L = 1.00 um · tt 27
+  ajuste: Q = 49.69 fC, IL = -0.69 pA, td = 0.09 ns
+  I = 1.0e-10 A: T = 4.9491e-04 s, f = 2021 Hz, error del modelo +0.29 %
+  I = 1.0e-09 A: T = 4.9578e-05 s, f = 2.017e+04 Hz, error del modelo -0.16 %
+  I = 1.0e-08 A: T = 4.9702e-06 s, f = 2.012e+05 Hz, error del modelo +0.03 %
+  I = 1.0e-07 A: T = 4.9667e-07 s, f = 2.013e+06 Hz, error del modelo -0.06 %
+  I = 1.0e-06 A: T = 4.9876e-08 s, f = 2.005e+07 Hz, error del modelo +0.20 %
+  I = 1.0e-05 A: T = 6.1505e-09 s, f = 1.626e+08 Hz, error del modelo +21.60 %
+  testigo +1 % en 1e-08 A: periodo -1.046 %
+  testigo +1 % en 1e-06 A: periodo -0.896 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## L = 1.00 um · ff -40
+  ajuste: Q = 53.37 fC, IL = +0.60 pA, td = 0.02 ns
+  I = 1.0e-10 A: T = 5.3434e-04 s, f = 1871 Hz, error del modelo -0.49 %
+  I = 1.0e-09 A: T = 5.3536e-05 s, f = 1.868e+04 Hz, error del modelo +0.25 %
+  I = 1.0e-08 A: T = 5.3580e-06 s, f = 1.866e+05 Hz, error del modelo +0.38 %
+  I = 1.0e-07 A: T = 5.3462e-07 s, f = 1.87e+06 Hz, error del modelo +0.16 %
+  I = 1.0e-06 A: T = 5.3637e-08 s, f = 1.864e+07 Hz, error del modelo +0.45 %
+  I = 1.0e-05 A: T = 5.3537e-09 s, f = 1.868e+08 Hz, error del modelo -0.14 %
+  testigo +1 % en 1e-08 A: periodo -0.906 %
+  testigo +1 % en 1e-06 A: periodo -0.822 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## L = 1.00 um · ss 85
+  ajuste: Q = 57.26 fC, IL = -1.06 pA, td = 0.39 ns
+  I = 1.0e-10 A: T = 5.7100e-04 s, f = 1751 Hz, error del modelo +0.77 %
+  I = 1.0e-09 A: T = 5.7150e-05 s, f = 1.75e+04 Hz, error del modelo -0.09 %
+  I = 1.0e-08 A: T = 5.7083e-06 s, f = 1.752e+05 Hz, error del modelo -0.31 %
+  I = 1.0e-07 A: T = 5.7292e-07 s, f = 1.745e+06 Hz, error del modelo -0.01 %
+  I = 1.0e-06 A: T = 5.7825e-08 s, f = 1.729e+07 Hz, error del modelo +0.30 %
+  I = 1.0e-05 A: T = 8.8985e-09 s, f = 1.124e+08 Hz, error del modelo +45.53 %
+  testigo +1 % en 1e-08 A: periodo -1.029 %
+  testigo +1 % en 1e-06 A: periodo -1.018 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## L = 1.00 um · ff 85
+  ajuste: Q = 51.94 fC, IL = -0.59 pA, td = 0.18 ns
+  I = 1.0e-10 A: T = 5.1835e-04 s, f = 1929 Hz, error del modelo +0.38 %
+  I = 1.0e-09 A: T = 5.2360e-05 s, f = 1.91e+04 Hz, error del modelo +0.86 %
+  I = 1.0e-08 A: T = 5.1926e-06 s, f = 1.926e+05 Hz, error del modelo -0.03 %
+  I = 1.0e-07 A: T = 5.2023e-07 s, f = 1.922e+06 Hz, error del modelo +0.12 %
+  I = 1.0e-06 A: T = 5.2150e-08 s, f = 1.918e+07 Hz, error del modelo +0.05 %
+  I = 1.0e-05 A: T = 5.2954e-09 s, f = 1.888e+08 Hz, error del modelo -1.42 %
+  testigo +1 % en 1e-08 A: periodo -1.059 %
+  testigo +1 % en 1e-06 A: periodo -0.909 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## L = 2.00 um · tt 27
+  ajuste: Q = 18.23 fC, IL = -2.18 pA, td = 0.37 ns
+  I = 1.0e-10 A: T = 1.8097e-04 s, f = 5526 Hz, error del modelo +1.45 %
+  I = 1.0e-09 A: T = 1.8135e-05 s, f = 5.514e+04 Hz, error del modelo -0.30 %
+  I = 1.0e-08 A: T = 1.8205e-06 s, f = 5.493e+05 Hz, error del modelo -0.13 %
+  I = 1.0e-07 A: T = 1.8268e-07 s, f = 5.474e+06 Hz, error del modelo +0.01 %
+  I = 1.0e-06 A: T = 1.8419e-08 s, f = 5.429e+07 Hz, error del modelo -0.97 %
+  I = 1.0e-05 A: T = 6.1250e-09 s, f = 1.633e+08 Hz, error del modelo +179.25 %
+  testigo +1 % en 1e-08 A: periodo -1.138 %
+  testigo +1 % en 1e-06 A: periodo -1.240 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## L = 2.00 um · ff -40
+  ajuste: Q = 18.83 fC, IL = +0.03 pA, td = 0.05 ns
+  I = 1.0e-10 A: T = 1.8743e-04 s, f = 5335 Hz, error del modelo -0.48 %
+  I = 1.0e-09 A: T = 1.8773e-05 s, f = 5.327e+04 Hz, error del modelo -0.30 %
+  I = 1.0e-08 A: T = 1.8834e-06 s, f = 5.31e+05 Hz, error del modelo +0.02 %
+  I = 1.0e-07 A: T = 1.8884e-07 s, f = 5.296e+06 Hz, error del modelo +0.27 %
+  I = 1.0e-06 A: T = 1.8960e-08 s, f = 5.274e+07 Hz, error del modelo +0.44 %
+  I = 1.0e-05 A: T = 5.0425e-09 s, f = 1.983e+08 Hz, error del modelo +161.12 %
+  testigo +1 % en 1e-08 A: periodo -1.007 %
+  testigo +1 % en 1e-06 A: periodo -0.859 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## L = 2.00 um · ss 85
+  ajuste: Q = 23.91 fC, IL = -2.10 pA, td = 1.34 ns
+  I = 1.0e-10 A: T = 2.3658e-04 s, f = 4227 Hz, error del modelo +1.03 %
+  I = 1.0e-09 A: T = 2.3758e-05 s, f = 4.209e+04 Hz, error del modelo -0.42 %
+  I = 1.0e-08 A: T = 2.3849e-06 s, f = 4.193e+05 Hz, error del modelo -0.27 %
+  I = 1.0e-07 A: T = 2.4086e-07 s, f = 4.152e+06 Hz, error del modelo +0.19 %
+  I = 1.0e-06 A: T = 2.4501e-08 s, f = 4.081e+07 Hz, error del modelo -2.97 %
+  I = 1.0e-05 A: T = 8.9006e-09 s, f = 1.124e+08 Hz, error del modelo +138.35 %
+  testigo +1 % en 1e-08 A: periodo -0.884 %
+  testigo +1 % en 1e-06 A: periodo -1.036 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## L = 2.00 um · ff 85
+  ajuste: Q = 18.63 fC, IL = -5.72 pA, td = 0.36 ns
+  I = 1.0e-10 A: T = 1.8337e-04 s, f = 5454 Hz, error del modelo +4.04 %
+  I = 1.0e-09 A: T = 1.8364e-05 s, f = 5.445e+04 Hz, error del modelo -0.88 %
+  I = 1.0e-08 A: T = 1.8511e-06 s, f = 5.402e+05 Hz, error del modelo -0.61 %
+  I = 1.0e-07 A: T = 1.8799e-07 s, f = 5.319e+06 Hz, error del modelo +0.71 %
+  I = 1.0e-06 A: T = 1.9276e-08 s, f = 5.188e+07 Hz, error del modelo +1.48 %
+  I = 1.0e-05 A: T = 4.8988e-09 s, f = 2.041e+08 Hz, error del modelo +120.12 %
+  testigo +1 % en 1e-08 A: periodo -1.069 %
+  testigo +1 % en 1e-06 A: periodo -1.186 %
+  I = 0: ningun flanco en 20 ms; minimo del nodo 1.8 V
+
+## Tabla: error del modelo (%) por variante, esquina y corriente
+L 0.50 tt  27:   -0.09    +0.01    -0.00    +0.06    +0.11    -2.37
+L 0.50 ff -40:   -0.09    -0.11    +0.44    -0.02    +0.22    -1.49   [caso INVALIDO: testigo]
+L 0.50 ss  85:   +0.26    -0.03    +0.05    +0.16    +0.38    -4.58
+L 0.50 ff  85:   +0.19    +3.07    -0.06    -0.07    -0.02    -0.72
+L 1.00 tt  27:   +0.29    -0.16    +0.03    -0.06    +0.20   +21.60
+L 1.00 ff -40:   -0.49    +0.25    +0.38    +0.16    +0.45    -0.14
+L 1.00 ss  85:   +0.77    -0.09    -0.31    -0.01    +0.30   +45.53
+L 1.00 ff  85:   +0.38    +0.86    -0.03    +0.12    +0.05    -1.42
+L 2.00 tt  27:   +1.45    -0.30    -0.13    +0.01    -0.97  +179.25   [caso INVALIDO: testigo]
+L 2.00 ff -40:   -0.48    -0.30    +0.02    +0.27    +0.44  +161.12
+L 2.00 ss  85:   +1.03    -0.42    -0.27    +0.19    -2.97  +138.35
+L 2.00 ff  85:   +4.04    -0.88    -0.61    +0.71    +1.48  +120.12
+            (100 pA, 1 nA, 10 nA, 100 nA, 1 uA, 10 uA; se juzga de 1 nA a 10 uA)
+
+## Veredictos
+L = 0.50: W1 NO cumple | W3 (8 testigos) NO cumple | W4 (sin corriente, 4 esquinas) cumple
+L = 1.00: W1 NO cumple | W3 (8 testigos) cumple | W4 (sin corriente, 4 esquinas) cumple
+L = 2.00: W1 NO cumple | W3 (8 testigos) NO cumple | W4 (sin corriente, 4 esquinas) cumple
+A1 (L 0,50 cumple W1 en las 4 esquinas): FALSA
+A2 (L 1,00 cumple de 1 nA a 1 uA y falla a 10 uA): cumplida  [1 nA-1 uA: cumple; 10 uA: falla]
+A3 (L 2,00 falla ya a 1 uA): FALSA
+A4 (testigo entre -1,2 y -0,8 % donde hay dato): FALSA (22 de 24 con dato, de 24)
+A5 (sin corriente, ningun flanco en las 12): cumplida (12 de 12)
+MUERE: ninguna L cumple W1, W3 y W4 -> dos rangos con dos precargas

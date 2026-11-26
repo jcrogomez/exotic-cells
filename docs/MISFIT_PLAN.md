@@ -9,9 +9,10 @@ does is in the [ranking](RANKING.md); every headline number and its file is in [
 
 ## The plan in six lines
 
-1. **Two readers, sixteen seats each.** One reader for picoamp currents (exists, drawn), one wide-range reader (schematic
-   only). A reader can carry 16 selectable devices ([MISFIT-05](../experiments/misfit05/RESULTADOS.md)), so two readers give
-   32 seats.
+1. **Two readers, up to 64 seats each.** One reader for picoamp currents (exists, drawn), one wide-range reader (schematic
+   only, now in two ranges). In SPICE without wiring a reader stays inside its three cuts up to 128 identical devices; the
+   plan uses **64** until the wiring is extracted ([night of 2026-11-25](../experiments/noche_1125/RESULTADOS.md), block D). Silicon area, not the reader, is what
+   limits the seat count.
 2. **Fill the seats with the exotic cells, not only with metrology.** Single traps, a tunnel junction, plasma-written gates,
    an unimplanted contact, next to the metrology that guarantees data.
 3. **Find area in three dimensions:** above the digital core (metal-only structures), inside its filler space (row-shaped
@@ -35,9 +36,9 @@ What that asks of the tile:
 - **Configurations, not single devices.** A border is found by sweeping across it (geometry, material, formation history,
   excitation, environment). A family earns several seats along the parameter that crosses the regions, listed per family in
   [EXPERIMENTOS](EXPERIMENTOS.md).
-- **More seats than 48.** By the MISFIT-05 numbers, scaled linearly (arithmetic, not run): 64 branches on one reader would
-  add about 15 % to the reading time and leak about 2.3 % of the device current in the worst corner. Hierarchical selection
-  would cut both. Test **R6** below.
+- **More seats than 48.** Run ([night of 2026-11-25](../experiments/noche_1125/RESULTADOS.md)): 64 identical branches on the small reader add 15–16 % to the
+  reading time and shrink the trap step by at most 2.2 % (hot slow corner); 128 add 29–32 % and shrink it by 4.3 %. No wiring
+  in that run. Hierarchical selection would cut both. What is left of test **R6** is below.
 - **Each cell returns with a contract** when it works: model, interface, limits, spread, failure modes.
 
 **The by-product is also valuable.** Getting there means measuring things the industry keeps closed, and publishing them:
@@ -96,8 +97,8 @@ The target is one tile (1×1), decided 2026-11-25. Two floors: silicon in the st
 | One small reader (drawn, `v_f3`) | 1 204 (58.2 × 20.7 µm) | [MISFIT-09](../experiments/misfit09/RESULTADOS.md) |
 | Strip left after two readers | 1 533 | arithmetic; nothing is placed |
 | **Second floor:** metal 4 above the core | **11 856**, raw (80 µm high, five lanes between power stripes) | [MISFIT-06](../experiments/misfit06/RESULTADOS.md) |
-| Area of one device seat (device, switch, wiring) | `[?]` | no matrix is drawn; test R6 |
-| Wide-range reader | `[?]` | schematic only; test R2 |
+| Area of one device seat (device, switch, wiring) | `[?]` | no matrix is drawn; test R6 (wiring part) |
+| Wide-range reader | `[?]` | schematic only, two precharges; test R2 |
 
 **What this says, plainly.** Silicon is the scarce floor: after two readers, about 1 500 µm² are left for every matrix and for
 the second reader's own parts. Transistor-sized devices are small, so that may be enough for a few dozen seats, but the number is
@@ -243,6 +244,7 @@ is the sketch, not the frozen criterion.
 | MISFIT-07 | Does the reader need its 10 pF bias filter (85 % of its area)? | No, as far as the reading goes: with the filter removed, the trap step changes by at most 0.08 % relative and the reading by 0.011 %, even when one side takes 3–5 times longer than the other. First run invalid (badly designed witness), redone. No noise, one reader per bias | [`misfit07`](../experiments/misfit07/RESULTADOS.md) |
 | MISFIT-08 | Can the core lose its shared 24-bit timer? | Yes: 13 of 13 cocotb tests, 0 mismatches against the original in 5 × 2 000 000 random cycles (a one-count mutant is caught), 24 fewer flip-flops, **cell area −9.0 %** after place and route; one flow run per variant | [`misfit08`](../experiments/misfit08/RESULTADOS.md) |
 | MISFIT-09 | Does a reader drawn with one filter row instead of eleven fit a single tile and read the same? | Yes: 58.2 × 20.7 µm (1 204 µm², was 5 570), DRC 0 in Magic and both KLayout decks, LVS match; against the full reader in four corners the reading moves ≤ 0.053 % and the trap step ≤ 0.14 % relative. Bias capacitance 0.96 pF (was 10.16) | [`misfit09`](../experiments/misfit09/RESULTADOS.md) |
+| Night plan, 2026-11-25 | Four questions on the small reader and on reader 2, 159 SPICE decks, criteria sealed before the run | **Seats:** inside the cuts up to 128 branches without wiring; one of five predictions false (the step shrinks 4.3 % at 128 in the hot slow corner, predicted < 2 %). **Mismatch,** 48 chips: trap step median 0.805 % (the large reader gave 0.803 %), spread between twins 1.11 against 1.20; one chip of 48 falls 1.6 % under the bet band for the calibration step. **Shot noise** with independent seeds: 0.157 % per reading, all four predictions met. **Reader 2:** no single precharge length keeps 1 nA–10 µA within ±3 % in four corners; the pre-registered death rule applies | [`noche_1125`](../experiments/noche_1125/RESULTADOS.md) |
 
 ### B · finding area (first, because they size everything else)
 
@@ -257,11 +259,11 @@ is the sketch, not the frozen criterion.
 | Test | Question | Dies if | Cost |
 |---|---|---|---|
 | **R1** bias trim with real switches | Do the 11 codes (0 to −155 mV, steps 16–41 mV in schematic) survive switch drop, leakage and mismatch? | a step above 50 mV in any corner, or the trap step changes shape with the code | SPICE + Monte Carlo |
-| **R2** wide-range reader | First verdict in schematic ([report](../experiments/xc20_lector/r2/RESULTADOS.md)): with three calibration currents the model holds within 2.7 % in three corners and from 10 nA up in the fourth; it fails by 16 % at 1 nA in the hot fast corner (precharge leakage). **Precharge to be redesigned** (longer channel) and judged again, then layout | no precharge keeps 1 nA–10 µA within the band in all corners | pre-registration, schematic, then layout |
+| **R2** wide-range reader | Two verdicts in schematic. [First](../experiments/xc20_lector/r2/RESULTADOS.md): the short precharge (0.15 µm) fails by 16 % at 1 nA in the hot fast corner. [Second](../experiments/noche_1125/RESULTADOS.md), block A: precharges of 0.50, 1.00 and 2.00 µm each fail somewhere, so **the single-precharge reader is dead** and the reader gets two ranges. Seen in those runs, not yet a verdict: 1.00 µm holds 100 pA–1 µA within 0.9 % in four corners, 0.15 µm holds 10 nA–10 µA within 2.7 %. **Next:** a pre-registered run of the two-range reader at currents not used for calibration, with mismatch and a moved supply (the charge per cycle of the long precharge depends on the precharge strength), then layout | the two ranges do not overlap inside the band, or the low range's calibration does not survive mismatch | pre-registration, schematic, then layout |
 | **R3** two front ends on one bias filter | Does reader 1b disturb reader 1a through the shared bias? | kickback above the trap step's noise floor | SPICE on extracted macros |
 | **R4** unequal devices on one reader | With real LOD and XC-62 pairs (not 16 identical branches) and extracted wiring, how biased is a ratio? | bias above the effect being measured | layout + extraction |
 | **R5** noise on the extracted macro | Trap step against 1/f and thermal noise with real capacitances ([RISKS](../instrument/RISKS.md) row 10) | step under 5σ after averaging | SPICE noise |
-| **R6** how many seats a reader really holds | 32, 64 and 128 devices per reader, flat and with two-level selection, with extracted wiring: reading time, leakage, trap step | the trap step changes by more than 5 %, or open branches leak more than 5 % of the device current | SPICE, method of MISFIT-05 |
+| **R6** how many seats a reader really holds | Half done ([night of 2026-11-25](../experiments/noche_1125/RESULTADOS.md), block D): 32, 64 and 128 identical branches, flat, **no wiring**, pass the three cuts in four corners; at 128 two cuts sit at 85–91 % of their limit, so the plan uses 64. **Left:** the same with extracted wiring and with two-level selection | with wiring, 64 seats break a cut: the trap step changes by more than 5 %, or open branches leak more than 5 % of the device current | layout of one matrix + SPICE, method of MISFIT-05 |
 
 ### C · cells
 
@@ -321,6 +323,8 @@ each one is stated. Record: `agent/brain/decisions/2026-11-25-misfit-primer-tile
 | 4 | **The fuse goes on the first tile**, in its own zone with its own enable, blown last | an open one-time fuse is among the most useful things this tile could return; the risk is contained by test T1 and killed by C8 | C8 shows the blow disturbs neighbours past recovery |
 | 5 | **MISFIT-04 sweep:** phase 10 rerun once with two controls; phases 1 and 6 count (same settings as the valid decks, per-deck control passed); the 0.5 ns step and the per-deck control are recorded as an amendment written after the fact and labelled as such | cheapest way to close it without touching a verdict | **happened:** the rerun aborted after 2 minutes; phase 10 stays missing ([amendment 4](../cells/preregistros/MISFIT-04_2026-11-25_tile_integrado_enmienda4.md)) |
 | 6 | **The rule walk, the generator and the time axis enter the plan** | they are what turns a set of cells into a map | their tests G1–G5 |
+| 7 | **64 seats per reader, not 128** (2026-11-26) | the written rule allows 128, but that run has no wiring and two cuts at 85–91 % of their limit; at 64 they are under half ([report](../experiments/noche_1125/RESULTADOS.md)) | a run with extracted wiring leaves 128 with margin, or breaks 64 |
+| 8 | **Reader 2 has two ranges with two precharges** (2026-11-26) | not a choice: the pre-registered death rule of the night plan, block A | — |
 
 **Still Juan's, because it is money:** how many chips to order. The plan leans on within-die matrices and on other owners'
 dies so that the answer matters less.

@@ -1,0 +1,5 @@
+123c4fcc43ba9833b14fc2bd36a7fcce478a4b21e47b91d467cffc0eef6dbb07  analiza_A.py
+94b93493be6a780267aaf070ffe62152b489ba28ad2697dd681d279a0be18bda  analiza_B.py
+781e216c8cc42e94c8f0f9f8af828cc5ae6ef8026a51627266b50ceaaa64255a  analiza_C.py
+e11ba228213d3dba56197d8b0d9b23704b42e32b8f1f98e4969e4862a49c966e  analiza_D.py
+# escritos antes de abrir ningun log (solo se habian contado lineas y codigos de salida): 2026-11-26 07:35:13 EST

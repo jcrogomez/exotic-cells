@@ -97,6 +97,10 @@ This page is the single to-do list. What goes on the first tile and its tests, i
 
 ## Done (most recent first)
 
+- 2026-11-26 · Night plan of 2026-11-25, 159 SPICE decks with criteria sealed before the run: a small reader stays inside
+  its cuts with up to 128 identical branches (no wiring; the plan uses 64); under mismatch (48 chips) and shot noise it
+  reads like the large one; the wide-range reader with a single precharge is dead and gets two ranges
+  ([report](../experiments/noche_1125/RESULTADOS.md)).
 - 2026-11-25 · MISFIT-09: the XC-19 reader drawn with one filter row: 58.2 × 20.7 µm instead of 58.2 × 95.7, rule-clean,
   reading unchanged in four corners. It fits the free strip of a single tile ([report](../experiments/misfit09/RESULTADOS.md)).
 - 2026-11-25 · MISFIT-08: a lean digital core without the shared timer, equivalent to the original cycle by cycle in

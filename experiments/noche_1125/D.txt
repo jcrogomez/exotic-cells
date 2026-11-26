@@ -1,0 +1,58 @@
+# Noche 1125, bloque D · analiza_D.py · lector pequeno v_f3 con N ramas (sin cableado). Tiempos desde T0 = 1 us
+
+tt 27: control n1 frente al h01 de v_f3 (MISFIT-09): A +0.0000 %, B +0.0000 % -> ok
+  D5: mutante mc tA/tA(1) = 0.5016 (0,45-0,60) | testigo 40 pA -0.8824 % (baja) | testigo 1 fF +0.6716 % (+0,4 a +0,9) -> ok
+  tA (us): N=1 30.8832, N=32 33.3058, N=64 35.8061, N=128 40.8052 | tA(N)/tA(1): 1.0784, 1.1594, 1.3213
+  D1, % por rama extra: N=32 +0.2530, N=64 +0.2530, N=128 +0.2530 | frente a N=32: N=64 -0.01 %, N=128 -0.03 %
+  D2, salto de una carga: N=1 -0.8089 %, N=64 -0.8049 % (-0.49 % rel.), N=128 -0.8016 % (-0.90 % rel.)
+  D3, ln(tA/tB) frente a N=1, puntos de %: N=32 +0.03505, N=64 +0.06659, N=128 +0.11760
+  cortes N=32: salto <= 5 % rel. si (acotado con N=64) | tA <= 1,5 tA(1) si | (N-1) L/I = 0.008 % <= 5 % si
+  cortes N=64: salto <= 5 % rel. si | tA <= 1,5 tA(1) si | (N-1) L/I = 0.016 % <= 5 % si
+  cortes N=128: salto <= 5 % rel. si | tA <= 1,5 tA(1) si | (N-1) L/I = 0.032 % <= 5 % si
+
+ff -40: control n1 frente al h01 de v_f3 (MISFIT-09): A +0.0000 %, B +0.0000 % -> ok
+  D5: mutante mc tA/tA(1) = 0.5017 (0,45-0,60) | testigo 40 pA -1.2521 % (baja) | testigo 1 fF +0.6454 % (+0,4 a +0,9) -> ok
+  tA (us): N=1 46.8984, N=32 50.3243, N=64 53.8603, N=128 60.9315 | tA(N)/tA(1): 1.0730, 1.1484, 1.2992
+  D1, % por rama extra: N=32 +0.2356, N=64 +0.2356, N=128 +0.2356 | frente a N=32: N=64 -0.01 %, N=128 -0.01 %
+  D2, salto de una carga: N=1 -1.0032 %, N=64 -0.9965 % (-0.67 % rel.), N=128 -0.9913 % (-1.19 % rel.)
+  D3, ln(tA/tB) frente a N=1, puntos de %: N=32 +0.03367, N=64 +0.06420, N=128 +0.11499
+  cortes N=32: salto <= 5 % rel. si (acotado con N=64) | tA <= 1,5 tA(1) si | (N-1) L/I = 0.000 % <= 5 % si
+  cortes N=64: salto <= 5 % rel. si | tA <= 1,5 tA(1) si | (N-1) L/I = 0.000 % <= 5 % si
+  cortes N=128: salto <= 5 % rel. si | tA <= 1,5 tA(1) si | (N-1) L/I = 0.000 % <= 5 % si
+
+ss 85: control n1 frente al h01 de v_f3 (MISFIT-09): A +0.0000 %, B +0.0000 % -> ok
+  D5: mutante mc tA/tA(1) = 0.5022 (0,45-0,60) | testigo 40 pA -0.9604 % (baja) | testigo 1 fF +0.6968 % (+0,4 a +0,9) -> ok
+  tA (us): N=1 31.1124, N=32 33.4189, N=64 35.7568, N=128 40.3068 | tA(N)/tA(1): 1.0741, 1.1493, 1.2955
+  D1, % por rama extra: N=32 +0.2391, N=64 +0.2369, N=128 +0.2327 | frente a N=32: N=64 -0.92 %, N=128 -2.70 %
+  D2, salto de una carga: N=1 -0.6849 %, N=64 -0.6701 % (-2.17 % rel.), N=128 -0.6557 % (-4.27 % rel.)
+  D3, ln(tA/tB) frente a N=1, puntos de %: N=32 +0.02534, N=64 +0.04652, N=128 +0.07812
+  cortes N=32: salto <= 5 % rel. si (acotado con N=64) | tA <= 1,5 tA(1) si | (N-1) L/I = 1.110 % <= 5 % si
+  cortes N=64: salto <= 5 % rel. si | tA <= 1,5 tA(1) si | (N-1) L/I = 2.255 % <= 5 % si
+  cortes N=128: salto <= 5 % rel. si | tA <= 1,5 tA(1) si | (N-1) L/I = 4.547 % <= 5 % si
+
+ff 85: control n1 frente al h01 de v_f3 (MISFIT-09): A +0.0000 %, B +0.0000 % -> ok
+  D5: mutante mc tA/tA(1) = 0.5011 (0,45-0,60) | testigo 40 pA -0.0683 % (baja) | testigo 1 fF +0.6462 % (+0,4 a +0,9) -> ok
+  tA (us): N=1 2.4901, N=32 2.6686, N=64 2.8523, N=128 3.2180 | tA(N)/tA(1): 1.0717, 1.1454, 1.2923
+  D1, % por rama extra: N=32 +0.2312, N=64 +0.2309, N=128 +0.2302 | frente a N=32: N=64 -0.15 %, N=128 -0.44 %
+  D2, salto de una carga: N=1 -0.6337 %, N=64 -0.6283 % (-0.86 % rel.), N=128 -0.6234 % (-1.63 % rel.)
+  D3, ln(tA/tB) frente a N=1, puntos de %: N=32 +0.03148, N=64 +0.05925, N=128 +0.10473
+  cortes N=32: salto <= 5 % rel. si (acotado con N=64) | tA <= 1,5 tA(1) si | (N-1) L/I = 0.202 % <= 5 % si
+  cortes N=64: salto <= 5 % rel. si | tA <= 1,5 tA(1) si | (N-1) L/I = 0.411 % <= 5 % si
+  cortes N=128: salto <= 5 % rel. si | tA <= 1,5 tA(1) si | (N-1) L/I = 0.829 % <= 5 % si
+
+## Todo abierto, 1,4 ms a 85 C (D4)
+ss 85: control h00 XA_min 1.72945 V frente al contrato de v_hm +0.0000 % -> ok
+  32 ramas abiertas: XA minimo 1.4202 V, salida maxima 0.0001 V, cruce None -> no cruza
+  128 ramas abiertas: XA minimo 0.6755 V, salida maxima 1.7949 V, cruce 0.00114301 -> CRUZA
+ff 85: control h00 XA_min 1.70882 V frente al contrato de v_hm +0.0000 % -> ok
+  32 ramas abiertas: XA minimo 0.9260 V, salida maxima 0.1035 V, cruce None -> no cruza
+  128 ramas abiertas: XA minimo 0.0014 V, salida maxima 1.8000 V, cruce 0.000502548 -> CRUZA
+D4 (32 no cruza a ss 85; 128 cruza en las dos): cumplida
+
+## Veredictos
+D1 (+0,20 a +0,28 % por rama, y lineal +-10 %): cumplida  [banda: cumplida; linealidad: cumplida]
+D2 (salto cambia < 2 % rel. a 128 ramas): FALSA
+D3 (ln(tA/tB) < 0,0807 puntos hasta 64 ramas): cumplida
+D5 (testigos y mutante, 4 esquinas): cumplida
+Benchmark: valido
+N maximo que cumple los tres cortes en las 4 esquinas (de 1, 32, 64, 128; sin cableado): 128

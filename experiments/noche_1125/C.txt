@@ -1,0 +1,11 @@
+# Noche 1125, bloque C · analiza_C.py · ruido de disparo, v_f3, tt 27, src = 11. Tiempos desde T0 = 1 us. sigma en %.
+R0: N = 64 (se esperan 64); sigma ln(tA/tB) = 0.0000 %; sigma ln tA = 0.0000 %; media tA = 31.6527 us; instancias cuyas repeticiones difieren: 0 de 8; parejas distintas: 1
+R1: N = 64 (se esperan 64); sigma ln(tA/tB) = 0.1573 %; sigma ln tA = 0.0951 %; media tA = 31.6606 us; instancias cuyas repeticiones difieren: 8 de 8; parejas distintas: 64
+R3: N = 64 (se esperan 64); sigma ln(tA/tB) = 0.4552 %; sigma ln tA = 0.3095 %; media tA = 31.6640 us; instancias cuyas repeticiones difieren: 8 de 8; parejas distintas: 64
+R1b: N = 64 (se esperan 64); sigma ln(tA/tB) = 0.1567 %; sigma ln tA = 0.0941 %; media tA = 31.6528 us; instancias cuyas repeticiones difieren: 8 de 8; parejas distintas: 64
+C0: R0 rango relativo entre muestras 0.00e+00 (<= 1e-6) y tA frente al h11 de v_f3 0.0000 % (<= 0,01 %) -> cumplida
+C1: sigma R1 = 0.1573 %, sigma R1b = 0.1567 % (las dos en [0,115, 0,195]) -> cumplida
+C3: parejas (tA, tB) comunes a R1 y R1b: 0 de 64; sigma(R1b)/sigma(R1) = 0.996 (+-35 %) -> cumplida
+    R1 y R1b juntos (N = 128, sin prediccion): sigma ln(tA/tB) = 0.1564 %
+C2: sigma(R3)/sigma(R1) = 2.894 en [2,4, 3,6] -> cumplida
+Benchmark invalido (falla C0, o R1 y R1b identicos): no
