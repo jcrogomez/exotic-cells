@@ -1,0 +1,4 @@
+07d35111147098b66f3ca1877b81c5cb195c1f92907633ffd5f029ecdbc1dfbb  cells/preregistros/PLAN_2026-11-25_noche.md
+# sellado 2026-11-25 21:35:17 EST, antes de generar ningun deck
+# decks generados 21:36:29: A 144, B 5, C 4, D 6. Cola: cola.sh (orden D, B, A, C)
+# humo de la cola 21:36-21:37 con dos decks del bloque A (L = 0,50, tt 27, 10 uA y 3,16 uA): la mecanica funciona. Vi un numero al comprobarlo: a 10 uA el periodo sale 10,7 ns (con L = 0,15 eran 17,1 ns). No cambia nada del plan.
