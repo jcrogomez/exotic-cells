@@ -1,2 +1,4 @@
 13106fdd6f498284d2b65ed83a84f80495c54f04ebb28b60467e931752f6d988  cells/preregistros/MISFIT-18_2026-11-26_xc19_abanico_generado.md
 # sellado 2026-11-26 13:28:14 EST, antes de tocar el generador
+90f805f22a8e9abd92aaaf2cd29c33aa423c6a747b206d092bb2f554d046f03a  cells/preregistros/MISFIT-18_2026-11-26_xc19_abanico_generado_enmienda1.md
+# enmienda 1 sellada 2026-11-26 13:29:26 EST, antes de la segunda pasada
