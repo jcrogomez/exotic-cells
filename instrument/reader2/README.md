@@ -7,7 +7,8 @@ Reader 2 (the two-range relaxation oscillator of [MISFIT-17](../../experiments/m
 | File | What it is |
 |---|---|
 | `reader2_slot.v` | The wrapper: run logic, a 13-bit ripple counter on the loop output, two sticky outputs |
-| `reader2_loop.v` | The loop as library cells, the netlist simulated in MISFIT-24, plus the generated front end `reader2fe` |
+| `reader2_loop.v` | The loop as library cells, the netlist simulated in MISFIT-24. The front end `reader2fe` is placed outside, on `x`, `prenh`, `prenl` |
+| `config.json` | LibreLane configuration of the block (MISFIT-25) |
 | `reader2_loop_model.v` | Behavioural stand-in for the loop, for tests only |
 | `tb_reader2_slot.v`, `run.sh` | Functional test and its mutant (`test.txt`, `mutant.txt`) |
 

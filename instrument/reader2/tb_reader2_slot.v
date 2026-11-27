@@ -2,8 +2,8 @@
 // Functional test of reader2_slot against the behavioural loop. Prints PASS/FAIL lines; MUT=1 plants a wrong tap check.
 `timescale 1ns/1ps
 module tb;
-    reg en = 0, pre = 0; reg [1:0] src = 0; wire xa, xb, x;
-    reader2_slot dut (.en(en), .pre(pre), .src(src), .xa(xa), .xb(xb), .x(x));
+    reg en = 0, pre = 0; reg [1:0] src = 0; wire xa, xb, prenh, prenl; wire x = 1'b1;
+    reader2_slot dut (.en(en), .pre(pre), .src(src), .xa(xa), .xb(xb), .x(x), .prenh(prenh), .prenl(prenl));
     real ta, tb_, t0; integer fails = 0;
     always @(posedge xa) ta = $realtime;
     always @(posedge xb) tb_ = $realtime;

@@ -1,0 +1,6 @@
+75b1f4115eaddf19c24ff97c025bcb856bbf9ef4b055dc886a2e902091a12027  corre.sh
+95fabb18ab070fc23d86e0d6c29a01cf8d36601881ac53d1584fdd731ba9fcd5  analiza25.py
+2c8604ad389c7e768630aa71c70b5ea4d1269205efd9684d9ce118ee5cf6c102  ../../instrument/reader2/config.json
+9ae6fd82e62ef20f49aae8ef41d3fd89ef72c0ae66966fc914089814650c0d69  ../../instrument/reader2/reader2_slot.v
+45a6ba2b4a3d5814d6868824a52c18c57a7b98060af3707aa6a0cd49af69a3c6  ../../instrument/reader2/reader2_loop.v
+# sellado 2026-11-27 08:00:37 EST, antes de correr

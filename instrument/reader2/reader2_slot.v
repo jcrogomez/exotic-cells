@@ -12,12 +12,14 @@ module reader2_slot (
     input  wire [1:0] src,
     output reg        xa,
     output reg        xb,
-    inout  wire       x        // the measured node: seats hang from it
+    input  wire       x,       // the measured node (analog): the front end reader2fe and the seats hang from it
+    output wire       prenh,   // precharge lines of reader2fe (active low)
+    output wire       prenl
 );
     wire run = en & ~pre & (src != 2'd0);
     wire rs  = (src == 2'd2);
     wire q;
-    reader2_loop u_loop (.en(run), .rs(rs), .x(x), .q(q));
+    reader2_loop u_loop (.en(run), .rs(rs), .x(x), .q(q), .prenh(prenh), .prenl(prenl));
     // 13-bit ripple counter of q rising edges; bit k first rises after 2^k edges
     reg [12:0] c;
     wire [12:0] ck = {~c[11:0], q};

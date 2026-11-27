@@ -1,0 +1,2 @@
+f1f620b9143f4d23919fd7882c38751bc6c9149a6d5048aa7a56220d30d7aa38  cells/preregistros/MISFIT-25_2026-11-27_lector2_sintesis_y_colocacion.md
+# sellado 2026-11-27 08:00:37 EST, antes de ninguna corrida de LibreLane sobre el bloque
