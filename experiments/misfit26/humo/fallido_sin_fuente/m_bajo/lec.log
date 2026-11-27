@@ -1,0 +1,145 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+Warning: sky130_fd_pr__model__parasitic__diode_ps2nw: IKR too small - model effect disabled!
+Warning: sky130_fd_pr__diode_pd2nw_05v5: IKR too small - model effect disabled!
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-26 nivel m: bloque colocado del lector 2, rango bajo, caso humo, i = 2.0000e-08 a, tt 27 c
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  3.27680e-07 Reference value :  2.00041e-06 Reference value :  2.00080e-06 Reference value :  2.00130e-06 Reference value :  2.00198e-06 Reference value :  2.57707e-06 Reference value :  5.30857e-06 Reference value :  8.22217e-06 Reference value :  1.13179e-05 Reference value :  1.42315e-05 Reference value :  1.71451e-05 Reference value :  1.98766e-05 Reference value :  2.24260e-05 Reference value :  2.51575e-05 Reference value :  2.73427e-05 Reference value :  3.02563e-05 Reference value :  3.33520e-05 Reference value :  3.62656e-05 Reference value :  3.82687e-05 Reference value :  4.11823e-05 Reference value :  4.42780e-05 Reference value :  4.73737e-05 Reference value :  5.04694e-05 Reference value :  5.32009e-05 Reference value :  5.53861e-05 Reference value :  5.79355e-05 Reference value :  6.08491e-05 Reference value :  6.24880e-05 Reference value :  6.50374e-05 Reference value :  6.75868e-05 Reference value :  7.03183e-05 Reference value :  7.28677e-05 Reference value :  7.54171e-05 Reference value :  7.81486e-05 Reference value :  8.06980e-05 Reference value :  8.32474e-05
+No. of Data Rows : 520
+T0 2.000000e-06
+
+Error: measure  e1  when(WHEN) : out of interval
+Error: &e1: no such variable.
+ meas tran e1 when v(b_u_loop_u_d0_a)=0.9 rise=1 failed!
+
+ED 1
+
+Error: measure  e2  when(WHEN) : out of interval
+Error: &e2: no such variable.
+ meas tran e2 when v(b_u_loop_u_d0_a)=0.9 rise=2 failed!
+
+ED 2
+
+Error: measure  e3  when(WHEN) : out of interval
+Error: &e3: no such variable.
+ meas tran e3 when v(b_u_loop_u_d0_a)=0.9 rise=3 failed!
+
+ED 3
+
+Error: measure  e4  when(WHEN) : out of interval
+Error: &e4: no such variable.
+ meas tran e4 when v(b_u_loop_u_d0_a)=0.9 rise=4 failed!
+
+ED 4
+
+Error: measure  e5  when(WHEN) : out of interval
+Error: &e5: no such variable.
+ meas tran e5 when v(b_u_loop_u_d0_a)=0.9 rise=5 failed!
+
+ED 5
+
+Error: measure  e6  when(WHEN) : out of interval
+Error: &e6: no such variable.
+ meas tran e6 when v(b_u_loop_u_d0_a)=0.9 rise=6 failed!
+
+ED 6
+
+Error: measure  e7  when(WHEN) : out of interval
+Error: &e7: no such variable.
+ meas tran e7 when v(b_u_loop_u_d0_a)=0.9 rise=7 failed!
+
+ED 7
+
+Error: measure  e8  when(WHEN) : out of interval
+Error: &e8: no such variable.
+ meas tran e8 when v(b_u_loop_u_d0_a)=0.9 rise=8 failed!
+
+ED 8
+
+Error: measure  e9  when(WHEN) : out of interval
+Error: &e9: no such variable.
+ meas tran e9 when v(b_u_loop_u_d0_a)=0.9 rise=9 failed!
+
+ED 9
+
+Error: measure  e10  when(WHEN) : out of interval
+Error: &e10: no such variable.
+ meas tran e10 when v(b_u_loop_u_d0_a)=0.9 rise=10 failed!
+
+ED 10
+
+Error: measure  e11  when(WHEN) : out of interval
+Error: &e11: no such variable.
+ meas tran e11 when v(b_u_loop_u_d0_a)=0.9 rise=11 failed!
+
+ED 11
+
+Error: measure  e12  when(WHEN) : out of interval
+Error: &e12: no such variable.
+ meas tran e12 when v(b_u_loop_u_d0_a)=0.9 rise=12 failed!
+
+ED 12
+
+Error: measure  e13  when(WHEN) : out of interval
+Error: &e13: no such variable.
+ meas tran e13 when v(b_u_loop_u_d0_a)=0.9 rise=13 failed!
+
+ED 13
+
+Error: measure  e14  when(WHEN) : out of interval
+Error: &e14: no such variable.
+ meas tran e14 when v(b_u_loop_u_d0_a)=0.9 rise=14 failed!
+
+ED 14
+
+Error: measure  e15  when(WHEN) : out of interval
+Error: &e15: no such variable.
+ meas tran e15 when v(b_u_loop_u_d0_a)=0.9 rise=15 failed!
+
+ED 15
+
+Error: measure  e16  when(WHEN) : out of interval
+Error: &e16: no such variable.
+ meas tran e16 when v(b_u_loop_u_d0_a)=0.9 rise=16 failed!
+
+ED 16
+
+Error: measure  e17  when(WHEN) : out of interval
+Error: &e17: no such variable.
+ meas tran e17 when v(b_u_loop_u_d0_a)=0.9 rise=17 failed!
+
+ED 17
+
+Error: measure  e18  when(WHEN) : out of interval
+Error: &e18: no such variable.
+ meas tran e18 when v(b_u_loop_u_d0_a)=0.9 rise=18 failed!
+
+ED 18
+
+Error: measure  txa  when(WHEN) : out of interval
+Error: &txa: no such variable.
+ meas tran txa when v(xa)=0.9 rise=1 failed!
+
+XA
+
+Error: measure  txb  when(WHEN) : out of interval
+Error: &txb: no such variable.
+ meas tran txb when v(xb)=0.9 rise=1 failed!
+
+XB
+qidle               =  8.569545e-10 at=  3.200000e-10
+QIDLE 8.56955E-10
+xidle               =  1.800000e+00 at=  2.048000e-08
+XIDLE 1.8
+ngspice-44.2 done
+salida 0

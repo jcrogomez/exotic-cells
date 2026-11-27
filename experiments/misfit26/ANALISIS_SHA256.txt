@@ -1,0 +1,9 @@
+ba238f7fda73c0a62a99e7b7dc33e77c40ef64e3a28dd2ed39e22410f8e08ead  gen26.py
+c9048ed5d75d7df35860e7210eb536d94cfad55339bca5bf836e53933e57ae05  analiza26.py
+ee381e0b561b8b5662c2b4b4fc88adce8c9afbc27710257216193d3326c0f635  corre.sh
+6f8ec93a012dd12383631edac77c71c9e0a13723e9215c7ec89644d1aec15c9d  ext/extrae.tcl
+49c475ce22b5cae9493136e58549d2ee2226c904227a61ededf5bc2e5d036ed3  ext/r2flat.pex.spice
+abc80758149033f4f92b76b7de583d40f42ced21512fb33ee7ae216dd6bb0dba  ext/r2flat.dev.spice
+890af1d135cfd8a36ff546e3545306a8cfe4cdea692ae53f38c7c60081ec8d64  ext_libre/r2flat.pex.spice
+daba719dfac3caaa5f1a1343365e023ed9eb7df2eaec2567e6693c49e349c48a  ../misfit25/bloque/reader2_slot.spice
+# sellado 2026-11-27 13:59:14 EST, antes de correr
