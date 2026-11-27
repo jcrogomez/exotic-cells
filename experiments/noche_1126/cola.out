@@ -1,0 +1,368 @@
+inicio cola 2026-11-26 22:36:51 EST
+== bloque K: 4 decks, 4 a la vez, tope 3600 s  2026-11-26 22:36:51 EST
+  empieza K/ff-40/ 22:36:51
+  empieza K/ff85/ 22:36:51
+  empieza K/ss85/ 22:36:51
+  empieza K/tt27/ 22:36:51
+  acaba   K/tt27/ 22:40:40 salida 0 19 lineas
+  acaba   K/ss85/ 22:40:43 salida 0 19 lineas
+  acaba   K/ff85/ 22:40:51 salida 0 19 lineas
+  acaba   K/ff-40/ 22:40:56 salida 0 19 lineas
+== fin bloque K 2026-11-26 22:40:56 EST
+== bloque S: 32 decks, 4 a la vez, tope 3600 s  2026-11-26 22:40:56 EST
+  empieza S/alto_ss85_v1.70_cal_1.0000e-05/ 22:40:56
+  empieza S/alto_ss85_v1.70_cal_1.0000e-08/ 22:40:56
+  empieza S/alto_ss85_v1.70_cal_3.1623e-07/ 22:40:56
+  empieza S/alto_ss85_v1.70_oos_1.0000e-06/ 22:40:56
+  acaba   S/alto_ss85_v1.70_cal_1.0000e-05/ 22:42:35 salida 0 12 lineas
+  empieza S/alto_ss85_v1.90_cal_1.0000e-05/ 22:42:35
+  acaba   S/alto_ss85_v1.70_oos_1.0000e-06/ 22:42:43 salida 0 12 lineas
+  empieza S/alto_ss85_v1.90_cal_1.0000e-08/ 22:42:43
+  acaba   S/alto_ss85_v1.70_cal_3.1623e-07/ 22:43:01 salida 0 12 lineas
+  empieza S/alto_ss85_v1.90_cal_3.1623e-07/ 22:43:01
+  acaba   S/alto_ss85_v1.70_cal_1.0000e-08/ 22:43:02 salida 0 12 lineas
+  empieza S/alto_ss85_v1.90_oos_1.0000e-06/ 22:43:02
+  acaba   S/alto_ss85_v1.90_cal_1.0000e-05/ 22:43:54 salida 0 12 lineas
+  empieza S/alto_tt27_v1.70_cal_1.0000e-05/ 22:43:54
+  acaba   S/alto_ss85_v1.90_cal_1.0000e-08/ 22:44:41 salida 0 12 lineas
+  empieza S/alto_tt27_v1.70_cal_1.0000e-08/ 22:44:41
+  acaba   S/alto_ss85_v1.90_oos_1.0000e-06/ 22:44:58 salida 0 12 lineas
+  empieza S/alto_tt27_v1.70_cal_3.1623e-07/ 22:44:58
+  acaba   S/alto_ss85_v1.90_cal_3.1623e-07/ 22:45:05 salida 0 12 lineas
+  empieza S/alto_tt27_v1.70_oos_1.0000e-06/ 22:45:05
+  acaba   S/alto_tt27_v1.70_cal_1.0000e-08/ 22:45:10 salida 0 12 lineas
+  empieza S/alto_tt27_v1.90_cal_1.0000e-05/ 22:45:10
+  acaba   S/alto_tt27_v1.70_cal_1.0000e-05/ 22:45:16 salida 0 12 lineas
+  empieza S/alto_tt27_v1.90_cal_1.0000e-08/ 22:45:16
+  acaba   S/alto_tt27_v1.70_cal_3.1623e-07/ 22:46:45 salida 0 12 lineas
+  empieza S/alto_tt27_v1.90_cal_3.1623e-07/ 22:46:45
+  acaba   S/alto_tt27_v1.90_cal_1.0000e-05/ 22:46:57 salida 0 12 lineas
+  empieza S/alto_tt27_v1.90_oos_1.0000e-06/ 22:46:57
+  acaba   S/alto_tt27_v1.70_oos_1.0000e-06/ 22:47:02 salida 0 12 lineas
+  empieza S/bajo_ss85_v1.70_cal_1.0000e-06/ 22:47:02
+  acaba   S/alto_tt27_v1.90_cal_1.0000e-08/ 22:47:07 salida 0 12 lineas
+  empieza S/bajo_ss85_v1.70_cal_1.0000e-08/ 22:47:07
+  acaba   S/alto_tt27_v1.90_cal_3.1623e-07/ 22:48:17 salida 0 12 lineas
+  empieza S/bajo_ss85_v1.70_cal_1.0000e-10/ 22:48:17
+  acaba   S/alto_tt27_v1.90_oos_1.0000e-06/ 22:48:57 salida 0 12 lineas
+  empieza S/bajo_ss85_v1.70_oos_3.1623e-09/ 22:48:57
+  acaba   S/bajo_ss85_v1.70_cal_1.0000e-06/ 22:51:50 salida 0 12 lineas
+  empieza S/bajo_ss85_v1.90_cal_1.0000e-06/ 22:51:50
+  acaba   S/bajo_ss85_v1.70_cal_1.0000e-08/ 22:54:09 salida 0 12 lineas
+  empieza S/bajo_ss85_v1.90_cal_1.0000e-08/ 22:54:09
+  acaba   S/bajo_ss85_v1.70_oos_3.1623e-09/ 22:55:38 salida 0 12 lineas
+  empieza S/bajo_ss85_v1.90_cal_1.0000e-10/ 22:55:38
+  acaba   S/bajo_ss85_v1.90_cal_1.0000e-06/ 22:56:28 salida 0 12 lineas
+  empieza S/bajo_ss85_v1.90_oos_3.1623e-09/ 22:56:28
+  acaba   S/bajo_ss85_v1.90_cal_1.0000e-08/ 23:00:22 salida 0 12 lineas
+  empieza S/bajo_tt27_v1.70_cal_1.0000e-06/ 23:00:22
+  acaba   S/bajo_ss85_v1.70_cal_1.0000e-10/ 23:00:46 salida 0 12 lineas
+  empieza S/bajo_tt27_v1.70_cal_1.0000e-08/ 23:00:46
+  acaba   S/bajo_ss85_v1.90_oos_3.1623e-09/ 23:02:43 salida 0 12 lineas
+  empieza S/bajo_tt27_v1.70_cal_1.0000e-10/ 23:02:43
+  acaba   S/bajo_ss85_v1.90_cal_1.0000e-10/ 23:06:12 salida 0 12 lineas
+  empieza S/bajo_tt27_v1.70_oos_3.1623e-09/ 23:06:12
+  acaba   S/bajo_tt27_v1.70_oos_3.1623e-09/ 23:06:44 salida 0 12 lineas
+  empieza S/bajo_tt27_v1.90_cal_1.0000e-06/ 23:06:44
+  acaba   S/bajo_tt27_v1.70_cal_1.0000e-06/ 23:06:45 salida 0 12 lineas
+  empieza S/bajo_tt27_v1.90_cal_1.0000e-08/ 23:06:45
+  acaba   S/bajo_tt27_v1.70_cal_1.0000e-08/ 23:07:12 salida 0 12 lineas
+  empieza S/bajo_tt27_v1.90_cal_1.0000e-10/ 23:07:12
+  acaba   S/bajo_tt27_v1.70_cal_1.0000e-10/ 23:11:01 salida 0 12 lineas
+  empieza S/bajo_tt27_v1.90_oos_3.1623e-09/ 23:11:01
+  acaba   S/bajo_tt27_v1.90_cal_1.0000e-06/ 23:12:03 salida 0 12 lineas
+  acaba   S/bajo_tt27_v1.90_cal_1.0000e-08/ 23:13:18 salida 0 12 lineas
+  acaba   S/bajo_tt27_v1.90_oos_3.1623e-09/ 23:15:38 salida 0 12 lineas
+  acaba   S/bajo_tt27_v1.90_cal_1.0000e-10/ 23:15:43 salida 0 12 lineas
+== fin bloque S 2026-11-26 23:15:43 EST
+== bloque W: 32 decks, 4 a la vez, tope 3600 s  2026-11-26 23:15:43 EST
+  empieza W/alto_ss85_c20_cal_1.0000e-08/ 23:15:43
+  empieza W/alto_ss85_c20_cal_1.0000e-05/ 23:15:43
+  empieza W/alto_ss85_c20_cal_3.1623e-07/ 23:15:43
+  empieza W/alto_ss85_c20_oos_1.0000e-06/ 23:15:43
+  acaba   W/alto_ss85_c20_cal_1.0000e-05/ 23:17:26 salida 0 12 lineas
+  empieza W/alto_ss85_c50_cal_1.0000e-05/ 23:17:26
+  acaba   W/alto_ss85_c20_oos_1.0000e-06/ 23:17:38 salida 0 12 lineas
+  empieza W/alto_ss85_c50_cal_1.0000e-08/ 23:17:38
+  acaba   W/alto_ss85_c20_cal_3.1623e-07/ 23:17:38 salida 0 12 lineas
+  empieza W/alto_ss85_c50_cal_3.1623e-07/ 23:17:38
+  acaba   W/alto_ss85_c20_cal_1.0000e-08/ 23:17:46 salida 0 12 lineas
+  empieza W/alto_ss85_c50_oos_1.0000e-06/ 23:17:46
+  acaba   W/alto_ss85_c50_cal_1.0000e-05/ 23:18:46 salida 0 12 lineas
+  empieza W/alto_tt27_c20_cal_1.0000e-05/ 23:18:46
+  acaba   W/alto_ss85_c50_oos_1.0000e-06/ 23:19:36 salida 0 12 lineas
+  empieza W/alto_tt27_c20_cal_1.0000e-08/ 23:19:36
+  acaba   W/alto_ss85_c50_cal_3.1623e-07/ 23:19:41 salida 0 12 lineas
+  empieza W/alto_tt27_c20_cal_3.1623e-07/ 23:19:41
+  acaba   W/alto_ss85_c50_cal_1.0000e-08/ 23:19:42 salida 0 12 lineas
+  empieza W/alto_tt27_c20_oos_1.0000e-06/ 23:19:42
+  acaba   W/alto_tt27_c20_cal_1.0000e-05/ 23:20:00 salida 0 12 lineas
+  empieza W/alto_tt27_c50_cal_1.0000e-05/ 23:20:00
+  acaba   W/alto_tt27_c20_oos_1.0000e-06/ 23:21:39 salida 0 12 lineas
+  empieza W/alto_tt27_c50_cal_1.0000e-08/ 23:21:39
+  acaba   W/alto_tt27_c20_cal_3.1623e-07/ 23:21:44 salida 0 12 lineas
+  empieza W/alto_tt27_c50_cal_3.1623e-07/ 23:21:44
+  acaba   W/alto_tt27_c50_cal_1.0000e-05/ 23:21:44 salida 0 12 lineas
+  empieza W/alto_tt27_c50_oos_1.0000e-06/ 23:21:44
+  acaba   W/alto_tt27_c20_cal_1.0000e-08/ 23:21:51 salida 0 12 lineas
+  empieza W/bajo_ss85_c20_cal_1.0000e-06/ 23:21:51
+  acaba   W/alto_tt27_c50_oos_1.0000e-06/ 23:23:29 salida 0 12 lineas
+  empieza W/bajo_ss85_c20_cal_1.0000e-08/ 23:23:29
+  acaba   W/alto_tt27_c50_cal_3.1623e-07/ 23:23:38 salida 0 12 lineas
+  empieza W/bajo_ss85_c20_cal_1.0000e-10/ 23:23:38
+  acaba   W/alto_tt27_c50_cal_1.0000e-08/ 23:23:39 salida 0 12 lineas
+  empieza W/bajo_ss85_c20_oos_3.1623e-09/ 23:23:39
+  acaba   W/bajo_ss85_c20_cal_1.0000e-06/ 23:27:10 salida 0 12 lineas
+  empieza W/bajo_ss85_c50_cal_1.0000e-06/ 23:27:10
+  acaba   W/bajo_ss85_c20_oos_3.1623e-09/ 23:30:19 salida 0 12 lineas
+  empieza W/bajo_ss85_c50_cal_1.0000e-08/ 23:30:19
+  acaba   W/bajo_ss85_c20_cal_1.0000e-08/ 23:30:19 salida 0 12 lineas
+  empieza W/bajo_ss85_c50_cal_1.0000e-10/ 23:30:19
+  acaba   W/bajo_ss85_c50_cal_1.0000e-06/ 23:32:00 salida 0 12 lineas
+  empieza W/bajo_ss85_c50_oos_3.1623e-09/ 23:32:00
+  acaba   W/bajo_ss85_c20_cal_1.0000e-10/ 23:35:46 salida 0 12 lineas
+  empieza W/bajo_tt27_c20_cal_1.0000e-06/ 23:35:46
+  acaba   W/bajo_ss85_c50_cal_1.0000e-08/ 23:36:32 salida 0 12 lineas
+  empieza W/bajo_tt27_c20_cal_1.0000e-08/ 23:36:32
+  acaba   W/bajo_ss85_c50_oos_3.1623e-09/ 23:38:47 salida 0 12 lineas
+  empieza W/bajo_tt27_c20_cal_1.0000e-10/ 23:38:47
+  acaba   W/bajo_tt27_c20_cal_1.0000e-06/ 23:41:32 salida 0 12 lineas
+  empieza W/bajo_tt27_c20_oos_3.1623e-09/ 23:41:32
+  acaba   W/bajo_ss85_c50_cal_1.0000e-10/ 23:42:37 salida 0 12 lineas
+  empieza W/bajo_tt27_c50_cal_1.0000e-06/ 23:42:37
+  acaba   W/bajo_tt27_c20_cal_1.0000e-08/ 23:43:44 salida 0 12 lineas
+  empieza W/bajo_tt27_c50_cal_1.0000e-08/ 23:43:44
+  acaba   W/bajo_tt27_c50_cal_1.0000e-06/ 23:48:57 salida 0 12 lineas
+  empieza W/bajo_tt27_c50_cal_1.0000e-10/ 23:48:57
+  acaba   W/bajo_tt27_c20_oos_3.1623e-09/ 23:49:12 salida 0 12 lineas
+  empieza W/bajo_tt27_c50_oos_3.1623e-09/ 23:49:12
+  acaba   W/bajo_tt27_c50_cal_1.0000e-08/ 23:51:21 salida 0 12 lineas
+  acaba   W/bajo_tt27_c20_cal_1.0000e-10/ 23:51:43 salida 0 12 lineas
+  acaba   W/bajo_tt27_c50_oos_3.1623e-09/ 23:54:22 salida 0 12 lineas
+  acaba   W/bajo_tt27_c50_cal_1.0000e-10/ 23:54:48 salida 0 12 lineas
+== fin bloque W 2026-11-26 23:54:48 EST
+== bloque N: 28 decks, 4 a la vez, tope 3600 s  2026-11-26 23:54:48 EST
+  empieza N/alto_ff85_cal_1.0000e-05/ 23:54:48
+  empieza N/alto_ff85_cal_1.0000e-08/ 23:54:48
+  empieza N/alto_ff85_cal_3.1623e-07/ 23:54:48
+  empieza N/alto_ff85_oos_1.0000e-06/ 23:54:48
+  acaba   N/alto_ff85_oos_1.0000e-06/ 23:56:06 salida 0 12 lineas
+  empieza N/alto_ff85_oos_3.1623e-06/ 23:56:06
+  acaba   N/alto_ff85_cal_1.0000e-05/ 23:56:07 salida 0 12 lineas
+  empieza N/alto_ff85_oos_3.1623e-08/ 23:56:07
+  acaba   N/alto_ff85_cal_3.1623e-07/ 23:56:09 salida 0 12 lineas
+  empieza N/alto_ff85_zero_0.0000e+00/ 23:56:09
+  acaba   N/alto_ff85_cal_1.0000e-08/ 23:56:15 salida 0 12 lineas
+  empieza N/bajo_ff85_cal_1.0000e-06/ 23:56:15
+  acaba   N/alto_ff85_oos_3.1623e-06/ 23:57:25 salida 0 12 lineas
+  empieza N/bajo_ff85_cal_1.0000e-08/ 23:57:25
+  acaba   N/alto_ff85_oos_3.1623e-08/ 23:57:35 salida 0 12 lineas
+  empieza N/bajo_ff85_cal_1.0000e-10/ 23:57:35
+  acaba   N/alto_ff85_zero_0.0000e+00/ 23:58:56 salida 0 12 lineas
+  empieza N/bajo_ff85_oos_1.0000e-07/ 23:58:56
+  acaba   N/bajo_ff85_cal_1.0000e-06/ 00:02:27 salida 0 12 lineas
+  empieza N/bajo_ff85_oos_3.1623e-09/ 00:02:27
+  acaba   N/bajo_ff85_cal_1.0000e-08/ 00:05:31 salida 0 12 lineas
+  empieza N/bajo_ff85_oos_3.1623e-10/ 00:05:31
+  acaba   N/bajo_ff85_oos_1.0000e-07/ 00:06:01 salida 0 12 lineas
+  empieza N/bajo_ff85_zero_0.0000e+00/ 00:06:01
+  acaba   N/bajo_ff85_oos_3.1623e-09/ 00:11:42 salida 0 12 lineas
+  empieza N/bajo_ss85_cal_1.0000e-06/ 00:11:42
+  acaba   N/bajo_ff85_zero_0.0000e+00/ 00:13:21 salida 0 12 lineas
+  empieza N/bajo_ss85_cal_1.0000e-08/ 00:13:21
+  acaba   N/bajo_ss85_cal_1.0000e-06/ 00:17:05 salida 0 12 lineas
+  empieza N/bajo_ss85_cal_1.0000e-10/ 00:17:05
+  acaba   N/bajo_ss85_cal_1.0000e-08/ 00:20:14 salida 0 12 lineas
+  empieza N/bajo_ss85_oos_1.0000e-07/ 00:20:14
+  acaba   N/bajo_ff85_oos_3.1623e-10/ 00:22:25 salida 0 12 lineas
+  empieza N/bajo_ss85_oos_3.1623e-09/ 00:22:25
+  acaba   N/bajo_ss85_oos_1.0000e-07/ 00:26:18 salida 0 12 lineas
+  empieza N/bajo_ss85_oos_3.1623e-10/ 00:26:18
+  acaba   N/bajo_ss85_oos_3.1623e-09/ 00:29:40 salida 0 12 lineas
+  empieza N/bajo_ss85_zero_0.0000e+00/ 00:29:40
+  acaba   N/bajo_ss85_zero_0.0000e+00/ 00:32:07 salida 0 12 lineas
+  empieza N/bajo_tt27_cal_1.0000e-06/ 00:32:07
+  acaba   N/bajo_ff85_cal_1.0000e-10/ 00:33:03 salida 0 12 lineas
+  empieza N/bajo_tt27_cal_1.0000e-08/ 00:33:03
+  acaba   N/bajo_ss85_cal_1.0000e-10/ 00:33:06 salida 0 12 lineas
+  empieza N/bajo_tt27_cal_1.0000e-10/ 00:33:06
+  acaba   N/bajo_ss85_oos_3.1623e-10/ 00:36:07 salida 0 12 lineas
+  empieza N/bajo_tt27_oos_1.0000e-07/ 00:36:07
+  acaba   N/bajo_tt27_cal_1.0000e-06/ 00:38:13 salida 0 12 lineas
+  empieza N/bajo_tt27_oos_3.1623e-09/ 00:38:13
+  acaba   N/bajo_tt27_cal_1.0000e-08/ 00:41:05 salida 0 12 lineas
+  empieza N/bajo_tt27_oos_3.1623e-10/ 00:41:05
+  acaba   N/bajo_tt27_oos_1.0000e-07/ 00:43:17 salida 0 12 lineas
+  empieza N/bajo_tt27_zero_0.0000e+00/ 00:43:17
+  acaba   N/bajo_tt27_zero_0.0000e+00/ 00:44:53 salida 0 12 lineas
+  acaba   N/bajo_tt27_oos_3.1623e-09/ 00:46:11 salida 0 12 lineas
+  acaba   N/bajo_tt27_cal_1.0000e-10/ 00:46:34 salida 0 12 lineas
+  acaba   N/bajo_tt27_oos_3.1623e-10/ 00:47:14 salida 0 12 lineas
+== fin bloque N 2026-11-27 00:47:14 EST
+== bloque M: 82 decks, 4 a la vez, tope 5400 s  2026-11-27 00:47:14 EST
+  empieza M/alto_s2700/ 00:47:14
+  empieza M/alto_control/ 00:47:14
+  empieza M/alto_s2701/ 00:47:14
+  empieza M/alto_s2702/ 00:47:14
+  acaba   M/alto_s2701/ 00:54:06 salida 0 48 lineas
+  empieza M/alto_s2703/ 00:54:06
+  acaba   M/alto_s2702/ 00:54:09 salida 0 48 lineas
+  empieza M/alto_s2704/ 00:54:09
+  acaba   M/alto_s2700/ 00:54:43 salida 0 48 lineas
+  empieza M/alto_s2705/ 00:54:43
+  acaba   M/alto_control/ 00:54:49 salida 0 48 lineas
+  empieza M/alto_s2706/ 00:54:49
+  acaba   M/alto_s2704/ 01:00:47 salida 0 48 lineas
+  empieza M/alto_s2707/ 01:00:47
+  acaba   M/alto_s2703/ 01:00:51 salida 0 48 lineas
+  empieza M/alto_s2708/ 01:00:51
+  acaba   M/alto_s2705/ 01:02:28 salida 0 48 lineas
+  empieza M/alto_s2709/ 01:02:28
+  acaba   M/alto_s2706/ 01:02:30 salida 0 48 lineas
+  empieza M/alto_s2710/ 01:02:30
+  acaba   M/alto_s2707/ 01:07:48 salida 0 48 lineas
+  empieza M/alto_s2711/ 01:07:48
+  acaba   M/alto_s2708/ 01:08:04 salida 0 48 lineas
+  empieza M/alto_s2712/ 01:08:04
+  acaba   M/alto_s2710/ 01:10:32 salida 0 48 lineas
+  empieza M/alto_s2713/ 01:10:32
+  acaba   M/alto_s2709/ 01:10:35 salida 0 48 lineas
+  empieza M/alto_s2714/ 01:10:35
+  acaba   M/alto_s2711/ 01:15:07 salida 0 48 lineas
+  empieza M/alto_s2715/ 01:15:07
+  acaba   M/alto_s2712/ 01:15:08 salida 0 48 lineas
+  empieza M/alto_s2716/ 01:15:08
+  acaba   M/alto_s2713/ 01:17:28 salida 0 48 lineas
+  empieza M/alto_s2717/ 01:17:28
+  acaba   M/alto_s2714/ 01:18:12 salida 0 48 lineas
+  empieza M/alto_s2718/ 01:18:12
+  acaba   M/alto_s2716/ 01:22:02 salida 0 48 lineas
+  empieza M/alto_s2719/ 01:22:02
+  acaba   M/alto_s2715/ 01:22:17 salida 0 48 lineas
+  empieza M/alto_s2720/ 01:22:17
+  acaba   M/alto_s2717/ 01:24:32 salida 0 48 lineas
+  empieza M/alto_s2721/ 01:24:32
+  acaba   M/alto_s2718/ 01:25:43 salida 0 48 lineas
+  empieza M/alto_s2722/ 01:25:43
+  acaba   M/alto_s2719/ 01:29:25 salida 0 48 lineas
+  empieza M/alto_s2723/ 01:29:25
+  acaba   M/alto_s2720/ 01:29:30 salida 0 48 lineas
+  empieza M/alto_s2724/ 01:29:30
+  acaba   M/alto_s2721/ 01:31:56 salida 0 48 lineas
+  empieza M/alto_s2725/ 01:31:56
+  acaba   M/alto_s2722/ 01:32:32 salida 0 48 lineas
+  empieza M/alto_s2726/ 01:32:32
+  acaba   M/alto_s2724/ 01:36:42 salida 0 48 lineas
+  empieza M/alto_s2727/ 01:36:42
+  acaba   M/alto_s2723/ 01:36:51 salida 0 48 lineas
+  empieza M/alto_s2728/ 01:36:51
+  acaba   M/alto_s2725/ 01:38:49 salida 0 48 lineas
+  empieza M/alto_s2729/ 01:38:49
+  acaba   M/alto_s2726/ 01:39:44 salida 0 48 lineas
+  empieza M/alto_s2730/ 01:39:44
+  acaba   M/alto_s2728/ 01:44:03 salida 0 48 lineas
+  empieza M/alto_s2731/ 01:44:03
+  acaba   M/alto_s2727/ 01:44:11 salida 0 48 lineas
+  empieza M/alto_s2732/ 01:44:11
+  acaba   M/alto_s2729/ 01:45:39 salida 0 48 lineas
+  empieza M/alto_s2733/ 01:45:39
+  acaba   M/alto_s2730/ 01:46:40 salida 0 48 lineas
+  empieza M/alto_s2734/ 01:46:40
+  acaba   M/alto_s2731/ 01:50:49 salida 0 48 lineas
+  empieza M/alto_s2735/ 01:50:49
+  acaba   M/alto_s2732/ 01:51:45 salida 0 48 lineas
+  empieza M/alto_s2736/ 01:51:45
+  acaba   M/alto_s2733/ 01:52:14 salida 0 48 lineas
+  empieza M/alto_s2737/ 01:52:14
+  acaba   M/alto_s2734/ 01:54:20 salida 0 48 lineas
+  empieza M/alto_s2738/ 01:54:20
+  acaba   M/alto_s2735/ 01:57:34 salida 0 48 lineas
+  empieza M/alto_s2739/ 01:57:34
+  acaba   M/alto_s2736/ 01:59:20 salida 0 48 lineas
+  empieza M/bajo_control/ 01:59:20
+  acaba   M/alto_s2737/ 01:59:27 salida 0 48 lineas
+  empieza M/bajo_s2600/ 01:59:27
+  acaba   M/alto_s2738/ 02:01:07 salida 0 48 lineas
+  empieza M/bajo_s2601/ 02:01:07
+  acaba   M/alto_s2739/ 02:05:02 salida 0 48 lineas
+  empieza M/bajo_s2602/ 02:05:02
+  acaba   M/bajo_control/ 02:31:50 salida 0 48 lineas
+  empieza M/bajo_s2603/ 02:31:50
+  acaba   M/bajo_s2600/ 02:31:59 salida 0 48 lineas
+  empieza M/bajo_s2604/ 02:31:59
+  acaba   M/bajo_s2601/ 02:35:40 salida 0 48 lineas
+  empieza M/bajo_s2605/ 02:35:40
+  acaba   M/bajo_s2602/ 02:39:47 salida 0 48 lineas
+  empieza M/bajo_s2606/ 02:39:47
+  acaba   M/bajo_s2603/ 03:03:18 salida 0 48 lineas
+  empieza M/bajo_s2607/ 03:03:18
+  acaba   M/bajo_s2604/ 03:06:38 salida 0 48 lineas
+  empieza M/bajo_s2608/ 03:06:38
+  acaba   M/bajo_s2605/ 03:10:10 salida 0 48 lineas
+  empieza M/bajo_s2609/ 03:10:10
+  acaba   M/bajo_s2606/ 03:11:11 salida 0 48 lineas
+  empieza M/bajo_s2610/ 03:11:11
+  acaba   M/bajo_s2607/ 03:35:24 salida 0 48 lineas
+  empieza M/bajo_s2611/ 03:35:24
+  acaba   M/bajo_s2608/ 03:41:17 salida 0 48 lineas
+  empieza M/bajo_s2612/ 03:41:17
+  acaba   M/bajo_s2610/ 03:42:15 salida 0 48 lineas
+  empieza M/bajo_s2613/ 03:42:15
+  acaba   M/bajo_s2609/ 03:44:57 salida 0 48 lineas
+  empieza M/bajo_s2614/ 03:44:57
+  acaba   M/bajo_s2611/ 04:09:37 salida 0 48 lineas
+  empieza M/bajo_s2615/ 04:09:37
+  acaba   M/bajo_s2612/ 04:12:36 salida 0 48 lineas
+  empieza M/bajo_s2616/ 04:12:36
+  acaba   M/bajo_s2613/ 04:13:29 salida 0 48 lineas
+  empieza M/bajo_s2617/ 04:13:29
+  acaba   M/bajo_s2614/ 04:19:09 salida 0 48 lineas
+  empieza M/bajo_s2618/ 04:19:09
+  acaba   M/bajo_s2615/ 04:42:56 salida 0 48 lineas
+  empieza M/bajo_s2619/ 04:42:56
+  acaba   M/bajo_s2617/ 04:43:34 salida 0 48 lineas
+  empieza M/bajo_s2620/ 04:43:34
+  acaba   M/bajo_s2616/ 04:45:15 salida 0 48 lineas
+  empieza M/bajo_s2621/ 04:45:15
+  acaba   M/bajo_s2618/ 04:51:13 salida 0 48 lineas
+  empieza M/bajo_s2622/ 04:51:13
+  acaba   M/bajo_s2621/ 05:16:44 salida 0 48 lineas
+  empieza M/bajo_s2623/ 05:16:44
+  acaba   M/bajo_s2619/ 05:17:32 salida 0 48 lineas
+  empieza M/bajo_s2624/ 05:17:33
+  acaba   M/bajo_s2620/ 05:17:55 salida 0 48 lineas
+  empieza M/bajo_s2625/ 05:17:55
+  acaba   M/bajo_s2622/ 05:23:47 salida 0 48 lineas
+  empieza M/bajo_s2626/ 05:23:47
+  acaba   M/bajo_s2623/ 05:47:58 salida 0 48 lineas
+  empieza M/bajo_s2627/ 05:47:58
+  acaba   M/bajo_s2625/ 05:49:01 salida 0 48 lineas
+  empieza M/bajo_s2628/ 05:49:01
+  acaba   M/bajo_s2624/ 05:52:48 salida 0 48 lineas
+  empieza M/bajo_s2629/ 05:52:48
+  acaba   M/bajo_s2626/ 05:58:57 salida 0 48 lineas
+  empieza M/bajo_s2630/ 05:58:57
+  acaba   M/bajo_s2628/ 06:22:59 salida 0 48 lineas
+  empieza M/bajo_s2631/ 06:22:59
+  acaba   M/bajo_s2627/ 06:23:16 salida 0 48 lineas
+  empieza M/bajo_s2632/ 06:23:16
+  acaba   M/bajo_s2629/ 06:24:08 salida 0 48 lineas
+  empieza M/bajo_s2633/ 06:24:08
+  acaba   M/bajo_s2630/ 06:31:23 salida 0 48 lineas
+  empieza M/bajo_s2634/ 06:31:23
+  acaba   M/bajo_s2631/ 06:54:20 salida 0 48 lineas
+  empieza M/bajo_s2635/ 06:54:20
+  acaba   M/bajo_s2632/ 06:58:29 salida 0 48 lineas
+  empieza M/bajo_s2636/ 06:58:29
+  acaba   M/bajo_s2633/ 06:58:49 salida 0 48 lineas
+  empieza M/bajo_s2637/ 06:58:49
+  acaba   M/bajo_s2634/ 07:03:16 salida 0 48 lineas
+  empieza M/bajo_s2638/ 07:03:16
+  acaba   M/bajo_s2635/ 07:31:22 salida 0 48 lineas
+  empieza M/bajo_s2639/ 07:31:22
+  acaba   M/bajo_s2637/ 07:32:37 salida 0 48 lineas
+  acaba   M/bajo_s2636/ 07:35:10 salida 0 48 lineas
+  acaba   M/bajo_s2638/ 07:36:01 salida 0 48 lineas
+  acaba   M/bajo_s2639/ 07:38:32 salida 0 48 lineas
+== fin bloque M 2026-11-27 07:38:32 EST
+fin cola 2026-11-27 07:38:32 EST

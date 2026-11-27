@@ -1,0 +1,144 @@
+## Bloque K · el contador de rizado sigue al lazo a 10 uA (rango alto)
+  tt 27: bit 3 sube 1.074 ns tras el flanco 8 y 1.074 ns tras el 24; bit 0 0.234 ns tras el 1; periodo de q 21.206 ns
+  ff -40: bit 3 sube 0.764 ns tras el flanco 8 y 0.764 ns tras el 24; bit 0 0.154 ns tras el 1; periodo de q 21.958 ns
+  ss 85: bit 3 sube 1.683 ns tras el flanco 8 y 1.684 ns tras el 24; bit 0 0.400 ns tras el 1; periodo de q 21.694 ns
+  ff 85: bit 3 sube 0.757 ns tras el flanco 8 y 0.756 ns tras el 24; bit 0 0.164 ns tras el 1; periodo de q 21.207 ns
+K1 (bit 3 entre 0 y 3 ns tras los flancos 8 y 24, 4 de 4): cumplida (4 de 4)
+
+## Bloque S · alimentacion a 1,70 y 1,90 V
+  bajo tt 27 1.70 V: Q None % frente a 1,80 V | recalibrado: error None % | con la calibracion de 1,80 V: error None %
+  bajo tt 27 1.90 V: Q 10.95 % frente a 1,80 V | recalibrado: error 0.09 % | con la calibracion de 1,80 V: error -9.79 %
+  alto tt 27 1.70 V: Q None % frente a 1,80 V | recalibrado: error None % | con la calibracion de 1,80 V: error 5.19 %
+  alto tt 27 1.90 V: Q 5.78 % frente a 1,80 V | recalibrado: error -0.36 % | con la calibracion de 1,80 V: error -5.62 %
+  bajo ss 85 1.70 V: Q -8.21 % frente a 1,80 V | recalibrado: error 0.11 % | con la calibracion de 1,80 V: error 9.08 %
+  bajo ss 85 1.90 V: Q 7.55 % frente a 1,80 V | recalibrado: error 0.2 % | con la calibracion de 1,80 V: error -6.84 %
+  alto ss 85 1.70 V: Q -5.81 % frente a 1,80 V | recalibrado: error -0.56 % | con la calibracion de 1,80 V: error 5.05 %
+  alto ss 85 1.90 V: Q 5.92 % frente a 1,80 V | recalibrado: error -0.42 % | con la calibracion de 1,80 V: error -5.67 %
+S1 (recalibrado a la alimentacion movida, dentro de +-3 %, 8 de 8): FALSA [None, 0.09, None, -0.36, 0.11, 0.2, -0.56, -0.42]
+S2 (con la calibracion de 1,80 V, |error| por 100 mV: alto 3-8 %, bajo 2-20 %, 8 de 8): FALSA [('bajo', 'tt', 1.7, None), ('bajo', 'tt', 1.9, -9.79), ('alto', 'tt', 1.7, 5.19), ('alto', 'tt', 1.9, -5.62), ('bajo', 'ss', 1.7, 9.08), ('bajo', 'ss', 1.9, -6.84), ('alto', 'ss', 1.7, 5.05), ('alto', 'ss', 1.9, -5.67)]
+  mayor |error| con la calibracion de 1,80 V: 9.787010911124817
+
+## Bloque W · cable en el nodo: +20 y +50 fF
+  bajo tt 27 +20 fF: Q 0.17 % frente a MISFIT-24 | error fuera de muestra 0.07 %
+  bajo tt 27 +50 fF: Q 0.23 % frente a MISFIT-24 | error fuera de muestra -0.11 %
+  alto tt 27 +20 fF: Q 9.22 % frente a MISFIT-24 | error fuera de muestra -0.37 %
+  alto tt 27 +50 fF: Q 21.96 % frente a MISFIT-24 | error fuera de muestra -0.26 %
+  bajo ss 85 +20 fF: Q 0.2 % frente a MISFIT-24 | error fuera de muestra 0.13 %
+  bajo ss 85 +50 fF: Q 0.31 % frente a MISFIT-24 | error fuera de muestra 0.26 %
+  alto ss 85 +20 fF: Q 9.83 % frente a MISFIT-24 | error fuera de muestra -0.4 %
+  alto ss 85 +50 fF: Q 23.49 % frente a MISFIT-24 | error fuera de muestra -0.36 %
+W1 (rango bajo: Q cambia < 2 %, 4 de 4): cumplida [0.17, 0.23, 0.2, 0.31]
+W2 (rango alto: +20 fF da +8..+13 %, +50 fF da +21..+31 %, 4 de 4): cumplida [(20, 9.22), (50, 21.96), (20, 9.83), (50, 23.49)]
+W3 (fuera de muestra dentro de +-3 %, 8 de 8): cumplida [0.07, -0.11, -0.37, -0.26, 0.13, 0.26, -0.4, -0.36]
+
+## Bloque N · 63 puestos en el nodo (9 matrices)
+  bajo tt 27: Q = 51.56 fC, IL = -0.71 pA, td = 0.39 ns | sin corriente: 0 flancos | fuera de muestra: 3.16e-10 A -0.01 %, 3.16e-09 A 0.19 %, 1.00e-07 A -0.17 %
+  bajo ss 85: Q = 58.73 fC, IL = -54.93 pA, td = 0.36 ns | sin corriente: 11 flancos | fuera de muestra: 3.16e-10 A 1.76 %, 3.16e-09 A 0.58 %, 1.00e-07 A -0.16 %
+  bajo ff 85: Q = 53.09 fC, IL = -253.34 pA, td = -0.34 ns | sin corriente: 12 flancos, periodo 0.2097 ms | fuera de muestra: 3.16e-10 A -0.42 %, 3.16e-09 A -0.77 %, 1.00e-07 A 0.47 %
+  alto ff 85: Q = 361.49 fC, IL = -210.15 pA, td = 0.95 ns | sin corriente: 12 flancos, periodo 1.4222 ms | fuera de muestra: 3.16e-08 A -0.08 %, 1.00e-06 A -0.14 %, 3.16e-06 A -0.08 %
+N1a (bajo ff 85 sin corriente: oscila sola, periodo entre 0,1 y 0,5 ms): cumplida 
+N1b (bajo ss 85 sin corriente: al menos 2 flancos en 20 ms): cumplida (11)
+N1c (bajo tt 27 sin corriente: menos de 12 flancos en 20 ms): cumplida (0)
+N2a (bajo: 3,16 nA y 100 nA dentro de +-3 % en las 3 esquinas, 6 de 6): cumplida [('tt', '27', '3.16e-09', 0.19), ('tt', '27', '1.00e-07', -0.17), ('ss', '85', '3.16e-09', 0.58), ('ss', '85', '1.00e-07', -0.16), ('ff', '85', '3.16e-09', -0.77), ('ff', '85', '1.00e-07', 0.47)]
+N2b (bajo, 316 pA: dentro de +-3 % a tt 27): cumplida (-0.01)
+N2c (bajo, 316 pA: FUERA de +-3 % a ff 85): FALSA (-0.42)
+  sin prediccion: bajo ss 85 a 316 pA, error 1.76 %
+N3 (alto ff 85: las 3 fuera de muestra dentro de +-3 %): cumplida [-0.08, -0.14, -0.08]
+  suelo del rango bajo con 63 puestos (menor corriente fuera de muestra que pasa en las 3 esquinas): 3.162e-10 A
+
+## Bloque M · desajuste (tt_mm, un chip por deck)
+  bajo control tt: periodo fuera de muestra 0.0 % frente a MISFIT-24; Q = 51.15 fC; error 0.07 %
+M0 bajo (control dentro de 0,2 % de MISFIT-24): cumplida 
+    semilla 2600: Q = 50.26 fC, IL = 0.093 pA, error fuera de muestra -0.14 %
+    semilla 2601: Q = 51.27 fC, IL = -0.037 pA, error fuera de muestra 0.05 %
+    semilla 2602: Q = 51.95 fC, IL = -0.38 pA, error fuera de muestra 0.08 %
+    semilla 2603: Q = 50.39 fC, IL = -0.361 pA, error fuera de muestra 0.01 %
+    semilla 2604: Q = 51.47 fC, IL = -0.245 pA, error fuera de muestra -0.13 %
+    semilla 2605: Q = 52.01 fC, IL = -0.118 pA, error fuera de muestra -0.03 %
+    semilla 2606: Q = 51.04 fC, IL = -0.314 pA, error fuera de muestra -0.03 %
+    semilla 2607: Q = 51.03 fC, IL = -0.279 pA, error fuera de muestra 0.05 %
+    semilla 2608: Q = 50.67 fC, IL = -0.352 pA, error fuera de muestra 0.1 %
+    semilla 2609: Q = 50.58 fC, IL = -0.385 pA, error fuera de muestra -0.2 %
+    semilla 2610: Q = 51.3 fC, IL = -0.343 pA, error fuera de muestra 0.06 %
+    semilla 2611: Q = 51.84 fC, IL = -0.423 pA, error fuera de muestra -0.01 %
+    semilla 2612: Q = 51.53 fC, IL = -0.235 pA, error fuera de muestra 0.15 %
+    semilla 2613: Q = 51.46 fC, IL = -0.075 pA, error fuera de muestra -0.11 %
+    semilla 2614: Q = 51.75 fC, IL = -0.445 pA, error fuera de muestra 0.14 %
+    semilla 2615: Q = 50.22 fC, IL = -0.482 pA, error fuera de muestra 0.11 %
+    semilla 2616: Q = 50.5 fC, IL = -0.545 pA, error fuera de muestra 0.01 %
+    semilla 2617: Q = 51.77 fC, IL = -0.702 pA, error fuera de muestra 0.25 %
+    semilla 2618: Q = 49.76 fC, IL = -0.636 pA, error fuera de muestra 0.09 %
+    semilla 2619: Q = 51.18 fC, IL = -0.438 pA, error fuera de muestra 0.11 %
+    semilla 2620: Q = 51.13 fC, IL = -0.167 pA, error fuera de muestra 0.05 %
+    semilla 2621: Q = 51.1 fC, IL = -0.393 pA, error fuera de muestra 0.09 %
+    semilla 2622: Q = 51.12 fC, IL = -0.575 pA, error fuera de muestra 0.3 %
+    semilla 2623: Q = 51.57 fC, IL = -0.363 pA, error fuera de muestra 0.0 %
+    semilla 2624: Q = 51.31 fC, IL = -0.335 pA, error fuera de muestra -0.03 %
+    semilla 2625: Q = 51.4 fC, IL = -0.545 pA, error fuera de muestra 0.01 %
+    semilla 2626: Q = 50.78 fC, IL = -0.165 pA, error fuera de muestra 0.13 %
+    semilla 2627: Q = 50.39 fC, IL = -0.353 pA, error fuera de muestra 0.05 %
+    semilla 2628: Q = 51.43 fC, IL = -0.285 pA, error fuera de muestra 0.03 %
+    semilla 2629: Q = 51.22 fC, IL = 0.771 pA, error fuera de muestra -0.14 %
+    semilla 2630: Q = 50.62 fC, IL = -0.458 pA, error fuera de muestra 0.2 %
+    semilla 2631: Q = 51.68 fC, IL = -0.305 pA, error fuera de muestra 0.05 %
+    semilla 2632: Q = 51.48 fC, IL = -0.492 pA, error fuera de muestra 0.12 %
+    semilla 2633: Q = 51.8 fC, IL = -0.262 pA, error fuera de muestra 0.11 %
+    semilla 2634: Q = 51.94 fC, IL = -0.151 pA, error fuera de muestra 0.11 %
+    semilla 2635: Q = 50.91 fC, IL = -0.566 pA, error fuera de muestra 0.16 %
+    semilla 2636: Q = 50.64 fC, IL = -0.069 pA, error fuera de muestra -0.03 %
+    semilla 2637: Q = 51.83 fC, IL = -0.189 pA, error fuera de muestra -0.09 %
+    semilla 2638: Q = 50.38 fC, IL = -0.563 pA, error fuera de muestra 0.06 %
+    semilla 2639: Q = 51.02 fC, IL = -0.553 pA, error fuera de muestra -0.03 %
+  bajo: Q media 51.14 fC, sigma 1.1 %, min 49.76, max 52.01
+M1 bajo (los 40 chips oscilan en las 4 corrientes): cumplida (40 de 40)
+M2 bajo (error calibrado por chip dentro de +-3 % en al menos 38 de 40): cumplida (40 de 40); muere si < 36
+M3 bajo (sigma de Q entre 2 y 10 %): FALSA (1.1 %)
+  alto control tt: periodo fuera de muestra 0.0 % frente a MISFIT-24; Q = 182.06 fC; error -0.14 %
+M0 alto (control dentro de 0,2 % de MISFIT-24): cumplida 
+    semilla 2700: Q = 180.96 fC, IL = -10.488 pA, error fuera de muestra -0.1 %
+    semilla 2701: Q = 182.28 fC, IL = -5.597 pA, error fuera de muestra -0.14 %
+    semilla 2702: Q = 181.47 fC, IL = -6.751 pA, error fuera de muestra -0.1 %
+    semilla 2703: Q = 180.87 fC, IL = -8.985 pA, error fuera de muestra -0.09 %
+    semilla 2704: Q = 184.24 fC, IL = -6.848 pA, error fuera de muestra -0.11 %
+    semilla 2705: Q = 179.71 fC, IL = -6.789 pA, error fuera de muestra -0.11 %
+    semilla 2706: Q = 178.06 fC, IL = -6.925 pA, error fuera de muestra -0.11 %
+    semilla 2707: Q = 180.22 fC, IL = -11.022 pA, error fuera de muestra -0.09 %
+    semilla 2708: Q = 180.63 fC, IL = -11.858 pA, error fuera de muestra -0.12 %
+    semilla 2709: Q = 181.98 fC, IL = -8.512 pA, error fuera de muestra -0.11 %
+    semilla 2710: Q = 180.73 fC, IL = -6.82 pA, error fuera de muestra -0.11 %
+    semilla 2711: Q = 181.62 fC, IL = -10.184 pA, error fuera de muestra -0.1 %
+    semilla 2712: Q = 178.31 fC, IL = -6.805 pA, error fuera de muestra -0.05 %
+    semilla 2713: Q = 185.86 fC, IL = -10.41 pA, error fuera de muestra -0.07 %
+    semilla 2714: Q = 182.06 fC, IL = -3.545 pA, error fuera de muestra -0.13 %
+    semilla 2715: Q = 181.2 fC, IL = -5.607 pA, error fuera de muestra -0.1 %
+    semilla 2716: Q = 182.96 fC, IL = -6.338 pA, error fuera de muestra -0.11 %
+    semilla 2717: Q = 183.63 fC, IL = -5.982 pA, error fuera de muestra -0.11 %
+    semilla 2718: Q = 180.25 fC, IL = -10.306 pA, error fuera de muestra -0.15 %
+    semilla 2719: Q = 179.01 fC, IL = -9.803 pA, error fuera de muestra -0.12 %
+    semilla 2720: Q = 178.55 fC, IL = -6.149 pA, error fuera de muestra -0.09 %
+    semilla 2721: Q = 181.85 fC, IL = -9.625 pA, error fuera de muestra -0.11 %
+    semilla 2722: Q = 181.84 fC, IL = -10.451 pA, error fuera de muestra -0.11 %
+    semilla 2723: Q = 181.32 fC, IL = -10.705 pA, error fuera de muestra -0.13 %
+    semilla 2724: Q = 184.35 fC, IL = -6.794 pA, error fuera de muestra -0.12 %
+    semilla 2725: Q = 183.57 fC, IL = -8.744 pA, error fuera de muestra -0.09 %
+    semilla 2726: Q = 180.23 fC, IL = -0.062 pA, error fuera de muestra -0.11 %
+    semilla 2727: Q = 179.66 fC, IL = -10.157 pA, error fuera de muestra -0.12 %
+    semilla 2728: Q = 184.0 fC, IL = -10.896 pA, error fuera de muestra -0.1 %
+    semilla 2729: Q = 178.86 fC, IL = -9.582 pA, error fuera de muestra -0.16 %
+    semilla 2730: Q = 182.56 fC, IL = -6.701 pA, error fuera de muestra -0.12 %
+    semilla 2731: Q = 182.47 fC, IL = -10.54 pA, error fuera de muestra -0.12 %
+    semilla 2732: Q = 179.86 fC, IL = -10.09 pA, error fuera de muestra -0.13 %
+    semilla 2733: Q = 187.38 fC, IL = -8.004 pA, error fuera de muestra -0.12 %
+    semilla 2734: Q = 180.46 fC, IL = -6.835 pA, error fuera de muestra -0.09 %
+    semilla 2735: Q = 182.67 fC, IL = -9.4 pA, error fuera de muestra -0.09 %
+    semilla 2736: Q = 181.07 fC, IL = -13.987 pA, error fuera de muestra -0.11 %
+    semilla 2737: Q = 182.68 fC, IL = -8.908 pA, error fuera de muestra -0.08 %
+    semilla 2738: Q = 180.21 fC, IL = -7.72 pA, error fuera de muestra -0.11 %
+    semilla 2739: Q = 181.35 fC, IL = -8.747 pA, error fuera de muestra -0.13 %
+  alto: Q media 181.52 fC, sigma 1.1 %, min 178.06, max 187.38
+M1 alto (los 40 chips oscilan en las 4 corrientes): cumplida (40 de 40)
+M2 alto (error calibrado por chip dentro de +-3 % en al menos 38 de 40): cumplida (40 de 40); muere si < 36
+M3 alto (sigma de Q entre 0.3 y 3 %): cumplida (1.1 %)
+
+bloque M invalido: no
+decks que no acabaron en 'salida 0': ninguno

@@ -2,3 +2,6 @@ c61827f87a59bdd730770aab05973fa3f683997819cac8707f43ced471664cd5  gen_noche.py
 0a711c5dc86361df1f679375f60ddfc58495fa010dce34faaad79e6e05299aa9  analiza_noche.py
 2521b599746bcbfe3c7237e59d1cbc24e43f27acde2c97e9d7ccda158b32198e  cola.sh
 # sellado 2026-11-26 22:36:45 EST, antes de lanzar la cola
+7d1d7dc9f019c8d5d18c458c7a93b731e5e7cad644bfd607de4dd41240bf71ea  gen_enm1.py
+35fbbebf5e6a83891ba618047efab3b8b3a93a8abbc6c3c147040ff2177c5b08  analiza_enm1.py
+# enmienda 1 sellada 2026-11-27 07:39:59 EST, antes de correr S_enm1
