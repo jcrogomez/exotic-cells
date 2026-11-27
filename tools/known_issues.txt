@@ -102,3 +102,6 @@ experiments/noche_1126/S/alto_tt27_v1.70_cal_1.0000e-08/lec.log | night plan 202
 experiments/noche_1126/diag/s170/lec.log | exploratory rerun of a silent block S deck saving the loop nodes: same metastable start, no edges by construction
 experiments/noche_1126/N/bajo_tt27_zero_0.0000e+00/lec.log | zero-current run of block N: fewer than 12 edges in 20 ms, so the later edge measurements fail; the count is the result
 experiments/noche_1126/N/bajo_ss85_zero_0.0000e+00/lec.log | zero-current run of block N: fewer than 12 edges in 20 ms, so the later edge measurements fail; the count is the result
+experiments/misfit25/harden_prot.log | MISFIT-25 pass 1: the protected run stops in the resizer (RSZ-3006); the failure is the reported result (experiments/misfit25/RESULTADOS.md)
+experiments/misfit25/harden_prot_e1.log | MISFIT-25 pass 2: closes clean (m25_e1.txt); the flagged lines are flow warnings of a block without a clock
+experiments/misfit25/harden_libre.log | MISFIT-25 witness run: closes clean (m25.txt); the flagged lines are flow warnings of a block without a clock

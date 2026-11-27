@@ -33,7 +33,10 @@ The difference removes the first interval, which is several periods long because
 
 - **Observed:** the functional test passes 21 of 21 checks with the behavioural loop (Icarus Verilog 13.0); the mutant
   (wrong `NB` expected for `src` 3) fails 3 checks.
-- **Not done:** synthesis, placement, and any timing check of the ripple counter at the loop's top frequency. The
+- **Placed** ([MISFIT-25](../../experiments/misfit25/RESULTADOS.md)): 53.4 × 64.1 µm, rule-clean, LVS clean, the loop cells and nets as
+  written. The configuration matters: without the port-buffer switches, the do-not-touch list and design repair off, the
+  flow buffers `x` and the loop and still reports a clean block.
+- **Not done:** simulation of the placed block, assembly with `reader2fe`. The
   structural loop has only been simulated as a SPICE netlist (MISFIT-24), not through this Verilog. Whether the tap
   values give enough counts over the whole current range at the chip's clock is not computed here.
 - The seats hang from `x`; their select lines come from the core as in MISFIT-13.

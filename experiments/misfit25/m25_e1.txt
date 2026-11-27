@@ -1,0 +1,20 @@
+## prot
+  metricas: {'magic__drc_error__count': 0, 'design__lvs_error__count': 0, 'antenna__violating__nets': 0} | caja 0.0 0.0 53.415 64.135 | area 3425.771025 um2 | instancias 93
+  netlist: misfit25_r2_prot_e1/runs/core/final/nl/reader2_slot.nl.v
+  celdas del lazo encontradas: 17 de 17; tipos distintos del RTL: ninguno
+  redes del lazo con otro numero de conexiones: ninguna
+  bufer, retardo o diodo fuera de las celdas del lazo: ninguno
+## libre
+  metricas: {'magic__drc_error__count': 0, 'design__lvs_error__count': 0, 'antenna__violating__nets': 0} | caja 0.0 0.0 53.415 64.135 | area 3425.771025 um2 | instancias 105
+  netlist: misfit25_r2_libre/runs/core/final/nl/reader2_slot.nl.v
+  celdas del lazo encontradas: 17 de 17; tipos distintos del RTL: ninguno
+  redes del lazo con otro numero de conexiones: {'u_loop.q': ['max_cap10:clkbuf_2.A', 'u_loop.u_gh:nand3_4.A', 'u_loop.u_q:nor2_1.Y', 'u_loop.u_qb:nor2_1.B']}
+  bufer, retardo o diodo fuera de las celdas del lazo: ['fanout11:clkdlybuf4s25_1', 'fanout12:clkdlybuf4s25_1', 'input1:clkdlybuf4s25_1', 'input2:clkdlybuf4s25_1', 'input3:clkdlybuf4s25_1', 'input4:clkdlybuf4s25_1', 'input5:clkdlybuf4s25_1', 'max_cap10:clkbuf_2', 'output6:clkdlybuf4s25_1', 'output7:clkdlybuf4s25_1', 'output8:clkdlybuf4s25_1', 'output9:clkdlybuf4s25_1']
+
+## Veredictos
+H1 (prot cierra limpio): cumplida
+H2 (el lazo sobrevive intacto en prot): cumplida
+H3 (area entre 1000 y 3000 um2): FALSA (3425.771025)
+H4 (testigo: en libre cambia algo del lazo): cumplida
+H5 (enmienda 1: ningun bufer anadido en prot): cumplida
+prueba: valida
