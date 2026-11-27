@@ -9,6 +9,7 @@ Reader 2 (the two-range relaxation oscillator of [MISFIT-17](../../experiments/m
 | `reader2_slot.v` | The wrapper: run logic, a 13-bit ripple counter on the loop output, two sticky outputs |
 | `reader2_loop.v` | The loop as library cells, the netlist simulated in MISFIT-24. The front end `reader2fe` is placed outside, on `x`, `prenh`, `prenl` |
 | `config.json` | LibreLane configuration of the block (MISFIT-25) |
+| `unit/` | The unit: floorplan and pin template of the re-placed block (`plano.py`, `config.json`), assembly with `reader2fe` (`gen_assemble.py`) and its DRC + LVS (`lvs.sh`, `top_ref.v`) (MISFIT-27) |
 | `reader2_loop_model.v` | Behavioural stand-in for the loop, for tests only |
 | `tb_reader2_slot.v`, `run.sh` | Functional test and its mutant (`test.txt`, `mutant.txt`) |
 
@@ -36,7 +37,9 @@ The difference removes the first interval, which is several periods long because
 - **Placed** ([MISFIT-25](../../experiments/misfit25/RESULTADOS.md)): 53.4 × 64.1 µm, rule-clean, LVS clean, the loop cells and nets as
   written. The configuration matters: without the port-buffer switches, the do-not-touch list and design repair off, the
   flow buffers `x` and the loop and still reports a clean block.
-- **Not done:** simulation of the placed block, assembly with `reader2fe`. The
+- **Assembled** ([MISFIT-27](../../experiments/misfit27/RESULTADOS.md)): the block re-placed at 46.9 × 46.2 µm with pins by template, joined to
+  `reader2fe` as `reader2_unit` (46.9 × 56.2 µm): 0 rule violations in Magic, LVS match, three LVS mutants caught.
+- **Not done:** simulation of the assembled unit (the earlier placed block is being simulated in MISFIT-26). The
   structural loop has only been simulated as a SPICE netlist (MISFIT-24), not through this Verilog. Whether the tap
   values give enough counts over the whole current range at the chip's clock is not computed here.
 - The seats hang from `x`; their select lines come from the core as in MISFIT-13.

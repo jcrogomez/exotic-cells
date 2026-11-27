@@ -1,0 +1,10 @@
+metricas: {'magic__drc_error__count': 0, 'design__lvs_error__count': 0, 'antenna__violating__nets': 0} | caja 0.0 0.0 46.92 46.24 | area 2169.5808 um2 | instancias 93
+celdas del lazo: 17 de 17; tipos distintos del RTL: ninguno
+redes del lazo con otro numero de conexiones: ninguna
+bufer, retardo o diodo fuera del lazo: ninguno
+red x, cable por capa (um): {'met2': 7.290000000000001, 'met1': 1.095}
+
+## Veredictos
+H1 (cierra limpio): cumplida
+H2 (lazo intacto y sin buferes): cumplida
+H3 (red x < 15 um): cumplida (8.385000000000002)

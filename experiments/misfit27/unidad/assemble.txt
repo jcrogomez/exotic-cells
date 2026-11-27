@@ -1,0 +1,1 @@
+ok: reader2fe at (19.720, 1.000); VPWR strap x 26.5..28.1 used 26.5..27.550; VGND strap x 29.8..31.4; unit 46.92 x 56.24

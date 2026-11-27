@@ -105,3 +105,10 @@ experiments/noche_1126/N/bajo_ss85_zero_0.0000e+00/lec.log | zero-current run of
 experiments/misfit25/harden_prot.log | MISFIT-25 pass 1: the protected run stops in the resizer (RSZ-3006); the failure is the reported result (experiments/misfit25/RESULTADOS.md)
 experiments/misfit25/harden_prot_e1.log | MISFIT-25 pass 2: closes clean (m25_e1.txt); the flagged lines are flow warnings of a block without a clock
 experiments/misfit25/harden_libre.log | MISFIT-25 witness run: closes clean (m25.txt); the flagged lines are flow warnings of a block without a clock
+experiments/misfit27/harden_a.log | MISFIT-27: the re-placed block closes clean (m27_a.txt); the flagged lines are flow warnings of a block without a clock
+experiments/misfit26/humo/fallido_sin_fuente/m_alto/lec.log | MISFIT-26 smoke, first try: my deck had no current source, so no edge is measured; kept as it came out (pre-registration, section on smoke)
+experiments/misfit26/humo/fallido_sin_fuente/m_bajo/lec.log | MISFIT-26 smoke, first try: my deck had no current source, so no edge is measured; kept as it came out (pre-registration, section on smoke)
+experiments/misfit26/humo/fallido_sin_fuente/n_alto/lec.log | MISFIT-26 smoke, first try: my deck had no current source, so no edge is measured; kept as it came out (pre-registration, section on smoke)
+experiments/misfit26/humo/fallido_sin_fuente/n_bajo/lec.log | MISFIT-26 smoke, first try: my deck had no current source, so no edge is measured; kept as it came out (pre-registration, section on smoke)
+experiments/misfit26/humo/m_alto/lec.log | MISFIT-26 smoke, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit26/humo/n_alto/lec.log | MISFIT-26 smoke, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
