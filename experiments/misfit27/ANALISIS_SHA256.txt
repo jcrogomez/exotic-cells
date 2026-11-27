@@ -1,0 +1,9 @@
+d48be28c41b5018887ff3a68b31d20279799a2b2d8def1015414b6bdd4d1b32a  corre.sh
+f6178713cd2f67645802749b587475f2cc7fb24679350c69f355f237a3522caf  analiza27.py
+0a299ef463122d800f74147f7a853ef60c26d05f779604bc7deb4a1ef0c23cf9  ../../instrument/reader2/unit/config.json
+0e326f910de10c4815cacfce55f6fb63d4e8b513b0899ec9ff3d57fa56d08e0c  ../../instrument/reader2/unit/template.def
+e5a563efd7c9328a29302149f02b9d801827e89b096bfd81b1ac743bfbccc71d  ../../instrument/reader2/unit/plano.py
+4a1c03ef22f816f4cee7616086dd71534a00da8bbb13fa2b2557fc4c222e67a4  ../../instrument/reader2/unit/gen_assemble.py
+20c344d968b84e3c07033a2d5d091af310a13df43c6599455707d3c9f98c0704  ../../instrument/reader2/unit/lvs.sh
+a10eb89ac8c9e980899a03e7d8769f786432d1e3e8c31ab83926f270c75e9efb  ../../instrument/reader2/unit/top_ref.v
+# sellado 2026-11-27 14:27:13 EST, antes de correr

@@ -1,0 +1,39 @@
+{
+ "DESIGN_NAME": "reader2_slot",
+ "VERILOG_FILES": [
+  "dir::reader2_slot.v",
+  "dir::reader2_loop.v"
+ ],
+ "CLOCK_PORT": null,
+ "CLOCK_PERIOD": 20,
+ "RUN_CTS": 0,
+ "RUN_LINTER": 0,
+ "FP_PDN_MULTILAYER": 0,
+ "FP_PDN_VPITCH": 20,
+ "FP_PDN_VOFFSET": 5,
+ "RT_MAX_LAYER": "met4",
+ "VDD_PIN": "VPWR",
+ "GND_PIN": "VGND",
+ "DESIGN_REPAIR_BUFFER_INPUT_PORTS": 0,
+ "DESIGN_REPAIR_BUFFER_OUTPUT_PORTS": 0,
+ "RSZ_DONT_TOUCH_RX": "^(x|prenh|prenl|u_loop\\..*)$",
+ "RUN_KLAYOUT_XOR": 0,
+ "RUN_KLAYOUT_DRC": 0,
+ "MAGIC_DEF_LABELS": 0,
+ "MAGIC_WRITE_LEF_PINONLY": 1,
+ "RUN_POST_GPL_DESIGN_REPAIR": 0,
+ "FP_SIZING": "absolute",
+ "DIE_AREA": [
+  0,
+  0,
+  46.92,
+  46.24
+ ],
+ "CORE_AREA": [
+  2.3,
+  2.72,
+  44.62,
+  43.52
+ ],
+ "FP_DEF_TEMPLATE": "dir::template.def"
+}
