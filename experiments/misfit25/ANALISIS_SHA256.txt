@@ -4,3 +4,7 @@
 9ae6fd82e62ef20f49aae8ef41d3fd89ef72c0ae66966fc914089814650c0d69  ../../instrument/reader2/reader2_slot.v
 45a6ba2b4a3d5814d6868824a52c18c57a7b98060af3707aa6a0cd49af69a3c6  ../../instrument/reader2/reader2_loop.v
 # sellado 2026-11-27 08:00:37 EST, antes de correr
+4681e2e445624f461e3959018fb975c7ef47ff40d7a0b7431a7adfa2f0a2f2a7  corre.sh
+23919c7859256dceec38a828192d738a82c998d46a6034dc68449070b731ef06  analiza25.py
+deb91997e1461a7b37344498b43f03e4a9210e653961c2997563900c3d48ccbc  ../../instrument/reader2/config.json
+# enmienda 1 sellada 2026-11-27 08:02:23 EST: estos tres cambian, antes de la pasada 2

@@ -5,7 +5,7 @@ LF=/Users/juancarlosromero/made-in-TaiJuan/projects/ZTASIC/local_flow
 R=/Users/juancarlosromero/made-in-TaiJuan/projects/ZTASIC/06_exotic_cells
 export PATH="$LF/venv_tt/bin:$PATH"; SUF=$1; T=$(command -v gtimeout || command -v timeout)
 echo "inicio $(date '+%Y-%m-%d %H:%M:%S %Z')"
-for v in prot libre; do
+for v in ${VARS:-prot libre}; do
   d=misfit25_r2_$v$SUF; cd "$LF"; [ -e $d ] && { echo "ya existe $d: no se pisa"; continue; }
   mkdir -p $d/runs/core && cp "$R/instrument/reader2/"{config.json,reader2_slot.v,reader2_loop.v} $d/
   [ $v = libre ] && python3 - $d <<'P'

@@ -6,7 +6,8 @@ LOOP = {"u_cmp": "inv_1", "u_s1": "inv_1", "u_s2": "inv_1", "u_q": "nor2_1", "u_
 LOOP.update({f"u_d{k}": "dlygate4sd3_1" for k in range(8)}); assert len(LOOP) == 17
 FAN = {"x": 1, "u_loop.q": 6, "prenh": 1, "prenl": 1}
 FAN.update({f"u_loop.{n}": 2 for n in ("c", "c2", "s", "qb", "r", "enb", "rsb")}); FAN.update({f"u_loop.d[{k}]": 2 for k in range(7)})
-ALIAS = {"q": "u_loop.q", "u_loop.x": "x", "u_loop.prenh": "prenh", "u_loop.prenl": "prenl"}
+ALIAS = {"q": "u_loop.q", "ck[0]": "u_loop.q",   # enmienda 1: la red q se llama ck[0] tras la sintesis
+          "u_loop.x": "x", "u_loop.prenh": "prenh", "u_loop.prenl": "prenl"}
 
 
 def netlist(d):
@@ -48,6 +49,7 @@ def mira(v):
 
 
 R = {v: mira(v) for v in ("prot", "libre")}
+if SUF: R["libre"] = (lambda s_: (globals().__setitem__("SUF", ""), mira("libre"), globals().__setitem__("SUF", s_))[1])(SUF)   # enmienda 1: libre no se repite
 for v, o in R.items():
     print(f"## {v}")
     if "met" not in o: print("  NO termina:", o.get("why")); continue
@@ -61,4 +63,5 @@ h3 = "area" in p and 1000 <= p["area"] <= 3000; h4 = l.get("ok") and bool(l["tip
 print("\n## Veredictos")
 print(f"H1 (prot cierra limpio): {'cumplida' if h1 else 'FALSA'}"); print(f"H2 (el lazo sobrevive intacto en prot): {'cumplida' if h2 else 'FALSA'}")
 print(f"H3 (area entre 1000 y 3000 um2): {'cumplida' if h3 else 'FALSA'} ({p.get('area')})"); print(f"H4 (testigo: en libre cambia algo del lazo): {'cumplida' if h4 else 'FALSA'}")
+print(f"H5 (enmienda 1: ningun bufer anadido en prot): {'cumplida' if p.get('ok') and not p['extra'] else 'FALSA'}")
 print("prueba:", "valida" if "met" in l else "INVALIDA o por revisar: libre no termina (ver causa arriba)")

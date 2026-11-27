@@ -1,6 +1,9 @@
 {
   "DESIGN_NAME": "reader2_slot",
-  "VERILOG_FILES": ["dir::reader2_slot.v", "dir::reader2_loop.v"],
+  "VERILOG_FILES": [
+    "dir::reader2_slot.v",
+    "dir::reader2_loop.v"
+  ],
   "CLOCK_PORT": null,
   "CLOCK_PERIOD": 20,
   "RUN_CTS": 0,
@@ -19,5 +22,6 @@
   "RUN_KLAYOUT_XOR": 0,
   "RUN_KLAYOUT_DRC": 0,
   "MAGIC_DEF_LABELS": 0,
-  "MAGIC_WRITE_LEF_PINONLY": 1
+  "MAGIC_WRITE_LEF_PINONLY": 1,
+  "RUN_POST_GPL_DESIGN_REPAIR": 0
 }
