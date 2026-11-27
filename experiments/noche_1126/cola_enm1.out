@@ -1,0 +1,12 @@
+inicio cola 2026-11-27 07:40:07 EST
+== bloque humo: 4 decks, 4 a la vez, tope 900 s  2026-11-27 07:40:07 EST
+  empieza S_enm1/alto_tt27_v1.70_cal_1.0000e-08/ 07:40:07
+  empieza S_enm1/bajo_tt27_v1.70_cal_1.0000e-08/ 07:40:07
+  empieza S_enm1/bajo_tt27_v1.70_cal_1.0000e-10/ 07:40:07
+  empieza S_enm1/bajo_tt27_v1.70_oos_3.1623e-09/ 07:40:07
+  acaba   S_enm1/alto_tt27_v1.70_cal_1.0000e-08/ 07:42:31 salida 0 12 lineas
+  acaba   S_enm1/bajo_tt27_v1.70_cal_1.0000e-08/ 07:47:15 salida 0 12 lineas
+  acaba   S_enm1/bajo_tt27_v1.70_oos_3.1623e-09/ 07:47:34 salida 0 12 lineas
+  acaba   S_enm1/bajo_tt27_v1.70_cal_1.0000e-10/ 07:48:06 salida 0 12 lineas
+== fin bloque humo 2026-11-27 07:48:06 EST
+fin cola 2026-11-27 07:48:06 EST

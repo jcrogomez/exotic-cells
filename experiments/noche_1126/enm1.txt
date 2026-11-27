@@ -1,0 +1,7 @@
+E0 (control dentro de 0,1 %): FALSA (-0.14178354524402303)
+E1 (los tres oscilan, 12 flancos): cumplida [12, 12, 12]
+  bajo tt 27 1.70 V: Q -10.55 % frente a 1,80 V | recalibrado: error 0.06 % | con la calibracion de 1,80 V: error 11.88 %
+  alto tt 27 1.70 V: Q -5.68 % frente a 1,80 V | recalibrado: error -0.44 % | con la calibracion de 1,80 V: error 5.19 %
+E2 (recalibrado dentro de +-3 % en los dos casos): cumplida [0.06, -0.44]
+E3 (con la calibracion de 1,80 V: alto 3-8 %, bajo 2-20 %): cumplida [('bajo', 11.88), ('alto', 5.19)]
+decks que no acabaron en 'salida 0': ninguno

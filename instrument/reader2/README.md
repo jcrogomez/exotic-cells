@@ -36,3 +36,12 @@ The difference removes the first interval, which is several periods long because
   structural loop has only been simulated as a SPICE netlist (MISFIT-24), not through this Verilog. Whether the tap
   values give enough counts over the whole current range at the chip's clock is not computed here.
 - The seats hang from `x`; their select lines come from the core as in MISFIT-13.
+
+## Rules of use (simulation, [night of 2026-11-26](../../experiments/noche_1126/RESULTADOS.md))
+
+- A reading is a ratio against calibration currents measured in the same session: without recalibrating, the period
+  moves 5 to 10 % per 100 mV of supply.
+- The zero is a reading with every seat open. Hot, with 63 seats, the loop oscillates on leak alone.
+- Up to 64 seats per reader; the low range was checked down to 316 pA.
+- In SPICE the latch can sit on its metastable point at start (three runs at 1.70 V did); decks that use this loop
+  initialise `q` and `qb`. Whether silicon needs help to leave that point is not simulated.

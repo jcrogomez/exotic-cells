@@ -105,6 +105,8 @@ This page is the single to-do list. What goes on the first tile and its tests, i
   corners, five of five predictions held; the loop is still schematic ([report](../experiments/misfit23/RESULTADOS.md)).
 - 2026-11-26 · MISFIT-24: reader 2's loop with range select and enable in library cells: reads within 1.3 %, idles with
   the node held, eight of eight predictions held; cells not placed yet ([report](../experiments/misfit24/RESULTADOS.md)).
+- 2026-11-27 · Night plan on reader 2, 178 runs: counter, node wire, 63 seats and mismatch hold; supply moves a reading
+  5–10 % per 100 mV unless recalibrated; three of sixteen predictions false ([report](../experiments/noche_1126/RESULTADOS.md)).
 - 2026-11-26 · MISFIT-21: XC-14's seat redrawn with a grounded shield and two coupling lines: node-to-gate coupling down
   7.7 times, three gate steps ([report](../experiments/misfit21/RESULTADOS.md)).
 - 2026-11-26 · MISFIT-20: XC-14's floating-gate seat with its antenna plate drawn by the generator, rule-clean with LVS;

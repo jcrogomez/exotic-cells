@@ -1,0 +1,106 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+Warning: sky130_fd_pr__model__parasitic__diode_ps2nw: IKR too small - model effect disabled!
+Warning: sky130_fd_pr__diode_pd2nw_05v5: IKR too small - model effect disabled!
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-24 (lazo con seleccion y habilitacion, puertas _4) lector 2 rango alto (l = 0.15), caso cal, i = 1.0000e-08 a, tt 27 c · vdd = 1.70 v
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  1.37630e-05 Reference value :  3.34244e-05 Reference value :  5.27217e-05 Reference value :  7.20190e-05 Reference value :  8.98599e-05 Reference value :  1.08065e-04 Reference value :  1.25906e-04 Reference value :  1.45203e-04 Reference value :  1.63772e-04 Reference value :  1.82705e-04 Reference value :  2.01274e-04 Reference value :  2.19479e-04 Reference value :  2.37320e-04 Reference value :  2.57346e-04 Reference value :  2.76643e-04 Reference value :  2.94848e-04 Reference value :  3.11597e-04 Reference value :  3.29802e-04 Reference value :  3.48735e-04 Reference value :  3.65848e-04 Reference value :  3.83689e-04 Reference value :  3.99345e-04 Reference value :  4.17914e-04 Reference value :  4.35391e-04 Reference value :  4.54688e-04 Reference value :  4.73621e-04 Reference value :  4.92554e-04 Reference value :  5.10031e-04 Reference value :  5.25688e-04 Reference value :  5.43893e-04 Reference value :  5.63918e-04 Reference value :  5.82851e-04 Reference value :  6.00692e-04 Reference value :  6.19261e-04 Reference value :  6.40379e-04 Reference value :  6.60405e-04 Reference value :  6.78610e-04 Reference value :  6.96086e-04 Reference value :  7.15384e-04
+No. of Data Rows : 2017
+
+Error: measure  r2  when(WHEN) : out of interval
+ meas tran r2 when v(o_q)=0.9 rise=2 failed!
+
+
+Error: measure  r12  when(WHEN) : out of interval
+ meas tran r12 when v(o_q)=0.9 rise=12 failed!
+
+
+Error: measure  r1  when(WHEN) : out of interval
+Error: &r2: no such variable.
+Error: &r12: no such variable.
+ meas tran r1 when v(o_q)=0.9 rise=1 failed!
+
+R17 tt 27 alto cal 1.0000e-08
+CD 1.00102E-15
+
+Error: measure  e1  when(WHEN) : out of interval
+Error: &e1: no such variable.
+ meas tran e1 when v(o_q)=0.9 rise=1 failed!
+
+ED 1
+
+Error: measure  e2  when(WHEN) : out of interval
+Error: &e2: no such variable.
+ meas tran e2 when v(o_q)=0.9 rise=2 failed!
+
+ED 2
+
+Error: measure  e3  when(WHEN) : out of interval
+Error: &e3: no such variable.
+ meas tran e3 when v(o_q)=0.9 rise=3 failed!
+
+ED 3
+
+Error: measure  e4  when(WHEN) : out of interval
+Error: &e4: no such variable.
+ meas tran e4 when v(o_q)=0.9 rise=4 failed!
+
+ED 4
+
+Error: measure  e5  when(WHEN) : out of interval
+Error: &e5: no such variable.
+ meas tran e5 when v(o_q)=0.9 rise=5 failed!
+
+ED 5
+
+Error: measure  e6  when(WHEN) : out of interval
+Error: &e6: no such variable.
+ meas tran e6 when v(o_q)=0.9 rise=6 failed!
+
+ED 6
+
+Error: measure  e7  when(WHEN) : out of interval
+Error: &e7: no such variable.
+ meas tran e7 when v(o_q)=0.9 rise=7 failed!
+
+ED 7
+
+Error: measure  e8  when(WHEN) : out of interval
+Error: &e8: no such variable.
+ meas tran e8 when v(o_q)=0.9 rise=8 failed!
+
+ED 8
+
+Error: measure  e9  when(WHEN) : out of interval
+Error: &e9: no such variable.
+ meas tran e9 when v(o_q)=0.9 rise=9 failed!
+
+ED 9
+
+Error: measure  e10  when(WHEN) : out of interval
+Error: &e10: no such variable.
+ meas tran e10 when v(o_q)=0.9 rise=10 failed!
+
+ED 10
+
+Error: measure  e11  when(WHEN) : out of interval
+Error: &e11: no such variable.
+ meas tran e11 when v(o_q)=0.9 rise=11 failed!
+
+ED 11
+
+Error: measure  e12  when(WHEN) : out of interval
+Error: &e12: no such variable.
+ meas tran e12 when v(o_q)=0.9 rise=12 failed!
+
+ED 12
+ngspice-44.2 done
+salida 0
