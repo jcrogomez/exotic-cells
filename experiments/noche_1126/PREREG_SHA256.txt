@@ -1,0 +1,2 @@
+70baf9da5e27a43752e44ec7e9218dd9be88e199b07873716a56cbb3790f1fa9  cells/preregistros/PLAN_2026-11-26_noche.md
+# sellado 2026-11-26 22:36:45 EST, antes de lanzar la cola; humo previo: solo salida 0, numero de lineas y ausencia de errores
