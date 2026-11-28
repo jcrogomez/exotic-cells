@@ -1,0 +1,84 @@
+
+## rango bajo · tt 27
+  control (netlist + libreria): Q = 51.21 fC (+0.21 % frente a MISFIT-24), IL = -0.284 pA, td = 0.35 ns
+  extraido: Q = 84.40 fC (+65.2 % frente a MISFIT-24, +64.8 % frente al control), IL = -0.256 pA, td = 0.42 ns
+  fuera de muestra 3.162e-10 A: error +0.00 %, dispersion 0.25 %
+  fuera de muestra 3.162e-09 A: error -0.00 %, dispersion 0.17 %
+  fuera de muestra 1.000e-07 A: error -0.12 %, dispersion 0.20 %
+
+## rango bajo · ff -40
+  extraido: Q = 90.07 fC (+58.5 % frente a MISFIT-24), IL = -0.200 pA, td = -0.12 ns
+  fuera de muestra 3.162e-10 A: error +0.02 %, dispersion 0.25 %
+  fuera de muestra 3.162e-09 A: error +0.14 %, dispersion 0.32 %
+  fuera de muestra 1.000e-07 A: error +0.03 %, dispersion 0.41 %
+
+## rango bajo · ss 85
+  control (netlist + libreria): Q = 58.11 fC (+0.18 % frente a MISFIT-24), IL = -6.017 pA, td = 0.33 ns
+  extraido: Q = 96.14 fC (+65.8 % frente a MISFIT-24, +65.5 % frente al control), IL = -5.983 pA, td = 1.69 ns
+  fuera de muestra 3.162e-10 A: error +1.21 %, dispersion 0.13 %
+  fuera de muestra 3.162e-09 A: error +0.12 %, dispersion 0.11 %
+  fuera de muestra 1.000e-07 A: error -0.23 %, dispersion 0.10 %
+
+## rango bajo · ff 85
+  extraido: Q = 81.99 fC (+57.2 % frente a MISFIT-24), IL = +2.108 pA, td = 0.42 ns
+  fuera de muestra 3.162e-10 A: error +0.17 %, dispersion 0.22 %
+  fuera de muestra 3.162e-09 A: error -0.00 %, dispersion 0.23 %
+  fuera de muestra 1.000e-07 A: error +0.01 %, dispersion 0.22 %
+
+## rango alto · tt 27
+  control (netlist + libreria): Q = 181.57 fC (-0.01 % frente a MISFIT-24), IL = -5.569 pA, td = 3.07 ns
+  extraido: Q = 187.93 fC (+3.5 % frente a MISFIT-24, +3.5 % frente al control), IL = -15.778 pA, td = 5.64 ns
+  fuera de muestra 3.162e-08 A: error -0.20 %, dispersion 0.01 %
+  fuera de muestra 1.000e-06 A: error -0.45 %, dispersion 0.02 %
+  fuera de muestra 3.162e-06 A: error -0.64 %, dispersion 0.03 %
+
+## rango alto · ff -40
+  extraido: Q = 200.85 fC (+3.2 % frente a MISFIT-24), IL = -4.401 pA, td = 4.46 ns
+  fuera de muestra 3.162e-08 A: error -0.24 %, dispersion 0.01 %
+  fuera de muestra 1.000e-06 A: error -0.39 %, dispersion 0.02 %
+  fuera de muestra 3.162e-06 A: error -0.53 %, dispersion 0.02 %
+
+## rango alto · ss 85
+  control (netlist + libreria): Q = 171.12 fC (+0.02 % frente a MISFIT-24), IL = -30.591 pA, td = 4.60 ns
+  extraido: Q = 176.05 fC (+2.9 % frente a MISFIT-24, +2.9 % frente al control), IL = -43.134 pA, td = 8.37 ns
+  fuera de muestra 3.162e-08 A: error -0.12 %, dispersion 0.02 %
+  fuera de muestra 1.000e-06 A: error -0.63 %, dispersion 0.02 %
+  fuera de muestra 3.162e-06 A: error -0.89 %, dispersion 0.04 %
+
+## rango alto · ff 85
+  extraido: Q = 193.59 fC (+2.8 % frente a MISFIT-24), IL = -5.640 pA, td = 4.10 ns
+  fuera de muestra 3.162e-08 A: error -0.26 %, dispersion 0.01 %
+  fuera de muestra 1.000e-06 A: error -0.34 %, dispersion 0.01 %
+  fuera de muestra 3.162e-06 A: error -0.43 %, dispersion 0.02 %
+
+## testigo: +20 fF en el nodo, rango alto, tt 27
+  Q: 207.78 fC (+10.56 %)
+
+## reparto: extraccion sin condensadores, tt 27
+  bajo: Q = 56.23 fC; control 51.21, extraido 84.40; del cambio total, las difusiones explican 15 %
+  alto: Q = 183.16 fC; control 181.57, extraido 187.93; del cambio total, las difusiones explican 25 %
+
+## sin corriente, ff 85
+  bajo: 0 flancos, salida 0
+  alto: 0 flancos, salida 0
+
+## contador a ritmo maximo: rango alto, 10 uA
+  tt 27: flanco 256 6.3117e-06, xa 6.31653e-06, flanco 257 6.33613e-06, xb no sube, periodo 2.44366e-08 -> bien
+  ss 85: flanco 256 6.70882e-06, xa 6.71655e-06, flanco 257 6.73478e-06, xb no sube, periodo 2.59718e-08 -> bien
+
+## mutante: bloque 'libre' de MISFIT-25, tt 27
+  bajo: oscilan 3 de 3; Q 84.20 fC (-0.23 % frente al bloque protegido)
+  alto: oscilan 3 de 3; Q 181.69 fC (-3.32 % frente al bloque protegido)
+
+## Veredictos
+B1 (los 48 decks del bloque extraido oscilan: 18 flancos): FALSA (47 de 48, se esperan 48); fallan: [('bajo', 'ff', '-40', 'cal', 1e-10, False)]
+B2 (24 fuera de muestra dentro de +-3 % con su propia calibracion): cumplida (24 de 24, se esperan 24); fallan: []
+B3 (Q frente a MISFIT-24: bajo +30..+100 %, alto +2..+15 %): cumplida (8 de 8, se esperan 8); fallan: []
+B4 (contador, rango bajo: xa entre los flancos 4 y 5, xb entre 16 y 17, y (xb - xa) = 12 periodos dentro de 0,1 %): FALSA (15 de 24, se esperan 24); fallan: [('bajo', 'tt', '27', 'cal', 1e-10, False, None), ('bajo', 'tt', '27', 'oos', 3.1623e-10, False, None), ('bajo', 'ff', '-40', 'cal', 1e-10, False, None), ('bajo', 'ff', '-40', 'oos', 3.1623e-10, False, None), ('bajo', 'ss', '85', 'cal', 1e-10, False, None), ('bajo', 'ss', '85', 'cal', 1e-06, False, 0.124), ('bajo', 'ss', '85', 'oos', 3.1623e-10, False, None), ('bajo', 'ff', '85', 'cal', 1e-10, False, None), ('bajo', 'ff', '85', 'oos', 3.1623e-10, False, None)]
+B5 (reposo: q <= 0,2 V y nodo >= 1,7 V antes de EN, primer flanco despues de EN): FALSA (44 de 48, se esperan 48); fallan: [('alto', 'tt', '27', 'cal', 1e-05, False), ('alto', 'ff', '-40', 'cal', 1e-05, False), ('alto', 'ss', '85', 'cal', 1e-05, False), ('alto', 'ff', '85', 'cal', 1e-05, False)]
+B6 (sin corriente, ff 85: ningun flanco en los dos rangos): cumplida
+B7 (contador a ritmo maximo: xa entre los flancos 256 y 257, tt 27 y ss 85): cumplida
+B8 (mutante 'libre': oscila en 6 de 6 y su Q difiere mas de 2 % en algun rango): cumplida [('bajo', 3, -0.23), ('alto', 3, -3.32)]
+control (netlist + libreria frente a MISFIT-24, +-5 %): [('bajo', 'tt', '27', 0.212), ('bajo', 'ss', '85', 0.183), ('alto', 'tt', '27', -0.014), ('alto', 'ss', '85', 0.016)]
+sin ajuste: ninguno
+tanda valida
