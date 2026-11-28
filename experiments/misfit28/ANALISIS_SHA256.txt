@@ -17,3 +17,6 @@ a10eb89ac8c9e980899a03e7d8769f786432d1e3e8c31ab83926f270c75e9efb  ../../instrume
 ea07ef28655711c49f442c6605e26538ea2d8656a6b15777ecbb2303204881ab  gen28e.py
 afe9dd99188f4e6ad215736662ac6774d8ca24b42673535552cc3f016c5dd92e  analiza28e.py
 # sellado 2026-11-28 03:56:01 EST, antes de correr e1/
+# --- enmienda 2: guion de repeticion por tope ---
+7505dcfb049a37b7ec90433c955285cac3a421f5141a44e23142182962f05530  corre_tope.sh
+# anotado 2026-11-28 13:34:52 EST, ya lanzado; un primer intento a mano salio 'salida 2' en 4 s por el .spiceinit que dejo el corte (log conservado como lec_intento_spiceinit.log)
