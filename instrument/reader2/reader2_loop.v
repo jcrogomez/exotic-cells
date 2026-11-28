@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: Apache-2.0
-// Reader 2 loop, structural, the netlist simulated in MISFIT-24 (experiments/misfit24/gen24.py):
-// comparator, two inverters, NOR latch, eight delay cells, and the gates on the two precharge lines.
+// Reader 2 loop, structural. Version 2 (MISFIT-28): the netlist simulated in MISFIT-24 (experiments/misfit24/gen24.py) plus
+// hysteresis on the comparator's second stage. Comparator, two inverters and a keeper, NOR latch, eight delay cells, and the gates on the two precharge lines.
 // The analog front end reader2fe (generator/tables/reader2fe.json, MISFIT-22) is placed outside this block, on x, prenh, prenl.
 `default_nettype none
 module reader2_loop (
@@ -14,7 +14,10 @@ module reader2_loop (
     wire c, c2, s, r, qb, enb, rsb;
     wire [6:0] d;
     (* keep *) sky130_fd_sc_hd__inv_1 u_cmp (.A(x),  .Y(c));
-    (* keep *) sky130_fd_sc_hd__inv_1 u_s1  (.A(c),  .Y(c2));
+    // Hysteresis (MISFIT-28): u_s1 is four times the keeper u_k, and both drive c2. Without it a slow ramp on x left the latch
+    // at intermediate voltages (MISFIT-26). Seen from x the hysteresis is divided by the gain of u_cmp; x still sees one inv_1.
+    (* keep *) sky130_fd_sc_hd__inv_4 u_s1  (.A(c),  .Y(c2));
+    (* keep *) sky130_fd_sc_hd__inv_1 u_k   (.A(s),  .Y(c2));
     (* keep *) sky130_fd_sc_hd__inv_1 u_s2  (.A(c2), .Y(s));
     (* keep *) sky130_fd_sc_hd__nor2_1 u_q  (.A(r), .B(qb), .Y(q));
     (* keep *) sky130_fd_sc_hd__nor2_1 u_qb (.A(s), .B(q),  .Y(qb));

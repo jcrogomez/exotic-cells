@@ -1,0 +1,18 @@
+inicio 2026-11-27 23:39:03 EST
+  empieza explora/h3/alto_tt27_cal_1.0000e-05/ 23:39:03
+  empieza explora/h3/alto_tt27_cal_1.0000e-08/ 23:39:03
+  empieza explora/h3/alto_tt27_cal_3.1623e-07/ 23:39:03
+  empieza explora/h3/bajo_ff-40_cal_1.0000e-10/ 23:39:03
+  acaba   explora/h3/alto_tt27_cal_1.0000e-05/ 23:43:51 salida 0 0 flancos
+  empieza explora/h3/bajo_ff85_oos_3.1623e-10/ 23:43:51
+  acaba   explora/h3/alto_tt27_cal_3.1623e-07/ 23:45:06 salida 0 0 flancos
+  empieza explora/h3/bajo_tt27_cal_1.0000e-06/ 23:45:06
+  acaba   explora/h3/alto_tt27_cal_1.0000e-08/ 23:47:39 salida 0 0 flancos
+  empieza explora/h3/bajo_tt27_cal_1.0000e-08/ 23:47:39
+  acaba   explora/h3/bajo_tt27_cal_1.0000e-06/ 23:52:37 salida 0 0 flancos
+  empieza explora/h3/bajo_tt27_cal_1.0000e-10/ 23:52:37
+  acaba   explora/h3/bajo_ff85_oos_3.1623e-10/ 23:55:55 salida 0 0 flancos
+  acaba   explora/h3/bajo_tt27_cal_1.0000e-08/ 23:56:21 salida 0 0 flancos
+  acaba   explora/h3/bajo_ff-40_cal_1.0000e-10/ 23:56:38 salida 0 0 flancos
+  acaba   explora/h3/bajo_tt27_cal_1.0000e-10/ 00:00:40 salida 0 0 flancos
+fin 2026-11-28 00:00:40 EST

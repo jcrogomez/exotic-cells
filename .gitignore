@@ -82,3 +82,8 @@ experiments/misfit26/diag/*/lec.sp
 experiments/misfit28/**/lec.sp
 experiments/misfit28/explora/unidad/
 experiments/misfit28/explora/ext/*.gds
+experiments/misfit28/explora/unidad3/
+experiments/misfit28/explora/ext3/*.gds
+experiments/misfit28/unidad_p1/
+experiments/misfit28/mut_*/
+experiments/misfit28/ext*/*.gds

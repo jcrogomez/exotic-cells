@@ -1,0 +1,15 @@
+5867c452da037a1f8d07a48f47d928c65f19d28f028c00c63ff555eaa7d01914  gen28.py
+d73d0642d66e8198248dd87c906b52260040ad21521cc0e6ab50caff2121b1f6  lee28.py
+b421a3f5f9fcc74ad87dadc01a0505efb28f9e6a3f7689e2da4eb5f1dfe08914  analiza28.py
+06251197308982c91b26d34f6586c53ca40ee70819edab887cb6567b331ffff5  analiza28_bloque.py
+0a08514a2ffa9bb890083d92092953ad60c67c308c6d72113260162d7a5fa4b6  corre.sh
+4c4d95c7f14cd57f9dd7e98495326fc14fc85f3afbfd0e4fe4185146a5ee8918  corre_bloque.sh
+6b750181c385583543ff286671d2654960c83e591819707628afe8c606f57fb2  ../../instrument/reader2/reader2_loop.v
+9ae6fd82e62ef20f49aae8ef41d3fd89ef72c0ae66966fc914089814650c0d69  ../../instrument/reader2/reader2_slot.v
+4ebf45ed501b0a50c0318e3f318cf2852344f4241ac8217832436fcf0f382d71  ../../instrument/reader2/unit/config.json
+0e326f910de10c4815cacfce55f6fb63d4e8b513b0899ec9ff3d57fa56d08e0c  ../../instrument/reader2/unit/template.def
+e5a563efd7c9328a29302149f02b9d801827e89b096bfd81b1ac743bfbccc71d  ../../instrument/reader2/unit/plano.py
+4a1c03ef22f816f4cee7616086dd71534a00da8bbb13fa2b2557fc4c222e67a4  ../../instrument/reader2/unit/gen_assemble.py
+20c344d968b84e3c07033a2d5d091af310a13df43c6599455707d3c9f98c0704  ../../instrument/reader2/unit/lvs.sh
+a10eb89ac8c9e980899a03e7d8769f786432d1e3e8c31ab83926f270c75e9efb  ../../instrument/reader2/unit/top_ref.v
+# sellado 2026-11-28 00:03:30 EST, antes de correr

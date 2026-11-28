@@ -35,5 +35,6 @@
   44.62,
   43.52
  ],
- "FP_DEF_TEMPLATE": "dir::template.def"
+ "FP_DEF_TEMPLATE": "dir::template.def",
+ "ERROR_ON_SYNTH_CHECKS": false
 }
