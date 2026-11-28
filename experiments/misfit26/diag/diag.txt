@@ -1,0 +1,11 @@
+== m_bajo_ff85_oos_3.1623e-10: 18586 puntos hasta 9.916 ms; subidas de q por 0,9 V: 36; cambios del primer biestable: 37
+  v(xa) sube a [1.42303] ms, con [4] subidas de q antes
+  v(xb) sube a [4.28872] ms, con [15] subidas de q antes
+  cambios del primer biestable sin flanco de q: [4.0278] ms
+    alli q llega como mucho a 0.645 V; 20 ns despues: nodo 0.779 V, s 0.683 V, q 0.645 V, qb 0.763 V
+  estado final: nodo 0.9461 V, s 0.000 V, q -0.0000 V, qb 1.8000 V, prenl 1.8001 V; ultima subida de q a 9.7542 ms
+== m_bajo_ff-40_cal_1.0000e-10: 35486 puntos hasta 31.352 ms; subidas de q por 0,9 V: 16; cambios del primer biestable: 16
+  v(xa) sube a [4.80566] ms, con [4] subidas de q antes
+  v(xb) sube a [15.58584] ms, con [16] subidas de q antes
+  cambios del primer biestable sin flanco de q: [] ms
+  estado final: nodo 1.7998 V, s 0.000 V, q 0.7247 V, qb 0.7261 V, prenl 0.8299 V; ultima subida de q a 15.5858 ms

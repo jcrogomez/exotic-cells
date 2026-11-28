@@ -162,3 +162,4 @@ experiments/misfit26/w20/m_alto_tt27_cal_1.0000e-08/lec.log | MISFIT-26 high ran
 experiments/misfit26/w20/m_alto_tt27_cal_3.1623e-07/lec.log | MISFIT-26 high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
 experiments/misfit26/zero/m_alto_ff85_zero_0.0000e+00/lec.log | MISFIT-26 zero-current deck: no edge is the expected result (verdict B6), so every edge measurement fails by design
 experiments/misfit26/zero/m_bajo_ff85_zero_0.0000e+00/lec.log | MISFIT-26 zero-current deck: no edge is the expected result (verdict B6), so every edge measurement fails by design
+experiments/misfit26/diag/m_bajo_ff-40_cal_1.0000e-10/lec.log | MISFIT-26 diagnostic rerun of the deck that stops after 16 edges; edges 17 and 18 are missing, which is the failure under diagnosis

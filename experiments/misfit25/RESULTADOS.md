@@ -26,10 +26,12 @@ subidos antes de su pasada. LibreLane 3.0.14, PDK 8afc8346. Veredictos tal como 
 | H4 (testigo) | `libre` cambia algo del lazo | **cumplida** | no se repite |
 | H5 (enmienda) | Ningún búfer añadido en `prot` | | **cumplida** |
 
-**El testigo, que es lo que más enseña:** sin protección el flujo cierra limpio y **rompe el lector**. Mete un búfer en
+**El testigo, que es lo que más enseña:** sin protección el flujo cierra limpio y **cambia el lector sin avisar**
+(decía "rompe el lector"; corregido el 2026-11-27 tras simularlo en [MISFIT-26](../misfit26/RESULTADOS.md): oscila y
+calibra, con la carga del rango alto un 3,3 % distinta). Mete un búfer en
 la entrada `x` (el nodo analógico dejaría de ir al comparador), búferes en `prenh` y `prenl`, y un búfer dentro del lazo
 entre `q` y el primer retardo (`libre_reader2_slot.nl.v`). DRC, LVS y antenas dan cero igual. Un bloque así pasa todas las
-comprobaciones del flujo y no mide.
+comprobaciones del flujo y no es el circuito que se diseñó.
 
 **Por qué falló la pasada 1:** con las redes del lazo marcadas como intocables, la reparación de pendientes y abanicos
 sigue queriendo meter un búfer en una de ellas y el flujo sale con error. La enmienda apaga esa reparación

@@ -39,7 +39,10 @@ The difference removes the first interval, which is several periods long because
   flow buffers `x` and the loop and still reports a clean block.
 - **Assembled** ([MISFIT-27](../../experiments/misfit27/RESULTADOS.md)): the block re-placed at 46.9 × 46.2 µm with pins by template, joined to
   `reader2fe` as `reader2_unit` (46.9 × 56.2 µm): 0 rule violations in Magic, LVS match, three LVS mutants caught.
-- **Not done:** simulation of the assembled unit (the earlier placed block is being simulated in MISFIT-26). The
+- **Open defect** ([MISFIT-26](../../experiments/misfit26/RESULTADOS.md)): extracted with parasitics, the loop shows no hysteresis. At
+  100–316 pA in fast corners the latch dwells at intermediate voltages; the counter got one extra count in one deck and the
+  oscillator stopped in another. The loop in `reader2_loop.v` is the one with the defect; the fix is MISFIT-28.
+- **Not done:** simulation of the assembled unit. The
   structural loop has only been simulated as a SPICE netlist (MISFIT-24), not through this Verilog. Whether the tap
   values give enough counts over the whole current range at the chip's clock is not computed here.
 - The seats hang from `x`; their select lines come from the core as in MISFIT-13.

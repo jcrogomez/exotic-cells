@@ -107,6 +107,9 @@ This page is the single to-do list. What goes on the first tile and its tests, i
   the node held, eight of eight predictions held; cells not placed yet ([report](../experiments/misfit24/RESULTADOS.md)).
 - 2026-11-27 · Night plan on reader 2, 178 runs: counter, node wire, 63 seats and mismatch hold; supply moves a reading
   5–10 % per 100 mV unless recalibrated; three of sixteen predictions false ([report](../experiments/noche_1126/RESULTADOS.md)).
+- 2026-11-27 · MISFIT-26: the placed block extracted and simulated: calibrates as before, but the loop lacks hysteresis
+  and at 100–316 pA the counter miscounts or the oscillator stops; block not accepted, three of eight predictions false
+  ([report](../experiments/misfit26/RESULTADOS.md)).
 - 2026-11-27 · MISFIT-27: reader 2 closed as one unit of layout, block re-placed (2170 µm², was 3426) plus `reader2fe`,
   rule-clean, LVS match, three LVS mutants caught; not simulated yet ([report](../experiments/misfit27/RESULTADOS.md)).
 - 2026-11-27 · MISFIT-25: reader 2's digital block synthesised and placed, clean, loop intact (one amendment); unprotected,
