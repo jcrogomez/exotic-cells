@@ -13,3 +13,7 @@ e5a563efd7c9328a29302149f02b9d801827e89b096bfd81b1ac743bfbccc71d  ../../instrume
 20c344d968b84e3c07033a2d5d091af310a13df43c6599455707d3c9f98c0704  ../../instrument/reader2/unit/lvs.sh
 a10eb89ac8c9e980899a03e7d8769f786432d1e3e8c31ab83926f270c75e9efb  ../../instrument/reader2/unit/top_ref.v
 # sellado 2026-11-28 00:03:30 EST, antes de correr
+# --- enmienda 1 ---
+ea07ef28655711c49f442c6605e26538ea2d8656a6b15777ecbb2303204881ab  gen28e.py
+afe9dd99188f4e6ad215736662ac6774d8ca24b42673535552cc3f016c5dd92e  analiza28e.py
+# sellado 2026-11-28 03:56:01 EST, antes de correr e1/

@@ -1,2 +1,5 @@
 0139e5df3393fddd779479a7d27eb5b124ac6ac6d79569fa477790d5132cd46d  cells/preregistros/MISFIT-28_2026-11-28_lector2_histeresis.md
 # sellado 2026-11-28 00:03:30 EST, despues de la exploracion declarada en el texto y antes de la corrida oficial del bloque y de la tanda
+# --- enmienda 1 ---
+c2c08535c2bcc425ad044e476cb7e354155c8fdf326ad7c0c0346b282f329cc0  cells/preregistros/MISFIT-28_2026-11-28_lector2_histeresis.md
+# enmienda 1 sellada 2026-11-28 03:56:01 EST, antes de correr e1/

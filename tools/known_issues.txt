@@ -200,3 +200,4 @@ experiments/misfit28/largo/alto_tt27_cal_1.0000e-05/lec.log | MISFIT-28, counter
 experiments/misfit28/testigo/m_bajo_ff-40_cal_1.0000e-10/lec.log | MISFIT-28 witness: the MISFIT-26 deck without hysteresis that stalls; the failed measurements are what the witness must show
 experiments/misfit28/zero/alto_ff85_zero_0.0000e+00/lec.log | MISFIT-28, zero-current deck: no edges expected, every edge measurement fails by design
 experiments/misfit28/zero/bajo_ff85_zero_0.0000e+00/lec.log | MISFIT-28, zero-current deck: no edges expected, every edge measurement fails by design
+experiments/misfit28/diag/bajo_ff-40_oos_3.1623e-10_base/lec.log | MISFIT-28 diagnosis: the failing deck repeated with waveforms saved; it stalls after edge 13 like the original (solver artifact at 1 us maximum step, see diag/diag.txt)

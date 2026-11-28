@@ -96,3 +96,42 @@ Confianza baja en C5 (nunca se ha probado desajuste con parásitos) y en el extr
 ## Qué no decide
 
 El arranque del cerrojo sin `.ic`, la sensibilidad a la alimentación con parásitos, la unión con la matriz.
+
+## Enmienda 1 (2026-11-28, después de los veredictos de la primera pasada; el texto de arriba no se toca)
+
+**Qué pasó.** La primera pasada dio C1 y C4 falsas por un deck (rango bajo, ff −40, 316 pA): 13 flancos y luego parado.
+Los veredictos se subieron tal cual (`da96690`) y se quedan así. El diagnóstico posterior
+(`experiments/misfit28/diag/diag.txt`, exploratorio) muestra que el paro es del simulador: con el paso máximo de 1 µs
+de esos decks, ngspice acepta un paso entero de 1 µs sobre el disparo y cae en q = qb = 0,725 V, el equilibrio inestable
+del cerrojo, sin que q haya pasado nunca de ahí; el nodo sube 32 mV en ese mismo paso. El mismo deck con paso máximo de
+0,1 µs da 26 flancos completos. Es el fallo ya anotado en la memoria del proyecto (cerrojo metaestable, paso no convergido).
+
+**Por qué no basta con anotarlo.** Un deck que pasa con otro paso, elegido después de ver el fallo, es exploración. Y la
+regla de arriba ("si falla C1… no se prueba una tercera variante a ciegas") es sobre el circuito; aquí lo que falló es
+el instrumento. Lo que se enmienda es el instrumento, no el circuito: mismo netlist extraído, mismo análisis sellado.
+
+**Qué se repite.** Los 60 decks de rango bajo de la lista (`a` bajo 24, `lento` 16, `mm` 20) con paso máximo
+min(el que tenían, 0,1 µs), en `e1/` (`gen28e.py`). Rango alto, `zero`, `largo`, testigos y parte física no se repiten:
+se leen de la primera pasada (sus pasos ya eran de 0,4 a 3,7 ns). `analiza28e.py` ejecuta `analiza28.py` sin cambios con
+el rango bajo redirigido a `e1/`.
+
+**Control nuevo (E0), convergencia en el paso:** 316 pA en las cuatro esquinas con paso máximo 0,03 µs (`e1/fino/`).
+El periodo tiene que coincidir con el de 0,1 µs dentro de 0,1 %, con 18 flancos limpios.
+**Testigo del detector:** ya existe: el deck de la primera pasada, que el análisis marcó.
+
+**Predicciones:** las mismas C1 a C11, con los mismos criterios, más E0. Confianza: alta en que el deck que falló pasa
+(ya se vio, no cuenta como prueba); media en los otros 59, que no se han corrido con este paso.
+
+**Reglas de la enmienda.**
+- Se adopta el lazo v2 y la unidad si se cumplen C1 a C8, C10 y E0 con esta lectura.
+- Si algún deck vuelve a quedarse parado o a dar pulsos a medias con paso de 0,1 µs, **no hay segunda enmienda de paso**:
+  se da el lazo por no demostrado en simulación y se decide entre celda propia con histéresis, o un arranque que saque
+  al cerrojo del equilibrio, con ondas guardadas del deck que falle.
+- Si E0 es falsa, ninguna lectura de periodo de esta tanda vale como número, pasen o no las demás.
+- Tope: 14400 s por deck (los de 31,6 pA tienen diez veces más pasos), cuatro a la vez. Tanda inválida si algún deck no
+  acaba en `salida 0`.
+
+**Lo que esta enmienda no arregla.** MISFIT-24 y MISFIT-26 usaron el mismo paso de 1 µs en el rango bajo. El paro de
+MISFIT-26 (ff −40, 100 pA) acabó en el mismo q = qb = 0,725 V: puede ser el mismo artefacto y no un defecto del lazo sin
+histéresis. Se están repitiendo los dos testigos de MISFIT-26 con paso de 0,1 µs (`diag/testigo_*_paso`, exploratorio);
+lo que salga se escribe en los resultados y no cambia estas reglas.
