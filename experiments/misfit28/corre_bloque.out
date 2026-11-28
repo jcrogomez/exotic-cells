@@ -1,0 +1,8 @@
+inicio 2026-11-28 00:04:07 EST
+bloque rc=0 00:04:47
+ok: DRC-GDS reader2_unit violations=0 | Final result: Circuits match uniquely. | property errors: 0
+noX: DRC-GDS reader2_unit violations=0 | Final result: Netlists do not match. | property errors: 0
+noPRENL: DRC-GDS reader2_unit violations=0 | Final result: Netlists do not match. | property errors: 0
+noVDD: DRC-GDS reader2_unit violations=0 | Final result: Netlists do not match. | property errors: 0
+extraccion: 1267 dispositivos, 3836 condensadores
+fin 2026-11-28 00:05:25 EST

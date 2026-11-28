@@ -1,0 +1,307 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+Warning: sky130_fd_pr__model__parasitic__diode_ps2nw: IKR too small - model effect disabled!
+Warning: sky130_fd_pr__diode_pd2nw_05v5: IKR too small - model effect disabled!
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * misfit-28: unidad del lector 2 extraida, rango alto, caso zero, i = 0.0000e+00 a, ff 85 c
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Using KLU as Direct Linear Solver
+ Reference value :  0.00000e+00 Reference value :  6.55360e-07 Reference value :  2.00057e-06 Reference value :  2.00083e-06 Reference value :  2.00101e-06 Reference value :  2.00119e-06 Reference value :  2.01360e-06 Reference value :  8.58366e-06 Reference value :  2.65837e-05 Reference value :  4.35837e-05 Reference value :  6.05837e-05 Reference value :  7.85837e-05 Reference value :  9.55837e-05 Reference value :  1.12584e-04 Reference value :  1.28584e-04 Reference value :  1.45584e-04 Reference value :  1.62584e-04 Reference value :  1.79584e-04 Reference value :  1.96584e-04 Reference value :  2.13584e-04 Reference value :  2.29584e-04 Reference value :  2.46584e-04 Reference value :  2.63584e-04 Reference value :  2.80584e-04 Reference value :  2.96584e-04 Reference value :  3.14584e-04 Reference value :  3.31584e-04 Reference value :  3.49584e-04 Reference value :  3.66584e-04 Reference value :  3.84584e-04 Reference value :  4.00584e-04 Reference value :  4.17584e-04 Reference value :  4.34584e-04 Reference value :  4.51584e-04 Reference value :  4.68584e-04 Reference value :  4.85584e-04 Reference value :  5.03584e-04 Reference value :  5.19584e-04 Reference value :  5.35584e-04 Reference value :  5.52584e-04 Reference value :  5.69584e-04 Reference value :  5.87584e-04 Reference value :  6.04584e-04 Reference value :  6.21584e-04 Reference value :  6.38584e-04 Reference value :  6.54584e-04 Reference value :  6.71584e-04 Reference value :  6.88584e-04 Reference value :  7.05584e-04 Reference value :  7.22584e-04 Reference value :  7.39584e-04 Reference value :  7.57584e-04 Reference value :  7.74584e-04 Reference value :  7.91584e-04 Reference value :  8.08584e-04 Reference value :  8.25584e-04 Reference value :  8.42584e-04 Reference value :  8.59584e-04 Reference value :  8.76584e-04 Reference value :  8.93584e-04 Reference value :  9.10584e-04 Reference value :  9.27584e-04 Reference value :  9.44584e-04 Reference value :  9.61584e-04 Reference value :  9.78584e-04 Reference value :  9.95584e-04 Reference value :  1.01258e-03 Reference value :  1.02958e-03 Reference value :  1.04558e-03 Reference value :  1.06358e-03 Reference value :  1.07958e-03 Reference value :  1.09658e-03 Reference value :  1.11358e-03 Reference value :  1.13058e-03 Reference value :  1.14758e-03 Reference value :  1.16458e-03 Reference value :  1.18158e-03 Reference value :  1.19758e-03 Reference value :  1.21458e-03 Reference value :  1.23258e-03 Reference value :  1.24958e-03 Reference value :  1.26658e-03 Reference value :  1.28258e-03 Reference value :  1.29958e-03 Reference value :  1.31558e-03 Reference value :  1.33258e-03 Reference value :  1.34958e-03 Reference value :  1.36658e-03 Reference value :  1.38458e-03 Reference value :  1.40158e-03 Reference value :  1.41958e-03 Reference value :  1.43658e-03 Reference value :  1.45358e-03 Reference value :  1.47058e-03 Reference value :  1.48658e-03 Reference value :  1.50358e-03 Reference value :  1.52058e-03 Reference value :  1.53758e-03 Reference value :  1.55458e-03 Reference value :  1.57158e-03 Reference value :  1.58858e-03 Reference value :  1.60258e-03 Reference value :  1.61958e-03 Reference value :  1.63758e-03 Reference value :  1.65458e-03 Reference value :  1.67158e-03 Reference value :  1.68858e-03 Reference value :  1.70558e-03 Reference value :  1.72358e-03 Reference value :  1.74058e-03 Reference value :  1.75758e-03 Reference value :  1.77458e-03 Reference value :  1.79258e-03 Reference value :  1.80858e-03 Reference value :  1.82558e-03 Reference value :  1.84258e-03 Reference value :  1.85958e-03 Reference value :  1.87658e-03 Reference value :  1.89458e-03 Reference value :  1.91158e-03 Reference value :  1.92858e-03 Reference value :  1.94658e-03 Reference value :  1.96358e-03 Reference value :  1.97958e-03 Reference value :  1.99558e-03 Reference value :  2.01258e-03 Reference value :  2.02958e-03 Reference value :  2.04658e-03 Reference value :  2.06358e-03 Reference value :  2.08058e-03 Reference value :  2.09758e-03 Reference value :  2.11458e-03 Reference value :  2.13158e-03 Reference value :  2.14958e-03 Reference value :  2.16658e-03 Reference value :  2.18358e-03 Reference value :  2.19958e-03 Reference value :  2.21658e-03 Reference value :  2.23358e-03 Reference value :  2.25058e-03 Reference value :  2.26858e-03 Reference value :  2.28558e-03 Reference value :  2.30258e-03 Reference value :  2.31858e-03 Reference value :  2.33558e-03 Reference value :  2.35258e-03 Reference value :  2.37058e-03 Reference value :  2.38758e-03 Reference value :  2.40458e-03 Reference value :  2.42058e-03 Reference value :  2.43758e-03 Reference value :  2.45458e-03 Reference value :  2.47158e-03 Reference value :  2.48958e-03 Reference value :  2.50658e-03 Reference value :  2.52358e-03 Reference value :  2.54058e-03 Reference value :  2.55758e-03 Reference value :  2.57558e-03 Reference value :  2.59258e-03 Reference value :  2.60958e-03 Reference value :  2.62658e-03 Reference value :  2.64358e-03 Reference value :  2.66058e-03 Reference value :  2.67758e-03 Reference value :  2.69458e-03 Reference value :  2.71158e-03 Reference value :  2.72858e-03 Reference value :  2.74458e-03 Reference value :  2.76158e-03 Reference value :  2.77858e-03 Reference value :  2.79558e-03 Reference value :  2.81258e-03 Reference value :  2.82958e-03 Reference value :  2.84758e-03 Reference value :  2.86458e-03 Reference value :  2.88158e-03 Reference value :  2.89758e-03 Reference value :  2.91458e-03 Reference value :  2.93158e-03 Reference value :  2.94858e-03 Reference value :  2.96658e-03 Reference value :  2.98458e-03 Reference value :  3.00158e-03 Reference value :  3.01958e-03 Reference value :  3.03558e-03 Reference value :  3.05358e-03 Reference value :  3.07158e-03 Reference value :  3.08958e-03 Reference value :  3.10558e-03 Reference value :  3.12258e-03 Reference value :  3.13958e-03 Reference value :  3.15658e-03 Reference value :  3.17358e-03 Reference value :  3.18958e-03 Reference value :  3.20658e-03 Reference value :  3.22358e-03 Reference value :  3.24058e-03 Reference value :  3.25758e-03 Reference value :  3.27458e-03 Reference value :  3.29158e-03 Reference value :  3.30858e-03 Reference value :  3.32458e-03 Reference value :  3.34158e-03 Reference value :  3.35858e-03 Reference value :  3.37458e-03 Reference value :  3.39158e-03 Reference value :  3.40958e-03 Reference value :  3.42658e-03 Reference value :  3.44358e-03 Reference value :  3.46058e-03 Reference value :  3.47758e-03 Reference value :  3.49458e-03 Reference value :  3.51158e-03 Reference value :  3.52858e-03 Reference value :  3.54558e-03 Reference value :  3.56358e-03 Reference value :  3.58158e-03 Reference value :  3.59858e-03 Reference value :  3.61658e-03 Reference value :  3.63458e-03 Reference value :  3.65258e-03 Reference value :  3.66958e-03 Reference value :  3.68658e-03 Reference value :  3.70358e-03 Reference value :  3.71958e-03 Reference value :  3.73658e-03 Reference value :  3.75358e-03 Reference value :  3.77058e-03 Reference value :  3.78758e-03 Reference value :  3.80458e-03 Reference value :  3.82158e-03 Reference value :  3.83858e-03 Reference value :  3.85658e-03 Reference value :  3.87358e-03 Reference value :  3.89058e-03 Reference value :  3.90758e-03 Reference value :  3.92458e-03 Reference value :  3.94158e-03 Reference value :  3.95958e-03 Reference value :  3.97758e-03 Reference value :  3.99458e-03 Reference value :  4.01158e-03 Reference value :  4.02858e-03 Reference value :  4.04358e-03 Reference value :  4.06158e-03 Reference value :  4.07858e-03 Reference value :  4.09558e-03 Reference value :  4.11258e-03 Reference value :  4.13058e-03 Reference value :  4.14758e-03 Reference value :  4.16458e-03 Reference value :  4.18158e-03 Reference value :  4.19858e-03 Reference value :  4.21558e-03 Reference value :  4.23158e-03 Reference value :  4.24758e-03 Reference value :  4.26458e-03 Reference value :  4.28158e-03 Reference value :  4.29858e-03 Reference value :  4.31558e-03 Reference value :  4.33258e-03 Reference value :  4.35058e-03 Reference value :  4.36758e-03 Reference value :  4.38458e-03 Reference value :  4.40258e-03 Reference value :  4.41958e-03 Reference value :  4.43658e-03 Reference value :  4.45358e-03 Reference value :  4.47058e-03 Reference value :  4.48758e-03 Reference value :  4.50358e-03 Reference value :  4.52058e-03 Reference value :  4.53758e-03 Reference value :  4.55458e-03 Reference value :  4.57158e-03 Reference value :  4.58958e-03 Reference value :  4.60658e-03 Reference value :  4.62358e-03 Reference value :  4.64058e-03 Reference value :  4.65758e-03 Reference value :  4.67458e-03 Reference value :  4.69158e-03 Reference value :  4.70858e-03 Reference value :  4.72558e-03 Reference value :  4.74258e-03 Reference value :  4.75958e-03 Reference value :  4.77558e-03 Reference value :  4.79358e-03 Reference value :  4.81058e-03 Reference value :  4.82758e-03 Reference value :  4.84458e-03 Reference value :  4.86258e-03 Reference value :  4.87958e-03 Reference value :  4.89658e-03 Reference value :  4.91358e-03 Reference value :  4.93158e-03 Reference value :  4.94858e-03 Reference value :  4.96558e-03 Reference value :  4.98258e-03 Reference value :  5.00058e-03 Reference value :  5.01758e-03 Reference value :  5.03458e-03 Reference value :  5.05058e-03 Reference value :  5.06658e-03 Reference value :  5.08358e-03 Reference value :  5.10058e-03 Reference value :  5.11858e-03 Reference value :  5.13558e-03 Reference value :  5.15158e-03 Reference value :  5.16858e-03 Reference value :  5.18558e-03 Reference value :  5.20258e-03 Reference value :  5.21958e-03 Reference value :  5.23658e-03 Reference value :  5.25258e-03 Reference value :  5.26958e-03 Reference value :  5.28758e-03 Reference value :  5.30458e-03 Reference value :  5.32158e-03 Reference value :  5.33858e-03 Reference value :  5.35458e-03 Reference value :  5.37158e-03 Reference value :  5.38858e-03 Reference value :  5.40558e-03 Reference value :  5.42258e-03 Reference value :  5.43958e-03 Reference value :  5.45658e-03 Reference value :  5.47258e-03 Reference value :  5.48958e-03 Reference value :  5.50658e-03 Reference value :  5.52258e-03 Reference value :  5.53958e-03 Reference value :  5.55658e-03 Reference value :  5.57258e-03 Reference value :  5.58958e-03 Reference value :  5.60658e-03 Reference value :  5.62458e-03 Reference value :  5.64158e-03 Reference value :  5.65858e-03 Reference value :  5.67558e-03 Reference value :  5.69258e-03 Reference value :  5.70858e-03 Reference value :  5.72558e-03 Reference value :  5.74258e-03 Reference value :  5.75958e-03 Reference value :  5.77658e-03 Reference value :  5.79358e-03 Reference value :  5.81058e-03 Reference value :  5.82758e-03 Reference value :  5.84458e-03 Reference value :  5.86258e-03 Reference value :  5.88058e-03 Reference value :  5.89758e-03 Reference value :  5.91558e-03 Reference value :  5.93358e-03 Reference value :  5.95058e-03 Reference value :  5.96658e-03 Reference value :  5.98358e-03 Reference value :  6.00058e-03 Reference value :  6.01758e-03 Reference value :  6.03558e-03 Reference value :  6.05258e-03 Reference value :  6.06958e-03 Reference value :  6.08658e-03 Reference value :  6.10458e-03 Reference value :  6.12158e-03 Reference value :  6.13858e-03 Reference value :  6.15558e-03 Reference value :  6.17158e-03 Reference value :  6.18858e-03 Reference value :  6.20558e-03 Reference value :  6.22258e-03 Reference value :  6.23958e-03 Reference value :  6.25658e-03 Reference value :  6.27358e-03 Reference value :  6.28958e-03 Reference value :  6.30658e-03 Reference value :  6.32358e-03 Reference value :  6.34058e-03 Reference value :  6.35758e-03 Reference value :  6.37358e-03 Reference value :  6.39058e-03 Reference value :  6.40758e-03 Reference value :  6.42458e-03 Reference value :  6.44058e-03 Reference value :  6.45758e-03 Reference value :  6.47458e-03 Reference value :  6.49158e-03 Reference value :  6.50858e-03 Reference value :  6.52458e-03 Reference value :  6.54158e-03 Reference value :  6.55858e-03 Reference value :  6.57558e-03 Reference value :  6.59258e-03 Reference value :  6.60958e-03 Reference value :  6.62658e-03 Reference value :  6.64358e-03 Reference value :  6.66058e-03 Reference value :  6.67758e-03 Reference value :  6.69458e-03 Reference value :  6.71158e-03 Reference value :  6.72858e-03 Reference value :  6.74558e-03 Reference value :  6.76258e-03 Reference value :  6.77958e-03 Reference value :  6.79658e-03 Reference value :  6.81458e-03 Reference value :  6.83258e-03 Reference value :  6.85058e-03 Reference value :  6.86758e-03 Reference value :  6.88458e-03 Reference value :  6.90158e-03 Reference value :  6.91858e-03 Reference value :  6.93558e-03 Reference value :  6.95158e-03 Reference value :  6.96858e-03 Reference value :  6.98558e-03 Reference value :  7.00258e-03 Reference value :  7.02058e-03 Reference value :  7.03758e-03 Reference value :  7.05458e-03 Reference value :  7.07158e-03 Reference value :  7.08858e-03 Reference value :  7.10458e-03 Reference value :  7.12258e-03 Reference value :  7.13958e-03 Reference value :  7.15758e-03 Reference value :  7.17458e-03 Reference value :  7.19258e-03 Reference value :  7.20958e-03 Reference value :  7.22558e-03 Reference value :  7.24258e-03 Reference value :  7.25958e-03 Reference value :  7.27658e-03 Reference value :  7.29358e-03 Reference value :  7.30958e-03 Reference value :  7.32658e-03 Reference value :  7.34458e-03 Reference value :  7.36158e-03 Reference value :  7.37858e-03 Reference value :  7.39558e-03 Reference value :  7.41258e-03 Reference value :  7.42958e-03 Reference value :  7.44758e-03 Reference value :  7.46558e-03 Reference value :  7.48258e-03 Reference value :  7.50058e-03 Reference value :  7.51758e-03 Reference value :  7.53458e-03 Reference value :  7.55158e-03 Reference value :  7.56858e-03 Reference value :  7.58558e-03 Reference value :  7.60258e-03 Reference value :  7.61958e-03 Reference value :  7.63658e-03 Reference value :  7.65358e-03 Reference value :  7.67058e-03 Reference value :  7.68758e-03 Reference value :  7.70458e-03 Reference value :  7.72058e-03 Reference value :  7.73858e-03 Reference value :  7.75458e-03 Reference value :  7.77158e-03 Reference value :  7.78958e-03 Reference value :  7.80658e-03 Reference value :  7.82458e-03 Reference value :  7.84058e-03 Reference value :  7.85758e-03 Reference value :  7.87458e-03 Reference value :  7.89258e-03 Reference value :  7.91058e-03 Reference value :  7.92758e-03 Reference value :  7.94558e-03 Reference value :  7.96258e-03 Reference value :  7.97958e-03 Reference value :  7.99758e-03 Reference value :  8.01458e-03 Reference value :  8.03158e-03 Reference value :  8.04958e-03 Reference value :  8.06758e-03 Reference value :  8.08558e-03 Reference value :  8.10258e-03 Reference value :  8.11958e-03 Reference value :  8.13658e-03 Reference value :  8.15358e-03 Reference value :  8.17058e-03 Reference value :  8.18758e-03 Reference value :  8.20458e-03 Reference value :  8.22158e-03 Reference value :  8.23858e-03 Reference value :  8.25558e-03 Reference value :  8.27358e-03 Reference value :  8.29058e-03 Reference value :  8.30758e-03 Reference value :  8.32558e-03 Reference value :  8.34258e-03 Reference value :  8.35958e-03 Reference value :  8.37558e-03 Reference value :  8.39358e-03 Reference value :  8.41058e-03 Reference value :  8.42858e-03 Reference value :  8.44558e-03 Reference value :  8.46358e-03 Reference value :  8.48158e-03 Reference value :  8.49858e-03 Reference value :  8.51558e-03 Reference value :  8.53258e-03 Reference value :  8.54958e-03 Reference value :  8.56658e-03 Reference value :  8.58358e-03 Reference value :  8.60058e-03 Reference value :  8.61758e-03 Reference value :  8.63558e-03 Reference value :  8.65258e-03 Reference value :  8.66858e-03 Reference value :  8.68558e-03 Reference value :  8.70258e-03 Reference value :  8.71858e-03 Reference value :  8.73558e-03 Reference value :  8.75258e-03 Reference value :  8.76958e-03 Reference value :  8.78658e-03 Reference value :  8.80358e-03 Reference value :  8.81958e-03 Reference value :  8.83758e-03 Reference value :  8.85458e-03 Reference value :  8.87158e-03 Reference value :  8.88858e-03 Reference value :  8.90558e-03 Reference value :  8.92358e-03 Reference value :  8.94058e-03 Reference value :  8.95758e-03 Reference value :  8.97458e-03 Reference value :  8.98958e-03 Reference value :  9.00458e-03 Reference value :  9.02058e-03 Reference value :  9.03558e-03 Reference value :  9.05058e-03 Reference value :  9.06558e-03 Reference value :  9.08358e-03 Reference value :  9.10058e-03 Reference value :  9.11758e-03 Reference value :  9.13458e-03 Reference value :  9.15258e-03 Reference value :  9.17058e-03 Reference value :  9.18758e-03 Reference value :  9.20458e-03 Reference value :  9.22258e-03 Reference value :  9.23858e-03 Reference value :  9.25558e-03 Reference value :  9.27158e-03 Reference value :  9.28858e-03 Reference value :  9.30658e-03 Reference value :  9.32458e-03 Reference value :  9.34158e-03 Reference value :  9.35758e-03 Reference value :  9.37358e-03 Reference value :  9.39058e-03 Reference value :  9.40758e-03 Reference value :  9.42458e-03 Reference value :  9.44258e-03 Reference value :  9.45958e-03 Reference value :  9.47658e-03 Reference value :  9.49358e-03 Reference value :  9.51058e-03 Reference value :  9.52758e-03 Reference value :  9.54458e-03 Reference value :  9.56258e-03 Reference value :  9.57958e-03 Reference value :  9.59558e-03 Reference value :  9.61258e-03 Reference value :  9.62858e-03 Reference value :  9.64658e-03 Reference value :  9.66458e-03 Reference value :  9.68158e-03 Reference value :  9.69858e-03 Reference value :  9.71658e-03 Reference value :  9.73458e-03 Reference value :  9.75258e-03 Reference value :  9.77058e-03 Reference value :  9.78758e-03 Reference value :  9.80558e-03 Reference value :  9.82258e-03 Reference value :  9.83958e-03 Reference value :  9.85658e-03 Reference value :  9.87358e-03 Reference value :  9.88958e-03 Reference value :  9.90758e-03 Reference value :  9.92458e-03 Reference value :  9.94058e-03 Reference value :  9.95858e-03 Reference value :  9.97458e-03 Reference value :  9.99158e-03 Reference value :  1.00086e-02 Reference value :  1.00256e-02 Reference value :  1.00426e-02 Reference value :  1.00606e-02 Reference value :  1.00776e-02 Reference value :  1.00956e-02 Reference value :  1.01126e-02 Reference value :  1.01296e-02 Reference value :  1.01466e-02 Reference value :  1.01636e-02 Reference value :  1.01806e-02 Reference value :  1.01986e-02 Reference value :  1.02156e-02 Reference value :  1.02326e-02 Reference value :  1.02486e-02 Reference value :  1.02646e-02 Reference value :  1.02816e-02 Reference value :  1.02986e-02 Reference value :  1.03166e-02 Reference value :  1.03346e-02 Reference value :  1.03516e-02 Reference value :  1.03686e-02 Reference value :  1.03866e-02 Reference value :  1.04036e-02 Reference value :  1.04206e-02 Reference value :  1.04386e-02 Reference value :  1.04556e-02 Reference value :  1.04716e-02 Reference value :  1.04896e-02 Reference value :  1.05056e-02 Reference value :  1.05236e-02 Reference value :  1.05406e-02 Reference value :  1.05576e-02 Reference value :  1.05756e-02 Reference value :  1.05936e-02 Reference value :  1.06096e-02 Reference value :  1.06276e-02 Reference value :  1.06446e-02 Reference value :  1.06616e-02 Reference value :  1.06796e-02 Reference value :  1.06966e-02 Reference value :  1.07136e-02 Reference value :  1.07306e-02 Reference value :  1.07466e-02 Reference value :  1.07636e-02 Reference value :  1.07806e-02 Reference value :  1.07976e-02 Reference value :  1.08146e-02 Reference value :  1.08326e-02 Reference value :  1.08496e-02 Reference value :  1.08666e-02 Reference value :  1.08826e-02 Reference value :  1.08996e-02 Reference value :  1.09166e-02 Reference value :  1.09336e-02 Reference value :  1.09506e-02 Reference value :  1.09676e-02 Reference value :  1.09846e-02 Reference value :  1.10016e-02 Reference value :  1.10186e-02 Reference value :  1.10356e-02 Reference value :  1.10526e-02 Reference value :  1.10696e-02 Reference value :  1.10856e-02 Reference value :  1.11036e-02 Reference value :  1.11206e-02 Reference value :  1.11376e-02 Reference value :  1.11546e-02 Reference value :  1.11716e-02 Reference value :  1.11876e-02 Reference value :  1.12046e-02 Reference value :  1.12206e-02 Reference value :  1.12376e-02 Reference value :  1.12556e-02 Reference value :  1.12716e-02 Reference value :  1.12876e-02 Reference value :  1.13056e-02 Reference value :  1.13226e-02 Reference value :  1.13386e-02 Reference value :  1.13556e-02 Reference value :  1.13726e-02 Reference value :  1.13896e-02 Reference value :  1.14076e-02 Reference value :  1.14256e-02 Reference value :  1.14426e-02 Reference value :  1.14596e-02 Reference value :  1.14766e-02 Reference value :  1.14936e-02 Reference value :  1.15106e-02 Reference value :  1.15266e-02 Reference value :  1.15436e-02 Reference value :  1.15606e-02 Reference value :  1.15776e-02 Reference value :  1.15946e-02 Reference value :  1.16106e-02 Reference value :  1.16266e-02 Reference value :  1.16436e-02 Reference value :  1.16606e-02 Reference value :  1.16766e-02 Reference value :  1.16916e-02 Reference value :  1.17076e-02 Reference value :  1.17246e-02 Reference value :  1.17406e-02 Reference value :  1.17576e-02 Reference value :  1.17736e-02 Reference value :  1.17896e-02 Reference value :  1.18056e-02 Reference value :  1.18206e-02 Reference value :  1.18366e-02 Reference value :  1.18526e-02 Reference value :  1.18686e-02 Reference value :  1.18846e-02 Reference value :  1.19016e-02 Reference value :  1.19176e-02 Reference value :  1.19336e-02 Reference value :  1.19496e-02 Reference value :  1.19656e-02 Reference value :  1.19816e-02 Reference value :  1.19986e-02 Reference value :  1.20156e-02 Reference value :  1.20326e-02 Reference value :  1.20486e-02 Reference value :  1.20656e-02 Reference value :  1.20816e-02 Reference value :  1.20976e-02 Reference value :  1.21146e-02 Reference value :  1.21306e-02 Reference value :  1.21466e-02 Reference value :  1.21626e-02 Reference value :  1.21786e-02 Reference value :  1.21946e-02 Reference value :  1.22106e-02 Reference value :  1.22266e-02 Reference value :  1.22436e-02 Reference value :  1.22596e-02 Reference value :  1.22766e-02 Reference value :  1.22936e-02 Reference value :  1.23096e-02 Reference value :  1.23256e-02 Reference value :  1.23416e-02 Reference value :  1.23586e-02 Reference value :  1.23756e-02 Reference value :  1.23936e-02 Reference value :  1.24106e-02 Reference value :  1.24266e-02 Reference value :  1.24426e-02 Reference value :  1.24586e-02 Reference value :  1.24756e-02 Reference value :  1.24916e-02 Reference value :  1.25086e-02 Reference value :  1.25246e-02 Reference value :  1.25416e-02 Reference value :  1.25576e-02 Reference value :  1.25746e-02 Reference value :  1.25916e-02 Reference value :  1.26076e-02 Reference value :  1.26246e-02 Reference value :  1.26416e-02 Reference value :  1.26586e-02 Reference value :  1.26746e-02 Reference value :  1.26906e-02 Reference value :  1.27066e-02 Reference value :  1.27236e-02 Reference value :  1.27406e-02 Reference value :  1.27566e-02 Reference value :  1.27736e-02 Reference value :  1.27906e-02 Reference value :  1.28076e-02 Reference value :  1.28236e-02 Reference value :  1.28396e-02 Reference value :  1.28566e-02 Reference value :  1.28746e-02 Reference value :  1.28916e-02 Reference value :  1.29076e-02 Reference value :  1.29246e-02 Reference value :  1.29416e-02 Reference value :  1.29586e-02 Reference value :  1.29746e-02 Reference value :  1.29916e-02 Reference value :  1.30076e-02 Reference value :  1.30246e-02 Reference value :  1.30416e-02 Reference value :  1.30586e-02 Reference value :  1.30756e-02 Reference value :  1.30916e-02 Reference value :  1.31086e-02 Reference value :  1.31246e-02 Reference value :  1.31406e-02 Reference value :  1.31566e-02 Reference value :  1.31736e-02 Reference value :  1.31896e-02 Reference value :  1.32056e-02 Reference value :  1.32226e-02 Reference value :  1.32396e-02 Reference value :  1.32566e-02 Reference value :  1.32736e-02 Reference value :  1.32896e-02 Reference value :  1.33066e-02 Reference value :  1.33246e-02 Reference value :  1.33416e-02 Reference value :  1.33586e-02 Reference value :  1.33746e-02 Reference value :  1.33916e-02 Reference value :  1.34086e-02 Reference value :  1.34246e-02 Reference value :  1.34406e-02 Reference value :  1.34586e-02 Reference value :  1.34746e-02 Reference value :  1.34906e-02 Reference value :  1.35076e-02 Reference value :  1.35236e-02 Reference value :  1.35406e-02 Reference value :  1.35576e-02 Reference value :  1.35736e-02 Reference value :  1.35906e-02 Reference value :  1.36066e-02 Reference value :  1.36226e-02 Reference value :  1.36396e-02 Reference value :  1.36566e-02 Reference value :  1.36726e-02 Reference value :  1.36906e-02 Reference value :  1.37076e-02 Reference value :  1.37236e-02 Reference value :  1.37396e-02 Reference value :  1.37546e-02 Reference value :  1.37696e-02 Reference value :  1.37866e-02 Reference value :  1.38036e-02 Reference value :  1.38196e-02 Reference value :  1.38356e-02 Reference value :  1.38516e-02 Reference value :  1.38676e-02 Reference value :  1.38836e-02 Reference value :  1.39006e-02 Reference value :  1.39166e-02 Reference value :  1.39336e-02 Reference value :  1.39506e-02 Reference value :  1.39676e-02 Reference value :  1.39836e-02 Reference value :  1.39996e-02 Reference value :  1.40166e-02 Reference value :  1.40336e-02 Reference value :  1.40476e-02 Reference value :  1.40636e-02 Reference value :  1.40806e-02 Reference value :  1.40966e-02 Reference value :  1.41136e-02 Reference value :  1.41296e-02 Reference value :  1.41456e-02 Reference value :  1.41626e-02 Reference value :  1.41796e-02 Reference value :  1.41956e-02 Reference value :  1.42126e-02 Reference value :  1.42286e-02 Reference value :  1.42456e-02 Reference value :  1.42626e-02 Reference value :  1.42786e-02 Reference value :  1.42956e-02 Reference value :  1.43126e-02 Reference value :  1.43306e-02 Reference value :  1.43466e-02 Reference value :  1.43626e-02 Reference value :  1.43796e-02 Reference value :  1.43966e-02 Reference value :  1.44126e-02 Reference value :  1.44296e-02 Reference value :  1.44456e-02 Reference value :  1.44626e-02 Reference value :  1.44796e-02 Reference value :  1.44956e-02 Reference value :  1.45126e-02 Reference value :  1.45296e-02 Reference value :  1.45466e-02 Reference value :  1.45626e-02 Reference value :  1.45796e-02 Reference value :  1.45966e-02 Reference value :  1.46126e-02 Reference value :  1.46276e-02 Reference value :  1.46436e-02 Reference value :  1.46576e-02 Reference value :  1.46736e-02 Reference value :  1.46896e-02 Reference value :  1.47056e-02 Reference value :  1.47226e-02 Reference value :  1.47396e-02 Reference value :  1.47566e-02 Reference value :  1.47726e-02 Reference value :  1.47886e-02 Reference value :  1.48046e-02 Reference value :  1.48206e-02 Reference value :  1.48376e-02 Reference value :  1.48536e-02 Reference value :  1.48666e-02 Reference value :  1.48826e-02 Reference value :  1.48996e-02 Reference value :  1.49166e-02 Reference value :  1.49326e-02 Reference value :  1.49486e-02 Reference value :  1.49646e-02 Reference value :  1.49806e-02 Reference value :  1.49976e-02 Reference value :  1.50136e-02 Reference value :  1.50306e-02 Reference value :  1.50476e-02 Reference value :  1.50636e-02 Reference value :  1.50796e-02 Reference value :  1.50966e-02 Reference value :  1.51136e-02 Reference value :  1.51306e-02 Reference value :  1.51466e-02 Reference value :  1.51626e-02 Reference value :  1.51796e-02 Reference value :  1.51966e-02 Reference value :  1.52136e-02 Reference value :  1.52306e-02 Reference value :  1.52466e-02 Reference value :  1.52626e-02 Reference value :  1.52786e-02 Reference value :  1.52946e-02 Reference value :  1.53116e-02 Reference value :  1.53286e-02 Reference value :  1.53446e-02 Reference value :  1.53616e-02 Reference value :  1.53786e-02 Reference value :  1.53956e-02 Reference value :  1.54126e-02 Reference value :  1.54296e-02 Reference value :  1.54466e-02 Reference value :  1.54636e-02 Reference value :  1.54806e-02 Reference value :  1.54966e-02 Reference value :  1.55126e-02 Reference value :  1.55286e-02 Reference value :  1.55446e-02 Reference value :  1.55606e-02 Reference value :  1.55766e-02 Reference value :  1.55936e-02 Reference value :  1.56106e-02 Reference value :  1.56276e-02 Reference value :  1.56446e-02 Reference value :  1.56616e-02 Reference value :  1.56786e-02 Reference value :  1.56956e-02 Reference value :  1.57116e-02 Reference value :  1.57276e-02 Reference value :  1.57436e-02 Reference value :  1.57606e-02 Reference value :  1.57766e-02 Reference value :  1.57936e-02 Reference value :  1.58096e-02 Reference value :  1.58266e-02 Reference value :  1.58436e-02 Reference value :  1.58596e-02 Reference value :  1.58756e-02 Reference value :  1.58926e-02 Reference value :  1.59096e-02 Reference value :  1.59266e-02 Reference value :  1.59436e-02 Reference value :  1.59596e-02 Reference value :  1.59756e-02 Reference value :  1.59916e-02 Reference value :  1.60076e-02 Reference value :  1.60246e-02 Reference value :  1.60406e-02 Reference value :  1.60576e-02 Reference value :  1.60746e-02 Reference value :  1.60906e-02 Reference value :  1.61076e-02 Reference value :  1.61236e-02 Reference value :  1.61406e-02 Reference value :  1.61566e-02 Reference value :  1.61726e-02 Reference value :  1.61886e-02 Reference value :  1.62056e-02 Reference value :  1.62226e-02 Reference value :  1.62386e-02 Reference value :  1.62556e-02 Reference value :  1.62716e-02 Reference value :  1.62876e-02 Reference value :  1.63036e-02 Reference value :  1.63196e-02 Reference value :  1.63356e-02 Reference value :  1.63526e-02 Reference value :  1.63686e-02 Reference value :  1.63846e-02 Reference value :  1.64016e-02 Reference value :  1.64186e-02 Reference value :  1.64356e-02 Reference value :  1.64526e-02 Reference value :  1.64696e-02 Reference value :  1.64866e-02 Reference value :  1.65036e-02 Reference value :  1.65196e-02 Reference value :  1.65356e-02 Reference value :  1.65516e-02 Reference value :  1.65676e-02 Reference value :  1.65836e-02 Reference value :  1.65996e-02 Reference value :  1.66166e-02 Reference value :  1.66336e-02 Reference value :  1.66496e-02 Reference value :  1.66666e-02 Reference value :  1.66836e-02 Reference value :  1.66996e-02 Reference value :  1.67166e-02 Reference value :  1.67336e-02 Reference value :  1.67506e-02 Reference value :  1.67666e-02 Reference value :  1.67836e-02 Reference value :  1.67996e-02 Reference value :  1.68156e-02 Reference value :  1.68326e-02 Reference value :  1.68496e-02 Reference value :  1.68656e-02 Reference value :  1.68816e-02 Reference value :  1.68986e-02 Reference value :  1.69136e-02 Reference value :  1.69296e-02 Reference value :  1.69456e-02 Reference value :  1.69626e-02 Reference value :  1.69786e-02 Reference value :  1.69946e-02 Reference value :  1.70116e-02 Reference value :  1.70276e-02 Reference value :  1.70446e-02 Reference value :  1.70626e-02 Reference value :  1.70796e-02 Reference value :  1.70956e-02 Reference value :  1.71116e-02 Reference value :  1.71276e-02 Reference value :  1.71436e-02 Reference value :  1.71596e-02 Reference value :  1.71756e-02 Reference value :  1.71916e-02 Reference value :  1.72076e-02 Reference value :  1.72236e-02 Reference value :  1.72406e-02 Reference value :  1.72576e-02 Reference value :  1.72736e-02 Reference value :  1.72906e-02 Reference value :  1.73066e-02 Reference value :  1.73226e-02 Reference value :  1.73396e-02 Reference value :  1.73556e-02 Reference value :  1.73716e-02 Reference value :  1.73876e-02 Reference value :  1.74036e-02 Reference value :  1.74206e-02 Reference value :  1.74376e-02 Reference value :  1.74546e-02 Reference value :  1.74706e-02 Reference value :  1.74866e-02 Reference value :  1.75026e-02 Reference value :  1.75196e-02 Reference value :  1.75366e-02 Reference value :  1.75536e-02 Reference value :  1.75696e-02 Reference value :  1.75866e-02 Reference value :  1.76036e-02 Reference value :  1.76196e-02 Reference value :  1.76356e-02 Reference value :  1.76536e-02 Reference value :  1.76696e-02 Reference value :  1.76866e-02 Reference value :  1.77016e-02 Reference value :  1.77186e-02 Reference value :  1.77356e-02 Reference value :  1.77526e-02 Reference value :  1.77696e-02 Reference value :  1.77866e-02 Reference value :  1.78036e-02 Reference value :  1.78206e-02 Reference value :  1.78376e-02 Reference value :  1.78546e-02 Reference value :  1.78716e-02 Reference value :  1.78876e-02 Reference value :  1.79046e-02 Reference value :  1.79216e-02 Reference value :  1.79386e-02 Reference value :  1.79556e-02 Reference value :  1.79726e-02 Reference value :  1.79896e-02 Reference value :  1.80066e-02 Reference value :  1.80226e-02 Reference value :  1.80386e-02 Reference value :  1.80546e-02 Reference value :  1.80716e-02 Reference value :  1.80876e-02 Reference value :  1.81046e-02 Reference value :  1.81226e-02 Reference value :  1.81396e-02 Reference value :  1.81566e-02 Reference value :  1.81736e-02 Reference value :  1.81906e-02 Reference value :  1.82076e-02 Reference value :  1.82236e-02 Reference value :  1.82406e-02 Reference value :  1.82566e-02 Reference value :  1.82726e-02 Reference value :  1.82896e-02 Reference value :  1.83066e-02 Reference value :  1.83236e-02 Reference value :  1.83406e-02 Reference value :  1.83576e-02 Reference value :  1.83756e-02 Reference value :  1.83916e-02 Reference value :  1.84086e-02 Reference value :  1.84256e-02 Reference value :  1.84426e-02 Reference value :  1.84596e-02 Reference value :  1.84756e-02 Reference value :  1.84926e-02 Reference value :  1.85096e-02 Reference value :  1.85256e-02 Reference value :  1.85416e-02 Reference value :  1.85586e-02 Reference value :  1.85756e-02 Reference value :  1.85926e-02 Reference value :  1.86096e-02 Reference value :  1.86266e-02 Reference value :  1.86436e-02 Reference value :  1.86606e-02 Reference value :  1.86776e-02 Reference value :  1.86946e-02 Reference value :  1.87106e-02 Reference value :  1.87276e-02 Reference value :  1.87426e-02 Reference value :  1.87596e-02 Reference value :  1.87766e-02 Reference value :  1.87936e-02 Reference value :  1.88096e-02 Reference value :  1.88256e-02 Reference value :  1.88426e-02 Reference value :  1.88606e-02 Reference value :  1.88776e-02 Reference value :  1.88936e-02 Reference value :  1.89106e-02 Reference value :  1.89276e-02 Reference value :  1.89446e-02 Reference value :  1.89606e-02 Reference value :  1.89776e-02 Reference value :  1.89946e-02 Reference value :  1.90116e-02 Reference value :  1.90286e-02 Reference value :  1.90446e-02 Reference value :  1.90616e-02 Reference value :  1.90786e-02 Reference value :  1.90956e-02 Reference value :  1.91126e-02 Reference value :  1.91286e-02 Reference value :  1.91456e-02 Reference value :  1.91616e-02 Reference value :  1.91786e-02 Reference value :  1.91956e-02 Reference value :  1.92126e-02 Reference value :  1.92296e-02 Reference value :  1.92466e-02 Reference value :  1.92646e-02 Reference value :  1.92816e-02 Reference value :  1.92986e-02 Reference value :  1.93166e-02 Reference value :  1.93336e-02 Reference value :  1.93506e-02 Reference value :  1.93686e-02 Reference value :  1.93856e-02 Reference value :  1.94026e-02 Reference value :  1.94196e-02 Reference value :  1.94366e-02 Reference value :  1.94526e-02 Reference value :  1.94686e-02 Reference value :  1.94856e-02 Reference value :  1.95026e-02 Reference value :  1.95196e-02 Reference value :  1.95356e-02 Reference value :  1.95516e-02 Reference value :  1.95676e-02 Reference value :  1.95836e-02 Reference value :  1.96006e-02 Reference value :  1.96176e-02 Reference value :  1.96346e-02 Reference value :  1.96516e-02 Reference value :  1.96666e-02 Reference value :  1.96836e-02 Reference value :  1.96996e-02 Reference value :  1.97156e-02 Reference value :  1.97316e-02 Reference value :  1.97486e-02 Reference value :  1.97646e-02 Reference value :  1.97806e-02 Reference value :  1.97966e-02 Reference value :  1.98136e-02 Reference value :  1.98306e-02 Reference value :  1.98476e-02 Reference value :  1.98636e-02 Reference value :  1.98806e-02 Reference value :  1.98976e-02 Reference value :  1.99146e-02 Reference value :  1.99306e-02 Reference value :  1.99466e-02 Reference value :  1.99626e-02 Reference value :  1.99786e-02 Reference value :  1.99946e-02
+No. of Data Rows : 20062
+T0 2.000000e-06
+
+Error: measure  ed1  when(WHEN) : out of interval
+Warning from checkvalid: vector ed1 is not available or has zero length.
+ meas tran ed1 when v(b_reader2_slot_0__66__clk)=0.9 rise=1 failed!
+
+
+Error: measure  el1  when(WHEN) : out of interval
+Warning from checkvalid: vector el1 is not available or has zero length.
+ meas tran el1 when v(b_reader2_slot_0__66__clk)=0.3 rise=1 failed!
+
+
+Error: measure  eh1  when(WHEN) : out of interval
+Warning from checkvalid: vector eh1 is not available or has zero length.
+ meas tran eh1 when v(b_reader2_slot_0__66__clk)=1.5 rise=1 failed!
+
+
+Error: measure  ed2  when(WHEN) : out of interval
+Warning from checkvalid: vector ed2 is not available or has zero length.
+ meas tran ed2 when v(b_reader2_slot_0__66__clk)=0.9 rise=2 failed!
+
+
+Error: measure  el2  when(WHEN) : out of interval
+Warning from checkvalid: vector el2 is not available or has zero length.
+ meas tran el2 when v(b_reader2_slot_0__66__clk)=0.3 rise=2 failed!
+
+
+Error: measure  eh2  when(WHEN) : out of interval
+Warning from checkvalid: vector eh2 is not available or has zero length.
+ meas tran eh2 when v(b_reader2_slot_0__66__clk)=1.5 rise=2 failed!
+
+
+Error: measure  ed3  when(WHEN) : out of interval
+Warning from checkvalid: vector ed3 is not available or has zero length.
+ meas tran ed3 when v(b_reader2_slot_0__66__clk)=0.9 rise=3 failed!
+
+
+Error: measure  el3  when(WHEN) : out of interval
+Warning from checkvalid: vector el3 is not available or has zero length.
+ meas tran el3 when v(b_reader2_slot_0__66__clk)=0.3 rise=3 failed!
+
+
+Error: measure  eh3  when(WHEN) : out of interval
+Warning from checkvalid: vector eh3 is not available or has zero length.
+ meas tran eh3 when v(b_reader2_slot_0__66__clk)=1.5 rise=3 failed!
+
+
+Error: measure  ed4  when(WHEN) : out of interval
+Warning from checkvalid: vector ed4 is not available or has zero length.
+ meas tran ed4 when v(b_reader2_slot_0__66__clk)=0.9 rise=4 failed!
+
+
+Error: measure  el4  when(WHEN) : out of interval
+Warning from checkvalid: vector el4 is not available or has zero length.
+ meas tran el4 when v(b_reader2_slot_0__66__clk)=0.3 rise=4 failed!
+
+
+Error: measure  eh4  when(WHEN) : out of interval
+Warning from checkvalid: vector eh4 is not available or has zero length.
+ meas tran eh4 when v(b_reader2_slot_0__66__clk)=1.5 rise=4 failed!
+
+
+Error: measure  ed5  when(WHEN) : out of interval
+Warning from checkvalid: vector ed5 is not available or has zero length.
+ meas tran ed5 when v(b_reader2_slot_0__66__clk)=0.9 rise=5 failed!
+
+
+Error: measure  el5  when(WHEN) : out of interval
+Warning from checkvalid: vector el5 is not available or has zero length.
+ meas tran el5 when v(b_reader2_slot_0__66__clk)=0.3 rise=5 failed!
+
+
+Error: measure  eh5  when(WHEN) : out of interval
+Warning from checkvalid: vector eh5 is not available or has zero length.
+ meas tran eh5 when v(b_reader2_slot_0__66__clk)=1.5 rise=5 failed!
+
+
+Error: measure  ed6  when(WHEN) : out of interval
+Warning from checkvalid: vector ed6 is not available or has zero length.
+ meas tran ed6 when v(b_reader2_slot_0__66__clk)=0.9 rise=6 failed!
+
+
+Error: measure  el6  when(WHEN) : out of interval
+Warning from checkvalid: vector el6 is not available or has zero length.
+ meas tran el6 when v(b_reader2_slot_0__66__clk)=0.3 rise=6 failed!
+
+
+Error: measure  eh6  when(WHEN) : out of interval
+Warning from checkvalid: vector eh6 is not available or has zero length.
+ meas tran eh6 when v(b_reader2_slot_0__66__clk)=1.5 rise=6 failed!
+
+
+Error: measure  ed7  when(WHEN) : out of interval
+Warning from checkvalid: vector ed7 is not available or has zero length.
+ meas tran ed7 when v(b_reader2_slot_0__66__clk)=0.9 rise=7 failed!
+
+
+Error: measure  el7  when(WHEN) : out of interval
+Warning from checkvalid: vector el7 is not available or has zero length.
+ meas tran el7 when v(b_reader2_slot_0__66__clk)=0.3 rise=7 failed!
+
+
+Error: measure  eh7  when(WHEN) : out of interval
+Warning from checkvalid: vector eh7 is not available or has zero length.
+ meas tran eh7 when v(b_reader2_slot_0__66__clk)=1.5 rise=7 failed!
+
+
+Error: measure  ed8  when(WHEN) : out of interval
+Warning from checkvalid: vector ed8 is not available or has zero length.
+ meas tran ed8 when v(b_reader2_slot_0__66__clk)=0.9 rise=8 failed!
+
+
+Error: measure  el8  when(WHEN) : out of interval
+Warning from checkvalid: vector el8 is not available or has zero length.
+ meas tran el8 when v(b_reader2_slot_0__66__clk)=0.3 rise=8 failed!
+
+
+Error: measure  eh8  when(WHEN) : out of interval
+Warning from checkvalid: vector eh8 is not available or has zero length.
+ meas tran eh8 when v(b_reader2_slot_0__66__clk)=1.5 rise=8 failed!
+
+
+Error: measure  ed9  when(WHEN) : out of interval
+Warning from checkvalid: vector ed9 is not available or has zero length.
+ meas tran ed9 when v(b_reader2_slot_0__66__clk)=0.9 rise=9 failed!
+
+
+Error: measure  el9  when(WHEN) : out of interval
+Warning from checkvalid: vector el9 is not available or has zero length.
+ meas tran el9 when v(b_reader2_slot_0__66__clk)=0.3 rise=9 failed!
+
+
+Error: measure  eh9  when(WHEN) : out of interval
+Warning from checkvalid: vector eh9 is not available or has zero length.
+ meas tran eh9 when v(b_reader2_slot_0__66__clk)=1.5 rise=9 failed!
+
+
+Error: measure  ed10  when(WHEN) : out of interval
+Warning from checkvalid: vector ed10 is not available or has zero length.
+ meas tran ed10 when v(b_reader2_slot_0__66__clk)=0.9 rise=10 failed!
+
+
+Error: measure  el10  when(WHEN) : out of interval
+Warning from checkvalid: vector el10 is not available or has zero length.
+ meas tran el10 when v(b_reader2_slot_0__66__clk)=0.3 rise=10 failed!
+
+
+Error: measure  eh10  when(WHEN) : out of interval
+Warning from checkvalid: vector eh10 is not available or has zero length.
+ meas tran eh10 when v(b_reader2_slot_0__66__clk)=1.5 rise=10 failed!
+
+
+Error: measure  ed11  when(WHEN) : out of interval
+Warning from checkvalid: vector ed11 is not available or has zero length.
+ meas tran ed11 when v(b_reader2_slot_0__66__clk)=0.9 rise=11 failed!
+
+
+Error: measure  el11  when(WHEN) : out of interval
+Warning from checkvalid: vector el11 is not available or has zero length.
+ meas tran el11 when v(b_reader2_slot_0__66__clk)=0.3 rise=11 failed!
+
+
+Error: measure  eh11  when(WHEN) : out of interval
+Warning from checkvalid: vector eh11 is not available or has zero length.
+ meas tran eh11 when v(b_reader2_slot_0__66__clk)=1.5 rise=11 failed!
+
+
+Error: measure  ed12  when(WHEN) : out of interval
+Warning from checkvalid: vector ed12 is not available or has zero length.
+ meas tran ed12 when v(b_reader2_slot_0__66__clk)=0.9 rise=12 failed!
+
+
+Error: measure  el12  when(WHEN) : out of interval
+Warning from checkvalid: vector el12 is not available or has zero length.
+ meas tran el12 when v(b_reader2_slot_0__66__clk)=0.3 rise=12 failed!
+
+
+Error: measure  eh12  when(WHEN) : out of interval
+Warning from checkvalid: vector eh12 is not available or has zero length.
+ meas tran eh12 when v(b_reader2_slot_0__66__clk)=1.5 rise=12 failed!
+
+
+Error: measure  ed13  when(WHEN) : out of interval
+Warning from checkvalid: vector ed13 is not available or has zero length.
+ meas tran ed13 when v(b_reader2_slot_0__66__clk)=0.9 rise=13 failed!
+
+
+Error: measure  el13  when(WHEN) : out of interval
+Warning from checkvalid: vector el13 is not available or has zero length.
+ meas tran el13 when v(b_reader2_slot_0__66__clk)=0.3 rise=13 failed!
+
+
+Error: measure  eh13  when(WHEN) : out of interval
+Warning from checkvalid: vector eh13 is not available or has zero length.
+ meas tran eh13 when v(b_reader2_slot_0__66__clk)=1.5 rise=13 failed!
+
+
+Error: measure  ed14  when(WHEN) : out of interval
+Warning from checkvalid: vector ed14 is not available or has zero length.
+ meas tran ed14 when v(b_reader2_slot_0__66__clk)=0.9 rise=14 failed!
+
+
+Error: measure  el14  when(WHEN) : out of interval
+Warning from checkvalid: vector el14 is not available or has zero length.
+ meas tran el14 when v(b_reader2_slot_0__66__clk)=0.3 rise=14 failed!
+
+
+Error: measure  eh14  when(WHEN) : out of interval
+Warning from checkvalid: vector eh14 is not available or has zero length.
+ meas tran eh14 when v(b_reader2_slot_0__66__clk)=1.5 rise=14 failed!
+
+
+Error: measure  ed15  when(WHEN) : out of interval
+Warning from checkvalid: vector ed15 is not available or has zero length.
+ meas tran ed15 when v(b_reader2_slot_0__66__clk)=0.9 rise=15 failed!
+
+
+Error: measure  el15  when(WHEN) : out of interval
+Warning from checkvalid: vector el15 is not available or has zero length.
+ meas tran el15 when v(b_reader2_slot_0__66__clk)=0.3 rise=15 failed!
+
+
+Error: measure  eh15  when(WHEN) : out of interval
+Warning from checkvalid: vector eh15 is not available or has zero length.
+ meas tran eh15 when v(b_reader2_slot_0__66__clk)=1.5 rise=15 failed!
+
+
+Error: measure  ed16  when(WHEN) : out of interval
+Warning from checkvalid: vector ed16 is not available or has zero length.
+ meas tran ed16 when v(b_reader2_slot_0__66__clk)=0.9 rise=16 failed!
+
+
+Error: measure  el16  when(WHEN) : out of interval
+Warning from checkvalid: vector el16 is not available or has zero length.
+ meas tran el16 when v(b_reader2_slot_0__66__clk)=0.3 rise=16 failed!
+
+
+Error: measure  eh16  when(WHEN) : out of interval
+Warning from checkvalid: vector eh16 is not available or has zero length.
+ meas tran eh16 when v(b_reader2_slot_0__66__clk)=1.5 rise=16 failed!
+
+
+Error: measure  ed17  when(WHEN) : out of interval
+Warning from checkvalid: vector ed17 is not available or has zero length.
+ meas tran ed17 when v(b_reader2_slot_0__66__clk)=0.9 rise=17 failed!
+
+
+Error: measure  el17  when(WHEN) : out of interval
+Warning from checkvalid: vector el17 is not available or has zero length.
+ meas tran el17 when v(b_reader2_slot_0__66__clk)=0.3 rise=17 failed!
+
+
+Error: measure  eh17  when(WHEN) : out of interval
+Warning from checkvalid: vector eh17 is not available or has zero length.
+ meas tran eh17 when v(b_reader2_slot_0__66__clk)=1.5 rise=17 failed!
+
+
+Error: measure  ed18  when(WHEN) : out of interval
+Warning from checkvalid: vector ed18 is not available or has zero length.
+ meas tran ed18 when v(b_reader2_slot_0__66__clk)=0.9 rise=18 failed!
+
+
+Error: measure  el18  when(WHEN) : out of interval
+Warning from checkvalid: vector el18 is not available or has zero length.
+ meas tran el18 when v(b_reader2_slot_0__66__clk)=0.3 rise=18 failed!
+
+
+Error: measure  eh18  when(WHEN) : out of interval
+Warning from checkvalid: vector eh18 is not available or has zero length.
+ meas tran eh18 when v(b_reader2_slot_0__66__clk)=1.5 rise=18 failed!
+
+
+Error: measure  txa  when(WHEN) : out of interval
+Warning from checkvalid: vector txa is not available or has zero length.
+ meas tran txa when v(xa)=0.9 rise=1 failed!
+
+
+Error: measure  txb  when(WHEN) : out of interval
+Warning from checkvalid: vector txb is not available or has zero length.
+ meas tran txb when v(xb)=0.9 rise=1 failed!
+
+qidle               =  2.589338e-07 at=  1.600000e-10
+qidle = 2.589338000000e-07
+xidle               =  1.799999e+00 at=  2.048000e-08
+xidle = 1.799999000000e+00
+xmin                =  1.281817e+00 at=  2.000000e-02
+xmin = 1.281817000000e+00
+ngspice-44.2 done
+salida 0

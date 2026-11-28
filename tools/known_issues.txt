@@ -169,3 +169,34 @@ experiments/misfit28/explora/h/alto_tt27_cal_3.1623e-07/lec.log | MISFIT-28 expl
 experiments/misfit28/explora/h3/alto_tt27_cal_1.0000e-05/lec.log | MISFIT-28 exploration, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
 experiments/misfit28/explora/h3/alto_tt27_cal_1.0000e-08/lec.log | MISFIT-28 exploration, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
 experiments/misfit28/explora/h3/alto_tt27_cal_3.1623e-07/lec.log | MISFIT-28 exploration, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ff-40_cal_1.0000e-05/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ff-40_cal_1.0000e-08/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ff-40_cal_3.1623e-07/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ff-40_oos_1.0000e-06/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ff-40_oos_3.1623e-06/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ff-40_oos_3.1623e-08/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ff85_cal_1.0000e-05/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ff85_cal_1.0000e-08/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ff85_cal_3.1623e-07/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ff85_oos_1.0000e-06/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ff85_oos_3.1623e-06/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ff85_oos_3.1623e-08/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ss85_cal_1.0000e-05/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ss85_cal_1.0000e-08/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ss85_cal_3.1623e-07/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ss85_oos_1.0000e-06/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ss85_oos_3.1623e-06/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_ss85_oos_3.1623e-08/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_tt27_cal_1.0000e-05/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_tt27_cal_1.0000e-08/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_tt27_cal_3.1623e-07/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_tt27_oos_1.0000e-06/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_tt27_oos_3.1623e-06/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/alto_tt27_oos_3.1623e-08/lec.log | MISFIT-28, high range: xa and xb rise after 256 and 4096 edges and the deck stops at 18, so their two measurements fail by design
+experiments/misfit28/a/bajo_ff-40_oos_3.1623e-10/lec.log | MISFIT-28, the deck that makes C1 and C4 false: the loop output stops after edge 13 (edge 14 reaches 0.3 V but not 0.9 V), so the later measurements fail; kept as the result
+experiments/misfit28/harden_a.log | MISFIT-28, LibreLane log of the block: the two Yosys check errors are the double driver on c2 (the hysteresis keeper), downgraded on purpose and checked net by net in m28_bloque.txt; the other matches are informational lines
+experiments/misfit28/largo/alto_ss85_cal_1.0000e-05/lec.log | MISFIT-28, counter at maximum rate: the deck stops after edge 257, xb (4096 edges) cannot rise, by design
+experiments/misfit28/largo/alto_tt27_cal_1.0000e-05/lec.log | MISFIT-28, counter at maximum rate: the deck stops after edge 257, xb (4096 edges) cannot rise, by design
+experiments/misfit28/testigo/m_bajo_ff-40_cal_1.0000e-10/lec.log | MISFIT-28 witness: the MISFIT-26 deck without hysteresis that stalls; the failed measurements are what the witness must show
+experiments/misfit28/zero/alto_ff85_zero_0.0000e+00/lec.log | MISFIT-28, zero-current deck: no edges expected, every edge measurement fails by design
+experiments/misfit28/zero/bajo_ff85_zero_0.0000e+00/lec.log | MISFIT-28, zero-current deck: no edges expected, every edge measurement fails by design

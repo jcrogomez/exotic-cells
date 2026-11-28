@@ -1,0 +1,8 @@
+metricas: {'magic__drc_error__count': 0, 'design__lvs_error__count': 0, 'antenna__violating__nets': 0} | caja 0.0 0.0 46.92 46.24 | area 2169.5808 um2 | instancias 94
+celdas del lazo: 18 de 18; tipos distintos del RTL: ninguno
+redes del lazo con otro numero de conexiones: ninguna
+bufer, retardo o diodo fuera del lazo: ninguno
+avisos de doble conductor: ['reader2_loop.\\c2', 'reader2_slot.\\u_loop.c2']
+conductores multiples solo en c2: si
+H1 (cierra limpio): cumplida
+H2 (lazo intacto y sin buferes): cumplida

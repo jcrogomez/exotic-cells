@@ -1,0 +1,126 @@
+
+## rango bajo · tt 27
+  Q = 83.66 fC (-0.9 % frente al bloque de MISFIT-26), IL = -0.112 pA, td = 0.62 ns; nodo minimo 0.755 V
+  extra (no cuenta en C3) 3.162e-11 A: error -0.26 %, dispersion 0.22 %, intervalos 0.997..1.003
+  extra (no cuenta en C3) 5.623e-11 A: error -0.06 %, dispersion 0.20 %, intervalos 0.996..1.002
+  extra (no cuenta en C3) 1.778e-10 A: error -0.00 %, dispersion 0.21 %, intervalos 0.997..1.003
+  fuera de muestra 3.162e-10 A: error +0.09 %, dispersion 0.24 %, intervalos 0.996..1.003
+  extra (no cuenta en C3) 5.623e-10 A: error +0.03 %, dispersion 0.24 %, intervalos 0.997..1.003
+  fuera de muestra 3.162e-09 A: error +0.05 %, dispersion 0.16 %, intervalos 0.998..1.003
+  fuera de muestra 1.000e-07 A: error -0.06 %, dispersion 0.40 %, intervalos 0.990..1.003
+
+## rango bajo · ff -40
+  Q = 89.07 fC (-1.1 % frente al bloque de MISFIT-26), IL = +0.074 pA, td = 0.11 ns; nodo minimo 0.708 V
+  extra (no cuenta en C3) 3.162e-11 A: error +0.16 %, dispersion 0.16 %, intervalos 0.998..1.003
+  extra (no cuenta en C3) 5.623e-11 A: error +0.07 %, dispersion 0.26 %, intervalos 0.997..1.005
+  extra (no cuenta en C3) 1.778e-10 A: error +0.09 %, dispersion 0.16 %, intervalos 0.998..1.003
+  fuera de muestra 3.162e-10 A: error +0.03 %, dispersion 0.20 %, intervalos 0.997..1.002
+  extra (no cuenta en C3) 5.623e-10 A: error -0.12 %, dispersion 0.23 %, intervalos 0.997..1.004
+  fuera de muestra 3.162e-09 A: error -0.04 %, dispersion 0.25 %, intervalos 0.997..1.005
+  fuera de muestra 1.000e-07 A: error +0.04 %, dispersion 0.19 %, intervalos 0.997..1.004
+
+## rango bajo · ss 85
+  Q = 95.81 fC (-0.3 % frente al bloque de MISFIT-26), IL = -5.998 pA, td = 1.49 ns; nodo minimo 0.796 V
+  extra (no cuenta en C3) 3.162e-11 A: error +11.25 %, dispersion 0.11 %, intervalos 0.998..1.001
+  extra (no cuenta en C3) 5.623e-11 A: error +6.30 %, dispersion 0.09 %, intervalos 0.999..1.001
+  extra (no cuenta en C3) 1.778e-10 A: error +2.04 %, dispersion 0.10 %, intervalos 0.999..1.002
+  fuera de muestra 3.162e-10 A: error +1.18 %, dispersion 0.17 %, intervalos 0.998..1.003
+  extra (no cuenta en C3) 5.623e-10 A: error +0.72 %, dispersion 0.09 %, intervalos 0.998..1.001
+  fuera de muestra 3.162e-09 A: error +0.15 %, dispersion 0.13 %, intervalos 0.997..1.001
+  fuera de muestra 1.000e-07 A: error -0.15 %, dispersion 0.09 %, intervalos 0.998..1.001
+
+## rango bajo · ff 85
+  Q = 81.42 fC (-0.7 % frente al bloque de MISFIT-26), IL = +2.426 pA, td = 0.54 ns; nodo minimo 0.750 V
+  extra (no cuenta en C3) 3.162e-11 A: error -0.71 %, dispersion 0.15 %, intervalos 0.998..1.002
+  extra (no cuenta en C3) 5.623e-11 A: error -0.20 %, dispersion 0.32 %, intervalos 0.995..1.006
+  extra (no cuenta en C3) 1.778e-10 A: error +0.09 %, dispersion 0.14 %, intervalos 0.998..1.002
+  fuera de muestra 3.162e-10 A: error +0.13 %, dispersion 0.34 %, intervalos 0.996..1.006
+  extra (no cuenta en C3) 5.623e-10 A: error -0.09 %, dispersion 0.32 %, intervalos 0.993..1.004
+  fuera de muestra 3.162e-09 A: error +0.00 %, dispersion 0.33 %, intervalos 0.996..1.005
+  fuera de muestra 1.000e-07 A: error -0.22 %, dispersion 0.24 %, intervalos 0.996..1.004
+
+## rango alto · tt 27
+  Q = 189.72 fC (+1.0 % frente al bloque de MISFIT-26), IL = -19.206 pA, td = 5.90 ns; nodo minimo 0.678 V
+  fuera de muestra 3.162e-08 A: error -0.18 %, dispersion 0.01 %, intervalos 1.000..1.000
+  fuera de muestra 1.000e-06 A: error -0.56 %, dispersion 0.02 %, intervalos 1.000..1.000
+  fuera de muestra 3.162e-06 A: error -0.91 %, dispersion 0.02 %, intervalos 1.000..1.000
+
+## rango alto · ff -40
+  Q = 202.59 fC (+0.9 % frente al bloque de MISFIT-26), IL = -8.268 pA, td = 4.66 ns; nodo minimo 0.662 V
+  fuera de muestra 3.162e-08 A: error -0.22 %, dispersion 0.00 %, intervalos 1.000..1.000
+  fuera de muestra 1.000e-06 A: error -0.39 %, dispersion 0.01 %, intervalos 1.000..1.000
+  fuera de muestra 3.162e-06 A: error -0.52 %, dispersion 0.03 %, intervalos 0.999..1.000
+
+## rango alto · ss 85
+  Q = 177.94 fC (+1.1 % frente al bloque de MISFIT-26), IL = -53.308 pA, td = 8.88 ns; nodo minimo 0.669 V
+  fuera de muestra 3.162e-08 A: error -0.05 %, dispersion 0.02 %, intervalos 1.000..1.000
+  fuera de muestra 1.000e-06 A: error -0.83 %, dispersion 0.02 %, intervalos 1.000..1.000
+  fuera de muestra 3.162e-06 A: error -1.29 %, dispersion 0.21 %, intervalos 0.995..1.002
+
+## rango alto · ff 85
+  Q = 195.46 fC (+1.0 % frente al bloque de MISFIT-26), IL = -10.244 pA, td = 4.20 ns; nodo minimo 0.717 V
+  fuera de muestra 3.162e-08 A: error -0.24 %, dispersion 0.01 %, intervalos 1.000..1.000
+  fuera de muestra 1.000e-06 A: error -0.37 %, dispersion 0.01 %, intervalos 1.000..1.000
+  fuera de muestra 3.162e-06 A: error -0.50 %, dispersion 0.05 %, intervalos 0.999..1.000
+
+## desajuste: ff_mm, 5 semillas, 100 y 316 pA
+  ff 85 1.000e-10 A semilla 1: flancos 18/18/18, a medias False, intervalos 0.9984821610131104..1.0021453947064896, xa 9.999999994736442e-10, xb 0.0, T 0.0009363312000000001
+  ff 85 3.162e-10 A semilla 1: flancos 18/18/18, a medias False, intervalos 0.9968881369457797..1.0022148592782352, xa 2.0000000000314905e-09, xb 2.0000000006820118e-09, T 0.00027052283
+  ff 85 1.000e-10 A semilla 2: flancos 18/18/18, a medias False, intervalos 0.9960822905273395..1.0021512316252776, xa 1.0000000003410059e-09, xb 0.0, T 0.0007139631000000001
+  ff 85 3.162e-10 A semilla 2: flancos 18/18/18, a medias False, intervalos 0.9951400496906376..1.002676213505587, xa 2.0000000000314905e-09, xb 2.0000000006820118e-09, T 0.00024561568
+  ff 85 1.000e-10 A semilla 3: flancos 18/18/18, a medias False, intervalos 0.9966636560154848..1.0041068743312929, xa 1.99999999981465e-09, xb 0.0, T 0.0008012663
+  ff 85 3.162e-10 A semilla 3: flancos 18/18/18, a medias False, intervalos 0.9966105976389629..1.0032888560906676, xa 9.99999999907325e-10, xb 2.0000000006820118e-09, T 0.00025779176
+  ff 85 1.000e-10 A semilla 4: flancos 18/18/18, a medias False, intervalos 0.9956491815025054..1.0038147415627892, xa 1.99999999981465e-09, xb 0.0, T 0.0007957813
+  ff 85 3.162e-10 A semilla 4: flancos 18/18/18, a medias False, intervalos 0.996538375995011..1.0044072233973256, xa 2.0000000000314905e-09, xb 1.99999999981465e-09, T 0.00025416683
+  ff 85 1.000e-10 A semilla 5: flancos 18/18/18, a medias False, intervalos 0.9978028112632414..1.002518948823239, xa 1.99999999981465e-09, xb 0.0, T 0.0009522622999999999
+  ff 85 3.162e-10 A semilla 5: flancos 18/18/18, a medias False, intervalos 0.9969325011337955..1.0047152483205695, xa 9.99999999907325e-10, xb 1.99999999981465e-09, T 0.00026995609
+  ff -40 1.000e-10 A semilla 1: flancos 18/18/18, a medias False, intervalos 0.9971704282871586..1.0051115880955999, xa 1.99999999981465e-09, xb 0.0, T 0.0009020093
+  ff -40 3.162e-10 A semilla 1: flancos 18/18/18, a medias False, intervalos 0.9981010561569982..1.0032952766601528, xa 9.99999999907325e-10, xb 2.0000000006820118e-09, T 0.00028493207
+  ff -40 1.000e-10 A semilla 2: flancos 18/18/18, a medias False, intervalos 0.995841470377931..1.004920600374913, xa 2.0000000006820118e-09, xb 0.0, T 0.0008886314
+  ff -40 3.162e-10 A semilla 2: flancos 18/18/18, a medias False, intervalos 0.9964953045623364..1.0037192461474065, xa 9.99999999907325e-10, xb 1.99999999981465e-09, T 0.00028142531000000003
+  ff -40 1.000e-10 A semilla 3: flancos 18/18/18, a medias False, intervalos 0.9971528474036674..1.0031450909632622, xa 1.99999999981465e-09, xb 9.999999999940612e-09, T 0.0008961584999999999
+  ff -40 3.162e-10 A semilla 3: flancos 18/18/18, a medias False, intervalos 0.99792779577329..1.0021384318187818, xa 1.0000000001241655e-09, xb 3.000000000155656e-09, T 0.00028356761
+  ff -40 1.000e-10 A semilla 4: flancos 18/18/18, a medias False, intervalos 0.9958080505761466..1.0019213336334367, xa 1.0000000003410059e-09, xb 0.0, T 0.0008872483
+  ff -40 3.162e-10 A semilla 4: flancos 18/18/18, a medias False, intervalos 0.9972965585274618..1.0033550304887782, xa 9.99999999907325e-10, xb 1.99999999981465e-09, T 0.00028026869000000003
+  ff -40 1.000e-10 A semilla 5: flancos 18/18/18, a medias False, intervalos 0.9960025738000327..1.0034806571561072, xa 1.99999999981465e-09, xb 9.999999999940612e-09, T 0.0008959515
+  ff -40 3.162e-10 A semilla 5: flancos 18/18/18, a medias False, intervalos 0.9964872804611979..1.003019277074712, xa 9.99999999907325e-10, xb 1.99999999981465e-09, T 0.00028368049
+
+## sin corriente, ff 85
+  bajo: 0 flancos (a 0,3 o 0,9 V), salida 0
+  alto: 0 flancos (a 0,3 o 0,9 V), salida 0
+
+## contador a ritmo maximo: rango alto, 10 uA
+  tt 27: flanco 256 6.427133e-06, xa 6.431949e-06, flanco 257 6.452016e-06, xb no sube, periodo 2.487609e-08 -> bien
+  ss 85: flanco 256 6.883944e-06, xa 6.891644e-06, flanco 257 6.910634e-06, xb no sube, periodo 2.6671589999999997e-08 -> bien
+
+## testigos: decks de MISFIT-26 (sin histeresis) con la medida nueva
+  m_bajo_ff85_oos_3.1623e-10: flancos 18/18/18, a medias True, xa 9.99999999907325e-10, xb -0.000259619 -> fallo visto
+  m_bajo_ff-40_cal_1.0000e-10: flancos 18/16/16, a medias True, xa None, xb None -> fallo visto
+
+## fisico
+metricas: {'magic__drc_error__count': 0, 'design__lvs_error__count': 0, 'antenna__violating__nets': 0} | caja 0.0 0.0 46.92 46.24 | area 2169.5808 um2 | instancias 94
+celdas del lazo: 18 de 18; tipos distintos del RTL: ninguno
+redes del lazo con otro numero de conexiones: ninguna
+bufer, retardo o diodo fuera del lazo: ninguno
+avisos de doble conductor: ['reader2_loop.\\c2', 'reader2_slot.\\u_loop.c2']
+conductores multiples solo en c2: si
+H1 (cierra limpio): cumplida
+H2 (lazo intacto y sin buferes): cumplida
+ok: DRC-GDS reader2_unit violations=0 | Final result: Circuits match uniquely. | property errors: 0
+noX: DRC-GDS reader2_unit violations=0 | Final result: Netlists do not match. | property errors: 0
+noPRENL: DRC-GDS reader2_unit violations=0 | Final result: Netlists do not match. | property errors: 0
+noVDD: DRC-GDS reader2_unit violations=0 | Final result: Netlists do not match. | property errors: 0
+
+## Veredictos
+C1 (64 decks: 18 flancos a 0,3, 0,9 y 1,5 V, ningun pulso a medias): FALSA (63 de 64, se esperan 64); fallan: [('bajo', 'ff', '-40', 'oos', 3.1623e-10, False)]
+C2 (64 decks: cada intervalo dentro de +-3 % de la media): cumplida (64 de 64, se esperan 64); fallan: []
+C3 (24 fuera de muestra dentro de +-3 %): cumplida (24 de 24, se esperan 24); fallan: []
+C4 (contador, 40 decks de rango bajo: xa y xb entre -1 y 20 ns tras los flancos 4 y 16): FALSA (39 de 40, se esperan 40); fallan: [('bajo', 'ff', '-40', 'oos', 3.1623e-10, False, None, None)]
+C5 (desajuste, 20 chips-punto: sanos, regulares y con la cuenta bien): cumplida (20 de 20, se esperan 20); fallan: []
+C6 (sin corriente, ff 85: ningun flanco): cumplida
+C7 (ritmo maximo: xa tras el flanco 256, tt 27 y ss 85): cumplida
+C8 (testigos: la medida nueva ve el fallo de MISFIT-26 en los dos decks): cumplida
+C9 (Q frente al bloque extraido de MISFIT-26 dentro de +-10 %): cumplida (8 de 8, se esperan 8); fallan: []
+C10 (bloque limpio y lazo intacto; unidad limpia, LVS coincide, tres mutantes distintos; doble conductor solo en c2): cumplida
+C11 (reposo: q <= 0,2 V antes de EN en los 64): cumplida (64 de 64, se esperan 64); fallan: []
+tanda valida
