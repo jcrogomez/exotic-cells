@@ -1,0 +1,12 @@
+m_bajo_ff85_oos_3.1623e-10, paso 1 us: salida 0; cruces de 0,3 / 0,9 / 1,5 V: 18 / 18 / 18 (el deck mide 18 como mucho)
+  xa - flanco 4: +1.000e-09 s | xb - flanco 16: -2.596e-04 s
+  cruce n de 1,5 V menos cruce n de 0,3 V, en periodos: 0.00 1.01 1.00 2.00 2.00 2.00 3.00 3.00 4.00 3.99 4.99 5.00 6.00 6.00 7.00 6.99 7.99 7.99
+m_bajo_ff85_oos_3.1623e-10, paso 0,1 us: salida 0; cruces de 0,3 / 0,9 / 1,5 V: 18 / 18 / 18 (el deck mide 18 como mucho)
+  xa - flanco 4: +1.000e-09 s | xb - flanco 16: +2.000e-09 s
+  cruce n de 1,5 V menos cruce n de 0,3 V, en periodos: 0.00 1.01 1.00 2.00 2.00 3.00 3.00 4.00 4.00 4.00 5.00 5.00 4.99 5.99 6.00 6.00 6.99 6.99
+m_bajo_ff-40_cal_1.0000e-10, paso 1 us: salida 0; cruces de 0,3 / 0,9 / 1,5 V: 18 / 16 / 16 (el deck mide 18 como mucho)
+  xa - flanco 4: +2.000e-09 s | xb - flanco 16: +0.000e+00 s
+  cruce n de 1,5 V menos cruce n de 0,3 V, en periodos: 0.00 1.01 1.00 2.00 1.99 2.00 2.00 2.00 3.00 3.00 3.00 3.00 4.01 3.99 3.99 3.99
+m_bajo_ff-40_cal_1.0000e-10, paso 0,1 us: salida 0; cruces de 0,3 / 0,9 / 1,5 V: 18 / 18 / 18 (el deck mide 18 como mucho)
+  xa - flanco 4: +2.000e-09 s | xb - flanco 16: +0.000e+00 s
+  cruce n de 1,5 V menos cruce n de 0,3 V, en periodos: 0.00 1.01 1.00 2.00 2.00 3.00 3.00 3.00 4.00 4.01 5.00 5.00 6.00 6.01 7.00 7.01 8.01 8.01

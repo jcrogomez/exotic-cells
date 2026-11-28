@@ -3,3 +3,6 @@
 # --- enmienda 1 ---
 c2c08535c2bcc425ad044e476cb7e354155c8fdf326ad7c0c0346b282f329cc0  cells/preregistros/MISFIT-28_2026-11-28_lector2_histeresis.md
 # enmienda 1 sellada 2026-11-28 03:56:01 EST, antes de correr e1/
+# --- enmienda 2 ---
+cd74b9342d14478ed526e70e90363628ce2e63879835e33ec82336fa3a14e7a8  cells/preregistros/MISFIT-28_2026-11-28_lector2_histeresis.md
+# enmienda 2 sellada 2026-11-28 13:33:30 EST, con e1/ a medias y sin leer medidas

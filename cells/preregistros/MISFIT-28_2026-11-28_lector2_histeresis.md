@@ -135,3 +135,16 @@ El periodo tiene que coincidir con el de 0,1 µs dentro de 0,1 %, con 18 flancos
 MISFIT-26 (ff −40, 100 pA) acabó en el mismo q = qb = 0,725 V: puede ser el mismo artefacto y no un defecto del lazo sin
 histéresis. Se están repitiendo los dos testigos de MISFIT-26 con paso de 0,1 µs (`diag/testigo_*_paso`, exploratorio);
 lo que salga se escribe en los resultados y no cambia estas reglas.
+
+## Enmienda 2 (2026-11-28, con la tanda de la enmienda 1 a medias; solo toca el tope de tiempo)
+
+**Qué pasó.** El deck `e1/lento/bajo_ff-40_oos_3.1623e-11` llegó al tope de 14400 s (`salida 124`) con la simulación en
+75,7 ms de 78,3 ms. El de ff 85 a la misma corriente acabó en 3 h 58 min. Los de ss 85 y tt 27 a 31,6 pA van más lentos y
+también llegarán al tope. El tope lo calculé yo mal (estimé 80 min por deck); no dice nada del circuito. No he leído
+ninguna medida de los decks acabados.
+
+**Qué se hace.** Todo deck de `e1/` que acabe en `salida 124`: su log se conserva como `lec_tope14400.log` y el mismo
+`lec.sp`, sin cambios, se vuelve a correr con tope de 43200 s. El análisis sellado no cambia. Si alguno llega también a
+43200 s, la tanda es inválida para ese punto y se dice así; no hay tercer tope.
+
+**Qué no cambia:** decks, paso, criterios, reglas de la enmienda 1.
